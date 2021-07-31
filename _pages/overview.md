@@ -169,16 +169,9 @@ arc42 answers the following two questions in a pragmatic way, but can be tailore
 
 Now that you know about the template sections, you can dive deeper. Have a look at our extensive documentation:
 
-* Real-world [examples](/examples)
 * FAQ - [Frequently asked questions](https://faq.arc42.org)
 * Our extensive [template documentation](https://docs.arc42.org), organized by template section.
-* Our (sketchy) [collection of software patterns](http://patterns.arc42.org).
-
-<a href="/documentation" class="btn btn--success">show more documentation.</a>
 
 
-# Learn more!
 
-{% include subtle-ads/subtle-ads.html %}
-
-<a href="https://arc42.de" class="btn btn--success">Training site</a>
+<a href="https://arc42.org" class="btn btn--success">English site</a>

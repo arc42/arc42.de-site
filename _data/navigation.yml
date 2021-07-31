@@ -7,7 +7,7 @@ main:
   - title: Bücher
     url: /books
   - title: "Download"
-    url: /download
+    url: "https://arc42.org/download"
   - title: "Über..."
     url: /about
 
