@@ -1,0 +1,23 @@
+# main links
+main:
+  - title: "Übersicht"
+    url: /overview
+  - title: "Schulungen"
+    url: /termine
+  - title: Bücher
+    url: /books
+  - title: "Download"
+    url: /download
+  - title: "Über..."
+    url: /about
+
+about:
+  - title: Über uns
+    url: /about
+    children:
+    - title: "Kontakt"
+      url: /contact
+    - title: "Mitwirkende"
+      url: "https://github.com/orgs/arc42/people"
+    - title: "Lizenz"
+      url: "/license"
