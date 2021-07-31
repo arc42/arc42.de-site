@@ -6,11 +6,14 @@ header:
   overlay_color: "#d7ecf8"
   overlay_filter: rgba(15, 80, 180, 0.4)
   overlay_image: /images/splash/arc42-splash-landingpage.jpg
-  cta_label: "Overview"
-  cta_url: "/overview"
-  caption: "Photo credit: [**Thomas Bayer**](https://www.predic8.de/)"
-excerpt: "All you ever need to construct, **communicate and document your software architecture**. Proven, **practical and pragmatic**.
-Free and open source, **takes the pain out of documentation**."
+
+  actions: 
+    - label: "Übersicht"
+      url: /overview
+    - label: "&#8594; English site..."
+      url: "https://arc42.org"
+excerpt: "Alles was Sie zum **entwerfen, kommunizieren und dokumentieren** Ihrer Softwarearchitektur brauchen. **Bewährt, praktisch und pragmatisch**.
+Frei verfügbar und open-source. **takes the pain out of documentation**."
 
 intro:
   - title: "arc42: Resourcen für Softwarearchiteenktur"
@@ -65,8 +68,6 @@ arc42 is open-source and can be used **free of charge**, in commercial and
 private situations.
 See our [license page](/license) for details.
 
-# Learn more!
+# Open-Source Site (English)!
 
-{% include subtle-ads/subtle-ads.html %}
-
-<a href="https://arc42.org" class="btn btn--success">Open-source site</a>
+<a href="https://arc42.org" class="btn btn--success">arc42.org</a>

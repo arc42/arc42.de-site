@@ -4,14 +4,14 @@
 
 Live site is hosted by [netlify](https://netlify.com)
 
-### Status
+## Status
 
 ![GitHub issues](https://img.shields.io/github/issues/arc42/arc42.de-site)
 ![GitHub issues](https://img.shields.io/github/issues-raw/arc42/arc42.de-site)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
 
 
-### How does it work?
+## How does it work?
 
 * home.md is the homepage, it's mapped (via permalink) to "/".
 

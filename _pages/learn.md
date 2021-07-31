@@ -42,8 +42,4 @@ Our popular public trainings are currently held in Munic, Frankfurt and Vienna,
 for exact dates and conditions please refer to our [German site](https://arc42.de/termine).
 
 
-# Next dates
 
-{% include subtle-ads/subtle-ads.html %}
-
-<a href="https://arc42.de" class="btn btn--success">Training site</a>

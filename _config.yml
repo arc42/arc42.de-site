@@ -15,10 +15,10 @@ locale                   : "en"
 title                    : "arc42"
 title_separator          : "-"
 name                     : "Dr. Gernot Starke"
-description              : "Resources for software architects."
-url                      : "https://arc42.org" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Resourcen für Softwarearchitektur."
+url                      : "https://arc42.de" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "arc42/arc42.org-site" # GitHub username/repo-name
+repository               : "arc42/arc42.de-site" # GitHub username/repo-name
 teaser                   : /images/arc42-splash-landingpage.jpg # path of fallback teaser image, e.g. "/images/500x300.png"
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -95,8 +95,7 @@ exclude:
   - _docker*
   - zz-site/
   - _site/
-  - includes/subtle-ads/logo
-  - includes/subtle-ads/*.sh
+ 
 
 keep_files:
   - .git
@@ -197,8 +196,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: false
       share: true
       related: true
