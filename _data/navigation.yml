@@ -2,8 +2,10 @@
 main:
   - title: "Übersicht"
     url: /overview
-  - title: "Schulungen"
+  - title: "Termine"
     url: /termine
+  - title: Schulungen
+    url: /schulungen  
   - title: Bücher
     url: /books
   - title: "Download"
@@ -11,6 +13,20 @@ main:
   - title: "Über..."
     url: /about
 
+schulungen:
+  - title: Schulungsangebot
+    url: /schulungen
+    children:
+    - title: Mastering Software Architectures
+      url: /info-msa
+    - title: iSAQB Foundation
+      url: /info-msa
+    - title: IMPROVE
+      url: /info-improve
+    - title: REQ4ARC
+      url: /info-req4arc
+    - title: ADOC
+      url: /info-adoc
 
 about:
   - title: Über uns
@@ -22,3 +38,7 @@ about:
       url: "https://github.com/orgs/arc42/people"
     - title: "Lizenz"
       url: "/license"
+    - title: "Geschäftsbedingungen (AGB)"
+      url: /terms  
+    - title: "Status"
+      url: "/status"  

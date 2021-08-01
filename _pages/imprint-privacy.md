@@ -15,7 +15,7 @@ header:
 
 #### Anbieter
 
-Dr. Gernot Starke, Willi-Lauf Allee 43, D-50858 Köln
+Dr. Gernot Starke, Willi-Lauf Allee 43, 50858 Köln
 Dr. Peter Hruschka, Langenbruchweg 71, Aachen
 
 #### Kontakt
