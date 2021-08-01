@@ -1,5 +1,5 @@
 ---
-title: "About us (and arc42)!"
+title: "Über und (und arc42)!"
 layout: single
 permalink: /about
 header:
