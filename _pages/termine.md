@@ -18,7 +18,7 @@ Unsere Schulungen sind iSAQB akkreditiert.
 
 
 Nachfolgend unsere nächsten Termine mit Austragungsorten.
-Bitte beachten Sie unsere <a href="">Geschäftsbedingungen</a>.
+Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
 
 
 <hr>
@@ -30,7 +30,7 @@ Bitte beachten Sie unsere <a href="">Geschäftsbedingungen</a>.
     <h4>21.-24. Sept 2021 (Frankfurt)</h4>
     <h3>Mastering Software Architectures (Ausgebucht, nur noch Warteliste)</h3>
     <p>Dr. Gernot Starke, Dr. Peter Hruschka.</p>
-    <a href="msa-details"><button class="button buttonBlue">Mehr Info</button></a>
+    <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonGrey">Anmeldung</button></a>
 
   </div><!-- content -->
@@ -44,7 +44,7 @@ Bitte beachten Sie unsere <a href="">Geschäftsbedingungen</a>.
       Praxisnah, pragmatisch, effektiv.
       Perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
-      <a href="msa-details"><button class="button buttonBlue">Mehr Info</button></a>
+      <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
     </div><!-- content -->
   </div> <!-- container-->
@@ -55,7 +55,7 @@ Bitte beachten Sie unsere <a href="">Geschäftsbedingungen</a>.
       <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p>Frühbucherpreis bei Anmeldung bis 6, August 2021: € 1.950,-
          Normalpreis: € 2.075,- (für unsere CPSA-F-Absolventen € 1.950.-)</p>
-      <a href="req4arc-details"><button class="button buttonBlue">Mehr Info</button></a>
+      <a href="info-req4arc"><button class="button buttonBlue">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
 
     </div><!-- content -->
@@ -65,7 +65,7 @@ Bitte beachten Sie unsere <a href="">Geschäftsbedingungen</a>.
       <h2></h2>
       <h3></h3>
       <p>.</p>
-      <a href="improve-details"><button class="button buttonBlue">Mehr Info</button></a>
+      <a href="info-improve"><button class="button buttonBlue">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonGrey">Anmeldung</button></a>
     </div> <!-- content -->
   </div> <!-- container-->
@@ -74,7 +74,7 @@ Bitte beachten Sie unsere <a href="">Geschäftsbedingungen</a>.
       <h2>datum</h2>
       <h3>titel</h3>
       <p>Trainer</p>
-      <a href="msa-details"><button class="button buttonBlue">Mehr Info</button></a>
+      <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
 
     </div><!-- content -->
