@@ -6,25 +6,24 @@ Live site is hosted by [netlify](https://netlify.com)
 
 ## Status
 
-![GitHub issues](https://img.shields.io/github/issues/arc42/arc42.de-site)
-![GitHub issues](https://img.shields.io/github/issues-raw/arc42/arc42.de-site)
+![GitHub open issues](https://img.shields.io/github/issues/arc42/arc42.de-site)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/arc42/arc42.de-site)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
-
+![GitHub language count](https://img.shields.io/github/languages/count/arc42/arc42.de-site)
 
 ## How does it work?
 
 * home.md is the homepage, it's mapped (via permalink) to "/".
 
-
+* The timeline (in `/termine`) is based upon [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) 
 
 ## Credits
 
-##### Michael Rose, creator of the Minimal-Mistakes Jekyll Theme
+### Site theme
+Thanx to Michael Rose, creator of the [Minimal-Mistakes Jekyll Theme](https://mademistakes.com),
+follow him on [Twitter](https://twitter.com/mmistakes).
 
-- <https://mademistakes.com>
-- <https://twitter.com/mmistakes>
-
-#### Icons + Images:
+### Icons + Images:
 
 * Free images can be found at [Unsplash](https://unsplash.com/)
 * I generated the various favicon files with [RealFavIconGenerator](http://realfavicongenerator.net/).
@@ -44,11 +43,7 @@ You are free to:
 * **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
 
 
-
-### [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
-
-
-##### The MIT License (MIT)
+### Website Theme: MIT License (MIT)
 
 Copyright (c) 2016ff Michael Rose
 
