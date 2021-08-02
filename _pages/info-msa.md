@@ -33,7 +33,6 @@ In Kürze (ausführliche Inhaltsbeschreibung siehe unten)
 * Kontextabgrenzung und externe Schnittstellen
 * Entwurfsmethodik, Domain- und Quality-Driven Architecture
 * Architektursichten
-* Entwurfsprinzipien – Kopplung, Kohäsion & Co.
 * Architekturmuster
 * Dokumentation von Architekturen
 * Analyse und Bewertung von Architekturen
@@ -42,7 +41,7 @@ In Kürze (ausführliche Inhaltsbeschreibung siehe unten)
 
 Sie erhalten neben ausführlichen Schulungs- und Übungsunterlagen diverse Fachbücher zur Vertiefung und späteren Referenz.
 
-
+![]()
 
 ## Zielgruppe
 Dieser Kurs richtet sich primär an Entwickler:innen und Architekt:innen, um die Rolle _Softwarearchitektur_ umfassend zu verstehen
@@ -62,4 +61,51 @@ Vorbereitung auf die iSAQB CPSA-Foundation (Certified Professional for Software 
 Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf diese Prüfung vorbereitet. 
 
 
+# Ausführliche Inhaltsbeschreibung
+
+### Grundbegriffe
+
+* Aufgaben, Rolle und Verantwortlichkeiten von Software-Architekten.
+* Architektur im Entwicklungsprozess
+* Klärung von Anforderungen
+* Ableitung von Qualitäts- und Architekturzielen
+
+### Architekturdokumentation
+
+* Ziele und Anforderungen an Architekturdokumentation
+* Typische Architekturdokumente
+* Architektursichten
+
+### Vorgehen bei der Architekturentwicklung:
+
+* Methodische Werkzeuge für den Entwurf von Softwarearchitekturen
+* Entwicklung fachlicher Architekturen
+* Domain-Driven Design
+* Quality-Driven Design: Taktiken und Praktiken zur Erreichung von Qualitätszielen
+* Top-Down und Bottom-Up Sichtweise
+
+
+### Architekursichten
+
+* Bausteinsicht: Bausteine und Schnittstellen
+* Übungen: Bausteine und Strukturen entwickeln
+
+* Laufzeitsicht: Abläufe und Szenarien entwickeln und beschreiben.
+* Übungen: Laufzeitszenarien
+  
+* Verteilungssicht: Infrastruktur und Deployment
+* Übung: Infrastruktur und deren Einfluss auf Baustein- und Laufzeitsicht
+
+### Querschnittliche Konzepte
+* konzeptioneller (_querschnittlicher_) Entwurf
+  
+
+### Patterns und Prinzipien
+
+* Architektur- und Entwurfsmuster
+* Entwurfsprinzipien
+
+### Analyse und Bewertung von Softwarearchitekturen
+* Qualitative und szenariobasierte Architekturbewertung (wie etwa ATAM)
+* Quantitative Bewertung und effektiver Einsatz von Metriken 
 
