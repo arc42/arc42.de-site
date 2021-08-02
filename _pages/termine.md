@@ -26,12 +26,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
 <div class="timeline">
 
 <div class="container right">
-  <div class="content">
+  <div class="content" style="background-color:silver;color:SlateGrey">
     <h4>21.-24. Sept 2021 (Frankfurt)</h4>
     <h3>Mastering Software Architectures (Ausgebucht, nur noch Warteliste)</h3>
     <p>Dr. Gernot Starke, Dr. Peter Hruschka.</p>
     <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonGrey">Anmeldung</button></a>
+    <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
 
   </div><!-- content -->
 </div><!-- container-->
