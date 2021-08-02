@@ -19,29 +19,20 @@ intro:
   - title: "arc42: Resourcen für Softwarearchiteenktur"
 
 feature_row:
-  - title: "Communicate"
-    image_path: /images/communicate-icon.svg
-    alt: "communicate-icon"
-    excerpt: "Effectively communicate architectures. Pragmatic views and crosscutting concepts, compatible to IEEE 1471."
+  - title: "Template"
+    
+    excerpt: "."
     url: "/overview"
-    btn_label: "Read More"
-    btn_class: "btn--info"
-
-  - image_path: /images/develop-icon.svg
-    alt: "develop-icon"
-    title: "Develop"
-    excerpt: "Build better systems. High quality, lean and lightweight."
-    url: "/develop"
-    btn_label: "Read More"
-    btn_class: "btn--info"
-
-  - image_path: /images/workshop-icon.svg
-    alt: "workshop-icon"
-    title: "Learn"
-    excerpt: "We've successfully trained hundreds of developers in our
-    **Mastering Software Architectures** workshops. Highly practical.
-    iSAQB Certification."
-    url: "/learn"
+    
+  - title: "Methodik"
+    excerpt: "Methodisch, aber dennoch flexibel. Passend für große und kleine Teams, in iterativen oder weniger agilen Prozessen."
+    url: "/method"
+    
+  - title: "Trainings"
+    excerpt: "Wir haben Hunderte Menschen in unserem bewährten
+    **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
+    Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor."
+    url: "/schulungen"
     btn_label: "Read More"
     btn_class: "btn--info"
 
