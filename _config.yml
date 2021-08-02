@@ -70,27 +70,12 @@ include:
   - .htaccess
   - _pages
 exclude:
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
+  - Gemfile.lock
   - LICENSE
-  - log
-  - node_modules
   - package.json
-  - Rakefile
-  - README
-  - tmp
+  - README.md
+  - images/originale
   - Dockerfile
   - _manage-site.sh
   - _docker*
