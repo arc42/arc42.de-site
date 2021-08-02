@@ -17,25 +17,26 @@ excerpt: "Wir freuen uns auf Sie!"
   <strong>Wer meldet an?</strong>
   <br>
 
-  <input type="text" id="lastname" name="lastname" placeholder="Nachname" size="20" required c />
+  <input type="text" id="lastname" name="lastname" placeholder="* Nachname" size="20" required c />
   <input type="text" id="firstname" name="vorname" placeholder="Vorname" size="20"  />
 
   <label for="email">E-Mail (für Anmeldebestätigung und Ähnliches)</label>
-  <input type="email" id="email" name="email" placeholder="E-Mail" required multiple />
+  <input type="email" id="email" name="email" placeholder="* E-Mail" required multiple />
 
-  <label for="kurs" class="required">Für welchen Kurs melden Sie an?</label>
+  <label for="kurs">Für welchen Kurs melden Sie an?</label>
   <select id="kurs" name="kursdatum" required>
-    <option value=""></option>
-    <option value="21-12">Mastering, 30.11-3.12. 2021, München</option>
-    <option value="21-11">IMPROVE, November 2021 Hamburg</option>
-    <option value="21-10">REQ4ARC, Oktober 2021 Frankfurt</option>
-    <option value="22-03">Mastering, März 2022 München</option>
+    <option value="*"></option>
+    <option value="21-10">REQ4ARC, 5.-7. Oktober 2021 Frankfurt</option>
+    <option value="21-11">IMPROVE, 23.-25. November 2021 Hamburg</option>
+    <option value="21-12">Mastering SW Architectures, 30.11-3.12. 2021, München</option>
+    <option value="22-03">Mastering SW Architectures, März 2022 München</option>
     <option value="sonstige">Sonstige</option>
   </select>
   
 <hr style="height:2px; width:100%; border-width:0; color:CadetBlue; background-color:CadetBlue">
  
   <strong>Teilnehmende Person(en)</strong>
+  <br>
 
   Falls Sie mehr als eine Person anmelden, schreiben Sie die weiteren Namen als Bemerkung.
   <input type="text" id="lastnameTN" name="lastnameTN" placeholder="Nachname teilnehmende Person"   />
@@ -45,7 +46,7 @@ excerpt: "Wir freuen uns auf Sie!"
   <input type="email" id="emailTN" name="emailTN" placeholder="E-Mail TN" multiple />
   
   <label for="ra">Rechnungsadresse</label>
-  <textarea id="ra" name="Rechnungsadresse" placeholder="Diese Adresse benötigen wir zur Abrechnung" required ></textarea>
+  <textarea id="ra" name="Rechnungsadresse" placeholder="* Diese Adresse benötigen wir zur Abrechnung" required ></textarea>
 
 <hr style="height:2px; width:100%; border-width:0; color:CadetBlue; background-color:CadetBlue">
     
@@ -57,13 +58,21 @@ excerpt: "Wir freuen uns auf Sie!"
   <button type="submit" class="button buttonRed" >Anmeldung absenden</button>
   <input type="button" value="Zurück" class="button buttonGrey" onclick="history.back()" style="float: right;">
   
-<!-- The following is the custom redirect configuration for Formspark -->
+<!-- 
+ The following is the custom redirect configuration for Formspark 
+
+ As we generate static HTML, we do NOT want to append field values to the redirect URL
+-->
 
 <input
     type="hidden"
     name="_redirect"
     value="{{ '/anmeldung-erfolg' | absolute_url }}"
   />  
+<input type="hidden" name="_append" value="false" />
+
+
 </form>
+
 
 
