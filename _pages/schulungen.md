@@ -16,6 +16,7 @@ sidebar:
 
 ---
 
+
 ## Breites Angebot
 
 [Grundlagen der <br/>Softwarearchitektur](/info-msa){: .btn .btn--primary}

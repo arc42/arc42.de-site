@@ -6,10 +6,24 @@ Live site is hosted by [netlify](https://netlify.com)
 
 ## Status
 
+### Github issues
 ![GitHub open issues](https://img.shields.io/github/issues/arc42/arc42.de-site)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/arc42/arc42.de-site)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
+![Github issues total](https://badgen.net/github/issues/arc42/arc42.de-site)
+
 ![GitHub language count](https://img.shields.io/github/languages/count/arc42/arc42.de-site)
+
+### Build
+[![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
+
+### Site up/downtime
+That's what [UptimeRobot](https://uptimerobot.com) says to its uptime (hosting via Netlify):
+![](https://badgen.net/uptime-robot/day/m778709372-640fbdf765be9486dbffe066)
+![](https://badgen.net/uptime-robot/week/m778709372-640fbdf765be9486dbffe066)
+![](https://badgen.net/uptime-robot/month/m778709372-640fbdf765be9486dbffe066)
+![](https://badgen.net/uptime-robot/response/m778709372-640fbdf765be9486dbffe066)
+
+
 
 ## How does it work?
 
