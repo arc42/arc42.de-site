@@ -12,7 +12,8 @@ excerpt: "Wir freuen uns auf Sie!"
 ---
 
 
-<form action="https://submit-form.com/AIKiYyJP">
+<form action="https://submit-form.com/AIKiYyJP"
+      data-botpoison-public-key="pk_8e195655-38ed-4eec-a445-a1e0d68a488d">
 
   <strong>Wer meldet an?</strong>
   <br>
