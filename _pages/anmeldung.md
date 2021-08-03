@@ -13,7 +13,8 @@ excerpt: "Wir freuen uns auf Sie!"
 
 
 <form action="https://submit-form.com/AIKiYyJP"
-      data-botpoison-public-key="pk_8e195655-38ed-4eec-a445-a1e0d68a488d">
+      data-botpoison-public-key="pk_8e195655-38ed-4eec-a445-a1e0d68a488d"
+      id="arc42anmeldung">
 
   <strong>Wer meldet an?</strong>
   <br>
@@ -56,7 +57,7 @@ excerpt: "Wir freuen uns auf Sie!"
 
 <hr style="height:2px; width:100%; border-width:0; color:CadetBlue; background-color:CadetBlue">
   
-  <button type="submit" class="button buttonRed" >Anmeldung absenden</button>
+  <button type="submit" id="submit" class="button buttonRed" >Anmeldung absenden</button>
   <input type="button" value="Zurück" class="button buttonGrey" onclick="history.back()" style="float: right;">
   
 <!-- 
@@ -75,5 +76,17 @@ excerpt: "Wir freuen uns auf Sie!"
 
 </form>
 
-
+<script>
+  var formElement = document.getElementById("arc42anmeldung");
+  var buttonElement = document.getElementById("submit");
+  formElement.addEventListener("botpoison-challenge-start", function () {
+    buttonElement.setAttribute("disabled", "disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-success", function () {
+    buttonElement.removeAttribute("disabled");
+  });
+  formElement.addEventListener("botpoison-challenge-error", function () {
+    buttonElement.removeAttribute("disabled");
+  });
+</script>
 

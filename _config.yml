@@ -114,6 +114,10 @@ sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+# the botpoison browser script is required for spam-protection in the Anmeldung-Form
+# see https://documentation.formspark.io/setup/spam-protection.html#botpoison
+head_scripts:
+  - https://unpkg.com/@botpoison/browser
 
 # Outputting
 permalink: /:categories/:title/

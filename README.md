@@ -1,43 +1,84 @@
-# arc42.de Website
+# [arc42.de](https://arc42.de) Website
 
-> currently available on [arc42.de](https://arc42.de)
-
-Live site is hosted by [netlify](https://netlify.com)
+Live site is hosted by [netlify](https://netlify.com).
 
 ## Status
 
-### Github issues
+[![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
+![](https://badgen.net/uptime-robot/month/m778709372-640fbdf765be9486dbffe066)
+![](https://badgen.net/uptime-robot/week/m778709372-640fbdf765be9486dbffe066)
+
+Uptime stats by [UptimeRobot](https://uptimerobot.com).
+
+
 ![GitHub open issues](https://img.shields.io/github/issues/arc42/arc42.de-site)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/arc42/arc42.de-site)
 ![Github issues total](https://badgen.net/github/issues/arc42/arc42.de-site)
 
-![GitHub language count](https://img.shields.io/github/languages/count/arc42/arc42.de-site)
-
-### Build
-[![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
-
-### Site up/downtime
-That's what [UptimeRobot](https://uptimerobot.com) says to its uptime (hosting via Netlify):
-![](https://badgen.net/uptime-robot/day/m778709372-640fbdf765be9486dbffe066)
-![](https://badgen.net/uptime-robot/week/m778709372-640fbdf765be9486dbffe066)
-![](https://badgen.net/uptime-robot/month/m778709372-640fbdf765be9486dbffe066)
-![](https://badgen.net/uptime-robot/response/m778709372-640fbdf765be9486dbffe066)
 
 
+# How does it work?
 
-## How does it work?
+## General
+The site is build and created with Jekyll and Markdown. 
+It uses the MinimalMistakes template, with a few slight modifications
 
 * home.md is the homepage, it's mapped (via permalink) to "/".
 
 * The timeline (in `/termine`) is based upon [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) 
 
-## Credits
+## Local development
 
-### Site theme
+> Prequisite: Local build uses a Docker container. You therefore have to have a docker installed. 
+
+1. checkout the repo
+1. 
+
+## Form support (for "Anmeldung") and Spam protection
+We use [formspark.io](formspark.io) as backend provider for our "Anmeldung".
+
+For spam protection within the form, we use [Botpoison](https://botpoison.com/),
+see especially their [getting started with HTML](https://botpoison.com/documentation/getting-started/html/) article:
+
+>1.Import the @botpoison/browser script.<br>
+>2. Add your public key to the data-botpoison-public-key attribute.<br>
+>3. The solution will automatically be attached to the submission (as the _botpoison field).
+
+Formspark supports Botposion, see [their documentation](https://documentation.formspark.io/setup/spam-protection.html#botpoison) on integrating:
+
+1. Create the Botpoison publik and secret keys, as explained above
+2. In your form's settings, select Botpoison under Spam Protection.
+3. Copy the secret key, paste it into the Botpoison secret key field in the Formspark form configuration
+4. Add the Botpoison public key to the HTML of the form:
+
+```
+<form
+      method="POST"
+      action="https://submit-form.com/your-form-id"
+      data-botpoison-public-key="your-botpoison-public-key"
+      target="_blank"
+>
+```
+
+In our concrete case, that looks as follows (file `_pages/anmeldung.md`)
+
+```
+<form action="https://submit-form.com/AIKiYyJP"
+      data-botpoison-public-key="pk_8e195655-38ed-4eec-a445-a1e0d68a488d">
+
+```
+
+
+### In
+
+
+# Credits
+
+## Site theme
 Thanx to Michael Rose, creator of the [Minimal-Mistakes Jekyll Theme](https://mademistakes.com),
 follow him on [Twitter](https://twitter.com/mmistakes).
 
-### Icons + Images:
+## Icons + Images:
 
 * Free images can be found at [Unsplash](https://unsplash.com/)
 * I generated the various favicon files with [RealFavIconGenerator](http://realfavicongenerator.net/).
