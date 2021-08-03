@@ -23,13 +23,13 @@ Wir fokussieren dabei auf den architekturrelevanten Themen – beispielsweise de
 
 
 ### Inhalt
-• Typische Probleme mit Anforderungen in Entwicklungsprojekten
-• Clean Start: Ziele, Scope und Kontext
-• Funktionale Anforderungen: Von Zielen zu Features
-• Qualitätsanforderungen
-• Behaviour-Driven Development
-• Priorisierung von Anforderungen
-• Effektive Kooperation mit anderen Projektrollen
+* Typische Probleme mit Anforderungen in Entwicklungsprojekten
+* Clean Start: Ziele, Scope und Kontext
+* Funktionale Anforderungen: Von Zielen zu Features
+* Qualitätsanforderungen
+* Behaviour-Driven Development
+* Priorisierung von Anforderungen
+* Effektive Kooperation mit anderen Projektrollen
 
 
 
