@@ -26,7 +26,7 @@ sidebar:
 [ADOC: <br/>Architekturdokumentation](/info-adoc){: .btn .btn--info}
 
 
-## Weiterbildung vom Feinsten
+## Weiterbildung vom Feinsten, mit oder ohne Zertifizierung
 
 ![](/images/arc42-learn-cpsaf.png)
 

@@ -14,6 +14,8 @@ sidebar:
 ---
 
 [Download<br/>Kursbeschreibung (pdf)](/info-msa){: .btn .btn--primary}
+<a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+
 
 # Grundlagen und Methodik erfolgreicher Softwarearchitektur
 
