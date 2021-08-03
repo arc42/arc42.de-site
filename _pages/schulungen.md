@@ -19,7 +19,7 @@ sidebar:
 
 ## Breites Angebot
 
-[Grundlagen der <br/>Softwarearchitektur](/info-msa){: .btn .btn--primary}
+[<br/>Grundlagen und Methodik erfolgreicher Softwarearchitektur<br/>](/info-msa){: .btn .btn--primary}
 <p/>
 [REQ4ARC: <br/>bessere Anforderungen](/info-req4arc){: .btn .btn--warning}
 [IMPROVE: <br/>Systeme verbessern](/info-improve){: .btn .btn--success}
@@ -28,9 +28,12 @@ sidebar:
 
 ## Weiterbildung vom Feinsten, mit oder ohne Zertifizierung
 
+Seit vier Jahrzehnten arbeiten wir daran, durch Schulung und Beratung Architektur-Know-How in die Praxis zu übertragen. In diesem Zeitraum haben wir Hunderte Kurse in Deutschland und auch im Rest der Welt gehalten und zahllose Personen und Teams an gute Architekturarbeit herangeführt. 
+
 ![](/images/arc42-learn-cpsaf.png)
 
-Wir sind Gründungsmitglieder des iSAQB e.V. und aktiv in den Arbeitsgruppen des iSAQB tätig.
+2008 haben wir als Gründungsmitglieder den iSAQB e.V. (International Software Architecture Qualification Board) aus der Taufe gehoben, um der Rolle "Software Architect" durch dieses Qualifizierungs- und Zertifizierungsprogramm noch mehr Stellenwert zu geben.  
+Wir sind seither aktiv in den Arbeitsgruppen des iSAQB tätig.
 
 Seit 2016 leitet Gernot die _Foundation Level Working Group_ und verantwortet in dieser Aufgabe die Pflege und Aktualisierung des Foundation-Lehrplans
 sowie die zugehörigen Prüfungsfragen.
