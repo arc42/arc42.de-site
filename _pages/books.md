@@ -29,6 +29,10 @@ This book serves as study guide for the CPSA-F (Certified Professional for Softw
 
 In addition it describes the examination process, together with dozens of sample examination questions.
 
+**Januar 2021: arc42-by-Example Vol.2**
+
+
+
 ## 2020
 
 
@@ -102,6 +106,13 @@ Gernot Starke, Ralf D. Müller, Michael Simons, Stefan Zörner: veröffentlicht 
 Aufgrund des Erfolgs bei Leanpub (siehe unten) hat Packt-Publishing das Buch auch ins Programm aufgenommen. Sie haben exakt die pdf-Version von Leanpub übernommen - und ein (wie wir finden schön farbenfrohes) Cover für uns entworfen. Damit sind wir jetzt auch im O'Reilly Safari online Programm sichtbar.
 
 <hr/>
+
+**Oktober 2019: Business Analysis und Requirements Engineering**
+![](/images/books/arc42-primer.png){: .align-right}
+Peter Hruschka: Business Analysis und Requirements Engineering - Produkte und Prozesse nachhaltig verbessern. Veröffentlicht bei C. Hanser Verlag, München.
+Verfügbar in verschiedenen Formaten (Papier, eBooks).
+
+Das Buch sollten Sie als Development-Team, das sich mit schlechten Anforderungen konfrontiert sieht, Ihren Product Ownern, Business Analysts oder Requirements-Engineers schenken. Nicht vergessen, zu überprüfen, ob die das auch gelesen und verinnerlicht haben. Dann kehrt wieder mehr Spaß in die Architekturarbeit ein.
 
 **März 2019: arc42-Primer**
 
