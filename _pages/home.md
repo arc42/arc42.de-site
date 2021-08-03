@@ -20,8 +20,7 @@ intro:
 
 feature_row:
   - title: "Template"
-    
-    excerpt: "."
+    excerpt: "Methodisch, aber dennoch flexibel. Passend für große und kleine Teams, in iterativen oder weniger agilen Prozessen."
     url: "/overview"
     
   - title: "Trainings"
@@ -29,11 +28,15 @@ feature_row:
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor."
     url: "/schulungen"
-    btn_label: "Read More"
+    btn_label: "mehr dazu ..."
     btn_class: "btn--info"
 
   - title: "News"
-    excerpt: "Methodisch, aber dennoch flexibel. Passend für große und kleine Teams, in iterativen oder weniger agilen Prozessen."
+    excerpt: "Lesen Sie unseren Artikel "Handeln statt jammern" und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
+    
+    Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: Software Architecture Foundation.
+    
+    Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - Vol 2. Embedded Systems and IoT"
     url: "/method"
     
 
