@@ -1,5 +1,5 @@
 ---
-title: "arc42"
+title: "Alles was Sie für erfolgreiche Softwarearchitektur brauchen"
 layout: splash
 permalink: /
 header:
@@ -12,21 +12,17 @@ header:
       url: /overview
     - label: "&#8594; English site..."
       url: "https://arc42.org"
-excerpt: "Alles was Sie zum **entwerfen, kommunizieren und dokumentieren** Ihrer Softwarearchitektur brauchen. **Bewährt, praktisch und pragmatisch**.
-Frei verfügbar und open-source. **takes the pain out of documentation**."
+excerpt: "**Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch**.
+**Frei verfügbar, Open-Source** und **schmerzfrei.**"
 
 intro:
-  - title: "arc42: Resourcen für Softwarearchiteenktur"
+  - title: "arc42: Resourcen für Softwarearchitektur"
 
 feature_row:
   - title: "Template"
     
     excerpt: "."
     url: "/overview"
-    
-  - title: "Methodik"
-    excerpt: "Methodisch, aber dennoch flexibel. Passend für große und kleine Teams, in iterativen oder weniger agilen Prozessen."
-    url: "/method"
     
   - title: "Trainings"
     excerpt: "Wir haben Hunderte Menschen in unserem bewährten
@@ -35,6 +31,11 @@ feature_row:
     url: "/schulungen"
     btn_label: "Read More"
     btn_class: "btn--info"
+
+  - title: "News"
+    excerpt: "Methodisch, aber dennoch flexibel. Passend für große und kleine Teams, in iterativen oder weniger agilen Prozessen."
+    url: "/method"
+    
 
 ---
 

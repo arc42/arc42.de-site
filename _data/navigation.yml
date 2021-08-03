@@ -6,7 +6,7 @@ main:
     url: /termine
   - title: Schulungen
     url: /schulungen  
-  - title: Bücher
+  - title: Publikationen
     url: /books
   - title: "Download"
     url: "https://arc42.org/download"

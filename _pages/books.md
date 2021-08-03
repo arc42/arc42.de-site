@@ -1,6 +1,6 @@
 ---
 title: Bücher von Peter Hruschka und Gernot Starke
-excerpt: wir beschäftigen uns
+excerpt: wir können's nicht lassen &#128540;
 layout: single
 classes: wide
 toc: false
