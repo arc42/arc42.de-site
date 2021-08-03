@@ -46,7 +46,20 @@ see especially their [getting started with HTML](https://botpoison.com/documenta
 
 Formspark supports Botposion, see [their documentation](https://documentation.formspark.io/setup/spam-protection.html#botpoison) on integrating:
 
-1. Create the Botpoison publik and secret keys, as explained above
+### 1: Integrate Botpoison script
+
+In `config.yml`, add the following lines:
+
+```
+# the botpoison browser script is required for spam-protection in the Anmeldung-Form
+# see https://documentation.formspark.io/setup/spam-protection.html#botpoison
+head_scripts:
+  - https://unpkg.com/@botpoison/browser
+```
+
+### 2: Add required info to form
+
+1. Create the Botpoison publik and secret keys, as explained in Botpoison setup guide
 2. In your form's settings, select Botpoison under Spam Protection.
 3. Copy the secret key, paste it into the Botpoison secret key field in the Formspark form configuration
 4. Add the Botpoison public key to the HTML of the form:
