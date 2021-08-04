@@ -25,14 +25,24 @@ It uses the MinimalMistakes template, with a few slight modifications
 
 * home.md is the homepage, it's mapped (via permalink) to "/".
 
-* The timeline (in `/termine`) is based upon [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) 
 
 ## Local development
 
-> Prequisite: Local build uses a Docker container. You therefore have to have a docker installed. 
+> Prequisite: Local build uses a Docker container. You therefore have to have Docker installed. 
 
 1. checkout the repo
-1. 
+2. run the script `_manage-site.sh`
+
+It will start a local jekyll and will serve the generated content on `0.0.0.0:4000`
+
+
+## Custom css
+
+* The timeline (in `/termine`) is based upon [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) 
+* Some buttons are also based upon w3schools definition.
+
+Custom css is located in `/assets/css`, the required import statement in `/assets/css/main.scss`
+
 
 ## Form support (for "Anmeldung") and Spam protection
 We use [formspark.io](formspark.io) as backend provider for our "Anmeldung".
@@ -44,7 +54,6 @@ see especially their [getting started with HTML](https://botpoison.com/documenta
 >2. Add your public key to the data-botpoison-public-key attribute.<br>
 >3. The solution will automatically be attached to the submission (as the _botpoison field).
 
-Formspark supports Botposion, see [their documentation](https://documentation.formspark.io/setup/spam-protection.html#botpoison) on integrating:
 
 ### 1: Integrate Botpoison script
 
@@ -81,8 +90,6 @@ In our concrete case, that looks as follows (file `_pages/anmeldung.md`)
 
 ```
 
-
-### In
 
 
 # Credits
