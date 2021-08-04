@@ -46,22 +46,17 @@ feature_row:
 
 {% include feature_row %}
 
+arc42 basiert auf der **praktischen Erfahrung** vieler Systeme in verschiedenen Bereichen, von Informations- und Websystemen über Echtzeit- und Embedded-Systeme bis hin zu Business Intelligence und Data Warehouses.
 
-arc42 is based on **practical experience** of many systems in various domains,
-from information and web systems, real-time and embedded to business intelligence
-and data warehouses.
+arc42 bietet eine Vorlage für die **Dokumentation und Kommunikation** von Software- und Systemarchitekturen.
 
-arc42 provides a template for **documentation and communication** of software and system
-architectures.
+arc42 unterstützt **beliebige Technologien und Werkzeuge**.
 
-arc42 supports **arbitrary technologies and tools**.
+arc42 ist vollständig prozessagnostisch und eignet sich besonders gut für **schlanke und agile** Entwicklungsansätze.
 
-arc42 is completely process-agnostic, and especially
-well-suited for **lean and agile** development approaches.
+arc42 ist **Open-Source** und kann sowohl im kommerziellen als auch im privaten Bereich **kostenlos** genutzt werden. Details finden Sie auf unserer [Lizenzseite](/license).
 
-arc42 is open-source and can be used **free of charge**, in commercial and
-private situations.
-See our [license page](/license) for details.
+
 
 # Open-Source Site (English)!
 
