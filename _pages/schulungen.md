@@ -19,11 +19,17 @@ sidebar:
 
 ## Breites Angebot
 
-[<br/>Grundlagen und Methodik erfolgreicher Softwarearchitektur<br/>](/info-msa){: .btn .btn--primary}
+<a href="info-msa"><button class="button buttonMSA" style="width:76%;">
+Grundlagen und Methodik<br/>erfolgreicher Softwarearchitektur</button></a>
+
 <p/>
-[REQ4ARC: <br/>bessere Anforderungen](/info-req4arc){: .btn .btn--warning}
-[IMPROVE: <br/>Systeme verbessern](/info-improve){: .btn .btn--success}
-[ADOC: <br/>Architekturdokumentation](/info-adoc){: .btn .btn--info}
+<a href="info-req4arc"><button class="button buttonReq4Arc" style="width:25%;">
+REQ4ARC: <br/>bessere Anforderungen</button></a>
+<a href="info-req4arc"><button class="button buttonImprove" style="width:25%;">
+IMPROVE: <br/>Systeme verbessernn</button></a>
+<a href="info-req4arc"><button class="button buttonAdoc" style="width:25%;">
+ADOC: <br/>Architekturdokumentation</button></a>
+
 
 
 ## Weiterbildung vom Feinsten, mit oder ohne Zertifizierung
@@ -52,4 +58,10 @@ Wir beide haben unsere umfangreichen Erfahrungen in unterschiedlichen Bereichen 
 Peter mehr im Bereich eingebettete Systeme und Echtzeitsysteme, Gernot mehr in Informations-, Web- und Batch-Systemen.
 Dieses breite Erfahrungsspektrum bietet Teilnehmenden die perfekte Möglichkeit, Erfahrungsberichte und Ratschläge aus erster Hand aus diesen unterschiedlichen Bereichen zu erhalten.
 
+
+ ### und nun...
+
+<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/"><button class="button buttonHome">Home</button></a>
 
