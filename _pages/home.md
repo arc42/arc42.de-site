@@ -20,7 +20,8 @@ intro:
 
 feature_row:
   - title: "Template"
-    excerpt: "Methodisch, aber dennoch flexibel. Passend für große und kleine Teams, in iterativen oder weniger agilen Prozessen."
+    excerpt: "Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
+    Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, schmerzlos, rasch**."
     url: "/overview"
     
   - title: "Trainings"
@@ -32,11 +33,11 @@ feature_row:
     btn_class: "btn--info"
 
   - title: "News"
-    excerpt: "Lesen Sie unseren Artikel 'Handeln statt jammern' und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
+    excerpt: "Lesen Sie unseren Artikel 'Handeln statt jammern' und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.</br>
     
-    Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: Software Architecture Foundation.
+    Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: Software Architecture Foundation.</br>
     
-    Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - Vol 2. Embedded Systems and IoT"
+    Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - Vol 2. Embedded Systems and IoT"</br>
     url: "/method"
     
 
