@@ -26,9 +26,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
 <div class="timeline">
 
 <div class="container right">
-  <div class="content" style="background-color:silver;color:SlateGrey">
+  <div class="content" style="background-color:gainsboro;color:darkgrey">
     <h4>21.-24. Sept 2021 (Frankfurt)</h4>
-    <h3>Mastering Software Architectures (Ausgebucht, nur noch Warteliste)</h3>
+    <h3>Mastering Software Architectures</h3> 
+    <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
     <p>Dr. Gernot Starke, Dr. Peter Hruschka.</p>
     <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
@@ -44,7 +45,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
       Praxisnah, pragmatisch, effektiv.
       Perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
-      <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
     </div><!-- content -->
   </div> <!-- container-->

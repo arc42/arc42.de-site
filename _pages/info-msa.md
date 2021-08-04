@@ -1,6 +1,6 @@
 ---
 title: "Mastering Software Architectures"
-layout: single
+layout: splash
 classes: wide
 permalink: /info-msa
 header:
@@ -8,13 +8,11 @@ header:
   overlay_image: /images/splash/learn-header-helloquence.jpg
   caption: "Photo: [**helloquence**](https://unsplash.com/photos/5fNmWej4tAA)"
 
-sidebar:
-  nav: "schulungen"
 
 ---
 
-[Download<br/>Kursbeschreibung (pdf)](/info-msa){: .btn .btn--primary}
-<a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+<a href="/downloads/flyer-msa.pdf"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 
 # Grundlagen und Methodik erfolgreicher Softwarearchitektur
@@ -110,4 +108,11 @@ Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf 
 ### Analyse und Bewertung von Softwarearchitekturen
 * Qualitative und szenariobasierte Architekturbewertung (wie etwa ATAM)
 * Quantitative Bewertung und effektiver Einsatz von Metriken 
+
+
+## und nun...
+
+<a href="anmeldung"><button class="button buttonAnmeldung">Noch eine<br>Anmeldung</button></a>
+<a href="termine"><button class="button buttonRoyalBlue">Ab zu den<br>Terminen</button></a>
+<a href="/"><button class="button buttonHome">Take me<br>home</button></a>
 
