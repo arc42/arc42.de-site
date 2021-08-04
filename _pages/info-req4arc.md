@@ -35,3 +35,9 @@ Wir fokussieren dabei auf den architekturrelevanten Themen – beispielsweise de
 
 
 
+### und nun...
+
+<a href="anmeldung"><button class="button buttonAnmeldung">Noch eine<br>Anmeldung</button></a>
+<a href="termine"><button class="button buttonRoyalBlue">Ab zu den<br>Terminen</button></a>
+<a href="/"><button class="button buttonHome">Take me<br>home</button></a>
+

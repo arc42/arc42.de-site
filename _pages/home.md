@@ -32,7 +32,7 @@ feature_row:
     btn_class: "btn--info"
 
   - title: "News"
-    excerpt: "Lesen Sie unseren Artikel "Handeln statt jammern" und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
+    excerpt: "Lesen Sie unseren Artikel 'Handeln statt jammern' und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
     Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: Software Architecture Foundation.
     

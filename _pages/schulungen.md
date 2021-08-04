@@ -19,11 +19,17 @@ sidebar:
 
 ## Breites Angebot
 
-[<br/>Grundlagen und Methodik erfolgreicher Softwarearchitektur<br/>](/info-msa){: .btn .btn--primary}
+<a href="info-msa"><button class="button buttonMSA" style="width:76%;">
+Grundlagen und Methodik<br/>erfolgreicher Softwarearchitektur</button></a>
+
 <p/>
-[REQ4ARC: <br/>bessere Anforderungen](/info-req4arc){: .btn .btn--warning}
-[IMPROVE: <br/>Systeme verbessern](/info-improve){: .btn .btn--success}
-[ADOC: <br/>Architekturdokumentation](/info-adoc){: .btn .btn--info}
+<a href="info-req4arc"><button class="button buttonReq4Arc" style="width:25%;">
+REQ4ARC: <br/>bessere Anforderungen</button></a>
+<a href="info-req4arc"><button class="button buttonImprove" style="width:25%;">
+IMPROVE: <br/>Systeme verbessernn</button></a>
+<a href="info-req4arc"><button class="button buttonAdoc" style="width:25%;">
+ADOC: <br/>Architekturdokumentation</button></a>
+
 
 
 ## Weiterbildung vom Feinsten, mit oder ohne Zertifizierung
