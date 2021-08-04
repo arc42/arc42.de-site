@@ -26,7 +26,7 @@ Wir bearbeiten Anmeldungen _von Hand_ - es könnte also etwas dauern...
 
 ### und nun...
 
-<a href="anmeldung"><button class="button buttonRed">Noch eine<br>Anmeldung</button></a>
+<a href="anmeldung"><button class="button buttonAnmeldung">Noch eine<br>Anmeldung</button></a>
 <a href="termine"><button class="button buttonRoyalBlue">Ab zu den<br>Terminen</button></a>
 <a href="/"><button class="button buttonHome">Take me<br>home</button></a>
 
