@@ -31,5 +31,18 @@ Die Kontextabgrenzung gehört zu den wichtigsten Instrumenten in Softwarearchite
 
 {% include video id="65lCw01aJkE" provider="youtube" %}
 
+## Qualität - ein problematischer Begriff
 
-{% include video id= "" provider="youtube" %}
+"Qualität" bedeutet umgangssprachlich "etwas Gutes" - aber diese Definition ist für Softwarearchitektur viel zu unspezifisch.
+
+An Beispiel zeige ich, warum wir Qualitätsanforderungen deutlich spezifischer und konkreter formulieren müssen, als das in vielen Projekten geschieht.
+
+{% include video id= "EzwyXMS996Y" provider="youtube" %}
+
+## Explain your architecture with arc42
+
+How do you explain your software architecture to fellow developers, management or other stakeholders?
+
+arc42 promises _painless documentation_ - and in this talk Dr. Gernot Starke will show you how 
+
+{% include video id= "wNK_GthqZLU" provider="youtube" %}
