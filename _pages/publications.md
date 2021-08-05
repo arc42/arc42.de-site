@@ -1,8 +1,8 @@
 ---
 title: "Publikationen"
-layout: splash
+layout: single
 
-permalink: /publikationen
+permalink: /publications
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/publications-unsplash.jpg
@@ -10,11 +10,18 @@ header:
 
 excerpt: "wir schreiben und sprechen über Architektur...<span style='font-size:80px;'>&#128521;</span>"
 
+sidebar:
+  nav: "publications"
 
 ---
 
-sidebar:
-  nav: "publications"
+## Bücher
+
+## Artikel und Blogposts
+
+## Vorträge ("slides")
+
+## Videos 
 
 
 

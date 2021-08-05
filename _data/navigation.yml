@@ -7,11 +7,22 @@ main:
   - title: Schulungen
     url: /schulungen  
   - title: Publikationen
-    url: /books
+    url: /publications
   - title: "Download"
     url: "https://arc42.org/download"
   - title: "Über..."
     url: /about
+
+publications:
+  - title: Publikationen
+    url: /publications
+    children:
+    - title: Bücher
+      url: /books
+    - title: Artikel
+      url: /articles
+    - title: Videos
+      url: /videos
 
 schulungen:
   - title: Schulungsangebot

@@ -1,22 +1,18 @@
 ---
-title: "Alles was Sie für erfolgreiche Softwarearchitektur brauchen"
+title: "Erfolgreiche Softwarearchitektur"
 layout: splash
 permalink: /
 header:
   overlay_color: "#d7ecf8"
   overlay_filter: rgba(15, 80, 180, 0.4)
   overlay_image: /images/splash/arc42-splash-landingpage.jpg
-
   actions: 
     - label: "Übersicht"
       url: /overview
     - label: "&#8594; English site..."
       url: "https://arc42.org"
-excerpt: "**Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch**.
-**Frei verfügbar, Open-Source** und **schmerzfrei.**"
+excerpt: "**Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei.**"
 
-intro:
-  - title: "arc42: Resourcen für Softwarearchitektur"
 
 feature_row:
   - title: "Template"
@@ -32,13 +28,13 @@ feature_row:
     btn_label: "mehr dazu ..."
     btn_class: "btn--info"
 
-  - title: "News"
+- title: "News"
     excerpt: "![](/images/news.png) Lesen Sie unseren Artikel 'Handeln statt jammern' und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.</br>
     
     Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: Software Architecture Foundation.</br>
     
     Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - Vol 2. Embedded Systems and IoT"</br>
-    url: "/method"
+    url: "/news"
     
 
 ---
