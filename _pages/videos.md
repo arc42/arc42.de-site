@@ -1,6 +1,6 @@
 ---
 title: Videos von und über arc42
-excerpt: "wir sprechen drüber...<span style='font-size:80px;'>&#128253;</span>"
+excerpt: "wir sprechen drüber..."
 layout: single
 
 toc: right
@@ -10,6 +10,8 @@ header:
   overlay_image: /images/splash/video-unsplash.jpg
   caption: "Photo: [**Jakob Owens**]()"
 
+sidebar:
+  nav: "publications"
 ---
 
 Manchmal drehen wir selbst, oft sprechen wir auf Konferenzen.
@@ -46,3 +48,10 @@ How do you explain your software architecture to fellow developers, management o
 arc42 promises _painless documentation_ - and in this talk Dr. Gernot Starke will show you how 
 
 {% include video id= "wNK_GthqZLU" provider="youtube" %}
+
+## Sparsame Dokumentation mit arc42
+
+Wie erklärst Du jemandem Deine Softwarearchitektur? Genau - mit arc42. Schauen wir uns gemeinsam mit Gernot Starke an, wie das in der Praxis funktioniert, und wie Du das Template angemessen einsetzen kannst.
+Diesmal konzentrieren wir uns auf die wesentlichen Bestandteile („Das Minimum“), und schauen uns die anhand von Beispielen an.
+
+{% include video id= "2tlg0B60ef8" provider="youtube" %}

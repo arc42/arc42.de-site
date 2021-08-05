@@ -11,6 +11,8 @@ header:
   overlay_image: /images/magazines-unsplash.jpg
   caption: "Photo: [**Charisse Kenion**](https://unsplash.com/@charissek)"
 
+sidebar:
+  nav: "publications"
 ---
 
 Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-school auf Papier, manchmal auch online.
