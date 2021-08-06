@@ -136,6 +136,7 @@ Dazu haben wir ein einfaches Template mit 12 Kapiteln entwickelt, in denen Sie a
 
 ![](/images/template/template-struktur-focus.png)
 
+
 Den Kern der Architekturdokumentation bilden die Kontexabgrenzung (Kap. 3), die drei Sichten (Bausteinsicht, Laufzeitsicht und Verteilungssicht - Kap. 5 - 7), sowie die querschnittlichen Konzepte (Kap. 8).
 
 Die restlichen Kapitel runden die Dokumentation ab. Sie halten u.a. Ziele, wichtige Entscheidungen und Risiken fest. Ein abeschließendes Glossar stellt sicher, dass alle über das Gleiche sprechen.
