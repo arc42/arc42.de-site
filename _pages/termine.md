@@ -35,8 +35,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 
     </div><!-- content -->
-  </div> <!-- container-->
-  <div class="container left">
+</div> <!-- container-->
+
+<div class="container left">
     <div class="content">
       5.-7. Okt. 2021, Frankfurt<br>
       <strong style="color:DarkBlue;">REQ4ARC (CPSA-Advanced)</strong><br>
@@ -49,8 +50,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 
- </div><!-- content -->
+  </div><!-- content -->
   </div> <!-- container-->
+
   <div class="container right">
     <div class="content">
       23.-25. Nov. 2021, Hamburg<br>
@@ -78,13 +80,25 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
        Early-Bird-Preis bei Anmeldung bis 27. August 2021: € 2300,-,Frühbucherpreis bei Anmeldung bis 24. September 2021: € 2.590,-,
        Normalpreis: € 2.790,-
      </p>
-
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-         
   </div><!-- content -->
   </div> <!-- container-->
  
- 
+  <div class="container right">
+    <div class="content">
+      1.-3. März 2022, online<br>
+      <strong style="color:DarkBlue;">IMPROVE (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke und Peter Hruschka</p>
+      <p style="font-size-adjust: 0.4;">
+        Aufgrund der online-Durchführung reduzierter Preis!
+        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. Nov. 2021: € 1.650,-, 
+        Frühbucherpreis bei Anmeldung bis 15. Januar 2022: € 1.800,-
+        Normalpreis: € 2.000,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.800.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+</div><!-- container-->
  
 </div>
