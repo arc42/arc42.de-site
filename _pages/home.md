@@ -21,17 +21,18 @@ template_training_news:
     Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, schmerzlos, rasch**."
     url: "/overview"
     btn_label: "mehr dazu ..."
-    btn_class: "btn--info"
+    btn_class: "btn--primary"
     
   - title: "Trainings"
     excerpt: "![](/images/home/training.png)<br>
     Wir haben Hunderte Menschen in unserem bewährten
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
-    Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor."
-    url: "/schulungen"
-    btn_label: "unsere Schulungen"
-    btn_class: "btn--info"
-
+    Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor.<br>
+    <br>
+    <a href='anmeldung'><button class='button buttonAnmeldung'>Anmeldung</button></a>
+    <a href='schulung'><button class='button buttonGrey'>mehr zu Schulungen</button></a>"
+    
+    
   - title: "News"
     excerpt: "![](/images/home/news.png)<br>
     
@@ -50,7 +51,7 @@ methode_publications_consulting:
     "
     url: "/method"
     btn_label: "mehr dazu..."
-    btn_class: "btn--info"  
+    btn_class: "btn--primary"  
 
   - title: "arc42 Lesestoff"
     excerpt: "![](/images/home/publikationen.png)<br>
@@ -59,7 +60,7 @@ methode_publications_consulting:
     Stöbern Sie in unseren Büchern, Artikeln, Vorträgen oder Videos."
     url: "/publications"
     btn_label: "mehr dazu..."
-    btn_class: "btn--info"
+    btn_class: "btn--primary"
   
   - title: "Consulting"
     excerpt: "![](/images/home/consulting.png)<br>
@@ -68,7 +69,7 @@ methode_publications_consulting:
     Lesen Sie mehr über unsere Angebote an Beratung, Reviews oder praktische Unterstützung für Ihre Projekte."
     url: "/consulting"
     btn_label: "mehr dazu..."
-    btn_class: "btn--info"
+    btn_class: "btn--primary"
 ---
 
 {% include feature_row id="template_training_news" %}
