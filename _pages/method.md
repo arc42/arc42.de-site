@@ -13,12 +13,13 @@ excerpt: "Systematisch und prozess-agnostisch zu angemessenen Lösungen."
 feature_row1:
   - image_path: /images/template/01-intro-and-goals.png
     alt: "intro-image"
-    title: "1. Einführung und Ziele"
-    excerpt: 'Kurze Beschreibung und Extrakt der **requirements**, Die Top3 (bis maximal 5) **Qualitätsziele für die Architektur**, deren Erreichung für die wichtigsten Stakeholder kritisch ist.
-Eine Übersicht über die wichtigsten **Stakeholder** mit deren Erwartungen bezüglich der Architektur.'
-    url: "https://docs.arc42.org/section-1/"
-    btn_label: "mehr dazu ..."
-    btn_class: "btn--inverse"
+    title: "1. Anforderungen klären"
+    excerpt: 'Entwicklungsteams benötigen ein robustes und tragfähiges Fundament von Zielen, Anforderungen und Randbedingungen,
+    um zielgerichtet entscheiden und entwickeln zu können.
+    Softwarearchitekt:innen können zur Klärung von Anforderung entscheidend beitragen, in dem sie beispielsweise 
+    Qualitätsanforderungen hinterfragen, funktionktionale Anforderungen kategorisieren und technische Risiken aufzeigen.
+    aufzeigen.'
+    
 
 
 ---
