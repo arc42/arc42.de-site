@@ -34,52 +34,50 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
     <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
 
+    </div><!-- content -->
+  </div> <!-- container-->
+  <div class="container left">
+    <div class="content">
+      <h2>5.-7. Okt. 2021, Frankfurt</h2>
+      <h3>REQ4ARC (CPSA-Advanced)</h3>
+      <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p>Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 9. Juli 2021: € 1.725,-, Frühbucherpreis bei Anmeldung bis 6. August 2021: € 1.950,-
+         Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)</p>
+      <a href="info-req4arc"><button class="button buttonBlue">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+
+ </div><!-- content -->
+  </div> <!-- container-->
+  <div class="container right">
+    <div class="content">
+      <h2>23.-25. Nov. 2021, Hamburg</h2>
+      <h3>IMPROVE (CPSA-Advanced)</h3>
+      <p>Gernot Starke (innoQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p>Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. August 2021: € 1.725,-, Frühbucherpreis bei Anmeldung bis 23. August 2021: € 1.950,-
+         Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)</p>
+      <a href="info-req4arc"><button class="button buttonBlue">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+
   </div><!-- content -->
 </div><!-- container-->
 
   <div class="container left">
     <div class="content">
-      <h4>30.Nov - 3.Dez 2021, München</h4>
+      <h2>30.Nov - 3.Dez 2021, München</h2>
       <h3>Mastering Software Architectures (CPSA-Foundation)</h3>
       <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
       Praxisnah, pragmatisch, effektiv.
       Perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
+      <p>Early-Bird-Preis bei Anmeldung bis 27. August 2021: € 2300,-,Frühbucherpreis bei Anmeldung bis 24. September 2021: € 2.590,-,
+         Normalpreis: € 2.790,-, Preise jeweils pro Teilnehmer zuzüglich der jeweils geltenden Mehrwertsteuer</p>
+
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
-    </div><!-- content -->
+         
+  </div><!-- content -->
   </div> <!-- container-->
-  <div class="container right">
-    <div class="content">
-      <h2>5.-7. Okt. 2021, Frankfurt</h2>
-      <h3>REQ4ARC (CPSA-Advanced)</h3>
-      <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <p>Frühbucherpreis bei Anmeldung bis 6, August 2021: € 1.950,-
-         Normalpreis: € 2.075,- (für unsere CPSA-F-Absolventen € 1.950.-)</p>
-      <a href="info-req4arc"><button class="button buttonBlue">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
-
-    </div><!-- content -->
-  </div> <!-- container-->
-  <div class="container left">
-    <div class="content">
-      <h2></h2>
-      <h3></h3>
-      <p>.</p>
-      <a href="info-improve"><button class="button buttonBlue">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonGrey">Anmeldung</button></a>
-    </div> <!-- content -->
-  </div> <!-- container-->
-  <div class="container right">
-    <div class="content">
-      <h2>datum</h2>
-      <h3>titel</h3>
-      <p>Trainer</p>
-      <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
-
-    </div><!-- content -->
-  </div><!-- container-->
-
-
+ 
+ 
+ 
 </div>
