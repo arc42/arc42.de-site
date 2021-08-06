@@ -5,7 +5,7 @@ classes: wide
 
 permalink: /schulungen
 header:
-  overlay_filter: rgba(15, 80, 180, 0.5)
+
   overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
   caption: "Photo: [**Tom van Hoogstraten**](https://unsplash.com/@grafish)"
 
