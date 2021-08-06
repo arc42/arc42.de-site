@@ -4,7 +4,7 @@
 **/
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #374769; /* Green */
   border: none;
   color: white;
   padding: 13px 26px;
@@ -17,9 +17,9 @@
 }
 
 .button:hover {
-  background-color: #00FF7F; /* SpringGreen */
+  background-color: #4b7ba3; /* SpringGreen */
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  color: DarkBlue;
+  color: #EEE8AA;
 }
 
 .buttonBlue {background-color: #008CBA;} /* Blue */
