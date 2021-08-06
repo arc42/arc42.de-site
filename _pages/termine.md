@@ -18,7 +18,7 @@ Unsere Schulungen sind iSAQB akkreditiert.
 
 
 Nachfolgend unsere nächsten Termine mit Austragungsorten.
-Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
+Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gelten jeweils für eine Person, zuzüglich der jeweils geltenden Mehrwertsteuer.
 
 
 <hr>
@@ -27,10 +27,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
 
 <div class="container right">
   <div class="content" style="color:darkgrey">
-    <h4>21.-24. Sept 2021 (Frankfurt)</h4>
-    <h3>Mastering Software Architectures</h3> 
+    21.-24. Sept 2021 (Frankfurt)
+    <strong>Mastering Software Architectures</strong> 
+    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
-    <p>Dr. Gernot Starke, Dr. Peter Hruschka.</p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 
@@ -38,11 +38,14 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
   </div> <!-- container-->
   <div class="container left">
     <div class="content">
-      <h2>5.-7. Okt. 2021, Frankfurt</h2>
-      <h3>REQ4ARC (CPSA-Advanced)</h3>
+      5.-7. Okt. 2021, Frankfurt<br>
+      <strong style="color:DarkBlue;">REQ4ARC (CPSA-Advanced)</strong><br>
       <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <p>Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 9. Juli 2021: € 1.725,-, Frühbucherpreis bei Anmeldung bis 6. August 2021: € 1.950,-
-         Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)</p>
+      <p style="font-size-adjust: 0.4;">
+        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 9. Juli 2021: € 1.725,-, 
+        Frühbucherpreis bei Anmeldung bis 6. August 2021: € 1.950,-
+        Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)
+      </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 
@@ -50,27 +53,31 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
   </div> <!-- container-->
   <div class="container right">
     <div class="content">
-      <h2>23.-25. Nov. 2021, Hamburg</h2>
-      <h3>IMPROVE (CPSA-Advanced)</h3>
-      <p>Gernot Starke (innoQ Fellow) und Carola Lilienthal (WPS)</p>
-      <p>Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. August 2021: € 1.725,-, Frühbucherpreis bei Anmeldung bis 23. August 2021: € 1.950,-
-         Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)</p>
+      23.-25. Nov. 2021, Hamburg<br>
+      <strong style="color:DarkBlue;">IMPROVE (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p style="font-size-adjust: 0.4;">
+        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. August 2021: € 1.725,-, 
+        Frühbucherpreis bei Anmeldung bis 23. August 2021: € 1.950,-
+        Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)
+      </p>
       <a href="info-req4arc"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-
   </div><!-- content -->
 </div><!-- container-->
 
   <div class="container left">
     <div class="content">
-      <h2>30.Nov - 3.Dez 2021, München</h2>
-      <h3>Mastering Software Architectures (CPSA-Foundation)</h3>
-      <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-      Praxisnah, pragmatisch, effektiv.
-      Perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+      30.Nov - 3.Dez 2021, München<br>
+      <strong style="color:DarkBlue;">Mastering Software Architectures (CPSA-Foundation)</strong>
+      <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
-      <p>Early-Bird-Preis bei Anmeldung bis 27. August 2021: € 2300,-,Frühbucherpreis bei Anmeldung bis 24. September 2021: € 2.590,-,
-         Normalpreis: € 2.790,-, Preise jeweils pro Teilnehmer zuzüglich der jeweils geltenden Mehrwertsteuer</p>
+     <p style="font-size-adjust: 0.4;">
+       Early-Bird-Preis bei Anmeldung bis 27. August 2021: € 2300,-,Frühbucherpreis bei Anmeldung bis 24. September 2021: € 2.590,-,
+       Normalpreis: € 2.790,-
+     </p>
 
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
