@@ -31,7 +31,8 @@ excerpt: "Wir freuen uns auf Sie!"
     <option value="21-10">REQ4ARC, 5.-7. Oktober 2021 Frankfurt</option>
     <option value="21-11">IMPROVE, 23.-25. November 2021 Hamburg</option>
     <option value="21-12">Mastering SW Architectures, 30.11-3.12. 2021, München</option>
-    <option value="22-03">Mastering SW Architectures, März 2022 München</option>
+    <option value="21-11">IMPROVE, 1.-3. März 2022, online</option>
+    <option value="22-03">Mastering SW Architectures, 15.-18. März 2022 München</option>
     <option value="sonstige">Sonstige</option>
   </select>
   
@@ -57,7 +58,7 @@ excerpt: "Wir freuen uns auf Sie!"
 
 <hr style="height:2px; width:100%; border-width:0; color:CadetBlue; background-color:CadetBlue">
   
-  <button type="submit" id="submit" class="button buttonRed" >Anmeldung absenden</button>
+  <button type="submit" id="submit" class="button buttonAnmeldung" >Anmeldung absenden</button>
   <input type="button" value="Zurück" class="button buttonGrey" onclick="history.back()" style="float: right;">
   
 <!-- 
