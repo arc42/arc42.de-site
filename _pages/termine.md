@@ -26,13 +26,13 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
 <div class="timeline">
 
 <div class="container right">
-  <div class="content" style="background-color:gainsboro;color:darkgrey">
+  <div class="content" style="color:darkgrey">
     <h4>21.-24. Sept 2021 (Frankfurt)</h4>
     <h3>Mastering Software Architectures</h3> 
     <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
     <p>Dr. Gernot Starke, Dr. Peter Hruschka.</p>
-    <a href="info-msa"><button class="button buttonBlue">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+    <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 
     </div><!-- content -->
   </div> <!-- container-->
@@ -43,8 +43,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
       <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p>Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 9. Juli 2021: € 1.725,-, Frühbucherpreis bei Anmeldung bis 6. August 2021: € 1.950,-
          Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)</p>
-      <a href="info-req4arc"><button class="button buttonBlue">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 
  </div><!-- content -->
   </div> <!-- container-->
@@ -55,8 +55,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
       <p>Gernot Starke (innoQ Fellow) und Carola Lilienthal (WPS)</p>
       <p>Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. August 2021: € 1.725,-, Frühbucherpreis bei Anmeldung bis 23. August 2021: € 1.950,-
          Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)</p>
-      <a href="info-req4arc"><button class="button buttonBlue">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+      <a href="info-req4arc"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 
   </div><!-- content -->
 </div><!-- container-->
@@ -73,7 +73,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>.
          Normalpreis: € 2.790,-, Preise jeweils pro Teilnehmer zuzüglich der jeweils geltenden Mehrwertsteuer</p>
 
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonRed">Anmeldung</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
          
   </div><!-- content -->
   </div> <!-- container-->
