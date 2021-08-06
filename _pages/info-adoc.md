@@ -14,7 +14,8 @@ sidebar:
 
 ---
 
-[Download<br/>Kursbeschreibung (pdf)](/info-adoc){: .btn .btn--info}
+<a href="/downloads/flyer-adoc.pdf" target="_blank"><button class="button buttonAdoc">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 Sie möchten interessierten Personen einen Einblick in Ihre Architektur geben? 
 Ihre wesentlichen Entscheidungen, Strukturen oder Konzepte erklären? 

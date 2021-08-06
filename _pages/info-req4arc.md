@@ -13,7 +13,9 @@ sidebar:
 
 ---
 
-[Download<br/>Kursbeschreibung (pdf)](/info-req4arc){: .btn .btn--warning}
+<a href="/downloads/flyer-req4arc.pdf" target="_blank"><button class="button buttonReq4Arc">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+
 
 ## Ihr Weg zu besseren Anforderungen
 
