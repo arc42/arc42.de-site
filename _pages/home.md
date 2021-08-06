@@ -2,41 +2,46 @@
 title: "Erfolgreiche Softwarearchitektur"
 layout: splash
 permalink: /
-header:
+header: 
   overlay_color: "#d7ecf8"
-  overlay_filter: rgba(15, 80, 180, 0.4)
+  overlay_filter: rgba(15, 80, 180, 0.6)
   overlay_image: /images/splash/arc42-splash-landingpage.jpg
   actions: 
     - label: "Übersicht"
       url: /overview
     - label: "&#8594; English site..."
       url: "https://arc42.org"
-excerpt: "**Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei.**"
+excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei."
+
 
 
 feature_row:
   - title: "Template"
-    excerpt: "![](/images/template.png) Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
+    excerpt: "![](/images/home/template.png)<br> Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
     Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, schmerzlos, rasch**."
     url: "/overview"
+    btn_label: "mehr dazu ..."
+    btn_class: "btn--info"
     
   - title: "Trainings"
-    excerpt: "![](/images/training.png) Wir haben Hunderte Menschen in unserem bewährten
+    excerpt: "![](/images/home/training.png)<br>
+    Wir haben Hunderte Menschen in unserem bewährten
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor."
     url: "/schulungen"
     btn_label: "mehr dazu ..."
     btn_class: "btn--info"
 
-- title: "News"
-    excerpt: "![](/images/news.png) Lesen Sie unseren Artikel 'Handeln statt jammern' und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.</br>
+  - title: "News"
+    excerpt: "![](/images/home/news.png)<br>
     
-    Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: Software Architecture Foundation.</br>
-    
-    Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - Vol 2. Embedded Systems and IoT"</br>
-    url: "/news"
-    
+    * Lesen Sie unseren Artikel 'Handeln statt jammern' und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
 
+    * Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: [Software Architecture Foundation](/books).
+    
+    * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - Vol 2. Embedded Systems and IoT.
+    "
+    
 ---
 
 {% include feature_row id="intro" type="center" %}
