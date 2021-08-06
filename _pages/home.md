@@ -15,7 +15,7 @@ excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pr
 
 
 
-feature_row:
+template_training_news:
   - title: "Template"
     excerpt: "![](/images/home/template.png)<br> Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
     Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, schmerzlos, rasch**."
@@ -29,7 +29,7 @@ feature_row:
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor."
     url: "/schulungen"
-    btn_label: "mehr dazu ..."
+    btn_label: "unsere Schulungen"
     btn_class: "btn--info"
 
   - title: "News"
@@ -41,12 +41,39 @@ feature_row:
     
     * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - Vol 2. Embedded Systems and IoT.
     "
+
+methode_publications_consulting:
+  - title: "Die arc42-Methode"
+    excerpt: "![](/images/home/method.png)<br>
+    arc42 ist systematisch aber flexibel. Passend für große und kleine Teams in iterativen 
+    oder weniger agilen Prozessen.
+    "
+    url: "/method"
+    btn_label: "mehr dazu..."
+    btn_class: "btn--info"  
+
+  - title: "arc42 Lesestoff"
+    excerpt: "![](/images/home/publikationen.png)<br>
+    Es gibt viel zu lesen über arc42 und Architektur. Von der Methode über _good practices_
+    bis hin zu kompletten Beispielen von Softwarearchitekturen.<br>
+    Stöbern Sie in unseren Büchern, Artikeln, Vorträgen oder Videos."
+    url: "/publications"
+    btn_label: "mehr dazu..."
+    btn_class: "btn--info"
+  
+  - title: "Consulting"
+    excerpt: "![](/images/home/consulting.png)<br>
+    Wir helfen in allen Lebenslagen Ihrer IT-Projekte weiter.<br>
     
+    Lesen Sie mehr über unsere Angebote an Beratung, Reviews oder praktische Unterstützung für Ihre Projekte."
+    url: "/consulting"
+    btn_label: "mehr dazu..."
+    btn_class: "btn--info"
 ---
 
-{% include feature_row id="intro" type="center" %}
+{% include feature_row id="template_training_news" %}
 
-{% include feature_row %}
+{% include feature_row id="methode_publications_consulting"%}
 
 arc42 basiert auf der **praktischen Erfahrung** vieler Systeme in verschiedenen Bereichen, von Informations- und Websystemen über Echtzeit- und Embedded-Systeme bis hin zu Business Intelligence und Data Warehouses.
 
@@ -59,7 +86,3 @@ arc42 ist vollständig prozessagnostisch und eignet sich besonders gut für **sc
 arc42 ist **Open-Source** und kann sowohl im kommerziellen als auch im privaten Bereich **kostenlos** genutzt werden. Details finden Sie auf unserer [Lizenzseite](/license).
 
 
-
-# Open-Source Site (English)!
-
-<a href="https://arc42.org" class="btn btn--success">arc42.org</a>
