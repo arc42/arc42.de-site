@@ -8,7 +8,7 @@ toc_label: "Erscheinungsjahr"
 permalink: /articles
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
-  overlay_image: /images/magazines-unsplash.jpg
+  overlay_image: /images/splash/magazines-unsplash.jpg
   caption: "Photo: [**Charisse Kenion**](https://unsplash.com/@charissek)"
 
 sidebar:
