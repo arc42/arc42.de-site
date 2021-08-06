@@ -1,6 +1,6 @@
 ---
 title: "Mastering Software Architectures"
-layout: splash
+layout: single
 classes: wide
 permalink: /info-msa
 header:
@@ -8,10 +8,12 @@ header:
   overlay_image: /images/splash/learn-header-helloquence.jpg
   caption: "Photo: [**helloquence**](https://unsplash.com/photos/5fNmWej4tAA)"
 
+sidebar:
+  nav: "schulungen"
 
 ---
 
-<a href="/downloads/flyer-msa.pdf"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="/downloads/flyer-msa.pdf" target="_blank"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
 <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 

@@ -14,7 +14,8 @@ sidebar:
 
 ---
 
-[Download<br/>Kursbeschreibung (pdf)](/info-improve){: .btn .btn--success}
+<a href="/downloads/flyer-improve.pdf" target="_blank"><button class="button buttonImprove">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 ## IMPROVE
 
