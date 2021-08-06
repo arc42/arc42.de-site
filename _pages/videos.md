@@ -5,6 +5,7 @@ layout: single
 
 toc: right
 toc_label: "Titel"
+
 permalink: /videos
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
