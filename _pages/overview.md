@@ -134,7 +134,7 @@ arc42 gibt praxisorientierte Antwort die folgenden zwei Fragen, und läßt sich 
 
 Dazu haben wir ein einfaches Template mit 12 Kapiteln entwickelt, in denen Sie alles Wissenswerte über die Architektur unterbringen können.
 
-**Hier big-picture einfügen oder ein zweispaltiges Bild mit den zwölf Kapiteln, einige davon - wie im folgenden Text angedeutet - hervorgehoben.**
+![](/images/template/template-struktur-focus.png)
 
 Den Kern der Architekturdokumentation bilden die Kontexabgrenzung (Kap. 3), die drei Sichten (Bausteinsicht, Laufzeitsicht und Verteilungssicht - Kap. 5 - 7), sowie die querschnittlichen Konzepte (Kap. 8).
 
@@ -183,8 +183,5 @@ Inklusive über 100 Tipps zur Anwendung.
 * Einige der von uns geschriebenen [Bücher](/books) beschäftigen sich mit arc42, beispielsweise:
   * [arc42 in Aktion]()
   * [arc42 by Example, Vol. 1](), arc42 anhand von sechs praktischen Beispielen erklärt
-  * [arc42 by Example, Vol. 2](), Beispiele aus den Bereichen Echtzeit- und Embedded
+  * [arc42 by Example, Vol. 2](/books#arc42-by-example-vol2), Beispiele aus den Bereichen Echtzeit- und Embedded
 
-
-
-<a href="https://arc42.org" class="btn btn--success">English site</a>
