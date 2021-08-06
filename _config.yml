@@ -17,7 +17,7 @@ title_separator          : "-"
 name                     : "Dr. Gernot Starke"
 description              : "Resourcen für Softwarearchitektur."
 # url                      : "https://arc42.de" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-url                      : "https://arc42de-site.netlify.app/" 
+url                      : "https://arc42.de/" 
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "arc42/arc42.de-site" # GitHub username/repo-name
 teaser                   : /images/arc42-splash-landingpage.jpg # path of fallback teaser image, e.g. "/images/500x300.png"
