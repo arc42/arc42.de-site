@@ -51,7 +51,7 @@ articles_feature:
     btn_class: "btn--primary"
 
 talks_feature:
-  - image_path: /images/publications/talks-feature.png
+  - image_path: /images/publications/talks-feature.jpeg
     alt: "Vorträge"
     title: "Vorträge"
     excerpt: 'Wir haben über 25 Bücher geschrieben, von der Anforderungsklärung, Business-Analyse, Architektur, Dokumentation, Verhaltensmuster (Knigge) bis zu Patterns'
