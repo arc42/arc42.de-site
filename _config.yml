@@ -81,6 +81,7 @@ exclude:
   - _docker*
   - zz-site/
   - _site/
+  - archive/
  
 
 keep_files:
