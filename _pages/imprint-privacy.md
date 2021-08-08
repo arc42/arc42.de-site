@@ -15,7 +15,7 @@ privacy-reports:
     btn_class: "btn--primary"
 
   - title: "PiwiK-Pro cookie-scan"
-    excerpt: "![](/images/privacy/piwik-report.png)<br> "
+    excerpt: "![](/images/privacy/piwikreport.png)<br> "
     url: "/downloads/privacy-reports/21-08-07-Piwik-Privacy-Report.pdf"
     btn_label: "Download report (pdf)"
     btn_class: "btn--primary"
@@ -28,12 +28,11 @@ privacy-reports:
 
 ---
 
-
 # Impressum und Datenschutzerklärung
 
 ### Anbieter
 
-Dr. Gernot Starke, Willi-Lauf Allee 43, 50858 Köln
+Dr. Gernot Starke, Willi-Lauf Allee 43, 50858 Köln<br>
 Dr. Peter Hruschka, Langenbruchweg 71, 52080 Aachen
 
 ### Kontakt
