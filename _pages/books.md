@@ -28,8 +28,8 @@ Gernot Starke and Alexander Lorz, published by van Haren International Publishin
 This book serves as study guide for the CPSA-F (Certified Professional for Software Architecture - Foundation Level) examination of iSAQB. It explains every single learning goal of the comprehensive CPSA-Foundation curriculum in detail, for best-possible exam preparation.
 
 In addition it describes the examination process, together with dozens of sample examination questions.
-
-<br><br>
+Highly recommended for anybody preparing for the certification examination.
+<br>
 
 ## arc42-by-Example Vol.2
 
@@ -37,9 +37,11 @@ In addition it describes the examination process, together with dozens of sample
 
 Peter Hruschka, Ivan Kostov, Wolfgang Reimesch: arc42 by Example Volume 2: Architecture Documentation for _Embedded Systems and IoT_, published by Leanpub.
 
-Two more examples of complete architecture documentation, both in the area of _hardware/software co-design_.
+Two more examples of complete architecture documentation, 
+both in the area of _hardware/software co-design_.
 
-<br><br><br><br>
+Finally, examples from the aread of _embedded_ systems: Numerous organizations have used arc42 for such systems since many years, but no published examples were available. That has now changed... 
+<br><br>
 
 
 # 2020
@@ -142,6 +144,8 @@ Ben Wolf, Gernot Starke: arc42-Primer, eBook, veröffentlicht bei [Leanpub](http
 Wir haben einen kompakten Einstieg in arc42 geschrieben, der mit einigen Vorurteilen gegen Dokumentation und arc42 aufräumt.
 Der Primer ist so kompakt, dass Sie selbst unter Zeitdruck angemessene (und leicht wartbare!) Dokumentation erstellen können. Inklusive eines Beispiels, bei dem wir auf Doppelseiten jeweils links echte Dokumentation zeigen, und auf der gegenüberliegenden Seite erklären, was und warum...
 
+
+<br>
 
 ## arc42-by-Example, 2. Auflage
 
