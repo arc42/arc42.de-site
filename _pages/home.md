@@ -18,14 +18,14 @@ excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pr
 template_training_news:
   - title: "Template"
     excerpt: "![](/images/home/template.png)<br> Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
-    Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, schmerzlos, rasch**."
+    Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, effektiv und schmerzfrei**."
     url: "/overview"
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
     
   - title: "Trainings"
     excerpt: "![](/images/home/training.png)<br>
-    Wir haben Hunderte Menschen in unserem bewährten
+    Wir haben Hunderte Menschen erfolgreich in unserem bewährten
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor.<br>
     <br>
@@ -36,7 +36,7 @@ template_training_news:
   - title: "News"
     excerpt: "![](/images/home/news.png)<br>
     
-    * Lesen Sie unseren Artikel 'Handeln statt jammern' und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
+    * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
 
     * Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: [Software Architecture Foundation](/books).
     
