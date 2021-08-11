@@ -112,9 +112,10 @@ Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf 
 * Quantitative Bewertung und effektiver Einsatz von Metriken 
 
 
-## und nun...
+### und nun...
 
-<a href="anmeldung"><button class="button buttonAnmeldung">Noch eine<br>Anmeldung</button></a>
-<a href="termine"><button class="button buttonRoyalBlue">Ab zu den<br>Terminen</button></a>
-<a href="/"><button class="button buttonHome">Take me<br>home</button></a>
+<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/"><button class="button buttonHome">Home</button></a>
+
 
