@@ -59,7 +59,7 @@ Peter mehr im Bereich eingebettete Systeme und Echtzeitsysteme, Gernot mehr in I
 Dieses breite Erfahrungsspektrum bietet Teilnehmenden die perfekte Möglichkeit, Erfahrungsberichte und Ratschläge aus erster Hand aus diesen unterschiedlichen Bereichen zu erhalten.
 
 
- ### und nun...
+### und nun...
 
 <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
 <a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>

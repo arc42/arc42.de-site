@@ -5,7 +5,7 @@ classes: wide
 permalink: /anmeldung-erfolg
 
 header:
-  overlay_filter: rgba(15, 80, 180, 0.5)
+  overlay_filter: rgba(10, 255, 0, 0.5)
   overlay_image: /images/splash/tim-mossholder-dBkw2Gk6u8E-unsplash.jpg
   caption: "Photo: [**Tim Mossholdert**](https://unsplash.com/@timmossholder)"
 
