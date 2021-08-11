@@ -23,7 +23,7 @@ insbesondere falls Sie uns über einen unverschlüsselten Kanal kontaktiert habe
 
 
 
-* <a href="xmxaxixlxtxo:ixnxfxox@xaxrxcx4x2x.xdxe" onmouseover="this.href=this.href.replace(/x/g,'');"><i class="fa fa-fw fa-envelope"></i>Email (our adress is spam-protected)</a>
+* <a href="xmxaxixlxtxo:ixnxfxox@xaxrxcx4x2x.xdxe" onmouseover="this.href=this.href.replace(/x/g,'');"><i class="fa fa-fw fa-envelope"></i>Email (unsere Mailadresse ist gegen Spam geschützt)</a>
 
 * via [<i class="fab fa-fw fa-github"></i>issue tracker](https://github.com/arc42/arc42-template/issues) at [https://github.com/arc42/arc42-template/issues](https://github.com/arc42/arc42-template/issues).
 * via Twitter:
