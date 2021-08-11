@@ -74,6 +74,7 @@ excerpt: "Wir freuen uns auf Sie!"
   />  
 <input type="hidden" name="_append" value="false" />
 
+<input type="hidden" name="_error" value="{{ '/anmeldung-fail' | absolute_url }}" />
 
 </form>
 
