@@ -12,9 +12,9 @@ header:
 excerpt: "wir packen mit an..."
 
 
-reviews_feature:
-  - image_path: /images/consulting/review-feature.png
-    caption: Photo: [Jounelle](https://unsplash.com/@jey_photography)
+review_feature:
+  - image_path: /images/consulting/review-feature.jpg
+    caption: "Photo: [Jounelle](https://unsplash.com/@jey_photography)"
     alt: "Reviews"
     title: "Reviews"
     excerpt: 'Wir liefern eine unabhängige Sicht auf Ihre Systeme und Entwicklungsprozesse, mit konkreten Vorschlägen für Verbesserungen.'
@@ -26,15 +26,13 @@ docu_feature:
     alt: "Dokumentation"
     title: "Dokumentation"
     excerpt: 'Wir helfen Ihnen bei der Dokumentation Ihrer Systeme, pragmatisch und sparsam. Wir haben viele Organisationen erfolgreich bei der Einführung von arc42 unterstützt.'
-    url: /videos
-    btn_label: "mehr dazu ..."
-    btn_class: "btn--primary"
+    
 
 improve_feature:
-  - image_path: /images/consulting/improve-feature.png
+  - image_path: /images/consulting/improve-feature.jpg
     alt: "Verbessern"
     title: "Verbesserung"
-    excerpt: "Wir haben zahlreiche Organisationen bei der Verbesserung, Modernisierung und Evolution ihrer Systeme unterstützt. "
+    excerpt: "Wir haben zahlreiche Organisationen bei der Verbesserung, Modernisierung und Evolution ihrer Systeme und Entwicklungsprozesse unterstützt. "
 
 talks_feature:
   - image_path: /images/consulting/gernot-talk-seco.jpg
