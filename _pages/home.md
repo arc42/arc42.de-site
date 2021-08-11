@@ -30,7 +30,7 @@ template_training_news:
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor.<br>
     <br>
     <a href='anmeldung'><button class='button buttonAnmeldung'>Anmeldung</button></a>
-    <a href='schulung'><button class='button buttonGrey'>mehr zu Schulungen</button></a>"
+    <a href='/schulungen'><button class='button buttonGrey'>mehr zu Schulungen</button></a>"
     
     
   - title: "News"
