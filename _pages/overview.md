@@ -24,7 +24,7 @@ feature_row2:
   - image_path: /images/template/02-constraints-overview.png
     alt: "constraints-image"
     title: "2. Randbedingungen"
-    excerpt: 'Alles, was das Team beim Design und der Implementierun der Architektur einschränkt. Diese Einschränkungen sind manchmal auch außerhalb eines Projekts in der gesamten Organisation gültig.'
+    excerpt: 'Alles, was das Team beim Design und der Implementierung der Architektur einschränkt. Diese Einschränkungen sind manchmal auch außerhalb eines Projekts in der gesamten Organisation gültig.'
     url: "https://docs.arc42.org/section-2/"
     btn_label: "mehr dazu ..."
     btn_class: "btn--inverse"    
@@ -43,7 +43,7 @@ feature_row4:
   - image_path: /images/template/04-solution-strategy-overview.svg
     alt: "solution strategy overview"
     title: "4. Lösungsstrategie"
-    excerpt: 'Zusammenfassung der fundamentalen Entwurfsentscheidungen und Lösungsstrategien für die Gesamtarchitektur. Kann Technologieentschekidungen, Top-Level-Zerlegungsstrategie oder Ansätze zur Erreichung der Top-Qualitätsziele beinhalten, bzw. relevante Organisationsentscheidungen.'
+    excerpt: 'Zusammenfassung der fundamentalen Entwurfsentscheidungen und Lösungsstrategien für die Gesamtarchitektur. Kann Technologieentscheidungen, Top-Level-Zerlegungsstrategie oder Ansätze zur Erreichung der wesentlichen Qualitätsziele beinhalten, bzw. relevante Organisationsentscheidungen.'
     url: "https://docs.arc42.org/section-4/"
     btn_label: "mehr dazu ..."
     btn_class: "btn--inverse"    
@@ -53,7 +53,7 @@ feature_row5:
 - image_path: /images/template/05-building-block-overview.png
   alt: "building block view"
   title: "5. Bausteinsicht"
-  excerpt: 'Statische Zerlegung des Systems. Die Abstration des Sourcecodes, dargestellt als Hierarchie von "White-Boxes" (die wiederum kleinere Black-Boxes beinhalten), bis zu einem angemessenen Detaillierungsgrad.'
+  excerpt: 'Statische Zerlegung des Systems. Die Abstraktion des Sourcecodes, dargestellt als Hierarchie von "White-Boxes" (die wiederum kleinere Black-Boxes beinhalten), bis zu einem angemessenen Detaillierungsgrad.'
   url: "https://docs.arc42.org/section-5/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--inverse"    
@@ -62,7 +62,7 @@ feature_row6:
 - image_path: /images/template/06-runtime-overview.png
   alt: "runtime view"
   title: "6. Laufzeitsicht"
-  excerpt: 'Das Verhalten der Bausteine in Form von dynamischen Szenarien, die die wichtisten Prozesse oder Features abdecken, Interaktionen an kritischen externen Schnittstellen oder "interessante" interne Abläufe und krtische Ausnahme- oder Fehlerfälle.'
+  excerpt: 'Das Verhalten der Bausteine in Form von dynamischen Szenarien, die die wichtisten Prozesse oder Features abdecken, Interaktionen an kritischen externen Schnittstellen oder "interessante" interne Abläufe und kritische Ausnahme- oder Fehlerfälle.'
   url: "https://docs.arc42.org/section-6/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--inverse"    
@@ -71,7 +71,7 @@ feature_row7:
 - image_path: /images/template/07-deployment-overview.png
   alt: "deployment view"
   title: "7. Verteilungssicht"
-  excerpt: 'Technische Infrastruktur mit (echten oder virtuellen) Prozessoren, Systemtopologie, und die Abbildung der Software-Bausteine aif diese Infrastruktur.'
+  excerpt: 'Technische Infrastruktur mit (echten oder virtuellen) Prozessoren, Systemtopologie, und die Abbildung der Software-Bausteine auf diese Infrastruktur.'
   url: "https://docs.arc42.org/section-7/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--inverse"    
@@ -109,7 +109,7 @@ feature_row11:
 - image_path: /images/template/11-risk-overview.png
   alt: "risk"
   title: "11. Risiken und technische Schulden"
-  excerpt: 'Bekannte Risiken und angehäufte technische Schulden. Welche potentiellen problems lauern im und um das System? Über welche Schwächen beklagt sich die Entwicklungsteam?'
+  excerpt: 'Bekannte Risiken und angehäufte technische Schulden. Welche potentiellen problems lauern im und um das System? Über welche Schwächen beklagt sich die Entwicklungsteams?'
   url: "https://docs.arc42.org/section-11/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--danger"    
