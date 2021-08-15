@@ -69,7 +69,7 @@ title: "Anmeldung"
 layout: single
 permalink: /anmeldung
 
-botpoison: true
+botpoison: nospam
 
 ---
 ```
@@ -140,6 +140,28 @@ für den Kurs {{data.kursdatum}} angemeldet.
 
 </div>
 ```
+
+### Ensure JavaScript is available
+As often, [StackOverflow](https://stackoverflow.com/posts/50908173/revisions) had an answer,
+we combine a `<noscript>` tag with a `<div>` and a small JavaScript function:
+
+```
+<body>
+<div id="main_body" style="display: none;">
+all content - not displayed...
+</div>
+</body>
+```
+
+Plus a small JavaScript function to enable the content again...
+
+```
+<script type="text/javascript">
+document.getElementById("main_body").style.display="block";
+</script>
+```
+
+It does NOT work if users disable JavaScript when already on the form... 
 
 # Credits
 
