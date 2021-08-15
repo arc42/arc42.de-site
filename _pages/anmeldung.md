@@ -15,18 +15,31 @@ excerpt: "Wir freuen uns auf Sie!"
 ---
 
 
+<noscript>
+     <h1>Zur Anmeldung muss Ihr Browser JavaScript erlauben!</h1>
+     Aktuell ist das ausgeschaltet... Sie können uns entweder die Anmeldung
+     per Email senden, 
+     oder aber JavaScript einschalten und dann diese Seite im Browser erneut laden.
+    <br><br>
+     <a href='mailto:info@arc42.de?subject=[arc42] Anmeldung&body=Ihr Name:%0A%0AFür%20welchen%20Kurs%20melden%20Sie an:%0A-----------------------%0AKursbezeichnung:%0ADatum%20Kursbeginn:%0A%0ATeilnehmende%20Person(en):%0A-----------------------%0AVorname,%20Nachname:%0AEmail:%0A%0ARechnungsadresse:%0A%0A%0A-----------------------%0ABemerkungen:%0A'>
+     <button class='button buttonAnmeldung'>Anmeldung<br>per E-Mail</button></a>
+    
+</noscript> 
+
+<div id="main_body" style="display: none;">
+
 <form action="https://submit-form.com/AIKiYyJP"
       data-botpoison-public-key="pk_8e195655-38ed-4eec-a445-a1e0d68a488d"
       id="arc42anmeldung">
 
-  <strong>Wer meldet an?</strong>
+<strong>Wer meldet an?</strong>
   <br>
 
-<input type="text" id="nachname" name="Nachname" placeholder="* Nachname" size="20" required />
+<input type="text" id="nachname" name="Nachname" placeholder="* Nachname" size="20" required  />
 <input type="text" id="vorname" name="Vorname" placeholder="Vorname" size="20"  />
 
 <label for="email">E-Mail (für Anmeldebestätigung und Ähnliches)</label>
-<input type="email" id="email" name="Email" placeholder="* E-Mail" required multiple />
+<input type="email" id="email" name="Email" placeholder="* E-Mail" required multiple  />
 
 <label for="kurs">Für welchen Kurs melden Sie an?</label>
 <select id="kurs" name="Kurs" required>
@@ -95,17 +108,10 @@ see https://documentation.formspark.io/customization/email.html#subject
 
 </form>
 
-<script>
-  var formElement = document.getElementById("arc42anmeldung");
-  var buttonElement = document.getElementById("submit");
-  formElement.addEventListener("botpoison-challenge-start", function () {
-    buttonElement.setAttribute("disabled", "disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-success", function () {
-    buttonElement.removeAttribute("disabled");
-  });
-  formElement.addEventListener("botpoison-challenge-error", function () {
-    buttonElement.removeAttribute("disabled");
-  });
+</div>
+
+<script type="text/javascript">
+document.getElementById("main_body").style.display="block";
 </script>
+
 
