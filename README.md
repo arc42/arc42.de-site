@@ -57,14 +57,32 @@ see especially their [getting started with HTML](https://botpoison.com/documenta
 
 ### 1: Integrate Botpoison script
 
-In `config.yml`, add the following lines:
+A botpoison browser script is required for spam-protection in the Anmeldung-Form,
+see https://documentation.formspark.io/setup/spam-protection.html#botpoison
+
+We make this a page-specific asset (see https://www.instapaper.com/read/1436398846)
+by adding the following yaml to `anmeldung.md`:
 
 ```
-# the botpoison browser script is required for spam-protection in the Anmeldung-Form
-# see https://documentation.formspark.io/setup/spam-protection.html#botpoison
-head_scripts:
-  - https://unpkg.com/@botpoison/browser
+---
+title: "Anmeldung"
+layout: single
+permalink: /anmeldung
+
+botpoison: true
+
+---
 ```
+
+And then adding the appropriate import statement in `_includes/head/custom.html`:
+
+```
+{% if page.botpoison %}
+ <!-- 1. Import the @botpoison/browser script -->
+<script src="https://unpkg.com/@botpoison/browser"></script>
+{% endif %}
+```
+
 
 ### 2: Add required info to form
 
@@ -90,7 +108,38 @@ In our concrete case, that looks as follows (file `_pages/anmeldung.md`)
 
 ```
 
+### 3: Formating of Anmeldung-Email
+Formating of the email sent from formspark.io to arc42 is done via handlebar configuration
+within the Formspark.io website.
 
+```
+<div style="text-align: left;">
+  <strong>Neue Anmeldung (über arc42):</strong><br>
+  {{data.vorname}} {{data.nachname}} ({{data.email}}) hat<br>
+
+<div style="margin: 16px 0;">
+  {{#if data.nachnameTN}}
+    <h3>{{data.vornameTN}} {{data.nachnameTN}} ({{data.emailTN}})</h3>
+  {{else}}
+    <h3>sich selbst</h3>
+  {{/if}}
+  <br>
+für den Kurs {{data.kursdatum}} angemeldet.
+</div>
+<br>
+  Rechnungsadresse: <br>
+  <div style="margin: 16px 0;">
+  {{data.Rechnungsadresse}} <br>
+  </div>
+ <br>
+  Bemerkung:<br>
+  <div style="margin: 16px 0;">
+   {{data.comment}} 
+  </div>
+<br>
+
+</div>
+```
 
 # Credits
 
