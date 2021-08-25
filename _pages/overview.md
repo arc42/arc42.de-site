@@ -62,7 +62,7 @@ feature_row6:
 - image_path: /images/template/06-runtime-overview.png
   alt: "runtime view"
   title: "6. Laufzeitsicht"
-  excerpt: 'Das Verhalten der Bausteine in Form von dynamischen Szenarien, die die wichtisten Prozesse oder Features abdecken, Interaktionen an kritischen externen Schnittstellen oder "interessante" interne Abläufe und kritische Ausnahme- oder Fehlerfälle.'
+  excerpt: 'Das Verhalten der Bausteine in Form von dynamischen Szenarien, die die wichtigsten Prozesse oder Features abdecken, Interaktionen an kritischen externen Schnittstellen oder "interessante" interne Abläufe und kritische Ausnahme- oder Fehlerfälle.'
   url: "https://docs.arc42.org/section-6/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--inverse"    
@@ -109,7 +109,7 @@ feature_row11:
 - image_path: /images/template/11-risk-overview.png
   alt: "risk"
   title: "11. Risiken und technische Schulden"
-  excerpt: 'Bekannte Risiken und angehäufte technische Schulden. Welche potentiellen problems lauern im und um das System? Über welche Schwächen beklagt sich die Entwicklungsteams?'
+  excerpt: 'Bekannte Risiken und angehäufte technische Schulden. Welche potentiellen Probleme lauern im und um das System? Über welche Schwächen beklagen sich die Entwicklungsteams?'
   url: "https://docs.arc42.org/section-11/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--danger"    
