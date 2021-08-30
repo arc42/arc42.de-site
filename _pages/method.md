@@ -17,8 +17,7 @@ feature_row1:
     excerpt: 'Entwicklungsteams benötigen ein robustes und tragfähiges Fundament von Zielen, Anforderungen und Randbedingungen,
     um zielgerichtet entscheiden und entwickeln zu können.
     Softwarearchitekt:innen können zur Klärung von Anforderung entscheidend beitragen, in dem sie beispielsweise 
-    Qualitätsanforderungen hinterfragen, funktionktionale Anforderungen kategorisieren und technische Risiken aufzeigen.
-    aufzeigen.'
+    Qualitätsanforderungen hinterfragen, funktionale Anforderungen kategorisieren und technische Risiken aufzeigen.'
     
 
 
