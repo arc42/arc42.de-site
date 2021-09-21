@@ -40,7 +40,7 @@ Peter Hruschka, Ivan Kostov, Wolfgang Reimesch: arc42 by Example Volume 2: Archi
 Two more examples of complete architecture documentation, 
 both in the area of _hardware/software co-design_.
 
-Finally, examples from the aread of _embedded_ systems: Numerous organizations have used arc42 for such systems since many years, but no published examples were available. That has now changed... 
+Finally, examples from the area of _embedded_ systems: Numerous organizations have used arc42 for such systems since many years, but no published examples were available. That has now changed... 
 <br><br>
 
 
