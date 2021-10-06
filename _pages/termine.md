@@ -27,22 +27,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<div class="container left">
-    <div class="content">
-      5.-7. Okt. 2021, Frankfurt<br>
-      <strong style="color:DarkBlue;">REQ4ARC (CPSA-Advanced)</strong><br>
-      <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <p style="font-size-adjust: 0.4;">
-        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 9. Juli 2021: € 1.725,-, 
-        Frühbucherpreis bei Anmeldung bis 6. August 2021: € 1.950,-
-        Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)
-      </p>
-      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-
-  </div><!-- content -->
-  </div> <!-- container-->
-
   <div class="container right">
     <div class="content">
       23.-25. Nov. 2021, Hamburg <br>(hybrid, vor-Ort und online!)<br>
