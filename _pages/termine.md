@@ -45,12 +45,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="container left">
     <div class="content" >
       30. Nov - 3. Dez 2021, München<br>
-      <strong style="color:DarkBlue;">Mastering Software Architectures (CPSA-Foundation)</strong>
+      <strong style="color:darkgrey;">Mastering Software Architectures (CPSA-Foundation)</strong>
       <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
-       <p style="color:red;">(nur noch WENIGE Plätze frei)</p>
+       <p style="color:red;">(ausgebucht, nur noch Warteliste)</p>
   <p style="font-size-adjust: 0.4;">
        Early-Bird-Preis bei Anmeldung bis 27. August 2021: € 2300,-,Frühbucherpreis bei Anmeldung bis 24. September 2021: € 2.590,-,
        Normalpreis: € 2.790,-
