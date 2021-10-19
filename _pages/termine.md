@@ -28,10 +28,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
   <div class="container right">
-    <div class="content">
+    <div class="content" style="color:darkgrey;">
       23.-25. Nov. 2021, Hamburg <br>(hybrid, vor-Ort und online!)<br>
-      <strong style="color:DarkBlue;">IMPROVE (CPSA-Advanced)</strong><br>
+      <strong style="color:DarkGrey;">IMPROVE (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+       <p style="color:red;">(ausgebucht, nur noch Warteliste)</p>
       <p style="font-size-adjust: 0.4;">
         Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. August 2021: € 1.725,-, 
         Frühbucherpreis bei Anmeldung bis 23. August 2021: € 1.950,-
@@ -45,7 +46,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="container left">
     <div class="content" style="color:darkgrey;">
       30. Nov - 3. Dez 2021, München<br>
-      <strong style="color:darkgrey;">Mastering Software Architectures (CPSA-Foundation)</strong>
+      <strong style="color:DarkGrey;">Mastering Software Architectures (CPSA-Foundation)</strong>
       <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
