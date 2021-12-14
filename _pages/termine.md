@@ -26,63 +26,30 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="timeline">
 
-
-  <div class="container right">
-    <div class="content" style="color:darkgrey;">
-      23.-25. Nov. 2021, Hamburg <br>(hybrid, vor-Ort und online!)<br>
-      <strong style="color:DarkGrey;">IMPROVE (CPSA-Advanced)</strong><br>
-    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
-       <p style="color:red;">(ausgebucht, nur noch Warteliste)</p>
-      <p style="font-size-adjust: 0.4;">
-        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. August 2021: € 1.725,-, 
-        Frühbucherpreis bei Anmeldung bis 23. August 2021: € 1.950,-
-        Normalpreis: € 2.075,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.950.-)
-      </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
-</div><!-- container-->
-
-  <div class="container left">
-    <div class="content" style="color:darkgrey;">
-      30. Nov - 3. Dez 2021, München<br>
-      <strong style="color:DarkGrey;">Mastering Software Architectures (CPSA-Foundation)</strong>
-      <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-      </p>
-       <p style="color:red;">(ausgebucht, nur noch Warteliste)</p>
-  <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 27. August 2021: € 2300,-,Frühbucherpreis bei Anmeldung bis 24. September 2021: € 2.590,-,
-       Normalpreis: € 2.790,-
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
-  </div> <!-- container-->
  
-  <div class="container right">
+<div class="container right">  <!-- Req4Arc März 22, online-->
     <div class="content">
       2.-4. März 2022, online<br>
-      <strong style="color:DarkBlue;">REQ4ARC (CPSA-Advanced)</strong><br>
+      <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
         Aufgrund der online-Durchführung reduzierter Preis!
-        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 23. Nov. 2021: € 1.650,-, 
+        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 23. Nov. 2021: € 1.650,-, 
         Frühbucherpreis bei Anmeldung bis 15. Januar 2022: € 1.800,-
-        Normalpreis: € 2.000,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.800.-)
+        Normalpreis: € 2.000,- (für unsere CPSA-F-Alumni € 1.800.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div><!-- content -->
 </div><!-- container-->
 
-<div class="container left">
+<div class="container left"> <!-- MSA März 2022, MUC -->
   <div class="content" >
-    15.-18. März 2022 (München)
-    <strong style="color:DarkBlue;">Mastering Software Architectures</strong> 
+    15.-18. März 2022 (München)<br>
+    <strong style="color:DarkBlue;">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
         Early-Bird-Preis bei Anmeldung bis 15. Oktober 2021: € 2300,-,
@@ -91,41 +58,127 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-
     </div>
 </div> 
 
-<div class="container right">
+<div class="container right"> <!--IMPROVE Mai 2022 MUC -->
   <div class="content" >
-    16.-18. Mai 2022 (München)
-    <strong style="color:DarkBlue;">IMPROVE</strong> 
+    16.-18. Mai 2022 (München)<br>
+    <strong style="color:DarkBlue;">IMPROVE  (iSAQB Advanced)</strong> 
     <p>Bestehende Systeme systematisch verbessern - Wartungskosten und technische Schulden reduzieren.</p>
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 15. Dez. 2021: € 1.650,-, 
-        Frühbucherpreis bei Anmeldung bis 15. Februar 2022: € 1.800,-
-        Normalpreis: € 2.000,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.800.-)
+        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 15. Dez. 2021: € 1.725,-, 
+        Frühbucherpreis bei Anmeldung bis 15. Februar 2022: € 1.950,-
+        Normalpreis: € 2.000,- (für unsere CPSA-F-Alumni € 1.800.-)
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
     </div>
 </div> 
 
-<div class="container left">
+<div class="container left"> <!-- ADOC Mai 2022 MUC -->
   <div class="content" >
-    19.-20. Mai 2022 (München)
-    <strong style="color:DarkBlue;">ADOC - Effektive Architekturdokumentation</strong> 
+    19.-20. Mai 2022 (München)<br>
+    <strong style="color:DarkBlue;">ADOC - Effektive Architekturdokumentation <br>
+    (iSAQB Advanced)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-        Sonderpreis für <strong>unsere CPSA-F-Absolventen</strong> bis 5. Januar 2021: € 1.250,-, 
-        Frühbucherpreis bei Anmeldung bis 20. Februar 2022: € 1.350,-
-        Normalpreis: € 1.500,- (für <strong>unsere CPSA-F-Absolventen</strong> € 1.350.-)
+        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 6. Januar 2022: € 1.250,-,
+        Frühbucherpreis bei Anmeldung bis 10. März 2022: € 1.350,-
+        Normalpreis: € 1.500,- (für unsere CPSA-F-Alumni € 1.350.-)
       </p>
     <a href="info-adoc"><button class="button buttonADOC">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-
     </div>
 </div> 
+
+<div class="container right"> <!-- MSA Juni 2022 FRA -->
+    <div class="content">
+      28. Juni - 1. Juli 2022, Frankfurt<br>
+      <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
+      (iSAQB CPSA-Foundation)</strong>
+      <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+      </p>
+  <p style="font-size-adjust: 0.4;">
+       Early-Bird-Preis bei Anmeldung bis 25. Januar 2022: € 2300,-,
+       Frühbucherpreis bei Anmeldung bis 25. März 2022: € 2.590,-,
+       Normalpreis: € 2.790,-
+     </p>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+ </div> <!-- container-->
+
+
+<div class="container left"> <!-- MSA Sept 2022, MUC -->
+  <div class="content" >
+    13.-16. September 2022 (Frankfurt)<br>
+    <strong style="color:DarkBlue;">Mastering Software Architectures
+    (iSAQB CPSA-Foundation)<br>
+    </strong> 
+    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
+    <p style="font-size-adjust: 0.4;">
+        Early-Bird-Preis bei Anmeldung bis 15. März 2022: € 2300,-,
+        Frühbucherpreis bei Anmeldung bis 15. Juni 2022: € 2.590,-,
+       Normalpreis: € 2.790,-
+      </p>
+    <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    </div>
+</div> 
+
+<div class="container right"> <!-- ADOC Sept 2022 FRA -->
+  <div class="content" >
+    19.-20. September 2022 (Frankfurt)<br>
+    <strong style="color:DarkBlue;">ADOC - Effektive Architekturdokumentation<br>
+    (iSAQB CPSA-Advanced)</strong> 
+    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
+      <p style="font-size-adjust: 0.4;">
+        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 20. März 2022: € 1.250,-, 
+        Frühbucherpreis bei Anmeldung bis 20. Juni 2022: € 1.350,-
+        Normalpreis: € 1.500,- (für unsere CPSA-F-Alumni € 1.350.-)
+      </p>
+    <a href="info-adoc"><button class="button buttonADOC">Mehr Info</button></a>
+    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    </div>
+</div> 
+
+<div class="container right">  <!-- Req4Arc Sept 22, FRA -->
+    <div class="content">
+      21.-23. September 2022, Frankfurt/Main<br>
+      <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <p>Ihr systematischer Weg zu besseren Anforderungen!
+      </p>
+    <p>Mit Gernot Starke und Peter Hruschka</p>
+      <p style="font-size-adjust: 0.4;">
+        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 20. März 2022: €1725,-, 
+        Frühbucherpreis bei Anmeldung bis 25. Juni 2022: € 1.950,-
+        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+</div><!-- container-->
+
+
+<div class="container right"> <!-- IMPROVE NOV 2022 Hamburg-->
+    <div class="content">
+      22.-24. Nov. 2022, Hamburg <br>
+      <strong style="color:DarkBlue;">IMPROVE<br> 
+      (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p style="font-size-adjust: 0.4;">
+        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 23. August 2022: € 1.725,-, 
+        Frühbucherpreis bei Anmeldung bis 23. August 2022: € 1.950,-
+        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+</div><!-- container-->
 
 
 <!-- example "ausgebucht":
