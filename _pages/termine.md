@@ -146,7 +146,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </div>
 </div> 
 
-<div class="container right">  <!-- Req4Arc Sept 22, FRA -->
+<div class="container left">  <!-- Req4Arc Sept 22, FRA -->
     <div class="content">
       21.-23. September 2022, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
@@ -180,6 +180,22 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
 </div><!-- container-->
 
+<div class="container left"> <!-- MSA Sept 2022, MUC -->
+  <div class="content" >
+    29.Nov-2. Dezember 2022 (München)<br>
+    <strong style="color:DarkBlue;">Mastering Software Architectures
+    (iSAQB CPSA-Foundation)<br>
+    </strong> 
+    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
+    <p style="font-size-adjust: 0.4;">
+        Early-Bird-Preis bei Anmeldung bis 15. Juni 2022: € 2300,-,
+        Frühbucherpreis bei Anmeldung bis 15. September 2022: € 2.590,-,
+       Normalpreis: € 2.790,-
+      </p>
+    <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    </div>
+</div> 
 
 <!-- example "ausgebucht":
 <div class="container left">
