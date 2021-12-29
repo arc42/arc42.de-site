@@ -17,7 +17,7 @@ sidebar:
 <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 
-# Grundlagen und Methodik erfolgreicher Softwarearchitektur
+# Mastering Software Architectures
 
 4-tägiger Einführungskurs vom „dynamischen Duo“, Peter Hruschka und Gernot Starke
 
