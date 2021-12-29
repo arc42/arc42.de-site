@@ -17,7 +17,8 @@ sidebar:
 <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 
-# Mastering Software Architectures
+# Mastering Software Architectures <br/> Effektive Softwarearchitekturen - praxisnah!
+
 
 4-tägiger Einführungskurs vom „dynamischen Duo“, Peter Hruschka und Gernot Starke
 
