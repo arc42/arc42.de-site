@@ -20,7 +20,7 @@ sidebar:
 ## Breites Angebot
 
 <a href="info-msa"><button class="button buttonMSA" style="width:76%;">
-Grundlagen und Methodik<br/>erfolgreicher Softwarearchitektur</button></a>
+Mastering Software Architectures</button></a>
 
 <p/>
 <a href="info-req4arc"><button class="button buttonReq4Arc" style="width:25%;">
