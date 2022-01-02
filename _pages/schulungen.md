@@ -26,7 +26,7 @@ Mastering Software Architectures<br/>Effektive Softwarearchitekturen - praxisnah
 <a href="info-req4arc"><button class="button buttonReq4Arc" style="width:25%;">
 REQ4ARC: <br/>bessere Anforderungen</button></a>
 <a href="info-improve"><button class="button buttonImprove" style="width:25%;">
-IMPROVE: <br/>Systeme verbessernn</button></a>
+IMPROVE: <br/>Systeme verbessern</button></a>
 <a href="info-adoc"><button class="button buttonAdoc" style="width:25%;">
 ADOC: <br/>Architekturdokumentation</button></a>
 
