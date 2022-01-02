@@ -33,7 +33,7 @@ feature_row3:
   - image_path: /images/template/03-context-overview.png
     alt: "solution strategy overview"
     title: "3. Kontextabgrenzung"
-    excerpt: 'Grenzt das System, an dem Sie arbeiten, von externen Kommunikationspartnern (Nachbarsystemsen und Benutzern) ab. Spezifiziert die externen Schnittstellen aus Sicht des Business (immer) und aus Sicht der Technologie (optional)'
+    excerpt: 'Grenzt das System, an dem Sie arbeiten, von externen Kommunikationspartnern (Nachbarsystemen und Benutzern) ab. Spezifiziert die externen Schnittstellen aus Sicht des Business (immer) und aus Sicht der Technologie (optional)'
     url: "https://docs.arc42.org/section-3/"
     btn_label: "mehr dazu ..."
     btn_class: "btn--inverse"    
