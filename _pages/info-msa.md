@@ -17,13 +17,13 @@ sidebar:
 <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 
-# Mastering Software Architectures <br/> Effektive Softwarearchitekturen - praxisnah!
+# Mastering Software Architectures <br><sup>Effektive Softwarearchitekturen - praxisnah!</sup>
 
 
 4-tägiger Einführungskurs vom „dynamischen Duo“, Peter Hruschka und Gernot Starke
 
 ## Das erwartet Sie
-Fundierte, praxisnahe und pragmatische Einführung in Software-Architektur, mit hohem Übungsanteil. 
+Fundierte, praxisnahe und pragmatische Einführung in -Architektur, mit hohem Übungsanteil. 
 Sie lernen und üben die vielfältigen Aufgaben von Softwarearchitekt:innen anhand von Fallstudien. 
 Fokus liegt auf methodischem und systematischem Vorgehen bei Architekturentwurf und -bewertung.
 
