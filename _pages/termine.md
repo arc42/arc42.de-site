@@ -61,9 +61,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </div>
 </div> 
 
-<div class="container right"> <!--IMPROVE Mai 2022 MUC -->
+<div class="container right"> <!--IMPROVE Mai 2022 FRA -->
   <div class="content" >
-    16.-18. Mai 2022 (München)<br>
+    16.-18. Mai 2022 (Frankfurt)<br>
     <strong style="color:DarkBlue;">IMPROVE  (iSAQB Advanced)</strong> 
     <p>Bestehende Systeme systematisch verbessern - Wartungskosten und technische Schulden reduzieren.</p>
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
@@ -77,9 +77,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </div>
 </div> 
 
-<div class="container left"> <!-- ADOC Mai 2022 MUC -->
+<div class="container left"> <!-- ADOC Mai 2022 FRA -->
   <div class="content" >
-    19.-20. Mai 2022 (München)<br>
+    19.-20. Mai 2022 (Frankfurt)<br>
     <strong style="color:DarkBlue;">ADOC - Effektive Architekturdokumentation <br>
     (iSAQB Advanced)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
@@ -113,7 +113,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 
-<div class="container left"> <!-- MSA Sept 2022, MUC -->
+<div class="container left"> <!-- MSA Sept 2022, FRA -->
   <div class="content" >
     13.-16. September 2022 (Frankfurt)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures
