@@ -28,7 +28,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
  
 <div class="container right">  <!-- Req4Arc März 22, online-->
-    <div class="content">
+    <div class="content" >
       2.-4. März 2022, online<br>
       <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
@@ -36,8 +36,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
         Aufgrund der online-Durchführung reduzierter Preis!
-        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 23. Nov. 2021: € 1.650,-, 
-        Frühbucherpreis bei Anmeldung bis 15. Januar 2022: € 1.800,-
         Normalpreis: € 2.000,- (für unsere CPSA-F-Alumni € 1.800.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
@@ -46,14 +44,13 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div><!-- container-->
 
 <div class="container left"> <!-- MSA März 2022, MUC -->
-  <div class="content" >
+  <div class="content" style="color:darkgrey">
     15.-18. März 2022 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures<br>
     (iSAQB Foundation Level)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
+    <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
     <p style="font-size-adjust: 0.4;">
-        Early-Bird-Preis bei Anmeldung bis 15. Oktober 2021: € 2300,-,
-        Frühbucherpreis bei Anmeldung bis 15. Dezember 2021: € 2.590,-,
        Normalpreis: € 2.790,-
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -68,7 +65,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p>Bestehende Systeme systematisch verbessern - Wartungskosten und technische Schulden reduzieren.</p>
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 15. Dez. 2021: € 1.725,-, 
         Frühbucherpreis bei Anmeldung bis 15. Februar 2022: € 1.950,-
         Normalpreis: € 2.000,- (für unsere CPSA-F-Alumni € 1.800.-)
       </p>
@@ -84,7 +80,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     (iSAQB Advanced)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 6. Januar 2022: € 1.250,-,
         Frühbucherpreis bei Anmeldung bis 10. März 2022: € 1.350,-
         Normalpreis: € 1.500,- (für unsere CPSA-F-Alumni € 1.350.-)
       </p>
@@ -95,7 +90,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> <!-- MSA Juni 2022 FRA -->
     <div class="content">
-      28. Juni - 1. Juli 2022, Frankfurt<br>
+      1.  Juni - 1. Juli 2022, Frankfurt<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
       (iSAQB CPSA-Foundation)</strong>
       <p>
