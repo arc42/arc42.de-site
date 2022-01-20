@@ -66,7 +66,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
         Frühbucherpreis bei Anmeldung bis 15. Februar 2022: € 1.950,-
-        Normalpreis: € 2.000,- (für unsere CPSA-F-Alumni € 1.800.-)
+        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.800.-)
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
