@@ -90,7 +90,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> <!-- MSA Juni 2022 FRA -->
     <div class="content">
-      1.  Juni - 1. Juli 2022, Frankfurt<br>
+     28. Juni - 1. Juli 2022, Frankfurt<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
       (iSAQB CPSA-Foundation)</strong>
       <p>
