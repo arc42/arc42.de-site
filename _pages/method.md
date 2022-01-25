@@ -107,7 +107,7 @@ Ob das aus Absicht oder Versehen geschieht - Sie sollten in jedem Fall gemeinsam
 
 Übrigens kommt es manchmal sogar vor, dass einzelne Entwickler:innen noch viel bessere Ideen haben als die Architekturgruppe - solche _Goldstücke_ der Implementierung könnten Sie durch die systematische Begleitung der Umsetzung finden und zum Bestandteil der Architekur machen!
 
-Auf der anderen Seite könnten Entwickler:knnen auch Entwurfsentscheidungen oder Konzepte missverstehen oder schlecht umsetzen. 
+Auf der anderen Seite könnten Entwickler:innen auch Entwurfsentscheidungen oder Konzepte missverstehen oder schlecht umsetzen. 
 In solchen Fällen sollten Sie coachen und den Betroffenen die Entscheidungen oder Konzepte erläutern oder sie bei deren Implementierung unterstützen.
 
 In jedem Fall sollten Sie in den Quellcode Ihrer Systeme schauen (= _Code-Reviews_) und die Ist-Implementierung mit dem gewünschten Soll vergleichen. 
