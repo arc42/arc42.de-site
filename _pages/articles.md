@@ -19,6 +19,15 @@ sidebar:
 
 Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-school auf Papier, manchmal auch online.
 
+## Principles of technical documentation
+
+Gernot Starke
+
+This article collects fundamental requirements for technical documentation,
+especially software architecture documentation, together with ideas how to satisfy those.
+
+Original: [INNOQ Blog](https://www.innoq.com/en/articles/2022/01/principles-of-technical-documentation/)
+
 ## Handeln statt jammern
 
 Peter Hruschka, Gernot Starke
