@@ -35,10 +35,10 @@ template_training_news:
     
   - title: "News"
     excerpt: "![](/images/home/news.png)<br>
-    
-    * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
 
-    * Das neue Buch als ideale Vorbereitung auf die iSAQB-Zertifizierung: [Software Architecture Foundation](/books#software-architecture-foundation-cpsa-f-exam-preparation).
+    * Blog-Post [Principles of technical documentation](https://www.innoq.com/en/articles/2022/01/principles-of-technical-documentation/).
+  
+    * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
     * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/books#arc42-by-example-vol2).
     "
