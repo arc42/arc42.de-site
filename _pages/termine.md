@@ -27,21 +27,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
  
-<div class="container right">  <!-- Req4Arc März 22, online-->
-    <div class="content" >
-      2.-4. März 2022, online<br>
-      <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
-      <p>Ihr systematischer Weg zu besseren Anforderungen!
-      </p>
-    <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p style="font-size-adjust: 0.4;">
-        Aufgrund der online-Durchführung reduzierter Preis!
-        Normalpreis: € 2.000,- (für unsere CPSA-F-Alumni € 1.800.-)
-      </p>
-      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
-</div><!-- container-->
 
 <div class="container left"> <!-- MSA März 2022, MUC -->
   <div class="content" style="color:darkgrey">
