@@ -17,11 +17,24 @@ sidebar:
 <a href="/downloads/flyer-adoc.pdf" target="_blank"><button class="button buttonAdoc">Download<br/>Kursbeschreibung (pdf)</button></a>
 <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
-Sie möchten interessierten Personen einen Einblick in Ihre Architektur geben? 
-Ihre wesentlichen Entscheidungen, Strukturen oder Konzepte erklären? 
-In diesem praxisorientierten Training lernen Sie, unter praktischen Randbedingungen (Zeit- und Kostendruck) angemessene Dokumentation für verschiedene Zielgruppen zu erstellen und zu pflegen.
+In diesem praxisorientierten Hands-on Training lernen Sie, unter praktischen Randbedingungen (Zeit- und Kostendruck) angemessene Dokumentation für verschiedene Zielgruppen zu erstellen und zu pflegen.
 
-ADOC hilft Ihnen, Ihre Architekturdokumentation konkret und in kurzer Zeit zu verbessern.
+ADOC hilft Ihnen, Ihre Architekturdokumentation in kürzester Zeit zu verbessern. Im Workshop arbeiten Sie an der Dokumentation ihrer eigenen Systeme, auf Wunsch stellen wir zusätzliche Fallbeispiele bereit. Sie dokumentieren mit Hilfe verschiedener Architektursichten (Kontext-, Baustein-, Laufzeit- und Deploymentsicht) sowie querschnittlicher Konzepte und Architekturentscheidungen und adressieren damit unterschiedliche Stakeholder.
+
+### Praktische Übungen
+Sie erarbeiten anhand praktischer Übungen die wesentlichen Bestandteile hilfreicher Architekturdokumentation, insbesondere:
+
+* Prägnante Formulierung von Aufgabenstellung
+* Konkretisierung wesentlicher Qualitätsanforderungen
+* Kontextabgrenzung mit externen Schnittstellen
+* Bausteinsicht mit Verfeinerungen
+* Laufzeitszenarien zur Erklärung von Bausteinen
+* Infrastruktur und Deployment
+* Erklärung querschnittlicher Konzepte
+* Prägnante Dokumentation von Architekturentscheidungen mit Hilfe von Architecture Decision Records.
+
+Priorisierung und Schwerpunktsetzung erfolgt in Abstimmung mit den Teilnehmenden.
+Für die praktischen Übungen ist ein Laptop hilfreich, aber nicht unbedingt notwendig.
 
 ### Inhalt
 * Grundlagen von Dokumentation
