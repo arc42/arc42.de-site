@@ -3,14 +3,17 @@ title: "Erfolgreiche Softwarearchitektur"
 layout: splash
 permalink: /
 header: 
-  overlay_color: "#d7ecf8"
-  overlay_filter: rgba(15, 80, 180, 0.6)
-  overlay_image: /images/splash/arc42-splash-landingpage.jpg
+  #overlay_color: "#d7ecf8"
+  #overlay_filter: rgba(15, 80, 180, 0.6)
+  #overlay_image: /images/splash/arc42-splash-landingpage.jpg
+  overlay_image: /images/splash/ukrainian-flag.jpg
   actions: 
     - label: "Übersicht"
       url: /overview
     - label: "&#8594; English site..."
       url: "https://arc42.org"
+    - label: "Help Ukraine"  
+      url: https://ukrainewar.carrd.co
 excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei."
 
 

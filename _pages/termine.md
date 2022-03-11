@@ -3,9 +3,13 @@ title: "Termine"
 layout: splash
 permalink: /termine
 header:
-  overlay_filter: rgba(15, 80, 180, 0.5)
-  overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
-  caption: "Photo credit: [**unsplash**](https://unsplash.com/@tjerwin)"
+ # overlay_filter: rgba(15, 80, 180, 0.5)
+ # overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
+ # caption: "Photo credit: [**unsplash**](https://unsplash.com/@tjerwin)"
+  overlay_image: /images/splash/ukrainian-flag.jpg
+  actions: 
+    - label: "Help Ukraine"  
+      url: https://ukrainewar.carrd.co  
 excerpt: "Unsere nächsten Schulungen."
 ---
 
@@ -75,7 +79,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> <!-- MSA Juni 2022 FRA -->
     <div class="content">
-     28. Juni - 1. Juli 2022, Frankfurt<br>
+     1.  Juni - 1. Juli 2022, Frankfurt<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
       (iSAQB CPSA-Foundation)</strong>
       <p>
