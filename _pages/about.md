@@ -3,8 +3,8 @@ title: "Über uns (und arc42)!"
 layout: single
 permalink: /about
 header:
-  overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
-
+  #overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
+  overlay_image: /images/splash/ukrainian-flag.jpg
 sidebar:
   nav: "about"
 
