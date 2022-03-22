@@ -63,6 +63,10 @@ Vorbereitung auf die iSAQB CPSA-Foundation (Certified Professional for Software 
 
 Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf diese Prüfung vorbereitet. 
 
+>## zur iSAQB Prüfung
+>Wir organisieren für Sie die Prüfung, und reservieren Ihnen (unverbindlich) einen Platz. Die Prüfungsgebühr von z.Zt. Euro 250 zzgl. USteuer berechnet die Prüfungsfirma erst **nach** Ihrer Teilnahme. 
+>Sie brauchen also nichts weiter zu unternehmen - bei Bedarf könnten Sie sich während des Trainings noch abmelden.
+
 
 # Ausführliche Inhaltsbeschreibung
 
