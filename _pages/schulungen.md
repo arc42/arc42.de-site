@@ -17,10 +17,10 @@ sidebar:
 ---
 
 
-## Breites Angebot
+## Unser Angebot: Grundlagen und fortgeschrittene Themen
 
 <a href="info-msa"><button class="button buttonMSA" style="width:76%;">
-Mastering Software Architectures<br/>Effektive Softwarearchitekturen - praxisnah!</button></a>
+Mastering Software Architectures:<br/>Effektive Softwarearchitekturen - praxisnah!</button></a>
 
 <p/>
 <a href="info-req4arc"><button class="button buttonReq4Arc" style="width:25%;">
