@@ -44,8 +44,6 @@ excerpt: "Wir freuen uns auf Sie!"
 <label for="kurs">Für welchen Kurs melden Sie an?</label>
 <select id="kurs" name="Kurs" required>
   <option value="*"></option>
-  <option value="22-05-16 Improve">IMPROVE, 16.-18. Mai 2022 Frankfurt</option>
-  <option value="22-05-19 ADOC">ADOC, 19.-20. Mai 2022 Frankfurt</option>
   <option value="22-06-28 MSA">Mastering SW Architectures, 28. Juni - 1. Juli 2022 Frankfurt</option>
   <option value="22-09-13 MSA">Mastering SW Architectures, 13.-16. Sept Frankfurt</option>
   <option value="22-09-19 ADOC">ADOC, 19.-20. Sept 2022 Frankfurt</option>
