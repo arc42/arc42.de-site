@@ -77,7 +77,7 @@ Wir teilen die (verbreitete) Meinung, dass Softwarearchitekten Technologie gut k
 Softwarearchitekten müssen darüber hinaus über eine Vielzahl weiterer Fähigkeiten verfügen und entsprechende Aufgaben erledigen können. 
 Die verantwortungsbewussten Über-den-Tellerrand-Gucker bilden in Projekten ein wichtiges Bindeglied zwischen unterschiedlichen Stakeholdergruppen wie Managern, Requirements-Engineers, Entwicklungsteams, Testern und Administratoren oder Hardware-Ingenieuren. 
 
-<a href="/downloads/zehnkaempfer.pdf" target="_blank">Download (als pdf)</a>
+<a href="https://www.arc42.de/downloads/zehnkaempfer.pdf" target="_blank">Download (als pdf, von arc42.de)</a>
 
 
  
