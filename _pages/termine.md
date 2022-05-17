@@ -32,40 +32,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
  
 
-
-<div class="container right"> <!--IMPROVE Mai 2022 FRA -->
-  <div class="content" >
-    16.-18. Mai 2022 (Frankfurt)<br>
-    <strong style="color:DarkBlue;">IMPROVE  (iSAQB Advanced)</strong> 
-    <p>Bestehende Systeme systematisch verbessern - Wartungskosten und technische Schulden reduzieren.</p>
-    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-    <p style="font-size-adjust: 0.4;">
-        Frühbucherpreis bei Anmeldung bis 15. Februar 2022: € 1.950,-
-        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.800.-)
-      </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-    </div>
-</div> 
-
-<div class="container left"> <!-- ADOC Mai 2022 FRA -->
-  <div class="content" >
-    19.-20. Mai 2022 (Frankfurt)<br>
-    <strong style="color:DarkBlue;">ADOC - Effektive Architekturdokumentation <br>
-    (iSAQB Advanced)</strong> 
-    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-    <p style="font-size-adjust: 0.4;">
-        Frühbucherpreis bei Anmeldung bis 10. März 2022: € 1.350,-
-        Normalpreis: € 1.500,- (für unsere CPSA-F-Alumni € 1.350.-)
-      </p>
-    <a href="info-adoc"><button class="button buttonADOC">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-    </div>
-</div> 
-
 <div class="container right"> <!-- MSA Juni 2022 FRA -->
     <div class="content">
-     28. Juni - 1. Juli 2022, Frankfurt<br>
+     1.  Juni - 1. Juli 2022, Frankfurt<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
       (iSAQB CPSA-Foundation)</strong>
       <p>
