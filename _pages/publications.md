@@ -9,6 +9,10 @@ header:
   #caption: "Photo: [**Glen Carstens Peters**](https://unsplash.com/@glenncarstenspeters)"
   overlay_image: /images/splash/ukrainian-flag.jpg
   actions: 
+   - label: "Docs+Tipps"
+     url: https://docs.arc42.org
+   - label: "FAQ"
+     url: https://faq.arc42.org
    - label: "Bücher"
      url: /books
    - label: "Artikel"
@@ -22,6 +26,23 @@ header:
 
 excerpt: "wir schreiben und sprechen über Architektur...<span style='font-size:80px;'>&#128521;</span>"
 
+docs_feature:
+  - image_path: /images/publications/docs-feature.png
+    alt: "Docs"
+    title: "Doku und Tipps"
+    excerpt: 'Ausführliche Dokumentation, über hundert praktische Tipps zu arc42. Für Systeme aller Größen und Branchen, für kleine und große Teams, für alle Arten von Werkzeugen.'
+    url: https://docs.arc42.org
+    btn_label: "zu Doku & Tipps ..."
+    btn_class: "btn--primary"
+
+faq_feature:
+  - image_path: /images/publications/faq-feature.png
+    alt: "FAQ"
+    title: "FAQs"
+    excerpt: 'Die häufig gestellten Fragen mit Antworten, zu Methodik, den arc42-Abschnitten, Agilität, Tools, Versionierung und weiteren.'
+    url: https://faq.arc42.org
+    btn_label: "zu den FAQs ..."
+    btn_class: "btn--primary"
 
 books_feature:
   - image_path: /images/publications/book-feature.png
@@ -64,6 +85,9 @@ talks_feature:
 
 
 ---
+
+{% include feature_row id="docs_feature" type="left" %}
+{% include feature_row id="faq_feature" type="right" %}
 
 {% include feature_row id="books_feature" type="left" %}
 
