@@ -1,8 +1,8 @@
 ---
-title: "Publikationen"
+title: "Mehr..."
 layout: splash
 
-permalink: /publications
+permalink: /more
 header:
   #overlay_filter: rgba(15, 80, 180, 0.5)
   #overlay_image: /images/splash/publications-unsplash.jpg
@@ -59,7 +59,7 @@ videos_feature:
     alt: "Videos"
     title: "Videos"
     excerpt: 'Mehrfach sind unsere Konferenzvorträge aufgezeichnet worden, oder wir haben uns selbst als Produzenten versucht... 
-    Immerhin besitzt arc42 einen eigenen Youtube-Channel... '
+    Immerhin besitzt arc42 einen eigenen [Youtube-channel](https://www.youtube.com/arc42-video/)... '
     url: /videos
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
@@ -78,7 +78,7 @@ talks_feature:
   - image_path: /images/publications/talks-feature.jpeg
     alt: "Vorträge"
     title: "Vorträge"
-    excerpt: 'Wir haben über 25 Bücher geschrieben, von der Anforderungsklärung, Business-Analyse, Architektur, Dokumentation, Verhaltensmuster (Knigge) bis zu Patterns'
+    excerpt: 'Wir halten Vorträge auf Konferenzen, zu Architektur, Methodik, Vorgehen, Reviews und weiteren Themen.'
     url: /talks
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
