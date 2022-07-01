@@ -115,8 +115,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div> 
 
 
- <div class="container left">
-  <div class="content" style="color:darkgrey">
+ <div class="container right">
+  <div class="content">
     28.-31. März 2023 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures<br>
     (iSAQB Foundation Level)</strong> 
