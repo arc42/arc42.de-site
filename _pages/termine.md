@@ -139,7 +139,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 22. November 2022: € 2300,-,
+       Early-Bird-Preis bei Anmeldung bis 22. November 2022: € 1725,-,
         Frühbucherpreis bei Anmeldung bis 22. Februar 2023: € 1.950,-
         Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
       </p>
