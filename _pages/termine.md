@@ -119,7 +119,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="content">
     28.-31. März 2023 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures<br>
-    (iSAQB Foundation Level)</strong> 
+    (iSAQB CPSA-Foundation)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
   <p style="font-size-adjust: 0.4;">
        Early-Bird-Preis bei Anmeldung bis 28. Oktober 2022: € 2300,-,
