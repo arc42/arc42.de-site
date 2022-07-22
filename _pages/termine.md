@@ -41,7 +41,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
+        <!--
         Frühbucherpreis bei Anmeldung bis 15. Juni 2022: € 2.590,-,
+       -->
        Normalpreis: € 2.790,-
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -56,7 +58,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     (iSAQB CPSA-Advanced)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
       <p style="font-size-adjust: 0.4;">
+        <!--
         Frühbucherpreis bei Anmeldung bis 20. Juni 2022: € 1.350,-
+        -->
         Normalpreis: € 1.500,- (für unsere CPSA-F-Alumni € 1.350.-)
       </p>
     <a href="info-adoc"><button class="button buttonADOC">Mehr Info</button></a>
@@ -72,7 +76,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
+        <!--
         Frühbucherpreis bei Anmeldung bis 25. Juni 2022: € 1.950,-
+        -->
         Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
@@ -101,7 +107,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="content" >
     29.Nov-2. Dezember 2022 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures
-    (iSAQB CPSA-Foundation)<br>
+    (iSAQB CPSA-Foundation, nur noch wenige Plätze verfügbar)<br>
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
@@ -148,7 +154,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
 </div><!-- container-->
 
-<div class="container right"> <!-- MSA Juni 2022 FRA -->
+<div class="container right"> <!-- MSA Juni 2023 FRA -->
     <div class="content">
      20.-23. Juni 2023, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
