@@ -61,7 +61,7 @@ methode_publications_consulting:
     Es gibt viel zu lesen über arc42 und Architektur. Von der Methode über _good practices_
     bis hin zu kompletten Beispielen von Softwarearchitekturen.<br>
     Stöbern Sie in unseren Büchern, Artikeln, Vorträgen oder Videos."
-    url: "/publications"
+    url: "/more"
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"
   
