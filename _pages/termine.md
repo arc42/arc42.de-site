@@ -104,10 +104,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div><!-- container-->
 
 <div class="container left"> 
-  <div class="content" >
+  <div class="content" style="color:darkgrey">
     29.Nov-2. Dezember 2022 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures
-    (iSAQB CPSA-Foundation, nur noch wenige Plätze verfügbar)<br>
+    (iSAQB CPSA-Foundation: ausgebucht, nur noch Warteliste)<br>
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
