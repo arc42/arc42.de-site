@@ -156,7 +156,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> <!-- MSA Juni 2023 FRA -->
     <div class="content">
-     20.-23. Juni 2023, Frankfurt/Main<br>
+     27.-30. Juni 2023, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
       (iSAQB CPSA-Foundation)</strong>
       <p>
@@ -164,8 +164,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
   <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 15. Januar 2023: € 2300,-,
-       Frühbucherpreis bei Anmeldung bis 15. März 2023: € 2.590,-,
+       Early-Bird-Preis bei Anmeldung bis 21. Januar 2023: € 2300,-,
+       Frühbucherpreis bei Anmeldung bis 21. März 2023: € 2.590,-,
        Normalpreis: € 2.790,-
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
