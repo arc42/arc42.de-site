@@ -37,7 +37,7 @@ template_training_news:
     
     
   - title: "News"
-    excerpt: "![](/images/home/arc2-ua.jpg)<br>
+    excerpt: "![](/images/home/arc42-ua.jpg)<br>
 
     * Endlich gibt es die Ukrainsche (UA) Version von arc42! Übersetzt von @BulykIvan, mit Unterstützung von [@visenger](https://twitter.com/visenger)!
 
