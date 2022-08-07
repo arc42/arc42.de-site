@@ -37,7 +37,9 @@ template_training_news:
     
     
   - title: "News"
-    excerpt: "![](/images/home/news.png)<br>
+    excerpt: "![](/images/home/arf42-ua.jpg)<br>
+
+    * Endlich gibt es die Ukrainsche (UA) Version von arc42! Übersetzt von @BulykIvan, mit Unterstützung von [@visenger](https://twitter.com/visenger)!
 
     * Blog-Post [Principles of technical documentation](https://www.innoq.com/en/articles/2022/01/principles-of-technical-documentation/).
   
