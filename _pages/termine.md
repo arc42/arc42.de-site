@@ -34,20 +34,20 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 <div class="container left"> <!-- MSA Sept 2022, FRA -->
-  <div class="content" >
+   <div class="content" style="color:darkgrey">
     13.-16. September 2022 (Frankfurt)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures
-    (iSAQB CPSA-Foundation)<br>
+    (iSAQB CPSA-Foundation: ausgebucht)<br>
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
         <!--
         Frühbucherpreis bei Anmeldung bis 15. Juni 2022: € 2.590,-,
-       -->
        Normalpreis: € 2.790,-
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+       -->
     </div>
 </div> 
 
