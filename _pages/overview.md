@@ -113,7 +113,7 @@ feature_row11:
 - image_path: /images/template/11-risk-overview.png
   alt: "risk"
   title: "11. Risiken und technische Schulden"
-  excerpt: 'Bekannte Risiken und angehäufte technische Schulden. Welche potentiellen Probleme lauern im und um das System? Über welche Schwächen beklagen sich die Entwicklungsteams?'
+  excerpt: 'Bekannte Risiken und angehäufte technische Schulden. Welche potentiellen Probleme lauern im und um das System? Über welche Schwächen beklagen sich die Entwicklungsteams?<br><small>Icon von Flaticon.com</small>'
   url: "https://docs.arc42.org/section-11/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--danger"    
