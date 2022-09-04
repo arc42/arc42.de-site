@@ -6,7 +6,7 @@ header:
   #overlay_color: "#d7ecf8"
   #overlay_filter: rgba(15, 80, 180, 0.6)
   #overlay_image: /images/splash/arc42-splash-landingpage.jpg
-  overlay_image: /images/splash/ukrainian-flag.jpg
+  overlay_image: /images/splash/ukrainian-flag.webp
   actions: 
     - label: "Übersicht"
       url: /overview
