@@ -7,7 +7,7 @@ header:
   #overlay_filter: "0.4"
   #overlay_image: /images/splash/frantisek-duris-OdoWsR99gYA-unsplash.jpg
   #caption: "Photo credit: [**Frantisek Duris**](https://unsplash.com/@modry_dinosaurus)"
-  overlay_image: /images/splash/ukrainian-flag.jpg
+  overlay_image: /images/splash/ukrainian-flag.webp
   actions: 
     - label: "Help Ukraine"  
       url: https://ukrainewar.carrd.co 
