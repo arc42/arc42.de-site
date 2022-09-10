@@ -97,7 +97,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
        Normalpreis: € 2.790,-
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    <a href="anmeldung"><button class="button buttonAnmeldung">Warteliste</button></a>
     </div>
 </div> 
 
