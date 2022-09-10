@@ -6,9 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+github_username: gernotstarke
+github: metadata
 
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" 
 
 # Site Settings
 locale                   : "de"
@@ -20,16 +22,10 @@ description              : "Resourcen für Softwarearchitektur."
 url                      : "https://arc42.de" 
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "arc42/arc42.de-site" # GitHub username/repo-name
-teaser                   : /images/arc42-splash-landingpage.jpg # path of fallback teaser image, e.g. "/images/500x300.png"
+teaser                   : /images/arc42-splash-landingpage.jpg 
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments:
-  provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
-atom_feed:
-  path                   : 
 
 # SEO Related
 google_site_verification :
@@ -132,7 +128,6 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 plugins:
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
   - jemoji
 
@@ -140,7 +135,6 @@ plugins:
 whitelist:
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
   - jemoji
 
