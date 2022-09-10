@@ -31,7 +31,7 @@ It uses the MinimalMistakes template, with a few slight modifications
 > Prequisite: Local build uses a Docker container. You therefore have to have Docker installed. 
 
 1. checkout the repo
-2. run the script `_manage-site.sh`
+2. run  `docker compuse up`
 
 It will start a local jekyll and will serve the generated content on `0.0.0.0:4000`
 
