@@ -131,12 +131,13 @@ feature_row12:
 
 ---
 
-arc42 gibt praxisorientierte Antwort die folgenden zwei Fragen, und läßt sich einfach an Ihre spezifischen Bedürfnisse anpassen:
+arc42 gibt praxisorientierte Antworten auf die folgenden zwei Fragen:
 
 * **_Was_** sollen wir über unsere Architektur kommunizieren/dokumentieren?
 * **_Wie_** sollen wir kommunizieren/dokumentieren?
 
 Dazu haben wir ein einfaches Template mit 12 Kapiteln entwickelt, in denen Sie alles Wissenswerte über die Architektur unterbringen können.
+arc42 läßt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
 
 ![](/images/template/template-struktur-focus.png)
 
