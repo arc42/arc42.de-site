@@ -32,24 +32,26 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
  
 
-<div class="container right"> <!-- ADOC Sept 2022 FRA -->
+
+<!-- ADOC Sept 2022 FRA 
+<div class="container right"> 
   <div class="content" >
     19.-20. September 2022 (Frankfurt)<br>
     <strong style="color:DarkBlue;">ADOC - Effektive Architekturdokumentation<br>
     (iSAQB CPSA-Advanced)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
       <p style="font-size-adjust: 0.4;">
-        <!--
         Frühbucherpreis bei Anmeldung bis 20. Juni 2022: € 1.350,-
-        -->
         Normalpreis: € 1.500,- (für unsere CPSA-F-Alumni € 1.350.-)
       </p>
     <a href="info-adoc"><button class="button buttonADOC">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
     </div>
 </div> 
+-->
 
-<div class="container left">  <!-- Req4Arc Sept 22, FRA -->
+<!-- Req4Arc Sept 22, FRA 
+<div class="container left">  
     <div class="content">
       21.-23. September 2022, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
@@ -57,15 +59,14 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
-        <!--
         Frühbucherpreis bei Anmeldung bis 25. Juni 2022: € 1.950,-
-        -->
         Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
-</div><!-- container-->
+  </div>
+</div>
+-->
 
 
 <div class="container right"> <!-- IMPROVE NOV 2022 Hamburg-->
@@ -75,7 +76,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
       <p style="font-size-adjust: 0.4;">
-        Sonderpreis für <strong>unsere</strong> CPSA-F-Alumni bis 23. August 2022: € 1.725,-, 
         Frühbucherpreis bei Anmeldung bis 23. August 2022: € 1.950,-
         Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
       </p>
@@ -92,8 +92,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-        <!--Early-Bird-Preis bei Anmeldung bis 15. Juni 2022: € 2300,-,-->
-        Frühbucherpreis bei Anmeldung bis 15. September 2022: € 2.590,-,
        Normalpreis: € 2.790,-
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
