@@ -116,7 +116,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </div>
 </div> 
 
-<div class="container left">  <!-- Req4Arc Sept 22, FRA -->
+<!-- Req4Arc Mai 2023, FRA -->
+<div class="container left">  
     <div class="content">
       22.-24. Mai 2023, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
@@ -130,8 +131,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
-</div><!-- container-->
+  </div>
+</div>
 
 <div class="container right"> <!-- MSA Juni 2023 FRA -->
     <div class="content">
@@ -152,6 +153,45 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
+<!-- Req4Arc September 2023, FRA -->
+<div class="container left">  
+    <div class="content">
+      5.-7. September 2023, Frankfurt/Main<br>
+      <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <p>Ihr systematischer Weg zu besseren Anforderungen!
+      </p>
+    <p>Mit Gernot Starke und Peter Hruschka</p>
+      <p style="font-size-adjust: 0.4;">
+       Early-Bird-Preis bei Anmeldung bis 22. Dezember 2022: € 1725,-,
+        Frühbucherpreis bei Anmeldung bis 22. April 2023: € 1.950,-
+        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+
+<!-- MSA September 2023, FRA -->
+<div class="container right"> 
+  <div class="content" >
+    12.-15. September 2023 (Frankfurt/Main)<br>
+    <strong style="color:DarkBlue;">Mastering Software Architectures
+    (iSAQB CPSA-Foundation)<br>
+    </strong> 
+    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
+    <p style="font-size-adjust: 0.4;">
+        Early-Bird-Preis bei Anmeldung bis 15. März 2023: € 2300,-,-->
+        Frühbucherpreis bei Anmeldung bis 15. Juni 2023: € 2.590,-,
+       Normalpreis: € 2.790,-
+      </p>
+    <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    </div>
+</div> 
+
+
+<!-- MSA Dezember 2023, MUC -->
 <div class="container left"> 
   <div class="content" >
     5.-8. Dezember 2023 (München)<br>
