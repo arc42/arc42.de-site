@@ -76,8 +76,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
       <p style="font-size-adjust: 0.4;">
-        Frühbucherpreis bei Anmeldung bis 23. August 2022: € 1.950,-
-        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
+        Normalpreis: € 2075 (für unsere CPSA-F-Alumni € 1950)
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -92,7 +91,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-       Normalpreis: € 2.790,-
+       Normalpreis: € 2790,-
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Warteliste</button></a>
@@ -107,9 +106,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     (iSAQB CPSA-Foundation)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
   <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 28. Oktober 2022: € 2300,-,
-       Frühbucherpreis bei Anmeldung bis 28. Januar 2023: € 2.590,-,
-       Normalpreis: € 2.790,-
+       Early-Bird-Preis bei Anmeldung bis 28. Oktober 2022: € 2300,
+       Frühbucherpreis bei Anmeldung bis 28. Januar 2023: € 2590,
+       Normalpreis: € 2790
      </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -125,16 +124,53 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 22. November 2022: € 1725,-,
-        Frühbucherpreis bei Anmeldung bis 22. Februar 2023: € 1.950,-
-        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
+       Early-Bird-Preis bei Anmeldung bis 22. November 2022: € 1725,
+        Frühbucherpreis bei Anmeldung bis 22. Februar 2023: € 1950,
+        Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
 </div>
 
-<div class="container right"> <!-- MSA Juni 2023 FRA -->
+<!-- IMPROVE Juni 2023, FRA -->
+<div class="container right">  
+    <div class="content">
+      19.-21. Juni 2023, Mannheim<br>
+      <strong style="color:DarkBlue;">IMPROVE <br>(CPSA-Advanced)</strong><br>
+      <p>Systematisch verbessern!
+      </p>
+    <p>Mit Gernot Starke und Peter Hruschka</p>
+      <p style="font-size-adjust: 0.4;">
+       Early-Bird-Preis bei Anmeldung bis 19. Dezember 2022: € 1725,
+        Frühbucherpreis bei Anmeldung bis 19. März 2023: € 1950,
+        Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+<!-- ADIC Juni 2023, FRA -->
+<div class="container left">  
+    <div class="content">
+      22.-23. Juni 2023, Mannheim<br>
+      <strong style="color:DarkBlue;">ADOC <br>(CPSA-Advanced)</strong><br>
+      <p>Systematische Architekturdokumentation, pragmatisch und praxisnah
+      </p>
+    <p>Mit Gernot Starke und Peter Hruschka</p>
+      <p style="font-size-adjust: 0.4;">
+       Early-Bird-Preis bei Anmeldung bis 22. Dezember 2022: € 1250,
+        Frühbucherpreis bei Anmeldung bis 22. März 2023: €1350 (Alumni € 1250)
+        Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1 350)
+      </p>
+      <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+<!-- MSA Juni 2023 FRA -->
+<div class="container right"> 
     <div class="content">
      27.-30. Juni 2023, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
@@ -144,9 +180,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
   <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 21. Januar 2023: € 2300,-,
-       Frühbucherpreis bei Anmeldung bis 21. März 2023: € 2.590,-,
-       Normalpreis: € 2.790,-
+       Early-Bird-Preis bei Anmeldung bis 21. Januar 2023: € 2300,
+       Frühbucherpreis bei Anmeldung bis 21. März 2023: € 2590,
+       Normalpreis: € 2790,
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -162,9 +198,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 22. Dezember 2022: € 1725,-,
-        Frühbucherpreis bei Anmeldung bis 22. April 2023: € 1.950,-
-        Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
+       Early-Bird-Preis bei Anmeldung bis 5. März 2022: € 1725,-,
+        Frühbucherpreis bei Anmeldung bis 5. Juni 2023: € 1950,-
+        Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -181,9 +217,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-        Early-Bird-Preis bei Anmeldung bis 15. März 2023: € 2300,-,-->
-        Frühbucherpreis bei Anmeldung bis 15. Juni 2023: € 2.590,-,
-       Normalpreis: € 2.790,-
+        Early-Bird-Preis bei Anmeldung bis 12. März 2023: € 2300,
+        Frühbucherpreis bei Anmeldung bis 12. Juni 2023: € 2590,
+       Normalpreis: € 2790
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -200,9 +236,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p style="font-size-adjust: 0.4;">
-        Early-Bird-Preis bei Anmeldung bis 15. Juni 2023: € 2300,-,-->
-        Frühbucherpreis bei Anmeldung bis 15. September 2023: € 2.590,-,
-       Normalpreis: € 2.790,-
+        Early-Bird-Preis bei Anmeldung bis 5. Juni 2023: € 2300,
+        Frühbucherpreis bei Anmeldung bis 5. September 2023: € 2590,
+       Normalpreis: € 2790
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
