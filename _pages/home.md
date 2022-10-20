@@ -13,7 +13,7 @@ header:
     - label: "&#8594; English site..."
       url: "https://arc42.org"
     - label: "Help Ukraine"  
-      url: https://ukrainewar.carrd.co
+      url: https://u24.gov.ua/
 excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei."
 
 
