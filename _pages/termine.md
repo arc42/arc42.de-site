@@ -151,7 +151,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
-<!-- ADIC Juni 2023, FRA -->
+<!-- ADOC Juni 2023, FRA -->
 <div class="container left">  
     <div class="content">
       22.-23. Juni 2023, Mannheim<br>
