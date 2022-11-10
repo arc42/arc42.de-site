@@ -16,7 +16,7 @@ sidebar:
 ---
 
 
-Peter Hruschka und Gernot Starke
+>von Peter Hruschka und Gernot Starke
 
 Ersticken Sie manchmal in Details und wünschen sich dringend mehr Überblick?
 Wir haben viele Projekte und Entwicklungsteams erlebt, die jede Menge feingranulare, ganz detaillierte Anforderungen vorliegen hatten. Manchmal hatten wir mit Hunderten oder sogar einige Tausend einzelnen („atomaren“) Anforderungen zu tun.
