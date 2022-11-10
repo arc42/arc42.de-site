@@ -19,6 +19,16 @@ sidebar:
 
 Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-school auf Papier, manchmal auch online.
 
+## Behalten Sie den Überblick 
+
+Peter Hruschka und Gernot Starke
+
+Ersticken Sie manchmal in Details und wünschen sich mehr Überblick?
+Wir haben viele Projekte und Entwicklungsteams erlebt, die jede Menge ganz detaillierte Anforderungen vorliegen hatten. Um eine solche Menge an (Detail-)Anforderungen effektiv bearbeiten zu können, brauchen Sie Überblick. 
+
+[Zum kompletten Artikel](/articles/2022-11-requirements-overview)
+
+
 ## Principles of technical documentation
 
 Gernot Starke
