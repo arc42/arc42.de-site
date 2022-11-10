@@ -75,7 +75,10 @@ Am Ende dieser Seite finden Sie die Auflösung...
 In der IT bezeichnen wir den Überblick als Scope und Kontext eines Systems. 
 
 Gehen Sie von Top-Level Geschäftsprozessen aus, und bauen systematisch eine Hierarchie auf, die es erlaubt in verschiedenen Bereich einzutauchen. 
-Für unser Beispiel könnte das eine Zerlegung in Führerhaus, Motor, Fahrgestell mit Rädern und Umwelt sein. 
+Für unser Beispiel könnte das eine Zerlegung in Fahrgestell, Motor, Auspuff und Kabine sein:
+
+![Epics](/images/articles/epics.webp)
+
 Diese Top-Level Zerlegung könnten wir beispielsweise _Epics_ nennen.
 Von dort aus bekommen Sie die Details des Systems (etwa: _User-Storys_ oder lower-level _Features_) in das Gesamtbild eingeordnet. 
 
