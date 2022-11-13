@@ -16,6 +16,23 @@ sidebar:
 
 Einige ausgesuchte Vorträge finden Sie unten, für weitere schauen Sie auf [Speakerdeck](https://speakerdeck.com/gernotstarke)
 
+## Two shockingly recurring problems (Peter Hruschka und Gernot Starke)
+
+Developing Software architectures is a demanding task that is usually quite rewarding (aka "fun").
+
+The whole thing would be even better, if somebody told the development team what exact problem they are supposed to solve. In other words: Teams urgently need better requirements as the basis of their development work. 
+
+The second recurring issue is _legacy_, existing systems which are hard to maintain and operate, and carry a heavy load of technical and organizational debt. 
+In other words: These existing systems are in serious need of improvements, to become maintainable and future-proof.
+
+Our brief and fast-paced tutorial summarizes some important and pragmatic approaches that architects and development teams can follow to improve their requirements. 
+In addition, we demonstrate the fundamental techniques and methods for architecture improvement, technology-agnostic and applicable to all kinds of development projects.
+
+<script async class="speakerdeck-embed" data-id="67bfcf82963a47bc998e5dc42e5ab3ca" data-ratio="1.41451612903226" src="//speakerdeck.com/assets/embed.js"></script>
+
+(We gave this talk on the iSAQB _Software Architecture Gathering_ November 2022)
+
+
 ## Im Stich gelassen (Gernot Starke mit Daniel Lauxtermann)
 
 Warum wir und als Software-Team um bessere Anforderungen kümmern sollten - und wie!
