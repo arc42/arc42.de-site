@@ -32,6 +32,7 @@ In addition, we demonstrate the fundamental techniques and methods for architect
 
 (We gave this talk on the iSAQB _Software Architecture Gathering_ November 2022)
 
+Here you find the [poll-results of this talk](../downloads/SAG-Nov-22-pollresults.pdf). 
 
 ## Im Stich gelassen (Gernot Starke mit Daniel Lauxtermann)
 
