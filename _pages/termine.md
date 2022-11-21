@@ -69,19 +69,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 -->
 
 
-<div class="container right"> <!-- IMPROVE NOV 2022 Hamburg-->
-    <div class="content">
-      22.-24. Nov. 2022, Hamburg <br>
-      <strong style="color:DarkBlue;">IMPROVE<br> 
-      (CPSA-Advanced)</strong><br>
-    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
-      <p style="font-size-adjust: 0.4;">
-        Normalpreis: € 2075 (für unsere CPSA-F-Alumni € 1950)
-      </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
-</div><!-- container-->
 
 <div class="container left"> 
   <div class="content" style="color:darkgrey">
@@ -103,7 +90,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="content">
     28.-31. März 2023 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation,</strong> nur noch wenige Plätze verfügbar.)
+    (iSAQB CPSA-Foundation, nur noch wenige Plätze verfügbar.</strong>)
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
   <p style="font-size-adjust: 0.4;">
        Frühbucherpreis bei Anmeldung bis 28. Januar 2023: € 2590,
@@ -225,6 +212,21 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </div>
 </div> 
 
+
+<div class="container right"> <!-- IMPROVE NOV 2023 Hamburg-->
+    <div class="content">
+      28.-30. Nov. 2023, Hamburg <br>
+      <strong style="color:DarkBlue;">IMPROVE<br> 
+      (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p style="font-size-adjust: 0.4;">
+        Early-Bird bei Anmeldung bis 28. März 2023: € 2050
+        Normalpreis: € 2200 (für unsere CPSA-F-Alumni € 2050)
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+</div><!-- container-->
 
 <!-- MSA Dezember 2023, MUC -->
 <div class="container left"> 
