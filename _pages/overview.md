@@ -104,7 +104,6 @@ feature_row10:
   alt: "quality"
   title: "10. Qualitätsanforderungen"
   excerpt: 'Qualitätanforderungen in Form von Szenarien, mit einem Qualitätsbaum für den Überblick. Die allerwichtigsten Qualitätsziele sollten schon im Kapitel 1.2. (Qualitätsziele) aufgeführt sein. 
-section 1.2. (quality goals).'
   url: "https://docs.arc42.org/section-10/"
   btn_label: "mehr dazu ..."
   btn_class: "btn--inverse"    
@@ -142,9 +141,9 @@ arc42 läßt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
 ![](/images/template/template-struktur-focus.png)
 
 
-Den Kern der Architekturdokumentation bilden die Kontexabgrenzung (Kap. 3), die drei Sichten (Bausteinsicht, Laufzeitsicht und Verteilungssicht - Kap. 5 - 7), sowie die querschnittlichen Konzepte (Kap. 8).
+Den Kern der Architekturdokumentation bilden die Kontextabgrenzung (Kap. 3), die drei Sichten (Bausteinsicht, Laufzeitsicht und Verteilungssicht - Kap. 5 - 7), sowie die querschnittlichen Konzepte (Kap. 8).
 
-Die restlichen Kapitel runden die Dokumentation ab. Sie halten u.a. Ziele, wichtige Entscheidungen und Risiken fest. Ein abeschließendes Glossar stellt sicher, dass alle über das Gleiche sprechen.
+Die restlichen Kapitel runden die Dokumentation ab. Sie halten u.a. Ziele, wichtige Entscheidungen und Risiken fest. Ein abschließendes Glossar stellt sicher, dass alle über das Gleiche sprechen.
 
 Wenn Sie mehr zu den Kapiteln wissen wollen, lesen Sie weiter oder lernen Sie noch mehr Details über die jeweiligen Links.
 
