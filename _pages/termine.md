@@ -70,20 +70,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-<div class="container left"> 
-  <div class="content" style="color:darkgrey">
-    29.Nov-2. Dezember 2022 (München)<br>
-    <strong style="color:DarkBlue;">Mastering Software Architectures
-    (iSAQB CPSA-Foundation: ausgebucht, nur noch Warteliste)<br>
-    </strong> 
-    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-    <p style="font-size-adjust: 0.4;">
-       Normalpreis: € 2790,-
-      </p>
-    <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonAnmeldung">Warteliste</button></a>
-    </div>
-</div> 
+
 
 
  <div class="container right">
