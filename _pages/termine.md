@@ -77,10 +77,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="content">
     28.-31. März 2023 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation, ausgebucht, nur noch Warteliste.</strong>)
+    (iSAQB CPSA-Foundation,</strong> <strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
   <p style="font-size-adjust: 0.4;">
-       Frühbucherpreis bei Anmeldung bis 28. Januar 2023: € 2590,
        Normalpreis: € 2790
      </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -97,7 +96,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p style="font-size-adjust: 0.4;">
-       Early-Bird-Preis bei Anmeldung bis 22. November 2022: € 1725,
+       Early-Bird-Preis bei Anmeldung bis 15. Januar 2023: € 1725,
         Frühbucherpreis bei Anmeldung bis 22. Februar 2023: € 1950,
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
       </p>
