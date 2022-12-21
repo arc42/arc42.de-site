@@ -146,7 +146,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content">
      27.-30. Juni 2023, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
-      (iSAQB CPSA-Foundation)</strong>
+     (iSAQB CPSA-Foundation,</strong> <strong style="color:Crimson;"> nur noch SEHR wenige Plätze frei)</strong>)
       <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
@@ -199,7 +199,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div> 
 
 
-<div class="container right"> <!-- IMPROVE NOV 2023 Hamburg-->
+<div class="container left"> <!-- IMPROVE NOV 2023 Hamburg-->
     <div class="content">
       28.-30. Nov. 2023, Hamburg <br>
       <strong style="color:DarkBlue;">IMPROVE<br> 
@@ -215,7 +215,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div><!-- container-->
 
 <!-- MSA Dezember 2023, MUC -->
-<div class="container left"> 
+<div class="container right"> 
   <div class="content" >
     5.-8. Dezember 2023 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures
