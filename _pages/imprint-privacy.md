@@ -65,6 +65,9 @@ Name der abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, übertragene
 <br/>
 Der Anbieter verwendet die Protokolldaten nur für statistische Auswertungen zum Zweck des Betriebs, der Sicherheit und der Optimierung des Angebotes. Der Anbieterbehält sich jedoch vor, die Protokolldaten nachträglich zu überprüfen, wenn aufgrund konkreter Anhaltspunkte der berechtigte Verdacht einer rechtswidrigen Nutzung besteht.
 
+#### Web Analytics
+Diese Seite verwendet [plausible.io](https://plausible.io), um Zugriffszahlen zu ermitteln. Dieser Dienst setzt KEINE COOKIES.
+
 ### Kontaktaufnahme
 Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Kontaktformular oder E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.
 
