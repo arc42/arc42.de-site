@@ -77,13 +77,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="content">
     28.-31. März 2023 (München)<br>
     <strong style="color:DarkBlue;">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation,</strong> <strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
+    (iSAQB CPSA-Foundation,</strong><strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
   <p style="font-size-adjust: 0.4;">
        Normalpreis: € 2790
      </p>
-    <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    
     </div>
 </div> 
 
@@ -146,7 +145,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content">
      27.-30. Juni 2023, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation,</strong> <strong style="color:Crimson;"> nur noch SEHR wenige Plätze frei)</strong>)
+     (iSAQB CPSA-Foundation, <strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
       <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
