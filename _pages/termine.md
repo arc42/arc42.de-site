@@ -83,7 +83,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
        Normalpreis: € 2790
      </p>
     
-    </div>
+  </div>
 </div> 
 
 <!-- Req4Arc Mai 2023, FRA -->
@@ -145,7 +145,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content">
      27.-30. Juni 2023, Frankfurt/Main<br>
       <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation, <strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
+     (iSAQB CPSA-Foundation,
+     </strong> 
+     <strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
       <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
