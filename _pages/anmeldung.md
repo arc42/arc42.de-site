@@ -44,11 +44,10 @@ excerpt: "Wir freuen uns auf Sie!"
 <label for="kurs">Für welchen Kurs melden Sie an?</label>
 <select id="kurs" name="Kurs" required>
   <option value="*"></option>
-  <option value="23-03 MSA">Mastering SW Architectures, 28.-31. März 2023 München (Warteliste)</option>
-  <option value="23-05 Req4Arc">Req4Arc, 22.-24. Mai 2023 Frankfurt/Main</option>
+  <option value="23-05 Req4Arc">Req4Arc, 22.-24. Mai 2023 Frankfurt/Main </option>
   <option value="23-06 IMPROVE">IMPROVE, 19.-21. Juni 2023 Mannheim</option>
   <option value="23-06 ADOC">ADOC, 22.-23. Juni 2023 Mannheim</option>
-  <option value="23-06 MSA">Mastering SW Architectures, 27.-30. Juni 2023 Frankfurt</option>
+  <option value="23-06 MSA">Mastering SW Architectures, 27.-30. Juni 2023 Frankfurt (Warteliste)</option>
   <option value="23-09 Req4Arc">Req4Arc, 5.-7. September 2023 Frankfurt/Main</option>
   <option value="23-09 MSA">Mastering SW Architectures, 12.-15. September 2023 Frankfurt/Main</option>
   <option value="22-11 Improve">IMPROVE, 28.-30. November 2023 Hamburg</option>
