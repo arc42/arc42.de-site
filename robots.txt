@@ -4,3 +4,7 @@ layout: none
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
 Disallow: /downloads/
+Disallow: /seminare/
+Disallow: /template/
+Disallow: /geschaeftsbedingungen/
+Disallow: /wp-includes/
