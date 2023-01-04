@@ -131,14 +131,12 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 plugins:
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-feed
   - jemoji
  
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-feed
   - jemoji
 
 
