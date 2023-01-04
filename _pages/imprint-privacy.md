@@ -10,22 +10,14 @@ header:
 privacy-reports:
   - title: "CookieMetrix Scan"
     excerpt: "![](/images/privacy/cookiemetrix-report.png)<br> "
-    url: "/downloads/privacy-reports/21-08-07-CookieMetrix-Privacy-Report.pdf"
-    btn_label: "Download report (pdf)"
-    btn_class: "btn--primary"
+    
 
   - title: "PiwiK-Pro cookie-scan"
     excerpt: "![](/images/privacy/piwikreport.png)<br> "
-    url: "/downloads/privacy-reports/21-08-07-Piwik-Privacy-Report.pdf"
-    btn_label: "Download report (pdf)"
-    btn_class: "btn--primary"
-    
+        
   - title: "Osano cookie-scan"
     excerpt: "![](/images/privacy/osano-report.png)<br> "
-    url: "/downloads/privacy-reports/21-08-07-Osano-Privacy-Report.pdf"
-    btn_label: "Download report (pdf)"
-    btn_class: "btn--primary"
-
+    
 ---
 
 # Impressum und Datenschutzerklärung
