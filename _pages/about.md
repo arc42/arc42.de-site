@@ -8,6 +8,7 @@ header:
 sidebar:
   nav: "about"
 
+canonical_url: https://www.arc42.org/about
 ---
 
 ![](/images/about/peter+gernot.jpg)
