@@ -9,6 +9,8 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 github_username: gernotstarke
 github: metadata
 
+search             : true
+search_full_content: true
 
 minimal_mistakes_skin    : "default" 
 
