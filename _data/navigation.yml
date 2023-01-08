@@ -1,57 +1,57 @@
 # main links
 main:
   - title: "Übersicht"
-    url: /overview
+    url: /overview/
   - title: "Termine"
     url: /termine
   - title: Schulungen
-    url: /schulungen  
+    url: /schulungen/  
   - title: "Mehr..."
-    url: /more
+    url: /more/
   - title: "Download"
     url: "https://arc42.org/download"
   - title: "Über..."
-    url: /about
+    url: /about/
 
 publications:
   - title: Publikationen
-    url: /publications
+    url: /publications/
     children:
     - title: Bücher
-      url: /books
+      url: /books/
     - title: Artikel
-      url: /articles
+      url: /articles/
     - title: Videos
-      url: /videos
+      url: /videos/
     - title: Vorträge
-      url: /talks  
+      url: /talks/ 
 
 schulungen:
   - title: Schulungsangebot
-    url: /schulungen
+    url: /schulungen/
     children:
     - title: Mastering Software Architectures
-      url: /info-msa
+      url: /info-msa/
     - title: iSAQB Foundation
-      url: /info-msa
+      url: /info-msa/
     - title: IMPROVE
-      url: /info-improve
+      url: /info-improve/
     - title: REQ4ARC
-      url: /info-req4arc
+      url: /info-req4arc/
     - title: ADOC
-      url: /info-adoc
+      url: /info-adoc/
 
 about:
   - title: Über uns
-    url: /about
+    url: /about/
     children:
     - title: "Kontakt"
-      url: /contact
+      url: /contact/
     - title: "Mitwirkende"
       url: "https://github.com/orgs/arc42/people"
     - title: "Lizenz"
       url: "/license"
     - title: "Geschäftsbedingungen (AGB)"
-      url: /terms  
+      url: /terms/ 
     - title: "Status"
       url: "/status"  
