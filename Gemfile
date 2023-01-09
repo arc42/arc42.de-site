@@ -9,6 +9,7 @@ group :jekyll_plugins do
     gem "jekyll-sitemap"
     gem "webrick"
     gem "jekyll-include-cache"
-    gem "jekyll-algolia"
+    # in case we will re-open the search-issue, let's try Algolia
+    #   gem "jekyll-algolia"
 end
   
