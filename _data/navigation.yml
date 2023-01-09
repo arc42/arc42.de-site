@@ -12,6 +12,8 @@ main:
     url: "https://arc42.org/download"
   - title: "Über..."
     url: /about/
+  - title: "Suche"
+    url: /search/
 
 publications:
   - title: Publikationen
@@ -24,7 +26,7 @@ publications:
     - title: Videos
       url: /videos/
     - title: Vorträge
-      url: /talks/ 
+      url: /talks/
 
 schulungen:
   - title: Schulungsangebot
