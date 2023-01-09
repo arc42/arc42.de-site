@@ -9,8 +9,12 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 github_username: gernotstarke
 github: metadata
 
-search             : true
-search_full_content: true
+## search seems to be problematic on THIS site,
+## standard LunR search doesn't find anything
+# I (Gernot) consider this a failed experiment
+#search             : false
+#lunr:
+#  search_within_pages: true
 
 minimal_mistakes_skin    : "default" 
 
