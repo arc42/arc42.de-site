@@ -23,11 +23,11 @@ sidebar:
 Mastering Software Architectures:<br/>Effektive Softwarearchitekturen - praxisnah!</button></a>
 
 <p/>
-<a href="info-req4arc"><button class="button buttonReq4Arc" style="width:25%;">
+<a href="info-req4arc"><button class="button buttonReq4Arc button25">
 REQ4ARC: <br/>bessere Anforderungen</button></a>
-<a href="info-improve"><button class="button buttonImprove" style="width:25%;">
+<a href="info-improve"><button class="button buttonImprove button25">
 IMPROVE: <br/>Systeme verbessern</button></a>
-<a href="info-adoc"><button class="button buttonAdoc" style="width:25%;">
+<a href="info-adoc"><button class="button buttonAdoc button25">
 ADOC: <br/>Architekturdokumentation</button></a>
 
 

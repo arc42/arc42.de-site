@@ -37,10 +37,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container right"> 
   <div class="content" >
     19.-20. September 2022 (Frankfurt)<br>
-    <strong style="color:DarkBlue;">ADOC - Effektive Architekturdokumentation<br>
+    <strong class="blue-head">ADOC - Effektive Architekturdokumentation<br>
     (iSAQB CPSA-Advanced)</strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-      <p style="font-size-adjust: 0.4;">
+      <p class="date-small">
         Frühbucherpreis bei Anmeldung bis 20. Juni 2022: € 1.350,-
         Normalpreis: € 1.500,- (für unsere CPSA-F-Alumni € 1.350.-)
       </p>
@@ -54,11 +54,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container left">  
     <div class="content">
       21.-23. September 2022, Frankfurt/Main<br>
-      <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <strong class="blue-head"">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p style="font-size-adjust: 0.4;">
+      <p class="date-small">
         Frühbucherpreis bei Anmeldung bis 25. Juni 2022: € 1.950,-
         Normalpreis: € 2.075,- (für unsere CPSA-F-Alumni € 1.950.-)
       </p>
@@ -76,10 +76,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  <div class="container right">
   <div class="content">
     28.-31. März 2023 (München)<br>
-    <strong style="color:DarkBlue;">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation,</strong><strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
+    <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation,</strong><strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>)
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-  <p style="font-size-adjust: 0.4;">
+  <p class="date-small">
        Normalpreis: € 2790
      </p>
     
@@ -90,11 +90,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container left">  
     <div class="content">
       22.-24. Mai 2023, Frankfurt/Main<br>
-      <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p style="font-size-adjust: 0.4;">
+      <p class="date-small">
        Early-Bird-Preis bei Anmeldung bis 15. Januar 2023: € 1725,
         Frühbucherpreis bei Anmeldung bis 22. Februar 2023: € 1950,
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
@@ -108,11 +108,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container right">  
     <div class="content">
       19.-21. Juni 2023, Mannheim<br>
-      <strong style="color:DarkBlue;">IMPROVE <br>(CPSA-Advanced)</strong><br>
+      <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
       <p>Systematisch verbessern!
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p style="font-size-adjust: 0.4;">
+      <p class="date-small">
        Early-Bird-Preis bei Anmeldung bis 19. Dezember 2022: € 1725,
         Frühbucherpreis bei Anmeldung bis 19. März 2023: € 1950,
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
@@ -126,11 +126,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container left">  
     <div class="content">
       22.-23. Juni 2023, Mannheim<br>
-      <strong style="color:DarkBlue;">ADOC <br>(CPSA-Advanced)</strong><br>
+      <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
       <p>Systematische Architekturdokumentation, pragmatisch und praxisnah
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p style="font-size-adjust: 0.4;">
+      <p class="date-small">
        Early-Bird-Preis bei Anmeldung bis 22. Dezember 2022: € 1250,
         Frühbucherpreis bei Anmeldung bis 22. März 2023: €1350 (Alumni € 1250)
         Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1 350)
@@ -144,15 +144,15 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container right"> 
     <div class="content">
      27.-30. Juni 2023, Frankfurt/Main<br>
-      <strong style="color:DarkBlue;">Mastering Software Architectures<br> 
+      <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation,
      </strong> 
-     <strong style="color:Crimson;"> ausgebucht, nur noch Warteliste.</strong>)
+     <strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>)
       <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
-  <p style="font-size-adjust: 0.4;">
+  <p class="date-small">
        Early-Bird-Preis bei Anmeldung bis 21. Januar 2023: € 2300,
        Frühbucherpreis bei Anmeldung bis 21. März 2023: € 2590,
        Normalpreis: € 2790,
@@ -166,11 +166,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container left">  
     <div class="content">
       5.-7. September 2023, Frankfurt/Main<br>
-      <strong style="color:DarkBlue;">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p style="font-size-adjust: 0.4;">
+      <p class="date-small">
        Early-Bird-Preis bei Anmeldung bis 5. März 2022: € 1725,-,
         Frühbucherpreis bei Anmeldung bis 5. Juni 2023: € 1950,-
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950.-)
@@ -185,11 +185,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container right"> 
   <div class="content" >
     12.-15. September 2023 (Frankfurt/Main)<br>
-    <strong style="color:DarkBlue;">Mastering Software Architectures
+    <strong class="blue-head">Mastering Software Architectures
     (iSAQB CPSA-Foundation)<br>
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-    <p style="font-size-adjust: 0.4;">
+    <p class="date-small">
         Early-Bird-Preis bei Anmeldung bis 12. März 2023: € 2300,
         Frühbucherpreis bei Anmeldung bis 12. Juni 2023: € 2590,
        Normalpreis: € 2790
@@ -203,10 +203,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container left"> <!-- IMPROVE NOV 2023 Hamburg-->
     <div class="content">
       28.-30. Nov. 2023, Hamburg <br>
-      <strong style="color:DarkBlue;">IMPROVE<br> 
+      <strong class="blue-head">IMPROVE<br> 
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
-      <p style="font-size-adjust: 0.4;">
+      <p class="date-small">
         Early-Bird bei Anmeldung bis 28. März 2023: € 2050
         Normalpreis: € 2200 (für unsere CPSA-F-Alumni € 2050)
       </p>
@@ -219,11 +219,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container right"> 
   <div class="content" >
     5.-8. Dezember 2023 (München)<br>
-    <strong style="color:DarkBlue;">Mastering Software Architectures
+    <strong class="blue-head">Mastering Software Architectures
     (iSAQB CPSA-Foundation)<br>
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-    <p style="font-size-adjust: 0.4;">
+    <p class="date-small">
         Early-Bird-Preis bei Anmeldung bis 5. Juni 2023: € 2300,
         Frühbucherpreis bei Anmeldung bis 5. September 2023: € 2590,
        Normalpreis: € 2790
