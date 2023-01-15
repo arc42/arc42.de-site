@@ -1,0 +1,15 @@
+strong.blue-head {
+    color: DarkBlue;
+}
+
+strong.booked-out {
+    color: Crimson;
+}
+
+p.date-small {
+    font-size-adjust: 0.4;
+}
+
+a.button25 {
+    width:25%;
+}
