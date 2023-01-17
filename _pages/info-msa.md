@@ -13,8 +13,8 @@ sidebar:
 
 ---
 
-<a href="/downloads/flyer-msa.pdf" target="_blank"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
-<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+<a href="/downloads/flyer-msa.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 
 # Mastering Software Architectures <br><sup>Effektive Softwarearchitekturen - praxisnah!</sup>
@@ -119,8 +119,8 @@ Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf 
 
 ### und nun...
 
-<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<a href="/termine"><button class="button buttonRoyalBlue">Termine</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 
 

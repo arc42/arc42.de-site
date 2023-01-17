@@ -14,8 +14,8 @@ sidebar:
 
 ---
 
-<a href="/downloads/flyer-improve.pdf" target="_blank"><button class="button buttonImprove">Download<br/>Kursbeschreibung (pdf)</button></a>
-<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+<a href="/downloads/flyer-improve.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonImprove">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 ## IMPROVE
 
@@ -43,8 +43,8 @@ Diese Ansätze integrieren Sie zielgerichtet mit Ihrem Tagesgeschäft.
 
 ### und nun...
 
-<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<a href="/termine"><button class="button buttonRoyalBlue">Termine</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 
 

@@ -18,7 +18,7 @@ sidebar:
 
 Manchmal drehen wir selbst, oft sprechen wir auf Konferenzen.
 Bei Interesse schauen Sie auch auf unseren 
-<a href="https://youtube.com/arc42-video" target="blank">Youtube-Kanal</a>.
+<a href="https://youtube.com/arc42-video" target="blank" rel="noopener noreferrer nofollow">Youtube-Kanal</a>.
 
 
 
