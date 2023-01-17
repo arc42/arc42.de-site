@@ -14,8 +14,8 @@ sidebar:
 
 ---
 
-<a href="/downloads/flyer-adoc.pdf" target="_blank"><button class="button buttonAdoc">Download<br/>Kursbeschreibung (pdf)</button></a>
-<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+<a href="/downloads/flyer-adoc.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonAdoc">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 In diesem praxisorientierten Hands-on Training lernen Sie, unter praktischen Randbedingungen (Zeit- und Kostendruck) angemessene Dokumentation für verschiedene Zielgruppen zu erstellen und zu pflegen.
 
@@ -52,8 +52,8 @@ Büchern „arc42 in Aktion“ und „arc42 by Example“.
 
 ### und nun...
 
-<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<a href="/termine"><button class="button buttonRoyalBlue">Termine</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 
 
