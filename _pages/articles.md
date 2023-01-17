@@ -29,6 +29,15 @@ Wir haben viele Projekte und Entwicklungsteams erlebt, die jede Menge ganz detai
 [Zum kompletten Artikel](/articles/2022-11-requirements-overview)
 
 
+## Sparsame Dokumentation
+
+Gernot Starke
+
+Ich weiß – Dokumentation ist nicht Ihr Lieblingsthema. Deswegen bekommen Sie hier ein paar Tipps für schmerzfreie Dokumentation. Die hier vorgestellten Ideen sparen Ihnen wertvolle Zeit, sowohl bei Erstellung als auch Pflege der Dokumentation. Sie funktionieren für jede Art von Softwaresystem, unabhängig von Werkzeugen, Technologien und Entwicklungsansätzen.
+
+Original: [INNOQ Blog](https://www.innoq.com/de/articles/2022/09/sparsame-dokumentation/)
+
+
 ## Principles of technical documentation
 
 Gernot Starke
