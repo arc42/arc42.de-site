@@ -95,9 +95,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p class="date-small">
-       Early-Bird-Preis bei Anmeldung bis 15. Januar 2023: € 1725,
-        Frühbucherpreis bei Anmeldung bis 22. Februar 2023: € 1950,
-        Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
+       Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -113,7 +111,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p class="date-small">
-       Early-Bird-Preis bei Anmeldung bis 19. Dezember 2022: € 1725,
         Frühbucherpreis bei Anmeldung bis 19. März 2023: € 1950,
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
       </p>
@@ -131,7 +128,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p class="date-small">
-       Early-Bird-Preis bei Anmeldung bis 22. Dezember 2022: € 1250,
         Frühbucherpreis bei Anmeldung bis 22. März 2023: €1350 (Alumni € 1250)
         Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1 350)
       </p>
@@ -153,7 +149,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
       </p>
   <p class="date-small">
-       Early-Bird-Preis bei Anmeldung bis 21. Januar 2023: € 2300,
        Frühbucherpreis bei Anmeldung bis 21. März 2023: € 2590,
        Normalpreis: € 2790,
      </p>
@@ -186,7 +181,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   <div class="content" >
     12.-15. September 2023 (Frankfurt/Main)<br>
     <strong class="blue-head">Mastering Software Architectures
-    (iSAQB CPSA-Foundation)<br>
+    (iSAQB CPSA-Foundation)<strong class="booked-out"> nur noch wenige Plätze frei</strong><br>
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
