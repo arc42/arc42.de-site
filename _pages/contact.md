@@ -30,7 +30,7 @@ insbesondere falls Sie uns über einen unverschlüsselten Kanal kontaktiert habe
   * [<i class="fab fa-fw fa-twitter"></i>@arc42Tipps](https://twitter.com/arc42Tipps)
   * [<i class="fab fa-fw fa-twitter"></i>@gernotstarke](https://twitter.com/gernotstarke)
 
-* bei [<i class="fab fa-fw fa-stack-overflow"></i>Stackoverflow](http://stackoverflow.com/questions/tagged/arc42)
+* bei [<i class="fab fa-fw fa-stack-overflow"></i>Stackoverflow](https://stackoverflow.com/questions/tagged/arc42)
 
 
 Bitte beachten Sie unser Hinweise zum <a href="{{ site.baseurl }}/imprint">Datenschutz.</a>.

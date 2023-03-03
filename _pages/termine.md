@@ -74,15 +74,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
  <div class="container right">
-  <div class="content">
+  <div class="content" style="color:darkgrey">
     28.-31. März 2023 (München)<br>
     <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation,</strong><strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>)
+    (iSAQB CPSA-Foundation,</strong><strong class="booked-out"> ausgebucht.</strong>)
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-  <p class="date-small">
-       Normalpreis: € 2790
-     </p>
-    
+   
   </div>
 </div> 
 
@@ -138,7 +135,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA Juni 2023 FRA -->
 <div class="container right"> 
-    <div class="content">
+    <div class="content" style="color:darkgrey">
      27.-30. Juni 2023, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation,
@@ -178,14 +175,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA September 2023, FRA -->
 <div class="container right"> 
-  <div class="content" >
+<div class="content" style="color:darkgrey">
     12.-15. September 2023 (Frankfurt/Main)<br>
-    <strong class="blue-head">Mastering Software Architectures
-    (iSAQB CPSA-Foundation)<strong class="booked-out"> nur noch wenige Plätze frei</strong><br>
-    </strong> 
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation,</strong><strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>)
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
-        Early-Bird-Preis bei Anmeldung bis 12. März 2023: € 2300,
         Frühbucherpreis bei Anmeldung bis 12. Juni 2023: € 2590,
        Normalpreis: € 2790
       </p>
@@ -219,8 +214,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
-        Early-Bird-Preis bei Anmeldung bis 5. Juni 2023: € 2300,
-        Frühbucherpreis bei Anmeldung bis 5. September 2023: € 2590,
+        Early-Bird-Preis bei Anmeldung bis 5. Mai 2023: € 2300,
+        Frühbucherpreis bei Anmeldung bis 5. August 2023: € 2590,
        Normalpreis: € 2790
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>

@@ -39,7 +39,9 @@ template_training_news:
   - title: "News"
     excerpt: "![](/images/home/arc42-ua.webp)<br>
 
-    * Neue Sprachversionen CZ (Tschechisch, übersetzt von Jakkub RC) und UA (Ukrainisch), übersetzt von @BulykIvan, mit Unterstützung von [@visenger](https://twitter.com/visenger)!
+     * Unser pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org).
+  
+     * Neue Sprachversionen CZ (Tschechisch) und UA (Ukrainisch)!
 
      * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
@@ -96,6 +98,6 @@ arc42 unterstützt **beliebige Technologien und Werkzeuge**.
 
 arc42 ist vollständig prozessagnostisch und eignet sich besonders gut für **schlanke und agile** Entwicklungsansätze.
 
-arc42 ist **Open-Source** und kann sowohl im kommerziellen als auch im privaten Bereich **kostenlos** genutzt werden. Details finden Sie auf unserer [Lizenzseite](/license).
+arc42 ist **Open-Source** und Sie können es kommerziell und privat  **kostenfrei** nutzen. Details finden Sie auf unserer [Lizenzseite](/license).
 
 
