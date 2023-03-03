@@ -172,7 +172,7 @@ follow him on [Twitter](https://twitter.com/mmistakes).
 ## Icons + Images:
 
 * Free images can be found at [Unsplash](https://unsplash.com/)
-* I generated the various favicon files with [RealFavIconGenerator](http://realfavicongenerator.net/).
+* I generated the various favicon files with [RealFavIconGenerator](https://realfavicongenerator.net/).
 
 
 ---
