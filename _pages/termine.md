@@ -69,20 +69,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 -->
 
 
-
-
-
-
- <div class="container right">
-  <div class="content" style="color:darkgrey">
-    28.-31. März 2023 (München)<br>
-    <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation,</strong><strong class="booked-out"> ausgebucht.</strong>)
-    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-   
-  </div>
-</div> 
-
 <!-- Req4Arc Mai 2023, FRA -->
 <div class="container left">  
     <div class="content">
