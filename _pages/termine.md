@@ -94,7 +94,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p class="date-small">
-        Frühbucherpreis bei Anmeldung bis 19. März 2023: € 1950,
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
@@ -111,7 +110,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p class="date-small">
-        Frühbucherpreis bei Anmeldung bis 22. März 2023: €1350 (Alumni € 1250)
         Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1 350)
       </p>
       <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
@@ -149,7 +147,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p>Mit Gernot Starke und Peter Hruschka</p>
       <p class="date-small">
-       Early-Bird-Preis bei Anmeldung bis 5. März 2022: € 1725,-,
         Frühbucherpreis bei Anmeldung bis 5. Juni 2023: € 1950,-
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950.-)
       </p>
@@ -167,8 +164,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     (iSAQB CPSA-Foundation,</strong><strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>)
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
-        Frühbucherpreis bei Anmeldung bis 12. Juni 2023: € 2590,
-       Normalpreis: € 2790
+        Normalpreis: € 2790
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -183,7 +179,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
       <p class="date-small">
-        Early-Bird bei Anmeldung bis 28. März 2023: € 2050
         Normalpreis: € 2200 (für unsere CPSA-F-Alumni € 2050)
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
@@ -197,6 +192,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     5.-8. Dezember 2023 (München)<br>
     <strong class="blue-head">Mastering Software Architectures
     (iSAQB CPSA-Foundation)<br>
+    <strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>)
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
