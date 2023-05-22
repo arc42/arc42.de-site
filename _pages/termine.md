@@ -69,7 +69,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 -->
 
 
-<!-- Req4Arc Mai 2023, FRA -->
+<!-- Req4Arc Mai 2023, FRA 
 <div class="container left">  
     <div class="content">
       22.-24. Mai 2023, Frankfurt/Main<br>
@@ -84,6 +84,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
 </div>
+-->
 
 <!-- IMPROVE Juni 2023, FRA -->
 <div class="container right">  
@@ -140,7 +141,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- Req4Arc September 2023, FRA -->
 <div class="container left">  
-    <div class="content">
+    <div class="content" >
       5.-7. September 2023, Frankfurt/Main<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
@@ -188,7 +189,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA Dezember 2023, MUC -->
 <div class="container right"> 
-  <div class="content" >
+  <div class="content" style="color:darkgrey">
     5.-8. Dezember 2023 (München)<br>
     <strong class="blue-head">Mastering Software Architectures
     (iSAQB CPSA-Foundation)<br>
@@ -196,9 +197,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </strong> 
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
-        Early-Bird-Preis bei Anmeldung bis 5. Mai 2023: € 2300,
-        Frühbucherpreis bei Anmeldung bis 5. August 2023: € 2590,
-       Normalpreis: € 2790
+        Normalpreis: € 2790
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
     <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
