@@ -51,6 +51,9 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="23-09 MSA">Mastering SW Architectures, 12.-15. September 2023 Frankfurt (Warteliste)</option>
   <option value="22-11 Improve">IMPROVE, 28.-30. November 2023 Hamburg</option>
   <option value="23-12 MSA">Mastering SW Architectures, 5.-8. Dezember 2023 München (Warteliste)</option>
+  <option value="24-01 MSA">Mastering SW Architectures, 23.-26. Januar München</option>
+  <option value="24-03 MSA">Mastering SW Architectures, 19.-22. März München</option>
+  <option value="24-06 MSA">Mastering SW Architectures, 11.-14. Juni Frankfurt/Main</option>
   <option value="sonstige">Sonstige</option>
 </select>
 
