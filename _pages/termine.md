@@ -234,7 +234,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
   <p class="date-small">
-       Early Bird Preis bei Anmeldung bis 11. Dezember 2023: €2450,
        Frühbucherpreis bei Anmeldung bis 11. Februar 2024: € 2690,
        Normalpreis: € 2890
      </p>
