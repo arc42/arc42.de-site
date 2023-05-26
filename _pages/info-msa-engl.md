@@ -13,114 +13,103 @@ sidebar:
 
 ---
 
-<a href="/downloads/flyer-msa.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
+<a href="/downloads/flyer-msa.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Course Description (pdf)</button></a>
 <a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
 
 
-# Mastering Software Architectures <br><sup>Effektive Softwarearchitekturen - praxisnah!</sup>
+# Mastering Software Architectures <br><sup>Pragmatic, effective Software Architectures</sup>
 
 
-4-tägiger Einführungskurs vom „dynamischen Duo“, Peter Hruschka und Gernot Starke
+3 day introductory training developed by Peter Hruschka and Gernot Starke
 
-## Das erwartet Sie
-Fundierte, praxisnahe und pragmatische Einführung in -Architektur, mit hohem Übungsanteil. 
-Sie lernen und üben die vielfältigen Aufgaben von Softwarearchitekt:innen anhand von Fallstudien. 
-Fokus liegt auf methodischem und systematischem Vorgehen bei Architekturentwurf und -bewertung.
+## You can expect
+a solid, practical and pragmatic introduction to architecture with lots of exercises. 
+You will learn and practise the different tasks of software archtects using an extensive case study. 
+The focus is on a methodical and systematic approach to architectural design and evaluation.
+You will receive concrete tips on how to proceed in development projects, supported with practical examples.
 
-Sie erhalten konkrete Tipps zum Vorgehen in Entwicklungsprojekten, unterstützt mit Beispielen aus der Praxis.
+In short (for more info see below)
 
-In Kürze (ausführliche Inhaltsbeschreibung siehe unten)
+* Roles and tasks
+* Agility and architecture
+* Setting the scope and external interfaces
+* Design Methods (Domain Driven Design, Quality Driven Architecture, ...)
+* Architectural Views
+* Architecture Patterns
+* Documentation of Architectures
+* Analyzing and evaluating architeftures
+## Supporting Materials
 
-* Rolle und Aufgaben
-* Agilität und Architektur
-* Kontextabgrenzung und externe Schnittstellen
-* Entwurfsmethodik, Domain- und Quality-Driven Architecture
-* Architektursichten
-* Architekturmuster
-* Dokumentation von Architekturen
-* Analyse und Bewertung von Architekturen
-
-## Begleitmaterial
-
-Sie erhalten neben ausführlichen Schulungs- und Übungsunterlagen diverse Fachbücher zur Vertiefung und späteren Referenz.
+Besides extensive training materials and exercises you will receive a couple of books to study at your leasure.
 
 ![]()
 
-## Zielgruppe
-Dieser Kurs richtet sich primär an Entwickler:innen und Architekt:innen, um die Rolle _Softwarearchitektur_ umfassend zu verstehen
-und verinnerlichen sowie die zugehörigen Aufgaben und Tätigkeiten kennen zu lernen.
+## Target Audience
+This course is primarily for developers an architects that want to understand the role "software architect" and learn about their tasks and skills.
 
-Sie kommen aus dem Projekt- oder Produktmanagement, arbeiten als Product-Owner oder Scrum-Coach? 
-Auch Sie bekommen in diesem Kurs eine verständliche Einführung in Softwarearchitektur, so daß Sie zukünftig mit Ihrem Entwicklungsteam
-eine gemeinsame Sprache sprechen.
+If you are project manager, product manager, product owner or Scrum coach? You will get an easy to understand introduction to software architecture so that you and your development teams will be able to communicate in a common language.
 
-## Ideale Vorbereitung auf die CPSA-F-Prüfung
+## Ideal Preparation for the iSAQB CPSA-F exam
 
-Diese Schulung ist iSAQB lizenziert und deckt den Lehrplan CPSA-Foundation vollständig ab.
+This training is accredited by iSAQB and covers the complete curriculum of CPSA Foundation Level.
 
-Neben dem hohen Praxisanteil bietet unser Kurs _Mastering Software Architectures_ daher die ideale und effektive 
-Vorbereitung auf die iSAQB CPSA-Foundation (Certified Professional for Software Architecture) Zertifizierung.
+Therefore, besides offering a high degree of practice our seminar _Mastering Software Architecture_ offers an ideal and effective way to prepare yourself for the iSAQB CPSA Foundation Level certification.
 
-Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf diese Prüfung vorbereitet. 
+We have successfully prepared more than 3000 persons for the exam in the last couple of years. 
 
->## zur iSAQB Prüfung
->Wir organisieren für Sie die Prüfung, und reservieren Ihnen (unverbindlich) einen Platz. Die Prüfungsgebühr von z.Zt. Euro 250 zzgl. USteuer berechnet die Prüfungsfirma erst **nach** Ihrer Teilnahme. 
->Sie brauchen also nichts weiter zu unternehmen - bei Bedarf könnten Sie sich während des Trainings noch abmelden.
+>## About the iSAQB certification
+>We organisize the exam for you, and (optionally) reserve a seat for the exam. The fee for the exam (currently € 250,- + VAT - where applicable) will be sent to you **after** the course. 
+>You don't need to do anything explicitly - you can cancel your interest in the exam even during the seminar.
 
 
-# Ausführliche Inhaltsbeschreibung
+# Extensive Description of Content
 
-### Grundbegriffe
+### Introduction and Motivation
 
-* Aufgaben, Rolle und Verantwortlichkeiten von Software-Architekten.
-* Architektur im Entwicklungsprozess
-* Klärung von Anforderungen
-* Ableitung von Qualitäts- und Architekturzielen
+* Tasks, role and responsibilities of software architectures
+* Architecture in the development process
+* Clarifying Requirements & constraints
+* Deriving architectural or quality goals
 
-### Architekturdokumentation
+### Documentation of Architecture
 
-* Ziele und Anforderungen an Architekturdokumentation
-* Typische Architekturdokumente
-* Architektursichten
+* Goals and requirements for architecture documentation
+* Typical architecture documents
+* Architectural views
 
-### Vorgehen bei der Architekturentwicklung:
+### The Architecture Development Process
 
-* Methodische Werkzeuge für den Entwurf von Softwarearchitekturen
-* Entwicklung fachlicher Architekturen
-* Domain-Driven Design
-* Quality-Driven Design: Taktiken und Praktiken zur Erreichung von Qualitätszielen
-* Top-Down und Bottom-Up Sichtweise
+* Methodological tools for developing software architecture
+* devolping business architectures
+* Domain Driven Design
+* Quality Driven Design: tactics and practices to achieve quality goals
+* Top Down vs. Bottom Up Approaches
 
 
-### Architekursichten
+### Architectural Views
 
-* Bausteinsicht: Bausteine und Schnittstellen
-* Übungen: Bausteine und Strukturen entwickeln
+* Building Block View: Building Blocks & Interfaces
+* Runtime View: describe processes and scenarios  
+* Deployment View: Infrastructure and deployment of building blocks to it
 
-* Laufzeitsicht: Abläufe und Szenarien entwickeln und beschreiben.
-* Übungen: Laufzeitszenarien
-  
-* Verteilungssicht: Infrastruktur und Deployment
-* Übung: Infrastruktur und deren Einfluss auf Baustein- und Laufzeitsicht
-
-### Querschnittliche Konzepte
-* konzeptioneller (_querschnittlicher_) Entwurf
+### Cross-cutting Concepts
+* conceptual design
   
 
-### Patterns und Prinzipien
+### Patterns and Principles
 
-* Architektur- und Entwurfsmuster
-* Entwurfsprinzipien
+* Architecture and Design Patterns
+* Fundamental Design Principles
 
-### Analyse und Bewertung von Softwarearchitekturen
-* Qualitative und szenariobasierte Architekturbewertung (wie etwa ATAM)
-* Quantitative Bewertung und effektiver Einsatz von Metriken 
+### Analysis and Evaluation of Software Architectures
+* qualitative and scenario-based Evaluation of architecture (e.g. ATAM) 
+* quantitative evaluations and effective use of metrics 
 
 
-### und nun...
+### and now...
 
-<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="/termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+<a href="/termine"><button class="button buttonRoyalBlue">Dates</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 
 
