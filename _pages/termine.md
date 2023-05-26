@@ -204,7 +204,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content" >
      19.-22. März 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation,
+     (iSAQB CPSA-Foundation)
      </strong> 
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
@@ -226,7 +226,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
-    <p>Mit Gernot Starke und Peter Hruschka</p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
         Frühbucherpreis bei Anmeldung bis 16. Januar 2024: € 2050,-
         Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
@@ -242,7 +242,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content" >
      11.-14. Juni 2024, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation,
+     (iSAQB CPSA-Foundation)
      </strong> 
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
