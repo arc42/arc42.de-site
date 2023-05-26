@@ -107,7 +107,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
-    <p>Mit Gernot Starke und Peter Hruschka</p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
         Frühbucherpreis bei Anmeldung bis 5. Juni 2023: € 1950,-
         Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950.-)
@@ -144,7 +144,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p class="date-small">
         Delegate Fee: €2100
       </p>
-    <a href="info-msa"><button class="button buttonMSA">further info</button></a>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
     <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
     </div>
 </div> 
