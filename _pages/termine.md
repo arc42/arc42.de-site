@@ -257,6 +257,43 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
+
+<!-- IMPROVE Juni 2024, FRA -->
+<!--
+<div class="container right">  
+    <div class="content">
+      17.-19. Juni 2024, Frankfurt/Main<br>
+      <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
+      <p>Systematisch verbessern!
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050)
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+-->
+
+<!-- ADOC Juni 2024, FRA -->
+<!--
+<div class="container left">  
+    <div class="content">
+      20.-21. Juni 2024, Frankfurt/Main<br>
+      <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
+      <p>Systematische Architekturdokumentation, pragmatisch und praxisnah
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1350)
+      </p>
+      <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+-->
+
 <!-- example "ausgebucht":
 <div class="container left">
   <div class="content" style="color:darkgrey">
