@@ -3,17 +3,14 @@ title: "Erfolgreiche Softwarearchitektur"
 layout: splash
 permalink: /
 header: 
-  #overlay_color: "#d7ecf8"
-  #overlay_filter: rgba(15, 80, 180, 0.6)
-  #overlay_image: /images/splash/arc42-splash-landingpage.jpg
-  overlay_image: /images/splash/ukrainian-flag.webp
+  overlay_color: "#d7ecf8"
+  overlay_filter: rgba(15, 80, 180, 0.6)
+  overlay_image: /images/splash/arc42-splash-landingpage.jpg
   actions: 
     - label: "Übersicht"
       url: /overview
     - label: "&#8594; English site..."
       url: "https://arc42.org"
-    - label: "Help Ukraine"  
-      url: https://u24.gov.ua/
 excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei."
 
 
@@ -76,15 +73,14 @@ methode_publications_consulting:
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"
 ---
-<!---
+
 <div class="ua-background" markdown="1">
 
->### We stand with the people of Ukraine <span class="ua-text"><i class="fa-solid fa-heart"></i></span><span class="ua-size"><i class="fa-solid fa-heart fa-beat heart"></i></span>
+>### We stand with the people of Ukraine <span class="parent"><span class="ua-text"><i class="fa-solid fa-heart children"></i></span><span class="ua-size children"><i class="fa-solid fa-heart fa-beat heart children"></i></span></span>
 >
 >Please assist humanitarian efforts for the Ukrainian people and those affected by the military invasion of Ukraine by supporting international aid organizations, including the [International Committee of the Red Cross](https://www.icrc.org/en).
 
 </div>
--->
 
 {% include feature_row id="template_training_news" %}
 
