@@ -31,7 +31,7 @@ activate JavaScript and reload this page.
       data-botpoison-public-key="pk_8e195655-38ed-4eec-a445-a1e0d68a488d"
       id="arc42anmeldung">
 
-<strong>Who registeres?</strong>
+<strong>Who registers?</strong>
   <br>
 
 <input type="text" id="nachname" name="last name" placeholder="* last name" size="20" required  />
