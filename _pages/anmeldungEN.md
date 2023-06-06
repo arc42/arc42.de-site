@@ -97,9 +97,9 @@ In case you register more than one person, please state their names in the comme
 The following is the custom EMAIL customization for Formspark
 see https://documentation.formspark.io/customization/email.html#subject
 -->
-<input type="hidden" name="_email.subject" value="[arc42.de] ANMELDUNG" />
+<input type="hidden" name="_email.subject" value="[arc42.de] Registration" />
 <input type="hidden" name="_email.from" value="arc42.de Website (via formspark.io)" />
-<input type="hidden" name="_email.template.title" value="Anmeldung (via arc42.de)" />
+<input type="hidden" name="_email.template.title" value="Registration (via arc42.de)" />
 
 
 </form>
