@@ -48,58 +48,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 -->
 
-<!-- IMPROVE Juni 2023, FRA -->
-<div class="container right">  
-    <div class="content">
-      19.-21. Juni 2023, Mannheim<br>
-      <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
-      <p>Systematisch verbessern!
-      </p>
-    <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p class="date-small">
-        Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
-      </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
-</div>
-
-<!-- ADOC Juni 2023, FRA -->
-<div class="container left">  
-    <div class="content">
-      22.-23. Juni 2023, Mannheim<br>
-      <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
-      <p>Systematische Architekturdokumentation, pragmatisch und praxisnah
-      </p>
-    <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p class="date-small">
-        Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1350)
-      </p>
-      <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
-</div>
-
-<!-- MSA Juni 2023 FRA -->
-<div class="container right"> 
-    <div class="content" style="color:darkgrey">
-     27.-30. Juni 2023, Frankfurt/Main<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)<br></strong> 
-     <strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>
-      <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-      </p>
-  <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 21. März 2023: € 2590,
-       Normalpreis: € 2790,
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
- </div> <!-- container-->
-
 <!-- Req4Arc September 2023, FRA -->
 <div class="container left">  
     <div class="content" >
