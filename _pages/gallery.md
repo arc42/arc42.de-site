@@ -78,21 +78,27 @@ gallery:
   
     
 
-  - url: /images/photos/training/q/DSCF8775.webp
-    image_path: /images/photos/training/q/DSCF8775-small.webp
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
   - url: /images/photos/training/h/DSCF8846.webp
     image_path: /images/photos/training/h/DSCF8846-small.webp
     alt: "placeholder image 1"
     title: "Image 1 title caption"
-  
-
   - url: /images/photos/training/h/DSCF8777.webp
     image_path: /images/photos/training/h/DSCF8777-small.webp
     alt: "placeholder image 1"
     title: "Image 1 title caption"
+  - url: /images/photos/about-us/h/DSCF7988.webp
+    image_path: /images/photos/about-us/h/DSCF7988-small.webp
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
 
+  - url: /images/photos/training/q/DSCF8775.webp
+    image_path: /images/photos/training/q/DSCF8775-small.webp
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /images/photos/about-us/q/DSCF8136.webp
+    image_path: /images/photos/about-us/q/DCSF8136-small.webp
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
   - url: /images/photos/training/q/DSCF8928.webp
     image_path: /images/photos/training/q/DSCF8928-small.webp
     alt: "placeholder image 1"
