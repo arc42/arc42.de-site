@@ -42,6 +42,8 @@ schulungen:
       url: /info-req4arc/
     - title: ADOC
       url: /info-adoc/
+    - title: Bildergalerie
+      url: /gallery  
 
 about:
   - title: Über uns
@@ -49,6 +51,8 @@ about:
     children:
     - title: "Kontakt"
       url: /contact/
+    - title: Stimmung beim Training...
+      url: /gallery  
     - title: "Mitwirkende"
       url: "https://github.com/orgs/arc42/people"
     - title: "Lizenz"
