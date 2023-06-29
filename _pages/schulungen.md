@@ -8,6 +8,9 @@ header:
 
   overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
   caption: "Photo: [**Tom van Hoogstraten**](https://unsplash.com/@grafish)"
+  actions: 
+      - label: "Bildergalerie"
+        url: /gallery
 
 excerpt: "Praxisorientiert, effektiv und pragmatisch."
 
@@ -29,6 +32,7 @@ REQ4ARC: <br/>bessere Anforderungen</button></a>
 IMPROVE: <br/>Systeme verbessern</button></a>
 <a href="info-adoc"><button class="button buttonAdoc button25">
 ADOC: <br/>Architekturdokumentation</button></a>
+
 
 
 
