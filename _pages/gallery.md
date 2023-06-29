@@ -96,7 +96,7 @@ gallery:
     alt: "placeholder image 1"
     title: "Image 1 title caption"
   - url: /images/photos/about-us/q/DSCF8136.webp
-    image_path: /images/photos/about-us/q/DCSF8136-small.webp
+    image_path: /images/photos/about-us/q/DSCF8136-small.webp
     alt: "placeholder image 1"
     title: "Image 1 title caption"
   - url: /images/photos/training/q/DSCF8928.webp
