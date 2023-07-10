@@ -30,7 +30,9 @@ template_training_news:
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor.<br>
     <br>
     <a href='anmeldung'><button class='button buttonAnmeldung'>Anmeldung</button></a>
-    <a href='/schulungen'><button class='button buttonGrey'>mehr zu Schulungen</button></a>"
+    <a href='/schulungen'><button class='button buttonGrey'>Schulungen</button></a>
+    <a href='/gallery'><button class='button buttonBlue'>Impressionen</button></a>Butt
+    "
     
     
   - title: "News"
@@ -38,7 +40,7 @@ template_training_news:
 
      * Unser pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org).
   
-     * Neue Sprachversionen CZ (Tschechisch) und UA (Ukrainisch)!
+     * Verfügbar jetzt in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch und Ukrainisch)
 
      * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     

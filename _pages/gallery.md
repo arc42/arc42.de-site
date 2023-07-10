@@ -107,6 +107,12 @@ gallery:
 
 ---
 
+## Bewegte Eindrücke...
+
+{% include video id="urIPHD_jJUc" provider="youtube" %}
+
+## ... und Bilder
+
 {% include gallery caption="Ein paar Eindrücke aus unseren Trainings." %}
 
 Fotos vom großartigen [Oleg Pylypenko](alegpilipenko.com/).
