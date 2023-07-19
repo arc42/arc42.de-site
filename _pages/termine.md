@@ -31,22 +31,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
  
-<!-- Req4Arc Mai 2023, FRA 
-<div class="container left">  
-    <div class="content">
-      22.-24. Mai 2023, Frankfurt/Main<br>
-      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
-      <p>Ihr systematischer Weg zu besseren Anforderungen!
-      </p>
-    <p>Mit Gernot Starke und Peter Hruschka</p>
-      <p class="date-small">
-       Normalpreis: € 2075,- (für unsere CPSA-F-Alumni € 1950)
-      </p>
-      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
-</div>
--->
+
 
 <!-- Req4Arc September 2023, FRA -->
 <div class="container left">  
@@ -77,7 +62,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Normalpreis: € 2790
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
     </div>
 </div> 
 
@@ -87,7 +71,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="content" >
     14.-16. November 2023 (online)<br>
       <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation)<br></strong><strong class="booked-out">ENGLISH, online.</strong>
+    (iSAQB CPSA-Foundation)<br></strong>
+    <strong class="booked-out">ENGLISH, online.</strong>
     <p>Trainer: Wolfgang Reimesch.</p>
     <p class="date-small">
         Delegate Fee: €2100
@@ -123,7 +108,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Normalpreis: € 2790
       </p>
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-    <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
     </div>
 </div> 
 
@@ -133,7 +117,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content" >
      23.-26. Januar 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)</strong> 
+     (iSAQB CPSA-Foundation)</strong><br> 
+<strong class="booked-out">Nur noch wenige Plätze frei.</strong>
+    
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
@@ -188,7 +174,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- MSA Juni 2024 MUC -->
 <div class="container left"> 
     <div class="content" >
-     11.-14. Juni 2024, Frankfurt/Main<br>
+     11.-14. Juni 2024, Mannheim<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
@@ -207,10 +193,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 <!-- IMPROVE Juni 2024, FRA -->
-<!--
+
 <div class="container right">  
     <div class="content">
-      17.-19. Juni 2024, Frankfurt/Main<br>
+      17.-19. Juni 2024, Mannheim<br>
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
       <p>Systematisch verbessern!
       </p>
@@ -222,13 +208,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
 </div>
--->
 
 <!-- ADOC Juni 2024, FRA -->
-<!--
 <div class="container left">  
     <div class="content">
-      20.-21. Juni 2024, Frankfurt/Main<br>
+      20.-21. Juni 2024, Mannheim<br>
       <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
       <p>Systematische Architekturdokumentation, pragmatisch und praxisnah
       </p>
@@ -240,7 +224,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
 </div>
--->
 
 <!-- example "ausgebucht":
 <div class="container left">
