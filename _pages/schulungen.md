@@ -34,7 +34,10 @@ IMPROVE: <br/>Systeme verbessern</button></a>
 ADOC: <br/>Architekturdokumentation</button></a>
 
 
+## Bewegte Eindrücke...
 
+{% include video id="5Yhcnnm1Tls" provider="youtube" %}
+Video vom großartigen [Oleg Pylypenko](https://alegpilipenko.com/).
 
 ## Weiterbildung vom Feinsten, mit oder ohne Zertifizierung
 
