@@ -12,7 +12,7 @@ sidebar:
 
 Falls Sie uns kontaktieren:
 
-* benötigen und verwenden wir einige personenbezogene Daten (Ihren Namen, E-Mail bzw. Twitter-Accountnamen)
+* benötigen und verwenden wir einige personenbezogene Daten (Ihren Namen, E-Mail bzw. Social-Media-Accountnamen)
 ausschließlich um Ihre Anfrage(n) zu beantworten. Wir werden diese Kontaktdaten nicht anderweitig speichern, verarbeiten
 oder für andere Zwecke verwenden, ganz im Sinne der Europäischen Datenschutzbestimmungen
 (European General Data Protection Regulation) [GDBPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
@@ -25,10 +25,10 @@ insbesondere falls Sie uns über einen unverschlüsselten Kanal kontaktiert habe
 
 * <a href="xmxaxixlxtxo:ixnxfxox@xaxrxcx4x2x.xdxe" onmouseover="this.href=this.href.replace(/x/g,'');"><i class="fa fa-fw fa-envelope"></i>Email (unsere Mailadresse ist gegen Spam geschützt)</a>
 
+* bei [<i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn](https://linkedin.com/in/gernotstarke)
+
 * via [<i class="fab fa-fw fa-github"></i>issue tracker](https://github.com/arc42/arc42-template/issues) at [https://github.com/arc42/arc42-template/issues](https://github.com/arc42/arc42-template/issues).
-* via Twitter:
-  * [<i class="fab fa-fw fa-twitter"></i>@arc42Tipps](https://twitter.com/arc42Tipps)
-  * [<i class="fab fa-fw fa-twitter"></i>@gernotstarke](https://twitter.com/gernotstarke)
+ 
 
 * bei [<i class="fab fa-fw fa-stack-overflow"></i>Stackoverflow](https://stackoverflow.com/questions/tagged/arc42)
 
