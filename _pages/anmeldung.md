@@ -46,8 +46,7 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="23-09 Req4Arc">Req4Arc, 5.-7. September 2023 Frankfurt/Main</option>
   <option value="23-11 MSA">Mastering SW Architectures, 14.-16. November 2023 (ONLINE, ENGLISH)</option>
   <option value="23-11 Improve">IMPROVE, 28.-30. November 2023 Hamburg</option>
-  <option value="23-12 MSA">Mastering SW Architectures, 5.-8. Dezember 2023 München (Warteliste)</option>
-  <option value="24-01 MSA">Mastering SW Architectures, 23.-26. Januar 2024 München</option>
+  <option value="24-01 MSA">Mastering SW Architectures, 23.-26. Januar 2024 nur noch WARTELISTE München </option>
   <option value="24-03 MSA">Mastering SW Architectures, 19.-22. März 2024 München</option>
   <option value="24-04 Req4Arc">Req4Arc, 16.-18. April 2024 München</option>
   <option value="24-06 MSA">Mastering SW Architectures, 11.-14. Juni 2024 Mannheim</option>
