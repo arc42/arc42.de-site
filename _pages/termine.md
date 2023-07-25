@@ -56,7 +56,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="content" style="color:darkgrey">
     12.-15. September 2023 (Frankfurt/Main)<br>
       <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation)<br></strong><strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>
+    (iSAQB CPSA-Foundation)<br></strong><strong class="booked-out">AUSGEBUCHT.</strong>
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
         Normalpreis: € 2790
@@ -102,7 +102,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     5.-8. Dezember 2023 (München)<br>
     <strong class="blue-head">Mastering Software Architectures
     (iSAQB CPSA-Foundation)<br></strong> 
-    <strong class="booked-out"> ausgebucht, nur noch Warteliste.</strong>
+    <strong class="booked-out"> AUSGEBUCHT.</strong>
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
     <p class="date-small">
         Normalpreis: € 2790
@@ -118,7 +118,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
      23.-26. Januar 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)</strong><br> 
-<strong class="booked-out">Nur noch wenige Plätze frei.</strong>
+<strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
     
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
