@@ -171,7 +171,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 
-<!-- MSA Juni 2024 MUC -->
+<!-- MSA Juni 2024 MAN -->
 <div class="container left"> 
     <div class="content" >
      11.-14. Juni 2024, Mannheim<br>
@@ -192,7 +192,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 
-<!-- IMPROVE Juni 2024, FRA -->
+<!-- IMPROVE Juni 2024, MAN -->
 
 <div class="container right">  
     <div class="content">
@@ -209,7 +209,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
-<!-- ADOC Juni 2024, FRA -->
+<!-- ADOC Juni 2024, MAN -->
 <div class="container left">  
     <div class="content">
       20.-21. Juni 2024, Mannheim<br>
