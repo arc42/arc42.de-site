@@ -33,5 +33,6 @@ insbesondere falls Sie uns über einen unverschlüsselten Kanal kontaktiert habe
 * bei [<i class="fab fa-fw fa-stack-overflow"></i>Stackoverflow](https://stackoverflow.com/questions/tagged/arc42)
 
 
-Bitte beachten Sie unser Hinweise zum <a href="{{ site.baseurl }}/imprint">Datenschutz.</a>.
+Bitte beachten Sie unser Hinweise zum <a href="{{ site.baseurl }}/imprint">Datenschutz.</a>
+
 
