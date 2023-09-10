@@ -3,14 +3,10 @@ title: "arc42 Template"
 layout: splash
 permalink: /overview/
 header:
-  #overlay_color: "#000"
-  #overlay_filter: "0.4"
-  #overlay_image: /images/splash/frantisek-duris-OdoWsR99gYA-unsplash.jpg
-  #caption: "Photo credit: [**Frantisek Duris**](https://unsplash.com/@modry_dinosaurus)"
-  overlay_image: /images/splash/ukrainian-flag.webp
-  actions: 
-    - label: "Help Ukraine"  
-      url: https://ukrainewar.carrd.co 
+  overlay_color: "#000"
+  overlay_filter: "0.4"
+  overlay_image: /images/splash/frantisek-duris-OdoWsR99gYA-unsplash.jpg
+  caption: "Photo credit: [**Frantisek Duris**](https://unsplash.com/@modry_dinosaurus)"
 excerpt: "Perfekt zur Kommunikation und Dokumentation Ihrer Softwarearchitektur."
 
 
