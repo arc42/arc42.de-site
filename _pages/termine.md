@@ -17,6 +17,8 @@ excerpt: "Unsere nächsten Schulungen."
 
 </div>
 
+<hr>
+
 
 
 Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht andersweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.

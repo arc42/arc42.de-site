@@ -33,6 +33,8 @@ gallery:
 
 </div>
 
+<hr>
+
 
 {% include gallery caption="Peter+Gernot" %}
 

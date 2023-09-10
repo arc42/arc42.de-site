@@ -27,7 +27,7 @@ sidebar:
 
 </div>
 
-
+<hr>
 
 
 ## Unser Angebot: Grundlagen und fortgeschrittene Themen

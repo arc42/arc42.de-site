@@ -134,6 +134,8 @@ feature_row12:
 
 </div>
 
+<hr>
+
 
 
 arc42 gibt praxisorientierte Antworten auf die folgenden zwei Fragen:
