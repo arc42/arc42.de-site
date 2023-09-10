@@ -13,6 +13,16 @@ header:
 excerpt: "Unsere nächsten Schulungen."
 ---
 
+<div class="ua-background" markdown="1">
+
+>### We stand with the people of Ukraine <span class="parent"><span class="ua-text"><i class="fas fa-heart children"></i></span><span class="ua-size children"><i class="fas fa-heart beat heart children"></i></span></span>
+>
+>Please assist humanitarian efforts for the Ukrainian people and those affected by the military invasion of Ukraine by supporting international aid organizations, including the [International Committee of the Red Cross](https://www.icrc.org/en).
+
+</div>
+
+
+
 Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht andersweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.
 
 ![](/images/training/LICENSED_TRAINING_logo.webp){: .align-right}
