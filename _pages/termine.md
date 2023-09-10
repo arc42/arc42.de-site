@@ -3,13 +3,9 @@ title: "Termine"
 layout: splash
 permalink: /termine
 header:
- # overlay_filter: rgba(15, 80, 180, 0.5)
- # overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
- # caption: "Photo credit: [**unsplash**](https://unsplash.com/@tjerwin)"
-  overlay_image: /images/splash/ukrainian-flag.webp
-  actions: 
-    - label: "Help Ukraine"  
-      url: https://ukrainewar.carrd.co  
+  overlay_filter: rgba(15, 80, 180, 0.5)
+  overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
+  caption: "Photo credit: [**unsplash**](https://unsplash.com/@tjerwin)"
 excerpt: "Unsere nächsten Schulungen."
 ---
 
