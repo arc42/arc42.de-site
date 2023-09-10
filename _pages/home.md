@@ -84,6 +84,7 @@ methode_publications_consulting:
 
 </div>
 
+
 {% include feature_row id="template_training_news" %}
 
 {% include feature_row id="methode_publications_consulting"%}
