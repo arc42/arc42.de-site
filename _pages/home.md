@@ -9,6 +9,8 @@ header:
   actions: 
     - label: "Übersicht"
       url: /overview
+    - label: "Kontakt"
+      url: /contact
     - label: "&#8594; English site..."
       url: "https://arc42.org"
 excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei."
@@ -51,8 +53,7 @@ methode_publications_consulting:
   - title: "Die arc42-Methode"
     excerpt: "![](/images/home/method.webp)<br>
     arc42 ist systematisch aber flexibel. Passend für große und kleine Teams in iterativen 
-    oder weniger agilen Prozessen.
-    "
+    oder weniger agilen Prozessen."
     url: "/method"
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"  
@@ -83,6 +84,7 @@ methode_publications_consulting:
 >Please assist humanitarian efforts for the Ukrainian people and those affected by the military invasion of Ukraine by supporting international aid organizations, including the [International Committee of the Red Cross](https://www.icrc.org/en).
 
 </div>
+
 
 {% include feature_row id="template_training_news" %}
 
