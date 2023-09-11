@@ -3,14 +3,10 @@ title: "arc42 Template"
 layout: splash
 permalink: /overview/
 header:
-  #overlay_color: "#000"
-  #overlay_filter: "0.4"
-  #overlay_image: /images/splash/frantisek-duris-OdoWsR99gYA-unsplash.jpg
-  #caption: "Photo credit: [**Frantisek Duris**](https://unsplash.com/@modry_dinosaurus)"
-  overlay_image: /images/splash/ukrainian-flag.webp
-  actions: 
-    - label: "Help Ukraine"  
-      url: https://ukrainewar.carrd.co 
+  overlay_color: "#000"
+  overlay_filter: "0.4"
+  overlay_image: /images/splash/frantisek-duris-OdoWsR99gYA-unsplash.jpg
+  caption: "Photo credit: [**Frantisek Duris**](https://unsplash.com/@modry_dinosaurus)"
 excerpt: "Perfekt zur Kommunikation und Dokumentation Ihrer Softwarearchitektur."
 
 
@@ -129,6 +125,18 @@ feature_row12:
 
 
 ---
+
+<div class="ua-background" markdown="1">
+
+>### We stand with the people of Ukraine <span class="parent"><span class="ua-text"><i class="fas fa-heart children"></i></span><span class="ua-size children"><i class="fas fa-heart beat heart children"></i></span></span>
+>
+>Please assist humanitarian efforts for the Ukrainian people and those affected by the military invasion of Ukraine by supporting international aid organizations, including the [International Committee of the Red Cross](https://www.icrc.org/en).
+
+</div>
+
+<hr>
+
+
 
 arc42 gibt praxisorientierte Antworten auf die folgenden zwei Fragen:
 

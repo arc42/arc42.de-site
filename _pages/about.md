@@ -3,8 +3,7 @@ title: "Über uns (und arc42)!"
 layout: single
 permalink: /about
 header:
-  #overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
-  overlay_image: /images/splash/ukrainian-flag.webp
+  overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
 sidebar:
   nav: "about"
 
@@ -25,6 +24,17 @@ gallery:
     title: "Peter+Gernot"
 
 ---
+
+<div class="ua-background" markdown="1">
+
+>### We stand with the people of Ukraine <span class="parent"><span class="ua-text"><i class="fas fa-heart children"></i></span><span class="ua-size children"><i class="fas fa-heart beat heart children"></i></span></span>
+>
+>Please assist humanitarian efforts for the Ukrainian people and those affected by the military invasion of Ukraine by supporting international aid organizations, including the [International Committee of the Red Cross](https://www.icrc.org/en).
+
+</div>
+
+<hr>
+
 
 {% include gallery caption="Peter+Gernot" %}
 
