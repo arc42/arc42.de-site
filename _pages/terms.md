@@ -14,84 +14,142 @@ sidebar:
 
 
 # Allgemeine Geschäftsbedingungen für Schulungen (AGB)
+ 
+Download als [PDF](terms.pdf)
 
-Stand: September 2023.
+
+Stand: 12. September 2023.
+
 
 ### Begriffe
-"Schulung" im Sinne dieser AGB sind die auf dieser Website angebotenen Veranstaltungen (Synonyme sind Trainings, Seminare, Kurse), unabhängig davon, ob diese vor-Ort oder online abgehalten werden.
 
-### Preise
+* arc42 im Sinne dieser AGB ist eine Gesellschaft bürgerlichen Rechts von Dr. Peter Hruschka und Dr. Gernot Starke. Nachfolgend genannt arc42 oder "Wir".
+* "Schulungen" im Sinne dieser AGB sind die auf dieser Website angebotenen Veranstaltungen (Synonyme sind Trainings, Seminare, Kurse), unabhängig davon, ob diese vor-Ort oder online abgehalten werden.
 
-* Alle Preise verstehen sich zuzüglich der jeweils gesetzlichen Mehrwertsteuer. 
-  * Preise gelten für jeweils eine Person
-  * Frühbucher- oder Early-Bird Preise gelten exklusiv für Anmeldungen per E-Mail oder unser online Anmeldeformular. 
-  
+* "Kund:innen" im Sinne dieser AGB sind:
+  *  Personen, die an unseren Schulungen teilnehmen (Teilnehmende)
+  *  Organisationen, die Personen für unsere Schulungen anmelden (Anmeldende)
 
-* Unsere Preise beinhalten die Seminardurchführung sowie ausführliche Schulungsunterlagen.
-  *  Sofern wir ein Seminar vor-Ort durchführen, sind Mittagessen und Pausenverpflegung sowie Tagungsgetränke inkludiert.
-  *  Bei online-Durchführungen (z.B. durch COVID-19 bedingt) ist keine Verpflegung im Preis enthalten.
 
-* Rechnungsbeträge sind zahlbar rein netto innerhalb von 14 Tagen nach Rechnungserhalt. Skonti werden nicht gewährt.
-  
-* Nur ein rechtzeitiger Zahlungseingang (gemäß Rechnung) berechtigt zur Teilnahme. 
-  * Ausgenommen hiervon sind Seminare, bei denen wir die Rechnungen erst während oder nach der Durchführung stellen.
+
+### Geltung
+
+* Unsere Geschäftsbedingungen gelten ausschließlich; 
+* Entgegenstehende oder von unseren Geschäftsbedingungen abweichende Bedingungen von Kund:innen erkennen wir nicht an, es sei denn, wir hätten ausdrücklich schriftlich ihrer Geltung zugestimmt.
+* Diese Geschäftsbedingungen gelten auch dann, wenn wir Kenntnis entgegenstehender oder von unseren Geschäftsbedingungen abweichender Bedingungen von Kund:innen haben.
+
+
+### Identität und Adressen der Dienstleister
+
+Dr. Peter Hruschka und Dr. Gernot Starke sind einzeln voll vertretungs- und verfügungsberechtigt für arc42.  Insbesondere dürfen beide einzeln Anmeldungen bestätigen sowie Rechnungen für Schulungen stellen.
+
+| Dr. Peter Hruschka | Dr. Gernot Starke |
+| ---- | ---- |
+| Langenbruchweg 71 | Willi-Lauf Allee 43 |
+| D-52080 Aachen | D-50858 Köln | 
+| Tel. +49 172 241 1656| Tel. +49 177 728 2570 |
+
+E-Mail: info_at_arc42_dot_de
+
+
 
 ### Anmeldungen
-* Anmeldungen zu unseren Schulungen haben in schriftlicher Form (E-Mail, Brief) oder über unser Online-Formular zu erfolgen. 
+
+* Anmeldungen zu unseren Schulungen haben über unser Online-Formular oder in schriftlicher Form (E-Mail, Brief mit sämtlichen im Online-Formular erforderlichen Angaben)  zu erfolgen.
 
 * Sie erhalten von uns kurzfristig eine Anmeldebestätigung.
 
-* Anmeldungen sind verbindlich. Der Vertrag kommt zustande, indem wir (arc42, Dr. Peter Hruschka und/oder Dr. Gernot Starke) die Anmeldung per E-Mail oder schriftlich bestätigt.
+* Anmeldungen sind verbindlich. 
+* Ein Vertrag kommt zustande, sobald arc42 die Anmeldung per E-Mail oder schriftlich bestätigt.
 
 * Wir behalten uns vor, einzelne Anmeldungen einzelner oder mehrerer Personen ohne Angabe von Gründen abzulehnen.
+
+  
 
 >#### Erläuterung zur Ablehnung von Anmeldungen
 >
 >Keine Sorge, wir lehnen Sie nur dann ab, wenn unsere Termine bereits ausgebucht sind.
 >In diesem Fall bieten wir Ihnen im Normalfall einen Ersatztermin UND einen Platz auf der Warteliste an.
 
+  
+
+### Preise
+
+  
+* Alle Preise verstehen sich zuzüglich der jeweils gesetzlichen Mehrwertsteuer.
+* Preise gelten für jeweils eine Person.
+* Frühbucher- oder Early-Bird Preise gelten exklusiv für Anmeldungen über unser online Anmeldeformular  oder per E-Mail oder Brief.
+* Unsere Preise beinhalten die Seminardurchführung sowie ausführliche Schulungsunterlagen.
+
+* Sofern wir eine Schulung vor Ort durchführen, sind Mittagessen und Pausenverpflegung sowie Tagungsgetränke inkludiert.
+* Bei online-Durchführungen ist keine Verpflegung im Preis enthalten.
+
+* Rechnungsbeträge sind zahlbar rein netto innerhalb von 14 Tagen nach Rechnungserhalt. Skonti werden nicht gewährt.
+* Nur ein rechtzeitiger Zahlungseingang (gemäß Rechnung) berechtigt zur Teilnahme.
+
+ 
 
 ### Datenerfassung und -nutzung
-Mit der Anmeldung erklären Sie ausdrücklich das Einverständnis, dass wir die Daten (Namen, Adresse, E-Mail) der teilnehmenden Personen  elektronisch erfassen und für die Vorbereitung, Organisation, Durchführung und Nachbereitung der Schulungen verwenden.
+
+Mit der Anmeldung erklären Kund:innen ausdrücklich das Einverständnis, dass wir die Daten (Namen, Adresse, E-Mail) der teilnehmenden und anmeldenden Personen elektronisch erfassen und für die Vorbereitung, Organisation, Durchführung und Nachbereitung der Schulungen verwenden.
 
 
 ### Abmeldung
 
-* Abmeldungen müssen schriftlich (gerne per E-Mail) erfolgen.
-* Für Abmeldungen oder Rücktritte gelten folgende Regelungen:
-  * Abmeldung ist bis 21 Tage vor Veranstaltungsbeginn gegen eine Bearbeitungsgebühr von 50 EUR möglich. 
-  * Abmeldung bis 14 Tage vor Kursbeginn 50% der Teilnahmegebühr 
-  * Bei Abmeldungen nach diesem Zeitpunkt wird die Teilnahmegebühr in voller Höhe fällig. 
-  * Falls angemeldete Personen nicht zum Training erscheinen, wird die Teilnahmegebühr in voller Höhe fällig.
 
-* Bei Abmeldungen können Sie selbstverständlich (auch kurzfristig) eine andere Person als Ersatz benennen.
+* Abmeldungen müssen schriftlich (gerne per E-Mail) erfolgen.
+
+* Für Abmeldungen oder Rücktritte gelten folgende Regelungen:
+
+	* Abmeldung ist bis 21 Tage vor Veranstaltungsbeginn kostenfrei möglich.
+	* Abmeldung bis 14 Tage vor Kursbeginn 50% der Teilnahmegebühr.
+	* Bei Abmeldungen nach diesem Zeitpunkt wird die Teilnahmegebühr in voller Höhe fällig.
+
+* Falls angemeldete Personen nicht zum Training erscheinen, wird die Teilnahmegebühr in voller Höhe fällig.
+
+
+* Bei Abmeldungen können Sie selbstverständlich (auch kurzfristig) ohne Mehrkosten eine andere Person als Ersatz benennen. 
+
+  
 
 >#### Absagen im Krankheitsfall
 >
->Aufgrund der seit COVID-19 häufiger auftretenden kurzfristigen Absagen bei Krankheitsfällen:
->Wir versuchen grundsätzlich, eine gute Regelung für beide Seiten zu finden.
+> Die Teilnahmegebühr wird gemäß Abschnitt [Abmeldung](#abmeldung) auch im Krankheitsfall fällig.
+>Wir versuchen grundsätzlich, eine gute Regelung für beide Seiten zu finden. 
 >Soweit möglich versuchen wir einen möglichst kurzfristigen Ersatztermin für die erkrankte Person zu finden.
->Für diese Ersatztermine bieten wir einen Nachlass von 50% auf die jeweilige Teilnahmegebühr an.
+>
+>Für diese Ersatztermine bieten wir einen Nachlass von 50% auf die dann geltende Teilnahmegebühr an.
 
+  
+  
 
 ### Absagen unsererseits
-    
-Bei zu geringer Nachfrage oder anderen Gründen, die wir als Veranstalter nicht zu vertreten haben, kann ein Schulungstermin auch nach erfolgter Teilnahme- oder Anmeldebestätigung abgesagt werden. 
 
-* Sie erhalten in diesem Fall alle bereits bezahlten Gebühren erstattet.  
+Bei zu geringer Nachfrage oder anderen Gründen, die wir als Veranstalter nicht zu vertreten haben, kann ein Schulungstermin auch nach erfolgter Teilnahme- oder Anmeldebestätigung abgesagt werden.
+
+  
+* Sie erhalten in diesem Fall alle bereits bezahlten Gebühren erstattet.
 * Weitere Ansprüche gegen die Veranstalter oder die Dozenten bestehen nicht.
+
+  
 
 ### Widerrufsrecht
 
-Sie haben das Recht, binnen 14 Tagen nach Anmeldungen ohne Angabe von Gründen von diesen Anmeldungen zurückzutreten.
+Sie haben das Recht, binnen 14 Tagen nach Anmeldungen ohne Angabe von Gründen von Ihrer Anmeldung zurückzutreten.
 
-Ausnahmen sind Anmeldungen, die 14 oder weniger Tage vor einem Schulungstermin erfolgen. In solchen Fällen ist Rücktritt nur gegen Gebühr möglich (siehe "Abmeldung" oben)
 
+Dieser Widerruf muss in Schriftform (analog zur Anmeldung) erfolgen, gerne per E-Mail.
+
+
+  
+  
 
 ### Urheber- und Nutzungsrechte von Unterlagen
 
-Die von arc42 ausgegebenen Schulungs- oder Übungsunterlagen dürfen **keinesfalls ohne unsere schriftliche Genehmigung** in irgendeiner Form vervielfältigt, verändert oder weitergebeben werden. 
+  
+Die von arc42 ausgegebenen Schulungs- oder Übungsunterlagen dürfen **keinesfalls ohne unsere schriftliche Genehmigung** in irgendeiner Form vervielfältigt, verändert oder weitergegeben werden.
+
 Dies gilt sowohl für die öffentliche Nutzung als auch für etwaige Anpassungen zur Gestaltung oder Durchführung eigener Veranstaltungen.
 
+  
 Alle von uns aufgeführten Waren- oder Dienstleistungsmarken sind Eigentum der jeweiligen Inhaber.
-

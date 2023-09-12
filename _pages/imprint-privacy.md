@@ -30,7 +30,7 @@ Dr. Peter Hruschka, Langenbruchweg 71, 52080 Aachen
 ### Kontakt
 
 Telefon: +49-177-728 2570<br>
-e-Mail: gs - at - gernotstarke - dot - de<br>
+e-Mail: gernotstarke - at - mailbox - dot - org<br>
 Website: [gernotstarke.de](https://gernotstarke.de)
 
 
