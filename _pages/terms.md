@@ -78,7 +78,10 @@ E-Mail: info_at_arc42_dot_de
   
 * Alle Preise verstehen sich zuzüglich der jeweils gesetzlichen Mehrwertsteuer.
 * Preise gelten für jeweils eine Person.
-* Frühbucher- oder Early-Bird Preise gelten exklusiv für Anmeldungen über unser online Anmeldeformular  oder per E-Mail oder Brief.
+* Frühbucher- oder Early-Bird Preise gelten exklusiv für 
+  * Anmeldungen über unser online Anmeldeformular oder per E-Mail oder Brief UND
+  * Rechnungsstellung per E-Mail und Rechnung in PDF-Form.
+
 * Unsere Preise beinhalten die Seminardurchführung sowie ausführliche Schulungsunterlagen.
 
 * Sofern wir eine Schulung vor Ort durchführen, sind Mittagessen und Pausenverpflegung sowie Tagungsgetränke inkludiert.
@@ -87,7 +90,10 @@ E-Mail: info_at_arc42_dot_de
 * Rechnungsbeträge sind zahlbar rein netto innerhalb von 14 Tagen nach Rechnungserhalt. Skonti werden nicht gewährt.
 * Nur ein rechtzeitiger Zahlungseingang (gemäß Rechnung) berechtigt zur Teilnahme.
 
- 
+> Erläuterung zur Rechnungsstellung per E-Mail und PDF
+>
+> Manche Organisationen zwingen uns, Rechnungen über Portale einzureichen.
+> In solchen Fällen bieten wir Schulungen grundsätzlich zum Normalpreis ohne Rabatte oder Frühbucherpreise oä an.
 
 ### Datenerfassung und -nutzung
 
@@ -142,7 +148,6 @@ Dieser Widerruf muss in Schriftform (analog zur Anmeldung) erfolgen, gerne per E
 
 
   
-  
 
 ### Urheber- und Nutzungsrechte von Unterlagen
 
@@ -153,3 +158,8 @@ Dies gilt sowohl für die öffentliche Nutzung als auch für etwaige Anpassungen
 
   
 Alle von uns aufgeführten Waren- oder Dienstleistungsmarken sind Eigentum der jeweiligen Inhaber.
+
+### Salvatorische Klausel
+
+Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder nach Vertragsschluss unwirksam oder undurchführbar werden, bleibt davon die Wirksamkeit der AGB im Übrigen unberührt. 
+An die Stelle der unwirksamen oder undurchführbaren Bestimmung soll diejenige wirksame und durchführbare Regelung treten, deren Wirkungen der wirtschaftlichen Zielsetzung am nächsten kommen, die die Vertragsparteien mit der unwirksamen oder undurchführbaren Bestimmung verfolgt haben.
