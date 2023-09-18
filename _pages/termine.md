@@ -76,21 +76,19 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container left"> 
   <div class="content" style="color:darkgrey">
     5.-8. Dezember 2023 (München)<br>
-    <strong class="blue-head">Mastering Software Architectures
+    <strong >Mastering Software Architectures
     (iSAQB CPSA-Foundation)<br></strong> 
-    <strong class="booked-out"> AUSGEBUCHT.</strong>
+    <strong class="booked-out"> AUSGEBUCHT, Warteliste voll.</strong>
     <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-    <p class="date-small">
-        Normalpreis: € 2790
-      </p>
+    
     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-    </div>
+  </div>
 </div> 
 
 
 <!-- MSA Januar 2024 MUC -->
 <div class="container right"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey">
      23.-26. Januar 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)</strong><br> 
@@ -111,11 +109,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA März 2024 MUC -->
 <div class="container left"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey">
      19.-22. März 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
+<strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
@@ -238,8 +237,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
-<!-- MSA Sept 2024 MUC -->
-<div class="container left"> 
+<!-- MSA Dez 2024 MUC -->
+<div class="container right"> 
     <div class="content" >
      3.-6. Dezember 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
