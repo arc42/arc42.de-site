@@ -15,6 +15,7 @@ sidebar:
 
 <a href="/downloads/flyer-req4arc.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonReq4Arc">Download<br/>Kursbeschreibung (pdf)</button></a>
 <a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+<a href="/terms"><button class="button buttonTerms">Unsere<br>AGB</button></a>
 
 
 ## Ihr Weg zu besseren Anforderungen

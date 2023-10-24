@@ -15,6 +15,7 @@ sidebar:
 
 <a href="/downloads/flyer-msa.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
 <a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+<a href="/terms"><button class="button buttonTerms">Unsere<br>AGB</button></a>
 
 
 # Mastering Software Architectures <br><sup>Effektive Softwarearchitekturen - praxisnah!</sup>

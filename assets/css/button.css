@@ -4,7 +4,7 @@
 **/
 
 .button {
-  background-color: #374769; /* Green */
+  background-color: #374769;
   border: none;
   color: white;
   padding: 10px 22px;
@@ -18,7 +18,7 @@
 }
 
 .button:hover {
-  background-color: #4b7ba3; /* SpringGreen */
+  background-color: #4b7ba3;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   color: #EEE8AA;
 }
@@ -35,5 +35,7 @@
 .buttonMSA {background-color: LightSkyBlue; color: black;} 
 .buttonReq4Arc {background-color: #F5B700; color: black;} 
 .buttonImprove {background-color: PaleGreen;color:black;} 
-.buttonAdoc {background-color: Pink; color: black;} 
+.buttonAdoc {background-color: Pink; color: black;}
+
+.buttonTerms {background-color: DimGray;}
 
