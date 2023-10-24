@@ -16,6 +16,7 @@ sidebar:
 
 <a href="/downloads/flyer-adoc.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonAdoc">Download<br/>Kursbeschreibung (pdf)</button></a>
 <a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+<a href="/terms"><button class="button buttonTerms">Unsere<br>AGB</button></a>
 
 In diesem praxisorientierten Hands-on Training lernen Sie, unter praktischen Randbedingungen (Zeit- und Kostendruck) angemessene Dokumentation für verschiedene Zielgruppen zu erstellen und zu pflegen.
 

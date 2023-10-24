@@ -42,8 +42,10 @@ schulungen:
       url: /info-req4arc/
     - title: ADOC
       url: /info-adoc/
+    - title: Unsere AGB
+      url: /terms
     - title: Bildergalerie
-      url: /gallery  
+      url: /gallery
 
 about:
   - title: Über uns

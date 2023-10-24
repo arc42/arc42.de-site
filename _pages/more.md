@@ -19,7 +19,9 @@ header:
    - label: "Videos"
      url: /videos  
    - label: "Vorträge"
-     url: /talks
+     url: /talks 
+   - label: "Unsere AGB"
+     url: /terms
 
 excerpt: "wir schreiben und sprechen über Architektur...<span style='font-size:80px;'>&#128521;</span>"
 
