@@ -26,7 +26,9 @@ insbesondere falls Sie uns über einen unverschlüsselten Kanal kontaktiert habe
 
 * <a href="xmxaxixlxtxo:ixnxfxox@xaxrxcx4x2x.xdxe" onmouseover="this.href=this.href.replace(/x/g,'');"><i class="fa fa-fw fa-envelope"></i>Email (unsere Mailadresse ist gegen Spam geschützt)</a>
 
-* bei [<i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn](https://linkedin.com/in/gernotstarke)
+* bei <i class="fab fa-fw fa-linkedin"></i>LinkedIn:
+  * [Gernot Starke](https://linkedin.com/in/gernotstarke)
+  * [Peter Hruschka](https://www.linkedin.com/in/peterhruschka/)
 
 * via [<i class="fab fa-fw fa-github"></i>issue tracker](https://github.com/arc42/arc42-template/issues) at [https://github.com/arc42/arc42-template/issues](https://github.com/arc42/arc42-template/issues).
  
