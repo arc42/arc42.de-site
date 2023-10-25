@@ -17,7 +17,6 @@ main:
 
 publications:
   - title: Publikationen
-    url: /publications/
     children:
     - title: Bücher
       url: /books/
