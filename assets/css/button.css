@@ -43,9 +43,19 @@
     margin-bottom: 6px;
 }
 
+.margin_bottom_mobile {
+    margin-bottom: 0px;
+}
+
+
 @media screen and (max-width: 600px) {
     .margin_bottom {
         margin-bottom: 0px;
     }
 }
 
+@media screen and (max-width: 750px) {
+    .margin_bottom_mobile {
+        margin-bottom: 6px;
+    }
+}

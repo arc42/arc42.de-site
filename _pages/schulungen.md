@@ -32,11 +32,11 @@ sidebar:
 
 ## Unser Angebot: Grundlagen und fortgeschrittene Themen
 
-<a href="info-msa"><button class="button buttonMSA" style="width:76%;">
+<a href="info-msa"><button class="button buttonMSA msa">
 Mastering Software Architectures:<br/>Effektive Softwarearchitekturen - praxisnah!</button></a>
 
 <p/>
-<a href="info-req4arc"><button class="button buttonReq4Arc button25">
+<a href="info-req4arc"><button class="margin_bottom_mobile button buttonReq4Arc button25">
 REQ4ARC: <br/>bessere Anforderungen</button></a>
 <a href="info-improve"><button class="button buttonImprove button25">
 IMPROVE: <br/>Systeme verbessern</button></a>
@@ -53,7 +53,7 @@ Video vom großartigen [Oleg Pylypenko](https://alegpilipenko.com/).
 
 Seit vier Jahrzehnten arbeiten wir daran, durch Schulung und Beratung Architektur-Know-How in die Praxis zu übertragen. In diesem Zeitraum haben wir Hunderte Kurse in Deutschland und auch im Rest der Welt gehalten und zahllose Personen und Teams an gute Architekturarbeit herangeführt. 
 
-![](/images/arc42-learn-cpsaf.png)
+![arc42-Logo mit Pfeil auf ISAQB-CPSA-F-Logo](/images/arc42-learn-cpsaf.png)
 
 2008 haben wir als Gründungsmitglieder den iSAQB e.V. (International Software Architecture Qualification Board) aus der Taufe gehoben, um der Rolle "Software Architect" durch dieses Qualifizierungs- und Zertifizierungsprogramm noch mehr Stellenwert zu geben.  
 Wir sind seither aktiv in den Arbeitsgruppen des iSAQB tätig.

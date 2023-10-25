@@ -15,28 +15,28 @@ excerpt: "wir packen mit an..."
 review_feature:
   - image_path: /images/consulting/review-feature.jpg
     caption: "Photo: [Jounelle](https://unsplash.com/@jey_photography)"
-    alt: "Reviews"
+    alt: "Linse, die einen unscharfen Weg im Hintergrund gestochen scharf werden lässt"
     title: "Reviews"
     excerpt: 'Wir liefern eine unabhängige Sicht auf Ihre Systeme und Entwicklungsprozesse, mit konkreten Vorschlägen für Verbesserungen.'
     
 
-
 docu_feature:
   - image_path: /images/consulting/docu-feature.png
-    alt: "Dokumentation"
+    alt: "arc42 Diagramm"
     title: "Dokumentation"
     excerpt: 'Wir helfen Ihnen bei der Dokumentation Ihrer Systeme, pragmatisch und sparsam. Wir haben viele Organisationen erfolgreich bei der Einführung von arc42 unterstützt.'
     
 
 improve_feature:
   - image_path: /images/consulting/improve-feature.jpg
-    alt: "Verbessern"
+    alt: "Frau, die sich freut"
     title: "Verbesserung"
     excerpt: "Wir haben zahlreiche Organisationen bei der Verbesserung, Modernisierung und Evolution ihrer Systeme und Entwicklungsprozesse unterstützt. "
 
+
 talks_feature:
   - image_path: /images/consulting/gernot-talk-seco.jpg
-    alt: "Vorträge"
+    alt: "Gernot Starke dynamisch vor einer Leinwand bei einem Vortrag"
     title: "Vorträge"
     excerpt: 'Wir halten Vorträge zu Themen rund um Architektur, auf Konferenzen oder gerne auch bei Ihnen inhouse. Darf es ein Impulsvortrag, eine Keynote oder ein thematisch fokussierter Deep-Dive sein? '
     url: /talks

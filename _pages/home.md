@@ -19,14 +19,14 @@ excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pr
 
 template_training_news:
   - title: "Template"
-    excerpt: "![](/images/home/template.webp)<br> Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
+    excerpt: "![Schrank mit 12 Schubladen](/images/home/template.webp)<br> Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
     Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, effektiv und schmerzfrei**."
     url: "/overview"
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
     
   - title: "Trainings"
-    excerpt: "![](/images/home/training.webp)<br>
+    excerpt: "![Hand heben](/images/home/training.webp)<br>
     Wir haben Hunderte Menschen erfolgreich in unserem bewährten
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor.<br>
@@ -38,7 +38,7 @@ template_training_news:
     
     
   - title: "News"
-    excerpt: "![](/images/home/arc42-ua.webp)<br>
+    excerpt: "![arc42 Logo vor ukrainischer Flagge](/images/home/arc42-ua.webp)<br>
 
      * Unser pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org).
   
@@ -51,7 +51,7 @@ template_training_news:
 
 methode_publications_consulting:
   - title: "Die arc42-Methode"
-    excerpt: "![](/images/home/method.webp)<br>
+    excerpt: "![ToDo - Doing - Done Zettel](/images/home/method.webp)<br>
     arc42 ist systematisch aber flexibel. Passend für große und kleine Teams in iterativen 
     oder weniger agilen Prozessen."
     url: "/method"
@@ -59,7 +59,7 @@ methode_publications_consulting:
     btn_class: "btn--primary"  
 
   - title: "arc42 Lesestoff"
-    excerpt: "![](/images/home/publikationen.webp)<br>
+    excerpt: "![Mehrere Bücher in einem Buchregal](/images/home/publikationen.webp)<br>
     Es gibt viel zu lesen über arc42 und Architektur. Von der Methode über _good practices_
     bis hin zu kompletten Beispielen von Softwarearchitekturen.<br>
     Stöbern Sie in unseren Büchern, Artikeln, Vorträgen oder Videos."
@@ -68,7 +68,7 @@ methode_publications_consulting:
     btn_class: "btn--primary"
   
   - title: "Consulting"
-    excerpt: "![](/images/home/consulting.webp)<br>
+    excerpt: "![Mehrere Menschen vor einem Laptop, erklärend und zuhörend](/images/home/consulting.webp)<br>
     Wir helfen in allen Lebenslagen Ihrer IT-Projekte weiter.<br>
     
     Lesen Sie mehr über unsere Angebote an Beratung, Reviews oder praktische Unterstützung für Ihre Projekte."

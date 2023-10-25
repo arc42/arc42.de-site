@@ -27,7 +27,7 @@ excerpt: "wir schreiben und sprechen über Architektur...<span style='font-size:
 
 docs_feature:
   - image_path: /images/publications/docs-feature.png
-    alt: "Docs"
+    alt: "Große 42"
     title: "Doku und Tipps"
     excerpt: 'Ausführliche Dokumentation, über hundert praktische Tipps zu arc42. Für Systeme aller Größen und Branchen, für kleine und große Teams, für alle Arten von Werkzeugen.'
     url: https://docs.arc42.org
@@ -36,7 +36,7 @@ docs_feature:
 
 faq_feature:
   - image_path: /images/publications/faq-feature.png
-    alt: "FAQ"
+    alt: "'Super Helpful'-Schild"
     title: "FAQs"
     excerpt: 'Die häufig gestellten Fragen mit Antworten, zu Methodik, den arc42-Abschnitten, Agilität, Tools, Versionierung und weiteren.'
     url: https://faq.arc42.org
@@ -45,7 +45,7 @@ faq_feature:
 
 books_feature:
   - image_path: /images/publications/book-feature.png
-    alt: "books"
+    alt: "Mehrere Bücher in einem Buchregal"
     title: "Bücher"
     excerpt: 'Wir haben über 25 Bücher geschrieben, von der Anforderungsklärung, Business-Analyse, Architektur, Dokumentation, Verhaltensmuster (Knigge) bis zu Patterns.'
     url: /books
@@ -55,7 +55,7 @@ books_feature:
 
 videos_feature:
   - image_path: /images/publications/video-feature.png
-    alt: "Videos"
+    alt: "Kamera"
     title: "Videos"
     excerpt: 'Mehrfach sind unsere Konferenzvorträge aufgezeichnet worden, oder wir haben uns selbst als Produzenten versucht... 
     Immerhin besitzt arc42 einen eigenen [Youtube-channel](https://www.youtube.com/arc42-video/)... '
@@ -65,7 +65,7 @@ videos_feature:
 
 articles_feature:
   - image_path: /images/publications/article-feature.png
-    alt: "Artikel"
+    alt: "Mehrere Magazine / Zeitschriften"
     title: "Artikel"
     excerpt: "Mehr als hundert Fachartikel in diversen Zeitschriften. Unter anderem unsere mehrjährige Kolumne 'Knigge für Softwarearchitektur', 
     die Kolumne 'Req4Arcs', oder die Kolumne 'Hitchhikers Guide to Documentation'. Viele davon sind online verfügbar."
@@ -75,7 +75,7 @@ articles_feature:
 
 talks_feature:
   - image_path: /images/publications/talks-feature.jpeg
-    alt: "Vorträge"
+    alt: "Gernot Starke auf der Bühne bei einem Vortrag"
     title: "Vorträge"
     excerpt: 'Wir halten Vorträge auf Konferenzen, zu Architektur, Methodik, Vorgehen, Reviews und weiteren Themen.'
     url: /talks

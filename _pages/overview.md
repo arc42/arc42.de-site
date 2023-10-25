@@ -12,7 +12,7 @@ excerpt: "Perfekt zur Kommunikation und Dokumentation Ihrer Softwarearchitektur.
 
 feature_row1:
   - image_path: /images/template/01-intro-and-goals.png
-    alt: "intro-image"
+    alt: "Einführung und Ziele - mit Tabellen für Qualitäts-Ziele und Stakeholder"
     title: "1. Einführung und Ziele"
     excerpt: 'Kurze Beschreibung und Extrakt der **requirements**, Die Top3 (bis maximal 5) **Qualitätsziele für die Architektur**, deren Erreichung für die wichtigsten Stakeholder kritisch ist.
 Eine Übersicht über die wichtigsten **Stakeholder** mit deren Erwartungen bezüglich der Architektur.'
@@ -146,7 +146,7 @@ arc42 gibt praxisorientierte Antworten auf die folgenden zwei Fragen:
 Dazu haben wir ein einfaches Template mit 12 Kapiteln entwickelt, in denen Sie alles Wissenswerte über die Architektur unterbringen können.
 arc42 läßt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
 
-![](/images/template/template-struktur-focus.png)
+![Die 12 Kapitel von arc42](/images/template/template-struktur-focus.png)
 
 
 Den Kern der Architekturdokumentation bilden die Kontextabgrenzung (Kap. 3), die drei Sichten (Bausteinsicht, Laufzeitsicht und Verteilungssicht - Kap. 5 - 7), sowie die querschnittlichen Konzepte (Kap. 8).
@@ -182,8 +182,6 @@ Wenn Sie mehr zu den Kapiteln wissen wollen, lesen Sie weiter oder lernen Sie no
 
 {% include feature_row id="feature_row12" type="right" %}
 
-<hr>
-
 # Weitere Informationen
 
 So - jetzt kennen Sie die einzelnen Teile des Templates. Gerne können Sie noch weiterlesen:
@@ -192,7 +190,8 @@ Schauen Sie in unsere weiterführende Doku:
 
 * Die ausführliche [Dokumentation des Templates](https://docs.arc42.org), geordnet nach den Sektionen des Templates.
 Inklusive über 100 Tipps zur Anwendung.
-* FAQ - [Häufig gestellte Fragen)](https://faq.arc42.org)
+* FAQ - [Häufig gestellte Fragen)](https://faq.arc42.org)  
+* Unsere (neue) Seite über unser [Quality Model](https://quality.arc42.org).
 * Einige der von uns geschriebenen [Bücher](/books) beschäftigen sich mit arc42, beispielsweise:
   * [arc42 in Aktion](/books/#arc42-in-aktion)
   * [arc42 by Example, Vol. 1](/books#arc42-by-example), arc42 anhand von sechs praktischen Beispielen erklärt
