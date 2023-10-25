@@ -12,7 +12,7 @@ header:
 excerpt: "... das hat funktioniert"
 ---
 
-![](/images/splash/sharon-mccutcheon-tn57JI3CewI-file-pile.jpg){: .align-right}
+![Stapel von Unterlagen](/images/splash/sharon-mccutcheon-tn57JI3CewI-file-pile.jpg){: .align-right}
 ### Ihre Anmeldung hat funktioniert, aber:
 
 
