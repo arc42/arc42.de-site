@@ -12,7 +12,7 @@ excerpt: "Systematisch und prozess-agnostisch zu angemessenen Lösungen."
 
 feature_row1:
   - image_path: /images/template/01-intro-and-goals.png
-    alt: "intro-image"
+    alt: "Einführung und Ziele - mit Tabellen für Qualitäts-Ziele und Stakeholder"
     title: "Anforderungen klären"
     excerpt: 'Entwicklungsteams benötigen ein robustes und tragfähiges Fundament von Zielen, Anforderungen und Randbedingungen,
     um zielgerichtet entscheiden und entwickeln zu können.
@@ -41,7 +41,7 @@ Dank Internet und omnipräsentem Zugang zu Informationen haben wir dazu die Mög
 
 <hr>
 
-![](/images/method/arc42-prozess-2021-mit-lernen.png)
+![Diagramm zum ständigen Lernen im arc42-Prozess](/images/method/arc42-prozess-2021-mit-lernen.png)
 
 
 <hr>

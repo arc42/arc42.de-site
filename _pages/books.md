@@ -21,7 +21,7 @@ Seit den '90-er Jahren publizieren wir fleissig, und sind an mehr als 40 Bücher
 # 2021
 ## Software Architecture Foundation: CPSA-F Exam Preparation
 
-![](/images/books/SWAF-vanHaren-cover.png){: .align-right}
+![Software Architecture Foundation: CPSA-F Exam Preparation Buchcover](/images/books/SWAF-vanHaren-cover.png){: .align-right}
 
 Gernot Starke and Alexander Lorz, published by van Haren International Publishing.
 
@@ -33,7 +33,7 @@ Highly recommended for anybody preparing for the certification examination.
 
 ## arc42-by-Example Vol.2
 
-![](/images/books/arc42byexample-Title300.png){: .align-left}
+![arc42-by-Example Vol.2 Buchcover](/images/books/arc42byexample-Title300.png){: .align-left}
 
 Peter Hruschka, Ivan Kostov, Wolfgang Reimesch: arc42 by Example Volume 2: Architecture Documentation for _Embedded Systems and IoT_, published by Leanpub.
 
@@ -49,7 +49,7 @@ Finally, examples from the area of _embedded_ systems: Numerous organizations ha
 
 9., überarbeitete Auflage. 8/2020 455 Seiten. Flexibler Einband.
 
-![](/images/books/ESA-9-Cover.png){: .align-right}
+![Effektive Softwarearchitekturen, 9. Auflage Buchcover](/images/books/ESA-9-Cover.png){: .align-right}
 
 Mit der neunten Auflage ist ESA nun volljährig: 18 Jahre am (Fachbuch-)Markt.
 
@@ -62,7 +62,7 @@ Insbesondere sind neue Beispielfragen für die iSAQB Prüfung hinzugekommen.
 
 ## Basiswissen Softwarearchitektur, 4. Auflage
 
-![](/images/books/Basiswissen-4A.jpg){: .align-left}
+![Basiswissen Softwarearchitektur, 4. Auflage Buchcover](/images/books/Basiswissen-4A.jpg){: .align-left}
 
 M.Gharbi, A.Koschel, A.Rausch, G.Starke: Basiswissen für Softwarearchitekten, dpunkt, 4. Auflage 2020.
 
@@ -80,7 +80,7 @@ Ansonsten ein eher kosmetisches Update - daher bleibt es (leider) etwas _trocken
 Peter Hruschka und Gernot Starke
 (Leanpub eBook)
 
-![](/images/books/Requirements-Skills-V1.png){: .align-right}
+![Requirements-Skills erfolgreicher Softwareteams Buchcover](/images/books/Requirements-Skills-V1.png){: .align-right}
 
 Fühlen Sie sich als Entwicklungsteam von Requirements-Engineers, Product-Owner oder Produktmanager bezüglich klarer Anforderungen im Stich gelassen? Hier finden Sie methodische und pragmatische Ansätze, mit denen Sie dieser Misere entkommen können.
 
@@ -90,7 +90,7 @@ Dieses (kleine) Buch stellt in kompakter Form alle wesentlichen Methoden vor, di
 
 ## Software Reviews
 
-![](/images/books/software-review-primer-v1.jpg){: .align-left}
+![Software Reviews Buchcover](/images/books/software-review-primer-v1.jpg){: .align-left}
 
 Markus Harrer, Christine Koppelt, Gernot Starke und Ben Wolf. eBook und Druckausgabe. Publiziert von und mit INNOQ bei [Leanpub](https://leanpub.com/software-reviews).
 
@@ -105,7 +105,7 @@ Entstanden aus der Erfahrung vieler Reviews, den wir Autorys (teilweise gemeinsa
 
 ## Zertifizierung für Softwarearchitekten, 3. Auflage
 
-![](/images/books/Zertifizierung-3.png){: .align-right}
+![Zertifizierung für Softwarearchitekten, 3. Auflage Buchcover](/images/books/Zertifizierung-3.png){: .align-right}
 Gernot Starke und Peter Hruschka: 
 
 Das „International Software Architecture Qualification Board“ (iSAQB) hat einen international anerkannten Aus- und Weiterbildungsstandard für Softwarearchitekten etabliert: den Certified Professional for Software Architecture, Foundation Level“ (CPSA-F).
@@ -117,7 +117,7 @@ Aktualisiert für die aktuelle Version des Lehrplans (von September 2019).
 
 ## arc42-by-Example
 
-![](/images/books/arc42-by-example-packt.png){: .align-left}
+![arc42-by-Example Buchcover](/images/books/arc42-by-example-packt.png){: .align-left}
 Gernot Starke, Ralf D. Müller, Michael Simons, Stefan Zörner: veröffentlicht bei [Packt](https://www.packtpub.com/product/arc42-by-example/9781839214356). Verfügbar in verschiedenen Formaten (Papier, eBooks).
 
 Aufgrund des Erfolgs bei Leanpub (siehe unten) hat Packt-Publishing das Buch auch ins Programm aufgenommen. Sie haben exakt die pdf-Version von Leanpub übernommen - und ein (wie wir finden schön farbenfrohes) Cover für uns entworfen. Damit sind wir jetzt auch im O'Reilly Safari online Programm sichtbar.
@@ -126,7 +126,7 @@ Aufgrund des Erfolgs bei Leanpub (siehe unten) hat Packt-Publishing das Buch auc
 
 ## Business Analysis und Requirements Engineering
 
-![](/images/books/Bare2-Titel300.png){: .align-right}
+![Business Analysis und Requirements Engineering Buchcover](/images/books/Bare2-Titel300.png){: .align-right}
 
 Peter Hruschka: Business Analysis und Requirements Engineering - Produkte und Prozesse nachhaltig verbessern. Veröffentlicht bei C. Hanser Verlag, München.
 Verfügbar in verschiedenen Formaten (Papier, eBooks).
@@ -138,7 +138,7 @@ Das Buch sollten Sie als Development-Team, das sich mit schlechten Anforderungen
 
 ## arc42-Primer
 
-![](/images/books/arc42-primer.png){: .align-left}
+![arc42-Primer Buchcover](/images/books/arc42-primer.png){: .align-left}
 Ben Wolf, Gernot Starke: arc42-Primer, eBook, veröffentlicht bei [Leanpub](https://leanpub.com/arc42-primer). Verfügbar in verschiedenen Formaten (pdf, epub, kindle).
 
 Wir haben einen kompakten Einstieg in arc42 geschrieben, der mit einigen Vorurteilen gegen Dokumentation und arc42 aufräumt.
@@ -149,7 +149,7 @@ Der Primer ist so kompakt, dass Sie selbst unter Zeitdruck angemessene (und leic
 
 ## arc42-by-Example, 2. Auflage
 
-![](/images/books/arc42-by-example-2nd.png){: .align-right}
+![arc42-by-Example, 2. Auflage Buchcover](/images/books/arc42-by-example-2nd.png){: .align-right}
 Gernot Starke, Ralf D. Müller, Michael Simons, Stefan Zörner: arc42-by-Example, 2nd Edition, Leanpub 250 Seiten, eBook (auf Englisch), veröffentlicht bei [Leanpub](https://leanpub.com/arc42byexample). Verfügbar in verschiedenen Formaten (pdf, epub, kindle).
 
 Wir konnten Ralf Müller als vierten Autor dazu gewinnen, von ihm stammt die Architekturdokumentation seines "docToolchain" Systems. Die übrigen Beispiele haben wir an die Version 7 von arc42 angepasst, diverse Schönheitsfehler beseitigt und (um es mit den Youtube-Entwickler zu formulieren) _den Müll rausgebracht_.
@@ -161,7 +161,7 @@ Für alle bisherigen Käufer und LeserInnen des Buches übrigens ein kostenfreie
 
 ## Patterns-kompakt, 5. Auflage
 
-![](/images/books/PK5-Cover.png){: .align-left}
+![Patterns-kompakt, 5. Auflage Buchcover](/images/books/PK5-Cover.png){: .align-left}
 
 Karl Eilebrecht, Gernot Starke: Entwurfsmuster für effektive Softwareentwicklung.
 Springer-Vieweg Verlag, 5. überarbeitete und erweiterte Auflage, 2018.
@@ -178,9 +178,9 @@ Mehr Details gibt's auf der [Website zum Buch](https://www.patterns-kompakt.de/)
 
 ## Knigge, 3. Auflage
 
-![](/images/books/Knigge-3.jpg){: .align-right}
+![Knigge für Softwarearchitekten, 3. Auflage Buchcover](/images/books/Knigge-3.jpg){: .align-right}
 
-Schon wieder ist ein Jahr der Knigge-Kolumne vorrüber - und wir haben
+Schon wieder ist ein Jahr der Knigge-Kolumne vorüber - und wir haben
 die besten der neuen Teile in die dritte Auflage des Knigge-Buches übernommen.
 Dazu gehören unsere (sehr kritische) Einordnung von _bimodaler IT_,
 eine Warnung vor oft vergessenen Aspekten der Industrie 4.0 sowie einer deutlichen
@@ -195,7 +195,7 @@ als Farbe an.
 # 2016
 
 ## arc42 in Aktion
-![](/images/books/arc42-in-aktion.jpg){: .align-left}
+![arc42 in Aktion Buchcover](/images/books/arc42-in-aktion.jpg){: .align-left}
 
 Praktische Tipps zur Architekturdokumentation, von Gernot Starke und Peter Hruschka. Carl-Hanser Verlag, 2016. 190 Seiten, flexibler Einband.
 
