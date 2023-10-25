@@ -48,7 +48,7 @@ He is a founding member of the iSAQB (International Software Architecture Qualif
 
 Read more at [systemsguild.eu](https://systemsguild.eu), [b-agile.de](https://b-agile.de) und [req42.de](https://req42.de)
 
-![](/images/about/Ralf-Mueller.jpg)
+![Ralf Müller Portraitfoto](/images/about/Ralf-Mueller.jpg)
 
 **Ralf D. Müller** is a Solutions Architect and an ambitious Grails developer. He is continually trying to simplify his work. Currently, his main concern is improving the holistic documentation of projects. He achieves this especially with the help of the arc42 template and docs-as-code approach. He maintains the arc42-generator which generates various formats of the arc42 template from a single AsciiDoc master. The generator was the basis for the [docToolchain](https://doctoolchain.github.io/docToolchain/) project.
 
