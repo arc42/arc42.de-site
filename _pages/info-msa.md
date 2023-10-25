@@ -45,7 +45,7 @@ In Kürze (ausführliche Inhaltsbeschreibung siehe unten)
 
 Sie erhalten neben ausführlichen Schulungs- und Übungsunterlagen diverse Fachbücher zur Vertiefung und späteren Referenz.
 
-![]()
+![Buchcover von: Effektive Softwarearchitekturen, Knigge für Softwarearchitekten, Patterns-Kompakt und Business Analysis und Requirements Engineering](/images/training/begleitmaterial-buchcover.webp)
 
 ## Zielgruppe
 Dieser Kurs richtet sich primär an Entwickler:innen und Architekt:innen, um die Rolle _Softwarearchitektur_ umfassend zu verstehen

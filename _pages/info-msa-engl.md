@@ -43,7 +43,7 @@ In short (for more info see below)
 
 Besides extensive training materials and exercises you will receive a couple of books to study at your leasure.
 
-![]()
+![Buchcover von: Effektive Softwarearchitekturen, Knigge für Softwarearchitekten, Patterns-Kompakt und Business Analysis und Requirements Engineering](/images/training/begleitmaterial-buchcover.webp)
 
 ## Target Audience
 This course is primarily for developers an architects that want to understand the role "software architect" and learn about their tasks and skills.
