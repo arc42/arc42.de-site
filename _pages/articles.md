@@ -19,6 +19,14 @@ sidebar:
 
 Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-school auf Papier, manchmal auch online.
 
+## Search Engine Optimization (SEO) #1 - Benennung von Bildern & Alternative Texte
+
+Per Starke
+
+In den Posts dieser Reihe möchte ich euch zeigen, was ihr tun könnt, um eure Seite für Suchmaschinen zu optimieren. Im ersten Post geht es um Benennung von Bildern & Alternative Texte
+
+[Zum kompletten Artikel](https://perstarke-webdev.de/posts/seo-one)
+
 ## Behalten Sie den Überblick 
 
 Peter Hruschka und Gernot Starke
