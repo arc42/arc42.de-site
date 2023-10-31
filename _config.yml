@@ -77,6 +77,7 @@ include:
   - .htaccess
   - _pages
   - robots.txt
+  - _redirects # to redirect 301 e.g. from /terms to /agb
 
 exclude:
   - Gemfile
