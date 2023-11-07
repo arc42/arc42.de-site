@@ -38,9 +38,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="timeline">
 
- 
-
-
 
 <!-- MSA ONLINE (Wolfgang) -->
 <div class="container left"> 
@@ -63,6 +60,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       28.-30. Nov. 2023, Hamburg <br>
       <strong class="blue-head">IMPROVE<br> 
       (CPSA-Advanced)</strong><br>
+      <strong class="booked-out"> AUSGEBUCHT, nur noch Warteliste.</strong>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
       <p class="date-small">
         Normalpreis: € 2200 (für unsere CPSA-F-Alumni € 2050)
@@ -145,9 +143,25 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
+<!-- MSA ONLINE (Wolfgang) -->
+<div class="container left"> 
+<div class="content" >
+    14.-16. May 2024 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    <strong class="booked-out">ENGLISH, online.</strong>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+    </div>
+</div> 
+
 
 <!-- MSA Juni 2024 MAN -->
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
      11.-14. Juni 2024, Mannheim<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -169,7 +183,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- IMPROVE Juni 2024, MAN -->
 
-<div class="container right">  
+<div class="container left">  
     <div class="content">
       17.-19. Juni 2024, Mannheim<br>
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
