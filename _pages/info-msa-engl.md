@@ -23,7 +23,7 @@ sidebar:
 
 3 day introductory training developed by Peter Hruschka and Gernot Starke
 
-## You can expect
+## You can expect..
 a solid, practical and pragmatic introduction to architecture with lots of exercises. 
 You will learn and practise the different tasks of software archtects using an extensive case study. 
 The focus is on a methodical and systematic approach to architectural design and evaluation.
@@ -39,11 +39,8 @@ In short (for more info see below)
 * Architecture Patterns
 * Documentation of Architectures
 * Analyzing and evaluating architeftures
-## Supporting Materials
 
-Besides extensive training materials and exercises you will receive a couple of books to study at your leasure.
 
-![Buchcover von: Effektive Softwarearchitekturen, Knigge für Softwarearchitekten, Patterns-Kompakt und Business Analysis und Requirements Engineering](/images/training/begleitmaterial-buchcover.webp)
 
 ## Target Audience
 This course is primarily for developers an architects that want to understand the role "software architect" and learn about their tasks and skills.
