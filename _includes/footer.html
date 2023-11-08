@@ -1,31 +1,33 @@
-<div class="page__footer-follow">
+<div class="page__footer-follow footer-center">
+
   <ul class="social-icons">
+
+    <a href="https://www.innoq.com" target="_blank" rel="noopener noreferrer nofollow"><img class="supported-by-innoq" src="/images/supported-by-innoq--petrol-apricot.svg"></a><br>
    
     <li><a href="https://linkedin.com/in/gernotstarke">
-      <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
 
 
     {% if site.author.github %}
       <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer nofollow">
-        <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a></li>
     {% endif %}
 
     <li><a href="https://www.youtube.com/arc42-video/" target="_blank" rel="noopener noreferrer nofollow">
-      <i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+      <i class="fab fa-fw fa-youtube" aria-hidden="true"></i>YouTube</a></li><br>
 
     <li><a href="https://dev.to/gernotstarke/" target="_blank" rel="noopener noreferrer nofollow">
-      <i class="fab fa-dev" aria-hidden="true"></i> Dev</a></li>
+      <i class="fab fa-dev" aria-hidden="true"></i>Dev</a></li>
 
 
-    <li><a href="{{ '/imprint' | absolute_url }}"><i class="fas fa-fw fa-lock" style="color:Tomato"  aria-hidden="true"></i> Impressum & Privacy</a></li>
-    <li><a href="{{ '/imprint' | absolute_url }}"><i class="fas fa-cookie-bite" style="color:green" aria-hidden="true"></i> No-Cookies</a></li>
+    <li><a href="{{ '/imprint' | absolute_url }}"><i class="fas fa-fw fa-lock" style="color:Tomato"  aria-hidden="true"></i>Impressum & Privacy</a></li>
+    <li><a href="{{ '/imprint' | absolute_url }}"><i class="fas fa-cookie-bite" style="color:green" aria-hidden="true"></i>No-Cookies</a></li>
     <li><a href="https://status.arc42.org">
       <i class="fas fa-chart-bar fa-fw" style="color:#50C878;" ></i>Status</a><i>&nbsp;&nbsp;</i></li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} Dr. Peter Hruschka und Dr. Gernot Starke. Erstellt mit
-  <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; 
-  <a href="https://mmistakes.github.io/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.
-  Unterstützt von <a href="https://www.INNOQ.com"><b>INNOQ</b></a> und <a target="_blank" rel="noopener noreferrer nofollow" href="https://perstarke-webdev.de/"><b>Per Starke Web Development</b></a>.
+<div class="page__footer-copyright footer-center copyright-size">
+  &copy; {{ site.time | date: '%Y' }} Dr. Peter Hruschka und Dr. Gernot Starke. <br class="mobile">
+  Unterstützt von <a target="_blank" rel="noopener noreferrer nofollow" href="https://perstarke-webdev.de/">Per Starke Web Development</a>.
 </div>
