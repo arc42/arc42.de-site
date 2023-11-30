@@ -39,50 +39,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<!-- MSA ONLINE (Wolfgang) -->
-<div class="container left"> 
-<div class="content" >
-    14.-16. November 2023 (online)<br>
-      <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="booked-out">ENGLISH, online.</strong>
-    <p>Trainer: Wolfgang Reimesch.</p>
-    <p class="date-small">
-        Delegate Fee: €2100
-      </p>
-    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
-    </div>
-</div> 
-
-<div class="container right"> <!-- IMPROVE NOV 2023 Hamburg-->
-    <div class="content">
-      28.-30. Nov. 2023, Hamburg <br>
-      <strong class="blue-head">IMPROVE<br> 
-      (CPSA-Advanced)</strong><br>
-      <strong class="booked-out"> AUSGEBUCHT, nur noch Warteliste.</strong>
-    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
-      <p class="date-small">
-        Normalpreis: € 2200 (für unsere CPSA-F-Alumni € 2050)
-      </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
-</div><!-- container-->
-
-<!-- MSA Dezember 2023, MUC -->
-<div class="container left"> 
-  <div class="content" style="color:darkgrey">
-    5.-8. Dezember 2023 (München)<br>
-    <strong >Mastering Software Architectures
-    (iSAQB CPSA-Foundation)<br></strong> 
-    <strong class="booked-out"> AUSGEBUCHT, Warteliste voll.</strong>
-    <p>Mit dem "dynamischen Duo", Dr. Gernot Starke und Dr. Peter Hruschka.</p>
-    
-    <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-  </div>
-</div> 
-
 
 <!-- MSA Januar 2024 MUC -->
 <div class="container right"> 
@@ -97,7 +53,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 23. Oktober 2023: € 2690,
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -109,7 +64,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="container left"> 
     <div class="content" style="color:darkgrey">
      19.-22. März 2024, München<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
+      <strong>Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
 <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
@@ -199,7 +154,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- ADOC Juni 2024, MAN -->
-<div class="container left">  
+<div class="container right">  
     <div class="content">
       20.-21. Juni 2024, Mannheim<br>
       <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
@@ -215,7 +170,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- Req4Arc Sept 2024, MUC -->
-<div class="container right">  
+<div class="container left">  
     <div class="content" >
       17.-19. September 2024, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
@@ -232,7 +187,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- MSA Sept 2024 MUC -->
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
      24.-27. September 2024, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -252,7 +207,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- MSA Dez 2024 MUC -->
-<div class="container right"> 
+<div class="container left"> 
     <div class="content" >
      3.-6. Dezember 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
