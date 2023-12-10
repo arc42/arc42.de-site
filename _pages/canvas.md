@@ -11,7 +11,7 @@ header:
   - label: "&#8594; Zur Canvas-Website"
     url: https://canvas.arc42.org/
 
-excerpt: "kurz, kürzer, canvas..."
+excerpt: "kurz, kürzer, Canvas..."
 
 ---
 
