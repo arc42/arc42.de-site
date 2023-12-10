@@ -38,7 +38,9 @@ template_training_news:
     
     
   - title: "News"
-    excerpt: "![arc42 Logo vor ukrainischer Flagge](/images/home/arc42-ua.webp)<br>
+    excerpt: "![arc42 T-Shirt](/images/home/t-shirt.webp)<br>
+    
+     * Unser [Merchandising Shop](https://arc42.myspreadshop.de) ist online und bietet T-Shirts, Kapuzenpullis und andere Artikel der Marke arc42 an. Hochwertig und umweltfreundlich. Probieren Sie es aus!
 
      * Unser pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org).
   
@@ -49,7 +51,7 @@ template_training_news:
     * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/books#arc42-by-example-vol2).
     "
 
-methode_publications_consulting:
+methode_publications_canvas:
   - title: "Die arc42-Methode"
     excerpt: "![ToDo - Doing - Done Zettel](/images/home/method.webp)<br>
     arc42 ist systematisch aber flexibel. Passend für große und kleine Teams in iterativen 
@@ -67,12 +69,10 @@ methode_publications_consulting:
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"
   
-  - title: "Consulting"
-    excerpt: "![Mehrere Menschen vor einem Laptop, erklärend und zuhörend](/images/home/consulting.webp)<br>
-    Wir helfen in allen Lebenslagen Ihrer IT-Projekte weiter.<br>
-    
-    Lesen Sie mehr über unsere Angebote an Beratung, Reviews oder praktische Unterstützung für Ihre Projekte."
-    url: "/consulting"
+  - title: "Canvas"
+    excerpt: "![arc42 Canvas](/images/home/canvas-overview-850.webp)<br>
+    Die kürzestmögliche Form der technischen Dokumentation, der Elevator-Pitch. Das Wichtigste auf einer einzigen Seite"
+    url: "/canvas"
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"
 ---
@@ -88,7 +88,7 @@ methode_publications_consulting:
 
 {% include feature_row id="template_training_news" %}
 
-{% include feature_row id="methode_publications_consulting"%}
+{% include feature_row id="methode_publications_canvas"%}
 
 arc42 basiert auf der **praktischen Erfahrung** vieler Systeme in verschiedenen Bereichen, von Informations- und Websystemen über Echtzeit- und Embedded-Systeme bis hin zu Business Intelligence und Data Warehouses.
 
