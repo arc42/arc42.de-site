@@ -15,8 +15,35 @@ sidebar:
   nav: "publications"
 ---
 
-Wir haben hier jeweils nur die letzten Auflagen unserer Bücher aufgeführt, um die Liste etwas kleiner zu halten.
+Wir haben hier größtenteils jeweils nur die letzten Auflagen unserer Bücher aufgeführt, um die Liste etwas kleiner zu halten.
 Seit den '90-er Jahren publizieren wir fleissig, und sind an mehr als 40 Büchern/Auflagen direkt beteiligt.
+
+# 2023
+
+## Software Architecture Foundation - 2nd edition
+![Software Architecture Foundation: CPSA-F Exam Preparation 2nd edition Bookcover](/images/books/SWAF-2nd-cover.webp){: .align-left .bookcover}
+
+Gernot Starke und Alexander Lorz, erschienen bei van Haren International Publishing.
+
+Dieses Buch dient als Studienführer für die CPSA-F (Certified Professional for Software Architecture - Foundation Level) Prüfung des iSAQB. Es erklärt jedes einzelne Lernziel des umfassenden CPSA-Foundation Curriculums im Detail, um eine bestmögliche Prüfungsvorbereitung zu ermöglichen.
+
+Darüber hinaus wird der Prüfungsablauf beschrieben, zusammen mit Dutzenden von Beispielprüfungsfragen.
+Sehr empfehlenswert für alle, die sich auf die Zertifizierungsprüfung vorbereiten.
+
+## arc42 by Example - 3rd edition
+![arc42 by Example - 3rd edition Bookcover](/images/books/arc42-by-example-3rd.webp){: .align-right .bookcover}
+
+Gernot Starke, Michael Simons, Stefan Zörner, Ralf D. Müller und Hendrik Lösch, veröffentlicht auf Leanpub.
+
+Dieses Buch enthält mehrere Software-Architekturen aus der Praxis, die mit dem praktischen arc42-Template dokumentiert sind.
+
+Sie werden das Innenleben einer Schach-Engine, eines riesigen CRM-Systems, eines coolen Websystems zur Verfolgung von Fahrradaktivitäten und einer extrem kleinen Menüleistenanwendung kennenlernen.
+
+Jedes der Beispiele beginnt mit einer kurzen Beschreibung der Problemdomäne, einschließlich der Qualitätsanforderungen, bevor wir den Systemkontext mit allen externen Schnittstellen erklären. Anschließend geben wir einen Überblick über die Lösungsstrategie, um Sie auf die Implementierungsbausteine und Laufzeitszenarien (als wesentliche Architektursichten) vorzubereiten.
+
+Später erläutern wir die übergreifenden Konzepte jeder Architektur und deren Umsetzung.
+
+Sie werden lernen, dass Dokumentation kompakt, hilfreich und leicht zu lesen sein kann.
 
 # 2021
 ## Software Architecture Foundation: CPSA-F Exam Preparation
