@@ -40,26 +40,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-<!-- MSA Januar 2024 MUC -->
-<div class="container right"> 
-    <div class="content" style="color:darkgrey">
-     23.-26. Januar 2024, München<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)</strong><br> 
-<strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
-    
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-  <p class="date-small">
-       Normalpreis: € 2890
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
- </div> <!-- container-->
-
 <!-- MSA März 2024 MUC -->
 <div class="container left"> 
     <div class="content" style="color:darkgrey">
@@ -81,11 +61,13 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
-<!-- Req4Arc April 2024, MUC -->
+<!-- Req4Arc April 2024, MUC ausgebucht-->
 <div class="container right">  
-    <div class="content" >
+    <div class="content" style="color:darkgrey">
       16.-18. April 2024, München<br>
-      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong>
+      <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
+
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
