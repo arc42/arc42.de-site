@@ -49,7 +49,7 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="24-06 MSA">Mastering SW Architectures, 11.-14. Juni 2024 Mannheim</option>
   <option value="24-06 IMPROVE">IMPROVE, 17.-19. Juni 2024 Mannheim</option>
   <option value="24-06 ADOC">ADOC, 20.-21. Juni 2024 Mannheim</option>
-  <option value="24-09 Req4Arc">Req4Arc, 17.-19. September 2024 München</option>
+  <option value="24-09 Req4Arc">Req4Arc, 17.-19. September 2024 Frankfurt</option>
   <option value="24-09 MSA">Mastering SW Architectures, 24.-27. September 2024 Frankfurt</option>
   <option value="24-12 MSA">Mastering SW Architectures, 3.-6. Dezember 2024 München</option>
   <option value="sonstige">Sonstige</option>
