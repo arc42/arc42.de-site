@@ -14,6 +14,8 @@ header:
      url: https://faq.arc42.org
    - label: "Bücher"
      url: /books
+   - label: "Empfohlene Lektüre"
+     url: /recommendations
    - label: "Artikel"
      url: "/articles"
    - label: "Videos"
