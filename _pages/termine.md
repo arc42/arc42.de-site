@@ -45,19 +45,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content" style="color:darkgrey">
      19.-22. März 2024, München<br>
       <strong>Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
      </strong> 
-<strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-  <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 19. Dezember 2023: € 2690,
-       Normalpreis: € 2890
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<strong class="booked-out">AUSGEBUCHT.</strong>
+ 
   </div><!-- content -->
  </div> <!-- container-->
 
@@ -104,12 +94,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
+     <strong class="booked-out">AUSGEBUCHT, Warteliste verfügbar.</strong>
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 11. Februar 2024: € 2690,
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
