@@ -43,9 +43,9 @@ excerpt: "Wir freuen uns auf Sie!"
 
 <label for="kurs">Für welchen Kurs melden Sie an?</label>
 <select id="kurs" name="Kurs" required>
-  <option value="24-04 Req4Arc">Req4Arc, 16.-18. April 2024 München</option>
+  
   <option value="24-05 MSA online">Mastering SW Architectures, 14.-16. May 2024 (ONLINE, ENGLISH)</option>
-  <option value="24-06 MSA">Mastering SW Architectures, 11.-14. Juni 2024 Mannheim</option>
+  <option value="24-06 MSA">Mastering SW Architectures, 11.-14. Juni 2024 Mannheim AUSGEBUCHT</option>
   <option value="24-06 IMPROVE">IMPROVE, 17.-19. Juni 2024 Mannheim</option>
   <option value="24-06 ADOC">ADOC, 20.-21. Juni 2024 Mannheim</option>
   <option value="24-09 Req4Arc">Req4Arc, 17.-19. September 2024 Frankfurt</option>
