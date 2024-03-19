@@ -26,7 +26,7 @@ Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter H
 ![ISAQB licensed training logo](/images/training/LICENSED_TRAINING_logo.webp){: .align-right}
 Alle Kurs inklusive thematisch passender Bücher als Hintergrundliteratur sowie ausführlichen Seminar- und Übungsunterlagen.
 
-Wir sind Gründungsmitglieder des iSAQB und haben viele Lehrpläne aktiv mit gestaltet.
+Wir sind Gründungsmitglieder des iSAQB und haben viele Lehrpläne aktiv mitgestaltet.
 Unsere Schulungen sind iSAQB akkreditiert.
 
 
@@ -39,18 +39,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-
-<!-- MSA März 2024 MUC -->
-<div class="container left"> 
-    <div class="content" style="color:darkgrey">
-     19.-22. März 2024, München<br>
-      <strong>Mastering Software Architectures<br> 
-     </strong> 
-<strong class="booked-out">AUSGEBUCHT.</strong>
- 
-  </div><!-- content -->
- </div> <!-- container-->
-
 <!-- Req4Arc April 2024, MUC ausgebucht-->
 <div class="container right">  
     <div class="content" style="color:darkgrey">
@@ -62,7 +50,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
-        Frühbucherpreis bei Anmeldung bis 16. Januar 2024: € 2050,-
         Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
