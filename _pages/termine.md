@@ -101,9 +101,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <div class="content">
       17.-19. Juni 2024, Mannheim<br>
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
-      <p>Systematisch verbessern!
-      </p>
+      <p>Systematisch verbessern!</p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <strong class="booked-out">nur noch wenige Plätze verfügbar.</strong>
       <p class="date-small">
         Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050)
       </p>
