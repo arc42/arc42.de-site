@@ -39,23 +39,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<!-- Req4Arc April 2024, MUC ausgebucht-->
-<div class="container right">  
-    <div class="content" style="color:darkgrey">
-      16.-18. April 2024, München<br>
-      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong>
-      <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
 
-      <p>Ihr systematischer Weg zu besseren Anforderungen!
-      </p>
-    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <p class="date-small">
-        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
-      </p>
-      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
-</div>
 
 <!-- MSA ONLINE (Wolfgang) -->
 <div class="container left"> 
@@ -165,8 +149,23 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
+<div class="container left"> <!-- IMPROVE NOV 2024 Hamburg-->
+    <div class="content">
+      26.-29. Nov. 2024, Hamburg <br>
+      <strong class="blue-head">IMPROVE<br> 
+      (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p class="date-small">
+        Normalpreis: € 2200 (für unsere CPSA-F-Alumni € 2050)
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+</div><!-- container-->
+
+
 <!-- MSA Dez 2024 MUC -->
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
      3.-6. Dezember 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -186,7 +185,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- MSA Jan 2025 MUC -->
-<div class="container right"> 
+<div class="container left"> 
     <div class="content" >
      21.-24. Januar 2025, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -225,6 +224,22 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
+<!-- Req4Arc April 2025, MUC -->
+<div class="container right">  
+    <div class="content" >
+      1.-3. April 2025, München<br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <p>Ihr systematischer Weg zu besseren Anforderungen!
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Frühbucherpreis bei Anmeldung bis 10. Januar 2025: € 2050,-
+        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
 
 
 <!-- example "ausgebucht":
