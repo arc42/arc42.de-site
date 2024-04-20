@@ -82,14 +82,14 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- IMPROVE Juni 2024, MAN -->
 
 <div class="container left">  
-    <div class="content">
+    <div class="content" style="color:darkgrey">
       17.-19. Juni 2024, Mannheim<br>
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
       <p>Systematisch verbessern!</p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <strong class="booked-out">nur noch wenige Plätze verfügbar.</strong>
+      <strong class="booked-out">AUSGEBUCHT, Warteliste verfügbar.</strong>
       <p class="date-small">
-        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050)
+        Normalpreis: € 2200,- (für unsere Alumni € 2050)
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -105,7 +105,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
-        Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1350)
+        Normalpreis: € 1500,- (für unsere Alumni €1350)
       </p>
       <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -122,7 +122,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
         Frühbucherpreis bei Anmeldung bis 16. April 2024: € 2050,-
-        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
+        Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -141,8 +141,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 20. April 2024: € 2690,
-       Normalpreis: € 2890
+       Normalpreis: € 2890, für unsere Alumni 2690)
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -156,7 +155,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
       <p class="date-small">
-        Normalpreis: € 2200 (für unsere CPSA-F-Alumni € 2050)
+        Normalpreis: € 2200 (für unsere Alumni € 2050)
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
