@@ -21,7 +21,7 @@ excerpt: "Unsere nächsten Schulungen."
 
 
 
-Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht andersweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.
+Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht anderweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.
 
 ![ISAQB licensed training logo](/images/training/LICENSED_TRAINING_logo.webp){: .align-right}
 Alle Kurs inklusive thematisch passender Bücher als Hintergrundliteratur sowie ausführlichen Seminar- und Übungsunterlagen.
