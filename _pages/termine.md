@@ -148,7 +148,23 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
-<div class="container left"> <!-- IMPROVE NOV 2024 Hamburg-->
+<!-- MSA ONLINE (Wolfgang) -->
+<div class="container left"> 
+<div class="content" >
+    12.-14. November 2024 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    <strong class="booked-out">ENGLISH, online.</strong>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+    </div>
+</div> 
+
+<div class="container right"> <!-- IMPROVE NOV 2024 Hamburg-->
     <div class="content">
       26.-29. Nov. 2024, Hamburg <br>
       <strong class="blue-head">IMPROVE<br> 
@@ -164,7 +180,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 <!-- MSA Dez 2024 MUC -->
-<div class="container right"> 
+<div class="container left"> 
     <div class="content" >
      3.-6. Dezember 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -184,7 +200,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- MSA Jan 2025 MUC -->
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
      21.-24. Januar 2025, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -204,7 +220,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- MSA March 2025 MUC -->
-<div class="container right"> 
+<div class="container left"> 
     <div class="content" >
      18.-21. März 2025, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
