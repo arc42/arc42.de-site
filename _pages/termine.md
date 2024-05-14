@@ -41,23 +41,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-<!-- MSA ONLINE (Wolfgang) -->
-<div class="container left"> 
-<div class="content" >
-    14.-16. May 2024 (online)<br>
-      <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="booked-out">ENGLISH, online.</strong>
-    <p>Trainer: Wolfgang Reimesch.</p>
-    <p class="date-small">
-        Delegate Fee: €2100
-      </p>
-    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
-    </div>
-</div> 
-
-
 <!-- MSA Juni 2024 MAN -->
 <div class="container right"> 
     <div class="content" >
@@ -65,16 +48,11 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
-     <strong class="booked-out">AUSGEBUCHT, Warteliste verfügbar.</strong>
+     <strong class="booked-out">AUSGEBUCHT</strong>
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
-  <p class="date-small">
-       Normalpreis: € 2890
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div><!-- content -->
  </div> <!-- container-->
 
@@ -87,12 +65,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
       <p>Systematisch verbessern!</p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <strong class="booked-out">AUSGEBUCHT, Warteliste verfügbar.</strong>
-      <p class="date-small">
-        Normalpreis: € 2200,- (für unsere Alumni € 2050)
-      </p>
+      <strong class="booked-out">AUSGEBUCHT.</strong>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
 </div>
 
