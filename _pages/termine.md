@@ -114,8 +114,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
+     <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
   <p class="date-small">
-       Normalpreis: € 2890, für unsere Alumni 2690)
+       Normalpreis: € 2890)
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>

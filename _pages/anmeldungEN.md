@@ -43,7 +43,7 @@ activate JavaScript and reload this page.
 <label for="kurs">Which training?</label>
 <select id="kurs" name="Kurs" required>
   <option value="*"></option>
-  <option value="24-05 MSA online">Mastering SW Architectures, May 14.-16.th 2024<strong>ONLINE</strong> (Trainer Wolfgang Reimesch)</option>
+  <option value="24-11 MSA online">Mastering SW Architectures, November 12.-14.th 2024<strong>ONLINE</strong> (Trainer Wolfgang Reimesch)</option>
 
   <option value="other">other</option>
 </select>
