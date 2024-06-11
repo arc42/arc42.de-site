@@ -1,8 +1,8 @@
 ---
-title: "Allgemeine Geschäftsbedingungen"
+title: "Terms and Conditions"
 layout: single
 classes: wide
-permalink: /terms
+permalink: /terms_en
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/markus-winkler-TtJ0CLjLi6w-unsplash.jpg
@@ -11,155 +11,154 @@ sidebar:
   nav: "about"
 ---
 
-
-
-# Allgemeine Geschäftsbedingungen für Schulungen (AGB)
+# General Terms and Conditions for Training (GTC)
  
-Download als [PDF](terms.pdf)
+Download as [PDF](terms_en.pdf)
 
 
-Stand: 12. September 2023.
+Status: June 11, 2024.
 
 
-### Begriffe
+### Terms
 
-* arc42 im Sinne dieser AGB ist eine Gesellschaft bürgerlichen Rechts von Dr. Peter Hruschka und Dr. Gernot Starke. Nachfolgend genannt arc42 oder "Wir".
-* "Schulungen" im Sinne dieser AGB sind die auf dieser Website angebotenen Veranstaltungen (Synonyme sind Trainings, Seminare, Kurse), unabhängig davon, ob diese vor-Ort oder online abgehalten werden.
+* arc42 within the meaning of these GTC is a civil law partnership of Dr. Peter Hruschka and Dr. Gernot Starke. Hereinafter referred to as arc42 or “We”.
+* “Trainings” within the meaning of these GTC are the events offered on this website (synonyms are trainings, seminars, courses), regardless of whether they are held on-site or online.
 
-* "Kund:innen" im Sinne dieser AGB sind:
-  *  Personen, die an unseren Schulungen teilnehmen (Teilnehmende)
-  *  Organisationen, die Personen für unsere Schulungen anmelden (Anmeldende)
-
-
-
-### Geltung
-
-* Unsere Geschäftsbedingungen gelten ausschließlich; 
-* Entgegenstehende oder von unseren Geschäftsbedingungen abweichende Bedingungen von Kund:innen erkennen wir nicht an, es sei denn, wir hätten ausdrücklich schriftlich ihrer Geltung zugestimmt.
-* Diese Geschäftsbedingungen gelten auch dann, wenn wir Kenntnis entgegenstehender oder von unseren Geschäftsbedingungen abweichender Bedingungen von Kund:innen haben.
+* “Customers” within the meaning of these GTC are
+  * persons who take part in our training courses (participants)
+  * Organizations that register persons for our training courses (registrants)
 
 
-### Identität und Adressen der Dienstleister
 
-Dr. Peter Hruschka und Dr. Gernot Starke sind einzeln voll vertretungs- und verfügungsberechtigt für arc42.  Insbesondere dürfen beide einzeln Anmeldungen bestätigen sowie Rechnungen für Schulungen stellen.
+### Validity
+
+* Our terms and conditions apply exclusively; 
+* We do not recognize any terms and conditions of customers that contradict or deviate from our terms and conditions unless we have expressly agreed to their validity in writing.
+* These terms and conditions shall apply even if we are aware of terms and conditions of the customer that conflict with or deviate from our terms and conditions.
+
+
+### Identity and addresses of the service providers
+
+Dr. Peter Hruschka and Dr. Gernot Starke are individually fully authorized to represent and dispose of arc42.  In particular, both may individually confirm registrations and issue invoices for training courses.
 
 | Dr. Peter Hruschka | Dr. Gernot Starke |
 | ---- | ---- |
 | Langenbruchweg 71 | Willi-Lauf Allee 43 |
-| D-52080 Aachen | D-50858 Köln | 
-| Tel. +49 172 241 1656| Tel. +49 177 728 2570 |
+| D-52080 Aachen | D-50858 Cologne | 
+| Phone +49 172 241 1656 | Phone +49 177 728 2570 |
 
-E-Mail: info_at_arc42_dot_de
+E-Mail: info_at_arc42_dot_en
 
 
 
-### Anmeldungen
+### Registrations
 
-* Anmeldungen zu unseren Schulungen haben über unser Online-Formular oder in schriftlicher Form (E-Mail, Brief mit sämtlichen im Online-Formular erforderlichen Angaben)  zu erfolgen.
+* Registrations for our training courses must be made via our online form or in writing (e-mail, letter with all the information required in the online form).
 
-* Sie erhalten von uns kurzfristig eine Anmeldebestätigung.
+* You will receive a confirmation of registration from us shortly.
 
-* Anmeldungen sind verbindlich. 
-* Ein Vertrag kommt zustande, sobald arc42 die Anmeldung per E-Mail oder schriftlich bestätigt.
+* Registrations are binding. 
+* A contract is concluded as soon as arc42 confirms the registration by e-mail or in writing.
 
-* Wir behalten uns vor, einzelne Anmeldungen einzelner oder mehrerer Personen ohne Angabe von Gründen abzulehnen.
+* We reserve the right to reject individual registrations of one or more persons without giving reasons.
 
   
 
->#### Erläuterung zur Ablehnung von Anmeldungen
+>#### Explanation of the rejection of registrations
 >
->Keine Sorge, wir lehnen Sie nur dann ab, wenn unsere Termine bereits ausgebucht sind.
->In diesem Fall bieten wir Ihnen im Normalfall einen Ersatztermin UND einen Platz auf der Warteliste an.
+>Don't worry, we will only turn you down if our dates are already fully booked.
+>In this case, we will normally offer you an alternative date AND a place on the waiting list.
 
   
 
-### Preise
+### Prices
 
   
-* Alle Preise verstehen sich zuzüglich der jeweils gesetzlichen Mehrwertsteuer.
-* Preise gelten für jeweils eine Person.
-* Frühbucher- oder Early-Bird Preise gelten exklusiv für 
-  * Anmeldungen über unser online Anmeldeformular oder per E-Mail oder Brief UND
-  * Rechnungsstellung per E-Mail und Rechnung in PDF-Form.
+* All prices are subject to VAT at the statutory rate.
+* Prices are valid for one person.
+* Early bird prices apply exclusively to 
+  * Registration via our online registration form or by e-mail or letter AND
+  * Invoicing by e-mail and invoice in PDF form.
 
-* Unsere Preise beinhalten die Seminardurchführung sowie ausführliche Schulungsunterlagen.
+* Our prices include the seminar and detailed training documentation.
 
-* Sofern wir eine Schulung vor Ort durchführen, sind Mittagessen und Pausenverpflegung sowie Tagungsgetränke inkludiert.
-* Bei online-Durchführungen ist keine Verpflegung im Preis enthalten.
+* If we conduct a training course on site, lunch and refreshments during breaks as well as conference drinks are included.
+* Catering is not included in the price for online courses.
 
-* Rechnungsbeträge sind zahlbar rein netto innerhalb von 14 Tagen nach Rechnungserhalt. Skonti werden nicht gewährt.
-* Nur ein rechtzeitiger Zahlungseingang (gemäß Rechnung) berechtigt zur Teilnahme.
+* Invoice amounts are payable strictly net within 14 days of receipt of invoice. Discounts are not granted.
+* Only timely receipt of payment (as per invoice) entitles the participant to participate.
 
-> Erläuterung zur Rechnungsstellung per E-Mail und PDF
+> Explanation of invoicing by e-mail and PDF
 >
-> Manche Organisationen zwingen uns, Rechnungen über Portale einzureichen.
-> In solchen Fällen bieten wir Schulungen grundsätzlich zum Normalpreis ohne Rabatte oder Frühbucherpreise oä an.
+> Some organizations force us to submit invoices via portals.
+> In such cases, we always offer training courses at the normal price without discounts or early bird prices or similar.
 
-### Datenerfassung und -nutzung
+### Data collection and use
 
-Mit der Anmeldung erklären Kund:innen ausdrücklich das Einverständnis, dass wir die Daten (Namen, Adresse, E-Mail) der teilnehmenden und anmeldenden Personen elektronisch erfassen und für die Vorbereitung, Organisation, Durchführung und Nachbereitung der Schulungen verwenden.
-
-
-### Abmeldung
+By registering, customers expressly agree that we may electronically record the data (name, address, e-mail) of the participating and registering persons and use it for the preparation, organization, implementation and follow-up of the training courses.
 
 
-* Abmeldungen müssen schriftlich (gerne per E-Mail) erfolgen.
-
-* Für Abmeldungen oder Rücktritte gelten folgende Regelungen:
-
-	* Abmeldung ist bis 21 Tage vor Veranstaltungsbeginn kostenfrei möglich.
-	* Abmeldung bis 14 Tage vor Kursbeginn 50% der Teilnahmegebühr.
-	* Bei Abmeldungen nach diesem Zeitpunkt wird die Teilnahmegebühr in voller Höhe fällig.
-
-* Falls angemeldete Personen nicht zum Training erscheinen, wird die Teilnahmegebühr in voller Höhe fällig.
+### Deregistration
 
 
-* Bei Abmeldungen können Sie selbstverständlich (auch kurzfristig) ohne Mehrkosten eine andere Person als Ersatz benennen. 
+* Cancellations must be made in writing (preferably by e-mail).
+
+* The following rules apply to cancelations or withdrawals:
+
+	* Cancellation is possible free of charge up to 21 days before the start of the event.
+	* Cancellation up to 14 days before the start of the course 50% of the participation fee.
+	* Cancellations after this time will be charged in full.
+
+* If registered persons do not show up for training, the participation fee is due in full.
+
+
+* If you cancel, you can of course nominate another person to replace you (even at short notice) at no extra cost. 
 
   
 
->#### Absagen im Krankheitsfall
+>#### Cancellations in case of illness
 >
-> Die Teilnahmegebühr wird gemäß Abschnitt [Abmeldung](#abmeldung) auch im Krankheitsfall fällig.
->Wir versuchen grundsätzlich, eine gute Regelung für beide Seiten zu finden. 
->Soweit möglich versuchen wir einen möglichst kurzfristigen Ersatztermin für die erkrankte Person zu finden.
+> The participation fee is also due in the event of illness in accordance with section [Cancellation](#cancellation).
+>We always try to find a good arrangement for both sides. 
+>If possible, we will try to find a replacement date for the sick person as soon as possible.
 >
->Für diese Ersatztermine bieten wir einen Nachlass von 50% auf die dann geltende Teilnahmegebühr an.
+>For these alternative dates we offer a 50% discount on the then applicable participation fee.
 
   
   
 
-### Absagen unsererseits
+### Cancellations on our part
 
-Bei zu geringer Nachfrage oder anderen Gründen, die wir als Veranstalter nicht zu vertreten haben, kann ein Schulungstermin auch nach erfolgter Teilnahme- oder Anmeldebestätigung abgesagt werden.
-
-  
-* Sie erhalten in diesem Fall alle bereits bezahlten Gebühren erstattet.
-* Weitere Ansprüche gegen die Veranstalter oder die Dozenten bestehen nicht.
+In the event of insufficient demand or other reasons for which we as the organizer are not responsible, a training date may be cancelled even after confirmation of participation or registration.
 
   
-
-### Widerrufsrecht
-
-Sie haben das Recht, binnen 14 Tagen nach Anmeldungen ohne Angabe von Gründen von Ihrer Anmeldung zurückzutreten.
-
-
-Dieser Widerruf muss in Schriftform (analog zur Anmeldung) erfolgen, gerne per E-Mail.
-
+* In this case, you will receive a refund of all fees already paid.
+* There are no further claims against the organizers or the instructors.
 
   
 
-### Urheber- und Nutzungsrechte von Unterlagen
+### Right of withdrawal
+
+You have the right to withdraw from your registration within 14 days of registration without giving reasons.
+
+
+This withdrawal must be made in writing (analogous to the registration), preferably by e-mail.
+
 
   
-Die von arc42 ausgegebenen Schulungs- oder Übungsunterlagen dürfen **keinesfalls ohne unsere schriftliche Genehmigung** in irgendeiner Form vervielfältigt, verändert oder weitergegeben werden.
 
-Dies gilt sowohl für die öffentliche Nutzung als auch für etwaige Anpassungen zur Gestaltung oder Durchführung eigener Veranstaltungen.
+### Copyright and rights of use of documents
 
   
-Alle von uns aufgeführten Waren- oder Dienstleistungsmarken sind Eigentum der jeweiligen Inhaber.
+The training or exercise documents issued by arc42 may **under no circumstances be reproduced, modified or passed on in any form without our written permission**.
 
-### Salvatorische Klausel
+This applies both to public use and to any adaptations for the organization or implementation of your own events.
 
-Sollten einzelne Bestimmungen dieser AGB unwirksam oder undurchführbar sein oder nach Vertragsschluss unwirksam oder undurchführbar werden, bleibt davon die Wirksamkeit der AGB im Übrigen unberührt. 
-An die Stelle der unwirksamen oder undurchführbaren Bestimmung soll diejenige wirksame und durchführbare Regelung treten, deren Wirkungen der wirtschaftlichen Zielsetzung am nächsten kommen, die die Vertragsparteien mit der unwirksamen oder undurchführbaren Bestimmung verfolgt haben.
+  
+All trademarks or service marks listed by us are the property of their respective owners.
+
+### Severability clause
+
+Should individual provisions of these GTC be invalid or unenforceable or become invalid or unenforceable after conclusion of the contract, this shall not affect the validity of the remaining provisions of the GTC. 
+The invalid or unenforceable provision shall be replaced by a valid and enforceable provision whose effects come closest to the economic objective pursued by the contracting parties with the invalid or unenforceable provision.
+
