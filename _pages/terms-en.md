@@ -2,7 +2,7 @@
 title: "Terms and Conditions"
 layout: single
 classes: wide
-permalink: /terms_en
+permalink: /terms-en
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/markus-winkler-TtJ0CLjLi6w-unsplash.jpg
@@ -13,7 +13,7 @@ sidebar:
 
 # General Terms and Conditions for Training (GTC)
  
-Download as [PDF](terms_en.pdf)
+Download as [PDF](terms-en.pdf)
 
 
 Status: June 11, 2024.
@@ -21,12 +21,13 @@ Status: June 11, 2024.
 
 ### Terms
 
-* arc42 within the meaning of these GTC is a civil law partnership of Dr. Peter Hruschka and Dr. Gernot Starke. Hereinafter referred to as arc42 or “We”.
-* “Trainings” within the meaning of these GTC are the events offered on this website (synonyms are trainings, seminars, courses), regardless of whether they are held on-site or online.
+arc42 within the meaning of these GTC is a civil law partnership of Dr. Peter Hruschka and Dr. Gernot Starke. Hereinafter referred to as arc42 or “We”.
 
-* “Customers” within the meaning of these GTC are
-  * persons who take part in our training courses (participants)
-  * Organizations that register persons for our training courses (registrants)
+“Trainings” within the meaning of these GTC are the events offered on this website (synonyms are trainings, seminars, courses), regardless of whether they are held on-site or online.
+
+“Customers” within the meaning of these GTC are
+* persons who take part in our training courses (participants)
+* Organizations that register persons for our training courses (registrants)
 
 
 
@@ -64,7 +65,7 @@ E-Mail: info_at_arc42_dot_en
 
   
 
->#### Explanation of the rejection of registrations
+> #### Explanation of the rejection of registrations
 >
 >Don't worry, we will only turn you down if our dates are already fully booked.
 >In this case, we will normally offer you an alternative date AND a place on the waiting list.
@@ -88,7 +89,7 @@ E-Mail: info_at_arc42_dot_en
 * Invoice amounts are payable strictly net within 14 days of receipt of invoice. Discounts are not granted.
 * Only timely receipt of payment (as per invoice) entitles the participant to participate.
 
-> Explanation of invoicing by e-mail and PDF
+> #### Explanation of invoicing by e-mail and PDF
 >
 > Some organizations force us to submit invoices via portals.
 > In such cases, we always offer training courses at the normal price without discounts or early bird prices or similar.
@@ -116,7 +117,7 @@ By registering, customers expressly agree that we may electronically record the 
 
   
 
->#### Cancellations in case of illness
+> #### Cancellations in case of illness
 >
 > The participation fee is also due in the event of illness in accordance with section [Cancellation](#cancellation).
 >We always try to find a good arrangement for both sides. 

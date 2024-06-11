@@ -113,7 +113,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">Mastering Software Architectures<br>
     (iSAQB CPSA-Foundation)<br></strong>
     <strong class="booked-out">ENGLISH, online.</strong>
-    Please see our <a href="terms_en">terms and conditions.</a>
+    Please see our <a href="terms-en">terms and conditions.</a>
     <p>Trainer: Wolfgang Reimesch.</p>
     <p class="date-small">
         Delegate Fee: €2100
