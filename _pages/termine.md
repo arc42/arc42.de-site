@@ -40,23 +40,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-
-<!-- MSA Juni 2024 MAN -->
-<div class="container right"> 
-    <div class="content" >
-     11.-14. Juni 2024, Mannheim<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
-     <strong class="booked-out">AUSGEBUCHT</strong>
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-  </div><!-- content -->
- </div> <!-- container-->
-
-
 <!-- IMPROVE Juni 2024, MAN -->
 
 <div class="container left">  
@@ -130,12 +113,14 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">Mastering Software Architectures<br>
     (iSAQB CPSA-Foundation)<br></strong>
     <strong class="booked-out">ENGLISH, online.</strong>
+    Please see our <a href="terms_en">terms and conditions.</a>
     <p>Trainer: Wolfgang Reimesch.</p>
     <p class="date-small">
         Delegate Fee: €2100
       </p>
     <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
     <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+  
     </div>
 </div> 
 
@@ -206,7 +191,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 18. Dezember 2024: € 2690,
+       Frühbucherpreis bei Anmeldung bis 18. Oktober 2024: € 2690,
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -223,13 +208,33 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
-        Frühbucherpreis bei Anmeldung bis 10. Januar 2025: € 2050,-
+        Frühbucherpreis bei Anmeldung bis 10. Dezember 2024: € 2050,-
         Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
 </div>
+
+<!-- MSA May 2025 MUC -->
+<div class="container left"> 
+    <div class="content" >
+     20.-23. Mai 2025, Mannheim (to be confirmed)<br>
+      <strong class="blue-head">Mastering Software Architectures<br> 
+     (iSAQB CPSA-Foundation)
+     </strong> 
+     <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     </p>
+  <p class="date-small">
+       Frühbucherpreis bei Anmeldung bis 18. Dezember 2024: € 2690,
+       Normalpreis: € 2890
+     </p>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+ </div> <!-- container-->
 
 
 <!-- example "ausgebucht":
