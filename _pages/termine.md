@@ -21,7 +21,7 @@ excerpt: "Unsere nächsten Schulungen."
 
 
 
-Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht andersweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.
+Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht anderweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.
 
 ![ISAQB licensed training logo](/images/training/LICENSED_TRAINING_logo.webp){: .align-right}
 Alle Kurs inklusive thematisch passender Bücher als Hintergrundliteratur sowie ausführlichen Seminar- und Übungsunterlagen.
@@ -40,18 +40,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-<!-- IMPROVE Juni 2024, MAN -->
-
-<div class="container left">  
-    <div class="content" style="color:darkgrey">
-      17.-19. Juni 2024, Mannheim<br>
-      <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
-      <p>Systematisch verbessern!</p>
-    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <strong class="booked-out">AUSGEBUCHT.</strong>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-  </div>
-</div>
 
 <!-- ADOC Juni 2024, MAN -->
 <div class="container right">  
@@ -99,7 +87,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
      </p>
      <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
   <p class="date-small">
-       Normalpreis: € 2890)
+       Normalpreis: € 2890.
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -216,8 +204,21 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
+<!-- IMPROVE May 2025, MAN -->
+
+<div class="container left">  
+    <div class="content" style="color:darkgrey">
+      14.-16. Mai 2025, Mannheim<br>
+      <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
+      <p>Systematisch verbessern!</p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
 <!-- MSA May 2025 MUC -->
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
      20.-23. Mai 2025, Mannheim (to be confirmed)<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
