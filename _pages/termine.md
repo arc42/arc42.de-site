@@ -58,7 +58,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA Sept 2024 MUC -->
 <div class="container right"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey">
      24.-27. September 2024, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -72,7 +72,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
        Normalpreis: € 2890.
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+     
   </div><!-- content -->
  </div> <!-- container-->
 
@@ -111,7 +111,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA Dez 2024 MUC -->
 <div class="container left"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey">
      3.-6. Dezember 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -120,8 +120,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
+     <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 3. September 2024: € 2690,
+      
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -204,7 +205,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- IMPROVE May 2025, MAN -->
 <div class="container right">  
-    <div class="content" style="color:darkgrey">
+    <div class="content" >
       7.-9. Mai 2025, Mannheim<br>
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
       <p>Systematisch verbessern!</p>
