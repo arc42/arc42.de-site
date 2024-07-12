@@ -22,7 +22,7 @@ Der Inhalt dieser Seite wird auf Github gepflegt, hauptsächlich in Markdown:
 
 Wir verwenden Jekyll als Site-Generator (ähnlich den bekannten github-pages).
 Als Build-Werkzeug und zum Deployment der Site verwenden wir [Netlify](https://netlify.com), weil wir dabei
-spezifische Informationen über einzelne builds bzw die dabei aufgetretenen Probleme erhalten.
+spezifische Informationen über einzelne Builds bzw. die dabei aufgetretenen Probleme erhalten.
 
 ## Monitoring
 
