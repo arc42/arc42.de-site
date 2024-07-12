@@ -21,7 +21,7 @@ excerpt: "Unsere nächsten Schulungen."
 
 
 
-Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht andersweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.
+Unsere öffentlichen Seminare, jeweils mit dem dynamischen Referentenduo Peter Hruschka und Gernot Starke (soweit nicht anderweitig gekennzeichnet), spannenden Sessions und praxisnahen Beispielen.
 
 ![ISAQB licensed training logo](/images/training/LICENSED_TRAINING_logo.webp){: .align-right}
 Alle Kurs inklusive thematisch passender Bücher als Hintergrundliteratur sowie ausführlichen Seminar- und Übungsunterlagen.
@@ -39,95 +39,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<!-- Req4Arc April 2024, MUC ausgebucht-->
-<div class="container right">  
-    <div class="content" style="color:darkgrey">
-      16.-18. April 2024, München<br>
-      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong>
-      <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
-
-      <p>Ihr systematischer Weg zu besseren Anforderungen!
-      </p>
-    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <p class="date-small">
-        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
-      </p>
-      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
-</div>
-
-<!-- MSA ONLINE (Wolfgang) -->
-<div class="container left"> 
-<div class="content" >
-    14.-16. May 2024 (online)<br>
-      <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="booked-out">ENGLISH, online.</strong>
-    <p>Trainer: Wolfgang Reimesch.</p>
-    <p class="date-small">
-        Delegate Fee: €2100
-      </p>
-    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
-    </div>
-</div> 
-
-
-<!-- MSA Juni 2024 MAN -->
-<div class="container right"> 
-    <div class="content" >
-     11.-14. Juni 2024, Mannheim<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
-     <strong class="booked-out">AUSGEBUCHT, Warteliste verfügbar.</strong>
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-  <p class="date-small">
-       Normalpreis: € 2890
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
- </div> <!-- container-->
-
-
-<!-- IMPROVE Juni 2024, MAN -->
-
-<div class="container left">  
-    <div class="content">
-      17.-19. Juni 2024, Mannheim<br>
-      <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
-      <p>Systematisch verbessern!</p>
-    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <strong class="booked-out">nur noch wenige Plätze verfügbar.</strong>
-      <p class="date-small">
-        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050)
-      </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
-</div>
-
-<!-- ADOC Juni 2024, MAN -->
-<div class="container right">  
-    <div class="content">
-      20.-21. Juni 2024, Mannheim<br>
-      <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
-      <p>Systematische Architekturdokumentation, pragmatisch und praxisnah
-      </p>
-    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <p class="date-small">
-        Normalpreis: € 1500,- (für unsere CPSA-F-Alumni €1350)
-      </p>
-      <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
-</div>
-
 <!-- Req4Arc Sept 2024, MUC -->
 <div class="container left">  
     <div class="content" >
@@ -138,7 +49,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
         Frühbucherpreis bei Anmeldung bis 16. April 2024: € 2050,-
-        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
+        Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -147,7 +58,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA Sept 2024 MUC -->
 <div class="container right"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey">
      24.-27. September 2024, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -156,18 +67,51 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
+     <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 20. April 2024: € 2690,
-       Normalpreis: € 2890
+       Normalpreis: € 2890.
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+     
   </div><!-- content -->
  </div> <!-- container-->
 
+<!-- MSA ONLINE (Wolfgang) -->
+<div class="container left"> 
+<div class="content" >
+    12.-14. November 2024 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    <strong class="booked-out">ENGLISH, online.</strong>
+    Please see our <a href="terms-en">terms and conditions.</a>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+  
+    </div>
+</div> 
+
+<div class="container right"> <!-- IMPROVE NOV 2024 Hamburg-->
+    <div class="content">
+      26.-29. Nov. 2024, Hamburg <br>
+      <strong class="blue-head">IMPROVE<br> 
+      (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p class="date-small">
+        Normalpreis: € 2200 (für unsere Alumni € 2050)
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+</div><!-- container-->
+
+
 <!-- MSA Dez 2024 MUC -->
 <div class="container left"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey">
      3.-6. Dezember 2024, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -176,8 +120,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
+     <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 3. September 2024: € 2690,
+      
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -206,9 +151,74 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- MSA March 2025 MUC -->
-<div class="container right"> 
+<div class="container left"> 
     <div class="content" >
      18.-21. März 2025, München<br>
+      <strong class="blue-head">Mastering Software Architectures<br> 
+     (iSAQB CPSA-Foundation)
+     </strong> 
+     <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     </p>
+  <p class="date-small">
+       Frühbucherpreis bei Anmeldung bis 18. Oktober 2024: € 2690,
+       Normalpreis: € 2890
+     </p>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+ </div> <!-- container-->
+
+<!-- Req4Arc April 2025, MUC -->
+<div class="container right">  
+    <div class="content" >
+      1.-3. April 2025, München<br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <p>Ihr systematischer Weg zu besseren Anforderungen!
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Frühbucherpreis bei Anmeldung bis 10. Dezember 2024: € 2050,-
+        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+<!-- ADOC Juni 2025, MAN -->
+<div class="container left">  
+    <div class="content">
+      5.-6. Mai 2025, Mannheim<br>
+      <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
+      <p>Systematische Architekturdokumentation, pragmatisch und praxisnah
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Normalpreis: € 1500,- (für unsere Alumni €1350)
+      </p>
+      <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+<!-- IMPROVE May 2025, MAN -->
+<div class="container right">  
+    <div class="content" >
+      7.-9. Mai 2025, Mannheim<br>
+      <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
+      <p>Systematisch verbessern!</p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+<!-- MSA May 2025 MUC -->
+<div class="container left"> 
+    <div class="content" >
+     20.-23. Mai 2025, Mannheim<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
@@ -224,7 +234,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div><!-- content -->
  </div> <!-- container-->
-
 
 
 <!-- example "ausgebucht":

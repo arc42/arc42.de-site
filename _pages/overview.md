@@ -141,7 +141,7 @@ arc42 gibt praxisorientierte Antworten auf die folgenden zwei Fragen:
 * **_Wie_** sollen wir kommunizieren/dokumentieren?
 
 Dazu haben wir ein einfaches Template mit 12 Kapiteln entwickelt, in denen Sie alles Wissenswerte über die Architektur unterbringen können.
-arc42 läßt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
+arc42 lässt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
 
 ![Die 12 Kapitel von arc42](/images/template/template-struktur-focus.png)
 
