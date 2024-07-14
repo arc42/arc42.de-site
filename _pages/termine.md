@@ -101,7 +101,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
       <p class="date-small">
-        Normalpreis: € 2200 (für unsere Alumni € 2050)
+        Normalpreis: € 2200 (für unsere Alumni € 2050). 
       </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
