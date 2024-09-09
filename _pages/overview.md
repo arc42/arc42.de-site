@@ -143,8 +143,101 @@ arc42 gibt praxisorientierte Antworten auf die folgenden zwei Fragen:
 Dazu haben wir ein einfaches Template mit 12 Kapiteln entwickelt, in denen Sie alles Wissenswerte über die Architektur unterbringen können.
 arc42 lässt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
 
-![Die 12 Kapitel von arc42](/images/template/template-struktur-focus.png)
 
+
+
+
+
+<div class="grid-container arc42-architecture">
+
+  <a href="#introduction-goals" class="part introduction-goals">
+    <div class="flex column">
+      <strong>1. Einführung & Ziele</strong><br>
+      <small>Grundlegende Anforderungen, insbesondere Qualitätsziele</small>
+    </div>
+  </a>
+
+  <a href="#constraints" class="part constraints">
+    <div class="flex column">
+      <strong>2. Randbedingungen</strong><br>
+      <small>Regelungen und externe Randbedingungen</small>
+    </div>
+  </a>
+
+  <a href="#context-scope" class="part context-scope">
+    <div class="flex column">
+      <strong>3. Kontext & Abgrenzung</strong><br>
+      <small>Externe Systeme und Schnittstellen</small>
+    </div>
+  </a>
+
+  <a href="#solution-strategy" class="part solution-strategy">
+    <div class="flex column">
+      <strong>4. Lösungsstrategie</strong><br>
+      <small>Kernideen und Lösungsansätze</small>
+    </div>
+  </a>
+
+  <a href="#building-block-view" class="part building-block-view larger-cell">
+    <div class="flex column">
+      <strong>5. Bausteinsicht</strong><br>
+      <small>Aufbau des Quellcodes, Modularisierung (hierarchisch)</small>
+    </div>
+  </a>
+
+  <a href="#runtime-view" class="part runtime-view">
+    <div class="flex column">
+      <strong>6. Laufzeitsicht</strong><br>
+      <small>Wichtige Laufzeitszenarien</small>
+    </div>
+  </a>
+
+  <a href="#deployment-view" class="part deployment-view">
+    <div class="flex column">
+      <strong>7. Verteilungssicht</strong><br>
+      <small>Hardware, Infrastruktur & Deployment</small>
+    </div>
+  </a>
+
+  <a href="#crosscutting-concepts" class="part crosscutting-concepts larger-cell">
+    <div class="flex column">
+      <strong>8. Querschnittliche Konzepte</strong><br>
+      <small>Querschnittsthemen, oft sehr technisch und detailliert</small>
+    </div>
+  </a>
+
+  <a href="#architectural-decisions" class="part architectural-decisions">
+    <div class="flex column">
+      <strong>9. Architekturbeschlüsse</strong><br>
+      <small>Wichtige Entscheidungen (nicht anderweitig beschrieben)</small>
+    </div>
+  </a>
+
+  <a href="#quality-requirements" class="part quality-requirements">
+    <div class="flex column">
+      <strong>10. Qualitätsanforderungen</strong><br>
+      <small>Qualitätsbaum, Qualitätsszenarien</small>
+    </div>
+  </a>
+
+  <a href="#risks-technical-debt" class="part risks-technical-debt">
+    <div class="flex column">
+      <strong>11. Risiken & Technische Schulden</strong><br>
+      <small>Bekannte Probleme und Risiken</small>
+    </div>
+  </a>
+
+  <a href="#glossary" class="part glossary">
+    <div class="flex column">
+      <strong>12. Glossar</strong><br>
+      <small>Wichtige und spezifische Begriffe ("gemeinsame Sprache")</small>
+    </div>
+  </a>
+
+</div>
+
+
+<br>
 
 Den Kern der Architekturdokumentation bilden die Kontextabgrenzung (Kap. 3), die drei Sichten (Bausteinsicht, Laufzeitsicht und Verteilungssicht - Kap. 5 - 7), sowie die querschnittlichen Konzepte (Kap. 8).
 
@@ -155,29 +248,56 @@ Wenn Sie mehr zu den Kapiteln wissen wollen, lesen Sie weiter oder lernen Sie no
 
 <hr>
 
-{% include lazyloading_feature_row id="feature_row1" type="left" %}
+# Mehr Details
 
-{% include lazyloading_feature_row id="feature_row2" type="right" %}
+<div id="introduction-goals">
+  {% include lazyloading_feature_row id="feature_row1" type="left" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row3" type="left" %}
+<div id="constraints">
+  {% include lazyloading_feature_row id="feature_row2" type="right" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row4" type="right" %}
+<div id="context-scope">
+  {% include lazyloading_feature_row id="feature_row3" type="left" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row5" type="left" %}
+<div id="solution-strategy">
+  {% include lazyloading_feature_row id="feature_row4" type="right" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row6" type="right" %}
+<div id="building-block-view">
+  {% include lazyloading_feature_row id="feature_row5" type="left" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row7" type="left" %}
+<div id="runtime-view">
+  {% include lazyloading_feature_row id="feature_row6" type="right" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row8" type="right" %}
+<div id="deployment-view">
+  {% include lazyloading_feature_row id="feature_row7" type="left" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row9" type="left" %}
+<div id="crosscutting-concepts">
+  {% include lazyloading_feature_row id="feature_row8" type="right" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row10" type="right" %}
+<div id="architectural-decisions">
+  {% include lazyloading_feature_row id="feature_row9" type="left" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row11" type="left" %}
+<div id="quality-requirements">
+  {% include lazyloading_feature_row id="feature_row10" type="right" %}
+</div>
 
-{% include lazyloading_feature_row id="feature_row12" type="right" %}
+<div id="risks-technical-debt">
+  {% include lazyloading_feature_row id="feature_row11" type="left" %}
+</div>
+
+<div id="glossary">
+  {% include lazyloading_feature_row id="feature_row12" type="right" %}
+</div>
+
 
 # Weitere Informationen
 
