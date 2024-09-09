@@ -208,7 +208,7 @@ arc42 lässt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
 
   <a href="#architectural-decisions" class="part architectural-decisions">
     <div class="flex column">
-      <strong>9. Architekturbeschlüsse</strong><br>
+      <strong>9. Architekturentscheidungen</strong><br>
       <small>Wichtige Entscheidungen (nicht anderweitig beschrieben)</small>
     </div>
   </a>
