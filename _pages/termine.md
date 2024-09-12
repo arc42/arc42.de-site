@@ -95,7 +95,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div> 
 
 <div class="container right"> <!-- IMPROVE NOV 2024 Hamburg-->
-    <div class="content">
+    <div class="content" style="color:darkgrey>
       26.-29. Nov. 2024, Hamburg <br>
       <strong class="blue-head">IMPROVE<br> 
       (CPSA-Advanced)</strong><br>
@@ -103,6 +103,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <p class="date-small">
         Normalpreis: € 2200 (für unsere Alumni € 2050). 
       </p>
+      <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div><!-- content -->
