@@ -39,7 +39,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<!-- Req4Arc Sept 2024, MUC -->
+<!-- Req4Arc Sept 2024, MUC 
 <div class="container left">  
     <div class="content" >
       17.-19. September 2024, Frankfurt<br>
@@ -55,6 +55,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
 </div>
+-->
 
 <!-- MSA Sept 2024 MUC -->
 <div class="container right"> 
@@ -95,7 +96,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div> 
 
 <div class="container right"> <!-- IMPROVE NOV 2024 Hamburg-->
-    <div class="content" style="color:darkgrey>
+    <div class="content" style="color:darkgrey">
       26.-29. Nov. 2024, Hamburg <br>
       <strong class="blue-head">IMPROVE<br> 
       (CPSA-Advanced)</strong><br>
