@@ -137,7 +137,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- Req4Arc April 2025, MUC -->
 <div class="container right">  
     <div class="content" >
-      1.-3. April 2025, München<br>
+      31.März - 2. April 2025, München<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
