@@ -43,8 +43,10 @@ activate JavaScript and reload this page.
 <label for="kurs">Which training?</label>
 <select id="kurs" name="Kurs" required>
   <option value="*"></option>
-  <option value="24-11 MSA online">Mastering SW Architectures, November 12.-14.th 2024<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
-  <option value="25-02 MSA online">Mastering SW Architectures, February 18-20.th 2025<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
+  <option value="24-11 MSA online">Mastering SW Architectures, November 12-14th 2024<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
+  <option value="25-02 MSA online">Mastering SW Architectures, February 18-20th 2025<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
+  <option value="25-06 MSA online">Mastering SW Architectures, June 24-26th 2025<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
+  <option value="25-10 MSA online">Mastering SW Architectures, October 14-16th 2025<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
 
   <option value="other">other</option>
 </select>

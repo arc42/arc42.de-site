@@ -171,7 +171,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
-<!-- ADOC Juni 2025, MAN -->
+<!-- ADOC Mai 2025, MAN -->
 <div class="container right">  
     <div class="content">
       5.-6. Mai 2025, Mannheim<br>
@@ -187,7 +187,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
-<!-- IMPROVE May 2025, MAN -->
+<!-- IMPROVE Mai 2025, MAN -->
 <div class="container left">  
     <div class="content" >
       7.-9. Mai 2025, Mannheim<br>
@@ -219,9 +219,27 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
-<!-- MSA Sept 2025 FRA -->
+<!-- MSA ONLINE June 25 (Wolfgang) -->
 <div class="container left"> 
-    <div class="content" style="color:darkgrey">
+<div class="content" >
+    24.-26.th June 2025 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    <strong class="booked-out">ENGLISH, online.</strong>
+    Please see our <a href="terms-en">terms and conditions.</a>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+  
+    </div>
+</div> 
+
+<!-- MSA Sept 2025 FRA -->
+<div class="container right"> 
+    <div class="content" >
      23.-26. September 2025, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -235,17 +253,17 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
        Frühbucherpreis bei Anmeldung bis 20. März 2025: € 2690,
        Normalpreis: € 2890
      </p>
-      <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   
   </div><!-- content -->
  </div> <!-- container-->
 
 
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
-<div class="container right">  
+<div class="container left">  
     <div class="content" >
-      1.  September - 2. Oktober 2025, Frankfurt<br>
+      31. September - 2. Oktober 2025, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
@@ -259,6 +277,44 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
+<!-- MSA ONLINE (Wolfgang) -->
+<div class="container right"> 
+<div class="content" >
+    14.-16. October 2025 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    <strong class="booked-out">ENGLISH, online.</strong>
+    Please see our <a href="terms-en">terms and conditions.</a>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+  
+    </div>
+</div> 
+
+
+<!-- MSA Dezember 2025 MUC -->
+<div class="container left"> 
+    <div class="content" >
+     2.-5.  Dezember 2025, München<br>
+      <strong class="blue-head">Mastering Software Architectures<br> 
+     (iSAQB CPSA-Foundation)
+     </strong> 
+     <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     </p>
+  <p class="date-small">
+       Frühbucherpreis bei Anmeldung bis 12. Juli 2025: € 2690,
+       Normalpreis: € 2890
+     </p>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div><!-- content -->
+ </div> <!-- container-->
 
 <!-- example "ausgebucht":
 <div class="container left">
