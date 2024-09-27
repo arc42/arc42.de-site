@@ -237,6 +237,21 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </div>
 </div> 
 
+<div class="container right"> <!-- IMPROVE Juli 2025 Hamburg-->
+    <div class="content" >
+      15.-17. Juli 2025, Hamburg <br>a
+      <strong class="blue-head">IMPROVE<br> 
+      (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p class="date-small">
+        Normalpreis: € 2200 (für unsere Alumni € 2050). 
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    
+  </div><!-- content -->
+</div><!-- container-->
+
 <!-- MSA Sept 2025 FRA -->
 <div class="container right"> 
     <div class="content" >
@@ -263,7 +278,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
 <div class="container left">  
     <div class="content" >
-      31. September - 2. Oktober 2025, Frankfurt<br>
+      1.  September - 2. Oktober 2025, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
@@ -294,6 +309,21 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   
     </div>
 </div> 
+
+<div class="container left"> <!-- IMPROVE November 2025 Hamburg-->
+    <div class="content" >
+      25.-27. November 2025, Hamburg <br>a
+      <strong class="blue-head">IMPROVE<br> 
+      (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p class="date-small">
+        Normalpreis: € 2200 (für unsere Alumni € 2050). 
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    
+  </div><!-- content -->
+</div><!-- container-->
 
 
 <!-- MSA Dezember 2025 MUC -->
