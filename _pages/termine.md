@@ -239,7 +239,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> <!-- IMPROVE Juli 2025 Hamburg-->
     <div class="content" >
-      15.-17. Juli 2025, Hamburg <br>a
+      15.-17. Juli 2025, Hamburg <br>
       <strong class="blue-head">IMPROVE<br> 
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
@@ -312,7 +312,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> <!-- IMPROVE November 2025 Hamburg-->
     <div class="content" >
-      25.-27. November 2025, Hamburg <br>a
+      25.-27. November 2025, Hamburg <br>
       <strong class="blue-head">IMPROVE<br> 
       (CPSA-Advanced)</strong><br>
     <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
