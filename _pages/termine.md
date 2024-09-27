@@ -253,7 +253,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div><!-- container-->
 
 <!-- MSA Sept 2025 FRA -->
-<div class="container right"> 
+<div class="container left"> 
     <div class="content" >
      23.-26. September 2025, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -276,7 +276,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
-<div class="container left">  
+<div class="container right">  
     <div class="content" >
       1.  September - 2. Oktober 2025, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
@@ -293,7 +293,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- MSA ONLINE (Wolfgang) -->
-<div class="container right"> 
+<div class="container left"> 
 <div class="content" >
     14.-16. October 2025 (online)<br>
       <strong class="blue-head">Mastering Software Architectures<br>
@@ -310,7 +310,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     </div>
 </div> 
 
-<div class="container left"> <!-- IMPROVE November 2025 Hamburg-->
+<div class="container right"> <!-- IMPROVE November 2025 Hamburg-->
     <div class="content" >
       25.-27. November 2025, Hamburg <br>a
       <strong class="blue-head">IMPROVE<br> 
