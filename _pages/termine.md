@@ -53,8 +53,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
       <strong class="booked-out">SOLD OUT, waiting list available.</strong>
     <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
-  
+    
     </div>
 </div> 
 
