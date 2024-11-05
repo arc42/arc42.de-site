@@ -96,7 +96,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA Jan 2025 MUC -->
 <div class="container right"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey" >
      21.-24. Januar 2025, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -105,9 +105,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
-  <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 21. Oktober 2024: € 2690,
-       Normalpreis: € 2890
+    <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -277,7 +275,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
 <div class="container right">  
     <div class="content" >
-      30.  September - 2. Oktober 2025, Frankfurt<br>
+      1.   September - 2. Oktober 2025, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
