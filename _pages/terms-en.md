@@ -48,7 +48,7 @@ Dr. Peter Hruschka and Dr. Gernot Starke are individually fully authorized to re
 | D-52080 Aachen | D-50858 Cologne | 
 | Phone +49 172 241 1656 | Phone +49 177 728 2570 |
 
-E-Mail: info_at_arc42_dot_en
+E-Mail: info_at_arc42_dot_de
 
 
 
