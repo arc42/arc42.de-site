@@ -39,24 +39,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<!-- MSA ONLINE (Wolfgang) -->
-<div class="container left"> 
-<div class="content" style="color:darkgrey" >
-    12.-14. November 2024 (online)<br>
-      <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="booked-out">ENGLISH, online.</strong>
-    Please see our <a href="terms-en">terms and conditions.</a>
-    <p>Trainer: Wolfgang Reimesch.</p>
-    <p class="date-small">
-        Delegate Fee: €2100
-      </p>
-      <strong class="booked-out">SOLD OUT, waiting list available.</strong>
-    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-    
-    </div>
-</div> 
-
 <div class="container right"> <!-- IMPROVE NOV 2024 Hamburg-->
     <div class="content" style="color:darkgrey">
       26.-29. Nov. 2024, Hamburg <br>
@@ -66,7 +48,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <p class="date-small">
         Normalpreis: € 2200 (für unsere Alumni € 2050). 
       </p>
-      <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
+      <p>
+            <strong class="booked-out">AUSGEBUCHT</strong>
+            </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
      
   </div><!-- content -->
@@ -83,16 +67,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     <strong class="booked-out">AUSGEBUCHT.</strong>
      </p>
-     <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
-  <p class="date-small">
-      
-       Normalpreis: € 2890
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a> 
   </div><!-- content -->
  </div> <!-- container-->
+
 
 <!-- MSA Jan 2025 MUC -->
 <div class="container right"> 
@@ -104,11 +84,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
     <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
      </p>
+     
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div><!-- content -->
  </div> <!-- container-->
 
@@ -118,7 +97,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     18.-20. February 2025 (online)<br>
       <strong class="blue-head">Mastering Software Architectures<br>
     (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="booked-out">ENGLISH, online.</strong>
+    <strong>ENGLISH, online.</strong>
+    Perfect preparation for the iSAQB Foundation Certification.</p>
     Please see our <a href="terms-en">terms and conditions.</a>
     <p>Trainer: Wolfgang Reimesch.</p>
     <p class="date-small">
