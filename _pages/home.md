@@ -42,9 +42,9 @@ template_training_news:
     
      * Unser [Merchandising Shop](https://arc42.myspreadshop.de) ist online und bietet T-Shirts, Kapuzenpullis und andere Artikel der Marke arc42 an. Hochwertig und umweltfreundlich. Probieren Sie es aus!
 
-     * Unser pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org).
+     * Unser pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org). 100+ spezifische Beispiele.
   
-     * Verfügbar jetzt in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch und Ukrainisch)
+     * Verfügbar jetzt in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Portugiesisch und Ukrainisch)
 
      * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
