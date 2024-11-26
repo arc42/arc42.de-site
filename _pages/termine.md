@@ -39,41 +39,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<div class="container right"> <!-- IMPROVE NOV 2024 Hamburg-->
-    <div class="content" style="color:darkgrey">
-      26.-29. Nov. 2024, Hamburg <br>
-      <strong class="blue-head">IMPROVE<br> 
-      (CPSA-Advanced)</strong><br>
-    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
-      <p class="date-small">
-        Normalpreis: € 2200 (für unsere Alumni € 2050). 
-      </p>
-      <p>
-            <strong class="booked-out">AUSGEBUCHT</strong>
-            </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-     
-  </div><!-- content -->
-</div><!-- container-->
-
-
-<!-- MSA Dez 2024 MUC -->
-<div class="container left"> 
-    <div class="content" style="color:darkgrey">
-     3.-6. Dezember 2024, München<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     <strong class="booked-out">AUSGEBUCHT.</strong>
-     </p>
-     <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a> 
-  </div><!-- content -->
- </div> <!-- container-->
-
-
 <!-- MSA Jan 2025 MUC -->
 <div class="container right"> 
     <div class="content" style="color:darkgrey" >
