@@ -87,8 +87,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
+     <p>Nur noch wenige Plätze verfügbar</p>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 18. Oktober 2024: € 2690,
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
