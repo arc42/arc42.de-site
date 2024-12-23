@@ -48,11 +48,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
      </strong> 
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-    <strong class="booked-out">AUSGEBUCHT, nur noch Warteliste.</strong>
+    <strong class="booked-out">AUSGEBUCHT.</strong>
      </p>
      
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
   </div><!-- content -->
  </div> <!-- container-->
 
@@ -78,7 +76,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA March 2025 MUC -->
 <div class="container right"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey" >
      18.-21. März 2025, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -87,12 +85,13 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
-     <p>Nur noch wenige Plätze verfügbar</p>
+  <strong class="booked-out">AUSGEBUCHT.</strong>
   <p class="date-small">
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+ 
   </div><!-- content -->
  </div> <!-- container-->
 
