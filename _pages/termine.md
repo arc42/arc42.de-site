@@ -39,21 +39,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<!-- MSA Jan 2025 MUC -->
-<div class="container right"> 
-    <div class="content" style="color:darkgrey" >
-     21.-24. Januar 2025, München<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-    <strong class="booked-out">AUSGEBUCHT.</strong>
-     </p>
-     
-  </div><!-- content -->
- </div> <!-- container-->
-
 <!-- MSA ONLINE (Wolfgang) -->
 <div class="container left"> 
 <div class="content" >
