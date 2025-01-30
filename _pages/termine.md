@@ -46,7 +46,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">Mastering Software Architectures<br>
     (iSAQB CPSA-Foundation)<br></strong>
     <strong>ENGLISH, online.</strong>
-    Perfect preparation for the iSAQB Foundation Certification.</p>
+    Perfect preparation for the iSAQB Foundation Certification.
     Please see our <a href="terms-en">terms and conditions.</a>
     <p>Trainer: Wolfgang Reimesch.</p>
     <p class="date-small">

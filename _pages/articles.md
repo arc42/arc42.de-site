@@ -21,6 +21,8 @@ Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-scho
 Ausserdem finden Sie hier Neuigkeiten aus dem _arc42-Universum_.
 
 ## arc42 hat einen Webshop
+![arc42 T-Shirt](/images/home/t-shirt.webp)<br>
+
 Unser [Merchandising Shop](https://arc42.myspreadshop.de) ist online und bietet T-Shirts, Kapuzenpullis und andere Artikel der Marke arc42 an. 
 Hochwertig und umweltfreundlich. 
 Probieren Sie es aus!
