@@ -38,8 +38,7 @@ template_training_news:
     
     
   - title: "News"
-    excerpt: "![arc42 T-Shirt](/images/home/t-shirt.webp)<br>
-    
+    excerpt: "
      * Im Februar 2025 feiert arc42 den 20. Geburtstag. Wir haben uns einiges überlegt... _stay tuned_
     
      * Verfügbar in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Portugiesisch und Ukrainisch)
