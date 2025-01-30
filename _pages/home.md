@@ -40,11 +40,9 @@ template_training_news:
   - title: "News"
     excerpt: "![arc42 T-Shirt](/images/home/t-shirt.webp)<br>
     
-     * Unser [Merchandising Shop](https://arc42.myspreadshop.de) ist online und bietet T-Shirts, Kapuzenpullis und andere Artikel der Marke arc42 an. Hochwertig und umweltfreundlich. Probieren Sie es aus!
-
-     * Unser pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org). 100+ spezifische Beispiele.
-  
-     * Verfügbar jetzt in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Portugiesisch und Ukrainisch)
+     * Im Februar 2025 feiert arc42 den 20. Geburtstag. Wir haben uns einiges überlegt... _stay tuned_
+    
+     * Verfügbar in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Portugiesisch und Ukrainisch)
 
      * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     

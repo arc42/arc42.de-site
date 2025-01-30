@@ -18,14 +18,19 @@ sidebar:
 ---
 
 Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-school auf Papier, manchmal auch online.
+Ausserdem finden Sie hier Neuigkeiten aus dem _arc42-Universum_.
 
-## Search Engine Optimization (SEO) #1 - Benennung von Bildern & Alternative Texte
+## arc42 hat einen Webshop
+Unser [Merchandising Shop](https://arc42.myspreadshop.de) ist online und bietet T-Shirts, Kapuzenpullis und andere Artikel der Marke arc42 an. 
+Hochwertig und umweltfreundlich. 
+Probieren Sie es aus!
 
-Per Starke
+## Q42 - Das arc42 Qualitätsmodell
+Statt über die Nachteile bisheriger Qualitätsmodelle (wie ISO-25010) zu jammern, handeln wir lieber:
+Unser umfangreiches und pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org). 
+100+ spezifische Beispiele, direkt im Projekt anwendbar. 
+Natürlich open-source.
 
-In den Posts dieser Reihe möchte ich euch zeigen, was ihr tun könnt, um eure Seite für Suchmaschinen zu optimieren. Im ersten Post geht es um Benennung von Bildern & Alternative Texte
-
-[Zum kompletten Artikel](https://perstarke-webdev.de/posts/seo-one)
 
 ## Behalten Sie den Überblick 
 

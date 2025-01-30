@@ -45,7 +45,6 @@ excerpt: "Wir freuen uns auf Sie!"
 <select id="kurs" name="Kurs" required>
   
 
-  <option value="25-03 MSA">Mastering SW Architectures, 18.-21. März 2025 München (WARTELISTE)</option>
   <option value="25-04 Req4Arc">Req4Arc, 31.März-2. April 2025 München</option>
   <option value="25-05 ADOC">ADOC, 5.-6. Mai 2025 Mannheim</option>
   <option value="25-05 IMPROVE">IMPROVE, 7.-9. Mai 2025 Mannheim (Peter+Gernot)</option>

@@ -89,8 +89,8 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       </p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
-        Frühbucherpreis bei Anmeldung bis 10. Dezember 2024: € 2050,-
         Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
+        Nur noch wenige Plätze frei!
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
@@ -120,6 +120,9 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
       <p>Systematisch verbessern!</p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+    <p class="date-small">
+        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
+      </p>
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
@@ -137,7 +140,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
   <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 18. Dezember 2024: € 2690,
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
