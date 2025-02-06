@@ -18,6 +18,46 @@ sidebar:
 Wir haben hier größtenteils jeweils nur die letzten Auflagen unserer Bücher aufgeführt, um die Liste etwas kleiner zu halten.
 Seit den '90-er Jahren publizieren wir fleissig, und sind an mehr als 40 Büchern/Auflagen direkt beteiligt.
 
+# 2024
+
+## Effektive Softwarearchitekturen, 10. Auflage
+![Effektive Softwarearchitekturen Cover aller 10 Auflagen](/images/books/esa-cover-reihe-10.webp)
+
+Gernot Starke, veröffentlicht bei C. Hanser Verlag.
+
+Sie finden Antworten auf zentrale Fragen:
+
+
+- Welche Aufgaben gehören zur Softwarearchitektur?
+- Wie kann ich beim Entwurf vorgehen?
+- Wie kommuniziere und dokumentiere ich Softwarearchitekturen?
+- Wie helfen Architekturmuster?
+- Wie analysiere und bewerte ich Softwarearchitekturen?
+- Wie setze ich Persistenz, grafische Benutzeroberflächen, Geschäftsregeln, Integration, Verteilung, Fehlerbehandlung und andere Konzepte ein?
+- Was muss ich über Domain-Driven Design, arc42, Microservices, C4 und die Cloud wissen?
+- Wie verbessere ich bestehende Systeme?
+
+>Passend zur zehnten Auflage hat die [Website zum Buch](https://www.esabuch.de/) ein Remake bekommen!
+
+<br>
+
+## Patterns-kompakt, 6. Auflage
+
+![Patterns-kompakt, 6. Auflage Buchcover](/images/books/patterns-kompakt-6-cover.webp){: .align-right .bookcover}
+
+Karl Eilebrecht, Gernot Starke: Entwurfsmuster für effektive Softwareentwicklung.
+Springer-Vieweg Verlag, 6. Auflage, 2024.
+
+Wir haben das Buch für die fünfte Auflage ordentlich überarbeitet, um nach inzwischen
+fast 6 Jahren einige Altersspuren wie ausgestorbene Technologien und Verfahren weg zu polieren. Die weiterführenden Hinweise haben wir runderneuert - und
+beispielsweise um Tipps zu Microservices ergänzt. Unsere Einführung zur _Schablonendokumentation_ (wie etwa arc42 oder Volere) haben wir gründlich aktualisiert.
+
+Daneben gibt es natürlich auch Neues, etwa die Patterns _Hashwertschlüssel_ oder _Inbetriebnahme_.
+
+Mehr Details gibt's auf der [Website zum Buch](https://www.patterns-kompakt.de/).
+
+<br><br>
+
 # 2023
 
 ## Software Architecture Foundation - 2nd edition
@@ -48,7 +88,7 @@ Sie werden lernen, dass Dokumentation kompakt, hilfreich und leicht zu lesen sei
 # 2021
 ## Software Architecture Foundation: CPSA-F Exam Preparation
 
-![Software Architecture Foundation: CPSA-F Exam Preparation Buchcover](/images/books/SWAF-vanHaren-cover.png){: .align-right}
+![Software Architecture Foundation: CPSA-F Exam Preparation Buchcover](/images/books/SWAF-vanHaren-cover.png){: .align-left}
 
 Gernot Starke and Alexander Lorz, published by van Haren International Publishing.
 
@@ -60,7 +100,7 @@ Highly recommended for anybody preparing for the certification examination.
 
 ## arc42-by-Example Vol.2
 
-![arc42-by-Example Vol.2 Buchcover](/images/books/arc42byexample-Title300.png){: .align-left}
+![arc42-by-Example Vol.2 Buchcover](/images/books/arc42byexample-Title300.png){: .align-right}
 
 Peter Hruschka, Ivan Kostov, Wolfgang Reimesch: arc42 by Example Volume 2: Architecture Documentation for _Embedded Systems and IoT_, published by Leanpub.
 
@@ -72,20 +112,6 @@ Finally, examples from the area of _embedded_ systems: Numerous organizations ha
 
 
 # 2020
-## Effektive Softwarearchitekturen, 9. Auflage
-
-9., überarbeitete Auflage. 8/2020 455 Seiten. Flexibler Einband.
-
-![Effektive Softwarearchitekturen, 9. Auflage Buchcover](/images/books/ESA-9-Cover.png){: .align-right}
-
-Mit der neunten Auflage ist ESA nun volljährig: 18 Jahre am (Fachbuch-)Markt.
-
-Dr. Lars Hupel hat eine Übersicht zu Blockchain beigesteuert, ich habe mehrere Dutzend Fehler(chen) behoben, Abbildungen erneuert, oftmals “Projekt” durch “System” ersetzt, mal wieder auf den aktuellen ISAQB Lehrplan aktualisiert.
-
-Insbesondere sind neue Beispielfragen für die iSAQB Prüfung hinzugekommen.
-
-
-<br><br>
 
 ## Basiswissen Softwarearchitektur, 4. Auflage
 
@@ -186,22 +212,6 @@ Für alle bisherigen Käufer und LeserInnen des Buches übrigens ein kostenfreie
 
 # 2018
 
-## Patterns-kompakt, 5. Auflage
-
-![Patterns-kompakt, 5. Auflage Buchcover](/images/books/PK5-Cover.png){: .align-left}
-
-Karl Eilebrecht, Gernot Starke: Entwurfsmuster für effektive Softwareentwicklung.
-Springer-Vieweg Verlag, 5. überarbeitete und erweiterte Auflage, 2018.
-
-Wir haben das Buch für die fünfte Auflage ordentlich überarbeitet, um nach inzwischen
-fast 6 Jahren einige Altersspuren wie ausgestorbene Technologien und Verfahren weg zu polieren. Die weiterführenden Hinweise haben wir runderneuert - und
-beispielsweise um Tipps zu Microservices ergänzt. Unsere Einführung zur _Schablonendokumentation_ (wie etwa arc42 oder Volere) haben wir gründlich aktualisiert.
-
-Daneben gibt es natürlich auch Neues, etwa die Patterns _Hashwertschlüssel_ oder _Inbetriebnahme_.
-
-Mehr Details gibt's auf der [Website zum Buch](https://www.patterns-kompakt.de/).
-
-<br><br>
 
 ## Knigge, 3. Auflage
 
