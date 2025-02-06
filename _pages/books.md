@@ -46,15 +46,22 @@ Sie finden Antworten auf zentrale Fragen:
 ![Patterns-kompakt, 6. Auflage Buchcover](/images/books/patterns-kompakt-6-cover.webp){: .align-right .bookcover}
 
 Karl Eilebrecht, Gernot Starke: Entwurfsmuster für effektive Softwareentwicklung.
-Springer-Vieweg Verlag, 6. Auflage, 2024.
+Springer-Vieweg Verlag, 6. überarbeitete und erweiterte Auflage, 2024.
 
-Wir haben das Buch für die fünfte Auflage ordentlich überarbeitet, um nach inzwischen
-fast 6 Jahren einige Altersspuren wie ausgestorbene Technologien und Verfahren weg zu polieren. Die weiterführenden Hinweise haben wir runderneuert - und
-beispielsweise um Tipps zu Microservices ergänzt. Unsere Einführung zur _Schablonendokumentation_ (wie etwa arc42 oder Volere) haben wir gründlich aktualisiert.
+Das Buch Patterns kompakt 6. Auflage (Springer Vieweg) fasst die wichtigsten Entwurfsmuster zusammen, die Sie für Softwareentwicklung benötigen. Softwareentwickler:Innen und -architekt:Innen finden darin effektiv anwendbare Lösungen für tägliche Entwurfsprobleme.
+Das Buch gliedert Patterns anhand typischer Aspekte des Softwareentwurfs:
 
-Daneben gibt es natürlich auch Neues, etwa die Patterns _Hashwertschlüssel_ oder _Inbetriebnahme_.
+- Basismuster für mehr Flexibilität und Wartbarkeit.
+- Präsentation
+- Kommunikation & Verteilung
+- Integration
+- Persistenz
 
-Mehr Details gibt's auf der [Website zum Buch](https://www.patterns-kompakt.de/).
+Die **sechste aktualisierte und erweiterte Auflage** erklärt darüber hinaus weitere Musterkategorien.
+
+**Patterns kompakt** richtet sich an Praktiker:Innen, Software-Entwickler:Innen, -Architekt:Innen, -Designer:innen und alle, die einen praxisorientierten Überblick zu Entwurfsmustern benötigen.
+
+>Passend zur neuen Auflage hat die [Website zum Buch](http://www.patterns-kompakt.de/) ein komplettes Remake bekommen!
 
 <br><br>
 
