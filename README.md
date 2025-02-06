@@ -1,10 +1,9 @@
 # [arc42.de](https://arc42.de) Website
 
-Live site is hosted by [netlify](https://netlify.com).
+Live site is hosted by [GitHub Pages](https://pages.github.com/).
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
 ![](https://badgen.net/uptime-robot/month/m778709372-640fbdf765be9486dbffe066)
 ![](https://badgen.net/uptime-robot/week/m778709372-640fbdf765be9486dbffe066)
 
