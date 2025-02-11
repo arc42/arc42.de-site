@@ -71,11 +71,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
   <strong class="booked-out">AUSGEBUCHT.</strong>
-  <p class="date-small">
-       Normalpreis: € 2890
-     </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
  
   </div><!-- content -->
  </div> <!-- container-->
@@ -87,13 +83,10 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
-    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
-      <p class="date-small">
-        Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
-        Nur noch wenige Plätze frei!
-      </p>
-      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+     <strong class="booked-out">AUSGEBUCHT.</strong>
+      <a href="info-req4arc">
+      <button class="button buttonReq4Arc">Mehr Info</button></a>
+  
   </div>
 </div>
 
@@ -206,7 +199,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
 <div class="container right">  
     <div class="content" >
-    30. September - 2. Oktober 2025, Frankfurt<br>
+    1.  September - 2. Oktober 2025, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
