@@ -41,22 +41,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-<!-- MSA March 2025 MUC -->
-<div class="container right"> 
-    <div class="content" style="color:darkgrey" >
-     18.-21. März 2025, München<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-  <strong class="booked-out">AUSGEBUCHT.</strong>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
- 
-  </div><!-- content -->
- </div> <!-- container-->
+
 
 <!-- Req4Arc April 2025, MUC -->
 <div class="container left">  
@@ -180,7 +165,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
 <div class="container right">  
     <div class="content" >
-    31.  September - 2. Oktober 2025, Frankfurt<br>
+    1.   September - 2. Oktober 2025, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
