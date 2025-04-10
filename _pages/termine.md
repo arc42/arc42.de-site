@@ -40,22 +40,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-
-
-
-<!-- Req4Arc April 2025, MUC -->
-<div class="container left">  
-    <div class="content" >
-      31.März - 2. April 2025, München<br>
-      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
-      <p>Ihr systematischer Weg zu besseren Anforderungen!
-      </p>
-     <strong class="booked-out">AUSGEBUCHT.</strong>
-      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
-  
-  </div>
-</div>
-
 <!-- ADOC Mai 2025, MAN -->
 <div class="container right">  
     <div class="content">
@@ -82,6 +66,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p class="date-small">
         Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
       </p>
+      Nor noch wenige Plätze verfügbar.
       <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
