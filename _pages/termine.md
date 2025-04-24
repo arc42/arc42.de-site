@@ -58,7 +58,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- IMPROVE Mai 2025, MAN -->
 <div class="container left">  
-    <div class="content" >
+    <div class="content" style="color:darkgrey" >
       7.-9. Mai 2025, Mannheim<br>
       <strong class="blue-head">IMPROVE <br>(CPSA-Advanced)</strong><br>
       <p>Systematisch verbessern!</p>
@@ -66,23 +66,21 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     <p class="date-small">
         Normalpreis: € 2200,- (für unsere CPSA-F-Alumni € 2050.-)
       </p>
-      Nor noch wenige Plätze verfügbar.
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div>
+      Ausgebucht.
+      </div>
 </div>
 
-<!-- MSA May 2025 MUC -->
+<!-- MSA May 2025 Mannheim -->
 <div class="container right"> 
     <div class="content" >
      20.-23. Mai 2025, Mannheim<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
+     (iSAQB CPSA-Foundation)  </strong> 
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
+      <strong class="blue-head"> Nur noch wenige Plätze verfügbar. </strong> 
   <p class="date-small">
        Normalpreis: € 2890
      </p>
@@ -90,6 +88,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div><!-- content -->
  </div> <!-- container-->
+
 
 <!-- MSA ONLINE June 25 (Wolfgang) -->
 <div class="container left"> 
@@ -123,6 +122,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     
   </div><!-- content -->
 </div><!-- container-->
+
 
 <!-- MSA Sept 2025 FRA -->
 <div class="container left"> 
