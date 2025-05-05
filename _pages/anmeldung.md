@@ -45,9 +45,6 @@ excerpt: "Wir freuen uns auf Sie!"
 <select id="kurs" name="Kurs" required>
   
 
-  <option value="25-05 ADOC">ADOC, 5.-6. Mai 2025 Mannheim</option>
-  <option value="25-05 IMPROVE">IMPROVE, 7.-9. Mai 2025 Mannheim (Peter+Gernot)</option>
-  <option value="25-05 MSA">Mastering SW Architectures, 20.-23. Mai 2025 Mannheim</option>
   <option value="25-07 IMPROVE">IMPROVE, 15.-17. Juli 2025 Hamburg (Carola+Gernot)</option>
   <option value="25-09 MSA">Mastering SW Architectures, 23.-26. Sept 2025 Frankfurt</option>
   <option value="25-09 Req4Arc">Req4Arc, 30. Sep - 2.Okt 2025 Frankfurt</option>
