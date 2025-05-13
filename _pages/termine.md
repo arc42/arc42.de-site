@@ -107,7 +107,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
      </p>
      
 <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 20. März 2025: € 2690,
        Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
@@ -120,13 +119,12 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
 <div class="container right">  
     <div class="content" >
-    1.   September - 2. Oktober 2025, Frankfurt<br>
+  30.September - 2.Oktober 2025, Frankfurt<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
       <p>Ihr systematischer Weg zu besseren Anforderungen!
       </p>
     <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
       <p class="date-small">
-        Frühbucherpreis bei Anmeldung bis 30. April 2025: € 2050,-
         Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
       </p>
       <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
