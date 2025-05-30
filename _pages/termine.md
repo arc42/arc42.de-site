@@ -41,24 +41,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-<!-- MSA May 2025 Mannheim -->
-<div class="container right"> 
-    <div class="content" >
-     20.-23. Mai 2025, Mannheim<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)  </strong> 
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-      <strong class="blue-head"> Ausgebucht. </strong> 
-  <p class="date-small">
-       Normalpreis: € 2890
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-  </div><!-- content -->
- </div> <!-- container-->
-
 
 <!-- MSA ONLINE June 25 (Wolfgang) -->
 <div class="container left"> 
