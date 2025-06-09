@@ -20,6 +20,9 @@ sidebar:
 Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-school auf Papier, manchmal auch online.
 Ausserdem finden Sie hier Neuigkeiten aus dem _arc42-Universum_.
 
+## arc42-by-Example, Anniversary Edition
+
+
 ## arc42 hat einen Webshop
 ![arc42 T-Shirt](/images/home/t-shirt.webp)<br>
 
