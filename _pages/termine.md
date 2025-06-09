@@ -44,19 +44,18 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA ONLINE June 25 (Wolfgang) -->
 <div class="container left"> 
-<div class="content" >
+<div class="content" style="color:darkgrey">
     24.-26.th June 2025 (online)<br>
       <strong class="blue-head">Mastering Software Architectures<br>
     (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="booked-out">ENGLISH, online.</strong>
+    <strong class="sold-out">SOLD OUT ENGLISH, online.</strong>
     Please see our <a href="terms-en">terms and conditions.</a>
     <p>Trainer: Wolfgang Reimesch.</p>
     <p class="date-small">
         Delegate Fee: €2100
       </p>
     <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
-  
+     
     </div>
 </div> 
 
@@ -120,7 +119,6 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
     14.-16. October 2025 (online)<br>
       <strong class="blue-head">Mastering Software Architectures<br>
     (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="booked-out">ENGLISH, online.</strong>
     Please see our <a href="terms-en">terms and conditions.</a>
     <p>Trainer: Wolfgang Reimesch.</p>
     <p class="date-small">
