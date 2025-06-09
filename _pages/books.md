@@ -18,6 +18,22 @@ sidebar:
 Wir haben hier größtenteils jeweils nur die letzten Auflagen unserer Bücher aufgeführt, um die Liste etwas kleiner zu halten.
 Seit den '90-er Jahren publizieren wir fleissig, und sind an mehr als 40 Büchern/Auflagen direkt beteiligt.
 
+# 2025
+
+## arc42-by-Example, Sonderausgabe zum Geburtstag
+![](/images/books/arc42-anniversary.webp)<br>
+
+Zum 20. Geburtstag haben wir einen Sammelband aller unserer arc42-Beispiele zusammengestellt.
+
+
+Neun _real-world_ IT-Systeme aus unterschiedlichen Domänen, mit arc42 beschrieben.
+
+
+Wer genau hinschaut, findet auf dem Cover auch den Entwurf des neuen arc42 Logos (Danke, Sebastian)<br>
+
+Verfügbar bei [Leanpub](https://leanpub.com/arc42byexample-20thanniversaryedition), bis Anfang September 2025 _kostenfrei_!
+
+
 # 2024
 
 ## Effektive Softwarearchitekturen, 10. Auflage

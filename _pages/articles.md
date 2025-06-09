@@ -20,7 +20,18 @@ sidebar:
 Wir schreiben für verschiedene Zeitschriften und Verlage Artikel, ganz old-school auf Papier, manchmal auch online.
 Ausserdem finden Sie hier Neuigkeiten aus dem _arc42-Universum_.
 
-## arc42-by-Example, Anniversary Edition
+
+## arc42-by-Example, Sonderausgabe zum Geburtstag
+Zum 20. Geburtstag haben wir einen Sammelband aller unserer arc42-Beispiele zusammengestellt.
+![](/images/books/arc42-anniversary.webp){: .align-left}
+
+Neun _real-world_ IT-Systeme aus unterschiedlichen Domänen, mit arc42 beschrieben.
+Zum 20. Geburtstag von arc42 haben wir eine Sonderedition der beliebten "arc42 by Example" Bücher zusammengestellt.
+
+Wer genau hinschaut, findet auf dem Cover auch den Entwurf des neuen arc42 Logos (Danke, Sebastian)<br>
+
+Verfügbar bei [Leanpub](https://leanpub.com/arc42byexample-20thanniversaryedition), bis Anfang September 2025 _kostenfrei_!
+
 
 
 ## arc42 hat einen Webshop
@@ -30,10 +41,13 @@ Unser [Merchandising Shop](https://arc42.myspreadshop.de) ist online und bietet 
 Hochwertig und umweltfreundlich. 
 Probieren Sie es aus!
 
+
 ## Q42 - Das arc42 Qualitätsmodell
 Statt über die Nachteile bisheriger Qualitätsmodelle (wie ISO-25010) zu jammern, handeln wir lieber:
 Unser umfangreiches und pragmatisches Qualitätsmodell Q42 - jetzt [online](https://quality.arc42.org). 
 100+ spezifische Beispiele, direkt im Projekt anwendbar. 
+Die umfangreichste Sammlung von Qualitätseigenschaften, jede einzelne mit fundierten und von Menschen kuratierten Definitionen aus verlässlichen Quellen.
+
 Natürlich open-source.
 
 
