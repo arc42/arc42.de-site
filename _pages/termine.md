@@ -42,22 +42,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 
 
-<!-- MSA ONLINE June 25 (Wolfgang) -->
-<div class="container left"> 
-<div class="content" style="color:darkgrey">
-    24.-26.th June 2025 (online)<br>
-      <strong class="blue-head">Mastering Software Architectures<br>
-    (iSAQB CPSA-Foundation)<br></strong>
-    <strong class="sold-out">SOLD OUT ENGLISH, online.</strong>
-    Please see our <a href="terms-en">terms and conditions.</a>
-    <p>Trainer: Wolfgang Reimesch.</p>
-    <p class="date-small">
-        Delegate Fee: €2100
-      </p>
-    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
-     
-    </div>
-</div> 
+ 
 
 <div class="container right"> <!-- IMPROVE Juli 2025 Hamburg-->
     <div class="content" >
@@ -183,6 +168,28 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
+ </div> <!-- container-->
+
+<!-- MSA Juni 2026 FRA -->
+<div class="container left"> 
+    <div class="content" >
+          9.-12. Juni 2026, Frankfurt/Main<br>
+      <strong class="blue-head">Mastering Software Architectures<br> 
+     (iSAQB CPSA-Foundation)
+     </strong> 
+     <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     </p>
+     
+<p class="date-small">
+       Frühbucherpreis bei Anmeldung bis 12. Dezember 2025: € 2690,
+       Normalpreis: € 2890
+     </p>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  
+  </div><!-- content -->
  </div> <!-- container-->
 
 <!-- example "ausgebucht":
