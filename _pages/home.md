@@ -39,9 +39,9 @@ template_training_news:
     
   - title: "News"
     excerpt: "
-     * Im Februar 2025 feiert arc42 den 20. Geburtstag. Wir haben uns einiges überlegt... _stay tuned_
+     * 2025 feiert arc42 das 20-jährige Jubiläum. Wir haben uns einiges überlegt.
     
-     * Verfügbar in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Portugiesisch und Ukrainisch)
+     * Verfügbar in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Tschechisch, Portugiesisch und Ukrainisch)
 
      * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
