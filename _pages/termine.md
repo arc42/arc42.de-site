@@ -39,34 +39,15 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-
-
-
- 
-
-<div class="container right"> <!-- IMPROVE Juli 2025 Hamburg-->
-    <div class="content" >
-      15.-17. Juli 2025, Hamburg <br>
-      <strong class="blue-head">IMPROVE<br> 
-      (CPSA-Advanced)</strong><br>
-    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
-      <p class="date-small">
-        Normalpreis: € 2200 (für unsere Alumni € 2050). 
-      </p>
-      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-    
-  </div><!-- content -->
-</div><!-- container-->
-
-
 <!-- MSA Sept 2025 FRA -->
 <div class="container left"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey" >
      23.-26. September 2025, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
+     <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
+
      <p>
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
