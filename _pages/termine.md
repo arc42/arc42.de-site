@@ -113,7 +113,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <!-- MSA Dezember 2025 MUC -->
 <div class="container left"> 
-    <div class="content" >
+    <div class="content" style="color:darkgrey" >
      2.-5.  Dezember 2025, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
@@ -122,16 +122,35 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
         Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
         Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
      </p>
-  <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 12. Juli 2025: € 2690,
-       Normalpreis: € 2890
-     </p>
+
+ <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
+
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div><!-- content -->
  </div> <!-- container-->
 
 <div class="container right"> 
+    <div class="content" >
+     26.-29.  Januar 2026, München<br>
+      <strong class="blue-head">Mastering Software Architectures<br> 
+     (iSAQB CPSA-Foundation)
+     </strong> 
+     <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     </p>
+  <p class="date-small">
+       Frühbucherpreis bei Anmeldung bis 10. November 2025: € 2690,
+       Normalpreis: € 2890
+     </p>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+ </div> <!-- container-->
+
+
+<div class="container left"> 
     <div class="content" >
      3.-6.  März 2026, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -151,7 +170,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- MSA Juni 2026 FRA -->
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
           9.-12. Juni 2026, Frankfurt/Main<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
