@@ -223,7 +223,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- Req4Arc Juni  2026, MAN --> 
-<div class="container right">  
+<div class="container left">  
     <div class="content" >
   17.-19. Juni 2026, Mannheim<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
