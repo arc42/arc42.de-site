@@ -126,8 +126,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
 
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-  </div><!-- content -->
+     </div><!-- content -->
  </div> <!-- container-->
 
 <div class="container right"> 
@@ -169,10 +168,26 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
  </div> <!-- container-->
 
-<!-- MSA Juni 2026 FRA -->
-<div class="container right"> 
+<!-- Req4Arc März 2026, MUC --> 
+<div class="container right">  
     <div class="content" >
-          9.-12. Juni 2026, Frankfurt/Main<br>
+  9.-11. März 2026, München<br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <p>Ihr systematischer Weg zu besseren Anforderungen!
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+<!-- MSA Juni 2026 FRA -->
+<div class="container left"> 
+    <div class="content" >
+          9.-12. Juni 2026, Mannheim<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
      (iSAQB CPSA-Foundation)
      </strong> 
@@ -190,6 +205,39 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   
   </div><!-- content -->
  </div> <!-- container-->
+
+<!-- ADOC,Mannheim 2026 --> 
+<div class="container right">  
+    <div class="content" >
+  15.-16. Juni 2026, Mannheim<br>
+      <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
+      <p>Effektive und sparsame Architekturdokumentation (mit Schwerpunkt arc42)
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
+      </p>
+      <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
+<!-- Req4Arc Juni  2026, MAN --> 
+<div class="container right">  
+    <div class="content" >
+  17.-19. Juni 2026, Mannheim<br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <p>Ihr systematischer Weg zu besseren Anforderungen!
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
 
 <!-- example "ausgebucht":
 <div class="container left">
