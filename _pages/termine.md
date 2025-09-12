@@ -39,27 +39,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <div class="timeline">
 
 
-<!-- MSA Sept 2025 FRA -->
-<div class="container left"> 
-    <div class="content" style="color:darkgrey" >
-     23.-26. September 2025, Frankfurt/Main<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
-     <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
 
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-     
-<p class="date-small">
-       Normalpreis: € 2890
-     </p>
-      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
-    
-  </div><!-- content -->
- </div> <!-- container-->
 
 
 <!-- Req4Arc Sept/Oct 2025, MUC --> 
