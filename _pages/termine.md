@@ -218,6 +218,42 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
+<div class="container right"> <!-- IMPROVE Juni 2026 Hamburg-->
+    <div class="content" >
+      23.-25. Juni 2026, Hamburg <br>
+      <strong class="blue-head">IMPROVE<br> 
+      (CPSA-Advanced)</strong><br>
+    <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+      <p class="date-small">
+        Normalpreis: € 2200 (für unsere Alumni € 2050). 
+      </p>
+      <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    
+  </div><!-- content -->
+</div><!-- container-->
+
+<div class="container left"> 
+    <div class="content" >
+          8.-11. September 2026, Frankfurt<br>
+      <strong class="blue-head">Mastering Software Architectures<br> 
+     (iSAQB CPSA-Foundation)
+     </strong> 
+     <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     </p>
+     
+<p class="date-small">
+       Frühbucherpreis bei Anmeldung bis 8. Mai 2026: € 2690,
+       Normalpreis: € 2890
+     </p>
+      <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  
+  </div><!-- content -->
+ </div> <!-- container-->
+
 
 <!-- example "ausgebucht":
 <div class="container left">
