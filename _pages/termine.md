@@ -111,22 +111,27 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> 
     <div class="content" >
-     26.-29.  Januar 2026, München<br>
-      <strong class="blue-head">Mastering Software Architectures<br> 
-     (iSAQB CPSA-Foundation)
-     </strong> 
-     <p>
-        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
-        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
-     </p>
-  <p class="date-small">
-       Frühbucherpreis bei Anmeldung bis 10. November 2025: € 2690,
-       Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
  </div> <!-- container-->
+
+<!-- MSA ONLINE (Wolfgang) -->
+<div class="container left"> 
+<div class="content">
+    24.-26. February 2026 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    Please see our <a href="terms-en">terms and conditions.</a>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+    </div>
+</div> 
 
 
 <div class="container left"> 
@@ -218,6 +223,22 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
+<!-- MSA ONLINE (Wolfgang) -->
+<div class="container right"> 
+<div class="content">
+    23.-25. June 2026 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    Please see our <a href="terms-en">terms and conditions.</a>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+    </div>
+</div> 
+
 <div class="container right"> <!-- IMPROVE Juni 2026 Hamburg-->
     <div class="content" >
       23.-25. Juni 2026, Hamburg <br>
@@ -254,7 +275,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
-<!-- Req4Arc Sept 2026, F --> 
+<!-- Req4Arc Sept 2026, F -->
 <div class="container right">  
     <div class="content" >
   15.-17. September 2026, Frankfurt<br>
@@ -270,6 +291,21 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div>
 </div>
 
+<!-- MSA ONLINE (Wolfgang) -->
+<div class="container left"> 
+<div class="content">
+    29.Sept.-1.Oct. 2026 (online)<br>
+      <strong class="blue-head">Mastering Software Architectures<br>
+    (iSAQB CPSA-Foundation)<br></strong>
+    Please see our <a href="terms-en">terms and conditions.</a>
+    <p>Trainer: Wolfgang Reimesch.</p>
+    <p class="date-small">
+        Delegate Fee: €2100
+      </p>
+    <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+    <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+    </div>
+</div> 
 
 <!-- example "ausgebucht":
 <div class="container left">
