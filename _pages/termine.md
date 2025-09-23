@@ -111,11 +111,23 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 
 <div class="container right"> 
     <div class="content" >
+     26.-29.  Januar 2026, München<br>
+      <strong class="blue-head">Mastering Software Architectures<br> 
+     (iSAQB CPSA-Foundation)
+     </strong> 
+     <p>
+        Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.
+        Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
+     </p>
+  <p class="date-small">
+       Frühbucherpreis bei Anmeldung bis 10. November 2025: € 2690,
+       Normalpreis: € 2890
      </p>
       <a href="info-msa"><button class="button buttonMSA">Mehr Info</button></a>
       <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
   </div>
  </div> <!-- container-->
+
 
 <!-- MSA ONLINE (Wolfgang) -->
 <div class="container left"> 
@@ -134,7 +146,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div> 
 
 
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
      3.-6.  März 2026, München<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -154,7 +166,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- Req4Arc März 2026, MUC --> 
-<div class="container right">  
+<div class="container left">  
     <div class="content" >
   9.-11. März 2026, München<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
@@ -170,7 +182,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- MSA Juni 2026 FRA -->
-<div class="container left"> 
+<div class="container right"> 
     <div class="content" >
           9.-12. Juni 2026, Mannheim<br>
       <strong class="blue-head">Mastering Software Architectures<br> 
@@ -192,7 +204,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
  </div> <!-- container-->
 
 <!-- ADOC,Mannheim 2026 --> 
-<div class="container right">  
+<div class="container left">  
     <div class="content" >
   15.-16. Juni 2026, Mannheim<br>
       <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
@@ -208,7 +220,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- Req4Arc Juni  2026, MAN --> 
-<div class="container left">  
+<div class="container right">  
     <div class="content" >
   17.-19. Juni 2026, Mannheim<br>
       <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
@@ -224,7 +236,7 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 </div>
 
 <!-- MSA ONLINE (Wolfgang) -->
-<div class="container right"> 
+<div class="container left"> 
 <div class="content">
     23.-25. June 2026 (online)<br>
       <strong class="blue-head">Mastering Software Architectures<br>
