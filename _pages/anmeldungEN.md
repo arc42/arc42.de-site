@@ -46,6 +46,10 @@ activate JavaScript and reload this page.
   
   <option value="25-10 MSA online">Mastering SW Architectures, October 14-16th 2025<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
 
+  <option value="26-02 MSA online">Mastering SW Architectures, Feb 24-26th 2026<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
+  <option value="26-06 MSA online">Mastering SW Architectures, June 23-25th 2026<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
+  <option value="26-09 MSA online">Mastering SW Architectures, 29.Sep-1.Oct 2026<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
+
   <option value="other">other</option>
 </select>
 
