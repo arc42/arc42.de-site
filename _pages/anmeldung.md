@@ -55,6 +55,7 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="26-06 Req4Arc">Req4Arc, 17.-19. Juni 2026, Mannheim</option>
   <option value="26-06 IMPROVE">IMPROVE, 23.-25. Juni 2026 Hamburg (Carola+Gernot)</option>
   <option value="26-09 MSA">Mastering SW Architectures, 8.-11. Sep 2026 Frankfurt</option>
+  <option value="26-09 Req4Arc">Req4Arc, 15.-17. Sep. 2026, Frankfurt</option>
   <option value="sonstige">Sonstige</option>
 </select>
 

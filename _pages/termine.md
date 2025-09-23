@@ -254,6 +254,22 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
   </div><!-- content -->
  </div> <!-- container-->
 
+<!-- Req4Arc Sept 2026, F --> 
+<div class="container right">  
+    <div class="content" >
+  15.-17. September 2026, Frankfurt<br>
+      <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
+      <p>Ihr systematischer Weg zu besseren Anforderungen!
+      </p>
+    <p> Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+      <p class="date-small">
+        Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
+      </p>
+      <a href="info-req4arc"><button class="button buttonReq4Arc">Mehr Info</button></a>
+      <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+  </div>
+</div>
+
 
 <!-- example "ausgebucht":
 <div class="container left">
