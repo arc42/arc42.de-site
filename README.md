@@ -162,6 +162,35 @@ document.getElementById("main_body").style.display="block";
 
 It does NOT work if users disable JavaScript when already on the form... 
 
+## Timeline Course Management
+
+The `/termine` page uses a modular timeline system for easy course management:
+
+### Adding/Updating Courses
+Edit the `courses:` array in `_pages/termine.md` front matter:
+
+```yaml
+courses:
+  - type: "msa"                    # Course type: msa, msa_online, req4arc, improve, adoc
+    date: "2.-5. Dezember 2025"    # Course dates
+    location: "München"            # Location (omit for online courses)
+    anchor_id: "msa-dec-2025"      # Unique ID for deep linking
+    sold_out: true                 # Optional: marks course as sold out
+    pricing: "Frühbucherpreis: €2690"  # Optional: custom pricing text
+```
+
+### Deep Linking
+Each course gets a unique anchor: `https://arc42.de/termine#msa-dec-2025`
+
+### Course Types
+- `msa` - German MSA courses (in-person)
+- `msa_online` - English MSA courses (online, Wolfgang Reimesch)
+- `req4arc` - REQ4ARC courses
+- `improve` - IMPROVE courses
+- `adoc` - ADOC courses
+
+The system automatically handles left/right timeline positioning and consistent formatting.
+
 # Credits
 
 ## Site theme
