@@ -1,0 +1,26 @@
+{% comment %}
+Auto-alternating timeline course include.
+This include automatically alternates between left and right positions based on the course index.
+Usage: {% include timeline_auto.html courses=page.courses %}
+
+Where page.courses is an array of course objects with properties:
+- type, date, location, anchor_id, sold_out, pricing
+{% endcomment %}
+
+{% for course in include.courses %}
+  {% assign index = forloop.index %}
+  {% assign position = "right" %}
+  {% assign remainder = index | modulo: 2 %}
+  {% if remainder == 0 %}
+    {% assign position = "left" %}
+  {% endif %}
+  
+  {% include timeline_course.html 
+     type=course.type 
+     position=position 
+     date=course.date 
+     location=course.location 
+     anchor_id=course.anchor_id 
+     sold_out=course.sold_out 
+     pricing=course.pricing %}
+{% endfor %}

@@ -1,0 +1,26 @@
+{% assign position_class = include.position | default: "right" %}
+{% assign anchor_id = include.anchor_id | default: "msa-online" %}
+{% assign sold_out = include.sold_out | default: false %}
+
+<div class="container {{ position_class }}" id="{{ anchor_id }}"> 
+    <div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>
+        {{ include.date }} (online)<br>
+        <strong class="blue-head">Mastering Software Architectures<br>
+        (iSAQB CPSA-Foundation)<br></strong>
+        Please see our <a href="terms-en">terms and conditions.</a>
+        
+        {% if sold_out %}
+            <p style="color:red;">(Sold out, waiting list only)</p>
+        {% endif %}
+        
+        <p>Trainer: Wolfgang Reimesch.</p>
+        <p class="date-small">
+            Delegate Fee: €2100
+        </p>
+        
+        <a href="info-msa-EN"><button class="button buttonMSA">further info</button></a>
+        {% unless sold_out %}
+            <a href="anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
+        {% endunless %}
+    </div>
+</div>

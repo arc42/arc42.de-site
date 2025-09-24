@@ -1,0 +1,52 @@
+@startuml multicast
+
+title Webhook Post-Commit Hook - Push to Main Branch
+
+actor Developer
+participant "GitHub\nPublic Repo" as GitHub
+participant "Webhook\nEndpoint" as Webhook
+participant "Docs\nPublisher" as Docs
+participant "Slack\nNotification" as Slack
+participant "CI/CD\nPipeline" as CICD
+
+Developer -> GitHub: git push origin main
+activate GitHub
+
+note right of GitHub: Push event triggers\nwebhook configuration
+
+GitHub -> Webhook: POST /webhook\n(push event payload)
+activate Webhook
+
+note over Webhook: Parse webhook payload\nValidate push to main branch
+
+Webhook -> Docs: Trigger documentation build
+activate Docs
+Docs -> GitHub: Clone/fetch repository
+Docs -> Docs: Generate documentation
+Docs -> Docs: Deploy docs to hosting
+Docs --> Webhook: Build status
+deactivate Docs
+
+Webhook -> Slack: POST notification
+activate Slack
+note over Slack: Send message:\n"📖 Docs updated for repo/main"
+Slack --> Webhook: Notification sent
+deactivate Slack
+
+Webhook -> CICD: Trigger pipeline
+activate CICD
+CICD -> GitHub: Clone/fetch repository
+CICD -> CICD: Run tests
+CICD -> CICD: Build application
+CICD -> CICD: Deploy (if tests pass)
+CICD --> Webhook: Pipeline status
+deactivate CICD
+
+Webhook --> GitHub: HTTP 200 OK
+deactivate Webhook
+GitHub --> Developer: Push confirmed
+deactivate GitHub
+
+note over Developer: All services notified\nand triggered automatically
+
+@enduml
