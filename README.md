@@ -15,19 +15,31 @@ Uptime stats by [UptimeRobot](https://uptimerobot.com).
 ![Github issues total](https://badgen.net/github/issues/arc42/arc42.de-site)
 
 
+# Content
+
+ - [General Info](#General)
+ - [Local Development](#local-development)
+ - [Custom CSS](#custom-css)
+ - [Form Support](#form-support)
+ - [Spam Protection](#spam-protection)
+ - [Timeline for Courses](#timeline-for-courses)
+ - [Credits](#credits)
+
 
 # How does it work?
 
 ## General
-The site is build and created with Jekyll and Markdown. 
+The site is build and created with [Jekyll](https://jekyllrb.com) and Markdown. 
 It uses the MinimalMistakes template, with a few slight modifications
 
 * home.md is the homepage, it's mapped (via permalink) to "/".
-
+* Most content is organized in markdown files under the `_pages` directory (a convention from Jekyll).
+* 
 
 ## Local development
 
-> Prequisite: Local build uses a Docker container. You therefore have to have Docker installed. 
+> Prequisite: Local build uses a Docker container. 
+> You therefore have to have Docker installed. 
 
 1. checkout the repo
 2. run  `docker compose up`
@@ -38,14 +50,17 @@ It will start a local jekyll and will serve the generated content on `0.0.0.0:40
 ## Custom css
 
 * The timeline (in `/termine`) is based upon [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) 
+  * We configure the [timeline with yaml](#timeline-for-courses).
 * Some buttons are also based upon w3schools definition.
 
 Custom css is located in `/assets/css`, the required import statement in `/assets/css/main.scss`
 
 
-## Form support (for "Anmeldung") and Spam protection
+## Form support (for "Anmeldung") and 
 We use [formspark.io](formspark.io) as backend provider for our "Anmeldung".
 
+
+## Spam protection
 For spam protection within the form, we use [Botpoison](https://botpoison.com/),
 see especially their [getting started with HTML](https://botpoison.com/documentation/getting-started/html/) article:
 
@@ -162,7 +177,7 @@ document.getElementById("main_body").style.display="block";
 
 It does NOT work if users disable JavaScript when already on the form... 
 
-## Timeline Course Management
+## Timeline for Courses
 
 The `/termine` page uses a modular timeline system for easy course management:
 
@@ -179,6 +194,12 @@ courses:
     pricing: "Frühbucherpreis: €2690"  # Optional: custom pricing text
 ```
 
+>CAREFUL: This configuration is based upon YAML, and is therefore
+>sensitive to spaces and tabs.
+>Ensure you use **EXACTLY four spaces** for indentation.
+>Otherwise you will waste precious lifetime debugging yaml.
+
+
 ### Deep Linking
 Each course gets a unique anchor: `https://arc42.de/termine#msa-dec-2025`
 
@@ -190,6 +211,8 @@ Each course gets a unique anchor: `https://arc42.de/termine#msa-dec-2025`
 - `adoc` - ADOC courses
 
 The system automatically handles left/right timeline positioning and consistent formatting.
+
+
 
 # Credits
 
