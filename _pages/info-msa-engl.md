@@ -13,8 +13,8 @@ sidebar:
 
 ---
 
-<a href="/downloads/flyer-msa.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Course Description (pdf)</button></a>
-<a href="/anmeldung"><button class="button buttonAnmeldung">Sign up<br/>for the course</button></a>
+<a href="/downloads/flyer-msa-EN.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Course Description (pdf)</button></a>
+<a href="/anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
 <a href="/terms"><button class="button buttonTerms">Our<br>terms</button></a>
 
 
