@@ -20,9 +20,7 @@ Der Inhalt dieser Seite wird auf Github gepflegt, hauptsächlich in Markdown:
 
 
 
-Wir verwenden Jekyll als Site-Generator (ähnlich den bekannten github-pages).
-Als Build-Werkzeug und zum Deployment der Site verwenden wir [Netlify](https://netlify.com), weil wir dabei
-spezifische Informationen über einzelne Builds bzw. die dabei aufgetretenen Probleme erhalten.
+Wir verwenden Jekyll als Site-Generator. 
 
 ## Monitoring
 
@@ -32,14 +30,6 @@ Wir nutzen [UptimeRobot](https://uptimerobot.com) zum Monitoring der Site:
 ![](https://badgen.net/uptime-robot/week/m778709372-640fbdf765be9486dbffe066)
 ![](https://badgen.net/uptime-robot/month/m778709372-640fbdf765be9486dbffe066)
 ![](https://badgen.net/uptime-robot/response/m778709372-640fbdf765be9486dbffe066)
-
-
-## Build und Repo Status
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/801e5a9f-f256-478f-89fb-84c9d3df710f/deploy-status)](https://app.netlify.com/sites/arc42de-site/deploys)
-
-Build Status wird über Webhooks an einen privaten Slack-Channel weitergeleitet.
 
 
 ## Aktuelle Version dieser Site:

@@ -11,7 +11,7 @@ excerpt: "Unsere nächsten Schulungen."
 # Course data for auto-alternating timeline
 courses:
   - type: "req4arc"
-    date: "30.September - 2.Oktober 2025"
+    date: "30. September - 2. Oktober 2025"
     location: "Frankfurt"
     anchor_id: "req4arc-sep-2025"
   - type: "msa_online"
