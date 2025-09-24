@@ -1,0 +1,16 @@
+{% assign position_class = include.position | default: "right" %}
+{% assign anchor_id = include.anchor_id | default: "improve" %}
+
+<div class="container {{ position_class }}" id="{{ anchor_id }}">
+    <div class="content">
+        {{ include.date }}, {{ include.location }}<br>
+        <strong class="blue-head">IMPROVE<br> 
+        (CPSA-Advanced)</strong><br>
+        <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+        <p class="date-small">
+            Normalpreis: € 2200 (für unsere Alumni € 2050). 
+        </p>
+        <a href="info-improve"><button class="button buttonImprove">Mehr Info</button></a>
+        <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
+    </div>
+</div>
