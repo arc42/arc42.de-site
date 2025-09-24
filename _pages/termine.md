@@ -110,11 +110,5 @@ Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gel
 <!-- Auto-generated timeline using include files -->
 {% include timeline_auto.html courses=page.courses %}
 
-<!-- Alternative: Manual includes with explicit positioning -->
-<!-- 
-{% include timeline_course.html type="req4arc" position="right" date="30.September - 2.Oktober 2025" location="Frankfurt" anchor_id="req4arc-sep-2025" %}
-{% include timeline_course.html type="msa_online" position="left" date="14.-16. October 2025" anchor_id="msa-online-oct-2025" sold_out=true %}
-{% include timeline_course.html type="improve" position="right" date="25.-27. November 2025" location="Hamburg" anchor_id="improve-nov-2025" %}
--->
 
 </div>
