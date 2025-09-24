@@ -61,11 +61,7 @@ author:
   email            : info@arc42.org
   uri              : https://www.gernotstarke.de
   github           : arc42
-  google_plus      :
-  stackoverflow    :
-  twitter          : arc42Tipps
-  xing             : arc42
-
+  linkedin         : gernotstarke
 ## make the feed-url go away!!
 
 atom_feed:
@@ -94,6 +90,7 @@ exclude:
   - test/
   - arc42de-site.code-workspace
   - _docker-compose-dev.yml
+  - TIMELINE_SYSTEM.md
  
 
 keep_files:
