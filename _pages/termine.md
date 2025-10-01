@@ -10,10 +10,6 @@ excerpt: "Unsere nächsten Schulungen."
 
 # Course data for auto-alternating timeline
 courses:
-  - type: "req4arc"
-    date: "30. September - 2. Oktober 2025"
-    location: "Frankfurt"
-    anchor_id: "req4arc-sep-2025"
   - type: "msa_online"
     date: "14.-16. October 2025"
     anchor_id: "msa-online-oct-2025"
@@ -66,16 +62,21 @@ courses:
     anchor_id: "improve-jun-2026"
   - type: "msa"
     date: "8.-11. September 2026"
-    location: "Frankfurt"
+    location: "Frankfurt/Main"
     anchor_id: "msa-sep-2026"
     pricing: "Frühbucherpreis bei Anmeldung bis 8. Mai 2026: € 2690, Normalpreis: € 2890"
   - type: "req4arc"
     date: "15.-17. September 2026"
-    location: "Frankfurt"
+    location: "Frankfurt/Main"
     anchor_id: "req4arc-sep-2026"
   - type: "msa_online"
     date: "29.Sept.-1.Oct. 2026"
     anchor_id: "msa-online-sep-2026"
+  - type: "msa"
+    date: "1.-4. Dezember 2026"
+    location: "München"
+    anchor_id: "msa-dez-2026"
+    pricing: "Frühbucherpreis bei Anmeldung bis 8. August 2026: € 2690, Normalpreis: € 2890"
 ---
 
 <div class="ua-background" markdown="1">
