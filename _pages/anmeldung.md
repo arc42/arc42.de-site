@@ -45,7 +45,6 @@ excerpt: "Wir freuen uns auf Sie!"
 <select id="kurs" name="Kurs" required>
   
 
-  <option value="25-09 Req4Arc">Req4Arc, 30. Sep - 2.Okt 2025 Frankfurt</option>
   <option value="25-11 IMPROVE">IMPROVE, 25.-27. November 2025 Hamburg (Carola+Gernot)</option>
   <option value="26-01 MSA">Mastering SW Architectures, 26.-29. Jan 2026 München</option>
   <option value="26-02 MSA-EN">MSA, 24.-26. Feb. 2026 (online, English)</option>
