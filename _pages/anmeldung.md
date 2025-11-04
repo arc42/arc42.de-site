@@ -46,7 +46,6 @@ excerpt: "Wir freuen uns auf Sie!"
   
 
   <option value="25-11 IMPROVE">IMPROVE, 25.-27. November 2025 Hamburg (Carola+Gernot)</option>
-  <option value="26-01 MSA">Mastering SW Architectures, 2.-5. Dez 2025 München</option>
   <option value="26-01 MSA">Mastering SW Architectures, 26.-29. Jan 2026 München</option>
   <option value="26-02 MSA-EN">MSA, 24.-26. Feb. 2026 (online, English)</option>
   <option value="26-03 MSA">Mastering SW Architectures, 3.-6. März 2026 München</option>
