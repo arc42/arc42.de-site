@@ -191,6 +191,7 @@ courses:
     location: "München"            # Location (omit for online courses)
     anchor_id: "msa-dec-2025"      # Unique ID for deep linking
     sold_out: true                 # Optional: marks course as sold out
+    few_seats: "Nur noch wenige Plätze verfügbar"  # Optional: warning for limited availability
     pricing: "Frühbucherpreis: €2690"  # Optional: custom pricing text
 ```
 
