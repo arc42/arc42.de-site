@@ -1,6 +1,6 @@
 {% comment %}
 This include handles course rendering with manual position specification.
-Usage: {% include timeline_course.html type="msa" position="right" date="2.-5. Dezember 2025" location="München" anchor_id="msa-dec-2025" sold_out=true pricing="Frühbucherpreis: €2690" %}
+Usage: {% include timeline_course.html type="msa" position="right" date="2.-5. Dezember 2025" location="München" anchor_id="msa-dec-2025" sold_out=true few_seats="nur noch wenige Plätze verfügbar" pricing="Frühbucherpreis: €2690" %}
 
 Parameters:
 - type: Course type (msa, msa_online, req4arc, improve, adoc)
@@ -9,14 +9,15 @@ Parameters:
 - location: Course location (not needed for online courses)
 - anchor_id: Unique anchor for linking
 - sold_out: true/false (optional)
+- few_seats: Text to display for limited availability (optional)
 - pricing: Pricing information (optional)
 {% endcomment %}
 
 {% case include.type %}
   {% when "msa" %}
-    {% include timeline_msa.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id sold_out=include.sold_out pricing=include.pricing %}
+    {% include timeline_msa.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id sold_out=include.sold_out few_seats=include.few_seats pricing=include.pricing %}
   {% when "msa_online" %}
-    {% include timeline_msa_online.html position=include.position date=include.date anchor_id=include.anchor_id sold_out=include.sold_out %}
+    {% include timeline_msa_online.html position=include.position date=include.date anchor_id=include.anchor_id sold_out=include.sold_out few_seats=include.few_seats %}
   {% when "req4arc" %}
     {% include timeline_req4arc.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id %}
   {% when "improve" %}

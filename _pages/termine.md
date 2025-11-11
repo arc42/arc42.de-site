@@ -24,6 +24,7 @@ courses:
     location: "München"
     anchor_id: "msa-jan-2026"
     pricing: "Normalpreis: € 2890"
+    few_seats: "Nur noch wenige Plätze verfügbar"
   - type: "msa_online"
     date: "24.-26. February 2026"
     anchor_id: "msa-online-feb-2026"

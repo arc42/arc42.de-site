@@ -17,6 +17,10 @@
             <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
         {% endif %}
         
+        {% if include.few_seats %}
+            <p style="font-weight: bold; color: #ff6600;">{{ include.few_seats }}</p>
+        {% endif %}
+        
         {% if include.pricing %}
             <p class="date-small">
                 {{ include.pricing }}
