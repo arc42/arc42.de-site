@@ -13,6 +13,10 @@
             <p style="color:red;">(Sold out, waiting list only)</p>
         {% endif %}
         
+        {% if include.few_seats %}
+            <p style="font-weight: bold; color: #ff6600;">{{ include.few_seats }}</p>
+        {% endif %}
+        
         <p>Trainer: Wolfgang Reimesch.</p>
         <p class="date-small">
             Delegate Fee: €2100
