@@ -10,15 +10,6 @@ excerpt: "Unsere nächsten Schulungen."
 
 # Course data for auto-alternating timeline
 courses:
-  - type: "improve"
-    date: "25.-27. November 2025"
-    location: "Hamburg"
-    anchor_id: "improve-nov-2025"
-  - type: "msa"
-    date: "2.-5. Dezember 2025"
-    location: "München"
-    anchor_id: "msa-dec-2025"
-    sold_out: true
   - type: "msa"
     date: "26.-29. Januar 2026"
     location: "München"
