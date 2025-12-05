@@ -9,13 +9,15 @@ header:
 excerpt: "Unsere nächsten Schulungen."
 
 # Course data for auto-alternating timeline
+# attributes:
+# waiting_list:
 courses:
   - type: "msa"
     date: "26.-29. Januar 2026"
     location: "München"
     anchor_id: "msa-jan-2026"
     pricing: "Normalpreis: € 2890"
-    few_seats: "Nur noch wenige Plätze verfügbar"
+    sold_out: true 
   - type: "msa_online"
     date: "24.-26. February 2026"
     anchor_id: "msa-online-feb-2026"
@@ -23,7 +25,7 @@ courses:
     date: "3.-6. März 2026"
     location: "München"
     anchor_id: "msa-mar-2026"
-    pricing: "Frühbucherpreis bei Anmeldung bis 3. Dezember 2025: € 2690, Normalpreis: € 2890"
+    pricing: "Frühbucherpreis bei Anmeldung bis 10. Dezember 2025: € 2690, Normalpreis: € 2890"
   - type: "req4arc"
     date: "9.-11. März 2026"
     location: "München"
