@@ -52,7 +52,7 @@ courses:
     anchor_id: "improve-jun-2026"
   - type: "msa"
     date: "8.-11. September 2026"
-    location: "Frankfurt/Main"
+    location: "Mannheim"
     anchor_id: "msa-sep-2026"
     pricing: "Frühbucherpreis bei Anmeldung bis 8. Mai 2026: € 2690, Normalpreis: € 2890"
   - type: "req4arc"
