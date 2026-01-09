@@ -7,9 +7,15 @@
         <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
         <p>Effektive und sparsame Architekturdokumentation (mit Schwerpunkt arc42)</p>
         <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+        {% if include.pricing %}
+        <p class="date-small">
+            {{ include.pricing }}
+        </p>
+        {% else %}
         <p class="date-small">
             Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
         </p>
+        {% endif %}
         <a href="info-adoc"><button class="button buttonAdoc">Mehr Info</button></a>
         <a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
     </div>
