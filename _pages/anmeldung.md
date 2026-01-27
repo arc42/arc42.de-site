@@ -49,8 +49,6 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="26-03 MSA">Mastering SW Architectures, 3.-6. März 2026 München</option>
   <option value="26-03 Req4Arc">Req4Arc, 9.-11. März 2026, München</option>
   <option value="26-06 MSA">Mastering SW Architectures, 9.-12. Juni 2026, Mannheim</option>
-  <option value="26-06 ADOC">ADOC, 15.-16. Juni 2026, Mannheim</option>
-  <option value="26-06 Req4Arc">Req4Arc, 17.-19. Juni 2026, Mannheim</option>
   <option value="26-06 IMPROVE">IMPROVE, 23.-25. Juni 2026 Hamburg (Carola+Gernot)</option>
   <option value="26-06 MSA-EN">MSA, 23.-25. Jun. 2026 (online, English)</option>
   <option value="26-09 MSA">Mastering SW Architectures, 8.-11. Sep 2026 Frankfurt</option>
