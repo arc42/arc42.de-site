@@ -1,12 +1,18 @@
 {% assign position_class = include.position | default: "right" %}
 {% assign anchor_id = include.anchor_id | default: "adoc" %}
+{% assign trainer = include.trainer | default: "Peter Hruschka und Gernot Starke" %}
 
 <div class="container {{ position_class }}" id="{{ anchor_id }}">  
     <div class="content">
         {{ include.date }}, {{ include.location }}<br>
         <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
         <p>Effektive und sparsame Architekturdokumentation (mit Schwerpunkt arc42)</p>
-        <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+        <p>Trainer: {{ trainer }}.</p>
+        {% if include.credits %}
+        <p class="date-small">
+            CPSA-Credits: {{ include.credits }}
+        </p>
+        {% endif %}
         {% if include.pricing %}
         <p class="date-small">
             {{ include.pricing }}

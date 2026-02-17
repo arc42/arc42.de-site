@@ -7,6 +7,11 @@
         <strong class="blue-head">REQ4ARC <br>(CPSA-Advanced)</strong><br>
         <p>Ihr systematischer Weg zu besseren Anforderungen!</p>
         <p>Mit dem "dynamischen Duo" Peter Hruschka und Gernot Starke.</p>
+        {% if include.credits %}
+        <p class="date-small">
+            CPSA-Credits: {{ include.credits }}
+        </p>
+        {% endif %}
         <p class="date-small">
             Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
         </p>
