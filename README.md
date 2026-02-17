@@ -42,9 +42,16 @@ It uses the MinimalMistakes template, with a few slight modifications
 > You therefore have to have Docker installed. 
 
 1. checkout the repo
-2. run  `docker compose up`
+2. run `make help` to see available targets
+3. run `make dev`
 
-It will start a local jekyll and will serve the generated content on `0.0.0.0:4000`
+It will start a local jekyll and will serve the generated content on `0.0.0.0:4000`.
+
+Useful commands:
+
+* `make dev` starts Docker Compose
+* `make dev PORT=4001` starts on a different host port
+* `make clean` removes `_site`
 
 
 ## Custom css

@@ -4,7 +4,7 @@ This include automatically alternates between left and right positions based on 
 Usage: {% include timeline_auto.html courses=page.courses %}
 
 Where page.courses is an array of course objects with properties:
-- type, date, location, anchor_id, sold_out, pricing
+- type, date, location, anchor_id, sold_out, pricing, trainer, credits
 {% endcomment %}
 
 {% for course in include.courses %}
@@ -23,5 +23,7 @@ Where page.courses is an array of course objects with properties:
      anchor_id=course.anchor_id 
      sold_out=course.sold_out 
      few_seats=course.few_seats
-     pricing=course.pricing %}
+     pricing=course.pricing
+     trainer=course.trainer
+     credits=course.credits %}
 {% endfor %}

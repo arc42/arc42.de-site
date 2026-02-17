@@ -1,7 +1,7 @@
 ---
 title: "Termine"
 layout: splash
-permalink: /termine
+permalink: /termine/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
@@ -24,11 +24,18 @@ courses:
     date: "9.-11. März 2026"
     location: "München"
     anchor_id: "req4arc-mar-2026"
+    credits: "20 methodische und 10 kommunikative Punkte"
   - type: "msa"
     date: "9.-12. Juni 2026"
     location: "Mannheim"
     anchor_id: "msa-jun-2026"
     pricing: "Frühbucherpreis bei Anmeldung bis 12. Februar 2026: € 2690, Normalpreis: € 2890"
+  - type: "adoc_online"
+    date: "15.-16. Juni 2026"
+    anchor_id: "adoc-online-jun-2026"
+    trainer: "Wolfgang Reimesch"
+    pricing: "Normalpreis: € 1500"
+    credits: "20 methodische Punkte"
   - type: "msa_online"
     date: "23.-25. June 2026"
     anchor_id: "msa-online-jun-2026"
@@ -36,6 +43,7 @@ courses:
     date: "23.-25. Juni 2026"
     location: "Hamburg"
     anchor_id: "improve-jun-2026"
+    credits: "20 methodische und 10 technische Punkte"
   - type: "msa"
     date: "8.-11. September 2026"
     location: "Mannheim"
@@ -45,6 +53,7 @@ courses:
     date: "15.-17. September 2026"
     location: "Frankfurt/Main"
     anchor_id: "req4arc-sep-2026"
+    credits: "20 methodische und 10 kommunikative Punkte"
   - type: "msa_online"
     date: "29.Sept.-1.Oct. 2026"
     anchor_id: "msa-online-sep-2026"

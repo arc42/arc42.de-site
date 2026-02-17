@@ -1,6 +1,7 @@
 {% assign position_class = include.position | default: "right" %}
 {% assign anchor_id = include.anchor_id | default: "msa-online" %}
 {% assign sold_out = include.sold_out | default: false %}
+{% assign trainer = include.trainer | default: "Wolfgang Reimesch" %}
 
 <div class="container {{ position_class }}" id="{{ anchor_id }}"> 
     <div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>
@@ -17,7 +18,7 @@
             <p style="font-weight: bold; color: #ff6600;">{{ include.few_seats }}</p>
         {% endif %}
         
-        <p>Trainer: Wolfgang Reimesch.</p>
+        <p>Trainer: {{ trainer }}.</p>
         <p class="date-small">
             Delegate Fee: €2100
         </p>
