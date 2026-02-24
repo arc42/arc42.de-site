@@ -12,9 +12,6 @@ excerpt: "Unsere nächsten Schulungen."
 # attributes:
 # waiting_list:
 courses:
-  - type: "msa_online"
-    date: "24.-26. February 2026"
-    anchor_id: "msa-online-feb-2026"
   - type: "msa"
     date: "3.-6. März 2026"
     location: "München"
