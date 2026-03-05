@@ -45,7 +45,6 @@ excerpt: "Wir freuen uns auf Sie!"
 <select id="kurs" name="Kurs" required>
   
 
-  <option value="26-03 MSA">Mastering SW Architectures, 3.-6. März 2026 München</option>
   <option value="26-03 Req4Arc">Req4Arc, 9.-11. März 2026, München</option>
   <option value="26-06 MSA">Mastering SW Architectures, 9.-12. Juni 2026, Mannheim</option>
   <option value="26-02 ADOC-online">ADOC, 15.-16. Juni 2026 (online), Trainer Wolfgang Reimesch</option>

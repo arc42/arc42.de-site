@@ -12,11 +12,6 @@ excerpt: "Unsere nächsten Schulungen."
 # attributes:
 # waiting_list:
 courses:
-  - type: "msa"
-    date: "3.-6. März 2026"
-    location: "München"
-    anchor_id: "msa-mar-2026"
-    pricing: "Normalpreis: € 2890"
   - type: "req4arc"
     date: "9.-11. März 2026"
     location: "München"
