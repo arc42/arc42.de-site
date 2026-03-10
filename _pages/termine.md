@@ -1,7 +1,7 @@
 ---
 title: "Termine"
 layout: splash
-permalink: /termine/
+permalink: /termine
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
@@ -12,11 +12,6 @@ excerpt: "Unsere nächsten Schulungen."
 # attributes:
 # waiting_list:
 courses:
-  - type: "req4arc"
-    date: "9.-11. März 2026"
-    location: "München"
-    anchor_id: "req4arc-mar-2026"
-    credits: "20 methodische und 10 kommunikative Punkte"
   - type: "msa"
     date: "9.-12. Juni 2026"
     location: "Mannheim"
