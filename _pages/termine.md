@@ -16,7 +16,7 @@ courses:
     date: "9.-12. Juni 2026"
     location: "Mannheim"
     anchor_id: "msa-jun-2026"
-    pricing: "Frühbucherpreis bei Anmeldung bis 12. Februar 2026: € 2690, Normalpreis: € 2890"
+    pricing: "Normalpreis: € 2890"
   - type: "adoc_online"
     date: "15.-16. Juni 2026"
     anchor_id: "adoc-online-jun-2026"
