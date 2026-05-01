@@ -1,7 +1,7 @@
 ---
 title: "Termine"
 layout: splash
-permalink: /termine
+permalink: /termine/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
