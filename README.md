@@ -38,20 +38,36 @@ It uses the MinimalMistakes template, with a few slight modifications
 
 ## Local development
 
-> Prequisite: Local build uses a Docker container. 
-> You therefore have to have Docker installed. 
+> Prerequisite: Local build uses Docker. You need Docker installed, nothing else — no local Ruby or gems required.
 
-1. checkout the repo
-2. run `make help` to see available targets
-3. run `make dev`
+**First-time setup** (and whenever the `Gemfile` changes):
 
-It will start a local jekyll and will serve the generated content on `0.0.0.0:4000`.
+```bash
+make lock     # regenerate Gemfile.lock cleanly inside a one-shot Ruby container
+make build    # bake the gems into the Docker image
+```
 
-Useful commands:
+`make lock` runs in a clean `ruby:3.3-slim` container, so the lockfile is deterministic regardless of the host OS / arch. It registers both `x86_64-linux` and `aarch64-linux` platforms, which keeps Intel and Apple Silicon developers in sync. You only need to re-run it when you edit the `Gemfile`.
 
-* `make dev` starts Docker Compose
-* `make dev PORT=4001` starts on a different host port
-* `make clean` removes `_site`
+`make build` then `bundle install`s into the image's `/usr/local/bundle`. The dev server runs against those baked gems — never against anything on the host — so the host can't shadow them.
+
+**Start the dev server:**
+
+```bash
+make dev
+```
+
+Starts Jekyll on `http://localhost:4000`, watching for file changes. No gem installation happens at startup — it runs entirely from the cached image.
+
+All useful commands:
+
+* `make lock` — regenerate `Gemfile.lock` from scratch (run after `Gemfile` edits, or once if the lock is broken)
+* `make build` — build (or rebuild) the Docker image with all dependencies
+* `make dev` — start Jekyll locally (requires a prior `make build`)
+* `make dev PORT=4001` — start on a different port
+* `make down` — stop and remove the Docker Compose services
+* `make clean` — remove the generated `_site` directory
+* `make rebuild` — `clean` + `build` + `dev` (full reset)
 
 
 ## Custom css

@@ -1,0 +1,28 @@
+# Keep the build context small and deterministic.
+.git
+.gitignore
+.github
+
+# Jekyll build artifacts
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+
+# Editor / OS
+.idea
+.vscode
+*.iml
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Docker / Make output (never rebuild from these)
+.bundle
+vendor/bundle
+node_modules
+
+# Project docs that the Jekyll image doesn't need
+README.md
+TIMELINE_SYSTEM.md
+LICENSE-theme.txt
