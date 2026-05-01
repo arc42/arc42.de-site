@@ -1,7 +1,16 @@
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    build: .
+    image: arc42-jekyll
+    init: true                          # PID 1 reaper -> clean Ctrl-C
+    working_dir: /site
+    command: >
+      bundle exec jekyll serve
+        --host 0.0.0.0
+        --port 4000
+        --watch
+        --force_polling
     volumes:
-      - .:/site
+      - .:/site                         # live source edits
     ports:
       - '${JEKYLL_PORT:-4000}:4000'
