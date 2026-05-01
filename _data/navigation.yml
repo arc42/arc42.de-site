@@ -3,7 +3,7 @@ main:
   - title: "Übersicht"
     url: /overview
   - title: "Termine"
-    url: /termine
+    url: /termine/
   - title: Schulungen
     url: /schulungen
   - title: "Mehr..."
