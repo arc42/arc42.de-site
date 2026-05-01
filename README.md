@@ -51,13 +51,15 @@ make build    # bake the gems into the Docker image
 
 `make build` then `bundle install`s into the image's `/usr/local/bundle`. The dev server runs against those baked gems — never against anything on the host — so the host can't shadow them.
 
+The Minimal Mistakes theme is vendored into this repository. After `make build`, `make dev` starts from the cached Docker image and local theme files; it must not fetch the remote theme at startup.
+
 **Start the dev server:**
 
 ```bash
 make dev
 ```
 
-Starts Jekyll on `http://localhost:4000`, watching for file changes. No gem installation happens at startup — it runs entirely from the cached image.
+Starts Jekyll on `http://localhost:4000`, watching for file changes. No gem installation or remote theme download happens at startup — it runs from the cached image and local repository files.
 
 All useful commands:
 
@@ -65,9 +67,30 @@ All useful commands:
 * `make build` — build (or rebuild) the Docker image with all dependencies
 * `make dev` — start Jekyll locally (requires a prior `make build`)
 * `make dev PORT=4001` — start on a different port
+* `make test-theme` — build with Docker networking disabled and assert that local theme files are sufficient
 * `make down` — stop and remove the Docker Compose services
 * `make clean` — remove the generated `_site` directory
 * `make rebuild` — `clean` + `build` + `dev` (full reset)
+
+### Offline theme check
+
+Run this after changing theme files, Jekyll configuration, or Docker dependencies:
+
+```bash
+make test-theme
+```
+
+The check runs the already-built `arc42-jekyll` image with Docker networking disabled. It fails if Jekyll logs indicate a remote theme fetch, a missing Liquid include/layout, or if representative generated pages such as `/`, `/overview`, `/termine/`, `/anmeldung`, `/about`, `/articles`, `/recommendations`, `/gallery`, or `/videos` are missing.
+
+### Updating the vendored theme
+
+The site vendors Minimal Mistakes `4.24.0` locally instead of using `remote_theme`. To update the theme later:
+
+1. Download the exact upstream Minimal Mistakes release you want to use.
+2. Copy upstream additions into `_layouts`, `_includes`, `_sass`, `_data`, and `assets/js`.
+3. Preserve local overrides such as `_includes/head.html`, `_includes/masthead.html`, `_includes/footer.html`, custom timeline includes, custom feature-row includes, and `assets/css/main.scss`.
+4. Run a clean build and smoke-check `/`, `/overview`, `/termine`, `/anmeldung`, `/about`, `/articles`, `/recommendations`, `/gallery`, and `/videos`.
+5. Start `make dev` without network access after `make build` to verify no remote theme fetch is required.
 
 
 ## Custom css
