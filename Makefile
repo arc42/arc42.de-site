@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-.PHONY: help lock build dev down clean rebuild
+.PHONY: help lock build dev down clean test-theme rebuild
 
 PORT ?= 4000
 
@@ -19,6 +19,8 @@ help:
 	@echo "  dev      Start the Jekyll dev server          (PORT=$(PORT) by default)"
 	@echo "  down     Stop and remove the Compose services"
 	@echo "  clean    Remove generated Jekyll output (_site)"
+	@echo "  test-theme"
+	@echo "           Build the site offline and assert local theme files are used"
 	@echo "  rebuild  clean + build + dev (full reset)"
 
 # Regenerate Gemfile.lock from scratch so platforms (aarch64-linux + x86_64-linux)
@@ -52,5 +54,29 @@ down:
 
 clean:
 	rm -rf _site
+
+test-theme:
+	@echo ">> Building with Docker networking disabled..."
+	docker run --rm --network none \
+	    -v "$(CURDIR):/site" \
+	    -w /site \
+	    arc42-jekyll \
+	    sh -c 'set -e; \
+	           bundle exec jekyll build --trace > /tmp/jekyll-build.log 2>&1; \
+	           cat /tmp/jekyll-build.log; \
+	           if grep -E "Remote Theme|remote_theme|GitHub fetch|Liquid Exception|Could not locate" /tmp/jekyll-build.log; then \
+	               echo "Unexpected remote theme fetch or missing theme file"; \
+	               exit 1; \
+	           fi; \
+	           test -f _site/index.html; \
+	           test -f _site/overview.html; \
+	           test -f _site/termine/index.html; \
+	           test -f _site/anmeldung.html; \
+	           test -f _site/about.html; \
+	           test -f _site/articles.html; \
+	           test -f _site/recommendations.html; \
+	           test -f _site/gallery.html; \
+	           test -f _site/videos.html; \
+	           test -f _site/assets/js/main.min.js'
 
 rebuild: clean build dev
