@@ -2,7 +2,7 @@
 title: "Systematische Architekturdokumentation (ADOC)"
 layout: single
 classes: wide
-permalink: /info-adoc
+permalink: /info-adoc/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/learn-header-helloquence.jpg
@@ -15,8 +15,8 @@ sidebar:
 ---
 
 <a href="/downloads/flyer-adoc.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonAdoc">Download<br/>Kursbeschreibung (pdf)</button></a>
-<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
-<a href="/terms"><button class="button buttonTerms">Unsere<br>AGB</button></a>
+<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
+<a href="/terms/"><button class="button buttonTerms">Unsere<br>AGB</button></a>
 
 In diesem praxisorientierten Hands-on Training lernen Sie, unter praktischen Randbedingungen (Zeit- und Kostendruck) angemessene Dokumentation für verschiedene Zielgruppen zu erstellen und zu pflegen.
 
@@ -53,8 +53,8 @@ Büchern „arc42 in Aktion“ und „arc42 by Example“.
 
 ### und nun...
 
-<a href="/anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="/termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<a href="/termine/"><button class="button buttonRoyalBlue">Termine</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 
 

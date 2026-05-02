@@ -2,7 +2,7 @@
 title: "Mastering Software Architectures"
 layout: single
 classes: wide
-permalink: /info-msa-EN
+permalink: /info-msa-EN/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/learn-header-helloquence.jpg
@@ -14,8 +14,8 @@ sidebar:
 ---
 
 <a href="/downloads/flyer-msa-EN.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Course Description (pdf)</button></a>
-<a href="/anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
-<a href="/terms"><button class="button buttonTerms">Our<br>terms</button></a>
+<a href="/anmeldungEN/"><button class="button buttonAnmeldung">Registration</button></a>
+<a href="/terms/"><button class="button buttonTerms">Our<br>terms</button></a>
 
 
 # Mastering Software Architectures <br><sup>Pragmatic, effective Software Architectures</sup>
@@ -106,8 +106,8 @@ We have successfully prepared more than 3000 persons for the exam in the last co
 
 ### and now...
 
-<a href="/anmeldungEN"><button class="button buttonAnmeldung">Registration</button></a>
-<a href="/termine"><button class="button buttonRoyalBlue">Dates</button></a>
+<a href="/anmeldungEN/"><button class="button buttonAnmeldung">Registration</button></a>
+<a href="/termine/"><button class="button buttonRoyalBlue">Dates</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 
 

@@ -7,7 +7,7 @@ layout: single
 toc: right
 toc_label: "Titel"
 
-permalink: /articles
+permalink: /articles/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/magazines-unsplash.jpg
@@ -58,7 +58,7 @@ Peter Hruschka und Gernot Starke
 Ersticken Sie manchmal in Details und wünschen sich mehr Überblick?
 Wir haben viele Projekte und Entwicklungsteams erlebt, die jede Menge ganz detaillierte Anforderungen vorliegen hatten. Um eine solche Menge an (Detail-)Anforderungen effektiv bearbeiten zu können, brauchen Sie Überblick. 
 
-[Zum kompletten Artikel](/articles/2022-11-requirements-overview)
+[Zum kompletten Artikel](/articles/2022-11-requirements-overview/)
 
 
 ## Sparsame Dokumentation
@@ -128,8 +128,7 @@ Wir teilen die (verbreitete) Meinung, dass Softwarearchitekten Technologie gut k
 Softwarearchitekten müssen darüber hinaus über eine Vielzahl weiterer Fähigkeiten verfügen und entsprechende Aufgaben erledigen können. 
 Die verantwortungsbewussten Über-den-Tellerrand-Gucker bilden in Projekten ein wichtiges Bindeglied zwischen unterschiedlichen Stakeholdergruppen wie Managern, Requirements-Engineers, Entwicklungsteams, Testern und Administratoren oder Hardware-Ingenieuren. 
 
-<a href="https://www.arc42.de/downloads/zehnkaempfer.pdf" target="_blank" rel="noopener noreferrer nofollow">Download (als pdf, von arc42.de)</a>
+<a href="/downloads/zehnkaempfer.pdf" target="_blank" rel="noopener noreferrer nofollow">Download (als pdf, von arc42.de)</a>
 
 
  
-

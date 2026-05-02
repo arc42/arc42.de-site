@@ -73,7 +73,7 @@ Unsere Schulungen sind iSAQB akkreditiert.
 
 
 Nachfolgend unsere nächsten Termine mit Austragungsorten.
-Bitte beachten Sie unsere <a href="/terms">Geschäftsbedingungen</a>. Preise gelten jeweils für eine Person, zuzüglich der jeweils geltenden Mehrwertsteuer.
+Bitte beachten Sie unsere <a href="/terms/">Geschäftsbedingungen</a>. Preise gelten jeweils für eine Person, zuzüglich der jeweils geltenden Mehrwertsteuer.
 
 
 <hr>

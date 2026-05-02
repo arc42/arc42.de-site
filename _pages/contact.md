@@ -1,7 +1,7 @@
 ---
 title: "Kontaktieren Sie uns - wir freuen uns drauf!"
 layout: single
-permalink: /contact
+permalink: /contact/
 header:
   overlay_image: /images/splash/unsplash-contact-pavan-trikutam.jpg
   overlay_filter: rgba(15, 80, 180, 0.6)
@@ -36,6 +36,6 @@ insbesondere falls Sie uns über einen unverschlüsselten Kanal kontaktiert habe
 * bei [<i class="fab fa-fw fa-stack-overflow"></i>Stackoverflow](https://stackoverflow.com/questions/tagged/arc42)
 
 
-Bitte beachten Sie unser Hinweise zum <a href="{{ site.baseurl }}/imprint">Datenschutz.</a>
+Bitte beachten Sie unser Hinweise zum <a href="{{ site.baseurl }}/imprint/">Datenschutz.</a>
 
 

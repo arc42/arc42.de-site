@@ -3,14 +3,14 @@ title: "Unser Schulungsangebot"
 layout: single
 classes: wide
 
-permalink: /schulungen
+permalink: /schulungen/
 header:
 
   overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
   caption: "Photo: [**Tom van Hoogstraten**](https://unsplash.com/@grafish)"
   actions: 
       - label: "Bildergalerie"
-        url: /gallery
+        url: /gallery/
 
 excerpt: "Praxisorientiert, effektiv und pragmatisch."
 
@@ -32,15 +32,15 @@ sidebar:
 
 ## Unser Angebot: Grundlagen und fortgeschrittene Themen
 
-<a href="info-msa"><button class="button buttonMSA msa">
+<a href="/info-msa/"><button class="button buttonMSA msa">
 Mastering Software Architectures:<br/>Effektive Softwarearchitekturen - praxisnah!</button></a>
 
 <p/>
-<a href="info-req4arc"><button class="margin_bottom_mobile button buttonReq4Arc button25">
+<a href="/info-req4arc/"><button class="margin_bottom_mobile button buttonReq4Arc button25">
 REQ4ARC: <br/>bessere Anforderungen</button></a>
-<a href="info-improve"><button class="button buttonImprove button25">
+<a href="/info-improve/"><button class="button buttonImprove button25">
 IMPROVE: <br/>Systeme verbessern</button></a>
-<a href="info-adoc"><button class="button buttonAdoc button25">
+<a href="/info-adoc/"><button class="button buttonAdoc button25">
 ADOC: <br/>Architekturdokumentation</button></a>
 
 
@@ -78,7 +78,7 @@ Dieses breite Erfahrungsspektrum bietet Teilnehmenden die perfekte Möglichkeit,
 
 ### und nun...
 
-<a href="anmeldung"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung</button></a>
+<a href="/termine/"><button class="button buttonRoyalBlue">Termine</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 

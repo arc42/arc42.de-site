@@ -2,7 +2,7 @@
 title: "Registration"
 layout: single
 classes: wide
-permalink: /anmeldungEN
+permalink: /anmeldungEN/
 
 botpoison: nospam
 
@@ -82,11 +82,11 @@ In case you register more than one person, please state their names in the comme
 
 <input type="hidden"
     name="_redirect"
-    value="{{ '/anmeldung-erfolg' | absolute_url }}"
+    value="{{ '/anmeldung-erfolg/' | absolute_url }}"
   />  
 <input type="hidden" 
     name="_error" 
-    value="{{ '/anmeldung-fail' | absolute_url }}" 
+    value="{{ '/anmeldung-fail/' | absolute_url }}" 
   />
 
   

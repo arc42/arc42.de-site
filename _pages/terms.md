@@ -2,7 +2,7 @@
 title: "Allgemeine Geschäftsbedingungen"
 layout: single
 classes: wide
-permalink: /terms
+permalink: /terms/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/markus-winkler-TtJ0CLjLi6w-unsplash.jpg

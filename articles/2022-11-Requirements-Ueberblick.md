@@ -5,7 +5,7 @@ layout: single
 toc: right
 toc_label: "Inhalt"
 
-permalink: /articles/2022-11-requirements-overview
+permalink: /articles/2022-11-requirements-overview/
 header:
   overlay_filter: rgba(15, 150, 150, 0.8)
   overlay_image: /images/splash/magazines-unsplash.jpg
@@ -100,7 +100,7 @@ Leider können Sie aber auf Basis solcher Details kaum sinnvolle Architekturents
 
 1. Requirements-for-Architects [(REQ4ARC) von iSAQB](https://www.isaqb.org/de/zertifizierungen/zertifizierungen-uebersicht/cpsa-advanced-level/req4arc-requirements-fuer-softwarearchitekten/)
 2. P.Hruschka & G.Starke: Requirements Skills erfolgreicher Softwareteams. [Das Buch zum REQ4ARC Lehrplan](https://leanpub.com/requirements-skills)
-3. [REQ4ARC Workshops und Training](https://arc42.de/termine)
+3. [REQ4ARC Workshops und Training](https://arc42.de/termine/)
 
 
 ## Auflösung: Der Gesamtüberblick
