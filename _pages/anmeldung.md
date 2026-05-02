@@ -2,7 +2,7 @@
 title: "Anmeldung"
 layout: single
 classes: wide
-permalink: /anmeldung
+permalink: /anmeldung/
 
 botpoison: nospam
 
@@ -48,7 +48,6 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="26-06 ADOC-online">ADOC, 15.-16. Juni 2026 (online), Trainer Wolfgang Reimesch</option>
   <option value="26-06 IMPROVE">IMPROVE, 23.-25. Juni 2026 Hamburg (Carola+Gernot)</option>
   <option value="26-06 MSA-EN">MSA, 23.-25. Jun. 2026 (online, English)</option>
-  <option value="26-09 MSA">Mastering SW Architectures, 8.-11. Sep 2026 Frankfurt</option>
   <option value="26-09 Req4Arc">Req4Arc, 15.-17. Sep. 2026, Frankfurt</option>
   <option value="26-09 MSA-EN">MSA, 29.Sep.-1.Okt. 2026 (online, English)</option>
   <option value="26-06 IMPROVE">IMPROVE, 24.-26. Nov 2026 Hamburg (Carola+Gernot)</option>
@@ -87,11 +86,11 @@ Falls Sie mehr als eine Person anmelden, schreiben Sie die weiteren Namen als Be
 
 <input type="hidden"
     name="_redirect"
-    value="{{ '/anmeldung-erfolg' | absolute_url }}"
+    value="{{ '/anmeldung-erfolg/' | absolute_url }}"
   />  
 <input type="hidden" 
     name="_error" 
-    value="{{ '/anmeldung-fail' | absolute_url }}" 
+    value="{{ '/anmeldung-fail/' | absolute_url }}" 
   />
 
   

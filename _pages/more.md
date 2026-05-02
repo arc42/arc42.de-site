@@ -2,7 +2,7 @@
 title: "Mehr..."
 layout: splash
 
-permalink: /more
+permalink: /more/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/publications-unsplash.jpg
@@ -13,17 +13,17 @@ header:
    - label: "FAQ"
      url: https://faq.arc42.org
    - label: "Bücher"
-     url: /books
+     url: /books/
    - label: "Empfohlene Lektüre"
-     url: /recommendations
+     url: /recommendations/
    - label: "Artikel"
-     url: "/articles"
+     url: "/articles/"
    - label: "Videos"
-     url: /videos  
+     url: /videos/  
    - label: "Vorträge"
-     url: /talks 
+     url: /talks/ 
    - label: "Unsere AGB"
-     url: /terms
+     url: /terms/
 
 excerpt: "wir schreiben und sprechen über Architektur...<span style='font-size:80px;'>&#128521;</span>"
 
@@ -50,7 +50,7 @@ books_feature:
     alt: "Mehrere Bücher in einem Buchregal"
     title: "Bücher"
     excerpt: 'Wir haben über 25 Bücher geschrieben, von der Anforderungsklärung, Business-Analyse, Architektur, Dokumentation, Verhaltensmuster (Knigge) bis zu Patterns.'
-    url: /books
+    url: /books/
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
 
@@ -61,7 +61,7 @@ videos_feature:
     title: "Videos"
     excerpt: 'Mehrfach sind unsere Konferenzvorträge aufgezeichnet worden, oder wir haben uns selbst als Produzenten versucht... 
     Immerhin besitzt arc42 einen eigenen [Youtube-channel](https://www.youtube.com/arc42-video/)... '
-    url: /videos
+    url: /videos/
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
 
@@ -71,7 +71,7 @@ articles_feature:
     title: "Artikel"
     excerpt: "Mehr als hundert Fachartikel in diversen Zeitschriften. Unter anderem unsere mehrjährige Kolumne 'Knigge für Softwarearchitektur', 
     die Kolumne 'Req4Arcs', oder die Kolumne 'Hitchhikers Guide to Documentation'. Viele davon sind online verfügbar."
-    url: /articles
+    url: /articles/
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
 
@@ -80,7 +80,7 @@ talks_feature:
     alt: "Gernot Starke auf der Bühne bei einem Vortrag"
     title: "Vorträge"
     excerpt: 'Wir halten Vorträge auf Konferenzen, zu Architektur, Methodik, Vorgehen, Reviews und weiteren Themen.'
-    url: /talks
+    url: /talks/
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
 

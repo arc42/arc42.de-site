@@ -1,6 +1,6 @@
 ---
 title: Imprint & Privacy
-permalink: /imprint
+permalink: /imprint/
 layout: splash
 
 header:

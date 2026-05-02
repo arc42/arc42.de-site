@@ -1,13 +1,13 @@
 ---
 title: "Über uns (und arc42)!"
 layout: single
-permalink: /about
+permalink: /about/
 header:
   overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
 sidebar:
   nav: "about"
 
-canonical_url: https://www.arc42.org/about
+canonical_url: https://www.arc42.org/about/
 
 gallery:
   - url: /images/photos/portraits/DSCF7968.jpg-1920.webp

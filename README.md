@@ -80,7 +80,9 @@ Run this after changing theme files, Jekyll configuration, or Docker dependencie
 make test-theme
 ```
 
-The check runs the already-built `arc42-jekyll` image with Docker networking disabled. It fails if Jekyll logs indicate a remote theme fetch, a missing Liquid include/layout, or if representative generated pages such as `/`, `/overview`, `/termine/`, `/anmeldung`, `/about`, `/articles`, `/recommendations`, `/gallery`, or `/videos` are missing.
+The check runs the already-built `arc42-jekyll` image with Docker networking disabled. It fails if Jekyll logs indicate a remote theme fetch, a missing Liquid include/layout, or if representative generated pages such as `/`, `/overview/`, `/termine/`, `/anmeldung/`, `/about/`, `/articles/`, `/recommendations/`, `/gallery/`, or `/videos/` are missing.
+
+Internal page routes use directory-style URLs with trailing slashes, for example `permalink: /imprint/` and links such as `/imprint/`. This keeps local Jekyll development, GitHub Pages, and generated links aligned. `make test-theme` also fails if a future change reintroduces top-level `name.html` page output, generated internal links without the trailing slash, stale sitemap URLs, or same-site navigation links that point at `0.0.0.0`, `www.arc42.de`, or absolute `https://arc42.de/...` anchors.
 
 ### Updating the vendored theme
 
@@ -89,13 +91,13 @@ The site vendors Minimal Mistakes `4.24.0` locally instead of using `remote_them
 1. Download the exact upstream Minimal Mistakes release you want to use.
 2. Copy upstream additions into `_layouts`, `_includes`, `_sass`, `_data`, and `assets/js`.
 3. Preserve local overrides such as `_includes/head.html`, `_includes/masthead.html`, `_includes/footer.html`, custom timeline includes, custom feature-row includes, and `assets/css/main.scss`.
-4. Run a clean build and smoke-check `/`, `/overview`, `/termine`, `/anmeldung`, `/about`, `/articles`, `/recommendations`, `/gallery`, and `/videos`.
+4. Run a clean build and smoke-check `/`, `/overview/`, `/termine/`, `/anmeldung/`, `/about/`, `/articles/`, `/recommendations/`, `/gallery/`, and `/videos/`.
 5. Start `make dev` without network access after `make build` to verify no remote theme fetch is required.
 
 
 ## Custom css
 
-* The timeline (in `/termine`) is based upon [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) 
+* The timeline (in `/termine/`) is based upon [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) 
   * We configure the [timeline with yaml](#timeline-for-courses).
 * Some buttons are also based upon w3schools definition.
 
@@ -127,7 +129,7 @@ by adding the following yaml to `anmeldung.md`:
 ---
 title: "Anmeldung"
 layout: single
-permalink: /anmeldung
+permalink: /anmeldung/
 
 botpoison: nospam
 
@@ -225,7 +227,7 @@ It does NOT work if users disable JavaScript when already on the form...
 
 ## Timeline for Courses
 
-The `/termine` page uses a modular timeline system for easy course management:
+The `/termine/` page uses a modular timeline system for easy course management:
 
 ### Adding/Updating Courses
 Edit the `courses:` array in `_pages/termine.md` front matter:
@@ -248,7 +250,7 @@ courses:
 
 
 ### Deep Linking
-Each course gets a unique anchor: `https://arc42.de/termine#msa-dec-2025`
+Each course gets a unique anchor: `https://arc42.de/termine/#msa-dec-2025`
 
 ### Course Types
 - `msa` - German MSA courses (in-person)

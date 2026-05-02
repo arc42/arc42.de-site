@@ -2,7 +2,7 @@
 title: "Terms and Conditions"
 layout: single
 classes: wide
-permalink: /terms-en
+permalink: /terms-en/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/markus-winkler-TtJ0CLjLi6w-unsplash.jpg

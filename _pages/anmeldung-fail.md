@@ -2,7 +2,7 @@
 title: "OOPS!"
 layout: single
 classes: wide
-permalink: /anmeldung-fail
+permalink: /anmeldung-fail/
 
 header:
   overlay_filter: rgba(255, 0, 0, 0.5)
@@ -30,6 +30,6 @@ Wir bearbeiten Anmeldungen _von Hand_ - es könnte also etwas dauern...
 
 ### und nun...
 
-<a href="termine"><button class="button buttonRoyalBlue">Termine</button></a>
+<a href="/termine/"><button class="button buttonRoyalBlue">Termine</button></a>
 <a href="/"><button class="button buttonHome">Home</button></a>
 

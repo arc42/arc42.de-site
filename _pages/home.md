@@ -8,9 +8,9 @@ header:
   overlay_image: /images/splash/arc42-splash-landingpage.jpg
   actions: 
     - label: "Übersicht"
-      url: /overview
+      url: /overview/
     - label: "Kontakt"
-      url: /contact
+      url: /contact/
     - label: "&#8594; English site..."
       url: "https://arc42.org"
 excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei."
@@ -21,7 +21,7 @@ template_training_news:
   - title: "Template"
     excerpt: "![Schrank mit 12 Schubladen](/images/home/template.webp)<br> Wir liefern Ihnen das arc42-Template für Architekturdokumentation - **Open Source, pragmatisch, kostenfrei**.
     Sie füllen es mit Ihren Architekturentscheidungen - **Einfach, effektiv und schmerzfrei**."
-    url: "/overview"
+    url: "/overview/"
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
     
@@ -31,9 +31,9 @@ template_training_news:
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor.<br>
     <br>
-    <a href='anmeldung'><button class='button buttonAnmeldung margin_bottom'>Anmeldung</button></a>
-    <a href='/schulungen'><button class='button buttonGrey margin_bottom'>Schulungen</button></a>
-    <a href='/gallery'><button class='button buttonBlue'>Impressionen</button></a>
+    <a href='/anmeldung/'><button class='button buttonAnmeldung margin_bottom'>Anmeldung</button></a>
+    <a href='/schulungen/'><button class='button buttonGrey margin_bottom'>Schulungen</button></a>
+    <a href='/gallery/'><button class='button buttonBlue'>Impressionen</button></a>
     "
     
     
@@ -43,9 +43,9 @@ template_training_news:
     
      * Verfügbar in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Tschechisch, Portugiesisch und Ukrainisch)
 
-     * Lesen Sie unseren Artikel [Handeln statt jammern](/articles#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
+     * Lesen Sie unseren Artikel [Handeln statt jammern](/articles/#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
-    * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/books#arc42-by-example-vol2).
+    * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/books/#arc42-by-example-vol2).
     "
 
 methode_publications_canvas:
@@ -53,7 +53,7 @@ methode_publications_canvas:
     excerpt: "![ToDo - Doing - Done Zettel](/images/home/method.webp)<br>
     arc42 ist systematisch aber flexibel. Passend für große und kleine Teams in iterativen 
     oder weniger agilen Prozessen."
-    url: "/method"
+    url: "/method/"
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"  
 
@@ -62,14 +62,14 @@ methode_publications_canvas:
     Es gibt viel zu lesen über arc42 und Architektur. Von der Methode über _good practices_
     bis hin zu kompletten Beispielen von Softwarearchitekturen.<br>
     Stöbern Sie in unseren Büchern, Artikeln, Vorträgen oder Videos."
-    url: "/more"
+    url: "/more/"
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"
   
   - title: "Canvas"
     excerpt: "![arc42 Canvas](/images/home/canvas-overview-850.webp)<br>
     Die kürzestmögliche Form der technischen Dokumentation, der Elevator-Pitch. Das Wichtigste auf einer einzigen Seite"
-    url: "/canvas"
+    url: "/canvas/"
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"
 ---
@@ -95,6 +95,6 @@ arc42 unterstützt **beliebige Technologien und Werkzeuge**.
 
 arc42 ist vollständig prozessagnostisch und eignet sich besonders gut für **schlanke und agile** Entwicklungsansätze.
 
-arc42 ist **Open-Source** und Sie können es kommerziell und privat  **kostenfrei** nutzen. Details finden Sie auf unserer [Lizenzseite](/license).
+arc42 ist **Open-Source** und Sie können es kommerziell und privat  **kostenfrei** nutzen. Details finden Sie auf unserer [Lizenzseite](/license/).
 
 
