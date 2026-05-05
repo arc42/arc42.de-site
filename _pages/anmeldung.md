@@ -50,7 +50,7 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="26-06 MSA-EN">MSA, 23.-25. Jun. 2026 (online, English)</option>
   <option value="26-09 Req4Arc">Req4Arc, 15.-17. Sep. 2026, Frankfurt</option>
   <option value="26-09 MSA-EN">MSA, 29.Sep.-1.Okt. 2026 (online, English)</option>
-  <option value="26-06 IMPROVE">IMPROVE, 24.-26. Nov 2026 Hamburg (Carola+Gernot)</option>
+  <option value="26-09 IMPROVE">IMPROVE, 24.-26. Nov 2026 Hamburg (Carola+Gernot)</option>
   <option value="26-12 MSA">Mastering SW Architectures, 1.-4. Dez 2026 (München)</option>
   <option value="sonstige">Sonstige</option>
 </select>
