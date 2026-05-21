@@ -31,6 +31,7 @@ courses:
     location: "Hamburg"
     anchor_id: "improve-jun-2026"
     credits: "20 methodische und 10 technische Punkte"
+    sold_out: true
   - type: "req4arc"
     date: "15.-17. September 2026"
     location: "Frankfurt/Main"
