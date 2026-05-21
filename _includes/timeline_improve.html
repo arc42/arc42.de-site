@@ -1,21 +1,30 @@
 {% assign position_class = include.position | default: "right" %}
 {% assign anchor_id = include.anchor_id | default: "improve" %}
+{% assign sold_out = include.sold_out | default: false %}
 
 <div class="container {{ position_class }}" id="{{ anchor_id }}">
-    <div class="content">
+    <div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>
         {{ include.date }}, {{ include.location }}<br>
-        <strong class="blue-head">IMPROVE<br> 
+        <strong class="blue-head">IMPROVE<br>
         (CPSA-Advanced)</strong><br>
         <p>Mit Gernot Starke (INNOQ Fellow) und Carola Lilienthal (WPS)</p>
+        {% if sold_out %}
+            <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
+        {% endif %}
+        {% if include.few_seats %}
+            <p style="font-weight: bold; color: #ff6600;">{{ include.few_seats }}</p>
+        {% endif %}
         {% if include.credits %}
         <p class="date-small">
             CPSA-Credits: {{ include.credits }}
         </p>
         {% endif %}
         <p class="date-small">
-            Normalpreis: € 2200 (für unsere Alumni € 2050). 
+            Normalpreis: € 2200 (für unsere Alumni € 2050).
         </p>
         <a href="/info-improve/"><button class="button buttonImprove">Mehr Info</button></a>
-        <a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung</button></a>
+        {% unless sold_out %}
+            <a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung</button></a>
+        {% endunless %}
     </div>
 </div>

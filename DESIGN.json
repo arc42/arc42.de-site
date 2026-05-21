@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-02T10:00:00.000Z",
+  "title": "Design System: arc42",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Slate Blue", "canonical": "#374769", "tonalRamp": ["#10151f", "#1c2436", "#27334d", "#374769", "#58698d", "#7c8cae", "#a5b1cd", "#d0d7e7"] },
+      "secondary": { "role": "secondary", "displayName": "Action Tomato", "canonical": "#ff6347", "tonalRamp": ["#4d0b00", "#801200", "#b31a00", "#ff3311", "#ff6347", "#ff8f7a", "#ffbbae", "#ffe6e1"] }
+    },
+    "typographyMeta": {
+      "body": { "displayName": "System Sans", "purpose": "Default reading text for technical documentation." }
+    },
+    "shadows": [
+      { "name": "hover-lift", "value": "0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)", "purpose": "Aggressive shadow used exclusively on button hover." }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "600px" },
+      { "name": "lg", "value": "750px" },
+      { "name": "xl", "value": "1200px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Standard action button. Utilitarian and clear.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">BUTTON TEXT</button>",
+      "css": ".ds-btn { font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', sans-serif; border: none; padding: 10px 22px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; border-radius: 8px; transition-duration: 0.4s; cursor: pointer; } .ds-btn-primary { background-color: #374769; color: white; } .ds-btn-primary:hover { background-color: #4b7ba3; color: #EEE8AA; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); }"
+    },
+    {
+      "name": "Anmeldung Button",
+      "kind": "button",
+      "refersTo": "button-anmeldung",
+      "description": "High-priority conversion button.",
+      "html": "<button class=\"ds-btn ds-btn-anmeldung\">ANMELDUNG</button>",
+      "css": ".ds-btn { font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', sans-serif; border: none; padding: 10px 22px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; font-weight: bold; border-radius: 8px; transition-duration: 0.4s; cursor: pointer; } .ds-btn-anmeldung { background-color: #ff6347; color: white; } .ds-btn-anmeldung:hover { background-color: #4b7ba3; color: #EEE8AA; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); }"
+    },
+    {
+      "name": "Timeline Card",
+      "kind": "card",
+      "refersTo": "timeline-card",
+      "description": "Information block used in course timelines.",
+      "html": "<div class=\"ds-timeline-card\"><h3>Course Name</h3><p>Details about the course...</p></div>",
+      "css": ".ds-timeline-card { background-color: #dcdcdc; color: #3d4144; padding: 20px 30px; border-radius: 6px; font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Trusted Guide",
+    "overview": "The arc42 site operates as a reliable, authoritative reference for software architecture. Its aesthetic reflects a utilitarian, clear, and structured approach, emphasizing content readability and frictionless utility over embellishment. The design must feel expert, reliable, and trustworthy, speaking directly to software architects, developers, and HR personnel. It actively rejects generic, flashy \"SaaS-cream\" tropes. Instead, it relies on a sober academic blue paired with highly contrasting warm accents to highlight critical actions like training registration.",
+    "keyCharacteristics": [
+      "Information-First: Content density and legibility take precedence over decorative elements.",
+      "Academic and Grounded: A mature palette anchored by dark blues communicates reliability and experience.",
+      "Utilitarian Interactivity: Components look like their function—flat, clear, and unambiguous."
+    ],
+    "rules": [
+      { "name": "The Restraint Rule", "body": "The vivid Action Tomato is used sparingly and only for conversion. If everything is loud, nothing is. Let the blues do the heavy lifting for the structure.", "section": "colors" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. Shadows appear only as a response to interactive state (hover or focus) to explicitly invite clicks.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use system sans-serif fonts to maintain a fast, native, and utilitarian feel.",
+      "Do reserve the Action Tomato color strictly for primary conversions like \"Anmeldung\".",
+      "Do keep cards and surfaces flat at rest, using Gainsboro or light gray tints to distinguish regions."
+    ],
+    "donts": [
+      "Don't use generic, untrustworthy, or overly flashy \"SaaS-cream\" designs.",
+      "Don't apply heavy drop shadows to static content blocks; save shadows for interactive hover states.",
+      "Don't use decorative gradients or glassmorphism. They dilute the expert, engineering-focused tone."
+    ]
+  }
+}

@@ -46,7 +46,6 @@ excerpt: "Wir freuen uns auf Sie!"
   
   <option value="26-06 MSA">Mastering SW Architectures, 9.-12. Juni 2026, Mannheim</option>
   <option value="26-06 ADOC-online">ADOC, 15.-16. Juni 2026 (online), Trainer Wolfgang Reimesch</option>
-  <option value="26-06 IMPROVE">IMPROVE, 23.-25. Juni 2026 Hamburg (Carola+Gernot)</option>
   <option value="26-06 MSA-EN">MSA, 23.-25. Jun. 2026 (online, English)</option>
   <option value="26-09 Req4Arc">Req4Arc, 15.-17. Sep. 2026, Frankfurt</option>
   <option value="26-09 MSA-EN">MSA, 29.Sep.-1.Okt. 2026 (online, English)</option>

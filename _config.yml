@@ -78,6 +78,7 @@ exclude:
   - .dockerignore
   - .gitignore
   - .vscode/
+  - CLAUDE.md
   - DESIGN.json
   - DESIGN.md
   - Dockerfile
