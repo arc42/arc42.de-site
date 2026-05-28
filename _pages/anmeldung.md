@@ -51,6 +51,15 @@ excerpt: "Wir freuen uns auf Sie!"
   <option value="26-09 MSA-EN">MSA, 29.Sep.-1.Okt. 2026 (online, English)</option>
   <option value="26-09 IMPROVE">IMPROVE, 24.-26. Nov 2026 Hamburg (Carola+Gernot)</option>
   <option value="26-12 MSA">Mastering SW Architectures, 1.-4. Dez 2026 (München)</option>
+  <option value="27-03 MSA">Mastering SW Architectures, 2.-5. März 2027, München</option>
+  <option value="27-03 Req4Arc">Req4Arc, 9.-11. März 2027, München</option>
+  <option value="27-06 ADOC">ADOC, 2.-3. Juni 2027, Mannheim oder Frankfurt (t.b.d.)</option>
+  <option value="27-06 MSA">Mastering SW Architectures, 8.-11. Juni 2027, Mannheim oder Frankfurt (t.b.d.)</option>
+  <option value="27-06 IMPROVE">IMPROVE, 22.-24. Juni 2027, Hamburg</option>
+  <option value="27-09 MSA">Mastering SW Architectures, 14.-17. September 2027, Mannheim oder Frankfurt (t.b.d.)</option>
+  <option value="27-09 Req4Arc">Req4Arc, 21.-23. September 2027, Mannheim oder Frankfurt (t.b.d.)</option>
+  <option value="27-11 IMPROVE">IMPROVE, 23.-25. November 2027, Hamburg</option>
+  <option value="27-12 MSA">Mastering SW Architectures, 30. Nov - 3. Dez 2027, München</option>
   <option value="sonstige">Sonstige</option>
 </select>
 
