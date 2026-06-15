@@ -26,6 +26,7 @@ courses:
   - type: "msa_online"
     date: "23.-25. June 2026"
     anchor_id: "msa-online-jun-2026"
+    sold_out: true
   - type: "improve"
     date: "23.-25. Juni 2026"
     location: "Hamburg"
