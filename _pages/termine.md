@@ -12,11 +12,6 @@ excerpt: "Unsere nächsten Schulungen."
 # attributes:
 # waiting_list:
 courses:
-  - type: "msa"
-    date: "9.-12. Juni 2026"
-    location: "Mannheim"
-    anchor_id: "msa-jun-2026"
-    pricing: "Normalpreis: € 2890"
   - type: "adoc_online"
     date: "15.-16. Juni 2026"
     anchor_id: "adoc-online-jun-2026"
