@@ -12,12 +12,6 @@ excerpt: "Unsere nächsten Schulungen."
 # attributes:
 # waiting_list:
 courses:
-  - type: "adoc_online"
-    date: "15.-16. Juni 2026"
-    anchor_id: "adoc-online-jun-2026"
-    trainer: "Wolfgang Reimesch"
-    pricing: "Normalpreis: € 1500"
-    credits: "20 methodische Punkte"
   - type: "msa_online"
     date: "23.-25. June 2026"
     anchor_id: "msa-online-jun-2026"

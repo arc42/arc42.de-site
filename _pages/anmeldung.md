@@ -44,7 +44,6 @@ excerpt: "Wir freuen uns auf Sie!"
 <label for="kurs">Für welchen Kurs melden Sie an?</label>
 <select id="kurs" name="Kurs" required>
   
-  <option value="26-06 ADOC-online">ADOC, 15.-16. Juni 2026 (online), Trainer Wolfgang Reimesch</option>
   <option value="26-09 Req4Arc">Req4Arc, 15.-17. Sep. 2026, Frankfurt</option>
   <option value="26-09 MSA-EN">MSA, 29.Sep.-1.Okt. 2026 (online, English)</option>
   <option value="26-09 IMPROVE">IMPROVE, 24.-26. Nov 2026 Hamburg (Carola+Gernot)</option>
