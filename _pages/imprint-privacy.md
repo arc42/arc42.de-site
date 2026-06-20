@@ -82,4 +82,4 @@ Das wurde durch mehrere unabhängige Organisationen geprüft, die vollständigen
 
 {% include feature_row id="privacy-reports"  %}
 
-Erstellt von [PSWD](https://perstarke-webdev.de/) unter dem Dach von [Kröner & Starke Web Development](https://kroener-starke.ch/).
+Unterstützt von [PSWD](https://perstarke-webdev.de/) unter dem Dach von [Kröner & Starke Web Development](https://kroener-starke.ch/).
