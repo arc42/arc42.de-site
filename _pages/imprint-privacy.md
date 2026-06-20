@@ -81,3 +81,5 @@ Diese Website wird komplett statisch generiert und enthält keine Elemente, die 
 Das wurde durch mehrere unabhängige Organisationen geprüft, die vollständigen Prüfberichte gibts für Interessierte als pdf-Download.
 
 {% include feature_row id="privacy-reports"  %}
+
+Erstellt von [PSWD](https://perstarke-webdev.de/) unter dem Dach von [Kröner & Starke Web Development](https://kroener-starke.ch/).
