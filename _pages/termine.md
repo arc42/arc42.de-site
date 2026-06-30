@@ -12,16 +12,6 @@ excerpt: "Unsere nächsten Schulungen."
 # attributes:
 # waiting_list:
 courses:
-  - type: "msa_online"
-    date: "23.-25. June 2026"
-    anchor_id: "msa-online-jun-2026"
-    sold_out: true
-  - type: "improve"
-    date: "23.-25. Juni 2026"
-    location: "Hamburg"
-    anchor_id: "improve-jun-2026"
-    credits: "20 methodische und 10 technische Punkte"
-    sold_out: true
   - type: "req4arc"
     date: "15.-17. September 2026"
     location: "Frankfurt/Main"
