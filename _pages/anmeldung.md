@@ -45,7 +45,7 @@ excerpt: "Wir freuen uns auf Sie!"
 <select id="kurs" name="Kurs" required>
   
   <option value="26-09 Req4Arc">Req4Arc, 15.-17. Sep. 2026, Frankfurt</option>
-  <option value="26-09 ADOC">ADOC, 27.-28. Sep. 2026, Zürich (Gernot Starke)</option>
+  <option value="26-10 ADOC">ADOC, 27.-28. Okt. 2026, Zürich (Gernot Starke)</option>
   <option value="26-09 MSA-EN">MSA, 29.Sep.-1.Okt. 2026 (online, English)</option>
   <option value="26-09 IMPROVE">IMPROVE, 24.-26. Nov 2026 Hamburg (Carola+Gernot)</option>
   <option value="26-12 MSA">Mastering SW Architectures, 1.-4. Dez 2026 (München)</option>
