@@ -21,11 +21,13 @@ Parameters:
   {% when "msa_online" %}
     {% include timeline_msa_online.html position=include.position date=include.date anchor_id=include.anchor_id sold_out=include.sold_out few_seats=include.few_seats trainer=include.trainer %}
   {% when "req4arc" %}
-    {% include timeline_req4arc.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id credits=include.credits %}
+    {% include timeline_req4arc.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id credits=include.credits sold_out=include.sold_out few_seats=include.few_seats %}
   {% when "improve" %}
     {% include timeline_improve.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id sold_out=include.sold_out few_seats=include.few_seats credits=include.credits %}
   {% when "adoc" %}
-    {% include timeline_adoc.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id pricing=include.pricing trainer=include.trainer credits=include.credits %}
+    {% include timeline_adoc.html position=include.position date=include.date location=include.location anchor_id=include.anchor_id pricing=include.pricing trainer=include.trainer credits=include.credits sold_out=include.sold_out few_seats=include.few_seats %}
   {% when "adoc_online" %}
     {% include timeline_adoc_online.html position=include.position date=include.date anchor_id=include.anchor_id sold_out=include.sold_out few_seats=include.few_seats pricing=include.pricing trainer=include.trainer credits=include.credits %}
+  {% else %}
+    <!-- timeline_course: unknown type "{{ include.type }}" (anchor {{ include.anchor_id }}) - no template; add a timeline_{{ include.type }}.html or fix course id/format in trainings.yml -->
 {% endcase %}

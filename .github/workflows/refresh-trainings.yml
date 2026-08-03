@@ -25,13 +25,21 @@ jobs:
           jq -e '.generated | type == "string"' /tmp/trainings.json
       - name: Update _data/trainings.json when courses changed
         run: |
-          jq -S 'del(.generated)' /tmp/trainings.json > /tmp/new.json
+          # Store the EXPIRY-FILTERED payload, not the raw fetch. The stored file is
+          # what we diff against next run, so a date that merely expires between runs
+          # (no upstream edit at all) still makes the filtered payload differ from what's
+          # committed - turning "time passing" into a content change that triggers a
+          # commit + Pages rebuild, instead of silently advertising an ended course.
+          jq --arg today "$(date -u +%Y-%m-%d)" \
+            '.courses[].dates |= map(select(.end >= $today))' \
+            /tmp/trainings.json > /tmp/filtered.json
+          jq -S 'del(.generated)' /tmp/filtered.json > /tmp/new.json
           jq -S 'del(.generated)' _data/trainings.json > /tmp/old.json || echo '{}' > /tmp/old.json
           if cmp -s /tmp/new.json /tmp/old.json; then
             echo "No content change (ignoring 'generated' timestamp)"
             exit 0
           fi
-          jq . /tmp/trainings.json > _data/trainings.json
+          jq . /tmp/filtered.json > _data/trainings.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add _data/trainings.json
