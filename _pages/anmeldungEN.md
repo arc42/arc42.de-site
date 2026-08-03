@@ -41,12 +41,17 @@ activate JavaScript and reload this page.
 <input type="email" id="email" name="Email" placeholder="* E-Mail" required multiple  />
 
 <label for="kurs">Which training?</label>
+{%- assign today = 'now' | date: '%Y-%m-%d' -%}
 <select id="kurs" name="Kurs" required>
-  <option value="*"></option>
-  
- 
-  <option value="26-09 MSA online">Mastering SW Architectures, 29.Sep-1.Oct 2026<strong>ONLINE, English language</strong> (Trainer Wolfgang Reimesch)</option>
-
+  <option value=""></option>
+  {%- for course in site.data.trainings.courses -%}
+    {%- for d in course.dates -%}
+      {%- if d.status != "open" -%}{%- continue -%}{%- endif -%}
+      {%- if d.end < today -%}{%- continue -%}{%- endif -%}
+      {%- if d.language != "en" -%}{%- continue -%}{%- endif -%}
+  <option value="{{ d.code }}">{{ course.short_title }}, {% include training-date-label.html date=d lang="en" style="short" %}{% if d.city %}, {{ d.city }}{% endif %}{% if d.format == "online" %} (online{% if d.language == "en" %}, English{% endif %}){% endif %}{% if d.trainers %} ({{ d.trainers | join: ", " }}){% endif %}</option>
+    {%- endfor -%}
+  {%- endfor -%}
   <option value="other">other</option>
 </select>
 
@@ -87,6 +92,8 @@ In case you register more than one person, please state their names in the comme
     name="_error" 
     value="{{ '/anmeldung-fail/' | absolute_url }}" 
   />
+
+<input type="hidden" name="_source" value="arc42.de" />
 
   
 <!-- As we generate static HTML, we do NOT want to append field values to the redirect URL -->

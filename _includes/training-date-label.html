@@ -1,0 +1,39 @@
+{%- comment -%}
+  Human-readable date range from ISO start/end strings.
+  Params: date (a dates[] object), lang ("de"|"en"), style ("long"|"short", de only)
+  de/long:  15.-17. September 2026   de/short: 29. Sep. - 1. Okt. 2026
+  en:       Sep 15-17, 2026 / Sep 29 - Oct 1, 2026
+{%- endcomment -%}
+{%- assign s = include.date.start -%}
+{%- assign e = include.date.end -%}
+{%- assign sd = s | date: "%-d" -%}
+{%- assign ed = e | date: "%-d" -%}
+{%- assign sm = s | date: "%-m" | plus: 0 -%}
+{%- assign em = e | date: "%-m" | plus: 0 -%}
+{%- assign sy = s | date: "%Y" -%}
+{%- assign ey = e | date: "%Y" -%}
+{%- assign smi = sm | minus: 1 -%}
+{%- assign emi = em | minus: 1 -%}
+{%- if include.lang == "de" -%}
+  {%- if include.style == "short" -%}
+    {%- assign names = "Jan.,Feb.,März,Apr.,Mai,Juni,Juli,Aug.,Sep.,Okt.,Nov.,Dez." | split: "," -%}
+  {%- else -%}
+    {%- assign names = "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember" | split: "," -%}
+  {%- endif -%}
+  {%- if sy == ey and sm == em -%}
+    {{- sd -}}.-{{- ed -}}. {{ names[smi] }} {{ sy -}}
+  {%- elsif sy == ey -%}
+    {{- sd -}}. {{ names[smi] }} - {{ ed }}. {{ names[emi] }} {{ sy -}}
+  {%- else -%}
+    {{- sd -}}. {{ names[smi] }} {{ sy }} - {{ ed }}. {{ names[emi] }} {{ ey -}}
+  {%- endif -%}
+{%- else -%}
+  {%- assign names = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
+  {%- if sy == ey and sm == em -%}
+    {{- names[smi] }} {{ sd }}-{{ ed }}, {{ sy -}}
+  {%- elsif sy == ey -%}
+    {{- names[smi] }} {{ sd }} - {{ names[emi] }} {{ ed }}, {{ sy -}}
+  {%- else -%}
+    {{- names[smi] }} {{ sd }}, {{ sy }} - {{ names[emi] }} {{ ed }}, {{ ey -}}
+  {%- endif -%}
+{%- endif -%}

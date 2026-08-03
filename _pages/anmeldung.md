@@ -42,22 +42,16 @@ excerpt: "Wir freuen uns auf Sie!"
 <input type="email" id="email" name="Email" placeholder="* E-Mail" required multiple  />
 
 <label for="kurs">Für welchen Kurs melden Sie an?</label>
+{%- assign today = 'now' | date: '%Y-%m-%d' -%}
 <select id="kurs" name="Kurs" required>
-  
-  <option value="26-09 Req4Arc">Req4Arc, 15.-17. Sep. 2026, Frankfurt</option>
-  <option value="26-10 ADOC">ADOC, 27.-28. Okt. 2026, Zürich (Gernot Starke)</option>
-  <option value="26-09 MSA-EN">MSA, 29.Sep.-1.Okt. 2026 (online, English)</option>
-  <option value="26-09 IMPROVE">IMPROVE, 24.-26. Nov 2026 Hamburg (Carola+Gernot)</option>
-  <option value="26-12 MSA">Mastering SW Architectures, 1.-4. Dez 2026 (München)</option>
-  <option value="27-03 MSA">Mastering SW Architectures, 2.-5. März 2027, München</option>
-  <option value="27-03 Req4Arc">Req4Arc, 9.-11. März 2027, München</option>
-  <option value="27-06 ADOC">ADOC, 2.-3. Juni 2027, Mannheim oder Frankfurt (t.b.d.)</option>
-  <option value="27-06 MSA">Mastering SW Architectures, 8.-11. Juni 2027, Mannheim oder Frankfurt (t.b.d.)</option>
-  <option value="27-06 IMPROVE">IMPROVE, 22.-24. Juni 2027, Hamburg</option>
-  <option value="27-09 MSA">Mastering SW Architectures, 14.-17. September 2027, Mannheim oder Frankfurt (t.b.d.)</option>
-  <option value="27-09 Req4Arc">Req4Arc, 21.-23. September 2027, Mannheim oder Frankfurt (t.b.d.)</option>
-  <option value="27-11 IMPROVE">IMPROVE, 23.-25. November 2027, Hamburg</option>
-  <option value="27-12 MSA">Mastering SW Architectures, 30. Nov - 3. Dez 2027, München</option>
+  <option value=""></option>
+  {%- for course in site.data.trainings.courses -%}
+    {%- for d in course.dates -%}
+      {%- if d.status != "open" -%}{%- continue -%}{%- endif -%}
+      {%- if d.end < today -%}{%- continue -%}{%- endif -%}
+  <option value="{{ d.code }}">{{ course.short_title }}, {% include training-date-label.html date=d lang="de" style="short" %}{% if d.city %}, {{ d.city }}{% endif %}{% if d.format == "online" %} (online{% if d.language == "en" %}, English{% endif %}){% endif %}{% if d.trainers %} ({{ d.trainers | join: ", " }}){% endif %}</option>
+    {%- endfor -%}
+  {%- endfor -%}
   <option value="sonstige">Sonstige</option>
 </select>
 
@@ -98,6 +92,8 @@ Falls Sie mehr als eine Person anmelden, schreiben Sie die weiteren Namen als Be
     name="_error" 
     value="{{ '/anmeldung-fail/' | absolute_url }}" 
   />
+
+<input type="hidden" name="_source" value="arc42.de" />
 
   
 <!-- As we generate static HTML, we do NOT want to append field values to the redirect URL -->
