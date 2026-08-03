@@ -4,36 +4,46 @@ Notizen für Claude / Agenten zu diesem Repo (arc42.de-site, Jekyll + Markdown, 
 
 ## Kurse / Termine verwalten
 
-Kursdaten leben **zentral** im YAML-Frontmatter von `_pages/termine.md` unter `courses:`.
-Felder pro Kurs: `type`, `date`, `location`, `anchor_id`, `pricing`, `trainer`, `credits`,
-`sold_out`, `few_seats`.
+Kursdaten leben **nicht mehr** in diesem Repo. Single Source of Truth ist
+`trainings.arc42.org-site/_data/trainings.yml`. Von dort wird `_data/trainings.json`
+hier im Repo per `.github/workflows/refresh-trainings.yml` synchronisiert (wöchentlich
+Montag 04:17 UTC, per `repository_dispatch` vom trainings-Repo, oder manuell via
+`workflow_dispatch`). **`_data/trainings.json` niemals von Hand editieren** — jede
+Änderung wird beim nächsten Sync überschrieben. Um ein Datum zu ändern, hinzuzufügen
+oder zu entfernen: PR gegen `trainings.arc42.org-site/_data/trainings.yml`.
 
 Rendering-Kette (Jekyll-Includes):
-`termine.md` → `_includes/timeline_auto.html` (alternierende Positionen, reicht alle Felder durch)
+`_pages/termine.md` → `_includes/timeline_auto.html` (liest `site.data.trainings.courses`,
+filtert `status: cancelled` und vergangene Termine (`end < today`) heraus, sortiert
+chronologisch über alle Kurse hinweg, alterniert links/rechts, reicht alle Felder durch)
 → `_includes/timeline_course.html` (dispatch per `type` im `{% case %}`)
 → `_includes/timeline_<type>.html` (konkretes Template, z. B. `timeline_improve.html`, `timeline_msa.html`).
 
+`type` wird aus `course.id` gebildet, plus Suffix `_online` wenn `date.format == "online"`.
 Kurstypen: `msa`, `msa_online`, `req4arc`, `improve`, `adoc`, `adoc_online`.
+
+Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strings
+`start`/`end` erzeugt (lange deutsche Form, z. B. "15.-17. September 2026").
 
 ### Kurs auf "ausgebucht / nur Warteliste" setzen
 
-1. In `_pages/termine.md` beim Kurs `sold_out: true` ergänzen.
-2. Sicherstellen, dass `timeline_course.html` `sold_out` (und `few_seats`) an das jeweilige
-   `timeline_<type>.html` durchreicht — **nicht alle Typen tun das bereits**.
-3. Im jeweiligen `timeline_<type>.html` muss `sold_out` behandelt werden:
-   - `{% assign sold_out = include.sold_out | default: false %}`
-   - Inhalt ausgrauen: `<div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>`
-   - Hinweis: `{% if sold_out %}<p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>{% endif %}`
-   - Anmeldung-Button verstecken: `{% unless sold_out %}<a href="/anmeldung/">…</a>{% endunless %}`
-   - Referenzimplementierung: `timeline_msa.html`.
-4. **Anmeldeformular separat anpassen:** `_pages/anmeldung.md` hat eine eigene, manuell
-   gepflegte `<select id="kurs">`-Liste (NICHT aus `termine.md` generiert). Bei ausgebucht /
-   Warteliste die entsprechende `<option>` dort entfernen, damit keine Online-Anmeldung mehr
-   möglich ist.
+1. In `trainings.arc42.org-site/_data/trainings.yml` beim betreffenden Datum
+   `status: waitlist` (oder `status: full`, wenn komplett ausgebucht) statt
+   `status: open` setzen.
+2. Sync abwarten (wöchentlich) oder `workflow_dispatch` von
+   `.github/workflows/refresh-trainings.yml` manuell auslaufen lassen, um
+   `_data/trainings.json` sofort zu aktualisieren.
+3. Timeline und Anmeldeformulare sind generiert und reagieren automatisch:
+   `timeline_auto.html` setzt `sold_out=true` für `waitlist`/`full`, wodurch
+   `timeline_<type>.html` den Kurs ausgraut, den Hinweis "(Ausgebucht, nur noch
+   Warteliste)" zeigt und den Anmeldung-Button versteckt. Die Anmeldeformulare
+   (`_pages/anmeldung.md`, `_pages/anmeldungEN.md`) generieren ihre `<select>`-Optionen
+   ebenfalls aus `site.data.trainings` und lassen `waitlist`/`full`-Termine automatisch
+   weg — **keine manuelle Pflege der Select-Liste mehr nötig**.
 
 ### `few_seats`
-Optionaler Text (z. B. "nur noch wenige Plätze"), wird orange/fett angezeigt. Gleiche
-Durchreich-Logik wie `sold_out`.
+Optionaler Text (z. B. "nur noch wenige Plätze"), im Datenfeld `few_seats` in
+`trainings.yml`. Wird orange/fett angezeigt, gleiche Durchreich-Logik wie `sold_out`.
 
 ## Doku
 Das Timeline-System ist zusätzlich in `TIMELINE_SYSTEM.md` beschrieben.
