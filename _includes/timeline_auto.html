@@ -51,3 +51,4 @@ frontmatter behaviour (course-default trainers stay baked into the templates).
      trainer=trainerline
      credits=c.credits %}
 {%- endfor -%}
+{% if shown == 0 %}<p style="text-align:center">Derzeit sind keine Termine geplant. Schauen Sie bald wieder vorbei, oder <a href="mailto:info@arc42.de">kontaktieren Sie uns</a>.</p>{% endif %}
