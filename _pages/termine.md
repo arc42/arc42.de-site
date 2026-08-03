@@ -7,80 +7,6 @@ header:
   overlay_image: /images/splash/trent-erwin-learning-unsplash.jpg
   caption: "Photo credit: [**unsplash**](https://unsplash.com/@tjerwin)"
 excerpt: "Unsere nächsten Schulungen."
-
-# Course data for auto-alternating timeline
-# attributes:
-# waiting_list:
-courses:
-  - type: "req4arc"
-    date: "15.-17. September 2026"
-    location: "Frankfurt/Main"
-    anchor_id: "req4arc-sep-2026"
-    credits: "20 methodische und 10 kommunikative Punkte"
-  - type: "adoc"
-    date: "27.-28. Oktober 2026"
-    location: "Zürich"
-    anchor_id: "adoc-oct-2026"
-    trainer: "Gernot Starke"
-    credits: "20 methodische Punkte"
-  - type: "msa_online"
-    date: "29.Sept.-1.Oct. 2026"
-    anchor_id: "msa-online-sep-2026"
-  - type: "improve"
-    date: "24.-26. November 2026"
-    location: "Hamburg"
-    anchor_id: "improve-nov-2026"
-    credits: "20 methodische und 10 technische Punkte"
-  - type: "msa"
-    date: "1.-4. Dezember 2026"
-    location: "München"
-    anchor_id: "msa-dez-2026"
-    pricing: "Frühbucherpreis bei Anmeldung bis 8. August 2026: € 2690, Normalpreis: € 2890"
-  - type: "msa"
-    date: "2.-5. März 2027"
-    location: "München"
-    anchor_id: "msa-mar-2027"
-    pricing: "Frühbucherpreis bei Anmeldung bis 2. November 2026: € 2690, Normalpreis: € 2890"
-  - type: "req4arc"
-    date: "9.-11. März 2027"
-    location: "München"
-    anchor_id: "req4arc-mar-2027"
-    credits: "20 methodische und 10 kommunikative Punkte"
-  - type: "adoc"
-    date: "2.-3. Juni 2027"
-    location: "Mannheim oder Frankfurt (t.b.d.)"
-    anchor_id: "adoc-jun-2027"
-    credits: "20 methodische Punkte"
-  - type: "msa"
-    date: "8.-11. Juni 2027"
-    location: "Mannheim oder Frankfurt (t.b.d.)"
-    anchor_id: "msa-jun-2027"
-    pricing: "Frühbucherpreis bei Anmeldung bis 8. Februar 2027: € 2690, Normalpreis: € 2890"
-  - type: "improve"
-    date: "22.-24. Juni 2027"
-    location: "Hamburg"
-    anchor_id: "improve-jun-2027"
-    credits: "20 methodische und 10 technische Punkte"
-  - type: "msa"
-    date: "14.-17. September 2027"
-    location: "Mannheim oder Frankfurt (t.b.d.)"
-    anchor_id: "msa-sep-2027"
-    pricing: "Frühbucherpreis bei Anmeldung bis 14. Mai 2027: € 2690, Normalpreis: € 2890"
-  - type: "req4arc"
-    date: "21.-23. September 2027"
-    location: "Mannheim oder Frankfurt (t.b.d.)"
-    anchor_id: "req4arc-sep-2027"
-    credits: "20 methodische und 10 kommunikative Punkte"
-  - type: "improve"
-    date: "23.-25. November 2027"
-    location: "Hamburg"
-    anchor_id: "improve-nov-2027"
-    credits: "20 methodische und 10 technische Punkte"
-  - type: "msa"
-    date: "30. November - 3. Dezember 2027"
-    location: "München"
-    anchor_id: "msa-dez-2027"
-    pricing: "Frühbucherpreis bei Anmeldung bis 30. Juli 2027: € 2690, Normalpreis: € 2890"
 ---
 
 <div class="ua-background" markdown="1">
@@ -113,7 +39,7 @@ Bitte beachten Sie unsere <a href="/terms/">Geschäftsbedingungen</a>. Preise ge
 <div class="timeline">
 
 <!-- Auto-generated timeline using include files -->
-{% include timeline_auto.html courses=page.courses %}
+{% include timeline_auto.html %}
 
 
 </div>

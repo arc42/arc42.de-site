@@ -1,29 +1,53 @@
 {% comment %}
-Auto-alternating timeline course include.
-This include automatically alternates between left and right positions based on the course index.
-Usage: {% include timeline_auto.html courses=page.courses %}
-
-Where page.courses is an array of course objects with properties:
-- type, date, location, anchor_id, sold_out, pricing, trainer, credits
+Auto-alternating timeline, driven by site.data.trainings
+(synced from trainings.arc42.org by .github/workflows/refresh-trainings.yml).
+Replaces the former page.courses frontmatter. Usage: {% include timeline_auto.html %}
+Dates are interleaved chronologically across courses via sortable
+"start|courseIndex|dateIndex" keys (ISO strings sort lexicographically).
+timeline_course.html and the timeline_<type>.html templates are unchanged;
+type = course.id, plus "_online" suffix when format == "online".
+trainer is only passed for explicit per-date overrides, matching the old
+frontmatter behaviour (course-default trainers stay baked into the templates).
 {% endcomment %}
-
-{% for course in include.courses %}
-  {% assign index = forloop.index %}
-  {% assign position = "right" %}
-  {% assign remainder = index | modulo: 2 %}
-  {% if remainder == 0 %}
-    {% assign position = "left" %}
-  {% endif %}
-  
-  {% include timeline_course.html 
-     type=course.type 
-     position=position 
-     date=course.date 
-     location=course.location 
-     anchor_id=course.anchor_id 
-     sold_out=course.sold_out 
-     few_seats=course.few_seats
-     pricing=course.pricing
-     trainer=course.trainer
-     credits=course.credits %}
-{% endfor %}
+{%- assign crs = site.data.trainings.courses -%}
+{%- assign today = 'now' | date: '%Y-%m-%d' -%}
+{%- assign keys = "" | split: "" -%}
+{%- for c in crs -%}
+  {%- for d in c.dates -%}
+    {%- if d.status == "cancelled" -%}{%- continue -%}{%- endif -%}
+    {%- if d.end < today -%}{%- continue -%}{%- endif -%}
+    {%- capture k -%}{{ d.start }}|{{ forloop.parentloop.index0 }}|{{ forloop.index0 }}{%- endcapture -%}
+    {%- assign karr = k | split: "~~" -%}
+    {%- assign keys = keys | concat: karr -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign sorted_keys = keys | sort -%}
+{%- assign shown = 0 -%}
+{%- for key in sorted_keys -%}
+  {%- assign parts = key | split: "|" -%}
+  {%- assign ci = parts[1] | plus: 0 -%}
+  {%- assign di = parts[2] | plus: 0 -%}
+  {%- assign c = crs[ci] -%}
+  {%- assign d = c.dates[di] -%}
+  {%- assign shown = shown | plus: 1 -%}
+  {%- assign remainder = shown | modulo: 2 -%}
+  {%- if remainder == 0 -%}{%- assign position = "left" -%}{%- else -%}{%- assign position = "right" -%}{%- endif -%}
+  {%- assign type = c.id -%}
+  {%- if d.format == "online" -%}{%- assign type = type | append: "_online" -%}{%- endif -%}
+  {%- capture datelabel -%}{%- include training-date-label.html date=d lang="de" style="long" -%}{%- endcapture -%}
+  {%- assign sold_out = false -%}
+  {%- if d.status == "waitlist" or d.status == "full" -%}{%- assign sold_out = true -%}{%- endif -%}
+  {%- assign trainerline = nil -%}
+  {%- if d.trainers -%}{%- assign trainerline = d.trainers | join: " und " -%}{%- endif -%}
+  {% include timeline_course.html
+     type=type
+     position=position
+     date=datelabel
+     location=d.city
+     anchor_id=d.id
+     sold_out=sold_out
+     few_seats=d.few_seats
+     pricing=d.pricing
+     trainer=trainerline
+     credits=c.credits %}
+{%- endfor -%}
