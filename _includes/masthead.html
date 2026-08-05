@@ -1,33 +1,168 @@
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="{{ '/' | relative_url }}"><img src="{{ '/images/arc42-site-logo.webp' | relative_url }}" width="100px" alt="{{ site.title }}"/></a>
-        <ul class="visible-links">
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains '://' %}
-              {% assign nav_url = link.url %}
-            {% else %}
-              {% assign nav_url = link.url | relative_url %}
-            {% endif %}
-            <li class="masthead__menu-item">
-              <a href="{{ nav_url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-            </li>
-          {% endfor %}
+{%- comment -%}
+  The masthead — 2026-08-05, rebuilt on arc42.org's pattern.
+
+  Structure: brand · priority row (3) · CTA · DE/EN · "Mehr" drawer · search.
+  Data: _data/navigation.yml (main / cta / drawer).
+
+  Order and shape follow arc42.org's band (2026-08-05): logo alone at the left,
+  links, then the control cluster on the right. Search sits at the far right
+  rather than in the middle of that cluster - arc42.org has no search in its
+  band at all, so there is no position to copy, and last is where it stops
+  splitting the CTA from the language switch.
+
+  WHAT THIS REPLACED, and why it is not a restyle of the old bar:
+
+    The previous masthead was the theme's greedy-nav — seven links of identical
+    weight, colour and size, with overflow handled by JavaScript that moved the
+    LAST <li> into a hidden menu until the row fit. Three consequences:
+
+      1. No rangfolge. The commercial path (Termine -> Schulungen -> Anmeldung)
+         rendered exactly like "Über...".
+      2. The visible link set depended on viewport width, so no stable mental
+         model could form — what a visitor saw last time might not be there.
+      3. Overflow ate from the END of the list, and the list ended
+         ... Download, "Über...", "Suche". The three items the deep-link
+         visitor needs most were the three sacrificed first.
+
+    The greedy-nav plugin lives in the committed assets/js/main.min.js and binds
+    to `.greedy-nav`. This component is `.arc42-nav`, so the plugin finds
+    nothing and does nothing. Do not reintroduce the `greedy-nav` class here
+    unless you want the width-dependent shuffling back.
+
+  The band is the family masthead fill #2b3a57 (BRAND.md -> Signature hues;
+  arc42.de is the hub twin and shares arc42.org's navy). This is the masthead
+  band ONLY — the rest of the family migration (Libre Caslon + Atkinson type
+  pair, flat-paper surfaces, 65-75ch measure) is still queued for this site.
+  All styling sits in assets/css/arc42-de.css under one banner comment so it
+  can be lifted out in a single block.
+
+  `id="site-nav"` is kept: _includes/skip-links.html targets it.
+
+  Behaviour (drawer toggle, "/" hotkey, aria state) is in
+  assets/js/arc42-nav.js. Without JavaScript the drawer stays open as a plain
+  list and the search field still submits to /search/ as an ordinary form.
+{%- endcomment -%}
+
+{%- assign nav_main = site.data.navigation.main -%}
+{%- assign nav_cta = site.data.navigation.cta -%}
+{%- assign nav_drawer = site.data.navigation.drawer -%}
+
+<div class="masthead arc42-masthead">
+  <nav id="site-nav" class="arc42-nav" aria-label="Hauptnavigation">
+
+    {%- comment -%}
+      Logo only. The "Deutsch" wordmark and the coral dot beside it are gone
+      (2026-08-05): arc42.org's band carries the logo alone, and the language
+      this page is in is already stated by the DE/EN switch on the right - the
+      wordmark said it a second time, two pixels from the mark it was crowding.
+      The dot said nothing at all.
+    {%- endcomment -%}
+    <a class="arc42-nav__brand" href="{{ '/' | relative_url }}">
+      <img class="arc42-nav__logo"
+           src="{{ '/images/arc42-logo-white.svg' | relative_url }}"
+           alt="arc42 — Startseite" width="104" height="29" decoding="async">
+    </a>
+
+    <ul class="arc42-nav__prio">
+      {%- for link in nav_main -%}
+        <li{% if link.cta_mobile %} class="is-mobile-cta"{% endif %}>
+          <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    <div class="arc42-nav__right">
+
+      {%- if nav_cta -%}
+        <a class="arc42-nav__cta" href="{{ nav_cta.url | relative_url }}"{% if page.url == nav_cta.url %} aria-current="page"{% endif %}>{{ nav_cta.title }}</a>
+      {%- endif -%}
+
+      {%- comment -%}
+        The one cross-site link the federation decision sanctions in chrome: it
+        routes to the same product in another language, not to a different
+        reference work. arc42.org already carries the mirror of this.
+      {%- endcomment -%}
+      <div class="arc42-lang" role="group" aria-label="Sprache / Site language">
+        <span class="arc42-lang__item is-active" lang="de"><span class="arc42-sr-only">Aktuelle Sprache: </span>DE</span>
+        <a class="arc42-lang__item" href="https://arc42.org" lang="en" hreflang="en" rel="noopener" title="To the English site arc42.org">EN<span class="arc42-sr-only"> — English site arc42.org</span></a>
+      </div>
+
+      <button class="arc42-nav__more" type="button" aria-expanded="false" aria-controls="arc42-drawer">
+        <span>Mehr</span>
+        <svg width="11" height="7" viewBox="0 0 12 8" fill="none" aria-hidden="true" focusable="false">
+          <path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      {%- comment -%}
+        A real form, not a link. It submits to /search/?q=… so it works with
+        JavaScript disabled; arc42-nav.js adds the "/" hotkey on top, and
+        _pages/search.html reads the q parameter and runs the search.
+      {%- endcomment -%}
+      <form class="arc42-search" role="search" action="{{ '/search/' | relative_url }}" method="get">
+        <label class="arc42-sr-only" for="masthead-search">Suche auf arc42.de</label>
+        <svg class="arc42-search__icon" width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="2"/>
+          <path d="M11 11l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <input type="search" id="masthead-search" name="q" placeholder="Suche" autocomplete="off">
+        <kbd class="arc42-search__hint" aria-hidden="true">/</kbd>
+      </form>
+
+    </div>
+  </nav>
+
+  <div class="arc42-drawer" id="arc42-drawer">
+    <div class="arc42-drawer__inner">
+
+      {%- comment -%}
+        On phones the priority row is hidden, so the drawer carries it —
+        otherwise the only route to Übersicht/Schulungen would be the home page.
+      {%- endcomment -%}
+      <div class="arc42-drawer__group arc42-drawer__group--prio">
+        <h2 class="arc42-drawer__title">Hauptnavigation</h2>
+        <ul>
+          {%- for link in nav_main -%}
+            <li><a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+          {%- endfor -%}
+          {%- if nav_cta -%}
+            <li><a href="{{ nav_cta.url | relative_url }}"{% if page.url == nav_cta.url %} aria-current="page"{% endif %}>{{ nav_cta.title }}</a></li>
+          {%- endif -%}
+          {%- comment -%}
+            The band's search field is hidden below 800px — there is no room for
+            it next to logo, CTA and menu button. This is its route on phones,
+            so search is never unreachable.
+          {%- endcomment -%}
+          <li class="arc42-drawer__search"><a href="{{ '/search/' | relative_url }}">Suche</a></li>
         </ul>
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
-        </button>
-        {% endif %}
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+      </div>
+
+      {%- for entry in nav_drawer -%}
+        {%- assign group = site.data.navigation[entry.group] -%}
+        {%- for section in group -%}
+          <div class="arc42-drawer__group">
+            <h2 class="arc42-drawer__title">
+              {%- if section.url -%}
+                <a href="{{ section.url | relative_url }}">{{ section.title }}</a>
+              {%- else -%}
+                {{ section.title }}
+              {%- endif -%}
+            </h2>
+            <ul>
+              {%- for child in section.children -%}
+                <li>
+                  {%- if child.external -%}
+                    <a href="{{ child.url }}" rel="noopener" target="_blank">{{ child.title }}<span class="arc42-drawer__ext" aria-hidden="true">↗</span><span class="arc42-sr-only"> (öffnet in neuem Tab)</span>{% if child.hint %}<span class="arc42-drawer__hint">{{ child.hint }}</span>{% endif %}</a>
+                  {%- else -%}
+                    <a href="{{ child.url | relative_url }}"{% if page.url == child.url %} aria-current="page"{% endif %}>{{ child.title }}{% if child.hint %}<span class="arc42-drawer__hint">{{ child.hint }}</span>{% endif %}</a>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endfor -%}
+      {%- endfor -%}
+
     </div>
   </div>
 </div>
