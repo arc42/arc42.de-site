@@ -219,6 +219,44 @@ button.msa {
   border-bottom: 0;
 }
 
+/* ==========================================================================
+   Link states in the chrome — why every rule below names them
+   --------------------------------------------------------------------------
+   assets/css/main.scss imports this file as `@import 'arc42-de.css'`. Dart
+   Sass keeps an explicit .css extension as a PLAIN CSS import, so the built
+   main.css opens with
+
+       @import url(timeline.css);@import url(button.css);@import url(arc42-de.css); …
+
+   and a CSS @import places the imported sheet's rules BEFORE the importing
+   sheet's own rules. This file therefore loses every specificity TIE with the
+   theme, even though it is written as the override sheet and imported last.
+
+   Minimal Mistakes styles `a:visited { color: #4e91a5 }` and
+   `a:hover { color: #235e70 }` in _base.scss — selectors of specificity
+   (0,1,1). That beat `.arc42-nav__cta` and `.arc42-lang__item` (0,1,0)
+   outright, and tied `.arc42-nav__prio a`, `.arc42-drawer li a` and
+   `.ua-strip a` (0,1,1), winning the tie on order. So once a visitor had
+   followed a link in the navigation, it turned teal:
+
+       #4e91a5 on the navy band #2b3a57 ....... 3.21:1   AA fails (needs 4.5)
+       #4e91a5 on the red CTA   #c22b47 ....... 1.59:1   AA fails badly
+
+   against the 7.88:1 and 5.63:1 the rules below intend. It only showed in a
+   browser that had actually visited those URLs, which is why it survived
+   review — a fresh profile renders the band correctly.
+
+   Fix: every anchor rule in the chrome names :link, :visited and :hover
+   explicitly, which raises it to (0,1,2) and settles the question on
+   specificity instead of on import order. Same shape arc42.org's
+   nav-2026.css uses.
+
+   The structural fix — dropping the extension so Sass inlines this file after
+   the theme — is deliberately NOT done here: it would move all 480 lines of
+   this sheet ahead of the theme at once, which is a site-wide change, not a
+   contrast fix.
+   ========================================================================== */
+
 .arc42-nav {
   display: flex;
   align-items: center;
@@ -259,7 +297,9 @@ button.msa {
 }
 .arc42-nav__prio li { margin: 0; }
 
-.arc42-nav__prio a {
+.arc42-nav__prio a,
+.arc42-nav__prio a:link,
+.arc42-nav__prio a:visited {
   display: flex;
   align-items: center;
   min-height: 44px;           /* target size; the old links were ~19px tall */
@@ -269,7 +309,9 @@ button.msa {
   font-size: 0.95rem;
   text-decoration: none;
 }
-.arc42-nav__prio a:hover {
+.arc42-nav__prio a:hover,
+.arc42-nav__prio a:link:hover,
+.arc42-nav__prio a:visited:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.09);
   text-decoration: none;
@@ -348,7 +390,9 @@ button.msa {
 
 /* ---- CTA ------------------------------------------------------------ */
 
-.arc42-nav__cta {
+.arc42-nav__cta,
+.arc42-nav__cta:link,
+.arc42-nav__cta:visited {
   display: flex;
   align-items: center;
   min-height: 44px;
@@ -361,7 +405,9 @@ button.msa {
   text-decoration: none;
   white-space: nowrap;
 }
-.arc42-nav__cta:hover { background: #a82340; color: #fff; text-decoration: none; }
+.arc42-nav__cta:hover,
+.arc42-nav__cta:link:hover,
+.arc42-nav__cta:visited:hover { background: #a82340; color: #fff; text-decoration: none; }
 
 /* ---- language ------------------------------------------------------- */
 
@@ -386,7 +432,9 @@ button.msa {
   font-size: 0.75rem;
   line-height: 1;
 }
-.arc42-lang__item {
+.arc42-lang__item,
+.arc42-lang__item:link,
+.arc42-lang__item:visited {
   padding: 0.3rem 0.55rem;
   border-radius: 20px;
   font-weight: 700;
@@ -400,6 +448,8 @@ button.msa {
   color: #2b3a57;
 }
 a.arc42-lang__item:hover,
+a.arc42-lang__item:link:hover,
+a.arc42-lang__item:visited:hover,
 a.arc42-lang__item:focus-visible {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.14);
@@ -468,11 +518,15 @@ a.arc42-lang__item:focus-visible {
   font-size: 0.95rem;
   font-weight: 700;
 }
-.arc42-drawer__title a { color: #fff; text-decoration: none; }
+.arc42-drawer__title a,
+.arc42-drawer__title a:link,
+.arc42-drawer__title a:visited { color: #fff; text-decoration: none; }
 .arc42-drawer__title a:hover { text-decoration: underline; }
 .arc42-drawer ul { list-style: none; margin: 0; padding: 0; }
 .arc42-drawer li { margin: 0 0 0.1rem; }
-.arc42-drawer li a {
+.arc42-drawer li a,
+.arc42-drawer li a:link,
+.arc42-drawer li a:visited {
   display: block;
   margin-left: -0.5rem;
   padding: 0.45rem 0.5rem;
@@ -481,7 +535,9 @@ a.arc42-lang__item:focus-visible {
   font-size: 0.9rem;
   text-decoration: none;
 }
-.arc42-drawer li a:hover { background: rgba(255, 255, 255, 0.1); text-decoration: none; }
+.arc42-drawer li a:hover,
+.arc42-drawer li a:link:hover,
+.arc42-drawer li a:visited:hover { background: rgba(255, 255, 255, 0.1); color: #fff; text-decoration: none; }
 .arc42-drawer li a[aria-current="page"] { font-weight: 700; box-shadow: inset 3px 0 0 #ff5c7c; }
 .arc42-drawer__hint {
   display: block;
@@ -566,7 +622,12 @@ html { overflow-x: clip; }
   }
 }
 
-.ua-strip a { color: #bcd6f5; font-weight: 700; }
+.ua-strip a,
+.ua-strip a:link,
+.ua-strip a:visited { color: #bcd6f5; font-weight: 700; }
+.ua-strip a:hover,
+.ua-strip a:link:hover,
+.ua-strip a:visited:hover { color: #ffffff; }
 
 /* Two stacked bars, not an emoji and not an image: identical on every
    platform, and no request. */
