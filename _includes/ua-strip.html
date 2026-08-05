@@ -1,0 +1,20 @@
+{%- comment -%}
+  The Ukraine strip, identical to the one arc42.org carries (2026-08-05).
+
+  WHAT IT REPLACED: a `div.ua-background` blockquote with an #e7ddd8 beige
+  fill, an h3, two FontAwesome hearts (one of them animated with .beat) and a
+  paragraph — repeated verbatim on six pages. It was the loudest block on those
+  pages, and the twin site said the same thing in one quiet line.
+
+  Now written once and included, so the six copies cannot drift apart.
+
+  The markup is arc42.org's, character for character: the flag is two stacked
+  <i> elements rather than an emoji or an image, so it renders the same on
+  every platform and costs no request. The band continues the masthead fill
+  instead of introducing a second dark navy under it — two near-identical
+  navies stacked read as a rendering seam.
+{%- endcomment -%}
+<div class="ua-strip">
+  <span class="ua-strip__flag" aria-hidden="true"><i></i><i></i></span>
+  <span>We stand with Ukraine — please support the <a href="https://www.icrc.org/en">ICRC</a>'s humanitarian effort.</span>
+</div>

@@ -101,3 +101,485 @@ button.msa {
 .bookcover {
     max-width: 300px;
 }
+
+
+/* ==========================================================================
+   Navigation accessibility — 2026-08-05
+   Behaviour: assets/js/arc42-nav.js · Markup: _includes/nav_list
+
+   These rules override _sass/minimal-mistakes/_navigation.scss. They live here
+   rather than in the theme partial because assets/css/main.scss imports this
+   file AFTER minimal-mistakes, so the theme stays vendored and unpatched.
+
+   $large is 1024px, so the rail's collapsed state applies below 1024px —
+   exactly the range where the old checkbox accordion could not be opened by
+   keyboard and left its links focusable while invisible.
+   ========================================================================== */
+
+/* The toggle is a real <button> now. Match the old label's look so nothing
+   shifts visually, but keep the button's own affordances. */
+.nav__list .nav__toggle {
+  position: relative;
+  display: none; /* desktop: the rail is always open, no toggle needed */
+  margin: 0;
+  padding: 0.5em 1em;
+  color: #7a8288;
+  font-family: inherit;
+  font-size: 0.75em;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #f2f3f3;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.nav__list .nav__toggle:hover {
+  color: #fff;
+  border-color: #7a8288;
+  background-color: #333;
+}
+
+/* _navigation.scss sets `outline: none` on .greedy-nav__toggle with no
+   replacement. Restore a visible ring on both toggles — writing `outline: none`
+   obliges you to apply a ring (family rule), and colour never carries meaning
+   alone, so this is a real outline rather than a colour change. */
+.nav__list .nav__toggle:focus-visible,
+.greedy-nav .greedy-nav__toggle:focus-visible {
+  outline: 3px solid #374769;
+  outline-offset: 2px;
+}
+
+@media (max-width: 1023px) {
+  /* Only offer the toggle when JS can actually operate it. Without the `js`
+     class (set by _includes/head.html) the panel below stays expanded, so the
+     rail degrades to a plain list instead of becoming unreachable. */
+  .js .nav__list .nav__toggle {
+    display: inline-block;
+  }
+
+  /* Collapse with display:none, NOT max-height/opacity. The theme's version
+     kept children in the tab order while they were invisible. */
+  .js .nav__list .nav__items {
+    display: none;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+    transform: none;
+  }
+
+  .js .nav__list .nav__items[data-open="true"] {
+    display: block;
+    margin-top: 1em;
+  }
+}
+
+/* NOT fixed here: nav link hit areas. _navigation.scss gives .greedy-nav a
+   `display: block; margin: 0 1rem` with no padding and no min-height, so the
+   target is line-height tall (~19px) against a 44px guideline, and the
+   horizontal gap is margin rather than clickable area. Reaching 44px means
+   growing the masthead itself ($nav-height is 2em = 32px), which is a visual
+   decision for the family-styling migration, not a bug fix. Left open
+   deliberately. */
+
+
+/* ==========================================================================
+   MASTHEAD — 2026-08-05 family band + priority nav
+   Markup: _includes/masthead.html · Data: _data/navigation.yml
+   Behaviour: assets/js/arc42-nav.js
+
+   Everything from this banner to the closing banner is one unit. Removing this
+   block reverts the site to an unstyled masthead — it does not half-revert.
+
+   Colour values are the family tokens of record, copied from
+   meta.arc42.org/BRAND.md (ADR-0001 shares by copying, ADR-0003 forbids new
+   hexes). arc42.de is the hub twin and wears arc42.org's navy.
+
+     #2b3a57  masthead fill        (BRAND.md -> Signature hues)
+     #ffffff  on-band text         )  the pair recorded in that table
+     rgba(255,255,255,.78)         )  for the hub sites
+     #ff5c7c  coral, SPARK ONLY    — never white or body text on it
+     #c22b47  coral-deep, fills    — white text 5.63:1, AA ✓
+
+   NOTE for the migration: arc42.de's own DESIGN.md still declares
+   secondary: #ff6347 (Tomato), which is on BRAND.md's retired-colours CI
+   deny-list. The CTA below uses coral-deep instead. The Anmeldung buttons in
+   the page body still use the retired value and are NOT touched here.
+   ========================================================================== */
+
+.arc42-sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.arc42-masthead {
+  background: #2b3a57;
+  border-bottom: 0;
+}
+
+.arc42-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: 60px;
+}
+
+/* ---- brand ---------------------------------------------------------- */
+
+.arc42-nav__brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.arc42-nav__logo { display: block; width: 104px; height: auto; }
+
+/* .arc42-nav__wordmark ("Deutsch") and .arc42-nav__spark (a coral dot) used to
+   sit here. Both are gone (2026-08-05, owner): arc42.org's band is the logo
+   alone, the DE/EN switch on the right already says which language this page
+   is in, and the dot carried no meaning at all. Coral survives in the band as
+   the current-page underline below, which is a state and not decoration. */
+
+/* ---- priority row --------------------------------------------------- */
+
+.arc42-nav__prio {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+.arc42-nav__prio li { margin: 0; }
+
+.arc42-nav__prio a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;           /* target size; the old links were ~19px tall */
+  padding: 0 0.7rem;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.arc42-nav__prio a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.09);
+  text-decoration: none;
+}
+
+/* Current page: weight AND brightness AND an underline. Never colour alone —
+   the family doctrine, and the reason this is not just a tint. */
+.arc42-nav__prio a[aria-current="page"] {
+  color: #fff;
+  font-weight: 700;
+  box-shadow: inset 0 -3px 0 #ff5c7c;
+}
+
+.arc42-nav__right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+/* ---- search --------------------------------------------------------- */
+
+.arc42-search {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  padding: 0 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.75);
+}
+.arc42-search__icon { flex-shrink: 0; }
+
+/* The wrapper asks for 44px, the same as the CTA and the Mehr button. It was
+   rendering 51px, because the theme styles every input[type="search"] with its
+   own padding, border, margin and line-height, and the tallest of those wins
+   over a min-height on the parent. Measured 2026-08-05: wrapper 51px against
+   44px for its neighbours - the mismatch in the annotated screenshot.
+   So the box is reset here rather than nudged. */
+.arc42-search input {
+  width: 108px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* Safari draws its own clear button inside a search field and reserves room
+   for it, which puts the box back over 44px. */
+.arc42-search input::-webkit-search-decoration,
+.arc42-search input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.arc42-search input::placeholder { color: rgba(255, 255, 255, 0.6); }
+.arc42-search__hint {
+  padding: 0.05em 0.35em;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: inherit;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* ---- CTA ------------------------------------------------------------ */
+
+.arc42-nav__cta {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 1.05rem;
+  border-radius: 5px;
+  background: #c22b47;
+  color: #fff;
+  font-size: 0.93rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.arc42-nav__cta:hover { background: #a82340; color: #fff; text-decoration: none; }
+
+/* ---- language ------------------------------------------------------- */
+
+/* The same pill arc42.org carries, to the pixel: a 20px-radius capsule around
+   both codes, the current language filled white with band-coloured ink, the
+   other one muted. It used to be "DE | EN" in plain text behind a vertical
+   rule - a different object doing the same job on the twin site.
+   Values resolved from arc42.org's tokens (--arc42-on-masthead #fff,
+   --arc42-on-masthead-muted rgba(255,255,255,.78), --arc42-masthead #2b3a57);
+   arc42.de declares no such tokens, so they are written out.
+
+   Text pills, not flags: a flag names a country, not a language. */
+.arc42-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0;
+  padding: 0.15rem;
+  flex: none;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.arc42-lang__item {
+  padding: 0.3rem 0.55rem;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+}
+/* on the dark band the current language is a light fill with band ink */
+.arc42-lang__item.is-active {
+  background: #ffffff;
+  color: #2b3a57;
+}
+a.arc42-lang__item:hover,
+a.arc42-lang__item:focus-visible {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+}
+
+/* ---- more button ---------------------------------------------------- */
+
+.arc42-nav__more {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  padding: 0 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.arc42-nav__more:hover { background: rgba(255, 255, 255, 0.1); }
+.arc42-nav__more svg { transition: transform 0.18s ease; }
+.arc42-nav__more[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+/* One focus treatment for every control in the band. Coral reads clearly on
+   navy; writing outline:none anywhere obliges you to put a ring back. */
+.arc42-nav a:focus-visible,
+.arc42-nav button:focus-visible,
+.arc42-nav input:focus-visible,
+.arc42-drawer a:focus-visible {
+  outline: 3px solid #ff5c7c;
+  outline-offset: 2px;
+}
+
+/* ---- drawer --------------------------------------------------------- */
+
+.arc42-drawer {
+  background: #22304a;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+}
+/* Progressive enhancement: closed only where JS can reopen it. Without the `js`
+   class the drawer renders as a plain expanded list — long, never unreachable.
+   Collapsed with display:none so its links leave the tab order.
+
+   Keyed off `.js`, which _includes/head.html sets on <html> synchronously in
+   <head>. Toggling a `hidden` attribute from a DOMContentLoaded handler would
+   paint the drawer open for a frame first. */
+.js .arc42-drawer { display: none; }
+.js .arc42-drawer.is-open { display: block; }
+
+.arc42-drawer__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.6rem 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.4rem 1rem 1.7rem;
+}
+.arc42-drawer__title {
+  margin: 0 0 0.55rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.arc42-drawer__title a { color: #fff; text-decoration: none; }
+.arc42-drawer__title a:hover { text-decoration: underline; }
+.arc42-drawer ul { list-style: none; margin: 0; padding: 0; }
+.arc42-drawer li { margin: 0 0 0.1rem; }
+.arc42-drawer li a {
+  display: block;
+  margin-left: -0.5rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.arc42-drawer li a:hover { background: rgba(255, 255, 255, 0.1); text-decoration: none; }
+.arc42-drawer li a[aria-current="page"] { font-weight: 700; box-shadow: inset 3px 0 0 #ff5c7c; }
+.arc42-drawer__hint {
+  display: block;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.76rem;
+}
+.arc42-drawer__ext { margin-left: 0.25em; color: rgba(255, 255, 255, 0.78); font-size: 0.85em; }
+
+/* The priority group is a phone-only repeat of the top row. */
+.arc42-drawer__group--prio { display: none; }
+
+/* ---- phones --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  .arc42-nav { gap: 0.6rem; padding: 0 0.75rem; min-height: 56px; }
+
+  /* The row collapses into the drawer; only the cta_mobile item stays out,
+     because on a phone a dated, actionable link beats a registration form. */
+  .arc42-nav__prio { display: none; }
+  .arc42-nav__prio .is-mobile-cta { display: block; }
+  .arc42-nav__prio .is-mobile-cta a {
+    padding: 0 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .arc42-search { display: none; }   /* search lives in the drawer on phones */
+  .arc42-nav__cta { display: none; }
+  .arc42-nav__more span { display: none; }
+  .arc42-nav__more { padding: 0 0.75rem; }
+
+  .arc42-drawer__group--prio { display: block; }
+  .arc42-drawer__inner { grid-template-columns: 1fr; gap: 1.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arc42-nav__more svg { transition: none; }
+}
+
+/* ===================== END MASTHEAD BLOCK ================================= */
+
+/* ==========================================================================
+   Ukraine strip
+   --------------------------------------------------------------------------
+   Ported from arc42.org (assets/css/arc42-org.css, 2026-08-05) so the hub
+   twins carry the same object. Six pages here used to render a beige
+   `div.ua-background` blockquote with animated FontAwesome hearts; this is one
+   quiet line under the same navy the masthead uses.
+
+   Full-bleed, two ways. Fallback: the classic 100vw negative-margin trick.
+   100vw includes the vertical scrollbar on Windows/Android, so
+   html{overflow-x:clip} guards the resulting sliver of horizontal overflow.
+   Modern path: .initial-content is an inline-size query container, and 100cqw
+   measures its real width (scrollbar excluded) — no overflow at all.
+
+   Measured on the band #2b3a57: text #eaf1f8 10.0:1, links #bcd6f5 7.7:1.
+   ========================================================================== */
+
+html { overflow-x: clip; }
+
+.ua-strip {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem clamp(1rem, 5vw, 3rem);
+  /* the masthead fill, continued rather than restated */
+  background: #2b3a57;
+  color: #eaf1f8;
+  font-size: 0.92rem;
+}
+
+@supports (width: 1cqw) {
+  .initial-content { container-type: inline-size; }
+  .ua-strip {
+    width: 100cqw;
+    margin-left: calc(50% - 50cqw);
+    margin-right: calc(50% - 50cqw);
+  }
+}
+
+.ua-strip a { color: #bcd6f5; font-weight: 700; }
+
+/* Two stacked bars, not an emoji and not an image: identical on every
+   platform, and no request. */
+.ua-strip__flag {
+  display: inline-flex;
+  flex-direction: column;
+  width: 22px;
+  height: 14px;
+  flex: none;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+.ua-strip__flag i { display: block; height: 50%; }
+.ua-strip__flag i:first-child { background: #0057b7; }
+.ua-strip__flag i:last-child { background: #ffd700; }
