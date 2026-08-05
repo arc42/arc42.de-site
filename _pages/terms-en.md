@@ -119,7 +119,7 @@ By registering, customers expressly agree that we may electronically record the 
 
 > #### Cancellations in case of illness
 >
-> The participation fee is also due in the event of illness in accordance with section [Cancellation](#cancellation).
+> The participation fee is also due in the event of illness in accordance with section [Deregistration](#deregistration).
 >We always try to find a good arrangement for both sides. 
 >If possible, we will try to find a replacement date for the sick person as soon as possible.
 >
