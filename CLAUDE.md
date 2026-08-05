@@ -39,6 +39,24 @@ Die Jubiläums-Ausgabe von *arc42 by Example* (auf arc42.org
 `_resources/arc42-by-example-anniversary.md`) fehlt hier **absichtlich** — nicht
 übersehen, also bitte nicht „nachtragen".
 
+Bei `language: "de"`-Einträgen sind `summary`, `link_label` und (falls `detail: true`)
+der Detailseiten-Body hier **deutschsprachig** und weichen bewusst vom englischen
+Text auf arc42.org ab — das ist kein Sync-Fehler. Beim Kopieren eines neuen Eintrags
+von arc42.org hierher also `summary`/`link_label` übersetzen (und den Body, wenn
+`detail: true` gesetzt ist und es sich um ein deutschsprachiges Werk handelt).
+
+## Suche (`/search/`)
+
+`/search/` nutzt lunr.js (`assets/js/arc42-search.js` gegen den generierten Index
+`search.json`); das frühere `search-script.js` (Simple-Jekyll-Search) ist entfernt.
+Mehrwort-Anfragen sind **AND**-verknüpft (nicht OR) — alle Terme müssen matchen.
+
+Der Diakritik-Folding-Helper (`toLocaleLowerCase().normalize("NFD")`, gefolgt von
+`.replace()` der kombinierenden Unicode-Akzentzeichen — Bereich `U+0300`-`U+036F`,
+z. B. "über" → "uber") ist **dupliziert**: als `fold()` in `assets/js/arc42-search.js`
+und als `normalize()` in `assets/js/resources-filter.js` (Publikationen-Filter). Beide
+Stellen bei Änderungen **gemeinsam** anpassen.
+
 ## Kurse / Termine verwalten
 
 Kursdaten leben **nicht mehr** in diesem Repo. Single Source of Truth ist
