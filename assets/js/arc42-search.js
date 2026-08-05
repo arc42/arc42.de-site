@@ -153,7 +153,16 @@
         this.pipeline.remove(lunr.stemmer);
         this.searchPipeline.remove(lunr.stemmer);
         this.pipeline.remove(lunr.trimmer);
-        this.pipeline.before(lunr.stopWordFilter, trimEdges);
+
+        // Stopwords stay INDEXED. The two halves have to agree, and the query
+        // half runs with usePipeline:false — so "the" arrives at lunr as a real
+        // term while the index had dropped it, and the AND post-filter then
+        // required a term nothing could satisfy. Pasting the exact title
+        // "The Art of Software Reviews" returned "Keine Ergebnisse!"; "the
+        // architecture" found 4 where "architecture" alone found 33. Over 74
+        // documents the extra terms cost nothing worth measuring.
+        this.pipeline.remove(lunr.stopWordFilter);
+        this.pipeline.add(trimEdges);
 
         this.ref("url");
         this.field("title", { boost: 10 });
@@ -204,7 +213,14 @@
       } else {
         address.searchParams.delete("q");
       }
-      window.history.replaceState({}, "", address.pathname + address.search + address.hash);
+      try {
+        window.history.replaceState({}, "", address.pathname + address.search + address.hash);
+      } catch (error) {
+        // Safari rate-limits replaceState and throws SecurityError once a fast
+        // typist trips the limit. A shareable URL is a nicety; letting the
+        // exception escape would abort run() and leave the field dead until
+        // reload, which is not. Swallow it and carry on searching.
+      }
     }
 
     function run() {
