@@ -17,7 +17,19 @@
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}
+    {%- comment -%}
+      NOT include_cached. jekyll-include-cache renders an include once and
+      reuses that HTML for every page, so anything depending on `page` is
+      frozen at whichever page happened to build first. The masthead marks the
+      current page with aria-current, so it must be rendered per page.
+
+      This is why the old nav block was byte-identical on / and /overview/:
+      not only did it lack active-state logic, the cache made active state
+      impossible to add. Re-caching this include silently breaks the
+      you-are-here marker again. The measured cost is under a second on a
+      ~3-second build.
+    {%- endcomment -%}
+    {% include masthead.html %}
 
     <div class="initial-content">
       {{ content }}

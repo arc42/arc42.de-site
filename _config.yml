@@ -141,8 +141,19 @@ sass:
 
 # the botpoison browser script is required for spam-protection in the Anmeldung-Form
 # see https://documentation.formspark.io/setup/spam-protection.html#botpoison
-head_scripts:
-  - 
+#
+# 2026-08-05: the list was present but its single entry was EMPTY, so head.html
+# emitted <script src=""></script> on every page — which makes the browser
+# re-request the page itself as a script. Commented out until a real botpoison
+# URL is filled in; add it back as a list entry, not a blank one.
+# head_scripts:
+#   - https://unpkg.com/@botpoison/browser
+
+# Navigation accessibility: rail toggle + aria state for the masthead overflow
+# drawer. Loaded after main.min.js so the vendored greedy-nav plugin has already
+# run. See assets/js/arc42-nav.js.
+after_footer_scripts:
+  - /assets/js/arc42-nav.js
 
 # Outputting
 permalink: /:categories/:title/

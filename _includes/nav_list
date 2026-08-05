@@ -1,14 +1,50 @@
-{% assign navigation = site.data.navigation[include.nav] %}
+{%- comment -%}
+  The sidebar navigation rail, rendered from _data/navigation.yml groups
+  (publications / schulungen / about) via _includes/sidebar.html.
 
-<nav class="nav__list">
+  2026-08-05 — the collapse mechanism was rebuilt. It used to be the theme's
+  CSS-checkbox accordion:
+
+      <input id="ac-toc" type="checkbox" />
+      <label for="ac-toc">Menü ein-/ausschalten</label>
+
+  which was inaccessible in two separate ways below $large (1024px):
+
+    1. _navigation.scss hides `input[type="checkbox"], label` at every width and
+       re-shows only the LABEL on small screens. The <input> stayed
+       `display: none` — so it was not focusable — and a <label> is not
+       focusable either. There was no keyboard path to open the rail at all,
+       on the 17 pages where this rail IS the site's structure.
+
+    2. The collapsed panel used `max-height: 0; opacity: 0; overflow: hidden`,
+       which does NOT remove children from the tab order. A keyboard user
+       tabbing past the toggle landed on 5-8 links they could not see.
+
+  Now: a real <button aria-expanded aria-controls>, and the panel collapses with
+  `display: none` (see assets/css/arc42-de.css) so hidden links leave the tab
+  order. Behaviour lives in assets/js/arc42-nav.js.
+
+  Progressive enhancement: the button is hidden and the panel is always open
+  unless <html> carries the `js` class (set in _includes/head.html). With
+  JavaScript off, the rail renders expanded — long, but never unreachable.
+
+  The panel id is derived from the nav group name so a page including two rails
+  cannot emit duplicate ids.
+{%- endcomment -%}
+
+{% assign navigation = site.data.navigation[include.nav] %}
+{% assign panel_id = 'nav-items-' | append: include.nav %}
+
+<nav class="nav__list" aria-label="{{ site.data.ui-text[site.locale].menu_label | default: 'Toggle Menu' }}">
   {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
-  <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
-  <ul class="nav__items">
+  <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="{{ panel_id }}">
+    {{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}
+  </button>
+  <ul class="nav__items" id="{{ panel_id }}">
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
-          <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+          <a href="{{ nav.url | relative_url }}"{% if nav.url == page.url %} class="active" aria-current="page"{% endif %}><span class="nav__sub-title">{{ nav.title }}</span></a>
         {% else %}
           <span class="nav__sub-title">{{ nav.title }}</span>
         {% endif %}
@@ -16,7 +52,7 @@
         {% if nav.children != null %}
         <ul>
           {% for child in nav.children %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
+            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active" aria-current="page"{% endif %}>{{ child.title }}</a></li>
           {% endfor %}
         </ul>
         {% endif %}
