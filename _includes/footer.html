@@ -1,33 +1,22 @@
 <div class="page__footer-follow footer-center">
+  <p class="footer-innoq">
+    <a href="https://www.innoq.com" target="_blank" rel="noopener noreferrer nofollow"><img class="supported-by-innoq" src="/images/supported-by-innoq.svg" alt="Supported by INNOQ"></a>
+  </p>
 
-  <ul class="social-icons">
-
-    <a href="https://www.innoq.com" target="_blank" rel="noopener noreferrer nofollow"><img class="supported-by-innoq" alt="INNOQ" src="{{ '/images/supported-by-innoq--petrol-apricot.svg' | relative_url }}"></a><br>
-   
-    <li><a href="https://linkedin.com/in/gernotstarke">
-      <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
-
-
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer nofollow">
-        <i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a></li>
-    {% endif %}
-
-    <li><a href="https://www.youtube.com/arc42-video/" target="_blank" rel="noopener noreferrer nofollow">
-      <i class="fab fa-fw fa-youtube" aria-hidden="true"></i>YouTube</a></li><br>
-
-    <li><a href="https://dev.to/gernotstarke/" target="_blank" rel="noopener noreferrer nofollow">
-      <i class="fab fa-dev" aria-hidden="true"></i>Dev</a></li>
-
-
-    <li><a href="{{ '/imprint/' | relative_url }}"><i class="fas fa-fw fa-lock" style="color:Tomato"  aria-hidden="true"></i>Impressum & Privacy</a></li>
-    <li><a href="{{ '/imprint/' | relative_url }}"><i class="fas fa-cookie-bite" style="color:green" aria-hidden="true"></i>No-Cookies</a></li>
-    <li><a href="https://status.arc42.org">
-      <i class="fas fa-chart-bar fa-fw" style="color:#50C878;" ></i>Status</a><i>&nbsp;&nbsp;</i></li>
+  {%- comment -%} Plain text links with dot separators (styled in
+      arc42-de.css, rules copied from arc42.org). No FontAwesome icons:
+      the labels carry the meaning; the icons only added noise at this
+      size. {%- endcomment -%}
+  <ul class="footer-links">
+    <li><a href="{{ '/about/' | relative_url }}">Über arc42</a></li>
+    <li><a href="{{ '/contact/' | relative_url }}">Kontakt</a></li>
+    <li><a href="{{ '/license/' | relative_url }}">Lizenz</a></li>
+    <li><a href="{{ '/imprint/' | relative_url }}">Impressum &amp; Datenschutz</a></li>
+    <li><a href="https://github.com/arc42">GitHub</a></li>
   </ul>
 </div>
 
 <div class="page__footer-copyright footer-center copyright-size">
   &copy; {{ site.time | date: '%Y' }} Dr. Peter Hruschka und Dr. Gernot Starke. <br class="mobile">
-  Unterstützt von <a target="_blank" rel="noopener noreferrer" href="https://kroener-starke.ch/projekte/">Kröner & Starke Web Development</a>.
+  Unterstützt von <a href="https://kroener-starke.ch/">Kröner &amp; Starke</a>.
 </div>
