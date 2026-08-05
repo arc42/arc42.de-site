@@ -43,9 +43,9 @@ template_training_news:
     
      * Verfügbar in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Tschechisch, Portugiesisch und Ukrainisch)
 
-     * Lesen Sie unseren Artikel [Handeln statt jammern](/articles/#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
+     * Lesen Sie unseren Artikel [Handeln statt jammern](/publikationen/?type=article) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
-    * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/books/#arc42-by-example-vol2).
+    * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/publikationen/#arc42-by-example-vol2).
     "
 
 methode_publications_canvas:
@@ -62,7 +62,7 @@ methode_publications_canvas:
     Es gibt viel zu lesen über arc42 und Architektur. Von der Methode über _good practices_
     bis hin zu kompletten Beispielen von Softwarearchitekturen.<br>
     Stöbern Sie in unseren Büchern, Artikeln, Vorträgen oder Videos."
-    url: "/more/"
+    url: "/publikationen/"
     btn_label: "mehr dazu..."
     btn_class: "btn--primary"
   

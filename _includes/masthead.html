@@ -152,6 +152,12 @@
                 {{ section.title }}
               {%- endif -%}
             </h2>
+            {%- comment -%}
+              A group may consist of the heading alone (e.g. `publications`,
+              which is a single link to /publikationen/). Without this guard
+              such a group emits an empty <ul>.
+            {%- endcomment -%}
+            {%- if section.children -%}
             <ul>
               {%- for child in section.children -%}
                 <li>
@@ -163,6 +169,7 @@
                 </li>
               {%- endfor -%}
             </ul>
+            {%- endif -%}
           </div>
         {%- endfor -%}
       {%- endfor -%}

@@ -18,4 +18,28 @@ layout: none
     {% endif %}
 } {% unless forloop.last %},{% endunless %}
 {% endfor %}
+{%- comment -%}
+  site.pages does NOT include collection documents, so the ~50 /publikationen/
+  entries were invisible to the site search. This mirrors the page loop above
+  for site.resources: same four fields, same strip_html | strip_newlines |
+  jsonify treatment. `summary` and `search` are prepended to the body text
+  because entries WITHOUT a detail page have no body at all — without this they
+  would be indexed as title-only.
+
+  The url points at the detail page when there is one, otherwise at the filtered
+  listing plus the card's anchor. The anchor is the filename slug, derived the
+  same way _includes/resource-item.html derives it — NOT `resource.id`, which
+  Jekyll's DocumentDrop overrides with the document's internal id.
+{%- endcomment -%}
+{% if site.resources.size > 0 %},
+{% for resource in site.resources %}
+{%- assign r_anchor = resource.path | split: '/' | last | split: '.' | first -%}
+{
+      "title"    : "{{ resource.title | escape }}",
+      "content"  : {{ resource.summary | append: " " | append: resource.search | append: " " | append: resource.content | strip_html | strip_newlines | jsonify }},
+      "url"      : "{{ site.baseurl }}{% if resource.detail %}{{ resource.url }}{% else %}/publikationen/?type={{ resource.type }}#{{ r_anchor }}{% endif %}",
+      "date"     : "{{ resource.date }}"
+} {% unless forloop.last %},{% endunless %}
+{% endfor %}
+{% endif %}
 ]

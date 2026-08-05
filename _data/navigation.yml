@@ -53,17 +53,13 @@ drawer:
   - group: methode
   - group: about
 
+# One item, not four. Bücher / Artikel / Videos / Vorträge used to be four
+# separate pages; they are now one filterable listing at /publikationen/, and
+# the old URLs are redirect stubs. A group with no `children` renders as a
+# linked heading only — masthead.html guards the child <ul> for exactly this.
 publications:
   - title: Publikationen
-    children:
-    - title: Bücher
-      url: /books/
-    - title: Artikel
-      url: /articles/
-    - title: Videos
-      url: /videos/
-    - title: Vorträge
-      url: /talks/
+    url: /publikationen/
 
 schulungen:
   - title: Schulungsangebot

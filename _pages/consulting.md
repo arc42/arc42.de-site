@@ -39,7 +39,7 @@ talks_feature:
     alt: "Gernot Starke dynamisch vor einer Leinwand bei einem Vortrag"
     title: "Vorträge"
     excerpt: 'Wir halten Vorträge zu Themen rund um Architektur, auf Konferenzen oder gerne auch bei Ihnen inhouse. Darf es ein Impulsvortrag, eine Keynote oder ein thematisch fokussierter Deep-Dive sein? '
-    url: /talks/
+    url: /publikationen/?type=talk
     btn_label: "mehr dazu ..."
     btn_class: "btn--primary"
 
