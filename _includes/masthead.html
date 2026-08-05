@@ -60,7 +60,7 @@
     <a class="arc42-nav__brand" href="{{ '/' | relative_url }}">
       <img class="arc42-nav__logo"
            src="{{ '/images/arc42-logo-white.svg' | relative_url }}"
-           alt="arc42 — Startseite" width="104" height="29" decoding="async">
+           alt="arc42 — Startseite" width="121" height="34" decoding="async">
     </a>
 
     <ul class="arc42-nav__prio">
@@ -87,11 +87,15 @@
         <a class="arc42-lang__item" href="https://arc42.org" lang="en" hreflang="en" rel="noopener" title="To the English site arc42.org">EN<span class="arc42-sr-only"> — English site arc42.org</span></a>
       </div>
 
+      {%- comment -%}
+        Three bars and the word, exactly as arc42.org draws it — not a chevron.
+        The bars are spans rather than an SVG because that is what the twin
+        site ships, and a drawer toggle that looks different on the two hub
+        sites is the kind of difference nobody can justify twice.
+      {%- endcomment -%}
       <button class="arc42-nav__more" type="button" aria-expanded="false" aria-controls="arc42-drawer">
-        <span>Mehr</span>
-        <svg width="11" height="7" viewBox="0 0 12 8" fill="none" aria-hidden="true" focusable="false">
-          <path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+        <span class="arc42-nav__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="arc42-nav__more-txt">Mehr</span>
       </button>
 
       {%- comment -%}

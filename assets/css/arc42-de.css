@@ -214,6 +214,53 @@ button.msa {
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
+/* ==========================================================================
+   The family face, for the chrome only
+   --------------------------------------------------------------------------
+   arc42.de still renders in the theme's system stack (-apple-system, …) while
+   arc42.org has moved to the arc42 family pair. That is the "different font"
+   in the annotated screenshot: the two hub twins were not even setting the
+   same typeface in their navigation bars.
+
+   Scoped to the masthead, the drawer and the Ukraine strip on purpose. The
+   full type migration (Atkinson body + Libre Caslon headings, 65-75ch measure)
+   is a separate job for the whole site, and doing it here by accident would
+   reflow every page.
+
+   Files, unicode-ranges and the 400-700 range copied verbatim from
+   arc42.org-site/_sass/arc42-fonts.scss with the OFL licence alongside them,
+   so the two sites serve byte-identical fonts.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/assets/fonts/atkinson-hyperlegible-next-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/assets/fonts/atkinson-hyperlegible-next-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+.arc42-masthead,
+.arc42-drawer,
+.ua-strip {
+  font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", -apple-system,
+    "system-ui", "Segoe UI", Roboto, sans-serif;
+}
+
 .arc42-masthead {
   background: #2b3a57;
   border-bottom: 0;
@@ -257,14 +304,18 @@ button.msa {
    contrast fix.
    ========================================================================== */
 
+/* arc42.org's shell, measured off it at 1440px: a 1280px column, 1rem (22px at
+   this breakpoint) of padding all round, 1rem between the flex children. Its
+   band comes out 91px tall; this one was 61px, which is the height difference
+   in the annotated screenshot. min-height is gone — the controls set the
+   height there, and pinning it here made the band shorter than its twin. */
 .arc42-nav {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1rem;
-  min-height: 60px;
+  padding: 1rem;
 }
 
 /* ---- brand ---------------------------------------------------------- */
@@ -276,7 +327,7 @@ button.msa {
   flex-shrink: 0;
   text-decoration: none;
 }
-.arc42-nav__logo { display: block; width: 104px; height: auto; }
+.arc42-nav__logo { display: block; width: auto; height: 34px; }
 
 /* .arc42-nav__wordmark ("Deutsch") and .arc42-nav__spark (a coral dot) used to
    sit here. Both are gone (2026-08-05, owner): arc42.org's band is the logo
@@ -286,64 +337,92 @@ button.msa {
 
 /* ---- priority row --------------------------------------------------- */
 
+/* margin-left:auto pushes the links and everything after them into one cluster
+   at the right, which is arc42.org's arrangement: logo alone at the far left,
+   a gap, then links -> CTA -> DE/EN -> More. Here the links used to sit
+   immediately after the logo with the controls far away on the right, so the
+   band read as two groups instead of one.
+   gap is arc42.org's fluid clamp; it measures 21.6px at 1440 against the
+   3.3px this row had. */
 .arc42-nav__prio {
   display: flex;
   align-items: center;
-  gap: 0.15rem;
+  gap: clamp(0.9rem, 1.5vw, 1.4rem);
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 auto;
   padding: 0;
   flex-shrink: 0;
 }
 .arc42-nav__prio li { margin: 0; }
 
+/* weight 600 and no chrome of their own — arc42.org's links, which is why its
+   row reads as type and this one read as a strip of buttons. The 44px target
+   is not lost: padding plus the 22px line box measures 46px, the same as the
+   twin site. */
 .arc42-nav__prio a,
 .arc42-nav__prio a:link,
 .arc42-nav__prio a:visited {
   display: flex;
   align-items: center;
-  min-height: 44px;           /* target size; the old links were ~19px tall */
-  padding: 0 0.7rem;
-  border-radius: 4px;
+  padding: 0.4rem 0.1rem;
   color: rgba(255, 255, 255, 0.78);
   font-size: 0.95rem;
+  font-weight: 600;
+  /* arc42.org's links are inline anchors and take a ~1.35 line box; these are
+     flex items, which would otherwise inherit the theme's 1.5 and stand 3px
+     taller than their twin. Measured: 46px on both. */
+  line-height: 1.35;
   text-decoration: none;
+  transition: color 0.15s ease;
 }
 .arc42-nav__prio a:hover,
 .arc42-nav__prio a:link:hover,
 .arc42-nav__prio a:visited:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.09);
   text-decoration: none;
 }
 
-/* Current page: weight AND brightness AND an underline. Never colour alone —
-   the family doctrine, and the reason this is not just a tint. */
+/* Current page: brightness AND an underline, never colour alone — the family
+   doctrine. arc42.org draws it as a 2px underline offset 6px rather than the
+   coral inset bar this used, so it is drawn that way here too. */
 .arc42-nav__prio a[aria-current="page"] {
   color: #fff;
-  font-weight: 700;
-  box-shadow: inset 0 -3px 0 #ff5c7c;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
 
+/* no margin-left:auto any more — .arc42-nav__prio above carries it, so the
+   links and these controls travel as one cluster. Same 1rem the nav uses
+   between its own children, so the seam between the two is invisible. */
 .arc42-nav__right {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-left: auto;
+  gap: 1rem;
 }
 
 /* ---- search --------------------------------------------------------- */
 
+/* arc42.org has no search in its band, so there is no shape to copy. It takes
+   the Mehr button's instead — same 8px radius, same 1px rgba(255,255,255,.28)
+   outline, same muted ink — so it reads as one of that pair rather than as a
+   third kind of object. Kept at the far right (owner, 2026-08-05). */
 .arc42-search {
   display: flex;
   align-items: center;
+  /* the theme gives every <form> a bottom margin, which made this flex item
+     3px taller than its box and stretched the whole band with it */
+  margin: 0;
   gap: 0.4rem;
-  min-height: 44px;
-  padding: 0 0.6rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.75);
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.78);
+}
+.arc42-search:focus-within {
+  border-color: #fff;
+  color: #fff;
 }
 .arc42-search__icon { flex-shrink: 0; }
 
@@ -355,7 +434,7 @@ button.msa {
    So the box is reset here rather than nudged. */
 .arc42-search input {
   width: 108px;
-  height: 42px;
+  height: 24px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -377,7 +456,7 @@ button.msa {
   -webkit-appearance: none;
   appearance: none;
 }
-.arc42-search input::placeholder { color: rgba(255, 255, 255, 0.6); }
+.arc42-search input::placeholder { color: rgba(255, 255, 255, 0.78); }
 .arc42-search__hint {
   padding: 0.05em 0.35em;
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -390,24 +469,40 @@ button.msa {
 
 /* ---- CTA ------------------------------------------------------------ */
 
+/* The family amber, not coral-deep. A navy button on a navy band disappears,
+   so the CTA inverts to amber with dark ink — and that makes it the loudest
+   thing in the band, which matches its job on both hub twins. Only the word
+   differs between them: Download there, Anmeldung here (owner, 2026-08-05).
+
+   Measured from arc42.org: #ffc95c fill, #4a3a0a ink, 8px radius,
+   0.5rem 1rem padding, weight 700, 0.95rem.
+   #4a3a0a on #ffc95c ....................................... 8.03:1 AAA
+   (the retired coral-deep #c22b47 with white gave 5.63:1) */
 .arc42-nav__cta,
 .arc42-nav__cta:link,
 .arc42-nav__cta:visited {
   display: flex;
   align-items: center;
-  min-height: 44px;
-  padding: 0 1.05rem;
-  border-radius: 5px;
-  background: #c22b47;
-  color: #fff;
-  font-size: 0.93rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: #ffc95c;
+  color: #4a3a0a;
+  font-size: 0.95rem;
   font-weight: 700;
+  line-height: 1.35;   /* as above: 50px, the height arc42.org's CTA measures */
   text-decoration: none;
   white-space: nowrap;
+  box-shadow: none;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 .arc42-nav__cta:hover,
 .arc42-nav__cta:link:hover,
-.arc42-nav__cta:visited:hover { background: #a82340; color: #fff; text-decoration: none; }
+.arc42-nav__cta:visited:hover {
+  background: #ffd88a;
+  color: #4a3a0a;
+  text-decoration: none;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
 
 /* ---- language ------------------------------------------------------- */
 
@@ -458,23 +553,45 @@ a.arc42-lang__item:focus-visible {
 
 /* ---- more button ---------------------------------------------------- */
 
+/* arc42.org's toggle, measured: 8px radius, 0.45rem 0.7rem padding, 0.5rem
+   between the bars and the word, muted white rather than solid — it is the
+   quietest control in the band, and it was the second-loudest here. */
 .arc42-nav__more {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
-  min-height: 44px;
-  padding: 0 0.85rem;
+  gap: 0.5rem;
+  padding: 0.45rem 0.7rem;
   border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 5px;
+  border-radius: 8px;
   background: transparent;
-  color: #fff;
-  font: inherit;
-  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
   cursor: pointer;
 }
-.arc42-nav__more:hover { background: rgba(255, 255, 255, 0.1); }
-.arc42-nav__more svg { transition: transform 0.18s ease; }
-.arc42-nav__more[aria-expanded="true"] svg { transform: rotate(180deg); }
+.arc42-nav__more:hover {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+.arc42-nav__more[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #fff;
+  color: #fff;
+}
+
+.arc42-nav__bars {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 18px;
+}
+.arc42-nav__bars span {
+  display: block;
+  height: 2px;
+  background: currentColor;
+}
 
 /* One focus treatment for every control in the band. Coral reads clearly on
    navy; writing outline:none anywhere obliges you to put a ring back. */
@@ -567,8 +684,8 @@ a.arc42-lang__item:focus-visible {
 
   .arc42-search { display: none; }   /* search lives in the drawer on phones */
   .arc42-nav__cta { display: none; }
-  .arc42-nav__more span { display: none; }
-  .arc42-nav__more { padding: 0 0.75rem; }
+  .arc42-nav__more-txt { display: none; }
+  .arc42-nav__more { padding: 0.45rem 0.6rem; }
 
   .arc42-drawer__group--prio { display: block; }
   .arc42-drawer__inner { grid-template-columns: 1fr; gap: 1.2rem; }
