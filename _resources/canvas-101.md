@@ -11,29 +11,31 @@ summary: "Ein kostenloser INNOQ-Primer mit sieben praktischen One-Pagern (Canvas
 search: "canvas 101 primer innoq 2025 gernot starke jörg müller benjamin wolf ben wolf aminata sidibe markus harrer lena kraaz anja kammer patrick roos gil breth business model architecture inception communication software analytics tech stack team"
 ---
 
-A canvas turns a complex topic into a single structured page: business models, use
-cases, requirements, architectures, operational aspects, team work. This free INNOQ
-primer (February 2025) presents seven one-pagers that have proven themselves in
-demanding IT projects, with concise guidance on when and how to use each.
+Ein Canvas bringt ein komplexes Thema auf eine einzige strukturierte Seite:
+Geschäftsmodelle, Anwendungsfälle, Anforderungen, Architekturen, Betriebsaspekte,
+Teamarbeit. Dieser kostenlose INNOQ-Primer (Februar 2025) stellt sieben One-Pager
+vor, die sich in anspruchsvollen IT-Projekten bewährt haben — mit knapper Anleitung,
+wann und wie jeder einzusetzen ist.
 
-## The seven canvases
+## Die sieben Canvases
 
-- **Business Model Canvas** — the classic for business models.
-- **Architecture Inception Canvas** — a starting point for IT projects, from
-  requirements to first solution ideas.
-- **Architecture Communication Canvas** — compact architecture documentation, based
-  on [arc42](/canvas/).
-- **Software Analytics Canvas** — structured, data-driven analysis of software
-  systems.
-- **Tech Stack Canvas** — the technical basis and tool selection at a glance.
-- **Team Communication Canvas** — structure for successful collaboration.
+- **Business Model Canvas** — der Klassiker für Geschäftsmodelle.
+- **Architecture Inception Canvas** — der Startpunkt für IT-Projekte, von den
+  Anforderungen bis zu ersten Lösungsideen.
+- **Architecture Communication Canvas** — kompakte Architekturdokumentation auf
+  Basis von [arc42](/canvas/).
+- **Software Analytics Canvas** — strukturierte, datengetriebene Analyse von
+  Softwaresystemen.
+- **Tech Stack Canvas** — technische Basis und Werkzeugwahl auf einen Blick.
+- **Team Communication Canvas** — Struktur für erfolgreiche Zusammenarbeit.
 
-## Authors
+## Autorinnen und Autoren
 
-Written together with INNOQ colleagues: Gernot Starke, Jörg Müller, Benjamin Wolf,
-Aminata Sidibe, Markus Harrer, Lena Kraaz, Anja Kammer, Patrick Roos and Gil Breth.
+Entstanden gemeinsam mit INNOQ-Kolleginnen und -Kollegen: Gernot Starke, Jörg Müller,
+Benjamin Wolf, Aminata Sidibe, Markus Harrer, Lena Kraaz, Anja Kammer, Patrick Roos
+und Gil Breth.
 
 <div class="resource-detail__facts" markdown="1">
-**Publisher** INNOQ Primer &middot; **Published** February 2025 &middot; **Price**
-free (PDF) &middot; **More** <a href="https://www.innoq.com/de/topics/primer/" rel="noopener">innoq.com/de/topics/primer</a>
+**Verlag** INNOQ Primer &middot; **Erschienen** Februar 2025 &middot; **Preis**
+kostenlos (PDF) &middot; **Mehr** <a href="https://www.innoq.com/de/topics/primer/" rel="noopener">innoq.com/de/topics/primer</a>
 </div>

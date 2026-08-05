@@ -8,26 +8,26 @@ summary: "Grundlagenwissen der Softwarearchitektur, überarbeitet für den iSAQB
 search: "basiswissen softwarearchitektur 6 auflage sechste 2025 gharbi koschel rausch starke isaqb cpsa foundation dpunkt"
 ---
 
-*Basiswissen Softwarearchitektur* is a foundation-level guide to the concepts and
-practice of software architecture. It covers the essential terms and concepts, the
-core techniques and methods for designing and developing architectures, describing
-and communicating them, and assuring their quality. It also addresses the role and
-tasks of software architects, along with the categories and decision criteria for
-selecting concrete tools.
+*Basiswissen Softwarearchitektur* vermittelt Grundlagenwissen zu Konzepten und Praxis
+der Softwarearchitektur: die wesentlichen Begriffe, die zentralen Techniken und
+Methoden, um Architekturen zu entwerfen und zu entwickeln, sie zu beschreiben und zu
+kommunizieren sowie ihre Qualität zu sichern. Ebenso behandelt es Rolle und Aufgaben
+von Softwarearchitekten sowie Kategorien und Entscheidungskriterien für die Auswahl
+konkreter Werkzeuge.
 
-## New in the 6th edition
+## Neu in der 6. Auflage
 
-The sixth, revised and updated edition adds a dedicated chapter on **requirements and
-constraints** and now also covers the topic of **data and data models**. It follows
-the 2025 version of the *Certified Professional for Software Architecture, Foundation
-Level* (CPSA-F) curriculum from the iSAQB.
+Die sechste, überarbeitete und aktualisierte Auflage ergänzt ein eigenes Kapitel zu
+**Anforderungen und Randbedingungen** und behandelt nun auch **Daten und
+Datenmodelle**. Sie folgt der Version 2025 des Lehrplans *Certified Professional for
+Software Architecture, Foundation Level* (CPSA-F) des iSAQB.
 
-## Who it is for
+## Für wen
 
-Developers and architects building a solid, curriculum-aligned foundation, and anyone
-preparing for the iSAQB CPSA Foundation certification.
+Entwickler und Architekten, die ein solides, lehrplan-konformes Fundament aufbauen —
+und alle, die sich auf die iSAQB-CPSA-Foundation-Zertifizierung vorbereiten.
 
 <div class="resource-detail__facts" markdown="1">
-**Authors** Gharbi, Koschel, Rausch, Starke &middot; **Publisher** dpunkt.verlag
-&middot; **Edition** 6. Auflage, 2025 &middot; **Curriculum** iSAQB CPSA-F 2025
+**Autoren** Gharbi, Koschel, Rausch, Starke &middot; **Verlag** dpunkt.verlag
+&middot; **Auflage** 6. Auflage, 2025 &middot; **Lehrplan** iSAQB CPSA-F 2025
 </div>

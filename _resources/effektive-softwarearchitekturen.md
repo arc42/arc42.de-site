@@ -11,38 +11,39 @@ summary: "Das deutschsprachige Standardwerk für praktizierende Softwarearchitek
 search: "effektive softwarearchitekturen 10 auflage gernot starke isaqb hanser c4 cloud data contracts 9783446476721 esabuch"
 ---
 
-For more than twenty years *Effektive Softwarearchitekturen* has been a standard
-German-language handbook for practising software architects. The tenth edition is
-thoroughly revised and aligned with the current iSAQB CPSA Foundation curriculum. It
-is a practical, method-oriented guide, closely mirroring the way arc42 structures
-architecture work: from clarifying requirements, through designing structures and
-crosscutting concepts, to communicating, evaluating and systematically improving a
-system.
+Seit mehr als zwanzig Jahren ist *Effektive Softwarearchitekturen* ein
+deutschsprachiges Standardwerk für praktizierende Softwarearchitekten. Die zehnte
+Auflage ist gründlich überarbeitet und am aktuellen iSAQB-CPSA-Foundation-Lehrplan
+ausgerichtet. Ein praktischer, methodenorientierter Leitfaden, eng an der Art, wie
+arc42 Architekturarbeit strukturiert: vom Klären der Anforderungen über den Entwurf
+von Strukturen und Querschnittskonzepten bis zum Kommunizieren, Bewerten und
+systematischen Verbessern eines Systems.
 
-## New in the 10th edition
+## Neu in der 10. Auflage
 
-- **C4 model** notation alongside UML for describing structures.
-- **Cloud computing** and its architectural consequences.
-- **Data contracts** for keeping data dependencies explicit and stable.
-- Updated examples, checklists and iSAQB Foundation examination questions.
+- **C4-Modell** als Notation neben UML zur Beschreibung von Strukturen.
+- **Cloud-Computing** und seine architektonischen Konsequenzen.
+- **Data Contracts**, um Datenabhängigkeiten explizit und stabil zu halten.
+- Aktualisierte Beispiele, Checklisten und Fragen zur iSAQB-Foundation-Prüfung.
 
-## What it covers
+## Inhalt
 
-- The fundamentals: loose coupling, high cohesion, separation of responsibilities,
-  modularization, abstraction and encapsulation.
-- Architectural patterns such as layers, microservices and event-driven systems.
-- Quality-driven design, persistence, security, scalability and evolution.
-- Practical, worked case studies drawn from real projects.
+- Die Grundlagen: lose Kopplung, hohe Kohäsion, Trennung von Verantwortlichkeiten,
+  Modularisierung, Abstraktion und Kapselung.
+- Architekturmuster wie Schichten, Microservices und ereignisgetriebene Systeme.
+- Qualitätsgetriebener Entwurf, Persistenz, Sicherheit, Skalierbarkeit und Evolution.
+- Durchgearbeitete Fallstudien aus realen Projekten.
 
-## Who it is for
+## Für wen
 
-Developers growing into architecture roles, experienced architects who want a
-systematic reference, and anyone preparing for the iSAQB CPSA Foundation exam.
+Entwickler auf dem Weg in Architekturrollen, erfahrene Architekten, die eine
+systematische Referenz suchen — und alle, die sich auf die
+iSAQB-CPSA-Foundation-Prüfung vorbereiten.
 
 <div class="resource-detail__facts" markdown="1">
-**Publisher** Carl Hanser Verlag &middot; **ISBN** 978-3-446-47672-1 &middot;
-**Pages** 372 &middot; **Published** August 2024 &middot; **Price** € 49,99
+**Verlag** Carl Hanser Verlag &middot; **ISBN** 978-3-446-47672-1 &middot;
+**Seiten** 372 &middot; **Erschienen** August 2024 &middot; **Preis** € 49,99
 </div>
 
-The companion site [esabuch.de](https://www.esabuch.de/) has the full table of
-contents and further material.
+Die Begleitseite [esabuch.de](https://www.esabuch.de/) bietet das vollständige
+Inhaltsverzeichnis und weiteres Material.
