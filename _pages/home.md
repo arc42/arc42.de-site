@@ -43,7 +43,7 @@ template_training_news:
     
      * Verfügbar in vielen Sprachen (aktuell Englisch, Französisch, Spanisch, Italienisch, Niederländisch, Deutsch, Tschechisch, Tschechisch, Portugiesisch und Ukrainisch)
 
-     * Lesen Sie unseren Artikel [Handeln statt jammern](/publikationen/?type=article) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
+     * Lesen Sie unseren Artikel [Handeln statt jammern](/publikationen/?type=article#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
     * Noch mehr Beispiele zu arc42 in dem Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/publikationen/#arc42-by-example-vol2).
     "
