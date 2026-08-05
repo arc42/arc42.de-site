@@ -6,7 +6,6 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 github_username: gernotstarke
-github: metadata
 
 ## search seems to be problematic on THIS site,
 ## standard LunR search doesn't find anything
@@ -164,13 +163,6 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 plugins:
   - jekyll-include-cache
   - jekyll-sitemap
-  - jemoji
- 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-include-cache
-  - jekyll-sitemap
-  - jemoji
 
 
 # Archives
