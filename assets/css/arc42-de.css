@@ -57,8 +57,15 @@ button.msa {
     font-size: 80%;
 }
 
-.copyright-size {
-    font-size: 60% !important;
+/* Matches arc42.org (arc42-org.css:128), which sets 0.8rem. The compound
+   selector replaces a former `60% !important`: arc42-de.css is pulled in by
+   main.scss with a .css extension, so Sass emits a real @import at the TOP of
+   main.css and every theme rule lands AFTER it. The theme's own
+   `.page__footer-copyright { font-size: .6875em }` therefore wins at equal
+   specificity — same trap as the .footer-links rules further down. Two classes
+   beat one without needing !important; the footer carries both. */
+.page__footer-copyright.copyright-size {
+    font-size: 0.8rem;
 }
 
 
