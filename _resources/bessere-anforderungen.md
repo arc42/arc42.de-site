@@ -5,7 +5,7 @@ language: "de"
 year: 2026
 cover: "/images/resources/talk-bessere-anforderungen.webp"
 link: "https://speakerdeck.com/gernotstarke/wie-dev-teams-zu-besseren-anforderungen-kommen"
-link_label: "Open slides"
-summary: "Garbage in, garbage out applies to software too. Good requirements work is part of architecture, not something to outsource. From vision to measurable requirements along a real Hyrox example, framed by the Twin Peaks model of requirements and architecture."
+link_label: "Folien öffnen"
+summary: "Garbage in, garbage out gilt auch für Software. Gute Anforderungsarbeit gehört zur Architektur und lässt sich nicht auslagern. Von der Vision zu messbaren Anforderungen an einem echten Hyrox-Beispiel, eingeordnet im Twin-Peaks-Modell von Anforderungen und Architektur."
 search: "bessere anforderungen requirements engineering dev teams vision stakeholders quality twin peaks hyrox llm gernot starke"
 ---

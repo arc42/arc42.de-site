@@ -4,7 +4,7 @@ title: "Basiswissen Softwarearchitektur, 6. Auflage"
 language: "de"
 year: 2025
 detail: true
-summary: "Foundation-level software architecture knowledge, revised for the 2025 iSAQB CPSA Foundation curriculum, now with dedicated chapters on requirements and on data."
+summary: "Grundlagenwissen der Softwarearchitektur, überarbeitet für den iSAQB-CPSA-Foundation-Lehrplan 2025, jetzt mit eigenen Kapiteln zu Anforderungen und zu Daten."
 search: "basiswissen softwarearchitektur 6 auflage sechste 2025 gharbi koschel rausch starke isaqb cpsa foundation dpunkt"
 ---
 

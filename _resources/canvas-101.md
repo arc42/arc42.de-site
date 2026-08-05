@@ -6,8 +6,8 @@ year: 2025
 detail: true
 cover: "/images/books/canvas-101-cover.jpg"
 link: "https://res.cloudinary.com/innoq/image/upload/fl_attachment:canvas-101/v1/uploads-production/05f0adcu40w82wo1du65ybycdp67"
-link_label: "Download the free primer"
-summary: "A free INNOQ primer presenting seven practical one-pagers (canvases) for IT projects, from business models to architecture and team collaboration."
+link_label: "Primer kostenlos laden"
+summary: "Ein kostenloser INNOQ-Primer mit sieben praktischen One-Pagern (Canvases) für IT-Projekte, von Geschäftsmodellen über Architektur bis zur Teamarbeit."
 search: "canvas 101 primer innoq 2025 gernot starke jörg müller benjamin wolf ben wolf aminata sidibe markus harrer lena kraaz anja kammer patrick roos gil breth business model architecture inception communication software analytics tech stack team"
 ---
 

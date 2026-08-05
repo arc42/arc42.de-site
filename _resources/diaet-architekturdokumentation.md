@@ -5,7 +5,7 @@ language: "de"
 year: 2026
 cover: "/images/resources/talk-doku-diaet.webp"
 link: "https://speakerdeck.com/gernotstarke/diat-fur-architekturdokumentation-ein-ernahrungsplan"
-link_label: "Open slides"
-summary: "Architecture documentation has a weight problem: too many pages, too little substance. How arc42 trims docs to the essentials, from 17-page minimal write-ups to 4000-person-day projects, plus the arc42 canvas and a look at agentic workflows."
+link_label: "Folien öffnen"
+summary: "Architekturdokumentation hat ein Gewichtsproblem: zu viele Seiten, zu wenig Substanz. Wie arc42 Dokumentation aufs Wesentliche reduziert — von der 17-Seiten-Minimaldoku bis zum 4000-Personentage-Projekt, dazu der arc42-Canvas und ein Blick auf agentische Workflows."
 search: "diät architekturdokumentation ernährungsplan arc42 canvas macro-architecture lean documentation llm agentic gernot starke"
 ---
