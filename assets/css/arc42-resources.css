@@ -1,0 +1,489 @@
+/* ==========================================================================
+   arc42-resources.css — resource collection (Publikationen) mechanism styles.
+   Ported verbatim (German UI chrome only in the Liquid templates, not here)
+   from arc42.org-site/assets/css/arc42-org.css. Assembled from four blocks:
+   1) the :root design-token block, 2) .btn.btn--arc42 / .btn--arc42-outline,
+   3) the .dl-hero* hero-band rules, 4) the .resource-* browser/detail rules.
+   See task-4-report.md for exact source line ranges and one documented
+   deviation (the .dl-hero full-bleed rule was filtered to drop selectors
+   for .ua-strip/.home-hero/.dl-strip/.initial-content, which arc42-de.css
+   already styles independently — see the note above the .dl-hero rule).
+   ========================================================================== */
+
+:root {
+  --arc42-primary: #374769;        /* navy ink — brand, primary actions */
+  --arc42-primary-hover: #4b7ba3;  /* steel blue — hover state */
+  --arc42-slate: #6f777d;          /* secondary neutral */
+  --arc42-ink: #3d4144;            /* body text */
+  --arc42-ink-strong: #1c2c44;     /* headings / emphasized text */
+  --arc42-text-muted: #55657a;     /* muted text on white or tinted bg */
+  --arc42-border: #e4e9f0;         /* card & pane borders */
+  --arc42-border-light: #f2f3f3;   /* hairline separators */
+
+  /* arc42 family accents — shared hex across all arc42 sites, do not tune.
+     Same values on docs.arc42.org and quality.arc42.org; see DESIGN.md. */
+  --arc42-amber: #ffc95c;          /* highlights, tips */
+  --arc42-amber-ink: #4a3a0a;      /* text on amber */
+  --arc42-amber-lift: #ffdb8f;     /* amber hover — lighter, so it reads as "lit"
+                                      on the dark band; not a family token */
+  --arc42-coral: #ff5c7c;          /* warm spark — small accents / text-on-dark only */
+  --arc42-coral-deep: #c22b47;     /* coral for button fills, AA with white */
+  --arc42-emerald: #2e9e67;        /* success / status */
+  --arc42-green-wash: #d9f7d3;     /* soft green surface */
+  --arc42-green-ink: #1b5e20;      /* text on green wash */
+
+  --arc42-accent: var(--arc42-amber); /* the single loud accent — alias, so all
+                                         existing --arc42-accent uses follow */
+
+  /* the family type pair, as custom properties so the plain-CSS files here can
+     reach them — they are served as separate stylesheets and never see Sass
+     variables (see the cascade note in main.scss) */
+  --arc42-font-sans: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --arc42-font-serif: "Libre Caslon Text", Georgia, serif;
+
+  /* masthead band — the family handshake: one saturated fill per site */
+  --arc42-masthead: #2b3a57;                        /* navy, deepened from --arc42-primary */
+  --arc42-on-masthead: #ffffff;                     /* logo, active/hover links */
+  --arc42-on-masthead-muted: rgba(255, 255, 255, 0.78); /* resting nav links */
+
+  /* hero band — one step deeper than the masthead so the headline, not the
+     navigation, is the darkest surface on the page. Measured on #22304a:
+     #ffffff 15.4:1, rgba(255,255,255,.85) ≈ 11:1, amber #ffc95c 8.7:1,
+     rgba(255,255,255,.75) ≈ 8.6:1 — all AA. */
+  --arc42-deep: #22304a;
+  --arc42-on-deep-muted: rgba(255, 255, 255, 0.85);
+
+  /* one focus ring for light surfaces (3.9:1 on white — clears the 3:1
+     non-text minimum; the masthead has its own ring in nav-2026.css) */
+  --arc42-focus-ring: 2px solid var(--arc42-primary-hover);
+}
+
+/* Both arc42 buttons opt out of the theme's .btn scale (0.75em ≈ 12px on
+   phones, in a ~34px-tall box). These are the site's conversion actions:
+   readable label, 44px minimum touch target. */
+.btn.btn--arc42,
+.btn.btn--arc42-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  min-height: 44px;
+  padding: 0.6em 1.3em;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+/* Navy call-to-action button — hero "Download" + training "register".
+   Reads well on both the photo hero overlay and the white page body. */
+.btn.btn--arc42 {
+  background-color: var(--arc42-primary);
+  color: #ffffff;
+  border: 2px solid var(--arc42-primary);
+}
+.btn.btn--arc42:hover,
+.btn.btn--arc42:focus-visible {
+  background-color: var(--arc42-primary-hover);
+  border-color: var(--arc42-primary-hover);
+  color: #ffffff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* Secondary (outline) navy button — used for the feature-card actions so the
+   solid hero "Download" stays the single primary action. */
+.btn.btn--arc42-outline {
+  background-color: transparent;
+  color: var(--arc42-primary);
+  border: 2px solid var(--arc42-primary);
+}
+.btn.btn--arc42-outline:hover,
+.btn.btn--arc42-outline:focus-visible {
+  background-color: var(--arc42-primary);
+  color: #ffffff;
+  border-color: var(--arc42-primary);
+}
+
+/* --- full-bleed .dl-hero band ---
+   Fallback: the classic 100vw negative-margin trick. 100vw includes the
+   vertical scrollbar on Windows/Android, so html{overflow-x:clip} guards
+   the resulting sliver of horizontal overflow.
+   Modern path: 100cqw measures the nearest inline-size container's real
+   width (scrollbar excluded) - no overflow at all, no clipping needed.
+   NOTE: source arc42-org.css combines this rule with .ua-strip, .home-hero
+   and .dl-strip (none of which arc42.de uses) plus a shared .initial-content
+   container-type declaration; arc42-de.css already defines an equivalent
+   .initial-content container (see arc42-de.css, "Full-bleed, two ways"), so
+   only the .dl-hero-scoped selectors are ported here to avoid redeclaring
+   unrelated, already-styled classes. */
+.dl-hero {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+@supports (width: 1cqw) {
+  .dl-hero {
+    width: 100cqw;
+    margin-left: calc(50% - 50cqw);
+    margin-right: calc(50% - 50cqw);
+  }
+}
+
+/* Solid deep band, one step darker than the masthead: the headline owns the
+   page, not the navigation. */
+.dl-hero { background: var(--arc42-deep); }
+.dl-hero__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 5vw, 3rem);
+}
+.dl-hero .dl-hero__kicker {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--arc42-amber); /* 8.7:1 on --arc42-deep */
+}
+.dl-hero .dl-hero__title {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 700; /* Libre Caslon ships 400/700 — 800 was synthetic */
+  color: var(--arc42-on-masthead);
+  text-wrap: balance;
+}
+.dl-hero .dl-hero__sub {
+  margin: 0 0 1.5rem;
+  max-width: 34ch;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--arc42-on-deep-muted);
+}
+.dl-hero .dl-hero__sub { max-width: 54ch; margin-bottom: 0; }
+.dl-hero .dl-hero__facts {
+  margin: 0.9rem 0 0;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.75); /* ≈8.6:1 on --arc42-deep */
+  max-width: 54ch;
+}
+.dl-hero .dl-hero__actions { margin: 1.2rem 0 0; }
+.dl-hero .dl-hero__actions .btn { margin-bottom: 0; }
+.dl-hero .dl-hero__sub strong { color: var(--arc42-on-masthead); }
+/* On the dark band a navy button disappears — the hero CTA flips to a light
+   fill with band-navy text (15:1 / 12+:1). Hover keeps the documented
+   tactile shadow; colour stays put so the label never drops contrast. */
+.dl-hero .btn.btn--arc42 {
+  background-color: var(--arc42-on-masthead);
+  color: var(--arc42-deep);
+  border-color: var(--arc42-on-masthead);
+}
+.dl-hero .btn.btn--arc42:hover,
+.dl-hero .btn.btn--arc42:focus-visible {
+  background-color: #eaf1f8;
+  border-color: #eaf1f8;
+  color: var(--arc42-deep);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* --- consolidated resource library --- */
+.resource-hero .dl-hero__sub { max-width: 64ch; }
+.resource-browser {
+  margin: 2rem 0 3rem;
+}
+.resource-controls {
+  display: none;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--arc42-border);
+  border-bottom: 1px solid var(--arc42-border);
+}
+.resource-browser.is-ready .resource-controls { display: block; }
+.resource-types {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.resource-types legend,
+.resource-field > span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--arc42-slate);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.resource-types__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.resource-filter,
+.resource-reset {
+  min-height: 44px;
+  font: inherit;
+  cursor: pointer;
+}
+.resource-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.8rem;
+  color: var(--arc42-primary);
+  background: #ffffff;
+  border: 1px solid var(--arc42-border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.resource-filter span {
+  min-width: 1.65rem;
+  padding: 0.05rem 0.35rem;
+  color: var(--arc42-slate);
+  background: #f2f3f3;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  text-align: center;
+}
+.resource-filter:hover,
+.resource-filter:focus-visible {
+  border-color: var(--arc42-primary-hover);
+}
+.resource-filter:focus-visible,
+.resource-reset:focus-visible,
+.resource-field input:focus-visible,
+.resource-field select:focus-visible {
+  outline: var(--arc42-focus-ring);
+  outline-offset: 2px;
+}
+.resource-filter.is-active {
+  color: #ffffff;
+  background: var(--arc42-primary);
+  border-color: var(--arc42-primary);
+}
+.resource-filter.is-active span {
+  color: var(--arc42-primary);
+  background: #ffffff;
+}
+.resource-controls__secondary {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.65fr) minmax(15rem, 1.35fr) auto;
+  gap: 0.75rem;
+  align-items: end;
+  margin-top: 1rem;
+}
+.resource-field input,
+.resource-field select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.55rem 0.7rem;
+  color: var(--arc42-ink);
+  background: #ffffff;
+  border: 1px solid var(--arc42-border);
+  border-radius: 6px;
+  font: inherit;
+}
+.resource-reset {
+  padding: 0.5rem 0.8rem;
+  color: var(--arc42-primary);
+  background: transparent;
+  border: 0;
+  font-weight: 700;
+}
+.resource-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  min-height: 4.5rem;
+  padding: 1.1rem 0;
+  color: var(--arc42-slate);
+}
+.resource-summary p { margin: 0; }
+.resource-summary strong { color: var(--arc42-ink-strong); }
+.resource-list { border-top: 1px solid var(--arc42-border); }
+.resource-item {
+  display: grid;
+  grid-template-columns: 4.75rem minmax(0, 1fr) minmax(9rem, auto);
+  gap: 1.25rem;
+  align-items: center;
+  min-height: 8rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--arc42-border);
+}
+.resource-item[hidden] { display: none; }
+.resource-item__cover {
+  width: 4rem;
+  height: 5.5rem;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.resource-item__marker {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  margin: 0 auto;
+  color: var(--arc42-primary);
+  background: #e5eef6;
+  border-radius: 4px;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.resource-item__marker--talk { color: #5f4800; background: #fff0b8; }
+.resource-item__marker--video { color: #7b2418; background: #ffe3de; }
+.resource-item__body { max-width: 70ch; }
+.resource-item__body h2 {
+  margin: 0.25rem 0 0.35rem;
+  color: var(--arc42-ink-strong);
+  font-size: 1.2rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.resource-item__body > p:last-child {
+  margin: 0;
+  color: var(--arc42-text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.resource-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.7rem;
+  margin: 0;
+  color: var(--arc42-slate);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.resource-item__meta span + span::before {
+  content: "·";
+  margin-right: 0.7rem;
+  color: var(--arc42-border);
+}
+.resource-item__link {
+  justify-self: end;
+  color: var(--arc42-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.resource-item__link:hover { color: var(--arc42-primary-hover); text-decoration: underline; }
+.resource-empty {
+  padding: 3rem 0;
+  text-align: center;
+}
+.resource-empty[hidden] { display: none; }
+.resource-empty h2 { margin-bottom: 0.5rem; }
+.resource-footnote {
+  margin: 0 0 3rem;
+  padding: 1rem 1.2rem;
+  background: #f6f8fa;
+  border: 1px solid var(--arc42-border);
+  border-radius: 4px;
+}
+.resource-footnote p { margin: 0; }
+
+/* Floating "back to filters" button. Fixed rather than interleaved between
+   cards, so the JS filtering (which hides individual [data-resource] items)
+   can never strand it. Shown only once the filter bar has scrolled away. */
+.resource-backtop {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  padding: 0.55rem 1.05rem;
+  color: var(--arc42-on-masthead);
+  background: var(--arc42-primary);
+  border: 1px solid var(--arc42-primary);
+  border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(28, 44, 68, 0.25);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.resource-backtop[hidden] { display: none; }
+.resource-backtop:hover,
+.resource-backtop:focus-visible {
+  background: var(--arc42-primary-hover);
+  border-color: var(--arc42-primary-hover);
+}
+.resource-backtop:focus-visible {
+  outline: var(--arc42-focus-ring);
+  outline-offset: 3px;
+}
+/* The controls block only takes focus programmatically (tabindex="-1"), so
+   suppress the ring for mouse users but keep it for keyboard navigation. */
+.resource-controls { scroll-margin-top: 1.5rem; }
+.resource-controls:focus { outline: none; }
+.resource-controls:focus-visible {
+  outline: var(--arc42-focus-ring);
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .resource-backtop { transition: opacity 0.18s ease, transform 0.18s ease; }
+  .resource-backtop.is-entering { opacity: 0; transform: translateY(6px); }
+}
+@media (max-width: 480px) {
+  .resource-backtop { right: 0.85rem; bottom: 0.85rem; }
+}
+@media print {
+  .resource-backtop { display: none; }
+}
+
+/* ---- resource detail page (/resources/<slug>/) ---- */
+.resource-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 2rem 0 3rem;
+}
+.resource-detail__cover {
+  flex: none;
+  width: 12rem;
+  max-width: 40%;
+  height: auto;
+  border: 1px solid var(--arc42-border);
+  border-radius: 4px;
+}
+.resource-detail__body {
+  flex: 1 1 22rem;
+  max-width: 70ch;
+}
+.resource-detail__body > :first-child { margin-top: 0; }
+.resource-detail__actions { margin: 1.75rem 0 1rem; }
+.resource-detail__back { margin: 0; font-size: 0.9rem; }
+.resource-detail__back a { font-weight: 600; }
+.resource-detail__facts {
+  margin: 1.5rem 0;
+  padding: 0.85rem 1rem;
+  background: #f6f8fa;
+  border: 1px solid var(--arc42-border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--arc42-text-muted); /* slate #6f777d measured 4.3:1 on this tint */
+}
+.resource-detail__facts strong { color: var(--arc42-ink-strong); }
+
+@media (max-width: 600px) {
+  .resource-detail__cover { width: 8rem; }
+}
+
+@media (max-width: 720px) {
+  .resource-controls__secondary { grid-template-columns: 1fr; }
+  .resource-reset { justify-self: start; }
+  .resource-item {
+    grid-template-columns: 3.75rem minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+  .resource-item__cover { width: 3rem; height: 4.4rem; }
+  .resource-item__marker { width: 3rem; height: 3rem; }
+  .resource-item__link { grid-column: 2; justify-self: start; white-space: normal; }
+}
+
+@media (max-width: 420px) {
+  .resource-types__options { display: grid; grid-template-columns: 1fr 1fr; }
+  .resource-filter { justify-content: space-between; }
+}

@@ -159,6 +159,11 @@ permalink: /:categories/:title/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+collections:
+  resources:
+    output: true
+    permalink: /publikationen/:name/
+
 # Plugins
 plugins:
   - jekyll-include-cache
@@ -215,3 +220,8 @@ defaults:
       comments: false
       share: true
       related: true
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: resource
