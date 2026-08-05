@@ -1,0 +1,31 @@
+---
+layout: splash
+---
+{%- assign lang = 'Englisch' -%}{%- if page.language == 'de' -%}{%- assign lang = 'Deutsch' -%}{%- endif -%}
+{%- case page.type -%}
+  {%- when 'book' -%}{%- assign type_label = 'Buch' -%}
+  {%- when 'article' -%}{%- assign type_label = 'Artikel' -%}
+  {%- when 'talk' -%}{%- assign type_label = 'Vortrag' -%}
+  {%- else -%}{%- assign type_label = 'Video' -%}
+{%- endcase -%}
+<section class="dl-hero">
+  <div class="dl-hero__inner">
+    <p class="dl-hero__kicker">{{ type_label }} &middot; {{ lang }}{% if page.year %} &middot; {{ page.year }}{% endif %}</p>
+    <h1 class="dl-hero__title">{{ page.title }}</h1>
+    {% if page.summary %}<p class="dl-hero__sub">{{ page.summary }}</p>{% endif %}
+  </div>
+</section>
+
+<div class="resource-detail">
+  {% if page.cover %}<img class="resource-detail__cover" src="{{ page.cover }}" alt="Cover: {{ page.title | escape }}">{% endif %}
+  <div class="resource-detail__body">
+    {{ content }}
+    {%- if page.link -%}
+      {%- if page.link contains '.pdf' -%}{%- assign arrow = '&#8595;' -%}
+      {%- elsif page.link contains '://' -%}{%- assign arrow = '&#8599;' -%}
+      {%- else -%}{%- assign arrow = '&#8594;' -%}{%- endif -%}
+    <p class="resource-detail__actions"><a class="btn btn--arc42" href="{{ page.link }}"{% if page.link contains '://' %} rel="noopener"{% endif %}>{{ page.link_label | default: 'Öffnen' }} <span aria-hidden="true">{{ arrow }}</span></a></p>
+    {%- endif -%}
+    <p class="resource-detail__back"><a href="/publikationen/">&#8592; Alle Publikationen</a></p>
+  </div>
+</div>
