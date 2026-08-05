@@ -300,7 +300,7 @@ Schauen Sie in unsere weiterführende Doku:
 Inklusive über 100 Tipps zur Anwendung.
 * FAQ - [Häufig gestellte Fragen)](https://faq.arc42.org)  
 * Unsere (neue) Seite über unser [Quality Model](https://quality.arc42.org).
-* Einige der von uns geschriebenen [Bücher](/books/) beschäftigen sich mit arc42, beispielsweise:
-  * [arc42 in Aktion](/books/#arc42-in-aktion)
-  * [arc42 by Example, Vol. 1](/books/#arc42-by-example), arc42 anhand von sechs praktischen Beispielen erklärt
-  * [arc42 by Example, Vol. 2](/books/#arc42-by-example-vol2), Beispiele aus den Bereichen Echtzeit- und Embedded
+* Einige der von uns geschriebenen [Bücher](/publikationen/?type=book) beschäftigen sich mit arc42, beispielsweise:
+  * [arc42 in Aktion](/publikationen/arc42-in-aktion/)
+  * [arc42 by Example, Vol. 1](/publikationen/#arc42-by-example-3rd), arc42 anhand von sechs praktischen Beispielen erklärt
+  * [arc42 by Example, Vol. 2](/publikationen/#arc42-by-example-vol2), Beispiele aus den Bereichen Echtzeit- und Embedded

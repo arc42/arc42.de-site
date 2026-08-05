@@ -15,7 +15,7 @@ sidebar:
 
 # Allgemeine Geschäftsbedingungen für Schulungen (AGB)
  
-Download als [PDF](terms.pdf)
+Download als [PDF](/downloads/terms.pdf)
 
 
 Stand: 12. September 2023.

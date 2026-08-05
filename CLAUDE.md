@@ -1,6 +1,43 @@
 # CLAUDE.md
 
-Notizen für Claude / Agenten zu diesem Repo (arc42.de-site, Jekyll + Markdown, GitHub Pages).
+Notizen für Claude / Agenten zu diesem Repo (arc42.de-site, Jekyll + Markdown).
+
+Gebaut wird **nicht** mit dem GitHub-Pages-Gem-Set, sondern per GitHub Actions mit den
+eigenen Gems dieses Repos: Jekyll 4.3, identischer Stack und identisches Docker-Image
+(`arc42-site:latest`) wie in `arc42.org-site`. `Gemfile`/`Gemfile.lock` in beiden Repos
+gleich halten. Lokal: `make dev` (Server), `make site` (Build), `make check-links`
+(html-proofer), `make test-theme` (Struktur-Assertions auf `_site`).
+
+## Publikationen
+
+Bücher, Artikel, Vorträge und Videos liegen als je eine Datei in `_resources/*.md`
+(Collection `resources`, `permalink: /publikationen/:name/`). Front-Matter-Schema:
+
+| Feld | Bedeutung |
+|---|---|
+| `type` | `book` \| `article` \| `talk` \| `video` (Pflicht, steuert Filter + Label) |
+| `title` | Anzeigetitel (Pflicht) |
+| `language` | `de` \| `en` (Pflicht, steuert den Sprachfilter) |
+| `year` | Jahr; Einträge ohne Jahr sortieren ans Ende |
+| `summary` | Einzeiler auf der Karte (Pflicht) |
+| `search` | zusätzliche Suchbegriffe für den Filter |
+| `cover` | Thumbnail-Pfad; ohne Cover wird ein Buchstaben-Marker gezeichnet |
+| `link` | Ziel-URL (extern oder site-lokal); weglassen für Einträge ohne Link |
+| `link_label` | Text des CTA-Links |
+| `id` | **wirkungslos** — der Anker jeder Karte ist immer der Dateiname ohne `.md`, also `/publikationen/#arc42-by-example-vol2`. Jekyll überschreibt ein Front-Matter-`id` mit der internen Dokument-Id; das Feld existiert nur noch für Byte-Gleichheit mit arc42.org |
+| `detail` | `true` ⇒ der Body der Datei wird als eigene Detailseite gerendert |
+
+Die Liste rendert `_pages/publikationen.md` (Karten via `_includes/resource-item.html`,
+Filter via `assets/js/resources-filter.js`, Deep-Links der Form
+`/publikationen/?type=book`). Die alten Seiten `/books/`, `/articles/`, `/videos/`,
+`/talks/`, `/more/`, `/recommendations/` sind nur noch Redirect-Stubs
+(`layout: redirect`, `sitemap: false`) — dort **keinen Inhalt** mehr einpflegen.
+
+Der Bestand ist bewusst **dupliziert**, nicht synchronisiert: ein neuer Eintrag auf
+arc42.org muss einmal nach `_resources/` hierher kopiert werden (und umgekehrt).
+Die Jubiläums-Ausgabe von *arc42 by Example* (auf arc42.org
+`_resources/arc42-by-example-anniversary.md`) fehlt hier **absichtlich** — nicht
+übersehen, also bitte nicht „nachtragen".
 
 ## Kurse / Termine verwalten
 

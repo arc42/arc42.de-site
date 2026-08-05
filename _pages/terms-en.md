@@ -13,7 +13,7 @@ sidebar:
 
 # General Terms and Conditions for Training (GTC)
  
-Download as [PDF](terms-en.pdf)
+Download as [PDF](/downloads/terms-en.pdf)
 
 
 Status: June 11, 2024.

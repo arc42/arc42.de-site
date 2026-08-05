@@ -11,9 +11,23 @@
     cover    thumbnail path                   (optional; falls back to a letter marker)
     link     URL                              (optional; omit for "no link" items)
     link_label  CTA text                      (optional; arrow is derived from the link)
-    id       anchor id                        (optional)
+    id       anchor id                        (SEE BELOW — inert)
+
+  ANCHORS. Every card gets `id="<filename slug>"`, derived from `r.path`, so
+  /publikationen/#arc42-by-example-vol2 works for every entry without anyone
+  having to declare anything.
+
+  It deliberately does NOT read the front-matter `id:` field. Jekyll's
+  DocumentDrop defines `id` as a method returning the document's internal id
+  (`/publikationen/arc42-by-example-vol2`), and a drop method WINS over a
+  front-matter key of the same name — so `{{ r.id }}` rendered
+  `id="/publikationen/arc42-by-example-vol2"`, an anchor no link could ever
+  reach. The `id:` keys still present in two _resources files are kept only so
+  those files stay byte-identical with their arc42.org twins; their values
+  happen to equal the filename slug, which is what this now emits anyway.
 {%- endcomment -%}
 {%- assign r = include.resource -%}
+{%- assign r_anchor = r.path | split: '/' | last | split: '.' | first -%}
 {%- assign lang = 'Englisch' -%}{%- if r.language == 'de' -%}{%- assign lang = 'Deutsch' -%}{%- endif -%}
 {%- case r.type -%}
   {%- when 'book' -%}{%- assign type_label = 'Buch' -%}
@@ -21,7 +35,7 @@
   {%- when 'talk' -%}{%- assign type_label = 'Vortrag' -%}
   {%- else -%}{%- assign type_label = 'Video' -%}
 {%- endcase -%}
-<article class="resource-item"{% if r.id %} id="{{ r.id }}"{% endif %} data-resource data-type="{{ r.type }}" data-language="{{ r.language }}" data-search="{{ r.search }}">
+<article class="resource-item" id="{{ r_anchor }}" data-resource data-type="{{ r.type }}" data-language="{{ r.language }}" data-search="{{ r.search }}">
   {%- if r.cover -%}
   <img class="resource-item__cover" src="{{ r.cover }}" alt="Cover: {{ r.title | escape }}" loading="lazy">
   {%- else -%}

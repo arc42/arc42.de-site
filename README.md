@@ -1,6 +1,7 @@
 # [arc42.de](https://arc42.de) Website
 
-Live site is hosted by [GitHub Pages](https://pages.github.com/).
+Live site is hosted by [GitHub Pages](https://pages.github.com/), built by GitHub Actions
+with this repo's own Jekyll 4.3 gems (not the GitHub Pages gem set) — see `.github/workflows/`.
 
 ## Status
 
@@ -38,20 +39,15 @@ It uses the MinimalMistakes template, with a few slight modifications
 
 ## Local development
 
-> Prerequisite: Local build uses Docker. You need Docker installed, nothing else — no local Ruby or gems required.
+> Prerequisite: local builds run in Docker. You need Docker installed, nothing else — no local Ruby, no local gems.
 
-**First-time setup** (and whenever the `Gemfile` changes):
-
-```bash
-make lock     # regenerate Gemfile.lock cleanly inside a one-shot Ruby container
-make build    # bake the gems into the Docker image
-```
-
-`make lock` runs in a clean `ruby:3.3-slim` container, so the lockfile is deterministic regardless of the host OS / arch. It registers both `x86_64-linux` and `aarch64-linux` platforms, which keeps Intel and Apple Silicon developers in sync. You only need to re-run it when you edit the `Gemfile`.
-
-`make build` then `bundle install`s into the image's `/usr/local/bundle`. The dev server runs against those baked gems — never against anything on the host — so the host can't shadow them.
-
-The Minimal Mistakes theme is vendored into this repository. After `make build`, `make dev` starts from the cached Docker image and local theme files; it must not fetch the remote theme at startup.
+The build stack is shared with **arc42.org-site**: both repos build the same
+image, `arc42-site:latest` (see `Dockerfile` / `docker-compose.yml`), on
+Jekyll 4.3 with the gems pinned in this repo's `Gemfile`. Keep `Gemfile` and
+`Gemfile.lock` identical in both repos — when you change one, change the other,
+otherwise the two sites drift onto different Jekyll/kramdown versions and start
+rendering the same Markdown differently. Production is built by GitHub Actions
+from those same gems, not by the GitHub Pages gem set.
 
 **Start the dev server:**
 
@@ -59,30 +55,47 @@ The Minimal Mistakes theme is vendored into this repository. After `make build`,
 make dev
 ```
 
-Starts Jekyll on `http://localhost:4000`, watching for file changes. No gem installation or remote theme download happens at startup — it runs from the cached image and local repository files.
+Serves the site on `http://localhost:4000` (not `0.0.0.0:4000` — Firefox refuses
+that host) and rebuilds on every file change. The first run builds the image; on
+later runs it starts from the cache.
 
-All useful commands:
+All useful targets (`make` on its own prints this list):
 
-* `make lock` — regenerate `Gemfile.lock` from scratch (run after `Gemfile` edits, or once if the lock is broken)
-* `make build` — build (or rebuild) the Docker image with all dependencies
-* `make dev` — start Jekyll locally (requires a prior `make build`)
-* `make dev PORT=4001` — start on a different port
-* `make test-theme` — build with Docker networking disabled and assert that local theme files are sufficient
-* `make down` — stop and remove the Docker Compose services
-* `make clean` — remove the generated `_site` directory
-* `make rebuild` — `clean` + `build` + `dev` (full reset)
+* `make dev` — start Jekyll locally with live reload on port 4000
+* `make build` — build/rebuild the Docker image `arc42-site:latest` from the pinned gems
+* `make site` — generate the static site into `_site/` (one-shot build, no server)
+* `make check-links` — run html-proofer over the built `_site` (internal links, images, HTML)
+* `make test-theme` — build and assert the generated `_site` is structurally sound (see below)
+* `make stop` — stop and remove the running dev container
+* `make clean` — remove `_site` **and** the Docker cache volumes (a true reset)
+* `make install` / `make update` — re-run `bundle install` / `bundle update` in the image after editing the `Gemfile`
+* `make shell` — open a shell inside the container
+* `make logs` — tail the dev container's logs
 
-### Offline theme check
+### Structural check of the generated site
 
-Run this after changing theme files, Jekyll configuration, or Docker dependencies:
+Run this after changing theme files, layouts, permalinks, or Jekyll configuration:
 
 ```bash
 make test-theme
 ```
 
-The check runs the already-built `arc42-jekyll` image with Docker networking disabled. It fails if Jekyll logs indicate a remote theme fetch, a missing Liquid include/layout, or if representative generated pages such as `/`, `/overview/`, `/termine/`, `/anmeldung/`, `/about/`, `/articles/`, `/recommendations/`, `/gallery/`, or `/videos/` are missing.
+It builds the site inside the container and then asserts things html-proofer does
+not look at. It fails if the Jekyll log shows a remote-theme fetch or a missing
+Liquid include/layout, or if representative generated pages are absent —
+`_site/index.html`, `_site/overview/index.html`, `_site/termine/index.html`,
+`_site/anmeldung/index.html`, `_site/about/index.html`, `_site/articles/index.html`,
+`_site/recommendations/index.html`, `_site/gallery/index.html`,
+`_site/videos/index.html`, `_site/publikationen/index.html`,
+`_site/publikationen/arc42-in-aktion/index.html`, `_site/sitemap.xml`.
 
-Internal page routes use directory-style URLs with trailing slashes, for example `permalink: /imprint/` and links such as `/imprint/`. This keeps local Jekyll development, GitHub Pages, and generated links aligned. `make test-theme` also fails if a future change reintroduces top-level `name.html` page output, generated internal links without the trailing slash, stale sitemap URLs, or same-site navigation links that point at `0.0.0.0`, `www.arc42.de`, or absolute `https://arc42.de/...` anchors.
+Internal page routes use directory-style URLs with trailing slashes, for example
+`permalink: /imprint/` and links such as `/imprint/`. This keeps local Jekyll
+development, GitHub Actions, and generated links aligned. `make test-theme` also
+fails if a change reintroduces top-level `name.html` page output, generated
+internal links without the trailing slash, stale sitemap URLs, or same-site
+navigation links pointing at `0.0.0.0`, `www.arc42.de`, or absolute
+`https://arc42.de/...` anchors.
 
 ### Updating the vendored theme
 
@@ -91,8 +104,8 @@ The site vendors Minimal Mistakes `4.24.0` locally instead of using `remote_them
 1. Download the exact upstream Minimal Mistakes release you want to use.
 2. Copy upstream additions into `_layouts`, `_includes`, `_sass`, `_data`, and `assets/js`.
 3. Preserve local overrides such as `_includes/head.html`, `_includes/masthead.html`, `_includes/footer.html`, custom timeline includes, custom feature-row includes, and `assets/css/main.scss`.
-4. Run a clean build and smoke-check `/`, `/overview/`, `/termine/`, `/anmeldung/`, `/about/`, `/articles/`, `/recommendations/`, `/gallery/`, and `/videos/`.
-5. Start `make dev` without network access after `make build` to verify no remote theme fetch is required.
+4. Run `make clean && make test-theme`, then smoke-check `/`, `/overview/`, `/termine/`, `/anmeldung/`, `/about/`, `/publikationen/`, `/gallery/`, and `/search/`.
+
 
 
 ## Custom css
