@@ -25,9 +25,6 @@ gallery:
 
 ---
 
-{% include ua-strip.html %}
-
-<hr>
 
 
 {% include gallery caption="Peter+Gernot" %}
