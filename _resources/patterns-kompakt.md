@@ -6,8 +6,8 @@ year: 2024
 detail: true
 cover: "/images/books/PK6-Cover.jpg"
 link: "https://patterns-kompakt.de/"
-link_label: "Visit book site"
-summary: "The compact catalogue of essential design patterns for developers and architects, grouped by concern, by Karl Eilebrecht and Gernot Starke."
+link_label: "Zur Buch-Website"
+summary: "Der kompakte Katalog der wichtigsten Entwurfsmuster für Entwickler und Architekten, geordnet nach Anliegen, von Karl Eilebrecht und Gernot Starke."
 search: "patterns kompakt 6 auflage sechste 2024 karl eilebrecht gernot starke springer vieweg design patterns entwurfsmuster"
 ---
 

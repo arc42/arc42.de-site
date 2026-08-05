@@ -6,8 +6,8 @@ year: 2026
 detail: true
 cover: "/images/books/arc42-in-aktion.jpg"
 link: "https://www.hanser-fachbuch.de/"
-link_label: "At Carl Hanser Verlag"
-summary: "The missing manual for arc42: pragmatic, hands-on advice for useful, economical and maintainable architecture documentation, by Gernot Starke and Peter Hruschka."
+link_label: "Beim Carl Hanser Verlag"
+summary: "Das fehlende Handbuch zu arc42: pragmatische Praxistipps für nützliche, wirtschaftliche und wartbare Architekturdokumentation, von Gernot Starke und Peter Hruschka."
 search: "arc42 in aktion gernot starke peter hruschka carl hanser verlag documentation practical missing manual real-time embedded example"
 ---
 
