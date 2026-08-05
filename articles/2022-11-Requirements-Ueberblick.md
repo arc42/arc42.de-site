@@ -10,9 +10,6 @@ header:
   overlay_filter: rgba(15, 150, 150, 0.8)
   overlay_image: /images/splash/magazines-unsplash.jpg
   caption: "Photo: [**Charisse Kenion**](https://unsplash.com/@charissek)"
-
-sidebar:
-  nav: "publications"
 ---
 
 
