@@ -11,23 +11,22 @@ summary: "Der kompakte Katalog der wichtigsten Entwurfsmuster für Entwickler un
 search: "patterns kompakt 6 auflage sechste 2024 karl eilebrecht gernot starke springer vieweg design patterns entwurfsmuster"
 ---
 
-*Patterns kompakt* is a concise, practical catalogue of the design patterns that
-matter most in everyday software development. Rather than reproducing the full
-theory, it distils each pattern to its essence: the problem it solves, the idea, and
-when to reach for it. The patterns are grouped by the concerns developers actually
-face, from foundational patterns through presentation, communication and
-distribution, integration and persistence.
+*Patterns kompakt* ist ein knapper, praxisnaher Katalog der Entwurfsmuster, die im
+Entwickleralltag wirklich zählen. Statt die volle Theorie zu wiederholen, verdichtet
+es jedes Muster auf den Kern: das Problem, die Idee, und wann man dazu greift. Die
+Muster sind nach den Anliegen gruppiert, denen Entwickler tatsächlich begegnen — von
+Basismustern über Präsentation, Kommunikation und Verteilung bis zu Integration und
+Persistenz.
 
-The sixth edition (Springer Vieweg, 2024) keeps the catalogue current and code-near,
-a handy desk reference for developers and architects alike.
+Die sechste Auflage (Springer Vieweg, 2024) hält den Katalog aktuell und nah am Code
+— ein handliches Nachschlagewerk für Entwickler wie Architekten.
 
-## About the author
+## Über den Autor
 
-The book is primarily the work of **Karl Eilebrecht**, its principal author across
-every edition, with Gernot Starke as co-author. Karl is a software developer and
-architect, and it is his hands-on, implementation-first perspective that keeps
-*Patterns kompakt* practical rather than academic: patterns you can apply, explained
-the way a working developer needs them.
+Das Buch ist in erster Linie das Werk von **Karl Eilebrecht**, dem Hauptautor aller
+Auflagen, mit Gernot Starke als Co-Autor. Karl ist Softwareentwickler und Architekt —
+seine praktische, implementierungsnahe Perspektive hält *Patterns kompakt* pragmatisch
+statt akademisch: Muster zum Anwenden, erklärt so, wie ein Entwickler sie braucht.
 
-The [companion site](https://patterns-kompakt.de/) has the full pattern list and
-further material.
+Die [Begleitseite](https://patterns-kompakt.de/) bietet die vollständige Musterliste
+und weiteres Material.
