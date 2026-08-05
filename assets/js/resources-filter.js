@@ -62,6 +62,17 @@
   });
   if (language) { language.addEventListener("change", update); }
   if (search) { search.addEventListener("input", update); }
+  if (search) {
+    search.addEventListener("keydown", function (event) {
+      if ((event.metaKey || event.ctrlKey) && event.key === "Enter") {
+        var value = search.value.trim();
+        if (value) {
+          event.preventDefault();
+          window.location.href = "/search/?q=" + encodeURIComponent(value);
+        }
+      }
+    });
+  }
 
   resetButtons.forEach(function (button) {
     button.addEventListener("click", function () {
