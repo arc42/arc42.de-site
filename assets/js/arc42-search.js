@@ -21,11 +21,26 @@
 
   // Edge punctuation stripper, the replacement for lunr.trimmer (see below).
   // The class is "digits, ASCII letters, Latin-1/Latin-Extended letters" — the
-  // point is that ä ö ü ß are letters here, which \W in lunr's own trimmer
-  // denies: it turns "Über" into "ber" and "Straße" into "stra". Tokens reach
-  // this after lowercasing, so no upper-case ranges are needed. Written as
-  // \u escapes so the file survives being served as anything but UTF-8.
+  // point is that ß (which folding leaves alone) is a letter here, which \W in
+  // lunr's own trimmer denies: it turns "Straße" into "stra". Tokens reach this
+  // folded and lowercased, so no upper-case ranges are needed. Written as \u
+  // escapes so the file survives being served as anything but UTF-8.
   var EDGES = /^[^0-9a-z\u00C0-\u024F]+|[^0-9a-z\u00C0-\u024F]+$/g;
+
+  // Diacritic folding — the same one-liner resources-filter.js:18 uses for the
+  // Publikationen filter box, so the two search fields on this site answer the
+  // same way: "uber" finds "Über", "qualitat" finds "Qualität". NFD splits an
+  // accented letter into base + combining mark, and the mark is dropped.
+  //
+  // Applied SYMMETRICALLY — to the index pipeline (trimEdges) and to the query
+  // side (tokenize, normalize). Folding only one of the two would be worse than
+  // folding neither: the folded half would stop meeting the unfolded half.
+  //
+  // Deliberately leaves ß alone and does not transliterate ae/oe/ue, so
+  // "qualitaet" still finds nothing — same limit as the filter box, on purpose.
+  function fold(value) {
+    return (value || "").toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
 
   function init() {
     var page = document.querySelector("[data-search-page]");
@@ -47,11 +62,11 @@
     var timer = null;
 
     function normalize(word) {
-      return String(word).toLowerCase().replace(EDGES, "");
+      return fold(word).replace(EDGES, "");
     }
 
     function tokenize(value) {
-      return String(value || "").toLowerCase().split(SEPARATOR)
+      return fold(value).split(SEPARATOR)
         .map(function (part) { return part.replace(EDGES, ""); })
         .filter(Boolean);
     }
@@ -148,8 +163,12 @@
       });
     }
 
+    // The index-side half of the normalisation. lunr's tokenizer has already
+    // lowercased the token; fold() then strips the diacritics and EDGES the
+    // punctuation, so an indexed term is exactly what tokenize() produces from
+    // the same word typed into the box.
     function trimEdges(token) {
-      return token.update(function (value) { return value.replace(EDGES, ""); });
+      return token.update(function (value) { return fold(value).replace(EDGES, ""); });
     }
 
     function search(tokens) {
@@ -205,8 +224,11 @@
 
       var tokens = tokenize(raw);
       if (!tokens.length) {
+        // Punctuation only ("***", "()"). Nothing searchable is left after
+        // folding and trimming, but the reader HAS typed something, so answer
+        // them instead of leaving the line blank as if the box were empty.
         results.innerHTML = "";
-        countLine.textContent = "";
+        countLine.textContent = "Keine Ergebnisse!";
         return;
       }
 
@@ -218,8 +240,25 @@
         matches = [];
       }
 
-      // Every hit is listed: this page IS the all-results page, there is no
-      // "more results" anywhere else to send the reader to.
+      // Multi-word queries are AND, not OR. lunr's default clause presence is
+      // OPTIONAL, so "Starke Hruschka" scored every document carrying EITHER
+      // name — 62 of 74, on a page that shows every hit, which reads as broken.
+      // Intersecting afterwards over matchData is cheaper than a second query
+      // pass: metadata is keyed by the terms the index actually matched, and a
+      // wildcard clause records the EXPANDED term ("hruschk" matched via
+      // "hruschka"), hence the prefix test rather than equality. Single-token
+      // queries are left alone — there is nothing to intersect.
+      if (tokens.length > 1) {
+        matches = matches.filter(function (match) {
+          var matched = Object.keys(match.matchData.metadata);
+          return tokens.every(function (token) {
+            return matched.some(function (term) { return term.indexOf(token) === 0; });
+          });
+        });
+      }
+
+      // Every surviving hit is listed: this page IS the all-results page, there
+      // is no "more results" anywhere else to send the reader to.
       render(matches, tokens);
       countLine.textContent = matches.length
         ? matches.length + " Treffer"
