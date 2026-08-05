@@ -9,15 +9,39 @@ permalink: /search/
   <ul id="results-container"></ul>
 </div>
 
-<!-- Script pointing to search-script.js -->
-<script src="search-script.js" type="text/javascript"></script>
+{%- comment -%}
+  Script pointing to search-script.js.
+
+  MUST stay root-relative. This page's permalink is /search/, so a bare
+  src="search-script.js" resolves to /search/search-script.js — which does not
+  exist, because the file is emitted at the site root. That 404 left
+  SimpleJekyllSearch undefined and the configuration block below throwing a
+  ReferenceError: the box rendered, accepted typing, and returned nothing at
+  all — not even noResultsText.
+{%- endcomment -%}
+<script src="{{ '/search-script.js' | relative_url }}" type="text/javascript"></script>
 
 <!-- Configuration -->
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  noResultsText: ("Keine Ergebnisse!"),
-  json: '/search.json'
-})
+(function () {
+  var input = document.getElementById('search-input');
+
+  SimpleJekyllSearch({
+    searchInput: input,
+    resultsContainer: document.getElementById('results-container'),
+    noResultsText: ("Keine Ergebnisse!"),
+    json: '{{ "/search.json" | relative_url }}'
+  });
+
+  // The masthead search field is a real <form> that submits here as
+  // /search/?q=… so that it also works with JavaScript disabled. Pick that
+  // term up, put it in the box, and run the search — otherwise arriving from
+  // the masthead lands on an empty page and the visitor types it twice.
+  var q = new URLSearchParams(window.location.search).get('q');
+  if (q) {
+    input.value = q;
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    input.focus();
+  }
+})();
 </script>

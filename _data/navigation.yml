@@ -1,19 +1,57 @@
-# main links
+# ---------------------------------------------------------------------------
+# arc42.de navigation — 2026-08-05 layout
+#
+#   main    -> the priority row in the masthead. THREE items. The order is the
+#              story the bar tells: Übersicht (was ist das) -> Schulungen (was
+#              wir lehren) -> Termine (wann). `cta_mobile: true` marks the one
+#              that takes the CTA slot on phones.
+#   cta     -> the single flagged action in the band. Anmeldung: arc42.de owns
+#              the registration flows in the family split, and it appeared in
+#              the navigation zero times before this.
+#   drawer  -> the "Mehr" menu. Each entry NAMES an existing group below rather
+#              than repeating its links, so the masthead drawer and the sidebar
+#              rails cannot drift apart.
+#
+# The groups `publications`, `schulungen`, `methode` and `about` are consumed
+# BOTH by the drawer (_includes/masthead.html) and by the sidebar rails
+# (_includes/sidebar.html -> _includes/nav_list) on the 17 pages that set
+# `sidebar: nav:` in their front matter. Do not rename them without grepping
+# _pages/ first.
+#
+# What left the masthead in this layout, and why:
+#   "Mehr..."  -> became the drawer itself. A label that said nothing, sitting
+#                 in the best position in the bar.
+#   "Über..."  -> drawer + footer. Not a first-visit destination; arc42.org
+#                 makes the same call.
+#   "Download" -> drawer, marked external. It leads to arc42.org, and per the
+#                 federation decision cross-site links belong in content, not
+#                 in chrome. The EN/DE switch is the one sanctioned exception,
+#                 because it routes to the same content in another language.
+#   "Suche"    -> a real control in the band with a "/" hotkey, instead of a
+#                 link that was first to vanish into the overflow menu.
+# ---------------------------------------------------------------------------
+
+# priority row (order matters)
 main:
   - title: "Übersicht"
     url: /overview/
+  - title: "Schulungen"
+    url: /schulungen/
   - title: "Termine"
     url: /termine/
-  - title: Schulungen
-    url: /schulungen/
-  - title: "Mehr..."
-    url: /more/
-  - title: "Download"
-    url: "https://arc42.org/download"
-  - title: "Über..."
-    url: /about/
-  - title: "Suche"
-    url: /search/
+    cta_mobile: true
+
+# the one flagged action in the band
+cta:
+  title: "Anmeldung"
+  url: /anmeldung/
+
+# "Mehr" drawer — references the groups below, never duplicates them
+drawer:
+  - group: schulungen
+  - group: publications
+  - group: methode
+  - group: about
 
 publications:
   - title: Publikationen
@@ -33,6 +71,10 @@ schulungen:
     children:
     - title: Mastering Software Architectures
       url: /info-msa/
+      hint: "das Kernprogramm"
+    # NOTE: iSAQB Foundation points at the same page as MSA — two labels, one
+    # destination. Left exactly as found. Whether the Foundation course deserves
+    # its own page is a content decision, not a navigation fix.
     - title: iSAQB Foundation
       url: /info-msa/
     - title: IMPROVE
@@ -46,6 +88,23 @@ schulungen:
     - title: Bildergalerie
       url: /gallery/
 
+# New group. Collects pages that were reachable only from the home page body
+# (/method/, /canvas/) or from nowhere at all (/consulting/) — i.e. invisible to
+# the deep-link visitor, who never sees the home page.
+methode:
+  - title: Methode
+    children:
+    - title: Die arc42-Methode
+      url: /method/
+    - title: Canvas
+      url: /canvas/
+    - title: Template herunterladen
+      url: "https://arc42.org/download"
+      hint: "arc42.org · englisch"
+      external: true
+    - title: Consulting
+      url: /consulting/
+
 about:
   - title: Über uns
     url: /about/
@@ -53,12 +112,13 @@ about:
     - title: "Kontakt"
       url: /contact/
     - title: Stimmung beim Training...
-      url: /gallery/  
+      url: /gallery/
     - title: "Mitwirkende"
       url: "https://github.com/orgs/arc42/people"
+      external: true
     - title: "Lizenz"
       url: "/license/"
     - title: "Geschäftsbedingungen (AGB)"
       url: /terms/
     - title: "Status"
-      url: "/status/"  
+      url: "/status/"
