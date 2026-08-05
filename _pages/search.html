@@ -3,45 +3,49 @@ layout: single
 permalink: /search/
 ---
 
-<!-- Html Elements for Search -->
-<div id="search-container">
-  <input type="text" id="search-input" placeholder="Suche...">
-  <ul id="results-container"></ul>
+{%- comment -%}
+  Deliberately NO `title:` in the front matter. search.json indexes every
+  site.page that has one, so a title here would make /search/ its own search
+  result. The <h1> below carries the heading instead.
+{%- endcomment -%}
+
+<div class="arc42-search-page"
+     data-search-page
+     data-search-index="{{ '/search.json' | relative_url }}">
+
+  <h1 class="page__title">Suche</h1>
+
+  <label class="arc42-sr-only" for="search-input">Suchbegriff</label>
+  <input type="search"
+         id="search-input"
+         class="search-input"
+         placeholder="Suchbegriff…"
+         autocomplete="off"
+         autocapitalize="none"
+         autocorrect="off"
+         spellcheck="false">
+
+  <p id="search-count" class="search-count" aria-live="polite"></p>
+
+  <ul id="results-container" class="search-results"></ul>
+
+  <noscript>
+    <p>Für die Suche wird JavaScript benötigt. Ohne JavaScript führen die
+    <a href="{{ '/publikationen/' | relative_url }}">Publikationen</a> und die
+    Navigation oben zu allen Inhalten.</p>
+  </noscript>
 </div>
 
 {%- comment -%}
-  Script pointing to search-script.js.
+  Both srcs MUST stay root-relative. This page's permalink is /search/, so a
+  bare src="…" resolves under /search/ — which is where the previous version of
+  this page died: src="search-script.js" asked for /search/search-script.js,
+  404, SimpleJekyllSearch undefined, and the inline config below it threw a
+  ReferenceError. The box rendered, accepted typing and returned nothing at all,
+  not even its "no results" text.
 
-  MUST stay root-relative. This page's permalink is /search/, so a bare
-  src="search-script.js" resolves to /search/search-script.js — which does not
-  exist, because the file is emitted at the site root. That 404 left
-  SimpleJekyllSearch undefined and the configuration block below throwing a
-  ReferenceError: the box rendered, accepted typing, and returned nothing at
-  all — not even noResultsText.
+  `defer` on both, in this order: deferred scripts execute in document order
+  after parsing, so lunr is on window before arc42-search.js runs.
 {%- endcomment -%}
-<script src="{{ '/search-script.js' | relative_url }}" type="text/javascript"></script>
-
-<!-- Configuration -->
-<script>
-(function () {
-  var input = document.getElementById('search-input');
-
-  SimpleJekyllSearch({
-    searchInput: input,
-    resultsContainer: document.getElementById('results-container'),
-    noResultsText: ("Keine Ergebnisse!"),
-    json: '{{ "/search.json" | relative_url }}'
-  });
-
-  // The masthead search field is a real <form> that submits here as
-  // /search/?q=… so that it also works with JavaScript disabled. Pick that
-  // term up, put it in the box, and run the search — otherwise arriving from
-  // the masthead lands on an empty page and the visitor types it twice.
-  var q = new URLSearchParams(window.location.search).get('q');
-  if (q) {
-    input.value = q;
-    input.dispatchEvent(new Event('input', { bubbles: true }));
-    input.focus();
-  }
-})();
-</script>
+<script src="{{ '/assets/js/lunr/lunr.min.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/arc42-search.js' | relative_url }}" defer></script>

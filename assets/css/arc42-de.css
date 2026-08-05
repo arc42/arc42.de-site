@@ -811,3 +811,51 @@ html { overflow-x: clip; }
   text-underline-offset: 3px;
 }
 .ua-strip__flag i:last-child { background: #ffd700; }
+
+/* ==========================================================================
+   /search/ — results page for the lunr.js site search
+   --------------------------------------------------------------------------
+   Neutral, list-shaped, no card chrome: the page is a plain result list, and
+   the theme already styles links, <h1.page__title> and <mark>. Only the four
+   things the theme has no opinion about are set here — the width of the input,
+   the muted count line, list spacing, and the excerpt colour.
+   ========================================================================== */
+.arc42-search-page .search-input {
+  width: 100%;
+  max-width: 34rem;
+  min-height: 44px; /* touch target, same floor as the resource filters */
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  color: var(--arc42-ink);
+  background: #fff;
+  border: 1px solid var(--arc42-border);
+  border-radius: 4px;
+}
+.search-count {
+  margin: 0.8rem 0 0;
+  color: var(--arc42-slate);
+  font-size: 0.9rem;
+}
+.search-results {
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+}
+.search-results li {
+  margin: 0;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--arc42-border-light);
+}
+.search-results li > a { font-weight: 600; }
+/* The excerpt is context, not content — it sits a step back from the title. */
+.search-excerpt {
+  margin: 0.25rem 0 0;
+  color: var(--arc42-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.search-excerpt mark {
+  padding: 0 0.1em;
+  background: var(--arc42-amber-lift);
+  color: var(--arc42-amber-ink);
+}
