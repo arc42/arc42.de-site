@@ -91,6 +91,29 @@
     update();
   }
 
+  // Re-anchor after that first filter pass — ONCE, on load only.
+  //
+  // The browser scrolls to #anchor before this script runs. Then `is-ready`
+  // reveals the control bar and update() sets [hidden] on every non-matching
+  // card, so for a URL like /publikationen/?type=book#arc42-in-aktion (what the
+  // /books/ stub forwards to, and the shape of most search.json hits) 30+ cards
+  // ABOVE the target collapse and the reader ends up parked at an arbitrary
+  // offset. The page and the filter are both right; only the position is wrong.
+  //
+  // Deliberately not wired to hashchange or to the filter handlers: yanking the
+  // page around while the reader is filtering by hand would be its own bug.
+  var hashId = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : "";
+  var hashTarget = hashId ? document.getElementById(hashId) : null;
+  if (hashTarget && browser.contains(hashTarget) && !hashTarget.hidden) {
+    // One frame, so the revealed control bar has been laid out first.
+    window.requestAnimationFrame(function () {
+      hashTarget.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start"
+      });
+    });
+  }
+
   // "Back to filters": surfaces once the filter bar leaves the viewport,
   // so the return trip from the bottom of a 48-item list is one click.
   var backtop = browser.querySelector("[data-resource-backtop]");
