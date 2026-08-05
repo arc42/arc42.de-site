@@ -87,9 +87,6 @@ talks_feature:
 
 ---
 
-{% include ua-strip.html %}
-
-<hr>
 
 {% include feature_row id="docs_feature" type="left" %}
 {% include feature_row id="faq_feature" type="right" %}

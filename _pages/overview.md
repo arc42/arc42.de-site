@@ -123,9 +123,6 @@ feature_row12:
 
 ---
 
-{% include ua-strip.html %}
-
-<hr>
 
 
 

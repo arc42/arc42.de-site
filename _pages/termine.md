@@ -9,9 +9,6 @@ header:
 excerpt: "Unsere nächsten Schulungen."
 ---
 
-{% include ua-strip.html %}
-
-<hr>
 
 
 

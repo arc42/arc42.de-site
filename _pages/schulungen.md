@@ -19,9 +19,6 @@ sidebar:
 
 ---
 
-{% include ua-strip.html %}
-
-<hr>
 
 
 ## Unser Angebot: Grundlagen und fortgeschrittene Themen
