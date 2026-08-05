@@ -45,7 +45,7 @@ excerpt: "Bücher, Artikel, Vorträge und Videos der Menschen hinter arc42 — g
       </label>
       <label class="resource-field resource-field--search">
         <span>Suche</span>
-        <input type="search" data-resource-search placeholder="Titel, Autor oder Thema" autocomplete="off">
+        <input type="search" data-resource-search placeholder="Titel, Autor oder Thema" autocomplete="off" title="Strg/Cmd + Enter: gesamte Website durchsuchen">
       </label>
       <button type="button" class="resource-reset" data-resource-reset>Zurücksetzen</button>
     </div>
