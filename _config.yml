@@ -154,6 +154,10 @@ sass:
 # run. See assets/js/arc42-nav.js.
 after_footer_scripts:
   - /assets/js/arc42-nav.js
+  # After arc42-nav.js on purpose: nav owns the "/" hotkey and the drawer, the
+  # autocomplete only adds ⌘K/Ctrl-K and the suggestion panel on top of the
+  # markup nav has already wired up.
+  - /assets/js/arc42-autocomplete.js
 
 # Outputting
 permalink: /:categories/:title/

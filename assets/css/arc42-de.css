@@ -868,3 +868,242 @@ html { overflow-x: clip; }
   background: var(--arc42-amber-lift);
   color: var(--arc42-amber-ink);
 }
+
+/* ==========================================================================
+   Masthead search autocomplete
+   --------------------------------------------------------------------------
+   The dropdown assets/js/arc42-autocomplete.js fills. Ported from
+   quality.arc42.org's _sass/components/_search-autocomplete.scss onto this
+   site's --arc42-* tokens.
+
+   Two things drive the geometry:
+
+   1. The input is 108px wide and sits at the far RIGHT of the band, so the
+      panel is anchored to the form's right edge and grows LEFTWARD. Anchoring
+      it left would put a 30rem card mostly off-screen.
+   2. The band is navy (#2b3a57) but the panel is a white card, because none of
+      the band's own rgba(255,255,255,.78) inks would have been legible on one.
+      Measured on #fff: titles --arc42-ink-strong 14.0:1, body --arc42-ink
+      10.3:1, group labels and paths --arc42-text-muted 5.9:1 — all past AA,
+      and the 0.74rem path/footer text past AA for small text too.
+
+   Clipping: neither .masthead, .arc42-nav nor .arc42-nav__right sets
+   `overflow`, so the panel escapes the band on its own. .masthead already
+   carries `position: relative; z-index: 20` from the theme
+   (_sass/minimal-mistakes/_masthead.scss), which lifts the whole band above
+   page content; the z-index below only has to beat .arc42-drawer, the panel's
+   later-in-DOM sibling.
+
+   Below 800px .arc42-search is display:none (search moves into the drawer), so
+   everything here is desktop/tablet only.
+   ========================================================================== */
+
+/* The offset parent for the panel. .arc42-search is declared further up with
+   the band's other chrome; only positioning is added here so the autocomplete
+   block stays liftable in one piece. */
+.arc42-search {
+  position: relative;
+}
+
+.arc42-search__panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  /* min-width gives German titles room to breathe; max-width stops the card
+     turning into a 60-character-plus measure on a wide monitor. */
+  min-width: clamp(22rem, 34vw, 30rem);
+  max-width: 34rem;
+  max-height: min(70vh, 32rem);
+  margin-top: 0.45rem;
+  overflow: hidden;
+  color: var(--arc42-ink);
+  background: #fff;
+  border: 1px solid var(--arc42-border);
+  border-radius: 8px; /* the band's radius, same as the form and the CTA */
+  box-shadow: 0 1px 2px rgba(28, 44, 68, 0.07), 0 14px 36px rgba(28, 44, 68, 0.26);
+  font-size: 0.92rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+}
+/* `hidden` is the JS's only open/close switch, and `display: flex` above would
+   otherwise beat the UA stylesheet's `[hidden] { display: none }`. */
+.arc42-search__panel[hidden] {
+  display: none;
+}
+
+.arc42-search__scroll {
+  flex: 1 1 auto;
+  min-height: 0; /* let the flex child shrink, otherwise it never scrolls */
+  padding: 0.25rem 0;
+  overflow-y: auto;
+  position: relative; /* offsetParent for the active-row scroll math in applyActive() */
+}
+
+.arc42-search__group + .arc42-search__group {
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
+  border-top: 1px solid var(--arc42-border-light);
+}
+
+.arc42-search__group-label {
+  padding: 0.55rem 1rem 0.25rem;
+  color: var(--arc42-text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.arc42-search__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.arc42-search__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 0.9rem;
+  margin: 0;
+  padding: 0.5rem 1rem 0.5rem 1.1rem;
+  cursor: pointer;
+}
+
+/* Type rail. The inks are the ones /publikationen/ already uses for its
+   talk/video markers (assets/css/arc42-resources.css), so the dropdown reads
+   as a legend for the page it sends you to. The marker *fills* would have been
+   invisible as a 3px bar on white, hence the ink half of each pair. */
+.arc42-search__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.45rem;
+  width: 3px;
+  height: 1.2rem;
+  transform: translateY(-50%);
+  background: var(--cat, transparent);
+  border-radius: 2px;
+}
+.arc42-search__item[data-type="page"]    { --cat: var(--arc42-primary); }
+.arc42-search__item[data-type="book"]    { --cat: var(--arc42-primary-hover); }
+.arc42-search__item[data-type="article"] { --cat: var(--arc42-slate); }
+.arc42-search__item[data-type="talk"]    { --cat: #5f4800; }
+.arc42-search__item[data-type="video"]   { --cat: #7b2418; }
+
+.arc42-search__item:hover,
+.arc42-search__item.is-active {
+  background: #eef2f8;
+}
+/* Keyboard focus lives on the input, not on the row, so the active row needs a
+   marker that survives being read at a glance — a tint alone is too quiet. */
+.arc42-search__item.is-active {
+  outline: 2px solid var(--arc42-primary);
+  outline-offset: -2px;
+}
+
+.arc42-search__title {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--arc42-ink-strong);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Same mark treatment as the /search/ results page, so a hit looks the same
+   wherever the reader meets it. */
+.arc42-search__title mark {
+  padding: 0 0.1em;
+  background: var(--arc42-amber-lift);
+  color: var(--arc42-amber-ink);
+  border-radius: 2px;
+}
+
+.arc42-search__path {
+  max-width: 16rem;
+  overflow: hidden;
+  color: var(--arc42-text-muted);
+  font-size: 0.74rem;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* "Alle N Treffer … anzeigen" — a selectable option that routes to /search/.
+   Styled as an action rather than a content hit so it does not read as a
+   result the ranker found. */
+.arc42-search__item--all {
+  grid-template-columns: minmax(0, 1fr);
+}
+.arc42-search__item--all::before {
+  display: none;
+}
+.arc42-search__item--all .arc42-search__title {
+  color: var(--arc42-text-muted);
+  font-size: 0.88rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.arc42-search__item--all .arc42-search__title strong {
+  color: var(--arc42-ink-strong);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.arc42-search__empty {
+  padding: 0.9rem 1rem;
+  color: var(--arc42-text-muted);
+  font-size: 0.92rem;
+}
+.arc42-search__empty strong {
+  color: var(--arc42-ink-strong);
+}
+.arc42-search__hint-line {
+  color: var(--arc42-text-muted);
+}
+
+/* Outside .arc42-search__scroll, so it stays put while the results scroll. */
+.arc42-search__footer {
+  flex: 0 0 auto;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--arc42-border);
+  color: var(--arc42-text-muted);
+  font-size: 0.74rem;
+}
+/* Scoped to the footer: .arc42-search__hint above is the band's own chip and
+   is styled for navy, not for this white card. */
+.arc42-search__footer kbd {
+  padding: 0.1rem 0.3rem;
+  background: #eef2f8;
+  border: 1px solid var(--arc42-border);
+  border-radius: 3px;
+  color: var(--arc42-ink);
+  font-family: inherit;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+/* Tablet / narrow desktop: the band is tight here, so the card shrinks and the
+   URL column goes — the title is what is being scanned. 1023px matches the
+   theme's $large breakpoint, already used for the sidebar rail above. */
+@media (max-width: 1023px) {
+  .arc42-search__panel {
+    min-width: clamp(18rem, 55vw, 26rem);
+    max-width: 28rem;
+    max-height: 60vh;
+  }
+  .arc42-search__item {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .arc42-search__path {
+    display: none;
+  }
+}

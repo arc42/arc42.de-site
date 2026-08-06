@@ -102,6 +102,16 @@
         A real form, not a link. It submits to /search/?q=… so it works with
         JavaScript disabled; arc42-nav.js adds the "/" hotkey on top, and
         _pages/search.html reads the q parameter and runs the search.
+
+        On top of that, assets/js/arc42-autocomplete.js turns the field into an
+        ARIA combobox: it fills #arc42-search-panel with suggestions from
+        /search-lookup.json and adds the ⌘K / Ctrl-K hotkey. Everything below
+        that the autocomplete needs is inert without JavaScript — the panel is
+        `hidden` and stays empty, aria-expanded stays "false", and the form
+        still submits as an ordinary GET.
+
+        The role/aria-* attributes are the JS+CSS contract; do not rename the
+        ids without changing both files.
       {%- endcomment -%}
       <form class="arc42-search" role="search" action="{{ '/search/' | relative_url }}" method="get">
         <label class="arc42-sr-only" for="masthead-search">Suche auf arc42.de</label>
@@ -109,8 +119,20 @@
           <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="2"/>
           <path d="M11 11l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <input type="search" id="masthead-search" name="q" placeholder="Suche" autocomplete="off">
-        <kbd class="arc42-search__hint" aria-hidden="true">/</kbd>
+        <input type="search" id="masthead-search" name="q" placeholder="Suche" autocomplete="off"
+               autocorrect="off" autocapitalize="off" spellcheck="false"
+               role="combobox" aria-autocomplete="list" aria-expanded="false"
+               aria-controls="arc42-search-panel" aria-haspopup="listbox"
+               aria-describedby="arc42-search-hint-desc">
+        <kbd class="arc42-search__hint" aria-hidden="true" data-arc42-search-hint>/</kbd>
+        {%- comment -%}
+          The kbd above is aria-hidden (it is a glyph, not a sentence), so the
+          shortcut is stated once in prose here for screen-reader users. The JS
+          rewrites both to the platform's actual chord.
+        {%- endcomment -%}
+        <span class="arc42-sr-only" id="arc42-search-hint-desc" data-arc42-search-hint-desc>Schrägstrich fokussiert diese Suche.</span>
+        <div id="arc42-search-panel" class="arc42-search__panel" role="listbox" aria-label="Suchvorschläge" hidden></div>
+        <div class="arc42-sr-only" aria-live="polite" data-arc42-search-status></div>
       </form>
 
     </div>
