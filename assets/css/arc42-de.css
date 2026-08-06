@@ -57,15 +57,19 @@ button.msa {
     font-size: 80%;
 }
 
-/* Matches arc42.org (arc42-org.css:128), which sets 0.8rem. The compound
-   selector replaces a former `60% !important`: arc42-de.css is pulled in by
-   main.scss with a .css extension, so Sass emits a real @import at the TOP of
-   main.css and every theme rule lands AFTER it. The theme's own
-   `.page__footer-copyright { font-size: .6875em }` therefore wins at equal
-   specificity — same trap as the .footer-links rules further down. Two classes
-   beat one without needing !important; the footer carries both. */
+/* Matches arc42.org, which sets the same 13px. The compound selector replaces
+   a former `60% !important`: arc42-de.css is pulled in by main.scss with a
+   .css extension, so Sass emits a real @import at the TOP of main.css and
+   every theme rule lands AFTER it. The theme's own `.page__footer-copyright
+   { font-size: .6875em }` therefore wins at equal specificity — same trap as
+   the .footer-links rules further down. Two classes beat one without needing
+   !important; the footer carries both.
+
+   px, not rem: the theme's root scales 16→22px with the viewport, which is
+   what made this line grow past the docs/quality footers. See the footer
+   block further down. */
 .page__footer-copyright.copyright-size {
-    font-size: 0.8rem;
+    font-size: 13px;
 }
 
 
@@ -774,45 +778,73 @@ html { overflow-x: clip; }
    logo, no FontAwesome. .footer-center, .copyright-size and the
    .supported-by-innoq sizing rules already existed above; only the pieces
    below were missing.
-   ========================================================================== */
-.footer-innoq { margin: 0 0 0.5rem; }
 
-/* Footer link row — plain labels separated by middots, replacing the former
-   per-link FontAwesome glyphs. */
+   Every length in this block is px on purpose. The theme's reset scales the
+   root with the viewport (16px, then 18/20/22px at 48/64/80em), so a rem
+   here is not a fixed size: 0.92rem rendered at 14.7px on a phone but 20.2px
+   on a wide desktop, while the INNOQ logo beside it stayed 110px. The rest
+   of the family (docs, faq, quality, status, trainings) sizes from a fixed
+   16px root, so the same footer looked half again too big only on the theme
+   sites. Footer chrome is UI, not body copy — no reading-size ramp.
+   ========================================================================== */
+.footer-innoq { margin: 0 0 8px; }
+
+.page__footer-follow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 24px;
+  margin-bottom: 8px;
+}
+.footer-innoq {
+  margin: 0;
+}
+.supported-by-innoq {
+  margin-bottom: 0;
+}
 .footer-links {
   list-style: none;
-  margin: 0.5rem 0 1rem;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
-  column-gap: 0.6rem;
-  row-gap: 0.3rem;
+  column-gap: 10px;
+  row-gap: 5px;
 }
 /* The .page__footer-follow prefix is load-bearing here and below: the
    theme styles `.page__footer-follow li` (uppercase, $type-size-6) and
    `li + li:before { content: "" }` at equal specificity, and this file is
    cascade-hoisted ABOVE the theme (see the note in main.scss) — without
-   the extra class the theme wins. Mixed case at 0.92rem matches arc42.org. */
+   the extra class the theme wins. Mixed case at 15px matches arc42.org. */
 .page__footer-follow .footer-links li {
   margin: 0;
   padding: 0;
-  font-size: 0.92rem;
+  font-size: 15px;
   text-transform: none;
 }
 .page__footer-follow .footer-links li + li::before {
   content: "\00B7"; /* · */
-  margin-right: 0.6rem;
+  margin-right: 10px;
   color: var(--arc42-slate); /* decorative separator, not text — 3:1 n/a */
 }
-.footer-links a {
-  /* Regular-weight, link-coloured labels — same treatment as arc42.org. */
+/* Regular-weight, link-coloured labels — same treatment as arc42.org.
+
+   The .page__footer-follow prefix is what makes this rule bite. Bare
+   `.footer-links a` is (0,1,1), exactly the weight of the theme's
+   `.page__footer a { color: inherit }` and `.page__footer-follow a {
+   font-weight: bold }` — and the theme is imported after this file, so a tie
+   went to the theme. The labels had been rendering muted grey and bold ever
+   since, which is not what the rule above them said. */
+.page__footer-follow .footer-links a {
   color: var(--arc42-primary);
+  font-weight: 400;
   text-decoration: none;
 }
-.footer-links a:hover,
-.footer-links a:focus-visible {
+.page__footer-follow .footer-links a:hover,
+.page__footer-follow .footer-links a:focus-visible {
   color: var(--arc42-primary);
   text-decoration: underline;
   text-underline-offset: 3px;
