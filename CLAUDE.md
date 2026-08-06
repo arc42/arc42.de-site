@@ -75,10 +75,12 @@ Formular submitted wie bisher nach `/search/?q=…`.
 
 **Enter** öffnet die aktuell markierte Zeile des Panels (die erste per Default,
 sobald Treffer da sind). **⌘/Strg/Shift-Enter** überspringt das Panel und springt
-immer nach `/search/?q=…` — dieselbe Chord-Logik wie im Publikationen-Filter.
+immer nach `/search/?q=…`. Der Publikationen-Filter kennt dieselbe Abkürzung, dort
+aber nur mit ⌘/Strg — Shift-Enter gibt es ausschließlich im Autocomplete.
 
 `search-lookup.json` schließt dieselben Seiten aus wie `search.json` (404, die beiden
-Formular-Stubs) und zusätzlich die sechs `layout: redirect`-Stubs. Der Anker für
+Formular-Stubs), zusätzlich die sechs `layout: redirect`-Stubs und `/info-msa-EN/`
+(titelgleich mit `/info-msa/`, dazu die Begründung in der Datei). Der Anker für
 Publikationen ohne Detailseite ist — wie überall sonst — der Dateiname, nicht `id`.
 
 ## Kurse / Termine verwalten

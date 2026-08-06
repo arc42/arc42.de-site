@@ -19,13 +19,21 @@ layout: none
   /videos/, /talks/, /more/, /recommendations/ — see CLAUDE.md) are dropped:
   they render no content, they only bounce to /publikationen/, and offering the
   visitor a suggestion that immediately redirects elsewhere is a dead row.
+
+  /info-msa-EN/ is dropped too, because it carries the SAME title as its German
+  twin /info-msa/ ("Mastering Software Architectures"). Below 1024px the panel
+  hides the URL column, so the two rows render pixel-identical — a choice
+  between two things that look like the same thing. The German page is the
+  canonical entry on a German site; the English one stays reachable through the
+  lunr-backed /search/ page, which shows an excerpt and can tell them apart.
 {%- endcomment -%}
 {%- assign lookup_pages = site.pages
       | where_exp: "p", "p.title"
       | where_exp: "p", "p.layout != 'redirect'"
       | where_exp: "p", "p.title != 'Super!'"
       | where_exp: "p", "p.title != 'OOPS!'"
-      | where_exp: "p", "p.title != 'Sorry, Page Not Found (404)'" -%}
+      | where_exp: "p", "p.title != 'Sorry, Page Not Found (404)'"
+      | where_exp: "p", "p.url != '/info-msa-EN/'" -%}
 [
 {% for page in lookup_pages -%}
   {"title": {{ page.title | jsonify }}, "type": "page", "url": {{ page.url | prepend: site.baseurl | jsonify }}, "tags": ""}{% unless forloop.last %},{% endunless %}
