@@ -618,6 +618,16 @@
   // null relatedTarget, and the panel closes. That is the right outcome — a
   // combobox listbox should not stay open once its input is unfocused.
   panel.addEventListener("mousedown", function (e) {
+    // Primary button only. mousedown fires for every button, so without this a
+    // right-click navigates instead of opening the context menu, and a
+    // middle-click — which on a real link means "open in a new tab" — throws
+    // away the current page instead. The rows are <li>, not <a>, so the browser
+    // gives us none of that behaviour for free; the least we can do is not
+    // actively break it. (The quality.arc42.org original has the same bug —
+    // worth backporting.)
+    if (e.button !== 0) {
+      return;
+    }
     var item = e.target.closest ? e.target.closest(".arc42-search__item") : null;
     if (!item) {
       return;
@@ -669,7 +679,16 @@
   // Cmd/Ctrl-K from anywhere. The "/" hotkey stays in arc42-nav.js; this file
   // must not claim it too.
   document.addEventListener("keydown", function (e) {
-    if (!(e.metaKey || e.ctrlKey) || !e.key || e.key.toLowerCase() !== "k") {
+    // The plain chord only. Ctrl-Shift-K and Cmd-Alt-K belong to the browser
+    // (web console, dev tools) and to whatever the visitor has bound them to —
+    // a search box has no business answering for them.
+    if (
+      !(e.metaKey || e.ctrlKey) ||
+      e.shiftKey ||
+      e.altKey ||
+      !e.key ||
+      e.key.toLowerCase() !== "k"
+    ) {
       return;
     }
     // Below 800px .arc42-search is display:none and search lives in the drawer,
