@@ -53,9 +53,29 @@ Mehrwort-Anfragen sind **AND**-verknüpft (nicht OR) — alle Terme müssen matc
 
 Der Diakritik-Folding-Helper (`toLocaleLowerCase().normalize("NFD")`, gefolgt von
 `.replace()` der kombinierenden Unicode-Akzentzeichen — Bereich `U+0300`-`U+036F`,
-z. B. "über" → "uber") ist **dupliziert**: als `fold()` in `assets/js/arc42-search.js`
-und als `normalize()` in `assets/js/resources-filter.js` (Publikationen-Filter). Beide
-Stellen bei Änderungen **gemeinsam** anpassen.
+z. B. "über" → "uber") ist **dreifach dupliziert**: als `fold()` in
+`assets/js/arc42-search.js`, als `normalize()` in `assets/js/resources-filter.js`
+(Publikationen-Filter) und als `fold()` in `assets/js/arc42-autocomplete.js`
+(Masthead-Autocomplete). Alle drei Stellen bei Änderungen **gemeinsam** anpassen.
+
+## Masthead-Autocomplete
+
+Das Suchfeld im Masthead (`_includes/masthead.html`) ist eine ARIA-Combobox:
+`assets/js/arc42-autocomplete.js` blendet unter dem Feld ein Vorschlags-Panel ein und
+belegt **⌘K / Strg-K**. Der Index dafür ist `search-lookup.json` (Repo-Root, Liquid),
+**nicht** `search.json`: er enthält nur Titel, Typ, URL und Suchbegriffe, kein
+Body-Text, und wird mit einem deterministischen Prefix-/Substring-Scorer bewertet —
+lunr scheidet aus, weil dessen Stemmer Prefix-Anfragen beim Tippen ins Leere laufen
+lässt. `/search/` bleibt bei lunr. Ergebnisse werden nach Typ gruppiert
+(Seiten · Bücher · Artikel · Vorträge · Videos), max. 4 pro Gruppe, 12 insgesamt.
+
+Die **"/"-Taste gehört weiterhin `arc42-nav.js`** — das Autocomplete registriert dafür
+bewusst *keinen* zweiten Handler. Ohne JavaScript bleibt das Panel `hidden` und das
+Formular submitted wie bisher nach `/search/?q=…`.
+
+`search-lookup.json` schließt dieselben Seiten aus wie `search.json` (404, die beiden
+Formular-Stubs) und zusätzlich die sechs `layout: redirect`-Stubs. Der Anker für
+Publikationen ohne Detailseite ist — wie überall sonst — der Dateiname, nicht `id`.
 
 ## Kurse / Termine verwalten
 

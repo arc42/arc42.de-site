@@ -1,0 +1,58 @@
+---
+layout: none
+---
+{%- comment -%}
+  Lookup index for the masthead autocomplete (assets/js/arc42-autocomplete.js).
+
+  This is deliberately NOT search.json. search.json carries the full body text
+  and feeds lunr on /search/; this file carries titles and keywords only, so the
+  dropdown can be scored with a plain prefix/substring ranker that stays
+  predictable while the visitor types. Keeping them apart also keeps this file
+  small enough to fetch on the first keystroke.
+
+  Shape (array):  { "title", "type", "url", "tags" }
+  type is "page" for site.pages, or the resource's own type
+  ("book" | "article" | "talk" | "video") for /publikationen/ entries.
+
+  Page exclusions mirror search.json's: the two form-result stubs and the 404
+  page. On top of that, the six `layout: redirect` stubs (/books/, /articles/,
+  /videos/, /talks/, /more/, /recommendations/ — see CLAUDE.md) are dropped:
+  they render no content, they only bounce to /publikationen/, and offering the
+  visitor a suggestion that immediately redirects elsewhere is a dead row.
+{%- endcomment -%}
+{%- assign lookup_pages = site.pages
+      | where_exp: "p", "p.title"
+      | where_exp: "p", "p.layout != 'redirect'"
+      | where_exp: "p", "p.title != 'Super!'"
+      | where_exp: "p", "p.title != 'OOPS!'"
+      | where_exp: "p", "p.title != 'Sorry, Page Not Found (404)'" -%}
+[
+{% for page in lookup_pages -%}
+  {"title": {{ page.title | jsonify }}, "type": "page", "url": {{ page.url | prepend: site.baseurl | jsonify }}, "tags": ""}{% unless forloop.last %},{% endunless %}
+{% endfor -%}
+{%- comment -%}
+  site.pages does NOT include collection documents, so the ~50 /publikationen/
+  entries need their own loop.
+
+  The url points at the detail page when there is one, otherwise at the filtered
+  listing plus the card's anchor. The anchor is the filename slug, derived the
+  same way _includes/resource-item.html and search.json derive it — NOT
+  `resource.id`, which Jekyll's DocumentDrop overrides with the document's
+  internal id.
+
+  `search` (the entry's extra keywords: authors, publisher, alternative
+  spellings) becomes `tags`, which the scorer weighs below title matches.
+{%- endcomment -%}
+{%- if site.resources.size > 0 -%}
+{%- if lookup_pages.size > 0 -%},{%- endif %}
+{% for resource in site.resources -%}
+  {%- assign r_anchor = resource.path | split: '/' | last | split: '.' | first -%}
+  {%- if resource.detail -%}
+    {%- assign r_url = resource.url | prepend: site.baseurl -%}
+  {%- else -%}
+    {%- capture r_url %}{{ site.baseurl }}/publikationen/?type={{ resource.type }}#{{ r_anchor }}{% endcapture -%}
+  {%- endif -%}
+  {"title": {{ resource.title | jsonify }}, "type": {{ resource.type | jsonify }}, "url": {{ r_url | jsonify }}, "tags": {{ resource.search | default: "" | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% endfor -%}
+{%- endif -%}
+]
