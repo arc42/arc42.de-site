@@ -550,6 +550,15 @@
     } else if (e.key === "Escape") {
       // Three steps, so Escape never does more than the visitor asked for:
       // close the panel, then clear the field, then give the page focus back.
+      //
+      // Every step calls stopPropagation(), because arc42-nav.js:84-89 listens
+      // for Escape on `document` and does not check defaultPrevented. Without
+      // this, one Escape typed in the search field would close the panel AND
+      // close the "Mehr" drawer AND move focus to the drawer button — three
+      // things for one keystroke, two of them nowhere near what was asked.
+      // Escape belongs to the innermost open thing; the drawer's own Escape
+      // still works from anywhere else on the page. arc42-nav.js is left alone.
+      e.stopPropagation();
       if (!panel.hidden) {
         e.preventDefault();
         closePanel();
@@ -559,6 +568,8 @@
         lastQuery = "";
         setStatus("");
       } else {
+        // No preventDefault: some browsers map Escape on a search field to
+        // "revert the value", and by this point the field is already empty.
         input.blur();
       }
     } else if (e.key === "Enter") {
@@ -585,8 +596,27 @@
     }
   });
 
-  // mousedown, not click: the panel is torn down on blur, and by the time a
-  // click event fires the row the pointer went down on no longer exists.
+  // mousedown, not click. The panel closes as soon as focus leaves the form
+  // (the focusout handler below) or the pointer goes down outside it (the
+  // document mousedown handler below), and either of those can fire between a
+  // real mousedown and the click that would have followed — so by click time
+  // the row the pointer went down on may no longer be in the DOM.
+  //
+  // Event order for a row click, which is why this stays safe:
+  //
+  //   1. mousedown fires here first — before any focus change, so before
+  //      focusout.
+  //   2. preventDefault() suppresses mousedown's default action, which is
+  //      moving focus. Focus never leaves the input, focusout never fires,
+  //      and nothing tears the panel down under the navigation below.
+  //   3. the same event then bubbles to the document mousedown handler, whose
+  //      `form.contains(e.target)` guard is true for anything in the panel, so
+  //      that one does not close it either.
+  //
+  // Mousedown on the panel's chrome (footer hints, group labels) deliberately
+  // does NOT preventDefault: focus does leave the input, focusout fires with a
+  // null relatedTarget, and the panel closes. That is the right outcome — a
+  // combobox listbox should not stay open once its input is unfocused.
   panel.addEventListener("mousedown", function (e) {
     var item = e.target.closest ? e.target.closest(".arc42-search__item") : null;
     if (!item) {
@@ -611,6 +641,25 @@
     }
   });
 
+  // Focus loss closes the panel. Without this, Tab out of the field leaves an
+  // open listbox floating over the page with aria-expanded="true" and a stale
+  // aria-activedescendant pointing at a row nobody can reach — the state WAI-
+  // ARIA APG forbids for a combobox, and invisible to anyone testing with a
+  // mouse. focusout rather than blur because it bubbles, so one listener on the
+  // form covers the input and anything focusable that ends up in the panel.
+  //
+  // relatedTarget is where focus is going: null when it goes nowhere (clicking
+  // dead space, closing the tab), so `contains(null)` is false and the panel
+  // closes, which is correct.
+  form.addEventListener("focusout", function (e) {
+    if (!form.contains(e.relatedTarget)) {
+      closePanel();
+    }
+  });
+
+  // Pointer down anywhere outside the form. This is not redundant with
+  // focusout: a mousedown on a non-focusable region of the page does not always
+  // move focus, so focusout alone can leave the panel open behind a click.
   document.addEventListener("mousedown", function (e) {
     if (!form.contains(e.target)) {
       closePanel();
