@@ -79,7 +79,9 @@ immer nach `/search/?q=…`. Der Publikationen-Filter kennt dieselbe Abkürzung,
 aber nur mit ⌘/Strg — Shift-Enter gibt es ausschließlich im Autocomplete.
 
 `search-lookup.json` schließt dieselben Seiten aus wie `search.json` (404, die beiden
-Formular-Stubs), zusätzlich die sechs `layout: redirect`-Stubs und `/info-msa-EN/`
+Formular-Stubs), zusätzlich alle `layout: redirect`-Stubs (darunter `/status/`, das
+extern nach `https://status.arc42.org/` weiterleitet — der Footer verlinkt dorthin)
+und `/info-msa-EN/`
 (titelgleich mit `/info-msa/`, dazu die Begründung in der Datei). Der Anker für
 Publikationen ohne Detailseite ist — wie überall sonst — der Dateiname, nicht `id`.
 
