@@ -11,11 +11,11 @@ services:
       - jekyll_cache:/site/.jekyll-cache
       - sass_cache:/site/.sass-cache
     ports:
-      - '4000:4000'
+      - '4043:4043'
     # No --incremental: full rebuild on change (~2.5s). Incremental silently
     # leaves stale/relocated output when permalinks or front matter change.
     command: >
-      sh -c "bundle exec jekyll serve --host 0.0.0.0 --watch $${POLLING}"
+      sh -c "bundle exec jekyll serve --host 0.0.0.0 --port 4043 --watch $${POLLING}"
 
 volumes:
   jekyll_cache:
