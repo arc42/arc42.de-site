@@ -55,13 +55,13 @@ from those same gems, not by the GitHub Pages gem set.
 make dev
 ```
 
-Serves the site on `http://localhost:4000` (not `0.0.0.0:4000` — Firefox refuses
+Serves the site on `http://localhost:4043` (not `0.0.0.0:4043` — Firefox refuses
 that host) and rebuilds on every file change. The first run builds the image; on
 later runs it starts from the cache.
 
 All useful targets (`make` on its own prints this list):
 
-* `make dev` — start Jekyll locally with live reload on port 4000
+* `make dev` — start Jekyll locally with live reload on port 4043
 * `make build` — build/rebuild the Docker image `arc42-site:latest` from the pinned gems
 * `make site` — generate the static site into `_site/` (one-shot build, no server)
 * `make check-links` — run html-proofer over the built `_site` (internal links, images, HTML)

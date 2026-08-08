@@ -456,7 +456,7 @@ Expected: 47.
 
 - [ ] **Step 3: Visual smoke test**
 
-Run `make dev`, open http://localhost:4000/publikationen/ and verify: hero renders, filter buttons show counts (Alle 47 / Bücher 16 / Artikel 15 / Vorträge 10 / Videos 6), clicking "Bücher" filters and sets `?type=book`, language select and search work, reset works. Then stop the server.
+Run `make dev`, open http://localhost:4043/publikationen/ and verify: hero renders, filter buttons show counts (Alle 47 / Bücher 16 / Artikel 15 / Vorträge 10 / Videos 6), clicking "Bücher" filters and sets `?type=book`, language select and search work, reset works. Then stop the server.
 
 - [ ] **Step 4: Commit**
 
