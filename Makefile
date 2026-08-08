@@ -5,12 +5,12 @@
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-14s\033[0m %s\n", $$1, $$2}'
 
-dev: ## Start the local Jekyll dev server with live reload (http://localhost:4000)
-	@echo "==> Open http://localhost:4000  (NOT http://0.0.0.0:4000 — Firefox refuses to connect to 0.0.0.0)"
+dev: ## Start the local Jekyll dev server with live reload (http://localhost:4043)
+	@echo "==> Open http://localhost:4043  (NOT http://0.0.0.0:4043 — Firefox refuses to connect to 0.0.0.0)"
 	@docker compose down --remove-orphans >/dev/null 2>&1 || true
-	@holder=$$(docker ps --filter "publish=4000" --format '{{.Names}}'); \
+	@holder=$$(docker ps --filter "publish=4043" --format '{{.Names}}'); \
 	if [ -n "$$holder" ]; then \
-		echo "==> Port 4000 is already in use by another container: $$holder"; \
+		echo "==> Port 4043 is already in use by another container: $$holder"; \
 		echo "==> That's likely a dev server from a sibling arc42 site repo. Stop it first, e.g.:"; \
 		echo "==>   docker stop $$holder"; \
 		exit 1; \
@@ -55,7 +55,7 @@ test-theme: build ## Assert the generated _site uses local theme files and clean
 	               echo "Unexpected internal page link without trailing slash"; \
 	               exit 1; \
 	           fi; \
-	           if grep -R -E "https://www\.arc42\.de|http://0\.0\.0\.0:4000" _site; then \
+	           if grep -R -E "https://www\.arc42\.de|http://0\.0\.0\.0:4043" _site; then \
 	               echo "Unexpected generated link host; use https://arc42.de for production and localhost-relative links for navigation"; \
 	               exit 1; \
 	           fi; \
