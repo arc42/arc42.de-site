@@ -9,10 +9,6 @@ header:
   actions: 
     - label: "Übersicht"
       url: /overview/
-    - label: "Kontakt"
-      url: /contact/
-    - label: "&#8594; English site..."
-      url: "https://arc42.org"
 excerpt: "Entwerfen, kommunizieren und dokumentieren. Bewährt, praktisch und pragmatisch. Frei verfügbar, Open-Source und schmerzfrei."
 
 
