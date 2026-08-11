@@ -73,4 +73,6 @@ excerpt: "Bücher, Artikel, Vorträge und Videos der Menschen hinter arc42 — g
   <p><strong>Noch mehr Aufzeichnungen?</strong> Besuchen Sie den <a href="https://youtube.com/arc42-video" rel="noopener">arc42-YouTube-Kanal</a> oder <a href="https://speakerdeck.com/gernotstarke" rel="noopener">Gernots Speaker-Deck-Profil</a>.</p>
 </div>
 
+{% include course-bridge.html variant="card" %}
+
 <script src="/assets/js/resources-filter.js" defer></script>
