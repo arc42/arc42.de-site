@@ -756,10 +756,46 @@ And every anchor inside `.course-bridge` must report a height of at least 44px.
 
 - [ ] **Step 5: Confirm the band tracks the data**
 
-Temporarily set `status: "waitlist"` on the Req4Arc September 2026 date in a **local scratch copy** of `_data/trainings.json`, rebuild, and confirm the band advances to the next open date rather than showing the sold-out one. **Revert the scratch edit immediately** — that file is sync-generated and must never be committed as modified.
+The `waitlist`/`full` skip is the one place this include deliberately diverges from
+`timeline_auto.html`, and no live date currently carries either status — so it is
+unproven unless deliberately exercised.
+
+This is the only step that touches `_data/trainings.json`, which Global Constraints
+forbid hand-editing. The constraint's intent is *no persistent manual changes* — the
+file is sync-generated and any lasting edit is overwritten. A bounded, restored test
+edit does not violate that intent, but an accidental commit would. So the procedure
+below is mandatory, and **the restore is not optional**:
 
 ```bash
-git diff --stat _data/trainings.json   # must be empty before you commit anything
+# 1. back up outside the repo so no git operation can ever see it
+cp _data/trainings.json /tmp/trainings-backup.json
+
+# 2. flip the FIRST open date (Req4Arc, 2026-09-15) to waitlist
+#    edit only that date's "status": "open" -> "status": "waitlist"
+
+# 3. rebuild and read the band
+make site >/dev/null
+grep -o 'course-bridge__facts.\{0,220\}' _site/publikationen/index.html
+
+# 4. RESTORE IMMEDIATELY — do this even if step 3 failed
+cp /tmp/trainings-backup.json _data/trainings.json
+
+# 5. prove the restore worked; this must print nothing at all
+git diff --stat _data/trainings.json
+```
+
+**Expected at step 3:** the band names **MSA, 29. September – 1. Oktober 2026** (the
+next open date after Req4Arc), *not* the waitlisted Req4Arc date. If it still shows
+Req4Arc, the skip is broken.
+
+**Expected at step 5:** empty output. If `git diff` shows anything, restore from
+`/tmp/trainings-backup.json` again and re-check before doing anything else. Never
+commit with that file modified.
+
+Then rebuild once more so `_site` reflects the real data again:
+
+```bash
+make site >/dev/null
 ```
 
 - [ ] **Step 6: Report**
