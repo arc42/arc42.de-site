@@ -24,6 +24,7 @@ Bücher, Artikel, Vorträge und Videos liegen als je eine Datei in `_resources/*
 | `cover` | Thumbnail-Pfad; ohne Cover wird ein Buchstaben-Marker gezeichnet |
 | `link` | Ziel-URL (extern oder site-lokal); weglassen für Einträge ohne Link |
 | `link_label` | Text des CTA-Links |
+| `course` | optionale Kurs-Id aus `_data/trainings.json` (`msa`, `improve`, `req4arc`, `adoc`); erzeugt auf der Karte eine zweite Zeile „Zum Kurs: … →" nach `/info-<id>/`. Weglassen heißt: keine Kurszeile. Die URL wird aus der Id gebildet — **nie** aus `course.url`, das eine absolute `https://www.arc42.de/…`-Adresse enthält und `make test-theme` scheitern lässt |
 | `id` | **wirkungslos** — der Anker jeder Karte ist immer der Dateiname ohne `.md`, also `/publikationen/#arc42-by-example-vol2`. Jekyll überschreibt ein Front-Matter-`id` mit der internen Dokument-Id; das Feld existiert nur noch für Byte-Gleichheit mit arc42.org |
 | `detail` | `true` ⇒ der Body der Datei wird als eigene Detailseite gerendert |
 
@@ -37,7 +38,8 @@ Der Bestand ist bewusst **dupliziert**, nicht synchronisiert: ein neuer Eintrag 
 arc42.org muss einmal nach `_resources/` hierher kopiert werden (und umgekehrt).
 Die Jubiläums-Ausgabe von *arc42 by Example* (auf arc42.org
 `_resources/arc42-by-example-anniversary.md`) fehlt hier **absichtlich** — nicht
-übersehen, also bitte nicht „nachtragen".
+übersehen, also bitte nicht „nachtragen". Das Feld `course:` existiert nur hier und
+propagiert **nicht** nach arc42.org.
 
 Bei `language: "de"`-Einträgen sind `summary`, `link_label` und (falls `detail: true`)
 der Detailseiten-Body hier **deutschsprachig** und weichen bewusst vom englischen

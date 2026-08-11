@@ -355,15 +355,44 @@
   margin-right: 0.7rem;
   color: var(--arc42-border);
 }
-.resource-item__link {
+/* Both card links share the third grid column. A second <a> as a sibling of
+   .resource-item__link would open a FOURTH cell in the three-column
+   .resource-item grid and wrap onto its own row. */
+.resource-item__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
   justify-self: end;
+  text-align: right;
+}
+.resource-item__link {
   color: var(--arc42-primary);
   font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
 }
+/* The theme sets a:visited at (0,1,1), which beats a single class at (0,1,0)
+   — and these sheets load BEFORE the theme, so ties are lost too. Both link
+   states are therefore named explicitly. */
+.resource-item__link:link,
+.resource-item__link:visited { color: var(--arc42-primary); }
 .resource-item__link:hover { color: var(--arc42-primary-hover); text-decoration: underline; }
+
+/* The course bridge line. Muted so the primary action stays primary:
+   #55657a on #fff is 5.9:1, the bold course name #374769 is 9.3:1. */
+.resource-item__link--course {
+  font-weight: 600;
+  white-space: normal;
+  max-width: 16rem;
+  line-height: 1.35;
+}
+.resource-item__link--course:link,
+.resource-item__link--course:visited { color: var(--arc42-text-muted); }
+.resource-item__link--course b { color: var(--arc42-primary); font-weight: 700; }
+.resource-item__link--course:hover,
+.resource-item__link--course:hover b { color: var(--arc42-primary-hover); }
 .resource-empty {
   padding: 3rem 0;
   text-align: center;
@@ -480,7 +509,14 @@
   }
   .resource-item__cover { width: 3rem; height: 4.4rem; }
   .resource-item__marker { width: 3rem; height: 3rem; }
-  .resource-item__link { grid-column: 2; justify-self: start; white-space: normal; }
+  .resource-item__links {
+    grid-column: 2;
+    justify-self: start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .resource-item__link { white-space: normal; }
+  .resource-item__link--course { max-width: none; }
 }
 
 @media (max-width: 420px) {
