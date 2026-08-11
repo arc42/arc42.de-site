@@ -1,5 +1,9 @@
 _site/
 .sass-cache/
+.jekyll-cache/
 .jekyll-metadata
 .DS_Store
 .idea
+
+# scratch workspace for agent-driven plan execution (ledgers, briefs, diffs)
+.superpowers/

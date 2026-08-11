@@ -78,11 +78,17 @@ and Liquid whitespace control makes the number of matches per line unpredictable
 make site >/dev/null
 n() { grep -o "$1" _site/publikationen/index.html | wc -l | tr -d ' '; }
 echo "course links:   $(n 'resource-item__link--course')"
-echo "info-msa:       $(n 'href="/info-msa/"')"
-echo "info-adoc:      $(n 'href="/info-adoc/"')"
-echo "info-req4arc:   $(n 'href="/info-req4arc/"')"
+echo "info-msa:       $(n 'resource-item__link--course" href="/info-msa/"')"
+echo "info-adoc:      $(n 'resource-item__link--course" href="/info-adoc/"')"
+echo "info-req4arc:   $(n 'resource-item__link--course" href="/info-req4arc/"')"
 echo "forbidden host: $(n 'www\.arc42\.de')"
 ```
+
+**The `info-*` patterns must stay scoped to `resource-item__link--course`.** A bare
+`href="/info-msa/"` count is **not** zero on a clean build: the masthead navigation
+links to all four course pages on every page of the site. Measured baseline per page —
+msa 2, adoc 1, req4arc 1, improve 1. Scoping the pattern to the card's own class makes
+the assertion measure this task's output and nothing else.
 
 - [ ] **Step 2: Run it to verify it fails**
 
@@ -276,9 +282,16 @@ Three pilot entries, one per link branch (detail:, link:, link: with cover)."
 make site >/dev/null
 n() { grep -o "$1" _site/publikationen/index.html | wc -l | tr -d ' '; }
 echo "total course links: $(n 'resource-item__link--course')"
-for c in msa adoc req4arc improve; do echo "$c: $(n "href=\"/info-$c/\"")"; done
+for c in msa adoc req4arc improve; do
+  echo "$c: $(n "resource-item__link--course\" href=\"/info-$c/\"")"
+done
 echo "containers: $(n '<div class=\"resource-item__links\">')"
 ```
+
+**The per-course patterns must stay scoped to `resource-item__link--course`.** A bare
+`href="/info-msa/"` count is not zero on a clean build — the masthead links to all four
+course pages on every page. Measured baseline per page: msa 2, adoc 1, req4arc 1,
+improve 1. Scoping to the card's own class measures only this work.
 
 - [ ] **Step 2: Run it to verify it fails**
 
