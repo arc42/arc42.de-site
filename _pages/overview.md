@@ -304,3 +304,5 @@ Inklusive über 100 Tipps zur Anwendung.
   * [arc42 in Aktion](/publikationen/arc42-in-aktion/)
   * [arc42 by Example, Vol. 1](/publikationen/#arc42-by-example-3rd), arc42 anhand von sechs praktischen Beispielen erklärt
   * [arc42 by Example, Vol. 2](/publikationen/#arc42-by-example-vol2), Beispiele aus den Bereichen Echtzeit- und Embedded
+
+{% include course-bridge.html variant="card" %}

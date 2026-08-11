@@ -132,4 +132,5 @@ In anderen Fällen können Sie durch die Analyse und Bewertung mögliche Schwach
 
 <hr>
 
+{% include course-bridge.html variant="card" %}
 
