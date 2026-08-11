@@ -8,6 +8,7 @@ cover: "/images/books/ESA-10-Cover.jpg"
 link: "https://www.hanser-fachbuch.de/fachbuch/artikel/9783446476721"
 link_label: "Beim Hanser Verlag kaufen"
 summary: "Das deutschsprachige Standardwerk für praktizierende Softwarearchitekten, überarbeitet nach dem aktuellen iSAQB-Lehrplan, jetzt mit C4, Cloud und Data Contracts."
+course: "msa"
 search: "effektive softwarearchitekturen 10 auflage gernot starke isaqb hanser c4 cloud data contracts 9783446476721 esabuch"
 ---
 
