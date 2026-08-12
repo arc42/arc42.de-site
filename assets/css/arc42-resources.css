@@ -623,3 +623,45 @@
   .course-bridge--card { padding: 1.2rem; }
   .course-bridge__actions .btn { width: 100%; }
 }
+
+/* --- .firmen-logos — scrolling client-logo band (see _includes/firmen-logos.html) --- */
+.firmen-logos {
+  margin: 3em 0;
+  padding: 2.5em 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+.firmen-logos__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: firmen-logos-scroll 35s linear infinite;
+}
+.firmen-logos:hover .firmen-logos__track { animation-play-state: paused; }
+.firmen-logos__item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 56px;
+}
+.firmen-logos__item img {
+  max-width: 100%;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+  filter: grayscale(1);
+  opacity: 0.45;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+.firmen-logos__item img:hover,
+.firmen-logos__item img:focus { filter: none; opacity: 1; }
+@keyframes firmen-logos-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .firmen-logos__track { animation: none; }
+}
