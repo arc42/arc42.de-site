@@ -4,7 +4,7 @@
 branch was a dead end, never had unique work, and has been deleted)
 **Date:** 2026-08-12
 **State:** live on `/schulungen/`, build-verified, **committed** through `db5f5c6` (two-row
-counter-scrolling band with 24 logos, 3 commits ahead of `origin/improve-the-flow`)
+counter-scrolling band with 24 logos), unpushed — `origin/improve-the-flow` still points at `ba4d44d`; every commit after it is local only
 **Related:** `docs/firmen-logos-quellen.md` (logo sources), `todo/HANDOVER.md`
 (unrelated booking-flow handover, same repo)
 
@@ -12,7 +12,7 @@ counter-scrolling band with 24 logos, 3 commits ahead of `origin/improve-the-flo
 
 ## 1. Commit history
 
-Five commits on `improve-the-flow`, 3 ahead of `origin/improve-the-flow`:
+Five commits on `improve-the-flow` (unpushed — `origin/improve-the-flow` still points at `ba4d44d`):
 - `72b86d4` — first pass: `assets/img/firmen-logos/*.svg` (all 15 logo files,
   §3) and the original standalone prototype page (`_pages/firmen-logos-prototype.md`
   at `/prototypes/firmen-logos/`, noindex), with the band's markup/CSS inlined
@@ -32,7 +32,7 @@ Nothing is loose in the working tree for this feature; `git status` is clean
 apart from unrelated pre-existing WIP (`.impeccable/`, `IMPROVEMENT_PLAN.md`,
 `todo/` — a different, unfinished booking-flow effort, see `todo/HANDOVER.md`).
 
-**Next:** `git push origin improve-the-flow` (3 commits ahead of remote).
+**Next:** `git push origin improve-the-flow` (check position with `git rev-list --count origin/improve-the-flow..HEAD`; all commits after `ba4d44d` are local).
 
 ## 2. What the feature does
 
@@ -107,7 +107,7 @@ this done — CSS logic was verified by reading, not by seeing it move.
 
 ## 7. Open decisions
 
-1. **Push to origin?** Three commits are local only — see §1.
+1. **Push to origin?** All commits after `ba4d44d` are local only — see §1.
 2. **Secondary placement on `/anmeldung/`** — discussed as a "nice to have" (last-
    second reassurance before submitting the registration form) but not built.
 3. **Grow the logo set** — 24 of ~40 companies in `docs/firmen-logos-quellen.md`
