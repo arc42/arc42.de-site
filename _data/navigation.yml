@@ -53,13 +53,26 @@ drawer:
   - group: methode
   - group: about
 
-# One item, not four. Bücher / Artikel / Videos / Vorträge used to be four
-# separate pages; they are now one filterable listing at /publikationen/, and
-# the old URLs are redirect stubs. A group with no `children` renders as a
-# linked heading only — masthead.html guards the child <ul> for exactly this.
+# Bücher / Artikel / Videos / Vorträge used to be four separate pages; they
+# are now ONE filterable listing at /publikationen/, and the old URLs are
+# redirect stubs. The children below are ?type= deep links into that listing
+# (documented in CLAUDE.md), NOT the old pages — do not "fix" them into page
+# URLs. Before 2026-08-12 this group was a bare linked heading, which rendered
+# in the drawer as an empty column that read as a bug.
 publications:
   - title: Publikationen
     url: /publikationen/
+    children:
+    - title: Alle Publikationen
+      url: /publikationen/
+    - title: Bücher
+      url: /publikationen/?type=book
+    - title: Artikel
+      url: /publikationen/?type=article
+    - title: Vorträge
+      url: /publikationen/?type=talk
+    - title: Videos
+      url: /publikationen/?type=video
 
 schulungen:
   - title: Schulungsangebot
@@ -79,10 +92,12 @@ schulungen:
       url: /info-req4arc/
     - title: ADOC
       url: /info-adoc/
-    - title: Unsere AGB
-      url: /terms/
-    - title: Bildergalerie
-      url: /gallery/
+    # "Unsere AGB" (/terms/) and "Bildergalerie" (/gallery/) were removed here
+    # 2026-08-12: both duplicated entries in the `about` group under a second
+    # label, showing twice in the drawer. /terms/ stays linked from the footer,
+    # the Anmeldung commitment block, and Über uns; /gallery/ stays as
+    # "Stimmung beim Training..." under Über uns. Cost: the course-page
+    # sidebars (this group's second consumer) no longer carry the two links.
 
 # New group. Collects pages that were reachable only from the home page body
 # (/method/, /canvas/) or from nowhere at all (/consulting/) — i.e. invisible to
@@ -112,7 +127,8 @@ about:
     - title: "Mitwirkende"
       url: "https://github.com/orgs/arc42/people"
       external: true
-    - title: "Lizenz"
-      url: "/license/"
+    # "Lizenz" removed 2026-08-12 — a legal artifact, not a destination; the
+    # footer links /license/ on every page. (Sidebar cost: /license/ no longer
+    # lists itself in its own rail.)
     - title: "Geschäftsbedingungen (AGB)"
       url: /terms/
