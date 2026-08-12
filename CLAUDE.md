@@ -107,6 +107,13 @@ chronologisch über alle Kurse hinweg, alterniert links/rechts, reicht alle Feld
 `type` wird aus `course.id` gebildet, plus Suffix `_online` wenn `date.format == "online"`.
 Kurstypen: `msa`, `msa_online`, `req4arc`, `improve`, `adoc`, `adoc_online`.
 
+Zweiter Konsument von `site.data.trainings`: `_includes/course-bridge.html`, die
+Conversion-Band am Ende einer Inhaltsseite, je einmal eingebunden auf
+`/publikationen/`, `/method/`, `/overview/` (Variante `card`) und `/canvas/`
+(Variante `hairline`). Ermittelt den nächsten buchbaren Termin über denselben
+Key-Sort wie `timeline_auto.html` — Details und die eine bewusste Abweichung
+im Kommentarkopf der Datei.
+
 Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strings
 `start`/`end` erzeugt (lange deutsche Form, z. B. "15.-17. September 2026").
 
@@ -124,7 +131,13 @@ Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strin
    Warteliste)" zeigt und den Anmeldung-Button versteckt. Die Anmeldeformulare
    (`_pages/anmeldung.md`, `_pages/anmeldungEN.md`) generieren ihre `<select>`-Optionen
    ebenfalls aus `site.data.trainings` und lassen `waitlist`/`full`-Termine automatisch
-   weg — **keine manuelle Pflege der Select-Liste mehr nötig**.
+   weg — **keine manuelle Pflege der Select-Liste mehr nötig**. Achtung, dritter
+   Konsument mit abweichendem Verhalten: `course-bridge.html` überspringt
+   `waitlist`/`full`-Termine komplett und springt zum nächsten offenen Termin
+   weiter, statt sie wie die Timeline ausgegraut weiter anzuzeigen — das Band auf
+   `/publikationen/`, `/method/`, `/overview/` und `/canvas/` wechselt also
+   sichtbar den beworbenen Termin, sobald ein Status auf `waitlist`/`full`
+   gesetzt wird.
 
 ### `few_seats`
 Optionaler Text (z. B. "nur noch wenige Plätze"), im Datenfeld `few_seats` in

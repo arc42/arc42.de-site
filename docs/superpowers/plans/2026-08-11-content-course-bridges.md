@@ -460,7 +460,7 @@ Expected: `band: 0`, `termine: 0`, `schulungen: 0`, `bad host: 0`.
 {%- if variant == 'hairline' -%}
 <aside class="course-bridge course-bridge--hairline" aria-label="Schulungen">
   <p class="course-bridge__kicker">Nächster Termin</p>
-  <p class="course-bridge__text">Wir unterrichten, worüber wir schreiben:{% if nd %} <b>{{ nc.short_title | default: nc.title }} &mdash; {{ datelabel }}{% if nd.city %} in {{ nd.city }}{% endif %}</b>{% if nc.certification %}, mit Zertifizierung nach {{ nc.certification }}{% endif %}.{% else %} in offenen Schulungen mit iSAQB-Zertifizierung.{% endif %}</p>
+  <p class="course-bridge__text">Wir unterrichten, worüber wir schreiben:{% if nd %} <b>{{ nc.short_title | default: nc.title }} &mdash; {{ datelabel }}{% if nd.city %} in {{ nd.city }}{% elsif nd.format == "online" %} online{% endif %}</b>{% if nc.certification %}, mit Zertifizierung nach {{ nc.certification }}{% endif %}.{% else %} in offenen Schulungen mit iSAQB-Zertifizierung.{% endif %}</p>
   <a class="course-bridge__link" href="/termine/">Alle Termine ansehen <span aria-hidden="true">&#8594;</span></a>
 </aside>
 {%- else -%}
@@ -469,7 +469,7 @@ Expected: `band: 0`, `termine: 0`, `schulungen: 0`, `bad host: 0`.
   <h2 class="course-bridge__title">Diese Themen gibt es auch als Training</h2>
   <p class="course-bridge__text">Wir unterrichten, worüber wir schreiben &mdash; als offene Schulung in kleiner Gruppe, mit iSAQB-Zertifizierung.</p>
   {%- if nd %}
-  <p class="course-bridge__facts">Nächster Termin <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ nc.short_title | default: nc.title }}</b> <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ datelabel }}</b>{% if nd.city %} <span class="course-bridge__sep" aria-hidden="true">&middot;</span> {{ nd.city }}{% endif %}</p>
+  <p class="course-bridge__facts">Nächster Termin <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ nc.short_title | default: nc.title }}</b> <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ datelabel }}</b>{% if nd.city %} <span class="course-bridge__sep" aria-hidden="true">&middot;</span> {{ nd.city }}{% elsif nd.format == "online" %} <span class="course-bridge__sep" aria-hidden="true">&middot;</span> Online{% endif %}</p>
   {%- endif %}
   <p class="course-bridge__actions">
     <a class="btn btn--arc42" href="/termine/">Termine ansehen</a>
