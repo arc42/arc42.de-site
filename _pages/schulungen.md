@@ -35,7 +35,7 @@ IMPROVE: <br/>Systeme verbessern</button></a>
 ADOC: <br/>Architekturdokumentation</button></a>
 
 
-### Diese Unternehmen haben mit uns geschult
+### Diese Unternehmen haben mit uns geschult{: .no-print}
 
 {% include firmen-logos.html %}
 

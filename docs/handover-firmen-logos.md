@@ -3,8 +3,8 @@
 **Branch:** `improve-the-flow` (single branch — the earlier `prototype-firmen-logos`
 branch was a dead end, never had unique work, and has been deleted)
 **Date:** 2026-08-12
-**State:** live on `/schulungen/`, build-verified, **committed** (`ba4d44d`, not yet
-pushed to `origin/improve-the-flow` — 4 commits ahead)
+**State:** live on `/schulungen/`, build-verified, **committed** through `db5f5c6` (two-row
+counter-scrolling band with 24 logos, 3 commits ahead of `origin/improve-the-flow`)
 **Related:** `docs/firmen-logos-quellen.md` (logo sources), `todo/HANDOVER.md`
 (unrelated booking-flow handover, same repo)
 
@@ -12,7 +12,7 @@ pushed to `origin/improve-the-flow` — 4 commits ahead)
 
 ## 1. Commit history
 
-Two commits on `improve-the-flow`, neither pushed yet:
+Five commits on `improve-the-flow`, 3 ahead of `origin/improve-the-flow`:
 - `72b86d4` — first pass: `assets/img/firmen-logos/*.svg` (all 15 logo files,
   §3) and the original standalone prototype page (`_pages/firmen-logos-prototype.md`
   at `/prototypes/firmen-logos/`, noindex), with the band's markup/CSS inlined
@@ -24,13 +24,15 @@ Two commits on `improve-the-flow`, neither pushed yet:
   buttons under a new "Diese Unternehmen haben mit uns geschult" heading, and
   the prototype page slimmed down to call the same include instead of
   duplicating markup/CSS — so there's one source of truth now, not two.
+- `9c8d9aa` — plan doc for the double-band extension (`docs/superpowers/plans/2026-08-12-double-logo-band.md`).
+- `ceb33fa` — 9 more logo SVGs from Wikimedia Commons + provenance table in `docs/firmen-logos-quellen.md`.
+- `db5f5c6` — two counter-scrolling rows (12+12, mutually exclusive), `small` modifier (KNDS), band hidden in print.
 
 Nothing is loose in the working tree for this feature; `git status` is clean
 apart from unrelated pre-existing WIP (`.impeccable/`, `IMPROVEMENT_PLAN.md`,
 `todo/` — a different, unfinished booking-flow effort, see `todo/HANDOVER.md`).
 
-**Still to do:** `git push origin improve-the-flow` (4 commits ahead,
-including 3 unrelated `course-bridge` commits from before this feature).
+**Next:** `git push origin improve-the-flow` (3 commits ahead of remote).
 
 ## 2. What the feature does
 
@@ -105,10 +107,11 @@ this done — CSS logic was verified by reading, not by seeing it move.
 
 ## 7. Open decisions
 
-1. **Push to origin?** Both commits are local only — see §1.
+1. **Push to origin?** Three commits are local only — see §1.
 2. **Secondary placement on `/anmeldung/`** — discussed as a "nice to have" (last-
    second reassurance before submitting the registration form) but not built.
-3. **Grow the logo set** — 15 of ~40 companies in `docs/firmen-logos-quellen.md`
+3. **Grow the logo set** — 24 of ~40 companies in `docs/firmen-logos-quellen.md`
    are in. More can be pulled the same way (Wikimedia Commons API search →
-   resolve `imageinfo` URL → download; watch for the reversed-badge trap in §4
-   on each new one).
+   resolve `imageinfo` URL → download; examples still missing: mimacom, Schenck
+   RoTec, ITK Engineering, MaibornWolff; watch for the reversed-badge trap in
+   §4 on each new one).
