@@ -107,7 +107,7 @@ chronologisch über alle Kurse hinweg, alterniert links/rechts, reicht alle Feld
 `type` wird aus `course.id` gebildet, plus Suffix `_online` wenn `date.format == "online"`.
 Kurstypen: `msa`, `msa_online`, `req4arc`, `improve`, `adoc`, `adoc_online`.
 
-Zweiter Konsument von `site.data.trainings`: `_includes/course-bridge.html`, die
+Weiterer Konsument von `site.data.trainings`: `_includes/course-bridge.html`, das
 Conversion-Band am Ende einer Inhaltsseite, je einmal eingebunden auf
 `/publikationen/`, `/method/`, `/overview/` (Variante `card`) und `/canvas/`
 (Variante `hairline`). Ermittelt den nächsten buchbaren Termin über denselben
