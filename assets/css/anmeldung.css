@@ -1,0 +1,315 @@
+/* ---------------------------------------------------------------------------
+   Anmeldung — the registration form (/anmeldung/ and /anmeldungEN/)
+   ---------------------------------------------------------------------------
+   Scoped entirely under .anmeldung-form / .booking-summary so nothing here can
+   leak into the other forms on the page (the masthead search and the footer
+   newsletter input both live in the same document).
+
+   Design tokens come from the :root block in arc42-resources.css — this file
+   declares no colours of its own beyond one AA-checked warning tint.
+
+   CASCADE, and why some selectors below look over-qualified: main.scss pulls
+   these files in with `@import 'x.css'`, which Sass emits as a plain
+   `@import url(x.css)` rather than inlining. Everything here therefore loads
+   BEFORE minimal-mistakes' own rules, so an equal-specificity tie is lost, not
+   won. Four theme rules collide with this component:
+
+     .page__content p  { margin: 0 0 1.3em }        (0,1,1)
+     .page__content dt { margin-top: 1em; ... }     (0,1,1)
+     .page__content dd { margin-left: 1em; font-size: .75em }  (0,1,1)
+
+   Rules that have to beat those are written with a `.page__content` prefix so
+   they win on specificity instead of on order. The same trick, and the same
+   reasoning, is used throughout arc42-de.css.
+
+   Why this file exists at all: the theme renders every input at 26px tall with
+   `outline: none` on focus, and the course <select> sized itself to its longest
+   <option> — 683px intrinsic width, which pushed the whole page to 715px on a
+   390px phone. Both are fixed below.
+   --------------------------------------------------------------------------- */
+
+/* ---- Layout shell -------------------------------------------------------- */
+
+.anmeldung-form {
+  max-width: 44rem;
+}
+
+/* Sections are real fieldsets now, not <strong> + <hr>. The theme gives
+   fieldset a bottom margin only, so the rule below carries the separation. */
+/* The theme paints `form { background-color: #f2f3f3 }`, so the whole form is
+   already a grey card. The section rules therefore have to be a shade darker
+   than --arc42-border (#e4e9f0), which all but disappears on that grey. */
+.anmeldung-form .form-section {
+  margin: 0 0 2rem;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #d5dbe3;
+  padding-top: 1.5rem;
+}
+
+.anmeldung-form .form-section:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.anmeldung-form .form-section > legend {
+  padding: 0;
+  border: 0;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--arc42-ink-strong);
+}
+
+.page__content .anmeldung-form .form-section__hint {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--arc42-text-muted);
+}
+
+.anmeldung-form .field {
+  margin-bottom: 1.1rem;
+}
+
+/* Two fields side by side on a roomy viewport, stacked on a phone. */
+.anmeldung-form .field-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .anmeldung-form .field-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---- Labels and controls ------------------------------------------------- */
+
+.anmeldung-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--arc42-ink-strong);
+}
+
+.anmeldung-form .label-hint {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--arc42-text-muted);
+}
+
+/* The required marker used to live inside the placeholder, so it vanished on
+   the first keystroke. It is part of the label now and stays put. */
+.anmeldung-form .req {
+  color: var(--arc42-coral-deep);
+  font-weight: 700;
+}
+
+.anmeldung-form input[type="text"],
+.anmeldung-form input[type="email"],
+.anmeldung-form select,
+.anmeldung-form textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  /* the fix for the 715px page: never let the longest <option> set the width */
+  max-width: 100%;
+  min-height: 44px;
+  margin-bottom: 0;
+  padding: 0.55rem 0.7rem;
+  font-family: var(--arc42-font-sans);
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--arc42-ink);
+  background-color: #fff;
+  border: 1px solid #9aa3ad;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.anmeldung-form textarea {
+  min-height: 6.5rem;
+  resize: vertical;
+}
+
+.anmeldung-form input::placeholder,
+.anmeldung-form textarea::placeholder {
+  color: #6b7480;
+  opacity: 1;
+}
+
+/* The theme sets `outline: none` and swaps in a 5px grey blur. That is not a
+   discernible focus indicator, so both are replaced with the site ring. */
+.anmeldung-form input:focus,
+.anmeldung-form select:focus,
+.anmeldung-form textarea:focus,
+.anmeldung-form input:focus-visible,
+.anmeldung-form select:focus-visible,
+.anmeldung-form textarea:focus-visible {
+  /* Longhands, not `outline: var(--arc42-focus-ring)`. Passing the whole
+     shorthand through one custom property did not produce the declared ring
+     here (measured: 3px solid currentColor instead of 2px #4b7ba3). Longhands
+     resolve predictably, and if the token ever goes missing only the colour
+     falls back to currentColor — there is still a ring. */
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--arc42-primary-hover);
+  outline-offset: 2px;
+  border-color: var(--arc42-primary);
+  box-shadow: none;
+}
+
+/* `:user-invalid`, not `:invalid` — a required field is invalid from the moment
+   the page loads, so plain `:invalid` painted every mandatory field red before
+   anyone had typed a character. `:user-invalid` waits until the person has
+   actually entered something wrong or left the field empty on submit. Browsers
+   without it simply show no red border; native validation still fires. */
+.anmeldung-form input:user-invalid,
+.anmeldung-form textarea:user-invalid,
+.anmeldung-form select:user-invalid {
+  border-color: var(--arc42-coral-deep);
+}
+
+/* ---- Selected-course summary -------------------------------------------- */
+
+/* Rendered from the currently selected <option>, whether that selection came
+   from ?kurs= in the URL or from the user changing the dropdown. Hidden until
+   a course is chosen; without JavaScript it simply never appears and the form
+   still works. */
+.booking-summary {
+  /* same measure as the form, so the two blocks share one left and right edge */
+  max-width: 44rem;
+  margin: 0 0 1.25rem;
+  padding: 1.1rem 1.25rem;
+  background-color: #f4f7fb;
+  border: 1px solid var(--arc42-border);
+  border-left: 6px solid var(--arc42-primary);
+  border-radius: 6px;
+}
+
+.booking-summary[hidden] {
+  display: none;
+}
+
+.page__content .booking-summary__eyebrow {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--arc42-text-muted);
+}
+
+.page__content .booking-summary__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--arc42-ink-strong);
+}
+
+.booking-summary__facts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+/* .page__content dt/dd carry margin-top:1em, margin-left:1em and font-size:.75em
+   from the theme. Left alone they knock each grid row out of alignment (the
+   value rendered a line above its own label) and shrink the value text. */
+.page__content .booking-summary__facts dt {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--arc42-text-muted);
+}
+
+.page__content .booking-summary__facts dd {
+  margin: 0;
+  font-family: inherit;
+  font-size: 1em;
+  color: var(--arc42-ink);
+}
+
+.booking-summary__price {
+  font-weight: 700;
+  color: var(--arc42-ink-strong);
+}
+
+@media screen and (max-width: 30em) {
+  .page__content .booking-summary__facts {
+    grid-template-columns: 1fr;
+    gap: 0 0;
+  }
+
+  .page__content .booking-summary__facts dt {
+    margin-top: 0.5rem;
+  }
+}
+
+/* ---- Commitment block ---------------------------------------------------- */
+
+/* Everything a person needs in order to press the button without a shrug:
+   what the price excludes, how to get out of it, and when they hear back. */
+.anmeldung-terms {
+  margin: 1.5rem 0 1.25rem;
+  padding: 1rem 1.25rem;
+  /* white, not --arc42-border-light: that token is #f2f3f3, the exact colour
+     the theme already gives the surrounding <form>, so the block vanished */
+  background-color: #fff;
+  border: 1px solid #d5dbe3;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--arc42-ink);
+}
+
+.anmeldung-terms ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  /* the theme strips markers off lists inside .page__content; these three are a
+     checklist people scan rather than prose, so the bullets earn their place */
+  list-style: disc;
+}
+
+.anmeldung-terms li + li {
+  margin-top: 0.35rem;
+}
+
+.anmeldung-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* the "or send it by e-mail instead" escape hatch, always present so a failed
+   third-party script is never a dead end */
+.page__content .anmeldung-fallback {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--arc42-text-muted);
+}
+
+.anmeldung-noscript {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: #fff4e0;
+  border-left: 6px solid #a8560b;
+  border-radius: 6px;
+  color: #4a3a0a;
+}
+
+.page__content .anmeldung-noscript p {
+  margin: 0 0 0.6rem;
+}
+
+.page__content .anmeldung-noscript p:last-child {
+  margin-bottom: 0;
+}
