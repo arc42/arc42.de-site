@@ -1,0 +1,26 @@
+{%- comment -%}
+  Renders the "diese Firmen schulen mit arc42" logo band: a continuously
+  scrolling, dimmed/monochrome row of client logos (full color on hover,
+  paused while hovered). CSS lives in assets/css/arc42-resources.css
+  (.firmen-logos* rules at the end of the file — see the cascade note in
+  main.scss for why new CSS is appended there rather than a new stylesheet).
+
+  Usage: {% include firmen-logos.html %}
+
+  Logo files: assets/img/firmen-logos/<key>.svg. Sources and trademark notes:
+  docs/firmen-logos-quellen.md — check each company's brand guidelines before
+  any additional use beyond this reference-style logo band.
+{%- endcomment -%}
+{%- assign firmen_logos = "bosch|Robert Bosch GmbH,zeiss|Carl Zeiss AG,enbw|EnBW Energie Baden-Württemberg AG,trumpf|TRUMPF,db|Deutsche Bahn AG,fraunhofer|Fraunhofer-Gesellschaft,buehler|Bühler AG,gea|GEA Group,swm|Stadtwerke München,soprasteria|Sopra Steria,knds|KNDS Deutschland,barmenia|Barmenia Krankenversicherung AG,abus|ABUS Security Center,pepperlfuchs|Pepperl+Fuchs SE,bose|Bose Corporation" | split: "," -%}
+<div class="firmen-logos">
+  <div class="firmen-logos__track">
+    {%- for pair in firmen_logos -%}
+      {%- assign parts = pair | split: "|" -%}
+      <div class="firmen-logos__item"><img src="/assets/img/firmen-logos/{{ parts[0] }}.svg" alt="{{ parts[1] }}" loading="lazy"></div>
+    {%- endfor -%}
+    {%- for pair in firmen_logos -%}
+      {%- assign parts = pair | split: "|" -%}
+      <div class="firmen-logos__item" aria-hidden="true"><img src="/assets/img/firmen-logos/{{ parts[0] }}.svg" alt="" loading="lazy"></div>
+    {%- endfor -%}
+  </div>
+</div>
