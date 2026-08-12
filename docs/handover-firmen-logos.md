@@ -3,16 +3,18 @@
 **Branch:** `improve-the-flow` (single branch — the earlier `prototype-firmen-logos`
 branch was a dead end, never had unique work, and has been deleted)
 **Date:** 2026-08-12
-**State:** live on `/schulungen/`, build-verified, **committed** through `db5f5c6` (two-row
-counter-scrolling band with 24 logos), unpushed — `origin/improve-the-flow` still points at `ba4d44d`; every commit after it is local only
-**Related:** `docs/firmen-logos-quellen.md` (logo sources), `todo/HANDOVER.md`
-(unrelated booking-flow handover, same repo)
+**State:** live on `/schulungen/`, build- and browser-verified, **committed**
+through `1333f6a` (two-row counter-scrolling band with 24 logos, print-safe).
+Push position: check `git rev-list --count origin/improve-the-flow..HEAD` —
+this doc no longer states it, because any stated count rots with the next commit.
+**Related:** `docs/firmen-logos-quellen.md` (logo sources),
+`docs/handover-improve-the-flow.md` (branch-level map, all three bodies of work)
 
 ---
 
 ## 1. Commit history
 
-Five commits on `improve-the-flow` (unpushed — `origin/improve-the-flow` still points at `ba4d44d`):
+Feature commits on `improve-the-flow`:
 - `72b86d4` — first pass: `assets/img/firmen-logos/*.svg` (all 15 logo files,
   §3) and the original standalone prototype page (`_pages/firmen-logos-prototype.md`
   at `/prototypes/firmen-logos/`, noindex), with the band's markup/CSS inlined
@@ -27,12 +29,10 @@ Five commits on `improve-the-flow` (unpushed — `origin/improve-the-flow` still
 - `9c8d9aa` — plan doc for the double-band extension (`docs/superpowers/plans/2026-08-12-double-logo-band.md`).
 - `ceb33fa` — 9 more logo SVGs from Wikimedia Commons + provenance table in `docs/firmen-logos-quellen.md`.
 - `db5f5c6` — two counter-scrolling rows (12+12, mutually exclusive), `small` modifier (KNDS), band hidden in print.
+- `e5a22d3` — review fixes: `viewBox` added to `abus.svg`/`pepperlfuchs.svg` (standards hardening; Chrome rendered them fine without), handover-doc refresh, print exclusion extended to the heading above the band.
+- `1333f6a` — kramdown IAL corrected to the block form (the glued `{: .no-print}` had rendered as literal text).
 
-Nothing is loose in the working tree for this feature; `git status` is clean
-apart from unrelated pre-existing WIP (`.impeccable/`, `IMPROVEMENT_PLAN.md`,
-`todo/` — a different, unfinished booking-flow effort, see `todo/HANDOVER.md`).
-
-**Next:** `git push origin improve-the-flow` (check position with `git rev-list --count origin/improve-the-flow..HEAD`; all commits after `ba4d44d` are local).
+Nothing is loose in the working tree for this feature.
 
 ## 2. What the feature does
 
@@ -98,19 +98,22 @@ ls _site/assets/img/firmen-logos/ | wc -l                          # expect 24
 make dev   # http://localhost:4043/schulungen/ and /prototypes/firmen-logos/ — visual check
 ```
 
-Last full run: clean `make site` build, all four checks passed.
-**Not verified visually in a real browser** — `mcp__claude-in-chrome`
-(`tabs_context_mcp`) timed out every attempt (see `todo/HANDOVER.md` §4 "Browser
-automation gotcha" for the known Puppeteer/CDP workaround if this recurs).
-Someone should eyeball the actual scroll/hover/pause behavior before calling
-this done — CSS logic was verified by reading, not by seeing it move.
+Last full run: clean `make site` build, all checks passed, plus
+`make test-theme` and `make check-links` clean.
+**Browser-verified 2026-08-12** (headless Chrome for Testing via CDP —
+the Claude-in-Chrome extension times out in this setup; workaround:
+`chrome-headless-shell` from `~/.cache/puppeteer/` + `python3 -m http.server`
+on `_site`): rows move in opposite directions (≈ −82 px vs +69 px per 1.5 s,
+matching 35 s/42 s), hover freezes both tracks to 0.00 px (scroll the band
+into view before dispatching mouse events — off-viewport coordinates
+silently miss), print emulation removes band and heading, all 24 logos
+render unclipped, KNDS measures 112×32 with `small` (154×44 without).
 
 ## 7. Open decisions
 
-1. **Push to origin?** All commits after `ba4d44d` are local only — see §1.
-2. **Secondary placement on `/anmeldung/`** — discussed as a "nice to have" (last-
+1. **Secondary placement on `/anmeldung/`** — discussed as a "nice to have" (last-
    second reassurance before submitting the registration form) but not built.
-3. **Grow the logo set** — 24 of ~40 companies in `docs/firmen-logos-quellen.md`
+2. **Grow the logo set** — 24 of ~40 companies in `docs/firmen-logos-quellen.md`
    are in. More can be pulled the same way (Wikimedia Commons API search →
    resolve `imageinfo` URL → download; examples still missing: mimacom, Schenck
    RoTec, ITK Engineering, MaibornWolff; watch for the reversed-badge trap in
