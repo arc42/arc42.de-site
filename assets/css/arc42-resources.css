@@ -639,6 +639,11 @@
   animation: firmen-logos-scroll 35s linear infinite;
 }
 .firmen-logos:hover .firmen-logos__track { animation-play-state: paused; }
+.firmen-logos__track + .firmen-logos__track { margin-top: 1.4em; }
+.firmen-logos__track--reverse {
+  animation-duration: 42s;
+  animation-direction: reverse;
+}
 .firmen-logos__item {
   flex: 0 0 auto;
   display: flex;
@@ -658,10 +663,14 @@
 }
 .firmen-logos__item img:hover,
 .firmen-logos__item img:focus { filter: none; opacity: 1; }
+.firmen-logos__item--small img { max-height: 32px; }
 @keyframes firmen-logos-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
 @media (prefers-reduced-motion: reduce) {
   .firmen-logos__track { animation: none; }
+}
+@media print {
+  .firmen-logos { display: none; }
 }

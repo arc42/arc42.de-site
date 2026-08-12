@@ -3,68 +3,58 @@
 **Branch:** `improve-the-flow` (single branch — the earlier `prototype-firmen-logos`
 branch was a dead end, never had unique work, and has been deleted)
 **Date:** 2026-08-12
-**State:** live on `/schulungen/`, build-verified, **partially uncommitted** (see §1)
+**State:** live on `/schulungen/`, build-verified, **committed** (`ba4d44d`, not yet
+pushed to `origin/improve-the-flow` — 4 commits ahead)
 **Related:** `docs/firmen-logos-quellen.md` (logo sources), `todo/HANDOVER.md`
 (unrelated booking-flow handover, same repo)
 
 ---
 
-## 1. What's committed vs what's still loose
+## 1. Commit history
 
-**Already committed** (`improve-the-flow`, commit `72b86d4`, already pushed to
-`origin/improve-the-flow`):
-- `assets/img/firmen-logos/*.svg` — all 15 logo files (§3)
-- `_pages/firmen-logos-prototype.md` — the *original* standalone prototype:
-  noindex page at `/prototypes/firmen-logos/` with the logo band's markup and
-  CSS **inlined in a `<style>` block**.
+Two commits on `improve-the-flow`, neither pushed yet:
+- `72b86d4` — first pass: `assets/img/firmen-logos/*.svg` (all 15 logo files,
+  §3) and the original standalone prototype page (`_pages/firmen-logos-prototype.md`
+  at `/prototypes/firmen-logos/`, noindex), with the band's markup/CSS inlined
+  in a `<style>` block.
+- `ba4d44d` — real integration: `_includes/firmen-logos.html` (the band's
+  markup extracted into a reusable partial), `.firmen-logos*` CSS moved to
+  the tail of `assets/css/arc42-resources.css`, `_pages/schulungen.md` wired
+  in via `{% include firmen-logos.html %}` right after the four course
+  buttons under a new "Diese Unternehmen haben mit uns geschult" heading, and
+  the prototype page slimmed down to call the same include instead of
+  duplicating markup/CSS — so there's one source of truth now, not two.
 
-**Still uncommitted, working tree only:**
-- `_includes/firmen-logos.html` — **new**, untracked. The band's markup extracted
-  out of the prototype page into a reusable partial (`{% include firmen-logos.html %}`).
-- `assets/css/arc42-resources.css` — modified. The `.firmen-logos*` rules
-  appended at the file's tail (same rules that are still inline in the
-  *committed* prototype page — see the duplication note below).
-- `_pages/schulungen.md` — modified. Wired in via `{% include firmen-logos.html %}`
-  right after the four course buttons, under a new heading "Diese Unternehmen
-  haben mit uns geschult", before the "Bewegte Eindrücke" video section.
-- `_pages/firmen-logos-prototype.md` — modified on top of the committed version:
-  slimmed to `{% include firmen-logos.html %}` instead of its own inline
-  markup/CSS, so there's one source of truth.
+Nothing is loose in the working tree for this feature; `git status` is clean
+apart from unrelated pre-existing WIP (`.impeccable/`, `IMPROVEMENT_PLAN.md`,
+`todo/` — a different, unfinished booking-flow effort, see `todo/HANDOVER.md`).
 
-**Known duplication right now:** the committed prototype page still carries its
-own inline `<style>` block with the same rules that now also live in
-`arc42-resources.css`. This resolves itself the moment the four files above get
-committed together — the inline block is gone from the working-tree version of
-the prototype page. Don't commit the CSS/include change without also committing
-the prototype-page edit, or the duplication becomes permanent.
-
-**Suggested single commit** covering all four files:
-```bash
-git add _includes/firmen-logos.html assets/css/arc42-resources.css \
-        _pages/schulungen.md _pages/firmen-logos-prototype.md
-```
+**Still to do:** `git push origin improve-the-flow` (4 commits ahead,
+including 3 unrelated `course-bridge` commits from before this feature).
 
 ## 2. What the feature does
 
-A dimmed/monochrome band of client logos, scrolling right-to-left in a seamless
-loop (list rendered twice, `translateX(0) → translateX(-50%)`, 35s linear
-infinite), pausing on hover so individual logos can be hovered to full color.
+A dimmed/monochrome band of client logos in two stacked, counter-scrolling
+rows (each list rendered twice, `translateX(0) → translateX(-50%)`; upper
+row 35s, lower row 42s reversed via `animation-direction`, both linear
+infinite), pausing on hover so individual logos can be hovered to full
+color. The two rows show mutually exclusive logo sets (12 + 12), defined
+in the include's two data strings. The whole band is `display: none` in
+print — client logos never appear on paper.
 Respects `prefers-reduced-motion: reduce`. Edges fade via `mask-image` instead
 of hard-cutting logos off mid-frame. Lives on `/schulungen/` (the persuasion/
 overview page — deliberately not `/termine/`, which is logistics, low
 persuasion value) and standalone at `/prototypes/firmen-logos/` (noindex).
 
-## 3. Logo inventory (15)
+## 3. Logo inventory (24)
 
-`bosch, zeiss, enbw, trumpf, db, fraunhofer, buehler, gea, swm, soprasteria,
-knds, barmenia, abus, pepperlfuchs, bose` — filenames under
-`assets/img/firmen-logos/`, all SVG, all from Wikimedia Commons (see
-`docs/firmen-logos-quellen.md` for the full company list this was drawn from,
-website/Brandfetch/Commons links per company, and the trademark caveat).
-
-**`MaibornWolff` was skipped** — no usable SVG found on Commons. The source doc
-lists ~25 more companies not yet pulled in (SKIDATA, Advantest, CONET, Randstad,
-EnBW's siblings, etc.) if the band should grow.
+Row 1: `bosch, zeiss, enbw, trumpf, db, fraunhofer, buehler, gea, swm,
+soprasteria, barmenia, abus` — Row 2: `knds (small), skidata, pepperlfuchs,
+advantest, bose, conet, randstad, helbling, bsh, aktionmensch, provinzial,
+vkb` — filenames under `assets/img/firmen-logos/`, all SVG, all from
+Wikimedia Commons (see `docs/firmen-logos-quellen.md` for sources per
+company, the 2026-08-12 provenance table for the 9 newest, and the
+trademark caveat).
 
 **Before any production use beyond this reference-style band:** check each
 company's brand guidelines. `docs/firmen-logos-quellen.md` flags this explicitly
@@ -99,9 +89,10 @@ and the content-course-bridges plan) is explicit: **no new stylesheet, no new
 
 ```bash
 make site   # docker build, no --watch; check for Liquid/Sass errors in output
-grep -o "firmen-logos__item" _site/schulungen/index.html | wc -l   # expect 30 (15 × 2, loop duplication)
-grep -c "firmen-logos-scroll" _site/assets/css/arc42-resources.css # expect 1
-ls _site/assets/img/firmen-logos/ | wc -l                          # expect 15
+grep -o 'class="firmen-logos__item[ "]' _site/schulungen/index.html | wc -l  # expect 48 (24 × 2, loop duplication)
+grep -o "firmen-logos__track--reverse" _site/schulungen/index.html | wc -l   # expect 1
+grep -o "firmen-logos { display: none; }" _site/assets/css/arc42-resources.css | wc -l # expect 1 (print exclusion)
+ls _site/assets/img/firmen-logos/ | wc -l                          # expect 24
 make dev   # http://localhost:4043/schulungen/ and /prototypes/firmen-logos/ — visual check
 ```
 
@@ -114,7 +105,7 @@ this done — CSS logic was verified by reading, not by seeing it move.
 
 ## 7. Open decisions
 
-1. **Commit this work?** Nothing from §1's uncommitted list has landed yet.
+1. **Push to origin?** Both commits are local only — see §1.
 2. **Secondary placement on `/anmeldung/`** — discussed as a "nice to have" (last-
    second reassurance before submitting the registration form) but not built.
 3. **Grow the logo set** — 15 of ~40 companies in `docs/firmen-logos-quellen.md`
