@@ -42,3 +42,24 @@ Für jede Firma: offizielle Website, Brandfetch-Markenseite (meist SVG/PNG zum D
 - Domains stammen aus den E-Mail-Adressen der Anmeldungssheets — bei manchen Firmen (z. B. Bosch Rexroth, ABUS, Schenck) kann die tatsächliche Markenseite auf einer Unterdomain der Konzernwebsite liegen; bei Bedarf über die Website-Suche prüfen.
 - Brandfetch-Links funktionieren nur, wenn die Firma dort gelistet ist — falls eine Seite leer ist, direkt auf der Firmenwebsite nach "Presse" / "Newsroom" / "Media Kit" suchen.
 - Bei eingetragenen Marken (z. B. Bosch, Zeiss, Bose) vor Verwendung außerhalb rein referenzieller Zwecke die Markenrichtlinien der jeweiligen Firma beachten.
+
+## Im Logo-Band verwendet (Stand 2026-08-12)
+
+24 der oben gelisteten Firmen sind als SVG unter `assets/img/firmen-logos/` eingebunden.
+Die 9 zuletzt ergänzten stammen von Wikimedia Commons:
+
+| Datei | Commons-Quelle |
+|---|---|
+| `skidata.svg` | File:SKIDATA GmbH.svg |
+| `advantest.svg` | File:ADVANTEST company logos.svg |
+| `conet.svg` | File:Conet (IT-Dienstleister) logo.svg |
+| `randstad.svg` | File:Randstad Logo.svg |
+| `helbling.svg` | File:Helbling Logo.svg |
+| `bsh.svg` | File:BSH Bosch und Siemens Hausgeräte logo.svg |
+| `aktionmensch.svg` | File:Aktion Mensch Logo.svg |
+| `provinzial.svg` | File:Provinzial Logo.svg |
+| `vkb.svg` | File:Versicherungskammer Bayern logo.svg |
+
+Bei `randstad.svg` und `provinzial.svg` wurde eine fehlende `viewBox` ergänzt
+(Werte = deklarierte `width`/`height`), sonst keine Änderungen an den Dateien.
+Der Trademark-Hinweis oben gilt unverändert auch für diese 9.
