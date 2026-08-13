@@ -18,8 +18,10 @@ header:
 
 excerpt: "Praxisorientiert, effektiv und pragmatisch."
 
-sidebar:
-  nav: "schulungen"
+# No sidebar here (2026-08-13): it listed the same four courses the decision
+# cards below present with more information — pure duplication on this page.
+# The course pages (/info-*) keep the "schulungen" nav rail for cross-course
+# navigation; the drawer carries the group site-wide.
 
 ---
 
@@ -46,8 +48,11 @@ Video vom großartigen [Oleg Pylypenko](https://alegpilipenko.com/).
   <li><b>seit 2016</b> Leitung des Foundation-Lehrplans</li>
 </ul>
 
+{%- comment -%} DSCF8139, not DSCF7968: the YouTube embed above uses the
+    back-to-back shot as its poster frame — the same photo twice in a row
+    read as a mistake. {%- endcomment -%}
 <figure class="trainer-duo">
-  <img src="/images/photos/portraits/DSCF7968.jpg-1920.webp" alt="Peter Hruschka und Gernot Starke, Rücken an Rücken" width="1920" height="1280" loading="lazy" />
+  <img src="/images/photos/portraits/DSCF8139.jpg-1920.webp" alt="Peter Hruschka und Gernot Starke" width="1920" height="1280" loading="lazy" />
   <figcaption>Peter Hruschka und Gernot Starke — das Trainer-Duo.</figcaption>
 </figure>
 
