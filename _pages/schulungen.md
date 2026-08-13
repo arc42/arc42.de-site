@@ -53,7 +53,7 @@ Video vom großartigen [Oleg Pylypenko](https://alegpilipenko.com/).
     read as a mistake. {%- endcomment -%}
 <figure class="trainer-duo">
   <img src="/images/photos/portraits/DSCF8139.jpg-1920.webp" alt="Peter Hruschka und Gernot Starke" width="1920" height="1280" loading="lazy" />
-  <figcaption>Peter Hruschka und Gernot Starke — das Trainer-Duo.</figcaption>
+  <figcaption>Peter Hruschka und Gernot Starke, seit Jahrzehnten das Trainer-Duo.</figcaption>
 </figure>
 
 ### Vier Jahrzehnte Praxis
@@ -86,4 +86,4 @@ Dieses breite Erfahrungsspektrum bietet Teilnehmenden die perfekte Möglichkeit,
 
 </div>
 
-{% include course-bridge.html variant="card" title="Der nächste Schritt: Termin wählen" text="Offene Schulungen in kleiner Gruppe, mit iSAQB-Zertifizierung — Abmeldung bis 21 Tage vor Kursbeginn kostenfrei." secondary_url="/anmeldung/" secondary_label="Zur Anmeldung" %}
+{% include course-bridge.html variant="card" title="Der nächste Schritt: Termin wählen" text="Offene Schulungen in kleiner Gruppe, mit iSAQB-Zertifizierung. Abmeldung bis 21 Tage vor Kursbeginn kostenfrei." secondary_url="/anmeldung/" secondary_label="Zur Anmeldung" %}
