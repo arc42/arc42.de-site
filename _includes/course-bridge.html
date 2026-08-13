@@ -5,6 +5,17 @@
     {% include course-bridge.html variant="card" %}
     {% include course-bridge.html variant="hairline" %}
 
+  Card-variant overrides, all optional, defaults unchanged for the existing
+  consumers (/publikationen/, /method/, /overview/, /canvas/):
+
+    title="..."            heading (default: "Diese Themen gibt es auch als Training")
+    text="..."             lead sentence under the heading
+    secondary_url="..."    second button target (default: /schulungen/)
+    secondary_label="..."  second button label  (default: "Schulungsangebot")
+
+  /schulungen/ uses these — its close must not offer "Schulungsangebot",
+  which would be a self-link on the very page the visitor is standing on.
+
   Exactly ONE band per page, always last. That is the ceiling, not the starting
   point — this is a library, not a funnel.
 
@@ -56,14 +67,14 @@
 {%- else -%}
 <aside class="course-bridge course-bridge--card" aria-label="Schulungen">
   <p class="course-bridge__kicker">Schulungen</p>
-  <h2 class="course-bridge__title">Diese Themen gibt es auch als Training</h2>
-  <p class="course-bridge__text">Wir unterrichten, worüber wir schreiben &mdash; als offene Schulung in kleiner Gruppe, mit iSAQB-Zertifizierung.</p>
+  <h2 class="course-bridge__title">{{ include.title | default: "Diese Themen gibt es auch als Training" }}</h2>
+  <p class="course-bridge__text">{% if include.text %}{{ include.text }}{% else %}Wir unterrichten, worüber wir schreiben &mdash; als offene Schulung in kleiner Gruppe, mit iSAQB-Zertifizierung.{% endif %}</p>
   {%- if nd %}
   <p class="course-bridge__facts">Nächster Termin <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ nc.short_title | default: nc.title }}</b> <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ datelabel }}</b>{% if nd.city %} <span class="course-bridge__sep" aria-hidden="true">&middot;</span> {{ nd.city }}{% elsif nd.format == "online" %} <span class="course-bridge__sep" aria-hidden="true">&middot;</span> Online{% endif %}</p>
   {%- endif %}
   <p class="course-bridge__actions">
     <a class="btn btn--arc42" href="/termine/">Termine ansehen</a>
-    <a class="btn btn--arc42-outline" href="/schulungen/">Schulungsangebot</a>
+    <a class="btn btn--arc42-outline" href="{{ include.secondary_url | default: "/schulungen/" }}">{{ include.secondary_label | default: "Schulungsangebot" }}</a>
   </p>
 </aside>
 {%- endif -%}

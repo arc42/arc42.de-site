@@ -78,14 +78,13 @@ schulungen:
   - title: Schulungsangebot
     url: /schulungen/
     children:
-    - title: Mastering Software Architectures
+    # 2026-08-13: "iSAQB Foundation" used to be a second entry pointing at the
+    # same /info-msa/ — two labels, one destination, so visitors counted five
+    # courses and found four. Merged into one label; if the Foundation course
+    # ever gets its own page, split it out again.
+    - title: Mastering Software Architectures (iSAQB Foundation)
       url: /info-msa/
       hint: "das Kernprogramm"
-    # NOTE: iSAQB Foundation points at the same page as MSA — two labels, one
-    # destination. Left exactly as found. Whether the Foundation course deserves
-    # its own page is a content decision, not a navigation fix.
-    - title: iSAQB Foundation
-      url: /info-msa/
     - title: IMPROVE
       url: /info-improve/
     - title: REQ4ARC
