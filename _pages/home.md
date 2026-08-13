@@ -29,7 +29,7 @@ template_training_news:
     <br>
     <a href='/anmeldung/'><button class='button buttonAnmeldung margin_bottom'>Anmeldung</button></a>
     <a href='/schulungen/'><button class='button buttonGrey margin_bottom'>Schulungen</button></a>
-    <a href='/gallery/'><button class='button buttonBlue'>Impressionen</button></a>
+    <a href='/termine/'><button class='button buttonBlue'>Termine</button></a>
     "
     
     

@@ -1,0 +1,87 @@
+{%- comment -%}
+  The course decision surface on /schulungen/: one card per course, replacing
+  the four former w3schools-style colour buttons (IMPROVEMENT_PLAN.md item 4.3/4.4).
+
+  Each card answers what a buyer needs before clicking deeper: what the course
+  is, who it is for, how long it takes, when it next runs, and which
+  certificate it leads to. Dates, duration, certification and credits come
+  from site.data.trainings (synced, never hand-edited — see CLAUDE.md); the
+  German one-liners live here because the data's `blurb` fields are English.
+
+  Date filtering matches course-bridge.html: skip cancelled/waitlist/full and
+  past dates, take the earliest remaining START per course. A course without an
+  open date renders without the date row instead of dying.
+
+  No price anywhere — `pricing` is German prose, mostly absent (see the
+  Blocked item in IMPROVEMENT_PLAN.md).
+
+  Links are written out as /info-<id>/. Never emit course.url or date.url:
+  both are absolute https://www.arc42.de/... addresses, and `make test-theme`
+  fails the build if that host appears anywhere in _site.
+
+  The whole card is ONE anchor — one tab stop, no <a><button> nesting.
+{%- endcomment -%}
+{%- assign today = 'now' | date: '%Y-%m-%d' -%}
+<ul class="course-cards">
+  {%- for c in site.data.trainings.courses -%}
+  {%- assign next = nil -%}
+  {%- assign sorted_dates = c.dates | sort: 'start' -%}
+  {%- for d in sorted_dates -%}
+    {%- if d.status == "cancelled" or d.status == "waitlist" or d.status == "full" -%}{%- continue -%}{%- endif -%}
+    {%- if d.end < today -%}{%- continue -%}{%- endif -%}
+    {%- assign next = d -%}
+    {%- break -%}
+  {%- endfor -%}
+  {%- if next -%}
+    {%- assign start_epoch = next.start | date: '%s' | plus: 0 -%}
+    {%- assign end_epoch = next.end | date: '%s' | plus: 0 -%}
+    {%- assign days = end_epoch | minus: start_epoch | divided_by: 86400 | plus: 1 -%}
+    {%- capture datelabel -%}{%- include training-date-label.html date=next lang="de" style="long" -%}{%- endcapture -%}
+  {%- endif -%}
+  {%- comment -%} German titles/leads live here: the data's title/blurb fields
+      are English (shared with arc42.org). Unknown course ids fall back to the
+      data title so a new course never renders blank. {%- endcomment -%}
+  {%- case c.id -%}
+  {%- when 'msa' -%}
+    {%- assign card_title = "Mastering Software Architectures" -%}
+    {%- assign card_lead = "Das Kernprogramm: Softwarearchitekturen methodisch entwerfen, kommunizieren und bewerten — für Entwickler:innen, Architekt:innen, Projekt- und Produktverantwortliche." -%}
+    {%- assign card_cert = "Bereitet auf die Zertifizierung iSAQB CPSA-Foundation vor." -%}
+  {%- when 'improve' -%}
+    {%- assign card_title = "IMPROVE: Systeme verbessern" -%}
+    {%- assign card_lead = "Bestehende Systeme gezielt verbessern und weiterentwickeln, statt neu zu schreiben." -%}
+  {%- when 'req4arc' -%}
+    {%- assign card_title = "Req4Arc: Bessere Anforderungen" -%}
+    {%- assign card_lead = "Bessere Anforderungen: klären, was das System leisten soll, bevor die Architektur es ausbaden muss." -%}
+  {%- when 'adoc' -%}
+    {%- assign card_title = "ADOC: Architekturdokumentation" -%}
+    {%- assign card_lead = "Architekturdokumentation, die gelesen wird: schlank, zweckmäßig, wartbar." -%}
+  {%- else -%}
+    {%- assign card_title = c.title -%}
+    {%- assign card_lead = nil -%}
+  {%- endcase -%}
+  {%- unless c.id == 'msa' -%}
+    {%- capture card_cert -%}{{ c.certification }}{% if c.credits %}: {{ c.credits }}{% endif %}{%- endcapture -%}
+  {%- endunless -%}
+  <li class="course-cards__item{% if c.id == 'msa' %} course-cards__item--flagship{% endif %}">
+    <a class="course-card{% if c.id == 'msa' %} course-card--flagship{% endif %}" href="/info-{{ c.id }}/">
+      <h3 class="course-card__title">{{ card_title }}</h3>
+      {%- if card_lead %}
+      <p class="course-card__lead">{{ card_lead }}</p>
+      {%- endif %}
+      <p class="course-card__meta">
+        {%- if next -%}
+        <span class="course-card__fact">{{ days }} Tage</span>
+        <span class="course-card__sep" aria-hidden="true">&middot;</span>
+        <span class="course-card__fact">n&auml;chster Termin: <b>{{ datelabel | strip }}</b>{% if next.city %}, {{ next.city }}{% elsif next.format == "online" %}, online{% endif %}{% if next.language == "en" %} (englischsprachig){% endif %}</span>
+        {%- else -%}
+        <span class="course-card__fact">Termine auf Anfrage</span>
+        {%- endif -%}
+      </p>
+      {%- if card_cert and card_cert != "" %}
+      <p class="course-card__cert">{{ card_cert }}</p>
+      {%- endif %}
+      <span class="course-card__cta">Zum Kurs <span aria-hidden="true">&#8594;</span></span>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>

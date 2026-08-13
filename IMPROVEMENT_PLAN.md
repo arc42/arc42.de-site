@@ -24,8 +24,8 @@ Every item states how you know it is done.
 |---|---|---|---|---|
 | 1 | Registration flow end to end | P0 | M | **Done** — branch `improve-the-flow` |
 | 2 | Free content → course bridges | P0 | M | **Done** — branch `improve-the-flow` |
-| 3 | Contrast & focus conformance | P0 | M | Open |
-| 4 | `/schulungen/` as a decision document | P1 | M | Open — client logos (4.6) shipped, rest open |
+| 3 | Contrast & focus conformance | P0 | M | Partial — branch `schulungen-redesign`: hero scrim, hover text swap deleted, tomato `#c33b21` + DESIGN.md sync. Still open: timeline inline colours (3.3), focus rings (3.4) |
+| 4 | `/schulungen/` as a decision document | P1 | M | **Done except 4.6** (testimonials, blocked on quotes) — branch `schulungen-redesign`: course cards from `site.data.trainings`, trainer portraits, fact row, course-bridge close, sidebar duplicate merged |
 | — | Client-logo band (not in original plan) | — | — | **Done** — branch `improve-the-flow` |
 | 5 | `/consulting/` gets an ask | P1 | S | Open |
 | 6 | Markup & tap-target cleanup | P2 | M | Open |
