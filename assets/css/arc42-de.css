@@ -1307,3 +1307,34 @@ html { overflow-x: clip; }
 .schulungen-story {
   max-width: 50rem;
 }
+
+/* Card additions 2026-08-13 (owner feedback): trainer line on every card,
+   the CPSA-Foundation badge on the flagship, and the flagship's labelled
+   online-alternative line. Declared after the base card rules on purpose:
+   equal-specificity flagship overrides must win. */
+.course-card .course-card__badge {
+  align-self: flex-start;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--arc42-amber);
+  color: var(--arc42-amber-ink);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.course-card .course-card__trainers {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--arc42-ink);
+}
+.course-card--flagship .course-card__trainers { color: var(--arc42-on-deep-muted); }
+.course-card .course-card__alt {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--arc42-text-muted);
+}
+.course-card .course-card__alt b { font-weight: 700; }
+.course-card--flagship .course-card__alt { color: var(--arc42-on-deep-muted); }
+.course-card--flagship .course-card__alt b { color: #ffffff; }
