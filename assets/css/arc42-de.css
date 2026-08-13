@@ -1300,3 +1300,10 @@ html { overflow-x: clip; }
   font-size: 0.84rem;
   color: var(--arc42-text-muted);
 }
+
+/* On the splash layout the content container runs ~1216px wide — fine for
+   the cards and the logo band, too wide for reading prose. Cap the video +
+   story sections at a book-like measure, left-aligned to the cards' edge. */
+.schulungen-story {
+  max-width: 50rem;
+}

@@ -1,7 +1,10 @@
 ---
 title: "Unser Schulungsangebot"
-layout: single
-classes: wide
+# splash like the funnel neighbours /termine/, /method/, /publikationen/:
+# `single` reserves the left sidebar gutter even without a sidebar, which
+# left the page floating right of a dead column (2026-08-13). The former
+# sidebar nav is not missed — the decision cards carry the course list.
+layout: splash
 
 permalink: /schulungen/
 header:
@@ -18,11 +21,6 @@ header:
 
 excerpt: "Praxisorientiert, effektiv und pragmatisch."
 
-# No sidebar here (2026-08-13): it listed the same four courses the decision
-# cards below present with more information — pure duplication on this page.
-# The course pages (/info-*) keep the "schulungen" nav rail for cross-course
-# navigation; the drawer carries the group site-wide.
-
 ---
 
 
@@ -34,6 +32,8 @@ excerpt: "Praxisorientiert, effektiv und pragmatisch."
 {: .no-print}
 
 {% include firmen-logos.html %}
+
+<div class="schulungen-story" markdown="1">
 
 ## Bewegte Eindrücke
 
@@ -83,5 +83,7 @@ was in einer lebendigen, vielfältigen und motivierenden Lernerfahrung resultier
 Wir beide haben unsere umfangreichen Erfahrungen in unterschiedlichen Bereichen und Domänen gesammelt:
 Peter mehr im Bereich eingebettete Systeme und Echtzeitsysteme, Gernot mehr in Informations-, Web- und Batch-Systemen.
 Dieses breite Erfahrungsspektrum bietet Teilnehmenden die perfekte Möglichkeit, Erfahrungsberichte und Ratschläge aus erster Hand aus diesen unterschiedlichen Bereichen zu erhalten.
+
+</div>
 
 {% include course-bridge.html variant="card" title="Der nächste Schritt: Termin wählen" text="Offene Schulungen in kleiner Gruppe, mit iSAQB-Zertifizierung — Abmeldung bis 21 Tage vor Kursbeginn kostenfrei." secondary_url="/anmeldung/" secondary_label="Zur Anmeldung" %}
