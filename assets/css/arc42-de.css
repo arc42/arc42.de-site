@@ -1303,9 +1303,35 @@ html { overflow-x: clip; }
 
 /* On the splash layout the content container runs ~1216px wide — fine for
    the cards and the logo band, too wide for reading prose. Cap the video +
-   story sections at a book-like measure, left-aligned to the cards' edge. */
-.schulungen-story {
+   story sections at a book-like measure, left-aligned to the cards' edge.
+   .course-story is the same cap on the /info-<id>/ detail pages, which
+   moved from single+sidebar to splash on 2026-08-15 (owner: layout was
+   inconsistent with the rest of the funnel). */
+.schulungen-story,
+.course-story {
   max-width: 50rem;
+}
+
+/* Action row atop the /info-<id>/ pages (course-actions.html): amber primary,
+   navy outline secondary, quiet AGB text link — one baseline, wraps on
+   narrow screens. */
+.course-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin: 0 0 2rem;
+}
+.course-actions .course-actions__terms,
+.course-actions .course-actions__terms:link,
+.course-actions .course-actions__terms:visited {
+  color: var(--arc42-text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.course-actions .course-actions__terms:hover,
+.course-actions .course-actions__terms:focus-visible {
+  color: var(--arc42-ink);
 }
 
 /* Card additions 2026-08-13 (owner feedback): trainer line on every card,

@@ -63,7 +63,8 @@
    phones, in a ~34px-tall box). These are the site's conversion actions:
    readable label, 44px minimum touch target. */
 .btn.btn--arc42,
-.btn.btn--arc42-outline {
+.btn.btn--arc42-outline,
+.btn.btn--arc42-amber {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -101,6 +102,23 @@
   background-color: var(--arc42-primary);
   color: #ffffff;
   border-color: var(--arc42-primary);
+}
+
+/* Amber conversion button — the same Anmeldung signal as the masthead CTA
+   (#4a3a0a on #ffc95c: 8.03:1 AAA). Used by course-actions.html on the
+   /info-<id>/ pages so "Anmeldung" is one colour everywhere. */
+.btn.btn--arc42-amber {
+  background-color: var(--arc42-amber);
+  color: var(--arc42-amber-ink);
+  border: 2px solid var(--arc42-amber);
+  font-weight: 700;
+}
+.btn.btn--arc42-amber:hover,
+.btn.btn--arc42-amber:focus-visible {
+  background-color: var(--arc42-amber-lift);
+  border-color: var(--arc42-amber-lift);
+  color: var(--arc42-amber-ink);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
 }
 
 /* --- full-bleed .dl-hero band ---

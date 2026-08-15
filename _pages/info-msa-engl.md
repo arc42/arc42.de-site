@@ -1,25 +1,19 @@
 ---
 title: "Mastering Software Architectures"
-layout: single
-classes: wide
+layout: splash
 permalink: /info-msa-EN/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/learn-header-helloquence.jpg
   caption: "Photo: [**helloquence**](https://unsplash.com/photos/5fNmWej4tAA)"
 
-sidebar:
-  nav: "schulungen"
+excerpt: "Pragmatic, effective software architectures."
 
 ---
 
-<a href="/downloads/flyer-msa-EN.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Course Description (pdf)</button></a>
-<a href="/anmeldungEN/"><button class="button buttonAnmeldung">Registration</button></a>
-<a href="/terms/"><button class="button buttonTerms">Our<br>terms</button></a>
+<div class="course-story" markdown="1">
 
-
-# Mastering Software Architectures <br><sup>Pragmatic, effective Software Architectures</sup>
-
+{% include course-actions.html flyer="/downloads/flyer-msa-EN.pdf" flyer_label="Course description (PDF)" anmeldung_url="/anmeldungEN/" anmeldung_label="Registration" terms_label="Our terms" %}
 
 3 day introductory training developed by Peter Hruschka and Gernot Starke
 
@@ -60,7 +54,7 @@ We have successfully prepared more than 3000 persons for the exam in the last co
 >You don't need to do anything explicitly - you can cancel your interest in the exam even during the seminar.
 
 
-# Extensive Description of Content
+## Extensive Description of Content
 
 ### Introduction and Motivation
 
@@ -106,8 +100,12 @@ We have successfully prepared more than 3000 persons for the exam in the last co
 
 ### and now...
 
-<a href="/anmeldungEN/"><button class="button buttonAnmeldung">Registration</button></a>
-<a href="/termine/"><button class="button buttonRoyalBlue">Dates</button></a>
-<a href="/"><button class="button buttonHome">Home</button></a>
+<p class="course-actions">
+  <a class="btn btn--arc42-amber" href="/anmeldungEN/">Registration</a>
+  <a class="btn btn--arc42-outline" href="/termine/">All dates</a>
+  <a class="course-actions__terms" href="/schulungen/">Training overview</a>
+</p>
+
+</div>
 
 

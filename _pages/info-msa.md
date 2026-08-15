@@ -1,30 +1,27 @@
 ---
 title: "Mastering Software Architectures"
-layout: single
-classes: wide
+# splash + .course-story instead of single+sidebar: same rationale as
+# /schulungen/ — funnel pages share one layout, the course list lives in
+# the decision cards and the nav, not in a sidebar (2026-08-15).
+layout: splash
 permalink: /info-msa/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/learn-header-helloquence.jpg
   caption: "Photo: [**helloquence**](https://unsplash.com/photos/5fNmWej4tAA)"
 
-sidebar:
-  nav: "schulungen"
+excerpt: "Effektive Softwarearchitekturen - praxisnah!"
 
 ---
 
-<a href="/downloads/flyer-msa.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonDownload">Download<br/>Kursbeschreibung (pdf)</button></a>
-<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
-<a href="/terms/"><button class="button buttonTerms">Unsere<br>AGB</button></a>
+<div class="course-story" markdown="1">
 
-
-# Mastering Software Architectures <br><sup>Effektive Softwarearchitekturen - praxisnah!</sup>
-
+{% include course-actions.html flyer="/downloads/flyer-msa.pdf" %}
 
 4-tägiger Einführungskurs vom „dynamischen Duo“, Peter Hruschka und Gernot Starke
 
 ## Das erwartet Sie
-Fundierte, praxisnahe und pragmatische Einführung in -Architektur, mit hohem Übungsanteil. 
+Fundierte, praxisnahe und pragmatische Einführung in Softwarearchitektur, mit hohem Übungsanteil. 
 Sie lernen und üben die vielfältigen Aufgaben von Softwarearchitekt:innen anhand von Fallstudien. 
 Fokus liegt auf methodischem und systematischem Vorgehen bei Architekturentwurf und -bewertung.
 
@@ -69,7 +66,7 @@ Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf 
 >Sie brauchen also nichts weiter zu unternehmen - bei Bedarf könnten Sie sich während des Trainings noch abmelden.
 
 
-# Ausführliche Inhaltsbeschreibung
+## Ausführliche Inhaltsbeschreibung
 
 ### Grundbegriffe
 
@@ -120,8 +117,12 @@ Wir haben zusammen in den letzten Jahren mehr als 3000 Personen erfolgreich auf 
 
 ### und nun...
 
-<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="/termine/"><button class="button buttonRoyalBlue">Termine</button></a>
-<a href="/"><button class="button buttonHome">Home</button></a>
+<p class="course-actions">
+  <a class="btn btn--arc42-amber" href="/anmeldung/">Anmeldung zum Kurs</a>
+  <a class="btn btn--arc42-outline" href="/termine/">Termine ansehen</a>
+  <a class="course-actions__terms" href="/schulungen/">Alle Schulungen im Überblick</a>
+</p>
+
+</div>
 
 
