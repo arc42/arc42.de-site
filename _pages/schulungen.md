@@ -24,7 +24,7 @@ excerpt: "Praxisorientiert, effektiv und pragmatisch."
 ---
 
 
-## Unser Angebot: Grundlagen und fortgeschrittene Themen
+## Grundlagen und fortgeschrittene Themen
 
 {% include course-cards.html %}
 
