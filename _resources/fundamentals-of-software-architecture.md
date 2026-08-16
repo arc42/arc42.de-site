@@ -8,6 +8,7 @@ cover: "/images/resources/fundamentals-software-architecture.webp"
 link: "https://www.innoq.com/en/blog/2024/03/architektur-teil-1/"
 link_label: "Start with Part 1 on INNOQ"
 summary: "A five-part blog series on the INNOQ website: what software architecture is, the terms behind it, how it is done, who does it, and where it is heading."
+course: "msa"
 search: "fundamentals of software architecture grundlagen der softwarearchitektur series blog innoq gernot starke building purpose aesthetics terms tasks activities"
 ---
 

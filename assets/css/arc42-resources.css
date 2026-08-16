@@ -355,15 +355,44 @@
   margin-right: 0.7rem;
   color: var(--arc42-border);
 }
-.resource-item__link {
+/* Both card links share the third grid column. A second <a> as a sibling of
+   .resource-item__link would open a FOURTH cell in the three-column
+   .resource-item grid and wrap onto its own row. */
+.resource-item__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
   justify-self: end;
+  text-align: right;
+}
+.resource-item__link {
   color: var(--arc42-primary);
   font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
 }
+/* The theme sets a:visited at (0,1,1), which beats a single class at (0,1,0)
+   — and these sheets load BEFORE the theme, so ties are lost too. Both link
+   states are therefore named explicitly. */
+.resource-item__link:link,
+.resource-item__link:visited { color: var(--arc42-primary); }
 .resource-item__link:hover { color: var(--arc42-primary-hover); text-decoration: underline; }
+
+/* The course bridge line. Muted so the primary action stays primary:
+   #55657a on #fff is 5.9:1, the bold course name #374769 is 9.3:1. */
+.resource-item__link--course {
+  font-weight: 600;
+  white-space: normal;
+  max-width: 16rem;
+  line-height: 1.35;
+}
+.resource-item__link--course:link,
+.resource-item__link--course:visited { color: var(--arc42-text-muted); }
+.resource-item__link--course b { color: var(--arc42-primary); font-weight: 700; }
+.resource-item__link--course:hover,
+.resource-item__link--course:hover b { color: var(--arc42-primary-hover); }
 .resource-empty {
   padding: 3rem 0;
   text-align: center;
@@ -480,10 +509,168 @@
   }
   .resource-item__cover { width: 3rem; height: 4.4rem; }
   .resource-item__marker { width: 3rem; height: 3rem; }
-  .resource-item__link { grid-column: 2; justify-self: start; white-space: normal; }
+  .resource-item__links {
+    grid-column: 2;
+    justify-self: start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .resource-item__link { white-space: normal; }
+  .resource-item__link--course { max-width: none; }
 }
 
 @media (max-width: 420px) {
   .resource-types__options { display: grid; grid-template-columns: 1fr 1fr; }
   .resource-filter { justify-content: space-between; }
+}
+
+/* ==========================================================================
+   .course-bridge — the one conversion band that closes a content page.
+   Two variants: --card (publikationen, method, overview) and --hairline
+   (canvas, which ends in a gallery and already points outward).
+   Built only from existing tokens and the two existing buttons; no new
+   colour is introduced here.
+   ========================================================================== */
+.course-bridge {
+  margin: 3rem 0 1rem;
+  font-family: var(--arc42-font-sans);
+}
+.course-bridge__kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.course-bridge__title {
+  margin: 0;
+  color: var(--arc42-ink-strong);
+  font-size: 1.3rem;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.course-bridge__text {
+  margin: 0;
+  color: var(--arc42-text-muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+/* --- card variant --- */
+.course-bridge--card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.6rem;
+  background: #ffffff;
+  border: 1px solid var(--arc42-border);
+}
+.course-bridge--card .course-bridge__kicker { color: var(--arc42-primary); }
+.course-bridge__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.65rem;
+  margin: 0.15rem 0 0.25rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--arc42-border);
+  color: var(--arc42-text-muted);
+  font-size: 0.86rem;
+}
+.course-bridge__facts b { color: var(--arc42-ink-strong); font-weight: 700; }
+.course-bridge__sep { color: var(--arc42-border); }
+.course-bridge__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0.15rem 0 0;
+}
+/* The theme gives .btn a bottom margin that would break the flex gap rhythm. */
+.course-bridge__actions .btn { margin-bottom: 0; }
+
+/* --- hairline variant --- */
+.course-bridge--hairline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 1.1rem;
+  border-top: 2px solid var(--arc42-border);
+}
+.course-bridge--hairline .course-bridge__kicker { color: var(--arc42-slate); }
+.course-bridge--hairline .course-bridge__text {
+  color: var(--arc42-ink-strong);
+  max-width: 62ch;
+}
+.course-bridge--hairline .course-bridge__text b { font-weight: 700; }
+.course-bridge__link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 44px;
+  margin: -11px 0; /* absorb the 44px tap-target floor so it doesn't visibly
+                       enlarge the hairline's quiet vertical rhythm */
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* a:visited is (0,1,1) in the theme and these sheets load first, so both
+   states are named explicitly — see the cascade note in arc42-de.css. */
+.course-bridge__link:link,
+.course-bridge__link:visited { color: var(--arc42-primary); }
+.course-bridge__link:hover { color: var(--arc42-primary-hover); text-decoration: underline; }
+
+@media (max-width: 420px) {
+  .course-bridge--card { padding: 1.2rem; }
+  .course-bridge__actions .btn { width: 100%; }
+}
+
+/* --- .firmen-logos — scrolling client-logo band (see _includes/firmen-logos.html) --- */
+.firmen-logos {
+  margin: 3em 0;
+  padding: 2.5em 0;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+.firmen-logos__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: firmen-logos-scroll 35s linear infinite;
+}
+.firmen-logos:hover .firmen-logos__track { animation-play-state: paused; }
+.firmen-logos__track + .firmen-logos__track { margin-top: 1.4em; }
+.firmen-logos__track--reverse {
+  animation-duration: 42s;
+  animation-direction: reverse;
+}
+.firmen-logos__item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 56px;
+}
+.firmen-logos__item img {
+  max-width: 100%;
+  max-height: 44px;
+  width: auto;
+  height: auto;
+  filter: grayscale(1);
+  opacity: 0.45;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+.firmen-logos__item img:hover,
+.firmen-logos__item img:focus { filter: none; opacity: 1; }
+.firmen-logos__item--small img { max-height: 32px; }
+@keyframes firmen-logos-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .firmen-logos__track { animation: none; }
+}
+@media print {
+  .firmen-logos { display: none; }
 }

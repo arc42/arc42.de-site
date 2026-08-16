@@ -15,6 +15,7 @@
 @import 'button.css';
 @import 'arc42-de.css';
 @import 'arc42-resources.css';
+@import 'anmeldung.css'; // after arc42-resources.css — it reads the :root tokens
 @import 'grid.css';
 
 @import 'all.css'; // fontawesome

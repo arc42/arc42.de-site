@@ -42,3 +42,4 @@ um Ihren aktuellen Bedürfnissen gerecht zu werden:
   </div>
 </div>
 
+{% include course-bridge.html variant="hairline" %}

@@ -24,6 +24,7 @@ Bücher, Artikel, Vorträge und Videos liegen als je eine Datei in `_resources/*
 | `cover` | Thumbnail-Pfad; ohne Cover wird ein Buchstaben-Marker gezeichnet |
 | `link` | Ziel-URL (extern oder site-lokal); weglassen für Einträge ohne Link |
 | `link_label` | Text des CTA-Links |
+| `course` | optionale Kurs-Id aus `_data/trainings.json` (`msa`, `improve`, `req4arc`, `adoc`); erzeugt auf der Karte eine zweite Zeile „Zum Kurs: … →" nach `/info-<id>/`. Weglassen heißt: keine Kurszeile. Die URL wird aus der Id gebildet — **nie** aus `course.url`, das eine absolute `https://www.arc42.de/…`-Adresse enthält und `make test-theme` scheitern lässt |
 | `id` | **wirkungslos** — der Anker jeder Karte ist immer der Dateiname ohne `.md`, also `/publikationen/#arc42-by-example-vol2`. Jekyll überschreibt ein Front-Matter-`id` mit der internen Dokument-Id; das Feld existiert nur noch für Byte-Gleichheit mit arc42.org |
 | `detail` | `true` ⇒ der Body der Datei wird als eigene Detailseite gerendert |
 
@@ -37,7 +38,8 @@ Der Bestand ist bewusst **dupliziert**, nicht synchronisiert: ein neuer Eintrag 
 arc42.org muss einmal nach `_resources/` hierher kopiert werden (und umgekehrt).
 Die Jubiläums-Ausgabe von *arc42 by Example* (auf arc42.org
 `_resources/arc42-by-example-anniversary.md`) fehlt hier **absichtlich** — nicht
-übersehen, also bitte nicht „nachtragen".
+übersehen, also bitte nicht „nachtragen". Das Feld `course:` existiert nur hier und
+propagiert **nicht** nach arc42.org.
 
 Bei `language: "de"`-Einträgen sind `summary`, `link_label` und (falls `detail: true`)
 der Detailseiten-Body hier **deutschsprachig** und weichen bewusst vom englischen
@@ -105,6 +107,13 @@ chronologisch über alle Kurse hinweg, alterniert links/rechts, reicht alle Feld
 `type` wird aus `course.id` gebildet, plus Suffix `_online` wenn `date.format == "online"`.
 Kurstypen: `msa`, `msa_online`, `req4arc`, `improve`, `adoc`, `adoc_online`.
 
+Weiterer Konsument von `site.data.trainings`: `_includes/course-bridge.html`, das
+Conversion-Band am Ende einer Inhaltsseite, je einmal eingebunden auf
+`/publikationen/`, `/method/`, `/overview/` (Variante `card`) und `/canvas/`
+(Variante `hairline`). Ermittelt den nächsten buchbaren Termin über denselben
+Key-Sort wie `timeline_auto.html` — Details und die eine bewusste Abweichung
+im Kommentarkopf der Datei.
+
 Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strings
 `start`/`end` erzeugt (lange deutsche Form, z. B. "15.-17. September 2026").
 
@@ -122,7 +131,13 @@ Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strin
    Warteliste)" zeigt und den Anmeldung-Button versteckt. Die Anmeldeformulare
    (`_pages/anmeldung.md`, `_pages/anmeldungEN.md`) generieren ihre `<select>`-Optionen
    ebenfalls aus `site.data.trainings` und lassen `waitlist`/`full`-Termine automatisch
-   weg — **keine manuelle Pflege der Select-Liste mehr nötig**.
+   weg — **keine manuelle Pflege der Select-Liste mehr nötig**. Achtung, dritter
+   Konsument mit abweichendem Verhalten: `course-bridge.html` überspringt
+   `waitlist`/`full`-Termine komplett und springt zum nächsten offenen Termin
+   weiter, statt sie wie die Timeline ausgegraut weiter anzuzeigen — das Band auf
+   `/publikationen/`, `/method/`, `/overview/` und `/canvas/` wechselt also
+   sichtbar den beworbenen Termin, sobald ein Status auf `waitlist`/`full`
+   gesetzt wird.
 
 ### `few_seats`
 Optionaler Text (z. B. "nur noch wenige Plätze"), im Datenfeld `few_seats` in

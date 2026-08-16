@@ -8,6 +8,8 @@ timeline_course.html and the timeline_<type>.html templates are unchanged;
 type = course.id, plus "_online" suffix when format == "online".
 trainer is only passed for explicit per-date overrides, matching the old
 frontmatter behaviour (course-default trainers stay baked into the templates).
+_includes/course-bridge.html carries a near-copy of this key-sort for its
+next-date lookup, additionally skipping waitlist/full — keep both in sync.
 {% endcomment %}
 {%- assign crs = site.data.trainings.courses -%}
 {%- assign today = 'now' | date: '%Y-%m-%d' -%}
