@@ -1,7 +1,6 @@
 ---
 title: "IMPROVE: Systematisch verbessern"
-layout: single
-classes: wide
+layout: splash
 permalink: /info-improve/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
@@ -9,16 +8,12 @@ header:
   caption: "Photo: [**helloquence**](https://unsplash.com/photos/5fNmWej4tAA)"
 
 excerpt: "Wartungskosten und Time-2-Market reduzieren"
-sidebar:
-  nav: "schulungen"
 
 ---
 
-<a href="/downloads/flyer-improve.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonImprove">Download<br/>Kursbeschreibung (pdf)</button></a>
-<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
-<a href="/terms/"><button class="button buttonTerms">Unsere<br>AGB</button></a>
+<div class="course-story" markdown="1">
 
-## IMPROVE
+{% include course-actions.html flyer="/downloads/flyer-improve.pdf" %}
 
 Sie müssen Ihre Software mit knappen Budgets und engen Zeitvorgaben am Leben erhalten oder weiterentwickeln?
 In diesem Workshop lernen Sie, unter diesen Randbedingungen betriebs- und konkurrenzfähig zu bleiben und Ihre Investitionen zu schützen. 
@@ -44,9 +39,13 @@ Diese Ansätze integrieren Sie zielgerichtet mit Ihrem Tagesgeschäft.
 
 ### und nun...
 
-<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="/termine/"><button class="button buttonRoyalBlue">Termine</button></a>
-<a href="/"><button class="button buttonHome">Home</button></a>
+<p class="course-actions">
+  <a class="btn btn--arc42-amber" href="/anmeldung/">Anmeldung zum Kurs</a>
+  <a class="btn btn--arc42-outline" href="/termine/">Termine ansehen</a>
+  <a class="course-actions__terms" href="/schulungen/">Alle Schulungen im Überblick</a>
+</p>
+
+</div>
 
 
 
