@@ -74,18 +74,21 @@ publications:
     - title: Videos
       url: /publikationen/?type=video
 
+# Sole consumer: the "Mehr" drawer (first column, via `drawer:` above). The
+# former second consumer — `sidebar: nav: schulungen` on the /info-<id>/
+# pages — is gone since those pages moved to the splash layout (2026-08-16),
+# so do NOT delete this group when hunting dead sidebar config.
 schulungen:
   - title: Schulungsangebot
     url: /schulungen/
     children:
-    - title: Mastering Software Architectures
+    # 2026-08-13: "iSAQB Foundation" used to be a second entry pointing at the
+    # same /info-msa/ — two labels, one destination, so visitors counted five
+    # courses and found four. Merged into one label; if the Foundation course
+    # ever gets its own page, split it out again.
+    - title: Mastering Software Architectures (iSAQB Foundation)
       url: /info-msa/
       hint: "das Kernprogramm"
-    # NOTE: iSAQB Foundation points at the same page as MSA — two labels, one
-    # destination. Left exactly as found. Whether the Foundation course deserves
-    # its own page is a content decision, not a navigation fix.
-    - title: iSAQB Foundation
-      url: /info-msa/
     - title: IMPROVE
       url: /info-improve/
     - title: REQ4ARC
@@ -96,8 +99,7 @@ schulungen:
     # 2026-08-12: both duplicated entries in the `about` group under a second
     # label, showing twice in the drawer. /terms/ stays linked from the footer,
     # the Anmeldung commitment block, and Über uns; /gallery/ stays as
-    # "Stimmung beim Training..." under Über uns. Cost: the course-page
-    # sidebars (this group's second consumer) no longer carry the two links.
+    # "Stimmung beim Training..." under Über uns.
 
 # New group. Collects pages that were reachable only from the home page body
 # (/method/, /canvas/) or from nowhere at all (/consulting/) — i.e. invisible to

@@ -1,21 +1,19 @@
 ---
 title: "REQ4ARC: Requirements-Skills für Softwareteams"
-layout: single
-classes: wide
+layout: splash
 permalink: /info-req4arc/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/learn-header-helloquence.jpg
   caption: "Photo: [**helloquence**](https://unsplash.com/photos/5fNmWej4tAA)"
 
-sidebar:
-  nav: "schulungen"
+excerpt: "Bessere Anforderungen: klären, was das System leisten soll."
 
 ---
 
-<a href="/downloads/flyer-req4arc.pdf" target="_blank" rel="noopener noreferrer nofollow"><button class="button buttonReq4Arc">Download<br/>Kursbeschreibung (pdf)</button></a>
-<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung<br/>zum Kurs</button></a>
-<a href="/terms/"><button class="button buttonTerms">Unsere<br>AGB</button></a>
+<div class="course-story" markdown="1">
+
+{% include course-actions.html flyer="/downloads/flyer-req4arc.pdf" %}
 
 
 ## Ihr Weg zu besseren Anforderungen
@@ -40,8 +38,12 @@ Wir fokussieren dabei auf den architekturrelevanten Themen – beispielsweise de
 
 ### und nun...
 
-<a href="/anmeldung/"><button class="button buttonAnmeldung">Anmeldung</button></a>
-<a href="/termine/"><button class="button buttonRoyalBlue">Termine</button></a>
-<a href="/"><button class="button buttonHome">Home</button></a>
+<p class="course-actions">
+  <a class="btn btn--arc42-amber" href="/anmeldung/">Anmeldung zum Kurs</a>
+  <a class="btn btn--arc42-outline" href="/termine/">Termine ansehen</a>
+  <a class="course-actions__terms" href="/schulungen/">Alle Schulungen im Überblick</a>
+</p>
+
+</div>
 
 

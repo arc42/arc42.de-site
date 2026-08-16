@@ -1,0 +1,21 @@
+{%- comment -%}
+  Action row at the top of the /info-<id>/ course detail pages, replacing the
+  three w3schools <a><button> pills whose "Anmeldung zum Kurs" was tomato-red
+  while the site-wide Anmeldung signal (masthead CTA) is amber (owner,
+  2026-08-15). One amber primary, one navy outline secondary, one quiet
+  text link — same hierarchy the course-bridge band uses.
+
+    {% include course-actions.html flyer="/downloads/flyer-msa.pdf" %}
+
+  Optional params (defaults are the German labels):
+    flyer            (required) PDF path for the course description
+    flyer_label      default "Kursbeschreibung (PDF)"
+    anmeldung_url    default "/anmeldung/"   (EN page passes /anmeldungEN/)
+    anmeldung_label  default "Anmeldung zum Kurs"
+    terms_label      default "Unsere AGB"
+{%- endcomment -%}
+<p class="course-actions">
+  <a class="btn btn--arc42-amber" href="{{ include.anmeldung_url | default: "/anmeldung/" }}">{{ include.anmeldung_label | default: "Anmeldung zum Kurs" }}</a>
+  <a class="btn btn--arc42-outline" href="{{ include.flyer }}" target="_blank" rel="noopener noreferrer nofollow">{{ include.flyer_label | default: "Kursbeschreibung (PDF)" }}</a>
+  <a class="course-actions__terms" href="/terms/">{{ include.terms_label | default: "Unsere AGB" }}</a>
+</p>

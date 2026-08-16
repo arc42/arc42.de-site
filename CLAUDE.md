@@ -82,9 +82,9 @@ aber nur mit ⌘/Strg — Shift-Enter gibt es ausschließlich im Autocomplete.
 
 `search-lookup.json` schließt dieselben Seiten aus wie `search.json` (404, die beiden
 Formular-Stubs), zusätzlich alle `layout: redirect`-Stubs (darunter `/status/`, das
-extern nach `https://status.arc42.org/` weiterleitet — der Footer verlinkt dorthin)
-und `/info-msa-EN/`
-(titelgleich mit `/info-msa/`, dazu die Begründung in der Datei). Der Anker für
+extern nach `https://status.arc42.org/` weiterleitet — der Footer verlinkt dorthin —
+und seit 2026-08-16 auch `/info-msa-EN/`, das extern zum englischen Kursangebot auf
+`https://trainings.arc42.org/` weiterleitet). Der Anker für
 Publikationen ohne Detailseite ist — wie überall sonst — der Dateiname, nicht `id`.
 
 ## Kurse / Termine verwalten

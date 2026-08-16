@@ -3,7 +3,7 @@ name: arc42
 description: Resourcen für Softwarearchitektur
 colors:
   primary: "#374769"
-  secondary: "#ff6347"
+  secondary: "#c33b21"
   tertiary: "#00008b"
   neutral-bg: "#ffffff"
   neutral-surface: "#dcdcdc"
@@ -65,7 +65,7 @@ Academic Blue & Warm Accents. The palette is rooted in stable, professional dark
 - **Slate Blue** (#374769): The workhorse action color. Used for standard buttons and interactive elements, providing a grounded, reliable anchor.
 
 ### Secondary
-- **Action Tomato** (#ff6347): High-contrast accent reserved strictly for critical conversions, primarily the "Anmeldung" (registration) flows.
+- **Action Tomato** (#c33b21): High-contrast accent reserved strictly for critical conversions, primarily the "Anmeldung" (registration) flows. Darkened from the original #ff6347 (decided 2026-08-11) so white text clears WCAG AA at ≈5.4:1.
 
 ### Tertiary
 - **Spine Blue** (#00008b): A pure, deep dark blue used specifically for structural elements like the timeline spine, reinforcing the "blueprint" feel.
@@ -105,8 +105,8 @@ Components are utilitarian and clear, prioritizing recognizable affordances over
 ### Buttons
 - **Shape:** Gently rounded rectangles (8px radius).
 - **Primary:** Slate Blue (#374769) background with white text, padded horizontally (10px 22px). Text is bold.
-- **Hover / Focus:** Transitions over 0.4s to a lighter blue (#4b7ba3) and pale goldenrod text (#EEE8AA) while lifting aggressively with a heavy dual-layer shadow.
-- **Anmeldung / Registration:** Adopts Action Tomato (#ff6347) to dominate the visual hierarchy.
+- **Hover / Focus:** Transitions over 0.4s to a lighter blue (#4b7ba3), keeping white text (the former pale-goldenrod swap measured 3.60:1 and was removed), while lifting aggressively with a heavy dual-layer shadow.
+- **Anmeldung / Registration:** Adopts Action Tomato (#c33b21) to dominate the visual hierarchy.
 
 ### Cards / Containers (Timeline)
 - **Corner Style:** Slightly rounded (6px radius).
