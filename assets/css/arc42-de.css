@@ -694,12 +694,39 @@ a.arc42-lang__item:focus-visible {
   }
 
   .arc42-search { display: none; }   /* search lives in the drawer on phones */
-  .arc42-nav__cta { display: none; }
+
+  /* This rule never applied and has been removed:
+       .arc42-nav__cta { display: none; }
+     `.arc42-nav__cta` is (0,1,0), while the base rule above declares
+     `.arc42-nav__cta, .arc42-nav__cta:link, .arc42-nav__cta:visited` — and
+     `:link` matches every anchor with an href at (0,1,1). A media query adds
+     no specificity, so the hide lost the tie and the CTA has always been
+     visible on phones. This is the same :link/:visited trap the banner at the
+     top of this section warns about.
+
+     It stays removed on purpose. "Anmeldung" is the site's one revenue action,
+     and it belongs in the persistent chrome on the device where most people
+     read the site. `Termine` keeps its drawer entry — a schedule is a
+     destination, an Anmeldung is an action, and only the action earns a
+     permanent slot. (`cta_mobile: true` in _data/navigation.yml is therefore
+     inert while .arc42-nav__prio is hidden here; left in place rather than
+     ripped out, since it costs nothing and documents the original intent.) */
+
   .arc42-nav__more-txt { display: none; }
   .arc42-nav__more { padding: 0.45rem 0.6rem; }
 
   .arc42-drawer__group--prio { display: block; }
   .arc42-drawer__inner { grid-template-columns: 1fr; gap: 1.2rem; }
+}
+
+/* Narrow phones: with the CTA correctly staying in the band, the right-hand
+   cluster (CTA 113px + language switch + "Mehr") plus the 121px brand no
+   longer fits inside 1rem padding and 1rem gaps at 390px — every page ran
+   ~14px past the viewport, so the whole document scrolled sideways. Tightening
+   the band's own spacing buys ~40px, which clears it with room to spare. */
+@media (max-width: 420px) {
+  .arc42-nav { padding-left: 0.5rem; padding-right: 0.5rem; gap: 0.5rem; }
+  .arc42-nav__right { gap: 0.5rem; min-width: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

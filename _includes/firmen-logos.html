@@ -1,0 +1,48 @@
+{%- comment -%}
+  Renders the "diese Firmen schulen mit arc42" logo band: two stacked,
+  counter-scrolling rows of dimmed/monochrome client logos (full color on
+  hover, both rows paused while the band is hovered). CSS lives in
+  assets/css/arc42-resources.css (.firmen-logos* rules at the end of the
+  file — see the cascade note in main.scss for why new CSS is appended
+  there rather than a new stylesheet).
+
+  Usage: {% include firmen-logos.html %}
+
+  Row membership: the two data strings below are the single source of
+  truth. Rows must stay MUTUALLY EXCLUSIVE — never list a logo in both.
+  A new logo is added by appending "key|Company Name" to exactly one
+  string (its SVG goes to assets/img/firmen-logos/<key>.svg). An optional
+  third field "small" renders the logo at reduced height
+  (firmen-logos__item--small), e.g. for visually heavy marks like KNDS.
+
+  The band is hidden entirely in print (@media print in the CSS) — client
+  logos must never appear on paper.
+
+  Logo files: assets/img/firmen-logos/<key>.svg. Sources and trademark
+  notes: docs/firmen-logos-quellen.md — check each company's brand
+  guidelines before any additional use beyond this reference-style band.
+{%- endcomment -%}
+{%- assign firmen_logos_row1 = "bosch|Robert Bosch GmbH,zeiss|Carl Zeiss AG,enbw|EnBW Energie Baden-Württemberg AG,trumpf|TRUMPF,db|Deutsche Bahn AG,fraunhofer|Fraunhofer-Gesellschaft,buehler|Bühler AG,gea|GEA Group,swm|Stadtwerke München,soprasteria|Sopra Steria,barmenia|Barmenia Krankenversicherung AG,abus|ABUS Security Center" | split: "," -%}
+{%- assign firmen_logos_row2 = "knds|KNDS Deutschland|small,skidata|SKIDATA GmbH,pepperlfuchs|Pepperl+Fuchs SE,advantest|Advantest Europe GmbH,bose|Bose Corporation,conet|CONET,randstad|Randstad Digital,helbling|Helbling Technik,bsh|BSH Hausgeräte GmbH,aktionmensch|Aktion Mensch e.V.,provinzial|Provinzial Versicherung,vkb|Versicherungskammer Bayern" | split: "," -%}
+<div class="firmen-logos">
+  <div class="firmen-logos__track">
+    {%- for pair in firmen_logos_row1 -%}
+      {%- assign parts = pair | split: "|" -%}
+      <div class="firmen-logos__item{% if parts[2] == 'small' %} firmen-logos__item--small{% endif %}"><img src="/assets/img/firmen-logos/{{ parts[0] }}.svg" alt="{{ parts[1] }}" loading="lazy"></div>
+    {%- endfor -%}
+    {%- for pair in firmen_logos_row1 -%}
+      {%- assign parts = pair | split: "|" -%}
+      <div class="firmen-logos__item{% if parts[2] == 'small' %} firmen-logos__item--small{% endif %}" aria-hidden="true"><img src="/assets/img/firmen-logos/{{ parts[0] }}.svg" alt="" loading="lazy"></div>
+    {%- endfor -%}
+  </div>
+  <div class="firmen-logos__track firmen-logos__track--reverse">
+    {%- for pair in firmen_logos_row2 -%}
+      {%- assign parts = pair | split: "|" -%}
+      <div class="firmen-logos__item{% if parts[2] == 'small' %} firmen-logos__item--small{% endif %}"><img src="/assets/img/firmen-logos/{{ parts[0] }}.svg" alt="{{ parts[1] }}" loading="lazy"></div>
+    {%- endfor -%}
+    {%- for pair in firmen_logos_row2 -%}
+      {%- assign parts = pair | split: "|" -%}
+      <div class="firmen-logos__item{% if parts[2] == 'small' %} firmen-logos__item--small{% endif %}" aria-hidden="true"><img src="/assets/img/firmen-logos/{{ parts[0] }}.svg" alt="" loading="lazy"></div>
+    {%- endfor -%}
+  </div>
+</div>

@@ -48,12 +48,37 @@
   <div class="resource-item__marker{{ mc }}" aria-hidden="true">{{ mk }}</div>
   {%- endif -%}
   <div class="resource-item__body"><p class="resource-item__meta"><span>{{ type_label }}</span><span>{{ lang }}</span>{% if r.year %}<span>{{ r.year }}</span>{% endif %}</p><h2>{{ r.title }}</h2><p>{{ r.summary }}</p></div>
-  {%- if r.detail -%}
-  <a class="resource-item__link" href="{{ r.url | relative_url }}">Mehr Details <span aria-hidden="true">&#8594;</span></a>
-  {%- elsif r.link -%}
-    {%- if r.link contains '.pdf' -%}{%- assign arrow = '&#8595;' -%}
-    {%- elsif r.link contains '://' -%}{%- assign arrow = '&#8599;' -%}
-    {%- else -%}{%- assign arrow = '&#8594;' -%}{%- endif -%}
-  <a class="resource-item__link" href="{{ r.link }}"{% if r.link contains '://' %} rel="noopener"{% endif %}>{{ r.link_label | default: 'Öffnen' }} <span aria-hidden="true">{{ arrow }}</span></a>
+  {%- comment -%}
+    Course bridge. r.course holds a course id from _data/trainings.json
+    (msa | improve | req4arc | adoc). The href is DERIVED as /info-<id>/ and is
+    deliberately NOT taken from course.url — that field is an absolute
+    https://www.arc42.de/... link, and `make test-theme` fails the build if that
+    host appears anywhere in _site. An unknown id resolves to nil and renders
+    nothing, so a typo degrades to "no second line" rather than a broken link.
+
+    Both links live in one .resource-item__links container because
+    .resource-item is a three-column grid (cover | body | link) — a second link
+    as a sibling would open a fourth grid cell and wrap onto its own row.
+  {%- endcomment -%}
+  {%- assign course = nil -%}
+  {%- if r.course -%}
+    {%- for c in site.data.trainings.courses -%}
+      {%- if c.id == r.course -%}{%- assign course = c -%}{%- break -%}{%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if r.detail or r.link or course -%}
+    <div class="resource-item__links">
+    {%- if r.detail -%}
+      <a class="resource-item__link" href="{{ r.url | relative_url }}">Mehr Details <span aria-hidden="true">&#8594;</span></a>
+    {%- elsif r.link -%}
+      {%- if r.link contains '.pdf' -%}{%- assign arrow = '&#8595;' -%}
+      {%- elsif r.link contains '://' -%}{%- assign arrow = '&#8599;' -%}
+      {%- else -%}{%- assign arrow = '&#8594;' -%}{%- endif -%}
+      <a class="resource-item__link" href="{{ r.link }}"{% if r.link contains '://' %} rel="noopener"{% endif %}>{{ r.link_label | default: 'Öffnen' }} <span aria-hidden="true">{{ arrow }}</span></a>
+    {%- endif -%}
+    {%- if course -%}
+      <a class="resource-item__link resource-item__link--course" href="/info-{{ course.id }}/">Zum Kurs: <b>{{ course.title }}</b> <span aria-hidden="true">&#8594;</span></a>
+    {%- endif -%}
+    </div>
   {%- endif -%}
 </article>

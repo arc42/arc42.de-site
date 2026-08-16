@@ -1,0 +1,69 @@
+{%- comment -%}
+  Conversion band that closes a content page with the next bookable course date.
+
+    {% include course-bridge.html %}                      -> card (default)
+    {% include course-bridge.html variant="card" %}
+    {% include course-bridge.html variant="hairline" %}
+
+  Exactly ONE band per page, always last. That is the ceiling, not the starting
+  point — this is a library, not a funnel.
+
+  Next-date lookup is the same key-sort timeline_auto.html uses: build
+  "start|courseIndex|dateIndex" strings (ISO dates sort lexicographically),
+  sort, take the first. ONE deliberate difference: this include also skips
+  waitlist/full, because a sold-out date is a bad call to action, whereas the
+  timeline shows those on purpose.
+
+  No price is shown anywhere. `pricing` is German prose rather than a number
+  ("Frühbucherpreis ... € 2690, Normalpreis: € 2890") and only MSA dates carry
+  it — the next open date usually has none. See spec section 3.
+
+  Links are written out as /termine/ and /schulungen/. Never emit date.url or
+  course.url: both are absolute https://www.arc42.de/... addresses, and
+  `make test-theme` fails the build if that host appears anywhere in _site.
+{%- endcomment -%}
+{%- assign variant = include.variant | default: 'card' -%}
+{%- assign crs = site.data.trainings.courses -%}
+{%- assign today = 'now' | date: '%Y-%m-%d' -%}
+{%- assign keys = "" | split: "" -%}
+{%- for c in crs -%}
+  {%- for d in c.dates -%}
+    {%- if d.status == "cancelled" or d.status == "waitlist" or d.status == "full" -%}{%- continue -%}{%- endif -%}
+    {%- if d.end < today -%}{%- continue -%}{%- endif -%}
+    {%- capture k -%}{{ d.start }}|{{ forloop.parentloop.index0 }}|{{ forloop.index0 }}{%- endcapture -%}
+    {%- assign karr = k | split: "~~" -%}
+    {%- assign keys = keys | concat: karr -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign sorted_keys = keys | sort -%}
+{%- assign nc = nil -%}
+{%- assign nd = nil -%}
+{%- assign datelabel = nil -%}
+{%- if sorted_keys.size > 0 -%}
+  {%- assign parts = sorted_keys[0] | split: "|" -%}
+  {%- assign ci = parts[1] | plus: 0 -%}
+  {%- assign di = parts[2] | plus: 0 -%}
+  {%- assign nc = crs[ci] -%}
+  {%- assign nd = nc.dates[di] -%}
+  {%- capture datelabel -%}{%- include training-date-label.html date=nd lang="de" style="long" -%}{%- endcapture -%}
+{%- endif -%}
+{%- if variant == 'hairline' -%}
+<aside class="course-bridge course-bridge--hairline" aria-label="Schulungen">
+  <p class="course-bridge__kicker">Nächster Termin</p>
+  <p class="course-bridge__text">Wir unterrichten, worüber wir schreiben:{% if nd %} <b>{{ nc.short_title | default: nc.title }} &mdash; {{ datelabel }}{% if nd.city %} in {{ nd.city }}{% elsif nd.format == "online" %} online{% endif %}</b>{% if nc.certification %}, mit Zertifizierung nach {{ nc.certification }}{% endif %}.{% else %} in offenen Schulungen mit iSAQB-Zertifizierung.{% endif %}</p>
+  <a class="course-bridge__link" href="/termine/">Alle Termine ansehen <span aria-hidden="true">&#8594;</span></a>
+</aside>
+{%- else -%}
+<aside class="course-bridge course-bridge--card" aria-label="Schulungen">
+  <p class="course-bridge__kicker">Schulungen</p>
+  <h2 class="course-bridge__title">Diese Themen gibt es auch als Training</h2>
+  <p class="course-bridge__text">Wir unterrichten, worüber wir schreiben &mdash; als offene Schulung in kleiner Gruppe, mit iSAQB-Zertifizierung.</p>
+  {%- if nd %}
+  <p class="course-bridge__facts">Nächster Termin <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ nc.short_title | default: nc.title }}</b> <span class="course-bridge__sep" aria-hidden="true">&middot;</span> <b>{{ datelabel }}</b>{% if nd.city %} <span class="course-bridge__sep" aria-hidden="true">&middot;</span> {{ nd.city }}{% elsif nd.format == "online" %} <span class="course-bridge__sep" aria-hidden="true">&middot;</span> Online{% endif %}</p>
+  {%- endif %}
+  <p class="course-bridge__actions">
+    <a class="btn btn--arc42" href="/termine/">Termine ansehen</a>
+    <a class="btn btn--arc42-outline" href="/schulungen/">Schulungsangebot</a>
+  </p>
+</aside>
+{%- endif -%}
