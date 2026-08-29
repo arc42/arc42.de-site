@@ -59,6 +59,14 @@ Serves the site on `http://localhost:4043` (not `0.0.0.0:4043` — Firefox refus
 that host) and rebuilds on every file change. The first run builds the image; on
 later runs it starts from the cache.
 
+The port is fixed at **4043**, not Jekyll's default 4000, so this dev server can
+run alongside the other arc42 sites' dev servers without a clash — see
+`raw/port-assignment.md` in meta.arc42.org for the full assignment. Jekyll binds
+4043 inside the container as well as on the host, so its "Server address:"
+startup banner names the real port. Three places must stay in step: `SITE_PORT`
+in the `Makefile`, the mapping plus `--port` in `docker-compose.yml`, and
+`EXPOSE`/`CMD` in the `Dockerfile`.
+
 All useful targets (`make` on its own prints this list):
 
 * `make dev` — start Jekyll locally with live reload on port 4043
