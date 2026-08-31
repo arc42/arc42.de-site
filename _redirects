@@ -1,1 +1,24 @@
+# Netlify redirect rules. Jekyll only copies this file because _config.yml
+# lists it under `include:` (leading underscore = excluded by default).
+
 /agb  /terms  301
+
+# Registration moved to trainings.arc42.org (2026-08-31).
+#
+# One form per language, in one repo, generated from _data/trainings.yml.
+# arc42.de's copy was a hand-maintained duplicate, it was the copy hit by the
+# spam registration on 31 Aug 2026, and /anmeldungEN/ posted to the GERMAN
+# Formspark form (AIKiYyJP), which would have sent English registrants a German
+# confirmation the moment an autoresponder was created.
+#
+# The trailing "!" forces the rule. Without it Netlify serves the still-existing
+# _site/anmeldung/index.html instead, because non-forced rules only apply to
+# paths with no matching file. The pages stay in the repo for now so reverting
+# is deleting these two lines; they get removed in a later pass.
+#
+# Netlify carries the query string across, so /anmeldung/?kurs=msa-dez-2026
+# arrives as /anmeldung/?kurs=msa-dez-2026 and the course stays preselected.
+# That only works because the preselect script was ported to
+# trainings.arc42.org first. Do not add these rules to a target that lacks it.
+/anmeldung    https://trainings.arc42.org/anmeldung/     301!
+/anmeldungEN  https://trainings.arc42.org/registration/  301!
