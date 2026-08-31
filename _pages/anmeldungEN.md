@@ -189,6 +189,32 @@ with the course, the date, the names and a billing address.</p>
     value="{{ '/anmeldung-fail/' | absolute_url }}"
   />
 
+<!--
+  Spam traps and provenance. Nothing here is visible and nothing here affects
+  a real registration.
+
+  Honeypot: Formspark discards a submission where a honeypot field came back
+  non-empty. "_gotcha" is caught unconditionally, so it works with no dashboard
+  setting at all; "company_website" only works once that exact string is entered
+  under Spam protection > Honeypot > Custom field name, on BOTH Formspark forms
+  (AIKiYyJP and Tq1M7LqmX). Two names on purpose: a bot that knows to skip
+  Formspark's built-in names will still fill a plausible-looking one.
+  display:none takes them out of the accessibility tree entirely, and
+  tabindex/autocomplete keep them out of the keyboard and autofill paths, so a
+  human cannot fill them by accident. If either ever arrives non-empty from a
+  real person, that is the bug to chase.
+
+  form_source: deliberately NO leading underscore. Formspark strips
+  "_"-prefixed fields from the notification email, which is exactly why
+  "_source" was no help when we tried to trace a spam submission back to the
+  page it was sent from. This field is echoed. Like every other field it is
+  attacker-controlled, so it identifies honest traffic and lazy replays, not
+  attackers.
+-->
+<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+<input type="text" name="company_website" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+<input type="hidden" name="form_source" value="{{ page.url | absolute_url }}" />
+
 <input type="hidden" name="_source" value="arc42.de" />
 
 <!-- As we generate static HTML, we do NOT want to append field values to the redirect URL -->
