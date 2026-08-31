@@ -8,7 +8,13 @@
       or proxy-blocked unpkg.com stalled the whole checkout. Deferred scripts
       still run before DOMContentLoaded, which is well before anyone can
       submit, so botpoison still attaches in time. -->
-<script src="https://unpkg.com/@botpoison/browser" defer></script>
+<!-- Pinned, with SRI: unpinned, unpkg serves whatever is newest, and this
+      page silently moved from 0.3.1 to 1.0.0 with no commit here. Bump the
+      version and the hash together; recompute with
+      `curl -sL <url> | openssl dgst -sha384 -binary | openssl base64 -A`. -->
+<script src="https://unpkg.com/@botpoison/browser@1.0.0/dist/index.js"
+        integrity="sha384-PFiLHBpPgn3HAiDbMGBi5tI9ZL1FmZ8nr02DaNOQzuw3N1M+dpas2X6iilR9PmhW"
+        crossorigin="anonymous" defer></script>
 {% endif %}
 
 <script defer data-domain="arc42.de" src="https://plausible.io/js/script.js"></script>
