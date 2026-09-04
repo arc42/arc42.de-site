@@ -1,5 +1,5 @@
 ---
-title: "arc42 License"
+title: "arc42 Lizenz"
 layout: single
 permalink: /license/
 header:
@@ -12,26 +12,50 @@ sidebar:
 
 
 
-## The arc42 template
+## Das arc42 Template
 
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 
 <br />
-arc42 is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+arc42 steht unter einer <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International Lizenz</a>.
 
 
-Under this license, you're free to:
+Unter dieser Lizenz dürfen Sie:
 
-* Share: copy and redistribute the material in any medium or format
-* Adapt: remix, transform, and build upon the material for any purpose, even commercially.
+* Teilen: das Material in jedem Format und Medium kopieren und weitergeben
+* Bearbeiten: das Material verändern, umgestalten und darauf aufbauen, für jeden Zweck, auch kommerziell.
 
-We, the licensors, (Gernot Starke and Peter Hruschka, the creators of arc42)
-cannot (and surely will not) revoke these freedoms as long as you follow the license terms.
+Wir, die Lizenzgeber (Gernot Starke und Peter Hruschka, die Autoren von arc42),
+können und werden diese Freiheiten nicht widerrufen, solange Sie die Lizenzbedingungen einhalten.
 
-**You must give appropriate credit, provide a link to the license, and indicate if changes to arc42 were made.** You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+**Sie müssen angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen an arc42 vorgenommen wurden.** Diese Angaben dürfen in jeder angemessenen Art und Weise erfolgen, allerdings nicht so, dass der Eindruck entsteht, die Lizenzgeber unterstützten gerade Sie oder Ihre Nutzung.
 
-If you remix, transform, or build upon material from arc42, you must distribute your contributions under the same license as the original.
+Wenn Sie arc42 verändern oder darauf aufbauen und dieses Ergebnis außerhalb Ihres Unternehmens weitergeben, dann müssen Sie es unter derselben Lizenz veröffentlichen wie das Original.
 
 
-## Your own content
-You are completely free to use or publish your own content, even if it is embedded in the arc42 template, according to your own rules.
+## Was das für Unternehmen bedeutet
+
+Sie dürfen arc42 innerhalb Ihres Unternehmens kopieren, verändern und einsetzen, ohne jemals etwas veröffentlichen zu müssen.
+
+**Frei kopieren und ändern.** Strukturieren Sie das Template um, lassen Sie Kapitel weg, ergänzen Sie eigene, benennen Sie es um, bauen Sie es in Confluence, Word oder einem beliebigen anderen Werkzeug nach.
+
+**Interne Anpassung ist keine Weitergabe.** Die ShareAlike Bedingung greift erst, wenn Sie eine angepasste Fassung des *Templates* außerhalb Ihres Unternehmens verfügbar machen. Was Sie für Ihre eigenen Teams ändern, bleibt bei Ihnen, Sie müssen es nicht veröffentlichen.
+
+**Die Namensnennung ist erforderlich, sobald Sie das Template oder eine Anpassung an andere weitergeben.** Nennen Sie Gernot Starke und Peter Hruschka, verlinken Sie die Lizenz und weisen Sie darauf hin, dass Sie etwas verändert haben. Bei rein interner Nutzung freuen wir uns einfach über die Erwähnung.
+
+**Wenn Sie ein angepasstes Template tatsächlich veröffentlichen**, auf Ihrer Website, in einem öffentlichen Repository oder als Teil eines Produkts, das Sie ausliefern, dann steht dieses angepasste Template ebenfalls unter CC BY-SA 4.0.
+
+
+## Ihre eigenen Inhalte
+
+Die Lizenz gilt für das arc42 Template selbst, also für seine Struktur, seine Überschriften und seine erklärenden Texte. Ihre eigenen Inhalte dürfen Sie nach Ihren eigenen Regeln nutzen, schützen oder veröffentlichen, auch dann, wenn sie im arc42 Template eingebettet sind. Ein veröffentlichtes Architekturdokument in arc42 Struktur stellt Ihre Inhalte nicht unter CC BY-SA.
+
+
+## Weitere Fragen
+
+Unsere FAQ (auf Englisch) beantworten die beiden Fragen, die uns am häufigsten erreichen:
+
+* [What's the license for arc42?](https://faq.arc42.org/questions/A-2/)
+* [Are we allowed to customize arc42 for our own purpose?](https://faq.arc42.org/questions/K-1/)
+
+Diese Seite ist eine Zusammenfassung in einfachen Worten und keine Rechtsberatung. Maßgeblich ist der [vollständige Lizenztext von Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de).
