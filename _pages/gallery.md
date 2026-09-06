@@ -6,6 +6,10 @@ permalink: /gallery/
 header:
   overlay_filter: rgba(15, 80, 180, 0.5)
   overlay_image: /images/splash/gallery-splash.webp
+  # Link-Vorschau braucht JPEG: overlay_image ist WebP, das LinkedIn und
+  # WhatsApp in der Vorschau nicht rendern. Ohne diesen Schluessel wuerde
+  # _includes/seo.html das WebP als og:image ausliefern.
+  og_image: /images/splash/gallery-splash.jpg
   caption: "Photo: [**Oleg Pylypenko**](https://alegpilipenko.com/)"
   
 

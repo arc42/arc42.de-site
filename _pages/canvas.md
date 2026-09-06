@@ -5,6 +5,8 @@ layout: splash
 permalink: /canvas/
 header:
   overlay_image: /images/splash/canvas-splash.webp
+  # Link-Vorschau braucht JPEG, siehe gallery.md. Aus dem WebP erzeugt.
+  og_image: /images/splash/canvas-splash.jpg
   caption: "Background photo credit: [**Samantha Gades**](https://unsplash.com/de/@srosinger3997)"
   overlay_filter: rgba(0, 0, 0, 0.6)
   actions:

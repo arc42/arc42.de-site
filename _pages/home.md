@@ -5,7 +5,12 @@ permalink: /
 header: 
   overlay_color: "#d7ecf8"
   overlay_filter: rgba(15, 80, 180, 0.6)
-  overlay_image: /images/splash/arc42-splash-landingpage.jpg
+  # Sichtbares Hero: WebP, spart jedem Besucher rund 40 KB.
+  overlay_image: /images/splash/arc42-splash-landingpage.webp
+  # Link-Vorschau braucht JPEG: LinkedIn und WhatsApp rendern kein WebP.
+  # Der Schluessel ist noetig, weil _includes/seo.html overlay_image VOR
+  # site.og_image auswertet - ohne ihn ginge das WebP an die Scanner.
+  og_image: /images/splash/arc42-splash-landingpage.jpg
   actions: 
     - label: "Übersicht"
       url: /overview/
