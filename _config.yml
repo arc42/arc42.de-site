@@ -99,7 +99,16 @@ exclude:
   - _site/
   - archive/
   - docs/
-  - images/originale
+  # Arbeitsdateien und Foto-Master, die nie ausgeliefert werden sollen.
+  # Bis 2026-09 stand hier 'images/originale', das Verzeichnis heisst aber
+  # 'images/originals' — der Tippfehler hat 18 MB Graffle-/Rohdateien live
+  # gestellt. Der zweite Eintrag ist ein Wachposten: die Kamera-Originale
+  # unter images/photos sind aus dem Repo entfernt und liegen in Dropbox
+  # unter Fotos/arc42-originale-aus-repo. Die Site benutzt ausschliesslich
+  # die abgeleiteten .webp; ein versehentlich wieder eingechecktes .jpg
+  # soll nicht erneut im Deploy landen.
+  - images/originals
+  - images/photos/**/*.jpg
   - todo/
   - test/
   - TIMELINE_SYSTEM.md
