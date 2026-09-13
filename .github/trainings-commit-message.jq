@@ -103,6 +103,21 @@ def line_of($event):
      else ""
      end);
 
+# The course list must degrade, not get sliced: truncating it mid-name drops
+# courses silently and cuts a word in half, which tells the reader less than a
+# plain count would. So names are only ever added while the whole subject still
+# fits in 72 characters; the rest become "+N", and if not even the first name
+# fits, the parenthetical goes away entirely. The body lists every event in
+# full, so nothing is actually lost here.
+def counted_subject($events; $courses):
+  ("chore: " + (($events | length) | tostring) + " training changes") as $base
+  | [ range(1; ($courses | length) + 1) as $k
+      | (($courses | length) - $k) as $rest
+      | $base + " (" + ($courses[0:$k] | join(", "))
+        + (if $rest > 0 then " +" + ($rest | tostring) else "" end) + ")"
+      | select(length <= 72) ] as $fitting
+  | if ($fitting | length) > 0 then $fitting[-1] else $base end;
+
 def subject_of($event):
   if $event.kind == "added" then
     "chore: new date " + code_of($event.entry) + ", " + ($event.entry.d.start | clean)
@@ -143,8 +158,7 @@ def subject_of($event):
    elif ($events | length) == 1 then
      subject_of($events[0])
    else
-     "chore: " + (($events | length) | tostring) + " training changes"
-     + (if ($courses | length) > 0 then " (" + ($courses | join(", ")) + ")" else "" end)
+     counted_subject($events; $courses)
    end) as $raw_subject
 | ($raw_subject | trunc(72)) as $subject
 | if ($events | length) == 0 then $subject

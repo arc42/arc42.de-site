@@ -45,6 +45,21 @@ assert_output() {
   printf 'ok - %s\n' "$name"
 }
 
+# The subject is a git subject line: one line, 72 characters at most.
+assert_subject_fits() {
+  fixture=$1
+  generate "$fixture" > "$tmp/message"
+  subject=$(head -n 1 "$tmp/message")
+  length=$(printf '%s' "$subject" | wc -m | tr -d ' ')
+  if [ "$length" -gt 72 ]; then
+    fail "subject over budget for fixture $fixture" "got $length: $subject"
+  fi
+  if [ -n "$(sed -n '2p' "$tmp/message")" ]; then
+    fail "subject is not a single line for fixture $fixture" "$(cat "$tmp/message")"
+  fi
+  printf 'ok - %s\n' "$fixture subject fits: $length chars, one line"
+}
+
 assert_output "a new date is announced with its dates, place and language" added <<'EOF'
 chore: new date 27-10 ADOC-EN, 2027-10-12
 
@@ -101,8 +116,8 @@ chore: 26-12 MSA — 6 fields changed
 - updated  26-12 MSA (msa-dez-2026): 6 fields changed
 EOF
 
-assert_output "an over-long subject is truncated with an ellipsis" long <<'EOF'
-chore: 4 training changes (Mastering Software Architectures, IMPROVE yo…
+assert_output "an over-long course list degrades to a count, never a fragment" long <<'EOF'
+chore: 4 training changes (Mastering Software Architectures +3)
 
 - added    27-01 Master (msa-x0), 2027-01-05 to 2027-01-07, Frankfurt/Main, de
 - added    27-02 IMPROV (improve-x1), 2027-02-05 to 2027-02-07, Frankfurt/Main, de
@@ -118,19 +133,39 @@ chore: new date 27-05 MSA, 2027-05-03
 - added    27-05 MSA (msa-mai-2027), 2027-05-03 to 2027-05-06, Mannheim / Frankfurt (t.b.d.,…, de
 EOF
 
-subject=$(generate long | head -n 1)
-length=$(printf '%s' "$subject" | wc -m | tr -d ' ')
-if [ "$length" -gt 72 ]; then
-  fail "subject must stay within 72 characters" "got $length: $subject"
-fi
-if [ "$(generate long | sed -n '2p')" != "" ]; then
-  fail "the subject must stay a single line" "$(generate long)"
-fi
-printf 'ok - %s\n' "the truncated subject is $length characters on one line"
+assert_output "three courses are all named while they fit" courses3 <<'EOF'
+chore: 3 training changes (MSA, ADOC, IMPROVE)
+
+- added    27-02 MSA (msa-feb-2027), 2027-02-01 to 2027-02-04, Köln, de
+- added    27-03 ADOC (adoc-mar-2027), 2027-03-08 to 2027-03-09, Köln, de
+- added    27-04 IMPROVE (improve-apr-2027), 2027-04-19 to 2027-04-20, Köln, de
+EOF
+
+# The live short_title of the most frequently edited course is "Mastering SW
+# Architectures" - 26 characters - so the budget runs out at the third name.
+assert_output "courses that do not fit become +N, not a cut-off name" plusn <<'EOF'
+chore: 4 training changes (Mastering SW Architectures, IMPROVE +2)
+
+- added    27-02 MSA (msa-feb-2027), 2027-02-01 to 2027-02-04, Köln, de
+- added    27-04 IMPROVE (improve-apr-2027), 2027-04-19 to 2027-04-20, Köln, de
+- added    27-05 Req4Arc (req4arc-mai-2027), 2027-05-11 to 2027-05-13, Köln, de
+- added    27-03 ADOC (adoc-mar-2027), 2027-03-08 to 2027-03-09, Köln, de
+EOF
+
+assert_output "a single name that does not fit drops the parenthetical" overflow <<'EOF'
+chore: 2 training changes
+
+- added    27-02 MSA (msa-feb-2027), 2027-02-01 to 2027-02-04, Köln, de
+- added    27-07 MSA (msa-jul-2027), 2027-07-05 to 2027-07-08, Köln, de
+EOF
+
+for fixture in added seats gone multi nochange derived rewrite long messy courses3 plusn overflow; do
+  assert_subject_fits "$fixture"
+done
 
 # Every fixture must produce a non-empty subject; the workflow falls back to the
 # generic message on empty output, and a silent fallback would hide a bug here.
-for fixture in added seats gone multi nochange derived rewrite long messy; do
+for fixture in added seats gone multi nochange derived rewrite long messy courses3 plusn overflow; do
   if [ -z "$(generate "$fixture" | head -n 1)" ]; then
     fail "empty subject for fixture $fixture" ""
   fi
