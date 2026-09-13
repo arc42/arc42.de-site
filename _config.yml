@@ -85,6 +85,13 @@ exclude:
   - Dockerfile
   - Gemfile
   - Gemfile.lock
+  # Interne Planungsdatei, kein Seiteninhalt. Sie MUSS ausgeschlossen
+  # bleiben: Abschnitt 8 zitiert einen Liquid-Tag als Beispiel, und Liquid
+  # laeuft vor Markdown — Backticks schuetzen nicht. Jekyll parst das
+  # `{% if %}` als echten Tag, findet kein `{% endif %}` und bricht den
+  # gesamten Build ab. Genau das hat die Site vom 2026-09-06 bis 2026-09-13
+  # eingefroren, waehrend 'Refresh training dates' weiter gruen lief.
+  - IMPROVEMENT_PLAN.md
   - LICENSE
   - LICENSE-theme.txt
   - Makefile
