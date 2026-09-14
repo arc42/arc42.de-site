@@ -79,7 +79,10 @@
     {%- assign card_lead = nil -%}
   {%- endcase -%}
   {%- unless c.id == 'msa' -%}
-    {%- capture card_cert -%}{{ c.certification }}{% if c.credits %}: {{ c.credits }}{% endif %}{%- endcapture -%}
+    {%- comment -%} Built from credit_points, not the feed's legacy German `credits` string. {%- endcomment -%}
+    {%- capture card_credits -%}{% include credits-label.html credits=c.credit_points lang="de" %}{%- endcapture -%}
+    {%- assign card_credits = card_credits | strip -%}
+    {%- capture card_cert -%}{{ c.certification }}{% if card_credits != "" %}: {{ card_credits }} Punkte{% endif %}{%- endcapture -%}
   {%- endunless -%}
   <li class="course-cards__item{% if c.id == 'msa' %} course-cards__item--flagship{% endif %}">
     <a class="course-card{% if c.id == 'msa' %} course-card--flagship{% endif %}" href="/info-{{ c.id }}/">

@@ -1,11 +1,18 @@
 {%- comment -%}
   Human-readable date range from ISO start/end strings.
-  Params: date (a dates[] object), lang ("de"|"en"), style ("long"|"short", de only)
+  Params: date (a dates[] object), lang ("de"|"en"), style ("long"|"short")
+         or: start / end (ISO strings) instead of date, for a day that is not
+         a dates[] entry. price-label.html passes an early-bird deadline that
+         way rather than duplicating the month names below.
   de/long:  15.-17. September 2026   de/short: 29. Sep. - 1. Okt. 2026
-  en:       Sep 15-17, 2026 / Sep 29 - Oct 1, 2026
+  en/long:  September 15-17, 2026    en/short: Sep 29 - Oct 1, 2026
+  en/long spans months and years as "September 29 - October 1, 2026" and
+  "December 30, 2026 - January 2, 2027".
+  A single day (end == start, or end omitted) renders as one date, not as
+  "2.-2. November 2026".
 {%- endcomment -%}
-{%- assign s = include.date.start -%}
-{%- assign e = include.date.end -%}
+{%- assign s = include.start | default: include.date.start -%}
+{%- assign e = include.end | default: include.date.end | default: s -%}
 {%- assign sd = s | date: "%-d" -%}
 {%- assign ed = e | date: "%-d" -%}
 {%- assign sm = s | date: "%-m" | plus: 0 -%}
@@ -20,7 +27,9 @@
   {%- else -%}
     {%- assign names = "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember" | split: "," -%}
   {%- endif -%}
-  {%- if sy == ey and sm == em -%}
+  {%- if s == e -%}
+    {{- sd -}}. {{ names[smi] }} {{ sy -}}
+  {%- elsif sy == ey and sm == em -%}
     {{- sd -}}.-{{- ed -}}. {{ names[smi] }} {{ sy -}}
   {%- elsif sy == ey -%}
     {{- sd -}}. {{ names[smi] }} - {{ ed }}. {{ names[emi] }} {{ sy -}}
@@ -28,8 +37,14 @@
     {{- sd -}}. {{ names[smi] }} {{ sy }} - {{ ed }}. {{ names[emi] }} {{ ey -}}
   {%- endif -%}
 {%- else -%}
-  {%- assign names = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
-  {%- if sy == ey and sm == em -%}
+  {%- if include.style == "short" -%}
+    {%- assign names = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
+  {%- else -%}
+    {%- assign names = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," -%}
+  {%- endif -%}
+  {%- if s == e -%}
+    {{- names[smi] }} {{ sd }}, {{ sy -}}
+  {%- elsif sy == ey and sm == em -%}
     {{- names[smi] }} {{ sd }}-{{ ed }}, {{ sy -}}
   {%- elsif sy == ey -%}
     {{- names[smi] }} {{ sd }} - {{ names[emi] }} {{ ed }}, {{ sy -}}

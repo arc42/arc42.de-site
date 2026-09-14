@@ -1,0 +1,43 @@
+{%- comment -%}
+  One money amount, formatted for the page language.
+  Params: amount (integer), lang ("de"|"en"), currency (ISO code, default EUR)
+
+  de: 2.890 €      en: €2,890
+
+  Amounts are integers in trainings.yml, never strings, so that they can be
+  compared and formatted rather than only printed. Liquid has no number
+  formatter, hence the manual thousands group below: integer-divide by 1000,
+  zero-pad the remainder back to three digits. Good to 999.999, which is four
+  times the most expensive thing arc42 has ever sold.
+
+  Every variable is m_-prefixed. Jekyll includes SHARE the caller's scope, and
+  `assign` cannot shadow a caller's for-loop item variable, so a bare name
+  here silently reads the caller's value instead of ours. That is not
+  hypothetical: this include family shipped with a bare `c`, and rendered
+  empty when api/trainings.json called it from inside a for-loop whose item
+  was also named c, while working fine everywhere else.
+
+  (And do not write a literal Liquid tag inside a comment block to illustrate
+  the point. Liquid still parses tags in there, and an unclosed one is a build
+  error. That cost a debugging round too.)
+{%- endcomment -%}
+{%- assign m_amount = include.amount | plus: 0 -%}
+{%- assign m_th = m_amount | divided_by: 1000 -%}
+{%- assign m_rest = m_amount | modulo: 1000 -%}
+{%- if m_th > 0 -%}
+  {%- capture m_pad -%}{{ m_rest }}{%- endcapture -%}
+  {%- assign m_pad = m_pad | prepend: "00" | slice: -3, 3 -%}
+  {%- if include.lang == "de" -%}
+    {%- capture m_num -%}{{ m_th }}.{{ m_pad }}{%- endcapture -%}
+  {%- else -%}
+    {%- capture m_num -%}{{ m_th }},{{ m_pad }}{%- endcapture -%}
+  {%- endif -%}
+{%- else -%}
+  {%- capture m_num -%}{{ m_amount }}{%- endcapture -%}
+{%- endif -%}
+{%- assign m_cur = include.currency | default: "EUR" -%}
+{%- if m_cur == "EUR" -%}
+  {%- if include.lang == "de" -%}{{ m_num }} €{%- else -%}€{{ m_num }}{%- endif -%}
+{%- else -%}
+  {{- m_num }} {{ m_cur -}}
+{%- endif -%}

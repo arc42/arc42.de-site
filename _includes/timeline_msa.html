@@ -1,33 +1,39 @@
+{%- comment -%}
+  Card copy is German (page language). pricing, credits and few_seats arrive as
+  finished German strings from timeline_auto.html; delivery_lang only drives
+  timeline-language-note.html.
+{%- endcomment -%}
 {% assign position_class = include.position | default: "right" %}
 {% assign anchor_id = include.anchor_id | default: "msa" %}
 {% assign sold_out = include.sold_out | default: false %}
 {% assign trainer = include.trainer | default: "Peter Hruschka und Gernot Starke" %}
 
-<div class="container {{ position_class }}" id="{{ anchor_id }}"> 
+<div class="container {{ position_class }}" id="{{ anchor_id }}">
     <div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>
         {{ include.date }}, {{ include.location }}<br>
-        <strong class="blue-head">Mastering Software Architectures<br> 
+        {% include timeline-language-note.html delivery_lang=include.delivery_lang %}
+        <strong class="blue-head">Mastering Software Architectures<br>
         (iSAQB CPSA-Foundation)
-        </strong> 
+        </strong>
         <p>
             Mit dem "dynamischen Duo" {{ trainer }}.
             Die perfekte Vorbereitung auf die iSAQB Foundation Zertifizierung.
         </p>
-        
+
         {% if sold_out %}
             <p style="color:red;">(Ausgebucht, nur noch Warteliste)</p>
         {% endif %}
-        
+
         {% if include.few_seats %}
             <p style="font-weight: bold; color: #ff6600;">{{ include.few_seats }}</p>
         {% endif %}
-        
+
         {% if include.pricing %}
             <p class="date-small">
                 {{ include.pricing }}
             </p>
         {% endif %}
-        
+
         <a href="/info-msa/"><button class="button buttonMSA">Mehr Info</button></a>
         {% unless sold_out %}
             <a href="/anmeldung/?kurs={{ anchor_id }}"><button class="button buttonAnmeldung">Anmeldung</button></a>

@@ -96,14 +96,21 @@ excerpt: "Looking forward meeting you!"
           {%- capture wherelabel -%}
             {%- if d.format == "online" -%}Online{%- else -%}{{ d.city }}{%- endif -%}
           {%- endcapture -%}
+          {%- comment -%} Credits and price are built from the structured feed fields in the
+              page language (see price-label.html); the feed's legacy pricing/credits
+              strings are fixed German and must not be used. {%- endcomment -%}
+          {%- capture creditlabel -%}{% include credits-label.html credits=course.credit_points lang="en" %}{%- endcapture -%}
+          {%- assign creditlabel = creditlabel | strip -%}
+          {%- capture pricelabel -%}{% include price-label.html price=d.price lang="en" %}{%- endcapture -%}
+          {%- assign pricelabel = pricelabel | strip -%}
       <option value="{{ d.code }}"
               data-id="{{ d.id }}"
               data-title="{{ course.title | default: course.short_title | escape }}"
               data-date="{{ datelabel | strip | escape }}"
               data-where="{{ wherelabel | strip | escape }}"
               {% if trainerlist %}data-trainers="{{ trainerlist | join: ' and ' | escape }}"{% endif %}
-              {% if course.credits %}data-credits="{{ course.credits | escape }}"{% endif %}
-              {% if d.pricing %}data-price="{{ d.pricing | escape }}"{% endif %}>{{ datelabel | strip }} · {{ course.short_title }}{% if d.format == "online" %}, online{% elsif d.city %}, {{ d.city }}{% endif %}</option>
+              {% if creditlabel != "" %}data-credits="{{ creditlabel | escape }}"{% endif %}
+              {% if pricelabel != "" %}data-price="{{ pricelabel | escape }}"{% endif %}>{{ datelabel | strip }} · {{ course.short_title }}{% if d.format == "online" %}, online{% elsif d.city %}, {{ d.city }}{% endif %}</option>
         {%- endfor -%}
       {%- endfor -%}
       <option value="other">Another date / in-house enquiry</option>

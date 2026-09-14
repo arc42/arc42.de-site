@@ -1,3 +1,9 @@
+{%- comment -%}
+  Card copy is German (page language). pricing, credits and few_seats arrive as
+  finished German strings from timeline_auto.html; delivery_lang only drives
+  timeline-language-note.html. No hardcoded fallback price: an unpriced date
+  shows no price row rather than a stale literal.
+{%- endcomment -%}
 {% assign position_class = include.position | default: "right" %}
 {% assign anchor_id = include.anchor_id | default: "adoc" %}
 {% assign trainer = include.trainer | default: "Peter Hruschka und Gernot Starke" %}
@@ -6,6 +12,7 @@
 <div class="container {{ position_class }}" id="{{ anchor_id }}">
     <div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>
         {{ include.date }}, {{ include.location }}<br>
+        {% include timeline-language-note.html delivery_lang=include.delivery_lang %}
         <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
         <p>Effektive und sparsame Architekturdokumentation (mit Schwerpunkt arc42)</p>
         <p>Trainer: {{ trainer }}.</p>
@@ -17,16 +24,12 @@
         {% endif %}
         {% if include.credits %}
         <p class="date-small">
-            CPSA-Credits: {{ include.credits }}
+            iSAQB-Punkte: {{ include.credits }}
         </p>
         {% endif %}
         {% if include.pricing %}
         <p class="date-small">
             {{ include.pricing }}
-        </p>
-        {% else %}
-        <p class="date-small">
-            Normalpreis: € 2200,- (für unsere Alumni € 2050.-)
         </p>
         {% endif %}
         <a href="/info-adoc/"><button class="button buttonAdoc">Mehr Info</button></a>

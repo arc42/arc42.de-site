@@ -1,0 +1,77 @@
+{%- comment -%}
+  The price sentence for one date, in the page language.
+  Params: price (a dates[].price object), lang ("de"|"en")
+
+  de: Frühbucherpreis bei Anmeldung bis 2. November 2026: 2.690 €, Normalpreis: 2.890 €
+  en: Early bird until November 2, 2026: €2,690, regular: €2,890
+  ...and after the deadline, in both languages, just the regular price:
+  de: 2.890 €                        en: €2,890
+  ...plus an alumni clause when the date has one:
+  de: Normalpreis: 2.200 € (für unsere Alumni 2.050 €)
+  en: Regular price: €2,200 (€2,050 for our alumni)
+
+  WHY THIS IS AN INCLUDE AND NOT A STRING IN trainings.yml:
+
+  It used to be a hand-written German sentence per date, which failed twice
+  over. It appeared verbatim on the English pages, and the deadline inside it
+  was invisible to every machine, so the site went on advertising an expired
+  early-bird price (the December 2026 MSA quoted "bis 8. August 2026" well
+  into September). A price that expires is the same class of problem as a date
+  that passes, and this site already solves that one: the timeline filters on
+  `d.end < today` at build time and .github/workflows/weekly-refresh.yml
+  rebuilds on a timer so that the mere passing of time becomes a content
+  change. Comparing early_bird.until the same way puts the price under the
+  same guarantee, with nothing new to operate and nobody to remind.
+
+  Worst case is therefore one Monday of staleness, not one quarter. An expired
+  early_bird block does NOT need deleting from trainings.yml; it simply stops
+  being rendered.
+
+  pl_-prefixed variables: see the scope note in money.html.
+{%- endcomment -%}
+{%- assign pl_price = include.price -%}
+{%- if pl_price.amount -%}
+  {%- assign pl_today = 'now' | date: '%Y-%m-%d' -%}
+  {%- capture pl_regular -%}{% include money.html amount=pl_price.amount currency=pl_price.currency lang=include.lang %}{%- endcapture -%}
+  {%- assign pl_eb = nil -%}
+  {%- if pl_price.early_bird.until >= pl_today -%}{%- assign pl_eb = pl_price.early_bird -%}{%- endif -%}
+  {%- if pl_price.alumni -%}
+    {%- capture pl_alumni -%}{% include money.html amount=pl_price.alumni currency=pl_price.currency lang=include.lang %}{%- endcapture -%}
+    {%- if include.lang == "de" -%}
+      {%- capture pl_alumni_clause %} (für unsere Alumni {{ pl_alumni }}){%- endcapture -%}
+    {%- else -%}
+      {%- capture pl_alumni_clause %} ({{ pl_alumni }} for our alumni){%- endcapture -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign pl_alumni_clause = "" -%}
+  {%- endif -%}
+  {%- if pl_eb -%}
+    {%- capture pl_early -%}{% include money.html amount=pl_eb.amount currency=pl_price.currency lang=include.lang %}{%- endcapture -%}
+    {%- comment -%}
+      training-date-label.html formats a start/end range; the deadline is a
+      single day, so it goes in through that include's start/end parameters
+      and reuses its German month names rather than duplicating them.
+    {%- endcomment -%}
+    {%- assign pl_until = pl_eb.until -%}
+    {%- capture pl_deadline -%}{% include training-date-label.html start=pl_until end=pl_until lang=include.lang style="long" %}{%- endcapture -%}
+    {%- assign pl_deadline = pl_deadline | strip -%}
+    {%- if include.lang == "de" -%}
+      {{- "Frühbucherpreis bei Anmeldung bis " }}{{ pl_deadline }}: {{ pl_early }}, Normalpreis: {{ pl_regular }}{{ pl_alumni_clause -}}
+    {%- else -%}
+      {{- "Early bird until " }}{{ pl_deadline }}: {{ pl_early }}, regular: {{ pl_regular }}{{ pl_alumni_clause -}}
+    {%- endif -%}
+  {%- elsif pl_price.alumni -%}
+    {%- comment -%}
+      The "Normalpreis:" / "Regular price:" prefix earns its place only when
+      there is a second number to contrast it with. A lone amount needs no
+      label.
+    {%- endcomment -%}
+    {%- if include.lang == "de" -%}
+      {{- "Normalpreis: " }}{{ pl_regular }}{{ pl_alumni_clause -}}
+    {%- else -%}
+      {{- "Regular price: " }}{{ pl_regular }}{{ pl_alumni_clause -}}
+    {%- endif -%}
+  {%- else -%}
+    {{- pl_regular -}}
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,46 @@
+{%- comment -%}
+  iSAQB credit points for one course, in the page language.
+  Params: credits (a courses[].credit_points object), lang ("de"|"en")
+
+  de: 20 methodische und 10 technische
+  en: 20 methodology and 10 technical
+
+  The noun is deliberately NOT part of the value. Every call site already
+  labels the row ("iSAQB-Punkte" on a card, "iSAQB credits" in the booking
+  summary), and repeating it produced "iSAQB credits: 20 ... credits".
+
+  This replaced a hand-written German string on the course, which appeared
+  untranslated on every English page. Counts are integers so they stay
+  countable; the three keys are iSAQB's own categories (Methodik, Technik,
+  Kommunikation). A course with no credit_points omits the key entirely and
+  every call site hides its row.
+
+  cl_-prefixed variables: see the scope note in money.html.
+{%- endcomment -%}
+{%- assign cl_credits = include.credits -%}
+{%- if cl_credits.methodical or cl_credits.technical or cl_credits.communication -%}
+  {%- assign cl_parts = "" | split: "" -%}
+  {%- if cl_credits.methodical -%}
+    {%- capture cl_part -%}{{ cl_credits.methodical }} {% if include.lang == "de" %}methodische{% else %}methodology{% endif %}{%- endcapture -%}
+    {%- assign cl_arr = cl_part | split: "~~" -%}
+    {%- assign cl_parts = cl_parts | concat: cl_arr -%}
+  {%- endif -%}
+  {%- if cl_credits.technical -%}
+    {%- capture cl_part -%}{{ cl_credits.technical }} {% if include.lang == "de" %}technische{% else %}technical{% endif %}{%- endcapture -%}
+    {%- assign cl_arr = cl_part | split: "~~" -%}
+    {%- assign cl_parts = cl_parts | concat: cl_arr -%}
+  {%- endif -%}
+  {%- if cl_credits.communication -%}
+    {%- capture cl_part -%}{{ cl_credits.communication }} {% if include.lang == "de" %}kommunikative{% else %}communication{% endif %}{%- endcapture -%}
+    {%- assign cl_arr = cl_part | split: "~~" -%}
+    {%- assign cl_parts = cl_parts | concat: cl_arr -%}
+  {%- endif -%}
+  {%- assign cl_n = cl_parts | size -%}
+  {%- if cl_n == 1 -%}
+    {{- cl_parts[0] -}}
+  {%- elsif cl_n > 1 -%}
+    {%- assign cl_last = cl_n | minus: 1 -%}
+    {%- assign cl_head = cl_parts | slice: 0, cl_last -%}
+    {{- cl_head | join: ", " }} {% if include.lang == "de" %}und{% else %}and{% endif %} {{ cl_parts[cl_last] -}}
+  {%- endif -%}
+{%- endif -%}

@@ -77,6 +77,18 @@ test-theme: build ## Assert the generated _site uses local theme files and clean
 	               echo "Unexpected sitemap page URL without trailing slash"; \
 	               exit 1; \
 	           fi; \
+	           if grep -E "timeline_course: unknown type" _site/termine/index.html; then \
+	               echo "Timeline date without a card template; add timeline_<type>.html (see CLAUDE.md)"; \
+	               exit 1; \
+	           fi; \
+	           if grep -E "Early bird|Regular price|Delegate Fee|methodology|only few seats" _site/termine/index.html; then \
+	               echo "English label text on the German timeline; build labels via price-label/credits-label with page_lang"; \
+	               exit 1; \
+	           fi; \
+	           if grep -E "Normalpreis|Frühbucherpreis|methodische|kommunikative" _site/anmeldungEN/index.html; then \
+	               echo "German label text on the English registration form; build labels with lang=en"; \
+	               exit 1; \
+	           fi; \
 	           test -f _site/index.html; \
 	           test -f _site/imprint/index.html; \
 	           test -f _site/overview/index.html; \
