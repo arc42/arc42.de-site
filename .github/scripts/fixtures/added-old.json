@@ -26,6 +26,31 @@
           "url": "https://www.arc42.de/termine#req4arc-sep-2026"
         }
       ]
+    },
+    {
+      "id": "adoc",
+      "short_title": "ADOC",
+      "title": "ADOC training",
+      "dates": [
+        {
+          "code": "27-03 ADOC",
+          "id": "adoc-mar-2027",
+          "start": "2027-03-08",
+          "end": "2027-03-09",
+          "language": "de",
+          "format": "online",
+          "status": "open",
+          "price": {
+            "amount": 1200,
+            "currency": "EUR"
+          },
+          "pricing": "1.200 €",
+          "trainers": [
+            "Ralf D. Müller"
+          ],
+          "url": "https://www.arc42.de/termine#adoc-mar-2027"
+        }
+      ]
     }
   ]
 }
