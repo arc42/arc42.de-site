@@ -1,3 +1,8 @@
+{%- comment -%}
+  Card copy is German (page language); the delivery language shows only as
+  timeline-language-note.html. pricing, credits and few_seats arrive as
+  finished German strings from timeline_auto.html. No hardcoded fallback price.
+{%- endcomment -%}
 {% assign position_class = include.position | default: "right" %}
 {% assign anchor_id = include.anchor_id | default: "adoc-online" %}
 {% assign sold_out = include.sold_out | default: false %}
@@ -6,12 +11,13 @@
 <div class="container {{ position_class }}" id="{{ anchor_id }}">
     <div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>
         {{ include.date }} (online)<br>
+        {% include timeline-language-note.html delivery_lang=include.delivery_lang online=true %}
         <strong class="blue-head">ADOC <br>(CPSA-Advanced)</strong><br>
         <p>Effektive und sparsame Architekturdokumentation (mit Schwerpunkt arc42)</p>
         <p>Trainer: {{ trainer }}.</p>
         {% if include.credits %}
         <p class="date-small">
-            CPSA-Credits: {{ include.credits }}
+            iSAQB-Punkte: {{ include.credits }}
         </p>
         {% endif %}
 
@@ -26,10 +32,6 @@
         {% if include.pricing %}
         <p class="date-small">
             {{ include.pricing }}
-        </p>
-        {% else %}
-        <p class="date-small">
-            Normalpreis: € 1500
         </p>
         {% endif %}
 

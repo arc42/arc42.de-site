@@ -10,6 +10,14 @@ p.date-small {
     font-size-adjust: 0.4;
 }
 
+/* The language a training is HELD in (timeline-language-note.html): a fact
+   about the course, not the page, so it sits quietly under the date line. */
+p.training-language-note {
+    margin: 0;
+    font-size: 0.85em;
+    font-style: italic;
+}
+
 .supported-by-innoq {
     margin-bottom: 8px;
     width: 110px;

@@ -11,6 +11,14 @@ frontmatter behaviour (course-default trainers stay baked into the templates).
 _includes/course-bridge.html carries a near-copy of this key-sort for its
 next-date lookup, additionally skipping waitlist/full — keep both in sync.
 {% endcomment %}
+{%- comment -%}
+page_lang is the PRESENTATION language of the embedding page (default "de";
+arc42.de has only German pages). Date label, price, credits and few-seats text
+follow it; the language a course is HELD in travels separately as delivery_lang
+and only shows as a small note on the card (timeline-language-note.html).
+{%- endcomment -%}
+{%- assign page_lang = include.page_lang | default: "de" -%}
+{%- if page_lang == "de" -%}{%- assign trainer_join = " und " -%}{%- else -%}{%- assign trainer_join = " and " -%}{%- endif -%}
 {%- assign crs = site.data.trainings.courses -%}
 {%- assign today = 'now' | date: '%Y-%m-%d' -%}
 {%- assign keys = "" | split: "" -%}
@@ -24,6 +32,7 @@ next-date lookup, additionally skipping waitlist/full — keep both in sync.
   {%- endfor -%}
 {%- endfor -%}
 {%- assign sorted_keys = keys | sort -%}
+{%- assign known_types = "msa,msa_online,req4arc,req4arc_online,improve,improve_online,adoc,adoc_online" | split: "," -%}
 {%- assign shown = 0 -%}
 {%- for key in sorted_keys -%}
   {%- assign parts = key | split: "|" -%}
@@ -31,16 +40,44 @@ next-date lookup, additionally skipping waitlist/full — keep both in sync.
   {%- assign di = parts[2] | plus: 0 -%}
   {%- assign c = crs[ci] -%}
   {%- assign d = c.dates[di] -%}
+  {%- assign type = c.id -%}
+  {%- if d.format == "online" -%}{%- assign type = type | append: "_online" -%}{%- endif -%}
+  {%- comment -%} Only count types that timeline_course.html can render; an unknown type emits just an HTML comment and must not flip the left/right alternation. Keep in sync with the case/when list there. {%- endcomment -%}
+  {%- unless known_types contains type -%}
+    {%- include timeline_course.html type=type anchor_id=d.id -%}
+    {%- continue -%}
+  {%- endunless -%}
   {%- assign shown = shown | plus: 1 -%}
   {%- assign remainder = shown | modulo: 2 -%}
   {%- if remainder == 0 -%}{%- assign position = "left" -%}{%- else -%}{%- assign position = "right" -%}{%- endif -%}
-  {%- assign type = c.id -%}
-  {%- if d.format == "online" -%}{%- assign type = type | append: "_online" -%}{%- endif -%}
-  {%- capture datelabel -%}{%- include training-date-label.html date=d lang="de" style="long" -%}{%- endcapture -%}
+  {%- capture datelabel -%}{%- include training-date-label.html date=d lang=page_lang style="long" -%}{%- endcapture -%}
   {%- assign sold_out = false -%}
   {%- if d.status == "waitlist" or d.status == "full" -%}{%- assign sold_out = true -%}{%- endif -%}
   {%- assign trainerline = nil -%}
-  {%- if d.trainers -%}{%- assign trainerline = d.trainers | join: " und " -%}{%- endif -%}
+  {%- if d.trainers -%}{%- assign trainerline = d.trainers | join: trainer_join -%}{%- endif -%}
+  {%- comment -%}
+    price, credits and few_seats are rendered HERE, once, from the structured
+    feed fields (price, credit_points, seats_limited) in the page language, and
+    handed down as finished strings - ported from trainings.arc42.org-site.
+    The feed's legacy strings (pricing, credits, few_seats) are deliberately NOT
+    used: they are fixed German (pricing/credits) or fixed English (few_seats).
+    Empty-string guard: Liquid treats "" as truthy, so an unpriced date would
+    otherwise render an empty row on the card.
+  {%- endcomment -%}
+  {%- capture pricing -%}{% include price-label.html price=d.price lang=page_lang %}{%- endcapture -%}
+  {%- assign pricing = pricing | strip -%}
+  {%- if pricing == "" -%}{%- assign pricing = nil -%}{%- endif -%}
+  {%- capture creditline -%}{% include credits-label.html credits=c.credit_points lang=page_lang %}{%- endcapture -%}
+  {%- assign creditline = creditline | strip -%}
+  {%- if creditline == "" -%}{%- assign creditline = nil -%}{%- endif -%}
+  {%- assign few_seats = nil -%}
+  {%- if d.seats_limited -%}
+    {%- if page_lang == "de" -%}
+      {%- assign few_seats = "Nur noch wenige Plätze verfügbar" -%}
+    {%- else -%}
+      {%- assign few_seats = "Only a few seats available" -%}
+    {%- endif -%}
+  {%- endif -%}
   {% include timeline_course.html
      type=type
      position=position
@@ -48,9 +85,10 @@ next-date lookup, additionally skipping waitlist/full — keep both in sync.
      location=d.city
      anchor_id=d.id
      sold_out=sold_out
-     few_seats=d.few_seats
-     pricing=d.pricing
+     few_seats=few_seats
+     pricing=pricing
      trainer=trainerline
-     credits=c.credits %}
+     credits=creditline
+     delivery_lang=d.language %}
 {%- endfor -%}
 {% if shown == 0 %}<p style="text-align:center">Derzeit sind keine Termine geplant. Schauen Sie bald wieder vorbei, oder <a href="mailto:info@arc42.de">kontaktieren Sie uns</a>.</p>{% endif %}

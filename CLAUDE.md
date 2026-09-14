@@ -105,7 +105,26 @@ chronologisch über alle Kurse hinweg, alterniert links/rechts, reicht alle Feld
 → `_includes/timeline_<type>.html` (konkretes Template, z. B. `timeline_improve.html`, `timeline_msa.html`).
 
 `type` wird aus `course.id` gebildet, plus Suffix `_online` wenn `date.format == "online"`.
-Kurstypen: `msa`, `msa_online`, `req4arc`, `improve`, `adoc`, `adoc_online`.
+Kurstypen: `msa`, `msa_online`, `req4arc`, `req4arc_online`, `improve`, `improve_online`,
+`adoc`, `adoc_online`. Neuer Typ ⇒ Template `timeline_<type>.html` anlegen, im `case` von
+`timeline_course.html` eintragen **und** in `known_types` in `timeline_auto.html` — sonst
+erscheint der Termin nur als HTML-Kommentar (und zählt nicht für die links/rechts-Abwechslung).
+
+### Sprache von Preis, Punkten, Datum (DE/EN)
+
+Portiert aus `trainings.arc42.org-site`: **Kartentexte folgen der Seitensprache**
+(`page_lang`, auf arc42.de immer `de`), nicht der Kurssprache. Ein auf Englisch
+durchgeführter Kurs bekommt nur den kleinen Hinweis aus
+`_includes/timeline-language-note.html` („Durchführung auf Englisch", online plus Zeitzone).
+
+Preis-, Punkte- und „wenige Plätze"-Texte werden **aus den strukturierten Feldern** des Feeds
+gebaut — `price`, `credit_points`, `seats_limited` — über `_includes/price-label.html`,
+`credits-label.html` und `money.html` (1:1 aus dem trainings-Repo kopiert, ebenso
+`training-date-label.html`; Änderungen dort hierher nachziehen). Die Legacy-Strings des Feeds
+`pricing`/`credits` (fest deutsch) und `few_seats` (fest englisch) **nicht verwenden** —
+`make test-theme` prüft auf englische Labeltexte in `/termine/` und deutsche in `/anmeldungEN/`.
+Keine Preise mehr hart in `timeline_<type>.html` schreiben. Konsumenten: `timeline_auto.html`,
+`_pages/anmeldung.md` (`lang="de"`), `_pages/anmeldungEN.md` (`lang="en"`), `course-cards.html`.
 
 Weiterer Konsument von `site.data.trainings`: `_includes/course-bridge.html`, das
 Conversion-Band am Ende einer Inhaltsseite, je einmal eingebunden auf

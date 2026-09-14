@@ -1,0 +1,10 @@
+{%- comment -%}
+  Small per-card note for a course HELD in English, on arc42.de's German pages.
+  Params: delivery_lang ("de"|"en", the date's language), online (true|false)
+  Card copy follows the PAGE language (German here); the language the course is
+  delivered in is only this note, as on trainings.arc42.org. The time zone is
+  only worth stating for online courses.
+{%- endcomment -%}
+{%- if include.delivery_lang == "en" -%}
+<p class="training-language-note">Durchführung auf Englisch{% if include.online %} · Zeitzone: MEZ/MESZ (Berlin){% endif %}</p>
+{%- endif -%}

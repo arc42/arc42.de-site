@@ -1,11 +1,13 @@
 {%- comment -%}
-  Card copy is German (page language), also for courses held in English: the
-  delivery language shows only as timeline-language-note.html. pricing,
-  credits and few_seats arrive as finished German strings from
-  timeline_auto.html. An English-held run links to the English course page.
+  Online twin of timeline_improve.html, modelled on timeline_msa_online.html.
+  timeline_auto.html derives the type "improve_online" for any IMPROVE date with
+  format: online; without this file the date rendered only as an HTML comment.
+  Card copy is German (page language); the delivery language shows only as
+  timeline-language-note.html. Trainer is named per date.
+  Mirrors trainings.arc42.org-site/_includes/timeline_improve_online.html.
 {%- endcomment -%}
 {% assign position_class = include.position | default: "right" %}
-{% assign anchor_id = include.anchor_id | default: "msa-online" %}
+{% assign anchor_id = include.anchor_id | default: "improve-online" %}
 {% assign sold_out = include.sold_out | default: false %}
 {% assign trainer = include.trainer | default: "Wolfgang Reimesch" %}
 
@@ -13,8 +15,8 @@
     <div class="content"{% if sold_out %} style="color:darkgrey"{% endif %}>
         {{ include.date }} (online)<br>
         {% include timeline-language-note.html delivery_lang=include.delivery_lang online=true %}
-        <strong class="blue-head">Mastering Software Architectures<br>
-        (iSAQB CPSA-Foundation)<br></strong>
+        <strong class="blue-head">IMPROVE<br>
+        (CPSA-Advanced)<br></strong>
         Bitte beachten Sie unsere <a href="/terms/">Allgemeinen Geschäftsbedingungen.</a>
 
         {% if sold_out %}
@@ -26,17 +28,18 @@
         {% endif %}
 
         <p>Trainer: {{ trainer }}.</p>
+        {% if include.credits %}
+        <p class="date-small">
+            iSAQB-Punkte: {{ include.credits }}
+        </p>
+        {% endif %}
         {% if include.pricing %}
         <p class="date-small">
             {{ include.pricing }}
         </p>
         {% endif %}
 
-        {% if include.delivery_lang == "en" %}
-        <a href="https://trainings.arc42.org/courses/msa/" hreflang="en"><button class="button buttonMSA">Mehr Info (englisch)</button></a>
-        {% else %}
-        <a href="/info-msa/"><button class="button buttonMSA">Mehr Info</button></a>
-        {% endif %}
+        <a href="/info-improve/"><button class="button buttonImprove">Mehr Info</button></a>
         {% unless sold_out %}
             <a href="/anmeldung/?kurs={{ anchor_id }}"><button class="button buttonAnmeldung">Anmeldung</button></a>
         {% endunless %}

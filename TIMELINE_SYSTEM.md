@@ -5,11 +5,13 @@ This branch introduces a new modular system for managing course timelines in `te
 ## Features
 
 ### 1. Individual Course Type Includes
-- `_includes/timeline_msa.html` - MSA courses (German, in-person)
-- `_includes/timeline_msa_online.html` - MSA online courses (English)
-- `_includes/timeline_req4arc.html` - REQ4ARC courses
-- `_includes/timeline_improve.html` - IMPROVE courses
-- `_includes/timeline_adoc.html` - ADOC courses
+- `_includes/timeline_msa.html` / `timeline_msa_online.html` - MSA courses
+- `_includes/timeline_req4arc.html` / `timeline_req4arc_online.html` - REQ4ARC courses
+- `_includes/timeline_improve.html` / `timeline_improve_online.html` - IMPROVE courses
+- `_includes/timeline_adoc.html` / `timeline_adoc_online.html` - ADOC courses
+
+All card copy is German (the page language). A course held in English only gets
+the note from `_includes/timeline-language-note.html`.
 
 ### 2. Automatic Anchor Links
 Each course gets a unique `anchor_id` that can be linked to from other pages:
@@ -32,6 +34,14 @@ every course, alternates left/right position, derives `type` from `course.id`
 `_includes/training-date-label.html`, and passes a `trainer` override only when a
 date explicitly sets one (course-default trainers stay baked into the
 `timeline_<type>.html` templates, unchanged from before).
+
+Price, iSAQB credits and the few-seats note are built in `timeline_auto.html` in
+the page language (`page_lang`, default `de`) from the structured feed fields
+`price`, `credit_points` and `seats_limited`, via `_includes/price-label.html`,
+`credits-label.html` and `money.html` (ported from trainings.arc42.org-site),
+and handed to the cards as finished strings. The feed's legacy strings
+`pricing`/`credits`/`few_seats` are not used. Only types listed in `known_types`
+count for the left/right alternation.
 
 Usage in a page: `{% include timeline_auto.html %}` (no parameters — see
 `_pages/termine.md`).
@@ -56,7 +66,7 @@ Use individual includes with explicit positioning:
 ## Parameters
 
 ### Common Parameters
-- `type`: Course type (msa, msa_online, req4arc, improve, adoc)
+- `type`: Course type (msa, msa_online, req4arc, req4arc_online, improve, improve_online, adoc, adoc_online)
 - `date`: Course date string
 - `location`: Course location (not needed for online courses)
 - `anchor_id`: Unique anchor for deep linking
@@ -64,7 +74,10 @@ Use individual includes with explicit positioning:
 
 ### Optional Parameters
 - `sold_out`: true/false - Shows "Ausgebucht" message and grays out content
-- `pricing`: Custom pricing text (overrides default pricing)
+- `pricing`: Price sentence in the page language (no hardcoded fallback price)
+- `credits`: iSAQB credit points in the page language, without the noun
+- `few_seats`: Limited-availability text
+- `delivery_lang`: Language the course is held in (`de`|`en`); only drives the language note
 
 ## Benefits
 
