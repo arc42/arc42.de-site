@@ -42,9 +42,14 @@ main:
     cta_mobile: true
 
 # the one flagged action in the band
+#
+# Points at trainings.arc42.org: registrations are handled there now, arc42.de
+# no longer carries a form of its own. `via` tells the notification email the
+# booking started here. relative_url leaves an absolute URL untouched, so the
+# masthead and the drawer both render it as written.
 cta:
   title: "Anmeldung"
-  url: /anmeldung/
+  url: https://trainings.arc42.org/anmeldung/?via=arc42.de
 
 # "Mehr" drawer — references the groups below, never duplicates them
 drawer:

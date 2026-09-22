@@ -32,7 +32,7 @@ template_training_news:
     **Mastering Software Architectures** Workshop ausgebildet. Praxisrelevant, effektiv und nachhaltig.
     Bereitet perfekt auf die iSAQB Foundation Zertifizierung vor.<br>
     <br>
-    <a href='/anmeldung/'><button class='button buttonAnmeldung margin_bottom'>Anmeldung</button></a>
+    <a href='https://trainings.arc42.org/anmeldung/?via=arc42.de'><button class='button buttonAnmeldung margin_bottom'>Anmeldung</button></a>
     <a href='/schulungen/'><button class='button buttonGrey margin_bottom'>Schulungen</button></a>
     <a href='/termine/'><button class='button buttonBlue'>Termine</button></a>
     "

@@ -10,12 +10,15 @@
   Optional params (defaults are the German labels):
     flyer            (required) PDF path for the course description
     flyer_label      default "Kursbeschreibung (PDF)"
-    anmeldung_url    default "/anmeldung/"   (EN page passes /anmeldungEN/)
+    anmeldung_url    default the German registration form on
+                     trainings.arc42.org, which is where arc42.de's own form
+                     moved. Pass .../registration/?via=arc42.de for an
+                     English course page.
     anmeldung_label  default "Anmeldung zum Kurs"
     terms_label      default "Unsere AGB"
 {%- endcomment -%}
 <p class="course-actions">
-  <a class="btn btn--arc42-amber" href="{{ include.anmeldung_url | default: "/anmeldung/" }}">{{ include.anmeldung_label | default: "Anmeldung zum Kurs" }}</a>
+  <a class="btn btn--arc42-amber" href="{{ include.anmeldung_url | default: "https://trainings.arc42.org/anmeldung/?via=arc42.de" }}">{{ include.anmeldung_label | default: "Anmeldung zum Kurs" }}</a>
   <a class="btn btn--arc42-outline" href="{{ include.flyer }}" target="_blank" rel="noopener noreferrer nofollow">{{ include.flyer_label | default: "Kursbeschreibung (PDF)" }}</a>
   <a class="course-actions__terms" href="/terms/">{{ include.terms_label | default: "Unsere AGB" }}</a>
 </p>
