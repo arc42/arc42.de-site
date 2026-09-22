@@ -39,7 +39,7 @@ Wir fokussieren dabei auf den architekturrelevanten Themen – beispielsweise de
 ### und nun...
 
 <p class="course-actions">
-  <a class="btn btn--arc42-amber" href="/anmeldung/">Anmeldung zum Kurs</a>
+  <a class="btn btn--arc42-amber" href="https://trainings.arc42.org/anmeldung/?via=arc42.de">Anmeldung zum Kurs</a>
   <a class="btn btn--arc42-outline" href="/termine/">Termine ansehen</a>
   <a class="course-actions__terms" href="/schulungen/">Alle Schulungen im Überblick</a>
 </p>

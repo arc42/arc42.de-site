@@ -86,4 +86,4 @@ Dieses breite Erfahrungsspektrum bietet Teilnehmenden die perfekte Möglichkeit,
 
 </div>
 
-{% include course-bridge.html variant="card" title="Der nächste Schritt: Termin wählen" text="Offene Schulungen in kleiner Gruppe, mit iSAQB-Zertifizierung. Abmeldung bis 21 Tage vor Kursbeginn kostenfrei." secondary_url="/anmeldung/" secondary_label="Zur Anmeldung" %}
+{% include course-bridge.html variant="card" title="Der nächste Schritt: Termin wählen" text="Offene Schulungen in kleiner Gruppe, mit iSAQB-Zertifizierung. Abmeldung bis 21 Tage vor Kursbeginn kostenfrei." secondary_url="https://trainings.arc42.org/anmeldung/?via=arc42.de" secondary_label="Zur Anmeldung" %}
