@@ -106,10 +106,13 @@ test-theme: build ## Assert the generated _site uses local theme files and clean
 	@echo ">> test-theme OK"
 
 clean: ## Remove generated _site AND the Docker cache volumes (a true reset)
-	rm -rf _site .sass-cache .jekyll-cache .jekyll-metadata
 	@# .jekyll-cache/.sass-cache live in named Docker volumes, not on the host,
-	@# so a host rm alone leaves them stale — wipe the volumes too.
+	@# so a host rm alone leaves them stale — wipe the volumes too. This has to
+	@# come FIRST: while the dev container runs it holds those mount points, the
+	@# rm below fails with "Permission denied", and make aborts before ever
+	@# reaching the line that would have released them.
 	-docker compose down -v --remove-orphans
+	rm -rf _site .sass-cache .jekyll-cache .jekyll-metadata
 
 install: build ## Install/refresh gems into the dev image after editing the Gemfile
 	docker compose run --rm jekyll bundle install
