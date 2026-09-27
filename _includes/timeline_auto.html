@@ -51,8 +51,33 @@ and only shows as a small note on the card (timeline-language-note.html).
   {%- assign remainder = shown | modulo: 2 -%}
   {%- if remainder == 0 -%}{%- assign position = "left" -%}{%- else -%}{%- assign position = "right" -%}{%- endif -%}
   {%- capture datelabel -%}{%- include training-date-label.html date=d lang=page_lang style="long" -%}{%- endcapture -%}
+  {%- comment -%}
+    waitlist and full both grey the card (sold_out), but only full hides the
+    Anmeldung button. waitlist is a notice, not a stop: people register
+    through the same form, and the back office sorts out any overflow. The
+    wording is decided HERE, in the page language, like price and few_seats
+    below. It is deliberately not in the feed: other consumers (docs, faq, ...)
+    show no status text at all.
+  {%- endcomment -%}
   {%- assign sold_out = false -%}
-  {%- if d.status == "waitlist" or d.status == "full" -%}{%- assign sold_out = true -%}{%- endif -%}
+  {%- assign ta_hide_register = false -%}
+  {%- assign ta_status_note = nil -%}
+  {%- if d.status == "waitlist" -%}
+    {%- assign sold_out = true -%}
+    {%- if page_lang == "de" -%}
+      {%- assign ta_status_note = "Ausgebucht, Warteliste verfügbar" -%}
+    {%- else -%}
+      {%- assign ta_status_note = "Fully booked, waiting list available" -%}
+    {%- endif -%}
+  {%- elsif d.status == "full" -%}
+    {%- assign sold_out = true -%}
+    {%- assign ta_hide_register = true -%}
+    {%- if page_lang == "de" -%}
+      {%- assign ta_status_note = "Ausgebucht" -%}
+    {%- else -%}
+      {%- assign ta_status_note = "Fully booked" -%}
+    {%- endif -%}
+  {%- endif -%}
   {%- assign trainerline = nil -%}
   {%- if d.trainers -%}{%- assign trainerline = d.trainers | join: trainer_join -%}{%- endif -%}
   {%- comment -%}
@@ -85,6 +110,8 @@ and only shows as a small note on the card (timeline-language-note.html).
      location=d.city
      anchor_id=d.id
      sold_out=sold_out
+     status_note=ta_status_note
+     hide_register=ta_hide_register
      few_seats=few_seats
      pricing=pricing
      trainer=trainerline

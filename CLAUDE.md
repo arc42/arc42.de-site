@@ -146,11 +146,14 @@ Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strin
    `_data/trainings.json` sofort zu aktualisieren.
 3. Timeline und Anmeldeformulare sind generiert und reagieren automatisch:
    `timeline_auto.html` setzt `sold_out=true` für `waitlist`/`full`, wodurch
-   `timeline_<type>.html` den Kurs ausgraut, den Hinweis "(Ausgebucht, nur noch
-   Warteliste)" zeigt und den Anmeldung-Button versteckt. Die Anmeldeformulare
+   `timeline_<type>.html` den Kurs ausgraut. Den Hinweistext (`status_note`)
+   wählt `timeline_auto.html` je Status: `waitlist` → "(Ausgebucht, Warteliste
+   verfügbar)", `full` → "(Ausgebucht)". Nur `full` versteckt den
+   Anmeldung-Button (`hide_register`); `waitlist` ist ein Hinweis, Anmeldungen
+   bleiben möglich, Überbuchung klärt das Backoffice. Die Anmeldeformulare
    (`_pages/anmeldung.md`, `_pages/anmeldungEN.md`) generieren ihre `<select>`-Optionen
-   ebenfalls aus `site.data.trainings` und lassen `waitlist`/`full`-Termine automatisch
-   weg — **keine manuelle Pflege der Select-Liste mehr nötig**. Achtung, dritter
+   ebenfalls aus `site.data.trainings`, führen `waitlist`-Termine mit dem Zusatz
+   „(Warteliste)“ und lassen `full`-Termine automatisch weg — **keine manuelle Pflege der Select-Liste mehr nötig**. Achtung, dritter
    Konsument mit abweichendem Verhalten: `course-bridge.html` überspringt
    `waitlist`/`full`-Termine komplett und springt zum nächsten offenen Termin
    weiter, statt sie wie die Timeline ausgegraut weiter anzuzeigen — das Band auf

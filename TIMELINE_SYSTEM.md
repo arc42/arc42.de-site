@@ -73,7 +73,9 @@ Use individual includes with explicit positioning:
 - `position`: "left" or "right" for timeline positioning (manual approach only)
 
 ### Optional Parameters
-- `sold_out`: true/false - Shows "Ausgebucht" message and grays out content
+- `sold_out`: true/false - Grays out content
+- `hide_register`: true/false - Hides the Anmeldung button (set for `full` only; `waitlist` stays registrable)
+- `status_note`: the sold-out text, chosen per status in `timeline_auto.html` (waitlist: "Ausgebucht, Warteliste verfügbar", full: "Ausgebucht")
 - `pricing`: Price sentence in the page language (no hardcoded fallback price)
 - `credits`: iSAQB credit points in the page language, without the noun
 - `few_seats`: Limited-availability text
