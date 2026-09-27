@@ -43,8 +43,8 @@
 
 {%- comment -%}
   The schema.org Organization logo is NOT the og:image. og:image is the wide
-  sharing card (1527x436 splash); a logo has its own rules — at least 112x112
-  and legible on a purely white background. site.logo therefore points at
+  sharing card (1200x630, images/splash/arc42-sharing-card.jpg); a logo has
+  its own rules — at least 112x112 and legible on a purely white background. site.logo therefore points at
   images/arc42-site-logo.png and only falls back to site.og_image if unset.
 {%- endcomment -%}
 {%- assign site_logo = site.logo | default: site.og_image | absolute_url -%}
