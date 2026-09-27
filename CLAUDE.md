@@ -162,8 +162,10 @@ Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strin
    gesetzt wird.
 
 ### `few_seats`
-Optionaler Text (z. B. "nur noch wenige Plätze"), im Datenfeld `few_seats` in
-`trainings.yml`. Wird orange/fett angezeigt, gleiche Durchreich-Logik wie `sold_out`.
+Kommt aus dem Flag `seats_limited` im Feed; `timeline_auto.html` macht daraus
+"Nur noch wenige Plätze verfügbar" (orange/fett). Nie auf einer ausgegrauten
+Karte (`waitlist`/`full`): dort reicht der Status-Hinweis, beides zusammen
+widerspricht sich.
 
 ## Doku
 Das Timeline-System ist zusätzlich in `TIMELINE_SYSTEM.md` beschrieben.
