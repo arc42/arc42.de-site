@@ -96,7 +96,12 @@ and only shows as a small note on the card (timeline-language-note.html).
   {%- assign creditline = creditline | strip -%}
   {%- if creditline == "" -%}{%- assign creditline = nil -%}{%- endif -%}
   {%- assign few_seats = nil -%}
-  {%- if d.seats_limited -%}
+  {%- comment -%}
+    Never on a greyed card: "Ausgebucht" and "Nur noch wenige Plätze" contradict
+    each other, and the status note already says everything. The admin app
+    warns about that combination, but a warning can be saved anyway.
+  {%- endcomment -%}
+  {%- if d.seats_limited and sold_out == false -%}
     {%- if page_lang == "de" -%}
       {%- assign few_seats = "Nur noch wenige Plätze verfügbar" -%}
     {%- else -%}
