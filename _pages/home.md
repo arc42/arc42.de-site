@@ -10,7 +10,7 @@ header:
   # Link-Vorschau braucht JPEG: LinkedIn und WhatsApp rendern kein WebP.
   # Der Schluessel ist noetig, weil _includes/seo.html overlay_image VOR
   # site.og_image auswertet - ohne ihn ginge das WebP an die Scanner.
-  og_image: /images/splash/arc42-splash-landingpage.jpg
+  og_image: /images/splash/arc42-sharing-card.jpg
   actions: 
     - label: "Übersicht"
       url: /overview/
