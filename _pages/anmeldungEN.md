@@ -88,7 +88,9 @@ excerpt: "Looking forward meeting you!"
       <option value="" disabled selected>Please choose a course and date</option>
       {%- for course in site.data.trainings.courses -%}
         {%- for d in course.dates -%}
-          {%- if d.status != "open" -%}{%- continue -%}{%- endif -%}
+          {%- comment -%} waitlist dates are registrable: the status is a notice for the
+              registrant, the back office handles any overflow. The label says so. {%- endcomment -%}
+          {%- unless d.status == "open" or d.status == "waitlist" -%}{%- continue -%}{%- endunless -%}
           {%- if d.end < today -%}{%- continue -%}{%- endif -%}
           {%- if d.language != "en" -%}{%- continue -%}{%- endif -%}
           {%- capture datelabel %}{% include training-date-label.html date=d lang="en" style="short" %}{% endcapture -%}
@@ -110,7 +112,7 @@ excerpt: "Looking forward meeting you!"
               data-where="{{ wherelabel | strip | escape }}"
               {% if trainerlist %}data-trainers="{{ trainerlist | join: ' and ' | escape }}"{% endif %}
               {% if creditlabel != "" %}data-credits="{{ creditlabel | escape }}"{% endif %}
-              {% if pricelabel != "" %}data-price="{{ pricelabel | escape }}"{% endif %}>{{ datelabel | strip }} · {{ course.short_title }}{% if d.format == "online" %}, online{% elsif d.city %}, {{ d.city }}{% endif %}</option>
+              {% if pricelabel != "" %}data-price="{{ pricelabel | escape }}"{% endif %}>{{ datelabel | strip }} · {{ course.short_title }}{% if d.format == "online" %}, online{% elsif d.city %}, {{ d.city }}{% endif %}{% if d.status == "waitlist" %} (waiting list){% endif %}</option>
         {%- endfor -%}
       {%- endfor -%}
       <option value="other">Another date / in-house enquiry</option>
