@@ -692,3 +692,119 @@
 @media print {
   .firmen-logos { display: none; }
 }
+
+/* ==========================================================================
+   Method page (classes: method-page) — ported from arc42.org-site/assets/css/
+   arc42-org.css ("Method page" blocks). Six-activities diagram lives in
+   _includes/method-activities-diagram.svg (German labels). Used by /method/.
+   ========================================================================== */
+.method-diagram {
+  margin: 2.5rem auto;
+  max-width: 42rem;
+}
+.method-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* the SVG pins font-family="system-ui" as a presentation attribute; any CSS
+     rule outranks it, which is how the diagram labels join the page's type */
+  font-family: var(--arc42-font-sans);
+  /* theme the inline SVG via its custom properties */
+  --ink: var(--arc42-ink-strong);
+  --muted: var(--arc42-slate);
+  --line: var(--arc42-border);
+  --paper: #ffffff;
+  --accent: var(--arc42-primary-hover);
+}
+.method-diagram svg .olap { fill: var(--arc42-amber); opacity: 0.4; } /* amber: the structures/concepts overlap */
+.method-diagram figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--arc42-text-muted);
+  text-align: center;
+}
+
+.method-page .page__content { color: var(--arc42-ink); }
+.method-page .page__content > p,
+.method-page .page__content > ul,
+.method-page .page__content > h2 { max-width: 70ch; }
+.method-page .page__content h2 { color: var(--arc42-ink-strong); }
+
+.method-principles {
+  max-width: 70ch;
+  margin: 2.5rem 0;
+  padding: 1.4rem 1.6rem 0.4rem;
+  background: #f4f7fb;
+  border: 1px solid var(--arc42-border);
+  border-radius: 8px;
+}
+.method-principles h2 {
+  margin-top: 0;
+  font-size: 1.1em;
+  border-bottom: none;
+}
+
+.method-cta {
+  margin: 3.5rem 0 1rem;
+  padding: 2.4rem 2rem 2.2rem;
+  background: #e8f0f8; /* flat — the system forbids gradients */
+  border: 1px solid #cfdcea;
+  border-radius: 10px;
+  text-align: center;
+}
+.method-cta h2 {
+  margin-top: 0;
+  border-bottom: none;
+  color: var(--arc42-ink-strong);
+}
+.method-cta p { max-width: none; margin-inline: auto; }
+.method-cta .btn { margin: 0.25rem 0.35rem; }
+
+@media (max-width: 700px) {
+  /* let the diagram use the full viewport so its labels stay legible */
+  .method-diagram { margin-inline: calc(50% - 50vw); max-width: none; }
+  .method-diagram figcaption { padding-inline: 1.25rem; }
+}
+
+/* "Zurück zum Diagramm" markers under each method activity */
+.method-backtop {
+  max-width: 70ch;
+  margin: 1.4rem 0 2.2rem;
+  text-align: right;
+  font-size: 0.82rem;
+}
+.method-backtop a {
+  color: var(--arc42-slate);
+  text-decoration: none;
+  border-bottom: 1px solid var(--arc42-border);
+}
+.method-backtop a:hover,
+.method-backtop a:focus-visible {
+  color: var(--arc42-primary-hover);
+  border-bottom-color: var(--arc42-primary-hover);
+}
+@media (prefers-reduced-motion: no-preference) {
+  html:has(body.method-page) { scroll-behavior: smooth; }
+}
+
+/* Draft marker (DE only, temporary): original text kept from the pre-2026-10 /method/
+   page that still needs editorial rework. Remove the wrappers + these rules
+   once the German text is revised. */
+.method-legacy {
+  max-width: 70ch;
+  margin: 1rem 0;
+  padding: 0.6rem 1rem 0.1rem;
+  background: #fff8e6;
+  border-left: 4px solid var(--arc42-amber);
+  border-radius: 0 6px 6px 0;
+}
+.method-principles .method-legacy { margin: 0 0 1rem; }
+.method-legacy-note {
+  font-size: 0.85rem;
+  color: var(--arc42-amber-ink);
+  background: #fff8e6;
+  border: 1px dashed var(--arc42-amber);
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  margin: 1.5rem 0;
+}
