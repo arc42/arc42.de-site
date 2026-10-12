@@ -1372,3 +1372,107 @@ html { overflow-x: clip; }
 .course-card .course-card__alt b { font-weight: 700; }
 .course-card--flagship .course-card__alt { color: var(--arc42-on-deep-muted); }
 .course-card--flagship .course-card__alt b { color: #ffffff; }
+
+/* Kicker line above the home-page hero title ("Open source · 13 languages ·
+   since 2005"). Amber as on the former arc42.org hero; the shadow matches the
+   theme's overlay title so it holds up on the photo. */
+.page__hero--overlay .page__kicker {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--arc42-amber);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   Quick-download strip under the home hero — copied from
+   arc42.org-site/assets/css/arc42-org.css (.dl-strip). Full-bleed like
+   .ua-strip; anchor rules name :link/:visited (see the import-order note
+   in the chrome section above).
+   ========================================================================== */
+.dl-strip {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+@supports (width: 1cqw) {
+  .dl-strip {
+    width: 100cqw;
+    margin-left: calc(50% - 50cqw);
+    margin-right: calc(50% - 50cqw);
+  }
+}
+/* --- quick-download strip, directly under the home hero ---
+   One calm band of format buttons instead of a card competing with the
+   headline. Label left, formats right, escape hatch to /download/ last. */
+/* Calm paper under the dark hero: the band stack above already carries the
+   colour; this strip separates with a hairline, not another tinted band. */
+.dl-strip {
+  background: #ffffff;
+  border-bottom: 1px solid var(--arc42-border);
+}
+.dl-strip__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.9rem clamp(1rem, 5vw, 3rem);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem clamp(0.7rem, 1.4vw, 1.25rem);
+}
+.dl-strip__label {
+  font-weight: 700;
+  color: var(--arc42-ink-strong);
+  margin-right: auto;
+}
+.dl-strip a.dl-strip__fmt,
+.dl-strip a.dl-strip__fmt:link,
+.dl-strip a.dl-strip__fmt:visited {
+  padding: 0.45rem 1rem;
+  border: 1px solid #a9bfd6;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #2b3a52;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.dl-strip a.dl-strip__fmt:hover,
+.dl-strip a.dl-strip__fmt:focus-visible {
+  border-color: var(--arc42-primary);
+  color: var(--arc42-primary);
+}
+.dl-strip a.dl-strip__all,
+.dl-strip a.dl-strip__all:link,
+.dl-strip a.dl-strip__all:visited {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--arc42-primary); /* 8.9:1 on white — #4b7ba3 measured 3.9:1 and failed AA */
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.dl-strip a.dl-strip__all:hover { color: var(--arc42-ink-strong); }
+
+/* phones: label on its own line, formats wrap beneath it */
+@media (max-width: 640px) {
+  .dl-strip__label { flex: 0 0 100%; margin-right: 0; font-size: 0.95rem; }
+  .dl-strip__inner { gap: 0.5rem 0.5rem; }
+  .dl-strip a.dl-strip__fmt,
+  .dl-strip a.dl-strip__fmt:link,
+  .dl-strip a.dl-strip__fmt:visited { padding: 0.4rem 0.8rem; font-size: 0.88rem; }
+  .dl-strip a.dl-strip__all,
+  .dl-strip a.dl-strip__all:link,
+  .dl-strip a.dl-strip__all:visited { flex: 0 0 100%; }
+}
+
+/* Download strip directly under the hero image: no theme gap in between,
+   the strip reads as the hero's footer. */
+.page__hero--overlay:has(+ #main .page__content > .dl-strip:first-child) { margin-bottom: 0; }
+#main:has(.page__content > .dl-strip:first-child),
+#main .splash .page__content > .dl-strip:first-child { margin-top: 0; padding-top: 0; }
+#main .splash .page__content:has(> .dl-strip:first-child) { margin-top: 0; padding-top: 0; }
+
+/* Two buttons on a feature tile (e.g. Training: details + dates). */
+.archive__item-body p:has(> .btn + .btn) { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.archive__item-body p:has(> .btn + .btn) > .btn { margin: 0; }
