@@ -40,12 +40,12 @@ template_training_news:
     
   - title: "News"
     excerpt: "
-     * 2025 feiert arc42 das 20-jährige Jubiläum. Wir haben uns einiges überlegt.
-    
      * Neu: [softwareknigge.arc42.org](https://softwareknigge.arc42.org) sammelt die Patterns aus dem Knigge für Softwarearchitekt:innen an einem Ort.
 
      * Lesen Sie unseren Artikel [Handeln statt jammern](/publikationen/?type=article#handeln-statt-jammern) und lernen Sie mehr über das iSAQB Advanced Modul REQ4ARC.
     
+     * Beispiele für Embedded- und Real-Time Systeme: das Buch arc42 by Example - [Vol 2. Embedded Systems and IoT](/publikationen/#arc42-by-example-vol2), erhältlich bei [Leanpub](https://leanpub.com/arc42byexample-volume2).
+
      * Noch mehr Beispiele: Auf [examples.arc42.org](https://examples.arc42.org) finden Sie zahlreiche Beispiele für Architekturdokumentation mit arc42.
     "
 
