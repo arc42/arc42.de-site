@@ -2,7 +2,9 @@
 title: "Erfolgreiche Softwarearchitektur"
 layout: splash
 permalink: /
+ua_strip_top: true
 header: 
+  kicker: "Open Source · %LANGUAGES% Sprachen · seit 2005"
   overlay_color: "#d7ecf8"
   overlay_filter: rgba(15, 80, 180, 0.6)
   # Sichtbares Hero: WebP, spart jedem Besucher rund 40 KB.
@@ -75,8 +77,18 @@ methode_publications_canvas:
     btn_class: "btn--primary"
 ---
 
-{% include ua-strip.html %}
+{% comment %} arc42.org/dl/ redirects to the latest arc42-template release (netlify.toml in arc42.org-site) {% endcomment %}
+{% assign PREFIX = "https://arc42.org/dl/arc42-template-" %}
 
+<div class="dl-strip">
+  <div class="dl-strip__inner">
+    <span class="dl-strip__label">Download, Deutsch:</span>
+    <a class="dl-strip__fmt" href="{{ PREFIX }}DE-plain-asciidoc.zip">AsciiDoc</a>
+    <a class="dl-strip__fmt" href="{{ PREFIX }}DE-plain-markdown.zip">Markdown</a>
+    <a class="dl-strip__fmt" href="{{ PREFIX }}DE-plain-docx.zip">Word (.docx)</a>
+    <a class="dl-strip__all" href="https://arc42.org/download/">Alle Sprachen und Formate &#8594;</a>
+  </div>
+</div>
 
 {% include feature_row id="template_training_news" %}
 
