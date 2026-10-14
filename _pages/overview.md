@@ -141,70 +141,70 @@ arc42 lässt sich einfach an Ihre spezifischen Bedürfnisse anpassen.
 
 <div class="grid-container arc42-architecture">
 
-  <a href="#introduction-goals" class="part introduction-goals">
+  <a href="#introduction-goals" class="part fam-req introduction-goals">
     <div class="flex column">
       <strong>1. Einführung & Ziele</strong><br>
       <small>Grundlegende Anforderungen, insbesondere Qualitätsziele</small>
     </div>
   </a>
 
-  <a href="#constraints" class="part constraints">
+  <a href="#constraints" class="part fam-req constraints">
     <div class="flex column">
       <strong>2. Randbedingungen</strong><br>
       <small>Regelungen und externe Randbedingungen</small>
     </div>
   </a>
 
-  <a href="#context-scope" class="part context-scope">
+  <a href="#context-scope" class="part fam-req context-scope">
     <div class="flex column">
       <strong>3. Kontext & Abgrenzung</strong><br>
       <small>Externe Systeme und Schnittstellen</small>
     </div>
   </a>
 
-  <a href="#solution-strategy" class="part solution-strategy">
+  <a href="#solution-strategy" class="part fam-sol solution-strategy">
     <div class="flex column">
       <strong>4. Lösungsstrategie</strong><br>
       <small>Kernideen und Lösungsansätze</small>
     </div>
   </a>
 
-  <a href="#building-block-view" class="part building-block-view larger-cell">
+  <a href="#building-block-view" class="part fam-sol building-block-view larger-cell">
     <div class="flex column">
       <strong>5. Bausteinsicht</strong><br>
       <small>Aufbau des Quellcodes, Modularisierung (hierarchisch)</small>
     </div>
   </a>
 
-  <a href="#runtime-view" class="part runtime-view">
+  <a href="#runtime-view" class="part fam-sol runtime-view">
     <div class="flex column">
       <strong>6. Laufzeitsicht</strong><br>
       <small>Wichtige Laufzeitszenarien</small>
     </div>
   </a>
 
-  <a href="#deployment-view" class="part deployment-view">
+  <a href="#deployment-view" class="part fam-sol deployment-view">
     <div class="flex column">
       <strong>7. Verteilungssicht</strong><br>
       <small>Hardware, Infrastruktur & Deployment</small>
     </div>
   </a>
 
-  <a href="#crosscutting-concepts" class="part crosscutting-concepts larger-cell">
+  <a href="#crosscutting-concepts" class="part fam-sol crosscutting-concepts larger-cell">
     <div class="flex column">
       <strong>8. Querschnittliche Konzepte</strong><br>
       <small>Querschnittsthemen, oft sehr technisch und detailliert</small>
     </div>
   </a>
 
-  <a href="#architectural-decisions" class="part architectural-decisions">
+  <a href="#architectural-decisions" class="part fam-sol architectural-decisions">
     <div class="flex column">
       <strong>9. Architekturentscheidungen</strong><br>
       <small>Wichtige Entscheidungen (nicht anderweitig beschrieben)</small>
     </div>
   </a>
 
-  <a href="#quality-requirements" class="part quality-requirements">
+  <a href="#quality-requirements" class="part fam-req quality-requirements">
     <div class="flex column">
       <strong>10. Qualitätsanforderungen</strong><br>
       <small>Qualitätsbaum, Qualitätsszenarien</small>
