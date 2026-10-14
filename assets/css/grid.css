@@ -24,21 +24,19 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Custom colors */
-.introduction-goals, .context-scope, .building-block-view, .runtime-view, .crosscutting-concepts {
+/* Custom colors: neutral base, subtle family tints.
+   Requirements (1-3, 10) = light green, solution (4-9) = light blue,
+   11+12 stay neutral. */
+.part {
   background-color: rgb(247, 247, 247); /* slightly white */
 }
 
-.constraints, .architectural-decisions, .risks-technical-debt {
-  background-color: rgb(247, 247, 247); /* slightly white */
+.part.fam-req {
+  background-color: #edf7ef; /* light green */
 }
 
-.solution-strategy, .quality-requirements {
-  background-color: rgb(247, 247, 247); /* slightly white */
-}
-
-.deployment-view, .glossary {
-  background-color: rgb(247, 247, 247); /* slightly white */
+.part.fam-sol {
+  background-color: #eef5fa; /* light blue */
 }
 
 /* Positioning for grid items */
