@@ -132,7 +132,7 @@ about:
     - title: Stimmung beim Training...
       url: /gallery/
     - title: "Mitwirkende"
-      url: "https://github.com/orgs/arc42/people"
+      url: "https://arc42.org/about/#community"
       external: true
     # "Lizenz" removed 2026-08-12 — a legal artifact, not a destination; the
     # footer links /license/ on every page. (Sidebar cost: /license/ no longer
