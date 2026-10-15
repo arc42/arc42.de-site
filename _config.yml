@@ -104,6 +104,7 @@ exclude:
   - docker-compose.yml
   - _manage-site.sh
   - _docker*
+  - docker/
   - _docker-compose-dev.yml
   - _site/
   - archive/
