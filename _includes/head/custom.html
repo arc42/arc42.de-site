@@ -1,22 +1,5 @@
 <!-- start custom head snippets -->
 
-{% if page.botpoison %}
- <!-- 1. Import the @botpoison/browser script -->
- <!-- This is used to spam-protect forms.     -->
- <!-- `defer` keeps a third-party CDN out of the render-blocking path: this
-      script sat synchronously in <head> on the registration page, so a slow
-      or proxy-blocked unpkg.com stalled the whole checkout. Deferred scripts
-      still run before DOMContentLoaded, which is well before anyone can
-      submit, so botpoison still attaches in time. -->
-<!-- Pinned, with SRI: unpinned, unpkg serves whatever is newest, and this
-      page silently moved from 0.3.1 to 1.0.0 with no commit here. Bump the
-      version and the hash together; recompute with
-      `curl -sL <url> | openssl dgst -sha384 -binary | openssl base64 -A`. -->
-<script src="https://unpkg.com/@botpoison/browser@1.0.0/dist/index.js"
-        integrity="sha384-PFiLHBpPgn3HAiDbMGBi5tI9ZL1FmZ8nr02DaNOQzuw3N1M+dpas2X6iilR9PmhW"
-        crossorigin="anonymous" defer></script>
-{% endif %}
-
 <script defer data-domain="arc42.de" src="https://plausible.io/js/script.js"></script>
 
 <!-- Favicons: the "42" circle in masthead navy — standard across arc42 sites -->

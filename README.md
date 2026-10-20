@@ -92,7 +92,7 @@ It builds the site inside the container and then asserts things html-proofer doe
 not look at. It fails if the Jekyll log shows a remote-theme fetch or a missing
 Liquid include/layout, or if representative generated pages are absent —
 `_site/index.html`, `_site/overview/index.html`, `_site/termine/index.html`,
-`_site/anmeldung/index.html`, `_site/about/index.html`, `_site/articles/index.html`,
+`_site/about/index.html`, `_site/articles/index.html`,
 `_site/recommendations/index.html`, `_site/gallery/index.html`,
 `_site/videos/index.html`, `_site/publikationen/index.html`,
 `_site/publikationen/arc42-in-aktion/index.html`, `_site/sitemap.xml`.
@@ -112,7 +112,7 @@ The site vendors Minimal Mistakes `4.24.0` locally instead of using `remote_them
 1. Download the exact upstream Minimal Mistakes release you want to use.
 2. Copy upstream additions into `_layouts`, `_includes`, `_sass`, `_data`, and `assets/js`.
 3. Preserve local overrides such as `_includes/head.html`, `_includes/masthead.html`, `_includes/footer.html`, custom timeline includes, custom feature-row includes, and `assets/css/main.scss`.
-4. Run `make clean && make test-theme`, then smoke-check `/`, `/overview/`, `/termine/`, `/anmeldung/`, `/about/`, `/publikationen/`, `/gallery/`, and `/search/`.
+4. Run `make clean && make test-theme`, then smoke-check `/`, `/overview/`, `/termine/`, `/about/`, `/publikationen/`, `/gallery/`, and `/search/`.
 
 
 
@@ -125,126 +125,11 @@ The site vendors Minimal Mistakes `4.24.0` locally instead of using `remote_them
 Custom css is located in `/assets/css`, the required import statement in `/assets/css/main.scss`
 
 
-## Form support (for "Anmeldung") and 
-We use [formspark.io](formspark.io) as backend provider for our "Anmeldung".
-
-
-## Spam protection
-For spam protection within the form, we use [Botpoison](https://botpoison.com/),
-see especially their [getting started with HTML](https://botpoison.com/documentation/getting-started/html/) article:
-
->1.Import the @botpoison/browser script.<br>
->2. Add your public key to the data-botpoison-public-key attribute.<br>
->3. The solution will automatically be attached to the submission (as the _botpoison field).
-
-
-### 1: Integrate Botpoison script
-
-A botpoison browser script is required for spam-protection in the Anmeldung-Form,
-see https://documentation.formspark.io/setup/spam-protection.html#botpoison
-
-We make this a page-specific asset (see https://www.instapaper.com/read/1436398846)
-by adding the following yaml to `anmeldung.md`:
-
-```
----
-title: "Anmeldung"
-layout: single
-permalink: /anmeldung/
-
-botpoison: nospam
-
----
-```
-
-And then adding the appropriate import statement in `_includes/head/custom.html`:
-
-```
-{% if page.botpoison %}
- <!-- 1. Import the @botpoison/browser script -->
-<script src="https://unpkg.com/@botpoison/browser"></script>
-{% endif %}
-```
-
-
-### 2: Add required info to form
-
-1. Create the Botpoison publik and secret keys, as explained in Botpoison setup guide
-2. In your form's settings, select Botpoison under Spam Protection.
-3. Copy the secret key, paste it into the Botpoison secret key field in the Formspark form configuration
-4. Add the Botpoison public key to the HTML of the form:
-
-```
-<form
-      method="POST"
-      action="https://submit-form.com/your-form-id"
-      data-botpoison-public-key="your-botpoison-public-key"
-      target="_blank"
->
-```
-
-In our concrete case, that looks as follows (file `_pages/anmeldung.md`)
-
-```
-<form action="https://submit-form.com/AIKiYyJP"
-      data-botpoison-public-key="pk_8e195655-38ed-4eec-a445-a1e0d68a488d">
-
-```
-
-### 3: Formating of Anmeldung-Email
-Formating of the email sent from formspark.io to arc42 is done via handlebar configuration
-within the Formspark.io website.
-
-```
-<div style="text-align: left;">
-  <strong>Neue Anmeldung (über arc42):</strong><br>
-  {{data.vorname}} {{data.nachname}} ({{data.email}}) hat<br>
-
-<div style="margin: 16px 0;">
-  {{#if data.nachnameTN}}
-    <h3>{{data.vornameTN}} {{data.nachnameTN}} ({{data.emailTN}})</h3>
-  {{else}}
-    <h3>sich selbst</h3>
-  {{/if}}
-  <br>
-für den Kurs {{data.kursdatum}} angemeldet.
-</div>
-<br>
-  Rechnungsadresse: <br>
-  <div style="margin: 16px 0;">
-  {{data.Rechnungsadresse}} <br>
-  </div>
- <br>
-  Bemerkung:<br>
-  <div style="margin: 16px 0;">
-   {{data.comment}} 
-  </div>
-<br>
-
-</div>
-```
-
-### Ensure JavaScript is available
-As often, [StackOverflow](https://stackoverflow.com/posts/50908173/revisions) had an answer,
-we combine a `<noscript>` tag with a `<div>` and a small JavaScript function:
-
-```
-<body>
-<div id="main_body" style="display: none;">
-all content - not displayed...
-</div>
-</body>
-```
-
-Plus a small JavaScript function to enable the content again...
-
-```
-<script type="text/javascript">
-document.getElementById("main_body").style.display="block";
-</script>
-```
-
-It does NOT work if users disable JavaScript when already on the form... 
+## Registration ("Anmeldung")
+Registration lives on trainings.arc42.org (own registration service). arc42.de only
+links there (`https://trainings.arc42.org/anmeldung/?kurs=…&via=arc42.de`);
+`_redirects` forwards the old `/anmeldung/` and `/anmeldungEN/` URLs.
+The former Formspark/Botpoison form was removed in October 2026.
 
 ## Timeline for Courses
 

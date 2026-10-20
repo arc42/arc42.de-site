@@ -11,10 +11,9 @@
 # Formspark form (AIKiYyJP), which would have sent English registrants a German
 # confirmation the moment an autoresponder was created.
 #
-# The trailing "!" forces the rule. Without it Netlify serves the still-existing
-# _site/anmeldung/index.html instead, because non-forced rules only apply to
-# paths with no matching file. The pages stay in the repo for now so reverting
-# is deleting these two lines; they get removed in a later pass.
+# The old form pages (and Formspark's /anmeldung-erfolg/, /anmeldung-fail/
+# result pages) were deleted in October 2026. The trailing "!" is no longer
+# strictly needed, since no file shadows these paths any more; it stays as a guard.
 #
 # Netlify carries the query string across, so /anmeldung/?kurs=msa-dez-2026
 # arrives as /anmeldung/?kurs=msa-dez-2026 and the course stays preselected.
