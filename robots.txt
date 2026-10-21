@@ -8,5 +8,4 @@ Disallow: /seminare/
 Disallow: /template/
 Disallow: /geschaeftsbedingungen/
 Disallow: /wp-includes/
-Disallow: /anmeldung/
 Disallow: /wp-content/

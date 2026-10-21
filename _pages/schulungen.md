@@ -10,7 +10,7 @@ permalink: /schulungen/
 header:
 
   overlay_image: /images/splash/unsplash-bridge-tom-van-hoogstraten.jpg
-  # Same scrim as the other heroes (/, /termine/, /anmeldung/) — without it,
+  # Same scrim as the other heroes (/, /termine/) — without it,
   # 87.5% of the pixels behind the <h1> fail 3:1 at 390px (IMPROVEMENT_PLAN.md
   # item 3).
   overlay_filter: rgba(15, 80, 180, 0.5)

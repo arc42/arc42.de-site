@@ -14,8 +14,7 @@ layout: none
   type is "page" for site.pages, or the resource's own type
   ("book" | "article" | "talk" | "video") for /publikationen/ entries.
 
-  Page exclusions mirror search.json's: the two form-result stubs and the 404
-  page. On top of that, every `layout: redirect` stub (see CLAUDE.md) is
+  Page exclusions mirror search.json's: the 404 page. On top of that, every `layout: redirect` stub (see CLAUDE.md) is
   dropped: they render no content, they only bounce elsewhere, and offering
   the visitor a suggestion that immediately redirects is a dead row.
   (/info-msa-EN/ used to be excluded by URL on top of that — title-identical
@@ -25,8 +24,6 @@ layout: none
 {%- assign lookup_pages = site.pages
       | where_exp: "p", "p.title"
       | where_exp: "p", "p.layout != 'redirect'"
-      | where_exp: "p", "p.title != 'Super!'"
-      | where_exp: "p", "p.title != 'OOPS!'"
       | where_exp: "p", "p.title != 'Sorry, Page Not Found (404)'" -%}
 [
 {% for page in lookup_pages -%}

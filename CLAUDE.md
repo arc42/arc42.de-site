@@ -82,8 +82,7 @@ sobald Treffer da sind). **⌘/Strg/Shift-Enter** überspringt das Panel und spr
 immer nach `/search/?q=…`. Der Publikationen-Filter kennt dieselbe Abkürzung, dort
 aber nur mit ⌘/Strg — Shift-Enter gibt es ausschließlich im Autocomplete.
 
-`search-lookup.json` schließt dieselben Seiten aus wie `search.json` (404, die beiden
-Formular-Stubs), zusätzlich alle `layout: redirect`-Stubs (darunter `/status/`, das
+`search-lookup.json` schließt dieselben Seiten aus wie `search.json` (404), zusätzlich alle `layout: redirect`-Stubs (darunter `/status/`, das
 extern nach `https://status.arc42.org/` weiterleitet — der Footer verlinkt dorthin —
 und seit 2026-08-16 auch `/info-msa-EN/`, das extern zum englischen Kursangebot auf
 `https://trainings.arc42.org/` weiterleitet). Der Anker für
@@ -124,9 +123,10 @@ gebaut — `price`, `credit_points`, `seats_limited` — über `_includes/price-
 `credits-label.html` und `money.html` (1:1 aus dem trainings-Repo kopiert, ebenso
 `training-date-label.html`; Änderungen dort hierher nachziehen). Die Legacy-Strings des Feeds
 `pricing`/`credits` (fest deutsch) und `few_seats` (fest englisch) **nicht verwenden** —
-`make test-theme` prüft auf englische Labeltexte in `/termine/` und deutsche in `/anmeldungEN/`.
+`make test-theme` prüft auf englische Labeltexte in `/termine/`.
 Keine Preise mehr hart in `timeline_<type>.html` schreiben. Konsumenten: `timeline_auto.html`,
-`_pages/anmeldung.md` (`lang="de"`), `_pages/anmeldungEN.md` (`lang="en"`), `course-cards.html`.
+`course-cards.html`. Anmeldeformulare gibt es hier nicht mehr — die Anmeldung läuft auf
+trainings.arc42.org (eigener Anmeldedienst); `_redirects` leitet `/anmeldung/` und `/anmeldungEN/` dorthin.
 
 Weiterer Konsument von `site.data.trainings`: `_includes/course-bridge.html`, das
 Conversion-Band am Ende einer Inhaltsseite, je einmal eingebunden auf
@@ -146,16 +146,13 @@ Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strin
 2. Sync abwarten (wöchentlich) oder `workflow_dispatch` von
    `.github/workflows/refresh-trainings.yml` manuell auslaufen lassen, um
    `_data/trainings.json` sofort zu aktualisieren.
-3. Timeline und Anmeldeformulare sind generiert und reagieren automatisch:
+3. Die Timeline ist generiert und reagiert automatisch:
    `timeline_auto.html` setzt `sold_out=true` für `waitlist`/`full`, wodurch
    `timeline_<type>.html` den Kurs ausgraut. Den Hinweistext (`status_note`)
    wählt `timeline_auto.html` je Status: `waitlist` → "(Ausgebucht, Warteliste
    verfügbar)", `full` → "(Ausgebucht)". Nur `full` versteckt den
    Anmeldung-Button (`hide_register`); `waitlist` ist ein Hinweis, Anmeldungen
-   bleiben möglich, Überbuchung klärt das Backoffice. Die Anmeldeformulare
-   (`_pages/anmeldung.md`, `_pages/anmeldungEN.md`) generieren ihre `<select>`-Optionen
-   ebenfalls aus `site.data.trainings`, führen `waitlist`-Termine mit dem Zusatz
-   „(Warteliste)“ und lassen `full`-Termine automatisch weg — **keine manuelle Pflege der Select-Liste mehr nötig**. Achtung, dritter
+   bleiben möglich, Überbuchung klärt das Backoffice. Achtung, zweiter
    Konsument mit abweichendem Verhalten: `course-bridge.html` überspringt
    `waitlist`/`full`-Termine komplett und springt zum nächsten offenen Termin
    weiter, statt sie wie die Timeline ausgegraut weiter anzuzeigen — das Band auf

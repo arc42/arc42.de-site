@@ -77,7 +77,7 @@ test-theme: image ## Assert the generated _site uses local theme files and clean
 	               echo "Unexpected top-level .html page output; use directory-style permalinks ending in /"; \
 	               exit 1; \
 	           fi; \
-	           if grep -R -E "href=\"/(about|anmeldung|anmeldungEN|articles|books|canvas|consulting|contact|gallery|imprint|info-adoc|info-improve|info-msa|info-msa-EN|info-req4arc|license|method|more|overview|publikationen|recommendations|schulungen|search|status|talks|termine|terms|terms-en|videos)(#[^\"]*)?\"" _site; then \
+	           if grep -R -E "href=\"/(about|articles|books|canvas|consulting|contact|gallery|imprint|info-adoc|info-improve|info-msa|info-msa-EN|info-req4arc|license|method|more|overview|publikationen|recommendations|schulungen|search|status|talks|termine|terms|terms-en|videos)(#[^\"]*)?\"" _site; then \
 	               echo "Unexpected internal page link without trailing slash"; \
 	               exit 1; \
 	           fi; \
@@ -93,7 +93,7 @@ test-theme: image ## Assert the generated _site uses local theme files and clean
 	               echo "Unexpected stale sitemap URL"; \
 	               exit 1; \
 	           fi; \
-	           if grep -E "<loc>https://arc42\.de/(about|anmeldung|anmeldungEN|articles|books|canvas|consulting|contact|gallery|imprint|info-adoc|info-improve|info-msa|info-msa-EN|info-req4arc|license|method|more|overview|publikationen|recommendations|schulungen|search|status|talks|termine|terms|terms-en|videos|articles/2022-11-requirements-overview)</loc>" _site/sitemap.xml; then \
+	           if grep -E "<loc>https://arc42\.de/(about|articles|books|canvas|consulting|contact|gallery|imprint|info-adoc|info-improve|info-msa|info-msa-EN|info-req4arc|license|method|more|overview|publikationen|recommendations|schulungen|search|status|talks|termine|terms|terms-en|videos|articles/2022-11-requirements-overview)</loc>" _site/sitemap.xml; then \
 	               echo "Unexpected sitemap page URL without trailing slash"; \
 	               exit 1; \
 	           fi; \
@@ -105,15 +105,10 @@ test-theme: image ## Assert the generated _site uses local theme files and clean
 	               echo "English label text on the German timeline; build labels via price-label/credits-label with page_lang"; \
 	               exit 1; \
 	           fi; \
-	           if grep -E "Normalpreis|Frühbucherpreis|methodische|kommunikative" _site/anmeldungEN/index.html; then \
-	               echo "German label text on the English registration form; build labels with lang=en"; \
-	               exit 1; \
-	           fi; \
 	           test -f _site/index.html; \
 	           test -f _site/imprint/index.html; \
 	           test -f _site/overview/index.html; \
 	           test -f _site/termine/index.html; \
-	           test -f _site/anmeldung/index.html; \
 	           test -f _site/about/index.html; \
 	           test -f _site/articles/index.html; \
 	           test -f _site/recommendations/index.html; \
