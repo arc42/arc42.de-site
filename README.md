@@ -41,9 +41,10 @@ It uses the MinimalMistakes template, with a few slight modifications
 
 > Prerequisite: local builds run in Docker. You need Docker installed, nothing else — no local Ruby, no local gems.
 
-The build stack is shared with **arc42.org-site**: both repos build the same
-image, `arc42-site:latest` (see `Dockerfile` / `docker-compose.yml`), on
-Jekyll 4.3 with the gems pinned in this repo's `Gemfile`. Keep `Gemfile` and
+The build stack is shared with **arc42.org-site**: the same `Dockerfile` on
+Jekyll 4.3 with the gems pinned in this repo's `Gemfile`. Each repo builds its
+own image tag (here `arc42-de-site:latest`), so building one site never
+overwrites the other's image. Keep `Gemfile` and
 `Gemfile.lock` identical in both repos — when you change one, change the other,
 otherwise the two sites drift onto different Jekyll/kramdown versions and start
 rendering the same Markdown differently. Production is built by GitHub Actions
@@ -56,8 +57,12 @@ make dev
 ```
 
 Serves the site on `http://localhost:4201` (not `0.0.0.0:4201` — Firefox refuses
-that host) and rebuilds on every file change. The first run builds the image; on
-later runs it starts from the cache.
+that host) and rebuilds on every file change. The first run builds the image; later runs
+start it straight away and need **no network**. The image is rebuilt only when
+`Dockerfile`, `Gemfile`, `Gemfile.lock` or `docker/jekyll-entrypoint.sh`
+changes (a hash of these files sits in an image label). The Ruby base image is
+pinned by digest and kept in the local image store, so even such a rebuild only
+re-runs `bundle install`, not apt-get.
 
 The port is fixed at **4201**, not Jekyll's default 4000, so this dev server can
 run alongside the other arc42 sites' dev servers without a clash — see
@@ -70,12 +75,14 @@ in the `Makefile`, the mapping plus `--port` in `docker-compose.yml`, and
 All useful targets (`make` on its own prints this list):
 
 * `make dev` — start Jekyll locally with live reload on port 4201
-* `make build` — build/rebuild the Docker image `arc42-site:latest` from the pinned gems
+* `make image` — build the Docker image only if its inputs changed (all targets call this)
+* `make build` — force a rebuild of the image `arc42-de-site:latest`
 * `make site` — generate the static site into `_site/` (one-shot build, no server)
 * `make check-links` — run html-proofer over the built `_site` (internal links, images, HTML)
 * `make test-theme` — build and assert the generated `_site` is structurally sound (see below)
 * `make stop` — stop and remove the running dev container
-* `make clean` — remove `_site` **and** the Docker cache volumes (a true reset)
+* `make clean` — remove the generated `_site` only (image and caches stay)
+* `make distclean` — also stop the container and wipe the Jekyll/Sass cache volumes (image stays)
 * `make install` / `make update` — re-run `bundle install` / `bundle update` in the image after editing the `Gemfile`
 * `make shell` — open a shell inside the container
 * `make logs` — tail the dev container's logs
