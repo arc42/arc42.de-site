@@ -3,8 +3,10 @@
 Notizen für Claude / Agenten zu diesem Repo (arc42.de-site, Jekyll + Markdown).
 
 Gebaut wird **nicht** mit dem GitHub-Pages-Gem-Set, sondern per GitHub Actions mit den
-eigenen Gems dieses Repos: Jekyll 4.3, identischer Stack und identisches Docker-Image
-(`arc42-site:latest`) wie in `arc42.org-site`. `Gemfile`/`Gemfile.lock` in beiden Repos
+eigenen Gems dieses Repos: Jekyll 4.3, identischer Stack (gleiches `Dockerfile`) wie in
+`arc42.org-site`, aber eigener Image-Tag `arc42-de-site:latest`. Das Image wird nur neu
+gebaut, wenn sich `Dockerfile`/`Gemfile`/`Gemfile.lock`/Entrypoint ändern (`make image`);
+`make dev` braucht sonst kein Netz. `make clean` löscht nur `_site`. `Gemfile`/`Gemfile.lock` in beiden Repos
 gleich halten. Lokal: `make dev` (Server), `make site` (Build), `make check-links`
 (html-proofer), `make test-theme` (Struktur-Assertions auf `_site`).
 

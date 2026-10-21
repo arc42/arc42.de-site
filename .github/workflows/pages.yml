@@ -1,6 +1,6 @@
 # .github/workflows/pages.yml
 # Builds the site with the repo's own Gemfile (Jekyll 4.3 — same stack as the
-# arc42-site:latest dev image) and deploys to GitHub Pages. Replaces the
+# local Docker dev image) and deploys to GitHub Pages. Replaces the
 # native github-pages (Jekyll 3.9) build.
 name: Deploy site to GitHub Pages
 
