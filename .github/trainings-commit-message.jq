@@ -72,7 +72,8 @@ def by_id:
 # shared list holds both orderings.
 def field_order:
   ["status", "seats_limited", "start", "end", "city", "country", "price", "format", "language", "trainers",
-   "short_title", "title", "certification", "credit_points", "blurb", "url", "url_en"];
+   "short_title", "title", "certification", "credit_points", "show_on", "blurb", "blurb_de", "blurb_en",
+   "url", "url_en"];
 
 def changed_fields($x; $y):
   [ (($x | keys) + ($y | keys)) | unique | .[] | select($x[.] != $y[.]) ]
