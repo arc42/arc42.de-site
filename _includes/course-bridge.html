@@ -25,6 +25,16 @@
   waitlist/full, because a sold-out date is a bad call to action, whereas the
   timeline shows those on purpose.
 
+  Which courses count: the same `show_on` rule as the timeline (a show_on that
+  does not name site.trainings_site_name hides the course; none means every
+  site), and additionally only courses WITH a certification. Every variant's
+  copy promises one ("mit iSAQB-Zertifizierung" in the default and in the
+  /schulungen/ text, "mit Zertifizierung nach ..." in the hairline), so a
+  course without one (MAS) next to that sentence would contradict it. It
+  stays on /termine/ and /schulungen/; here the next certified date is shown.
+  Unknown course ids are otherwise fine: the band reads only short_title/title,
+  certification and the date, all of which every course has or may omit.
+
   No price is shown anywhere. `pricing` is German prose rather than a number
   ("Frühbucherpreis ... € 2690, Normalpreis: € 2890") and only MSA dates carry
   it — the next open date usually has none. See spec section 3.
@@ -38,6 +48,9 @@
 {%- assign today = 'now' | date: '%Y-%m-%d' -%}
 {%- assign keys = "" | split: "" -%}
 {%- for c in crs -%}
+  {%- if c.show_on -%}{%- unless c.show_on contains site.trainings_site_name -%}{%- continue -%}{%- endunless -%}{%- endif -%}
+  {%- assign cb_cert = c.certification | strip -%}
+  {%- if cb_cert == "" -%}{%- continue -%}{%- endif -%}
   {%- for d in c.dates -%}
     {%- if d.status == "cancelled" or d.status == "waitlist" or d.status == "full" -%}{%- continue -%}{%- endif -%}
     {%- if d.end < today -%}{%- continue -%}{%- endif -%}

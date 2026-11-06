@@ -31,6 +31,14 @@ logo                     : /images/arc42-site-logo.png # schema.org Organization
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 
+# This site's name in the per-course `show_on` list of the training feed
+# (_data/trainings.json, synced from trainings.arc42.org). A course whose
+# show_on exists and does not contain this name is not advertised here: not on
+# /termine/, not on /schulungen/, not in course-bridge.html. No show_on at all
+# means every site. The spelling is fixed upstream (the site list of
+# trainings.arc42.org-site/scripts/verify_consumers.sh), so never "arc42.de".
+trainings_site_name      : "www.arc42.de"
+
 
 # SEO Related
 google_site_verification :

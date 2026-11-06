@@ -1,0 +1,104 @@
+{%- comment -%}
+  The data-driven standard card: renders any course of _data/trainings.json
+  from the feed alone, so a new course (MAS, ...) needs no template here.
+  timeline_course.html falls back to it for every type without a hand-made
+  card; a hand-made timeline_<type>.html keeps winning for its course while it
+  exists. Ported from trainings.arc42.org-site/_includes/timeline_card.html.
+
+  Markup, classes, order, the Anmeldung target and the delivery-language note
+  are those of this site's timeline_msa.html / timeline_msa_online.html, so
+  the card sits in the timeline without seams. Status note, few-seats, price
+  and credits arrive as finished strings from timeline_auto.html, exactly as
+  the hand-made cards get them.
+
+  include.course is the course, include.course_date the date (not "date": that
+  name already carries the date LABEL in the interface every card shares).
+
+  Every variable is tc_-prefixed and assigned on every render: includes share
+  the caller's scope, and the hand-made cards assign bare names (anchor_id,
+  trainer, sold_out, position_class) that would otherwise leak from the
+  previous card into this one.
+{%- endcomment -%}
+{%- assign tc_page_lang = include.page_lang | default: "de" -%}
+{%- assign tc_position_class = include.position | default: "right" -%}
+{%- assign tc_anchor_id = include.anchor_id -%}
+{%- assign tc_sold_out = include.sold_out | default: false -%}
+{%- assign tc_online = false -%}
+{%- if include.course_date.format == "online" -%}{%- assign tc_online = true -%}{%- endif -%}
+{%- assign tc_title = include.course.title | default: include.course.short_title | strip -%}
+{%- assign tc_cert = include.course.certification | strip -%}
+{%- assign tc_trainers = include.course_date.trainers | default: include.course.trainers -%}
+
+{%- comment -%}
+  Description: the page language's field, else the other language's, else the
+  feed's legacy `blurb` (the only one a feed from before trainings.arc42.org
+  PR #79 carries; generated upstream as blurb_en else blurb_de), else none.
+  `default` also skips "", so an empty field falls through like a missing one.
+{%- endcomment -%}
+{%- if tc_page_lang == "de" -%}
+  {%- assign tc_blurb = include.course.blurb_de | default: include.course.blurb_en | default: include.course.blurb | strip -%}
+  {%- assign tc_trainer_join = " und " -%}
+  {%- assign tc_trainer_label = "Mit" -%}
+  {%- assign tc_info_label = "Mehr Info" -%}
+  {%- assign tc_register_label = "Anmeldung" -%}
+  {%- assign tc_register_url = "https://trainings.arc42.org/anmeldung/" -%}
+  {%- assign tc_credits_label = "iSAQB-Punkte" -%}
+{%- else -%}
+  {%- assign tc_blurb = include.course.blurb_en | default: include.course.blurb_de | default: include.course.blurb | strip -%}
+  {%- assign tc_trainer_join = " and " -%}
+  {%- assign tc_trainer_label = "With" -%}
+  {%- assign tc_info_label = "More info" -%}
+  {%- assign tc_register_label = "Register" -%}
+  {%- assign tc_register_url = "https://trainings.arc42.org/registration/" -%}
+  {%- assign tc_credits_label = "iSAQB credits" -%}
+{%- endif -%}
+{%- assign tc_trainerline = "" -%}
+{%- if tc_trainers.size > 0 -%}{%- assign tc_trainerline = tc_trainers | join: tc_trainer_join -%}{%- endif -%}
+{%- comment -%} course.url, made root-relative when it points at this site (make test-theme). {%- endcomment -%}
+{%- capture tc_info_url -%}{% include course-info-url.html course=include.course %}{%- endcapture -%}
+{%- assign tc_info_url = tc_info_url | strip -%}
+
+<div class="container {{ tc_position_class }}" id="{{ tc_anchor_id }}">
+    <div class="content"{% if tc_sold_out %} style="color:darkgrey"{% endif %}>
+        {% if tc_online %}{{ include.date }} (online)<br>{% elsif include.location %}{{ include.date }}, {{ include.location }}<br>{% else %}{{ include.date }}<br>{% endif %}
+        {% include timeline-language-note.html delivery_lang=include.delivery_lang online=tc_online %}
+        <strong class="blue-head">{{ tc_title | escape }}{% if tc_cert != "" %}<br>
+        ({{ tc_cert | escape }}){% endif %}
+        </strong>
+        {% if tc_blurb != "" %}
+        <p>
+            {{ tc_blurb | escape }}
+        </p>
+        {% endif %}
+        {% if tc_trainerline != "" %}
+        <p>{{ tc_trainer_label }} {{ tc_trainerline | escape }}</p>
+        {% endif %}
+
+        {% if tc_sold_out %}
+            <p style="color:red;">({{ include.status_note }})</p>
+        {% endif %}
+
+        {% if include.few_seats %}
+            <p style="font-weight: bold; color: #ff6600;">{{ include.few_seats }}</p>
+        {% endif %}
+
+        {%- comment -%} Credits are iSAQB credits: a course without a
+            certification shows nothing about iSAQB, whatever the data says
+            about points. {%- endcomment %}
+        {% if include.credits and tc_cert != "" %}
+        <p class="date-small">
+            {{ tc_credits_label }}: {{ include.credits }}
+        </p>
+        {% endif %}
+        {% if include.pricing %}
+            <p class="date-small">
+                {{ include.pricing }}
+            </p>
+        {% endif %}
+
+        {% if tc_info_url != "" %}<a href="{{ tc_info_url }}"><button class="button">{{ tc_info_label }}</button></a>{% endif %}
+        {% unless include.hide_register %}
+            <a href="{{ tc_register_url }}?kurs={{ tc_anchor_id }}&amp;via=arc42.de"><button class="button buttonAnmeldung">{{ tc_register_label }}</button></a>
+        {% endunless %}
+    </div>
+</div>

@@ -50,11 +50,14 @@
   <div class="resource-item__body"><p class="resource-item__meta"><span>{{ type_label }}</span><span>{{ lang }}</span>{% if r.year %}<span>{{ r.year }}</span>{% endif %}</p><h2>{{ r.title }}</h2><p>{{ r.summary }}</p></div>
   {%- comment -%}
     Course bridge. r.course holds a course id from _data/trainings.json
-    (msa | improve | req4arc | adoc). The href is DERIVED as /info-<id>/ and is
-    deliberately NOT taken from course.url — that field is an absolute
-    https://www.arc42.de/... link, and `make test-theme` fails the build if that
-    host appears anywhere in _site. An unknown id resolves to nil and renders
-    nothing, so a typo degrades to "no second line" rather than a broken link.
+    (msa | improve | req4arc | adoc). The href comes from course-info-url.html:
+    DERIVED as /info-<id>/ for those four, and deliberately NOT taken raw from
+    course.url — that field can be an absolute https://www.arc42.de/... link,
+    and `make test-theme` fails the build if that host appears anywhere in
+    _site. A course without such a page gets its feed url, host cut off.
+    An unknown id resolves to nil and renders nothing, so a typo degrades to
+    "no second line" rather than a broken link; so does a course whose
+    `show_on` does not name site.trainings_site_name, or one with no link.
 
     Both links live in one .resource-item__links container because
     .resource-item is a three-column grid (cover | body | link) — a second link
@@ -65,6 +68,15 @@
     {%- for c in site.data.trainings.courses -%}
       {%- if c.id == r.course -%}{%- assign course = c -%}{%- break -%}{%- endif -%}
     {%- endfor -%}
+  {%- endif -%}
+  {%- if course and course.show_on -%}
+    {%- unless course.show_on contains site.trainings_site_name -%}{%- assign course = nil -%}{%- endunless -%}
+  {%- endif -%}
+  {%- assign course_url = "" -%}
+  {%- if course -%}
+    {%- capture course_url -%}{% include course-info-url.html course=course %}{%- endcapture -%}
+    {%- assign course_url = course_url | strip -%}
+    {%- if course_url == "" -%}{%- assign course = nil -%}{%- endif -%}
   {%- endif -%}
   {%- if r.detail or r.link or course -%}
     <div class="resource-item__links">
@@ -77,7 +89,7 @@
       <a class="resource-item__link" href="{{ r.link }}"{% if r.link contains '://' %} rel="noopener"{% endif %}>{{ r.link_label | default: 'Öffnen' }} <span aria-hidden="true">{{ arrow }}</span></a>
     {%- endif -%}
     {%- if course -%}
-      <a class="resource-item__link resource-item__link--course" href="/info-{{ course.id }}/">Zum Kurs: <b>{{ course.title }}</b> <span aria-hidden="true">&#8594;</span></a>
+      <a class="resource-item__link resource-item__link--course" href="{{ course_url }}">Zum Kurs: <b>{{ course.title }}</b> <span aria-hidden="true">&#8594;</span></a>
     {%- endif -%}
     </div>
   {%- endif -%}

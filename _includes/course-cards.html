@@ -23,15 +23,23 @@
   No price anywhere — `pricing` is German prose, mostly absent (see the
   Blocked item in IMPROVEMENT_PLAN.md).
 
-  Links are written out as /info-<id>/. Never emit course.url or date.url:
-  both are absolute https://www.arc42.de/... addresses, and `make test-theme`
-  fails the build if that host appears anywhere in _site.
+  Links come from course-info-url.html: /info-<id>/ for the four courses
+  with a page here, otherwise the feed's course.url (MAS: systems42.org),
+  with this site's host cut off. Never emit course.url or date.url directly:
+  they can be absolute https://www.arc42.de/... addresses, and `make
+  test-theme` fails the build if that host appears anywhere in _site.
+
+  A course whose `show_on` does not name site.trainings_site_name gets no
+  card. A course without a hand-written German lead below (any new course)
+  gets its card from the data: title, `blurb_de` as the lead if the feed has
+  one (never the English `blurb`), certification only if it has one.
 
   The whole card is ONE anchor — one tab stop, no <a><button> nesting.
 {%- endcomment -%}
 {%- assign today = 'now' | date: '%Y-%m-%d' -%}
 <ul class="course-cards">
   {%- for c in site.data.trainings.courses -%}
+  {%- if c.show_on -%}{%- unless c.show_on contains site.trainings_site_name -%}{%- continue -%}{%- endunless -%}{%- endif -%}
   {%- assign next = nil -%}
   {%- assign next_online = nil -%}
   {%- assign sorted_dates = c.dates | sort: 'start' -%}
@@ -75,17 +83,23 @@
     {%- assign card_title = "ADOC: Architekturdokumentation" -%}
     {%- assign card_lead = "Architekturdokumentation, die gelesen wird: schlank, zweckmäßig, wartbar." -%}
   {%- else -%}
-    {%- assign card_title = c.title -%}
-    {%- assign card_lead = nil -%}
+    {%- assign card_title = c.title | default: c.short_title | default: c.id -%}
+    {%- assign card_lead = c.blurb_de | strip -%}
+    {%- if card_lead == "" -%}{%- assign card_lead = nil -%}{%- endif -%}
   {%- endcase -%}
+  {%- capture card_url -%}{% include course-info-url.html course=c %}{%- endcapture -%}
+  {%- assign card_url = card_url | strip -%}
+  {%- if card_url == "" -%}{%- assign card_url = "/termine/" -%}{%- endif -%}
   {%- unless c.id == 'msa' -%}
     {%- comment -%} Built from credit_points, not the feed's legacy German `credits` string. {%- endcomment -%}
     {%- capture card_credits -%}{% include credits-label.html credits=c.credit_points lang="de" %}{%- endcapture -%}
     {%- assign card_credits = card_credits | strip -%}
-    {%- capture card_cert -%}{{ c.certification }}{% if card_credits != "" %}: {{ card_credits }} Punkte{% endif %}{%- endcapture -%}
+    {%- comment -%} Points are iSAQB points: none without a certification. {%- endcomment -%}
+    {%- assign card_cert_name = c.certification | strip -%}
+    {%- capture card_cert -%}{% if card_cert_name != "" %}{{ card_cert_name }}{% if card_credits != "" %}: {{ card_credits }} Punkte{% endif %}{% endif %}{%- endcapture -%}
   {%- endunless -%}
   <li class="course-cards__item{% if c.id == 'msa' %} course-cards__item--flagship{% endif %}">
-    <a class="course-card{% if c.id == 'msa' %} course-card--flagship{% endif %}" href="/info-{{ c.id }}/">
+    <a class="course-card{% if c.id == 'msa' %} course-card--flagship{% endif %}" href="{{ card_url }}">
       <h3 class="course-card__title">{{ card_title }}</h3>
       {%- if c.id == 'msa' %}
       <span class="course-card__badge">iSAQB CPSA-Foundation</span>
