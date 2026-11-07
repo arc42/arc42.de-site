@@ -2,9 +2,16 @@
 Dispatches one timeline card to its per-type template.
 Normally called by timeline_auto.html, which passes finished strings.
 
+Every type without a `when` below is rendered by the data-driven standard card
+timeline_card.html from course and course_date alone, so a new course needs no
+template. A hand-made timeline_<type>.html, with its `when`, overrides the
+standard card for its course while it exists.
+
 Parameters:
-- type: Course type (msa, msa_online, req4arc, req4arc_online, improve, improve_online, adoc, adoc_online)
-  Keep in sync with known_types in timeline_auto.html.
+- type: Course type. Hand-made cards: msa, msa_online, req4arc, req4arc_online,
+  improve, improve_online, adoc, adoc_online; anything else gets the standard card.
+- course, course_date: the course and the date from site.data.trainings. Only
+  the standard card reads them; "course_date" because "date" is the label.
 - position: "left" or "right" for timeline positioning
 - date: Course date label
 - location: Course location (not needed for online courses)
@@ -18,6 +25,8 @@ Parameters:
 - credits: iSAQB credit points in the page language, without the noun (optional)
 - delivery_lang: language the course is HELD in ("de"|"en"); drives only the
   small note from timeline-language-note.html, never the card copy
+- page_lang: presentation language of the page (default "de"); only the
+  standard card reads it, the hand-made cards are German throughout
 {% endcomment %}
 
 {% case include.type %}
@@ -38,5 +47,5 @@ Parameters:
   {% when "adoc_online" %}
     {% include timeline_adoc_online.html position=include.position date=include.date anchor_id=include.anchor_id sold_out=include.sold_out status_note=include.status_note hide_register=include.hide_register few_seats=include.few_seats pricing=include.pricing trainer=include.trainer credits=include.credits delivery_lang=include.delivery_lang %}
   {% else %}
-    <!-- timeline_course: unknown type "{{ include.type }}" (anchor {{ include.anchor_id }}) - no template; add a timeline_{{ include.type }}.html or fix course id/format in trainings.yml -->
+    {% include timeline_card.html course=include.course course_date=include.course_date position=include.position date=include.date location=include.location anchor_id=include.anchor_id sold_out=include.sold_out status_note=include.status_note hide_register=include.hide_register few_seats=include.few_seats pricing=include.pricing credits=include.credits page_lang=include.page_lang delivery_lang=include.delivery_lang %}
 {% endcase %}

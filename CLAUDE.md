@@ -26,7 +26,7 @@ Bücher, Artikel, Vorträge und Videos liegen als je eine Datei in `_resources/*
 | `cover` | Thumbnail-Pfad; ohne Cover wird ein Buchstaben-Marker gezeichnet |
 | `link` | Ziel-URL (extern oder site-lokal); weglassen für Einträge ohne Link |
 | `link_label` | Text des CTA-Links |
-| `course` | optionale Kurs-Id aus `_data/trainings.json` (`msa`, `improve`, `req4arc`, `adoc`); erzeugt auf der Karte eine zweite Zeile „Zum Kurs: … →" nach `/info-<id>/`. Weglassen heißt: keine Kurszeile. Die URL wird aus der Id gebildet — **nie** aus `course.url`, das eine absolute `https://www.arc42.de/…`-Adresse enthält und `make test-theme` scheitern lässt |
+| `course` | optionale Kurs-Id aus `_data/trainings.json` (`msa`, `improve`, `req4arc`, `adoc`); erzeugt auf der Karte eine zweite Zeile „Zum Kurs: … →" nach `/info-<id>/`. Weglassen heißt: keine Kurszeile. Die URL baut `_includes/course-info-url.html`: aus der Id, solange es `/info-<id>/` gibt — **nie** roh aus `course.url`, das eine absolute `https://www.arc42.de/…`-Adresse enthält und `make test-theme` scheitern lässt. Nur für einen Kurs ohne eigene Seite hier (z. B. MAS) nimmt es `course.url`, mit abgeschnittenem eigenen Host. Ein Kurs, dessen `show_on` diese Site nicht nennt, erzeugt keine Kurszeile |
 | `id` | **wirkungslos** — der Anker jeder Karte ist immer der Dateiname ohne `.md`, also `/publikationen/#arc42-by-example-vol2`. Jekyll überschreibt ein Front-Matter-`id` mit der internen Dokument-Id; das Feld existiert nur noch für Byte-Gleichheit mit arc42.org |
 | `detail` | `true` ⇒ der Body der Datei wird als eigene Detailseite gerendert |
 
@@ -103,13 +103,36 @@ Rendering-Kette (Jekyll-Includes):
 filtert `status: cancelled` und vergangene Termine (`end < today`) heraus, sortiert
 chronologisch über alle Kurse hinweg, alterniert links/rechts, reicht alle Felder durch)
 → `_includes/timeline_course.html` (dispatch per `type` im `{% case %}`)
-→ `_includes/timeline_<type>.html` (konkretes Template, z. B. `timeline_improve.html`, `timeline_msa.html`).
+→ `_includes/timeline_<type>.html` (handgemachtes Template, z. B. `timeline_improve.html`,
+`timeline_msa.html`) **oder**, für jeden Typ ohne eigenes `when`, die datengetriebene
+Standardkarte `_includes/timeline_card.html`.
 
 `type` wird aus `course.id` gebildet, plus Suffix `_online` wenn `date.format == "online"`.
-Kurstypen: `msa`, `msa_online`, `req4arc`, `req4arc_online`, `improve`, `improve_online`,
-`adoc`, `adoc_online`. Neuer Typ ⇒ Template `timeline_<type>.html` anlegen, im `case` von
-`timeline_course.html` eintragen **und** in `known_types` in `timeline_auto.html` — sonst
-erscheint der Termin nur als HTML-Kommentar (und zählt nicht für die links/rechts-Abwechslung).
+Handgemachte Typen: `msa`, `msa_online`, `req4arc`, `req4arc_online`, `improve`, `improve_online`,
+`adoc`, `adoc_online`. **Ein neuer Kurs braucht kein Template**: die Standardkarte (portiert aus
+`trainings.arc42.org-site/_includes/timeline_card.html`) baut die Karte allein aus den Feed-Daten
+(`course=c course_date=d`) — Titel, Zertifizierungszeile nur bei nicht-leerer `certification`,
+Beschreibung, Trainer (die des Termins, sonst die des Kurses, mit „ und " verbunden), Status,
+wenige Plätze, Preis, iSAQB-Punkte nur mit Zertifizierung, „Mehr Info" nach `course.url` (über
+`course-info-url.html`, also ohne eigenen Host), „Anmeldung" wie die handgemachten Karten. Jeder
+Termin wird also gerendert und zählt für die links/rechts-Abwechslung. Ein handgemachtes
+`timeline_<type>.html` mit seinem `when` überschreibt die Standardkarte für diesen Kurs, solange es
+existiert. Alle Variablen der Standardkarte heißen `tc_…`, weil Includes den Scope des Aufrufers
+teilen und die handgemachten Karten nackte Namen (`anchor_id`, `trainer`, …) setzen.
+
+Beschreibung auf der Standardkarte: das Feld der Seitensprache (`blurb_de`), sonst das der anderen
+Sprache (`blurb_en`), sonst das Legacy-Feld `blurb` (das einzige, das ein Feed von vor
+trainings.arc42.org-PR #79 hat; upstream generiert als `blurb_en`, sonst `blurb_de`), sonst keine.
+
+### Wo ein Kurs erscheint: `show_on`
+
+Optionales Kursfeld im Feed: Liste der Site-Namen, auf denen der Kurs beworben wird. **Fehlt es,
+erscheint der Kurs überall.** Steht es da und enthält nicht `www.arc42.de` (in `_config.yml` als
+`trainings_site_name`, Schreibweise wie upstream in `scripts/verify_consumers.sh` — nie „arc42.de"),
+erscheint der Kurs hier nirgends: `timeline_auto.html` überspringt seine Termine vor dem Sortieren
+(nicht gerendert, nicht gezählt), `course-bridge.html` und `course-cards.html` überspringen den
+Kurs, `resource-item.html` lässt die Kurszeile weg. Neue Stelle, die `site.data.trainings.courses`
+durchläuft und Kurse bewirbt ⇒ dieselbe Regel einbauen.
 
 ### Sprache von Preis, Punkten, Datum (DE/EN)
 
@@ -132,8 +155,15 @@ Weiterer Konsument von `site.data.trainings`: `_includes/course-bridge.html`, da
 Conversion-Band am Ende einer Inhaltsseite, je einmal eingebunden auf
 `/publikationen/`, `/method/`, `/overview/` (Variante `card`) und `/canvas/`
 (Variante `hairline`). Ermittelt den nächsten buchbaren Termin über denselben
-Key-Sort wie `timeline_auto.html` — Details und die eine bewusste Abweichung
-im Kommentarkopf der Datei.
+Key-Sort wie `timeline_auto.html` — Details und die bewussten Abweichungen
+im Kommentarkopf der Datei. Es zählt nur Kurse **mit** `certification`, weil
+der feste Text beider Varianten eine Zertifizierung verspricht; ein Kurs ohne
+(MAS) erscheint auf `/termine/` und `/schulungen/`, aber nicht in diesem Band.
+
+`course-cards.html` (`/schulungen/`) hat deutsche Titel und Einzeiler nur für
+die vier bekannten Kurse; jeder andere Kurs bekommt eine Karte aus den Daten
+(`title`, `blurb_de` als Einzeiler falls vorhanden — nie das englische `blurb` —,
+Zertifizierung nur falls vorhanden, Link über `course-info-url.html`).
 
 Datumslabels werden über `_includes/training-date-label.html` aus den ISO-Strings
 `start`/`end` erzeugt (lange deutsche Form, z. B. "15.-17. September 2026").

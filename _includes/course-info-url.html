@@ -1,0 +1,37 @@
+{%- comment -%}
+  Prints the "Mehr Info" target for one course of _data/trainings.json:
+
+    {% capture u %}{% include course-info-url.html course=c %}{% endcapture %}
+
+  1. This site has a page /info-<id>/ (msa, improve, req4arc, adoc): that page,
+     root-relative, exactly as the templates have always derived it.
+  2. Otherwise the feed's course.url (MAS: https://www.systems42.org/training),
+     with a leading https://www.arc42.de or https://arc42.de cut off, because
+     `make test-theme` fails the build when either host appears as a link in
+     _site. Never print course.url unfiltered.
+  3. Neither: prints nothing; callers leave the link out.
+
+  The derived /info-<id>/ stays first so that the four existing courses link
+  exactly where they did before, whatever the feed's url says.
+  Every variable is ciu_-prefixed: includes share the caller's scope.
+{%- endcomment -%}
+{%- assign ciu_path = "/info-" | append: include.course.id | append: "/" -%}
+{%- assign ciu_page = site.pages | where: "permalink", ciu_path | first -%}
+{%- if include.course.id and ciu_page -%}
+{{ ciu_path }}
+{%- else -%}
+  {%- assign ciu_url = include.course.url | strip -%}
+  {%- assign ciu_head = ciu_url | slice: 0, 20 -%}
+  {%- if ciu_head == "https://www.arc42.de" -%}
+    {%- assign ciu_url = ciu_url | remove_first: "https://www.arc42.de" -%}
+  {%- else -%}
+    {%- assign ciu_head = ciu_url | slice: 0, 16 -%}
+    {%- if ciu_head == "https://arc42.de" -%}
+      {%- assign ciu_url = ciu_url | remove_first: "https://arc42.de" -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- comment -%} The bare host itself is the home page, not "no link". {%- endcomment -%}
+  {%- assign ciu_raw = include.course.url | strip -%}
+  {%- if ciu_url == "" and ciu_raw != "" -%}{%- assign ciu_url = "/" -%}{%- endif -%}
+{{ ciu_url }}
+{%- endif -%}

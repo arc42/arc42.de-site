@@ -4,10 +4,17 @@ Auto-alternating timeline, driven by site.data.trainings
 Replaces the former page.courses frontmatter. Usage: {% include timeline_auto.html %}
 Dates are interleaved chronologically across courses via sortable
 "start|courseIndex|dateIndex" keys (ISO strings sort lexicographically).
-timeline_course.html and the timeline_<type>.html templates are unchanged;
-type = course.id, plus "_online" suffix when format == "online".
+type = course.id, plus "_online" suffix when format == "online";
+timeline_course.html dispatches on it to a hand-made timeline_<type>.html, or
+to the data-driven standard card timeline_card.html, which reads course and
+course_date. So EVERY course renders, and every rendered card counts for the
+left/right alternation.
+A course whose `show_on` list exists and does not name this site
+(site.trainings_site_name, "www.arc42.de") is skipped before the sort: not
+rendered, not counted. No show_on means every site.
 trainer is only passed for explicit per-date overrides, matching the old
-frontmatter behaviour (course-default trainers stay baked into the templates).
+frontmatter behaviour (course-default trainers stay baked into the hand-made
+templates; the standard card reads both from course and course_date).
 _includes/course-bridge.html carries a near-copy of this key-sort for its
 next-date lookup, additionally skipping waitlist/full — keep both in sync.
 {% endcomment %}
@@ -23,6 +30,7 @@ and only shows as a small note on the card (timeline-language-note.html).
 {%- assign today = 'now' | date: '%Y-%m-%d' -%}
 {%- assign keys = "" | split: "" -%}
 {%- for c in crs -%}
+  {%- if c.show_on -%}{%- unless c.show_on contains site.trainings_site_name -%}{%- continue -%}{%- endunless -%}{%- endif -%}
   {%- for d in c.dates -%}
     {%- if d.status == "cancelled" -%}{%- continue -%}{%- endif -%}
     {%- if d.end < today -%}{%- continue -%}{%- endif -%}
@@ -32,7 +40,6 @@ and only shows as a small note on the card (timeline-language-note.html).
   {%- endfor -%}
 {%- endfor -%}
 {%- assign sorted_keys = keys | sort -%}
-{%- assign known_types = "msa,msa_online,req4arc,req4arc_online,improve,improve_online,adoc,adoc_online" | split: "," -%}
 {%- assign shown = 0 -%}
 {%- for key in sorted_keys -%}
   {%- assign parts = key | split: "|" -%}
@@ -42,11 +49,6 @@ and only shows as a small note on the card (timeline-language-note.html).
   {%- assign d = c.dates[di] -%}
   {%- assign type = c.id -%}
   {%- if d.format == "online" -%}{%- assign type = type | append: "_online" -%}{%- endif -%}
-  {%- comment -%} Only count types that timeline_course.html can render; an unknown type emits just an HTML comment and must not flip the left/right alternation. Keep in sync with the case/when list there. {%- endcomment -%}
-  {%- unless known_types contains type -%}
-    {%- include timeline_course.html type=type anchor_id=d.id -%}
-    {%- continue -%}
-  {%- endunless -%}
   {%- assign shown = shown | plus: 1 -%}
   {%- assign remainder = shown | modulo: 2 -%}
   {%- if remainder == 0 -%}{%- assign position = "left" -%}{%- else -%}{%- assign position = "right" -%}{%- endif -%}
@@ -110,6 +112,8 @@ and only shows as a small note on the card (timeline-language-note.html).
   {%- endif -%}
   {% include timeline_course.html
      type=type
+     course=c
+     course_date=d
      position=position
      date=datelabel
      location=d.city
@@ -121,6 +125,7 @@ and only shows as a small note on the card (timeline-language-note.html).
      pricing=pricing
      trainer=trainerline
      credits=creditline
+     page_lang=page_lang
      delivery_lang=d.language %}
 {%- endfor -%}
 {% if shown == 0 %}<p style="text-align:center">Derzeit sind keine Termine geplant. Schauen Sie bald wieder vorbei, oder <a href="mailto:info@arc42.de">kontaktieren Sie uns</a>.</p>{% endif %}

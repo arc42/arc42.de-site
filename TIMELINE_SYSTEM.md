@@ -9,9 +9,35 @@ This branch introduces a new modular system for managing course timelines in `te
 - `_includes/timeline_req4arc.html` / `timeline_req4arc_online.html` - REQ4ARC courses
 - `_includes/timeline_improve.html` / `timeline_improve_online.html` - IMPROVE courses
 - `_includes/timeline_adoc.html` / `timeline_adoc_online.html` - ADOC courses
+- `_includes/timeline_card.html` - the data-driven **standard card** for every
+  other type (e.g. MAS), ported from `trainings.arc42.org-site`
+
+**A new course needs no template.** `timeline_course.html` sends every type
+without a `when` of its own to `timeline_card.html`, which builds the card from
+the feed alone (`course` and `course_date`): title, a certification line only
+when `certification` is non-empty, the description, the trainers (the date's,
+else the course's, joined with " und "), status note, few-seats, price, iSAQB
+credits only together with a certification, "Mehr Info" to `course.url` (made
+root-relative by `_includes/course-info-url.html` when it points at this site,
+because `make test-theme` rejects that host) and "Anmeldung" exactly as the
+hand-made cards link it. A hand-made `timeline_<type>.html`, with its `when`,
+overrides the standard card for its course while it exists. Every variable of
+the standard card is `tc_`-prefixed: includes share the caller's scope.
+
+Description on the standard card: the page language's field (`blurb_de`), else
+the other language's (`blurb_en`), else the legacy `blurb` (the only one a feed
+from before trainings.arc42.org PR #79 carries), else none.
 
 All card copy is German (the page language). A course held in English only gets
 the note from `_includes/timeline-language-note.html`.
+
+### Where a course is shown: `show_on`
+Optional course field in the feed: the list of site names that advertise the
+course. **Absent means every site.** If it is present and does not contain
+`www.arc42.de` (`trainings_site_name` in `_config.yml`), the course is not
+advertised here: `timeline_auto.html` drops its dates before sorting (not
+rendered, not counted for left/right), `course-bridge.html` and
+`course-cards.html` skip the course, `resource-item.html` drops its course line.
 
 ### 2. Automatic Anchor Links
 Each course gets a unique `anchor_id` that can be linked to from other pages:
@@ -27,21 +53,24 @@ Course data is **not** stored in this repo. The single source of truth is
 `repository_dispatch` from the trainings repo, or manual `workflow_dispatch`).
 **Never hand-edit `_data/trainings.json`** — the next sync overwrites it.
 
-`_includes/timeline_auto.html` reads `site.data.trainings.courses`, drops dates
+`_includes/timeline_auto.html` reads `site.data.trainings.courses`, drops
+courses whose `show_on` does not name this site, drops dates
 with `status: cancelled` or `end < today`, sorts all dates chronologically across
 every course, alternates left/right position, derives `type` from `course.id`
 (plus `_online` suffix when `date.format == "online"`), formats the date label via
-`_includes/training-date-label.html`, and passes a `trainer` override only when a
-date explicitly sets one (course-default trainers stay baked into the
-`timeline_<type>.html` templates, unchanged from before).
+`_includes/training-date-label.html`, passes `course` and `course_date` for the
+standard card, and passes a `trainer` override only when a
+date explicitly sets one (course-default trainers stay baked into the hand-made
+`timeline_<type>.html` templates; the standard card reads them from the data).
 
 Price, iSAQB credits and the few-seats note are built in `timeline_auto.html` in
 the page language (`page_lang`, default `de`) from the structured feed fields
 `price`, `credit_points` and `seats_limited`, via `_includes/price-label.html`,
 `credits-label.html` and `money.html` (ported from trainings.arc42.org-site),
 and handed to the cards as finished strings. The feed's legacy strings
-`pricing`/`credits`/`few_seats` are not used. Only types listed in `known_types`
-count for the left/right alternation.
+`pricing`/`credits`/`few_seats` are not used. Every rendered card counts for the
+left/right alternation (there is no `known_types` list any more: every type
+renders).
 
 Usage in a page: `{% include timeline_auto.html %}` (no parameters — see
 `_pages/termine.md`).
@@ -66,7 +95,8 @@ Use individual includes with explicit positioning:
 ## Parameters
 
 ### Common Parameters
-- `type`: Course type (msa, msa_online, req4arc, req4arc_online, improve, improve_online, adoc, adoc_online)
+- `type`: Course type (hand-made: msa, msa_online, req4arc, req4arc_online, improve, improve_online, adoc, adoc_online; anything else gets the standard card)
+- `course`, `course_date`: the course and the date from the feed; only the standard card reads them
 - `date`: Course date string
 - `location`: Course location (not needed for online courses)
 - `anchor_id`: Unique anchor for deep linking
@@ -96,5 +126,6 @@ Use individual includes with explicit positioning:
 `termine.md` no longer carries a `courses:` frontmatter list. All course/date data
 was moved to `trainings.arc42.org-site/_data/trainings.yml`, synced into this repo
 as `_data/trainings.json`, and consumed by the parameterless
-`{% include timeline_auto.html %}` in `termine.md`'s body. `timeline_course.html`
-and the `timeline_<type>.html` templates are unchanged.
+`{% include timeline_auto.html %}` in `termine.md`'s body. Since Nov 2026
+`timeline_course.html` falls back to the standard card `timeline_card.html`
+instead of an HTML comment, so a date of a new course is never invisible.

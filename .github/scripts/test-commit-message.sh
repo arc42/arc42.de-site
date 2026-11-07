@@ -221,13 +221,22 @@ chore: 2 training changes
 - added    27-07 MSA (msa-jul-2027), 2027-07-05 to 2027-07-08, Köln, de
 EOF
 
-for fixture in added seats gone multi nochange derived rewrite long messy courses3 plusn overflow rename coursemix newcourse coursegone creditpoints datesonly longrename renamemix; do
+# The course fields added to the feed in Nov 2026 (trainings.arc42.org PR #79)
+# are named in the message: show_on decides whether this site advertises the
+# course at all, so it sorts first, before the descriptions.
+assert_output "show_on and the per-language blurbs are reported by name" feedfields <<'EOF'
+chore: MSA — show on changed, blurb en changed
+
+- course   MSA (msa): show on changed, blurb en changed
+EOF
+
+for fixture in added seats gone multi nochange derived rewrite long messy courses3 plusn overflow rename coursemix newcourse coursegone creditpoints datesonly longrename renamemix feedfields; do
   assert_subject_fits "$fixture"
 done
 
 # Every fixture must produce a non-empty subject; the workflow falls back to the
 # generic message on empty output, and a silent fallback would hide a bug here.
-for fixture in added seats gone multi nochange derived rewrite long messy courses3 plusn overflow rename coursemix newcourse coursegone creditpoints datesonly longrename renamemix; do
+for fixture in added seats gone multi nochange derived rewrite long messy courses3 plusn overflow rename coursemix newcourse coursegone creditpoints datesonly longrename renamemix feedfields; do
   if [ -z "$(generate "$fixture" | head -n 1)" ]; then
     fail "empty subject for fixture $fixture" ""
   fi
