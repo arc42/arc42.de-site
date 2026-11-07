@@ -100,6 +100,9 @@ schulungen:
       url: /info-req4arc/
     - title: ADOC
       url: /info-adoc/
+    - title: Mastering AI-Driven Specification
+      url: /info-maispec/
+      hint: "mit systems42"
     # "Unsere AGB" (/terms/) and "Bildergalerie" (/gallery/) were removed here
     # 2026-08-12: both duplicated entries in the `about` group under a second
     # label, showing twice in the drawer. /terms/ stays linked from the footer,
