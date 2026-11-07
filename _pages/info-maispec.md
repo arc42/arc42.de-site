@@ -18,15 +18,10 @@ excerpt: "Spezifikation für Requirements und Architektur als Basis für agentis
 <div class="course-story" markdown="1">
 
 {%- comment -%}
-  No course-actions.html here: it needs a flyer PDF, and there is none for
-  this course yet. When there is, put it in /downloads/flyer-maispec.pdf and
-  include course-actions.html with that flyer, like the other info pages.
+  The flyer lives on systems42.org, which publishes it: linked, not copied,
+  so there is one file to update.
 {%- endcomment -%}
-<p class="course-actions">
-  <a class="btn btn--arc42-amber" href="https://trainings.arc42.org/anmeldung/?via=arc42.de">Anmeldung zum Kurs</a>
-  <a class="btn btn--arc42-outline" href="/termine/">Termine ansehen</a>
-  <a class="course-actions__terms" href="/terms/">Unsere AGB</a>
-</p>
+{% include course-actions.html flyer="https://systems42.org/assets/flyer-MAISPEC-systems42-DE.pdf" %}
 
 2-tägiger Hands-on-Workshop von den Machern von systems42: Peter Hruschka, Gernot Starke und Peter Gerstbach
 
