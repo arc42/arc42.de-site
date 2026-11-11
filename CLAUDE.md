@@ -149,7 +149,9 @@ gebaut — `price`, `credit_points`, `seats_limited` — über `_includes/price-
 `make test-theme` prüft auf englische Labeltexte in `/termine/`.
 Keine Preise mehr hart in `timeline_<type>.html` schreiben. Konsumenten: `timeline_auto.html`,
 `course-cards.html`. Anmeldeformulare gibt es hier nicht mehr — die Anmeldung läuft auf
-trainings.arc42.org (eigener Anmeldedienst); `_redirects` leitet `/anmeldung/` und `/anmeldungEN/` dorthin.
+trainings.arc42.org (eigener Anmeldedienst). Die alten Adressen `/anmeldung/` und `/anmeldungEN/`
+antworten mit 404, bewusst: die Site läuft auf GitHub Pages, das keine `_redirects` kennt.
+Weiterleitungen hier sind Seiten mit `layout: redirect` (z. B. `_pages/agb.md`).
 
 Weiterer Konsument von `site.data.trainings`: `_includes/course-bridge.html`, das
 Conversion-Band am Ende einer Inhaltsseite, je einmal eingebunden auf

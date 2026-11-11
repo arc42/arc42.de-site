@@ -135,7 +135,9 @@ Custom css is located in `/assets/css`, the required import statement in `/asset
 ## Registration ("Anmeldung")
 Registration lives on trainings.arc42.org (own registration service). arc42.de only
 links there (`https://trainings.arc42.org/anmeldung/?kurs=…&via=arc42.de`);
-`_redirects` forwards the old `/anmeldung/` and `/anmeldungEN/` URLs.
+The old `/anmeldung/` and `/anmeldungEN/` URLs answer 404, on purpose. The site runs
+on GitHub Pages, which has no server-side redirects; a forwarded address is a page with
+`layout: redirect` (for example `_pages/agb.md`).
 The former Formspark/Botpoison form was removed in October 2026.
 
 ## Timeline for Courses
